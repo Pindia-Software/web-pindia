@@ -276,6 +276,23 @@
   }
 }
 
+/* ── Mobile portrait: size robot by viewport height (30–40vh) ── */
+@media (max-width: 639px) and (orientation: portrait) {
+  .hero__visual {
+    width: auto;
+    max-width: 80vw;
+  }
+  #scroll-canvas {
+    width: auto;
+    height: 50vh;
+  }
+  .hero__skeleton-pulse {
+    width: auto;
+    height: 50vh;
+    aspect-ratio: 480 / 762;
+  }
+}
+
 /* ── First section after hero: opaque background so canvas filter-bleed
    cannot show through as the hero scrolls off the top ── */
 .hero--scroll + section {
