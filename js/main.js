@@ -274,6 +274,11 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
   const progress = document.getElementById('scroll-progress-fill');
   const hint     = document.getElementById('scroll-hint');
   const sticky   = section && section.querySelector('.hero__sticky');
+  const heroH1   = section && section.querySelector('.hero__h1');
+  const heroLines = heroH1 ? heroH1.querySelectorAll('.hero__h1-line') : [];
+  if (heroH1 && heroLines.length) heroH1.classList.add('hero__h1--animated');
+  const heroSubLines = section ? section.querySelectorAll('.hero__sub-line') : [];
+  let lastLineIndex = -1;
 
   if (!section || !canvas) return;
 
@@ -361,6 +366,14 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
       const angle = p * Math.PI;
       sticky.style.setProperty('--glow-x', (22 * Math.sin(angle))       + 'vw');
       sticky.style.setProperty('--glow-y', (28 * (1 - Math.cos(angle))) + 'vh');
+    }
+    if (heroLines.length) {
+      const idx = p < 0.18 ? 0 : p < 0.67 ? 1 : 2;
+      if (idx !== lastLineIndex) {
+        heroLines.forEach((el, i) => el.classList.toggle('is-active', i === idx));
+        heroSubLines.forEach((el, i) => el.classList.toggle('is-active', i === idx));
+        lastLineIndex = idx;
+      }
     }
   }
 
