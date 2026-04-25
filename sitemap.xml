@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://pindia.es/</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/servicios/</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/servicios/diseno-web.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/servicios/desarrollo-software.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/servicios/apps-mobile-api.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/proyectos/</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/productos/trowelapp.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/posts/cana-digital-2021/</loc>
+    <lastmod>2021-11-11</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/posts/premios-ceoe-cepyme-2021/</loc>
+    <lastmod>2021-10-29</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/posts/finalistas-talento-cantabria/</loc>
+    <lastmod>2021-10-19</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/contacto/</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/aviso-legal.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/politica-privacidad.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/politica-cookies.html</loc>
+    <lastmod>2024-04-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>

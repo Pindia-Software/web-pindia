@@ -1,0 +1,133 @@
+/* ============================================
+   PINDIA SOFTWARE — Responsive (mobile-first)
+   ============================================ */
+
+/* ── 640px — sm ── */
+@media (min-width: 640px) {
+  .hero__inner {
+    grid-template-columns: 1fr 1fr;
+    padding-block: var(--sp-16);
+  }
+  .hero__robot { width: 100%; max-width: 420px; }
+
+  .especialidades__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .proceso__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trowelapp__pricing {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .proyectos__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonios__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reconocimientos__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cookie-banner__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cookie-banner__text { flex: 1; }
+
+  .footer__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+/* ── 768px — md ── */
+@media (min-width: 768px) {
+  :root {
+    --nav-h: 80px;
+  }
+
+  .nav__links { display: flex; }
+  .nav__toggle { display: none; }
+
+  .section__headline {
+    font-size: var(--text-5xl);
+  }
+
+  .diseno-web__split {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trowelapp__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonios__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reconocimientos__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .proceso__steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* Remove flex layout for large process grid — vertical per step */
+  .step-card {
+    flex-direction: column;
+    gap: var(--sp-4);
+  }
+
+  .footer__grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+/* ── 1024px — lg ── */
+@media (min-width: 1024px) {
+  .especialidades__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .proyectos__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-preview__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container { padding-inline: var(--sp-8); }
+}
+
+/* ── 1280px — xl ── */
+@media (min-width: 1280px) {
+  .hero__robot { max-width: 480px; }
+
+  .trowelapp__pricing {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ── Print ── */
+@media print {
+  .nav, .cookie-banner, .hero__scroll, .cta-final { display: none; }
+  body { color: #000; background: #fff; }
+  a { color: #000; }
+}
