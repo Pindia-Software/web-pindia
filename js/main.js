@@ -4,6 +4,16 @@
 
 'use strict';
 
+/* ── Reset scroll to top on homepage reload ── */
+(function resetHomepageScroll() {
+  const path = window.location.pathname;
+  const isHome = path === '/' || path.endsWith('/index.html');
+  if (!isHome) return;
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  window.addEventListener('load', () => window.scrollTo({ top: 0, left: 0, behavior: 'instant' }));
+})();
+
 /* ── Nav: scroll state + mobile drawer ── */
 (function initNav() {
   const nav    = document.querySelector('.nav');

@@ -15,15 +15,32 @@
   --beige:     #EAE7E0;
   --white:     #FFFFFF;
 
-  /* ── Semantic bg / surface ── */
+  /* ── Semantic bg / surface (dark — heroes only) ── */
   --bg:            var(--navy-900);
   --bg-alt:        var(--navy-800);
+  --bg-main:       var(--navy-900);   /* literal navy — used by hero inline styles */
   --bg-card:       rgba(255 255 255 / 0.04);
   --bg-card-h:     rgba(255 255 255 / 0.07);
   --bg-glass:      rgba(15 20 32 / 0.7);
   --border:        rgba(255 255 255 / 0.08);
   --border-accent: rgba(232 65 58 / 0.35);
   --divider:       rgba(255 255 255 / 0.06);
+
+  /* ── Light surface tokens (non-hero content) ── */
+  --surface:        #FFFFFF;
+  --surface-muted:  #F4F5F7;          /* light gray for transition sections */
+  --surface-soft:   #FAFBFC;
+  --ink-1:          var(--navy-main); /* primary text on light */
+  --ink-2:          rgba(34 41 62 / 0.72);
+  --ink-3:          rgba(34 41 62 / 0.55);
+  --card-light:     #FFFFFF;
+  --card-light-h:   #F8F9FB;
+  --border-ink:        rgba(34 41 62 / 0.10);
+  --border-ink-strong: rgba(34 41 62 / 0.18);
+  --glass-light:    rgba(255 255 255 / 0.85);
+  --shadow-sm-light: 0 1px 2px rgba(34 41 62 / 0.05), 0 1px 3px rgba(34 41 62 / 0.04);
+  --shadow-md-light: 0 4px 16px rgba(34 41 62 / 0.08), 0 2px 6px rgba(34 41 62 / 0.04);
+  --shadow-lg-light: 0 12px 40px rgba(34 41 62 / 0.12), 0 4px 12px rgba(34 41 62 / 0.06);
 
   /* ── Text ── */
   --text-1: var(--beige);
