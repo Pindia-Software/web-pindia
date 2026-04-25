@@ -138,7 +138,7 @@ ul, ol { list-style: none; }
   flex-shrink: 0;
 }
 .nav__logo img, .nav__logo svg {
-  height: 36px;
+  height: 72px;
   width: auto;
 }
 
@@ -1273,7 +1273,7 @@ ul, ol { list-style: none; }
 }
 
 .footer__logo {
-  height: 32px;
+  height: 48px;
   width: auto;
 }
 

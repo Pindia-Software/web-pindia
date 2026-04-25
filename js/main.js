@@ -368,7 +368,7 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
       sticky.style.setProperty('--glow-y', (28 * (1 - Math.cos(angle))) + 'vh');
     }
     if (heroLines.length) {
-      const idx = p < 0.18 ? 0 : p < 0.67 ? 1 : 2;
+      const idx = p < 0.2 ? 0 : p < 0.6 ? 1 : 2;
       if (idx !== lastLineIndex) {
         heroLines.forEach((el, i) => el.classList.toggle('is-active', i === idx));
         heroSubLines.forEach((el, i) => el.classList.toggle('is-active', i === idx));
@@ -377,24 +377,8 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
     }
   }
 
-  /* ── Fade canvas as sticky unsticks so the robot doesn't visually
-     overlap the next section as it enters from below. Driven by the
-     uncapped progress: 1.0 = sticky just released, >1.0 = sticky
-     scrolling out. Fade completes well before the next section's
-     content reaches the viewport. */
-  let lastOpacity = -1;
-  function applyFade(uncapped) {
-    let op = 1;
-    if (uncapped > 1.0) op = Math.max(0, 1 - (uncapped - 1.0) / 0.18);
-    if (op === lastOpacity) return;
-    lastOpacity = op;
-    if (op === 1) {
-      canvas.style.opacity = '';
-    } else {
-      canvas.style.transition = 'none';
-      canvas.style.opacity = String(op);
-    }
-  }
+  /* ── Robot siempre visible: no fade al final de la animación ── */
+  function applyFade(_uncapped) {}
 
   /* ── Read scroll position → update targetFrame ──
      Animation completes at ANIM_END (85%) of the sticky range.

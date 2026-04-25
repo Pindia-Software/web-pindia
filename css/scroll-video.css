@@ -46,6 +46,13 @@
   padding-top: 0;
 }
 
+/* Disable parallax on bg/grid: en sticky todo debe moverse junto */
+.hero--scroll .hero__bg,
+.hero--scroll .hero__grid {
+  transform: none !important;
+  will-change: auto;
+}
+
 /* ── Vista sticky: ocupa 100dvh, se mueve con el sticky ── */
 .hero__sticky {
   position: sticky;

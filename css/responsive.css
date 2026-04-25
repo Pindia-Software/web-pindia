@@ -59,7 +59,7 @@
 /* ── 768px — md ── */
 @media (min-width: 768px) {
   :root {
-    --nav-h: 80px;
+    --nav-h: 96px;
   }
 
   .nav__links { display: flex; }
