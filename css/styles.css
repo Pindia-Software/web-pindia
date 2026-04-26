@@ -412,10 +412,11 @@ ul, ol { list-style: none; }
 
 .btn--primary {
   background: var(--accent);
-  color: var(--white);
+  color: var(--navy-950);
 }
 .btn--primary:hover {
   background: var(--accent-h);
+  color: var(--navy-950);
   box-shadow: var(--glow-accent);
 }
 
@@ -1455,7 +1456,7 @@ ul, ol { list-style: none; }
 
 .footer__brand p {
   font-size: var(--text-sm);
-  color: var(--text-3);
+  color: var(--text-2);
   margin-top: var(--sp-4);
   max-width: 280px;
   line-height: var(--lh-base);
@@ -1481,7 +1482,7 @@ ul, ol { list-style: none; }
 }
 .footer__links a {
   font-size: var(--text-sm);
-  color: var(--text-3);
+  color: var(--text-2);
   transition: color var(--dur-fast);
 }
 .footer__links a:hover { color: var(--text-1); }
@@ -1498,7 +1499,7 @@ ul, ol { list-style: none; }
   align-items: flex-start;
   gap: var(--sp-3);
   font-size: var(--text-sm);
-  color: var(--text-3);
+  color: var(--text-2);
   transition: color var(--dur-fast);
 }
 .footer__nap-item:hover { color: var(--text-2); }
@@ -1527,13 +1528,13 @@ ul, ol { list-style: none; }
 }
 .footer__legal a {
   font-size: var(--text-xs);
-  color: var(--text-3);
+  color: var(--text-2);
   transition: color var(--dur-fast);
 }
 .footer__legal a:hover { color: var(--text-2); }
 .footer__copy {
   font-size: var(--text-xs);
-  color: var(--text-3);
+  color: var(--text-2);
 }
 
 /* ============================================
