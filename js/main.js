@@ -22,12 +22,25 @@
 
   if (!nav) return;
 
+  let navTicking = false;
+  let lastScrolled = false;
+  function applyScrollState() {
+    const scrolled = window.scrollY > 20;
+    if (scrolled !== lastScrolled) {
+      nav.classList.toggle('is-scrolled', scrolled);
+      lastScrolled = scrolled;
+    }
+    navTicking = false;
+  }
   function onScroll() {
-    nav.classList.toggle('is-scrolled', window.scrollY > 20);
+    if (!navTicking) {
+      requestAnimationFrame(applyScrollState);
+      navTicking = true;
+    }
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  applyScrollState();
 
   if (toggle && drawer) {
     toggle.addEventListener('click', () => {
@@ -243,14 +256,25 @@ function loadAnalytics() {
   });
 })();
 
-/* ── Smooth anchor scroll ── */
+/* ── Smooth anchor scroll ──
+   nav-h cacheado para evitar getComputedStyle (forced reflow) en cada click.
+   Se invalida en resize por si cambia breakpoint (96px desktop / 88px mobile). */
+let _navHCache = null;
+function getNavH() {
+  if (_navHCache !== null) return _navHCache;
+  const v = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'));
+  _navHCache = isNaN(v) ? 72 : v;
+  return _navHCache;
+}
+window.addEventListener('resize', () => { _navHCache = null; }, { passive: true });
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     const target = document.querySelector(this.getAttribute('href'));
     if (!target) return;
     e.preventDefault();
-    const navH   = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 72;
-    const top    = target.getBoundingClientRect().top + window.scrollY - navH - 16;
+    const navH = getNavH();
+    const top  = target.getBoundingClientRect().top + window.scrollY - navH - 16;
     window.scrollTo({ top, behavior: 'smooth' });
   });
 });
@@ -306,6 +330,24 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
 
   canvas.width  = 480;
   canvas.height = 762;
+
+  /* ── Mobile fast-path: skip 112-frame animation (~22MB).
+        Solo dibuja frame_0001 estático y oculta skeleton.        */
+  const isMobile = window.matchMedia('(max-width: 639px)').matches;
+  if (isMobile) {
+    const img = new Image();
+    img.decoding = 'async';
+    img.onload = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      canvas.classList.add('is-ready');
+      if (skeleton) skeleton.classList.add('is-hidden');
+    };
+    img.src = `${BASE_PATH}0001.webp`;
+    if (heroLines.length) heroLines[0].classList.add('is-active');
+    if (heroSubLines.length) heroSubLines[0].classList.add('is-active');
+    return;
+  }
 
   /* ── Preload frames ── */
   function preloadFrame(i) {
