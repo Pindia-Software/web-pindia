@@ -22,25 +22,15 @@
 
   if (!nav) return;
 
-  let navTicking = false;
-  let lastScrolled = false;
-  function applyScrollState() {
-    const scrolled = window.scrollY > 20;
-    if (scrolled !== lastScrolled) {
-      nav.classList.toggle('is-scrolled', scrolled);
-      lastScrolled = scrolled;
-    }
-    navTicking = false;
-  }
-  function onScroll() {
-    if (!navTicking) {
-      requestAnimationFrame(applyScrollState);
-      navTicking = true;
-    }
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true });
-  applyScrollState();
+  /* IntersectionObserver con sentinel a 20px del top.
+     Sin scroll handler → sin lectura de scrollY → sin forced reflow. */
+  const sentinel = document.createElement('div');
+  sentinel.setAttribute('aria-hidden', 'true');
+  sentinel.style.cssText = 'position:absolute;top:20px;left:0;width:1px;height:1px;pointer-events:none';
+  document.body.prepend(sentinel);
+  new IntersectionObserver(([entry]) => {
+    nav.classList.toggle('is-scrolled', !entry.isIntersecting);
+  }, { threshold: 0 }).observe(sentinel);
 
   if (toggle && drawer) {
     toggle.addEventListener('click', () => {
@@ -426,20 +416,25 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
      rendered before the sticky releases and the next section enters. */
   const ANIM_END = 0.85;
 
-  function getUncappedProgress() {
-    const rect       = section.getBoundingClientRect();
-    const scrollable = section.offsetHeight - window.innerHeight;
-    if (scrollable <= 0) return 0;
-    return -rect.top / scrollable;
+  /* Cache layout reads (offsetTop, offsetHeight, innerHeight) — sólo cambian
+     en resize. Evita forced reflow en cada scroll y rAF tick. */
+  let sectionTop = 0;
+  let scrollable = 0;
+  function measure() {
+    sectionTop = section.getBoundingClientRect().top + window.scrollY;
+    scrollable = section.offsetHeight - window.innerHeight;
   }
+  measure();
+  window.addEventListener('resize', measure, { passive: true });
+  window.addEventListener('load', measure, { once: true });
 
-  function getRawProgress() {
-    return Math.max(0, Math.min(1, getUncappedProgress()));
-  }
+  let rawProgress = 0; // cached for tick() — no layout read per frame
 
   function updateTarget() {
-    const uncapped  = getUncappedProgress();
+    if (scrollable <= 0) { rawProgress = 0; return; }
+    const uncapped  = (window.scrollY - sectionTop) / scrollable;
     const raw       = Math.max(0, Math.min(1, uncapped));
+    rawProgress     = raw;
     const animProg  = Math.min(1, raw / ANIM_END);
     targetFrame     = FRAME_START + animProg * (FRAME_END - FRAME_START);
     applyEffects(animProg);
@@ -450,7 +445,7 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
      In the final buffer zone (raw >= ANIM_END) snap immediately so
      the last frame is guaranteed rendered before the sticky releases. */
   function tick() {
-    if (getRawProgress() >= ANIM_END) {
+    if (rawProgress >= ANIM_END) {
       currentFrame = targetFrame; // snap — no lerp lag in the buffer zone
     } else {
       currentFrame += (targetFrame - currentFrame) * LERP_FACTOR;
