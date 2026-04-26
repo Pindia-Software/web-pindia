@@ -546,11 +546,16 @@ ul, ol { list-style: none; }
   display: block;
 }
 
+.hero__h1-line:not(.is-active) {
+  display: none;
+}
+
 .hero__h1--animated {
   display: grid;
 }
 
 .hero__h1--animated .hero__h1-line {
+  display: block;
   grid-column: 1;
   grid-row: 1;
   opacity: 0;
