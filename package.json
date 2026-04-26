@@ -7,7 +7,7 @@
     "minify": "npm run minify:css && npm run minify:js"
   },
   "devDependencies": {
-    "csso-cli": "^5.0.5",
+    "csso-cli": "^4.0.2",
     "terser": "^5.46.2"
   }
 }
