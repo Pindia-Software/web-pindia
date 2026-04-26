@@ -31,8 +31,11 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Install minify deps
+      - name: Install build deps
         run: npm install --no-audit --no-fund
+
+      - name: Build blog from Markdown
+        run: npm run build:blog
 
       - name: Minify CSS and JS
         run: npm run minify

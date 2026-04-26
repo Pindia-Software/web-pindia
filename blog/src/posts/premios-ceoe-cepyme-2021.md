@@ -4,8 +4,9 @@ description: "Asistimos a la gala de los Premios CEOE-CEPYME Cantabria 2021, una
 date: 2021-10-29
 author: "Borja García"
 tags: ["eventos", "premios", "Cantabria"]
-cover: ""
-coverAlt: ""
+cover: "/assets/img/blog/premios-ceoe-cepyme-2021/cover.webp"
+coverAlt: "Cena de gala de los Premios CEOE-CEPYME Cantabria 2021 con el equipo de Pindia Software junto a representantes empresariales de la región"
+images: []
 draft: false
 ---
 

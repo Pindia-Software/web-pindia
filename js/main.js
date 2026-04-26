@@ -4,6 +4,57 @@
 
 'use strict';
 
+/* ── Blog: anclas en encabezados (.prose__anchor) — copian URL al clic ── */
+(function initProseAnchors() {
+  const anchors = document.querySelectorAll('.prose__anchor');
+  if (!anchors.length) return;
+
+  function fallbackCopy(text, cb) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); cb && cb(); } catch {}
+    document.body.removeChild(ta);
+  }
+
+  function showFeedback(el) {
+    const prev = el.dataset.original || el.textContent;
+    el.dataset.original = prev;
+    el.classList.add('prose__anchor--copied');
+    el.setAttribute('aria-label', 'Enlace copiado al portapapeles');
+    el.textContent = '✓';
+    clearTimeout(el._t);
+    el._t = setTimeout(() => {
+      el.textContent = prev;
+      el.classList.remove('prose__anchor--copied');
+      el.setAttribute('aria-label', 'Enlace a esta sección');
+    }, 1400);
+  }
+
+  anchors.forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const id = a.getAttribute('href');
+      if (!id) return;
+      const url = window.location.origin + window.location.pathname + id;
+      history.replaceState(null, '', id);
+      const target = document.querySelector(id);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      const done = () => showFeedback(a);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(() => fallbackCopy(url, done));
+      } else {
+        fallbackCopy(url, done);
+      }
+    });
+  });
+})();
+
 /* ── Reset scroll to top on homepage reload ── */
 (function resetHomepageScroll() {
   const path = window.location.pathname;

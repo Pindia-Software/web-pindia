@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Pindia Software</title>
+    <link>https://pindia.es/blog/</link>
+    <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 26 Apr 2026 18:06:51 GMT</lastBuildDate>
+    <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Caña Digital: digitalización y construcción se dan la mano en Cantabria</title>
+      <link>https://pindia.es/blog/posts/cana-digital-2021/</link>
+      <description>Pindia Software participó en el primer evento Caña Digital organizado por la Oficina Acelera PYME de CEOE-CEPYME Cantabria, un encuentro sobre modernización del sector constructor.</description>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/cana-digital-2021/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>eventos</category><category>digitalización</category><category>construcción</category>
+    </item>
+
+    <item>
+      <title>Noche de reconocimientos en los Premios CEOE-CEPYME Cantabria 2021</title>
+      <link>https://pindia.es/blog/posts/premios-ceoe-cepyme-2021/</link>
+      <description>Asistimos a la gala de los Premios CEOE-CEPYME Cantabria 2021, una noche en la que se reconoció el trabajo de empresas como IMEM Ascensores, CIC Consulting Informático y ANDROS.</description>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/premios-ceoe-cepyme-2021/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>eventos</category><category>premios</category><category>Cantabria</category>
+    </item>
+
+    <item>
+      <title>Finalistas en los Premios Talento Cantabria</title>
+      <link>https://pindia.es/blog/posts/finalistas-talento-cantabria/</link>
+      <description>Pindia Software fue seleccionada como finalista en los Premios Talento Cantabria, un reconocimiento al esfuerzo y al trabajo en proyectos empresariales desarrollados en la región.</description>
+      <pubDate>Tue, 19 Oct 2021 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/finalistas-talento-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>premios</category><category>Cantabria</category><category>reconocimiento</category>
+    </item>
+  </channel>
+</rss>
