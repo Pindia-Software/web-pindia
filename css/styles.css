@@ -853,7 +853,7 @@ ul, ol { list-style: none; }
   height: 20px;
   color: var(--accent);
 }
-.diseno-web__feature h4 {
+.diseno-web__feature h3 {
   font-size: var(--text-base);
   font-weight: var(--w-sb);
   color: var(--text-1);
@@ -1467,7 +1467,7 @@ ul, ol { list-style: none; }
   width: auto;
 }
 
-.footer__col h4 {
+.footer__col h3 {
   font-size: var(--text-sm);
   font-weight: var(--w-sb);
   color: var(--text-1);
