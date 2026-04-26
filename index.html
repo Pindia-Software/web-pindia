@@ -36,10 +36,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
 
-  <!-- Preload first scroll-video frame — solo desktop/tablet (mobile usa frame estático) -->
+  <!-- Preload primer frame del scroll-video — desktop usa 480px, mobile 240px -->
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0001.webp" media="(min-width: 640px)" fetchpriority="low">
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0002.webp" media="(min-width: 640px)" fetchpriority="low">
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0003.webp" media="(min-width: 640px)" fetchpriority="low">
+  <link rel="preload" as="image" href="/assets/videos/frames-mobile/frame_0001.webp" media="(max-width: 639px)" fetchpriority="low">
 
   <!-- GA4 ID — replace G-XXXXXXXXXX with your measurement ID -->
   <script>window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';</script>

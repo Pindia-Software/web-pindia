@@ -320,7 +320,13 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
   const TOTAL       = 112;
   const FRAME_START = 0;
   const FRAME_END   = 111;
-  const BASE_PATH   = '/assets/videos/frames/frame_';
+  /* Mobile usa frames a 240px ancho (~10KB c/u, total ~1.3MB) en vez de
+     480px (~200KB c/u, total ~22MB). Mismo número de frames, misma
+     animación, 94% menos tráfico. */
+  const isMobile  = window.matchMedia('(max-width: 639px)').matches;
+  const BASE_PATH = isMobile
+    ? '/assets/videos/frames-mobile/frame_'
+    : '/assets/videos/frames/frame_';
   const LERP_FACTOR = 0.15; // lower = smoother / slower to catch up
   const frames      = new Array(TOTAL);
   let loadedCount   = 0;
@@ -330,24 +336,6 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
 
   canvas.width  = 480;
   canvas.height = 762;
-
-  /* ── Mobile fast-path: skip 112-frame animation (~22MB).
-        Solo dibuja frame_0001 estático y oculta skeleton.        */
-  const isMobile = window.matchMedia('(max-width: 639px)').matches;
-  if (isMobile) {
-    const img = new Image();
-    img.decoding = 'async';
-    img.onload = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-      canvas.classList.add('is-ready');
-      if (skeleton) skeleton.classList.add('is-hidden');
-    };
-    img.src = `${BASE_PATH}0001.webp`;
-    if (heroLines.length) heroLines[0].classList.add('is-active');
-    if (heroSubLines.length) heroSubLines[0].classList.add('is-active');
-    return;
-  }
 
   /* ── Preload frames ── */
   function preloadFrame(i) {

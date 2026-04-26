@@ -248,19 +248,13 @@
 }
 
 /* ── Mobile < 640px ──
-   Sin animación de scroll-video (skip JS para ahorrar ~22MB).
-   Hero pasa a una sola pantalla: layout normal sin sticky/300vh.
-   Solo se muestra frame_0001 estático en el canvas.            */
+   Animación activa con frames-mobile (240px, ~1.3MB total).
+   Mantiene 300vh + sticky para tener recorrido de scroll.       */
 @media (max-width: 639px) {
   .hero--scroll {
-    height: auto;
-    min-height: 100dvh;
+    height: 300vh;
   }
   .hero--scroll .hero__sticky {
-    position: relative;
-    top: auto;
-    height: auto;
-    min-height: 100dvh;
     align-items: flex-start;
   }
   .hero--scroll .hero__inner {
@@ -268,10 +262,9 @@
     padding-block: var(--sp-4) 0;
   }
   .hero--scroll .hero__actions {
-    display: flex;
+    display: none;
   }
   .hero__visual {
-    position: absolute;
     width: 50vw;
     max-width: 280px;
     right: 0;
@@ -282,11 +275,6 @@
     right: 20px;
     width: 220px;
     height: 220px;
-  }
-  /* Sin animación: hint y barra progreso ocultos */
-  .hero--scroll .hero__scroll,
-  .scroll-video-progress {
-    display: none;
   }
 }
 
