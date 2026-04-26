@@ -39,6 +39,8 @@ jobs:
             --exclude='README.md' \
             --exclude='MANUAL_pindia.pdf' \
             --exclude='*.original.md' \
+            --exclude='package.json' \
+            --exclude='package-lock.json' \
             ./ _site/
           touch _site/.nojekyll
 

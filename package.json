@@ -1,0 +1,13 @@
+{
+  "name": "web-pindia",
+  "private": true,
+  "scripts": {
+    "minify:css": "csso -i css/styles.css -o css/styles.min.css && csso -i css/scroll-video.css -o css/scroll-video.min.css",
+    "minify:js": "terser js/main.js -c passes=2 -m --comments=false -o js/main.min.js",
+    "minify": "npm run minify:css && npm run minify:js"
+  },
+  "devDependencies": {
+    "csso-cli": "^5.0.5",
+    "terser": "^5.46.2"
+  }
+}
