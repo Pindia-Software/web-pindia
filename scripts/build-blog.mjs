@@ -405,6 +405,38 @@ ${commonHead({
 
 // ── Plantilla listado / paginación ───────────────────────────────────────────
 
+function renderBlogCard({ slug, data, hrefSuffix = '', headingLevel = 2 }) {
+  const t        = data.title;
+  const d        = data.description || '';
+  const dt       = data.date;
+  const cover    = data.cover || '';
+  const coverAlt = data.coverAlt || t;
+  const tags     = Array.isArray(data.tags) ? data.tags.slice(0, 2) : [];
+  const purl     = `/blog/posts/${slug}/${hrefSuffix}`;
+  const H        = `h${headingLevel}`;
+
+  return `<article class="blog-card">
+            ${cover ? `
+            <a href="${purl}" class="blog-card__cover-link" tabindex="-1" aria-hidden="true">
+              <img src="${escapeHTML(cover)}" alt="${escapeHTML(coverAlt)}" class="blog-card__cover" loading="lazy" decoding="async" width="800" height="450">
+            </a>` : ''}
+            <div class="blog-card__body">
+              <div class="blog-card__date">
+                <time datetime="${formatDateISO(dt)}">${formatDateES(dt)}</time>
+              </div>
+              <${H} class="blog-card__title">
+                <a href="${purl}">${escapeHTML(t)}</a>
+              </${H}>
+              <p class="blog-card__excerpt">${escapeHTML(d)}</p>
+              ${tags.length ? `<div class="blog-card__tags">${tags.map(x => `<span class="post__tag">${escapeHTML(x)}</span>`).join('')}</div>` : ''}
+              <a href="${purl}" class="blog-card__more" aria-label="Leer ${escapeHTML(t)}">
+                Leer artículo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>`;
+}
+
 function renderTagBar(tagList, activeTag) {
   if (!tagList.length) return '';
   const items = [
@@ -455,37 +487,9 @@ function renderBlogList(posts, pageNum, totalPages, tagList = [], activeTag = nu
     publisher: { '@type': 'Organization', name: 'Pindia Software S.L.', url: SITE_URL },
   });
 
-  const cards = posts.map(({ slug, data }) => {
-    const t = data.title;
-    const d = data.description || '';
-    const dt = data.date;
-    const cover = data.cover || '';
-    const coverAlt = data.coverAlt || t;
-    const tags = Array.isArray(data.tags) ? data.tags.slice(0, 2) : [];
-    const purl = `/blog/posts/${slug}/?page=${pageNum}`;
-
-    return `
-          <article class="blog-card">
-            ${cover ? `
-            <a href="${purl}" class="blog-card__cover-link" tabindex="-1" aria-hidden="true">
-              <img src="${escapeHTML(cover)}" alt="${escapeHTML(coverAlt)}" class="blog-card__cover" loading="lazy" decoding="async" width="800" height="450">
-            </a>` : ''}
-            <div class="blog-card__body">
-              <div class="blog-card__date">
-                <time datetime="${formatDateISO(dt)}">${formatDateES(dt)}</time>
-              </div>
-              <h2 class="blog-card__title">
-                <a href="${purl}">${escapeHTML(t)}</a>
-              </h2>
-              <p class="blog-card__excerpt">${escapeHTML(d)}</p>
-              ${tags.length ? `<div class="blog-card__tags">${tags.map(x => `<span class="post__tag">${escapeHTML(x)}</span>`).join('')}</div>` : ''}
-              <a href="${purl}" class="blog-card__more" aria-label="Leer ${escapeHTML(t)}">
-                Leer artículo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>`.trim();
-  }).join('\n\n          ');
+  const cards = posts.map(({ slug, data }) =>
+    renderBlogCard({ slug, data, hrefSuffix: `?page=${pageNum}`, headingLevel: 2 })
+  ).join('\n\n          ');
 
   const paginationHTML = totalPages > 1 ? `
         <nav class="pagination" aria-label="Paginación del blog">
@@ -774,5 +778,12 @@ console.log('✓ rss.xml');
 // Sitemap
 writeFileSync(join(ROOT, 'sitemap.xml'), renderSitemap(posts, totalPages, tagPlan), 'utf8');
 console.log('✓ sitemap.xml');
+
+// Partial: últimas 3 entradas para la home (consumido por build-pages.mjs)
+const homePreview = posts.slice(0, 3)
+  .map(({ slug, data }) => renderBlogCard({ slug, data, headingLevel: 3 }))
+  .join('\n');
+writeFileSync(join(PARTIALS, 'home-blog-preview.html'), homePreview + '\n', 'utf8');
+console.log('✓ partial: home-blog-preview.html');
 
 console.log(`\nBlog OK · ${posts.length} post(s) · ${totalPages} página(s) · ${tagList.length} etiqueta(s) · ${PER_PAGE}/página`);

@@ -37,6 +37,9 @@ jobs:
       - name: Build blog from Markdown
         run: npm run build:blog
 
+      - name: Build static pages (partials → HTML)
+        run: npm run build:pages
+
       - name: Minify CSS and JS
         run: npm run minify
 
