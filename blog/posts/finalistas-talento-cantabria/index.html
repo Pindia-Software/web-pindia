@@ -48,7 +48,7 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Blog Pindia Software" href="/blog/rss.xml">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://pindia.es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://pindia.es/blog/"},{"@type":"ListItem","position":3,"name":"Finalistas en los Premios Talento Cantabria","item":"https://pindia.es/blog/posts/finalistas-talento-cantabria/"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Finalistas en los Premios Talento Cantabria","description":"Pindia Software fue seleccionada como finalista en los Premios Talento Cantabria, un reconocimiento al esfuerzo y al trabajo en proyectos empresariales desarrollados en la región.","datePublished":"2021-10-19","author":{"@type":"Person","name":"Borja García"},"publisher":{"@type":"Organization","name":"Pindia Software S.L.","url":"https://pindia.es","logo":{"@type":"ImageObject","url":"https://pindia.es/assets/icons/logo-nav.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pindia.es/blog/posts/finalistas-talento-cantabria/"},"image":"https://pindia.es/assets/img/blog/finalistas-talento-cantabria/cover.webp","keywords":"premios, Cantabria, reconocimiento"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Finalistas en los Premios Talento Cantabria","description":"Pindia Software fue seleccionada como finalista en los Premios Talento Cantabria, un reconocimiento al esfuerzo y al trabajo en proyectos empresariales desarrollados en la región.","datePublished":"2021-10-19","author":{"@type":"Person","name":"Borja García"},"publisher":{"@type":"Organization","name":"Pindia Software S.L.","url":"https://pindia.es","logo":{"@type":"ImageObject","url":"https://pindia.es/assets/icons/logo-nav.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pindia.es/blog/posts/finalistas-talento-cantabria/"},"image":"https://pindia.es/assets/img/blog/finalistas-talento-cantabria/cover.webp","keywords":"Comunidad, Local - Cantabria"}</script>
 </head>
 
 <body>
@@ -108,13 +108,27 @@
         <div class="container">
           <div class="post__header-inner">
 
-            <a href="/blog/" class="post__back" aria-label="Volver al listado del blog">
+            <a href="/blog/" id="post-back-link" class="post__back" aria-label="Volver al listado del blog">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
               Volver al blog
             </a>
 
+            <script>
+              (function() {
+                const params = new URLSearchParams(window.location.search);
+                const page = params.get('page');
+                const backLink = document.getElementById('post-back-link');
+                if (backLink && page) {
+                  const pageNum = parseInt(page, 10);
+                  if (pageNum > 1) {
+                    backLink.href = '/blog/page/' + pageNum + '/';
+                  }
+                }
+              })();
+            </script>
+
             <div class="post__meta">
-              <span class="post__tag">premios</span><span class="post__tag">Cantabria</span><span class="post__tag">reconocimiento</span>
+              <span class="post__tag">Comunidad</span><span class="post__tag">Local - Cantabria</span>
             </div>
             <h1 class="post__title" itemprop="headline">Finalistas en los Premios Talento Cantabria</h1>
             <p class="post__lead">Pindia Software fue seleccionada como finalista en los Premios Talento Cantabria, un reconocimiento al esfuerzo y al trabajo en proyectos empresariales desarrollados en la región.</p>
@@ -161,9 +175,41 @@
           </div>
         </section>
 
+        
+        <section class="post-cta" aria-labelledby="post-cta-title" style="margin-top:var(--sp-16);background:#0F172A;border:1px solid #1E293B;border-radius:var(--r-xl);overflow:hidden;max-width:880px;margin-inline:auto;position:relative" data-reveal>
+          <div class="post-cta__grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:0">
+            <div class="post-cta__media" style="position:relative;aspect-ratio:1/1;background:#0F172A">
+              <img src="/assets/img/blog/cta/robot-ayuda.webp" alt="Robot de Pindia con los brazos abiertos ofreciendo ayuda" loading="lazy" decoding="async" width="600" height="600" style="width:100%;height:100%;object-fit:cover;display:block">
+            </div>
+            <div class="post-cta__body" style="padding:var(--sp-10) var(--sp-10);color:#F8FAFC">
+              <span style="display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:var(--w-sb);letter-spacing:.08em;text-transform:uppercase;color:#FF7A73;margin-bottom:var(--sp-3)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                Pindia te acompaña
+              </span>
+              <h2 id="post-cta-title" style="font-size:var(--text-2xl);font-weight:var(--w-sb);line-height:1.2;color:#F8FAFC;margin-bottom:var(--sp-3)">Te echamos una mano con tu proyecto</h2>
+              <p style="font-size:var(--text-sm);color:#CBD5E1;line-height:1.65;margin-bottom:var(--sp-6)">
+                Auditorías, rediseños, integraciones o desarrollo a medida: ponemos nuestro equipo a tu disposición para resolver lo que tu web necesita.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center">
+                <a href="/contacto/" class="btn btn--primary">
+                  Cuéntanos tu caso
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/servicios/" style="font-size:var(--text-sm);font-weight:var(--w-md);color:#F8FAFC;text-decoration:underline;text-decoration-color:rgba(248,250,252,.35);text-underline-offset:4px">Ver servicios</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          @media (max-width: 768px) {
+            .post-cta__grid { grid-template-columns: 1fr !important; }
+            .post-cta__media { aspect-ratio: 16/10 !important; }
+            .post-cta__body { padding: var(--sp-8) var(--sp-6) !important; }
+          }
+        </style>
+
         <footer class="post__footer">
           <a href="/blog/" class="btn btn--ghost">← Volver al blog</a>
-          <a href="/contacto/" class="btn btn--primary">Hablemos de tu proyecto</a>
         </footer>
       </div>
 

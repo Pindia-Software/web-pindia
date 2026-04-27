@@ -1,15 +1,25 @@
 ---
-title: "Caña Digital: digitalización y construcción se dan la mano en Cantabria"
-description: "Pindia Software participó en el primer evento Caña Digital organizado por la Oficina Acelera PYME de CEOE-CEPYME Cantabria, un encuentro sobre modernización del sector constructor."
-date: 2021-11-11
-author: "Borja García"
-tags: ["eventos", "digitalización", "construcción"]
-cover: "/assets/img/blog/cana-digital-2021/cover.webp"
-coverAlt: "Equipo de Pindia Software en la primera edición de Caña Digital, organizada por la Oficina Acelera PYME de CEOE-CEPYME Cantabria"
+title: 'Caña Digital: digitalización y construcción se dan la mano en Cantabria'
+description: >-
+  Pindia Software participó en el primer evento Caña Digital organizado por la
+  Oficina Acelera PYME de CEOE-CEPYME Cantabria, un encuentro sobre
+  modernización del sector constructor.
+date: 2021-11-11T00:00:00.000Z
+author: Borja García
+tags:
+  - Comunidad
+  - Estrategia & Negocios
+  - Integración & Automatización
+cover: /assets/img/blog/cana-digital-2021/cover.webp
+coverAlt: >-
+  Equipo de Pindia Software en la primera edición de Caña Digital, organizada
+  por la Oficina Acelera PYME de CEOE-CEPYME Cantabria
 images:
-  - src: "/assets/img/blog/cana-digital-2021/foto-2.webp"
-    alt: "Encuentro Caña Digital con empresas del sector tecnológico y constructor"
-    caption: "Mesa de trabajo en Caña Digital — empresas tecnológicas y constructoras debaten sobre digitalización."
+  - src: /assets/img/blog/cana-digital-2021/foto-2.webp
+    alt: Encuentro Caña Digital con empresas del sector tecnológico y constructor
+    caption: >-
+      Mesa de trabajo en Caña Digital — empresas tecnológicas y constructoras
+      debaten sobre digitalización.
 draft: false
 ---
 

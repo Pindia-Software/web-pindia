@@ -1,15 +1,22 @@
 ---
-title: "Finalistas en los Premios Talento Cantabria"
-description: "Pindia Software fue seleccionada como finalista en los Premios Talento Cantabria, un reconocimiento al esfuerzo y al trabajo en proyectos empresariales desarrollados en la región."
-date: 2021-10-19
-author: "Borja García"
-tags: ["premios", "Cantabria", "reconocimiento"]
-cover: "/assets/img/blog/finalistas-talento-cantabria/cover.webp"
-coverAlt: "Pindia Software seleccionada como finalista en los Premios Talento Cantabria"
+title: Finalistas en los Premios Talento Cantabria
+description: >-
+  Pindia Software fue seleccionada como finalista en los Premios Talento
+  Cantabria, un reconocimiento al esfuerzo y al trabajo en proyectos
+  empresariales desarrollados en la región.
+date: 2021-10-19T00:00:00.000Z
+author: Borja García
+tags:
+  - Comunidad
+  - Local - Cantabria
+cover: /assets/img/blog/finalistas-talento-cantabria/cover.webp
+coverAlt: Pindia Software seleccionada como finalista en los Premios Talento Cantabria
 images:
-  - src: "/assets/img/blog/finalistas-talento-cantabria/foto-2.webp"
-    alt: "Cartel oficial de los Premios Talento Cantabria con Pindia Software entre las empresas finalistas"
-    caption: "Cartel oficial de los Premios Talento Cantabria."
+  - src: /assets/img/blog/finalistas-talento-cantabria/foto-2.webp
+    alt: >-
+      Cartel oficial de los Premios Talento Cantabria con Pindia Software entre
+      las empresas finalistas
+    caption: Cartel oficial de los Premios Talento Cantabria.
 draft: false
 ---
 

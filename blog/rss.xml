@@ -5,8 +5,168 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Sun, 26 Apr 2026 18:06:51 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 09:42:40 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Cómo migrar tu web sin perder posicionamiento en Google</title>
+      <link>https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</link>
+      <description>Plan paso a paso para migrar la web de tu empresa sin perder SEO ni tráfico. Redirecciones, indexación y errores que cuestan caros.</description>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo</category><category>Local - Cantabria</category><category>Mantenimiento &amp; Evolución</category><category>SEO &amp; Marketing</category>
+    </item>
+
+    <item>
+      <title>Integrar tu ERP con la web: lo que sí merece la pena automatizar</title>
+      <link>https://pindia.es/blog/posts/integracion-erp-web-empresa/</link>
+      <description>Cuándo tiene sentido integrar la web con tu ERP (Holded, A3, Sage, SAP) y qué procesos automatizar primero. Casos reales en Cantabria.</description>
+      <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/integracion-erp-web-empresa/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Integración &amp; Automatización</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>Accesibilidad web para empresas: por qué importa más de lo que crees</title>
+      <link>https://pindia.es/blog/posts/accesibilidad-web-empresas-cantabria/</link>
+      <description>Qué es la accesibilidad web (WCAG, EN 301 549) y por qué cualquier empresa, también en Cantabria, debería tomársela en serio.</description>
+      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/accesibilidad-web-empresas-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Accesibilidad &amp; Legal</category><category>Diseño &amp; Desarrollo</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>Webs para restaurantes y hostelería en Cantabria: lo que sí funciona</title>
+      <link>https://pindia.es/blog/posts/web-restaurante-hosteleria-cantabria/</link>
+      <description>Cómo debe ser la web de un restaurante en Cantabria: reservas, carta, SEO local y errores que cuestan clientes. Con casos reales.</description>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/web-restaurante-hosteleria-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo</category><category>Hostelería &amp; Turismo</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>RGPD y cookies en webs de empresas españolas: lo mínimo legal</title>
+      <link>https://pindia.es/blog/posts/rgpd-cookies-web-cantabria/</link>
+      <description>Qué necesita una web española para cumplir con RGPD y la guía de cookies de la AEPD. Sanciones, banners, y casos de empresas en Cantabria.</description>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/rgpd-cookies-web-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Accesibilidad &amp; Legal</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>Cómo hacer una landing page que de verdad convierta</title>
+      <link>https://pindia.es/blog/posts/landing-page-conversion-cantabria/</link>
+      <description>Guía práctica para diseñar una landing page que convierta: estructura, copy, formularios y errores que hacen que la gente se vaya.</description>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/landing-page-conversion-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Local - Cantabria</category><category>SEO &amp; Marketing</category>
+    </item>
+
+    <item>
+      <title>Web para pymes en Santander: lo que de verdad necesitas (y lo que no)</title>
+      <link>https://pindia.es/blog/posts/web-pyme-santander/</link>
+      <description>Qué necesita realmente la web de una pyme en Santander: estructura mínima útil, presupuesto razonable y errores que conviene evitar.</description>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/web-pyme-santander/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo</category><category>Estrategia &amp; Negocios</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>10 errores que cometen las webs corporativas en Cantabria (y cómo se arreglan)</title>
+      <link>https://pindia.es/blog/posts/errores-comunes-web-empresa/</link>
+      <description>Los errores más frecuentes que vemos en webs corporativas de empresas de Cantabria, con ejemplos reales y soluciones aplicables.</description>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/errores-comunes-web-empresa/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Accesibilidad &amp; Legal</category><category>Diseño &amp; Desarrollo</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>Velocidad web y rendimiento: por qué tu web está perdiendo clientes</title>
+      <link>https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/</link>
+      <description>Cómo afecta la velocidad de tu web a las ventas y al SEO. Métricas reales, ejemplos en empresas de Cantabria y qué se puede hacer.</description>
+      <pubDate>Thu, 26 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Local - Cantabria</category><category>Mantenimiento &amp; Evolución</category><category>SEO &amp; Marketing</category>
+    </item>
+
+    <item>
+      <title>SEO local en Cantabria: cómo aparecer cuando tus clientes te buscan</title>
+      <link>https://pindia.es/blog/posts/seo-local-cantabria/</link>
+      <description>Guía práctica de SEO local en Cantabria: Google Business Profile, contenido geolocalizado, reseñas y enlaces locales. Con foco en pymes.</description>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/seo-local-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Local - Cantabria</category><category>SEO &amp; Marketing</category>
+    </item>
+
+    <item>
+      <title>WordPress o desarrollo a medida: cuál te conviene</title>
+      <link>https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/</link>
+      <description>WordPress vs desarrollo web a medida para empresas en Cantabria: ventajas, costes y cuándo tiene sentido cada uno. Sin religión.</description>
+      <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>Ejemplos de páginas web reales de empresas en Cantabria</title>
+      <link>https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/</link>
+      <description>Ejemplos de páginas web profesionales de empresas en Cantabria: qué hacen bien, qué se podría mejorar y qué te sirve a ti como referencia.</description>
+      <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo</category><category>Estrategia &amp; Negocios</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>Crear una tienda online en Cantabria: lo que aprendemos cada proyecto</title>
+      <link>https://pindia.es/blog/posts/tienda-online-cantabria/</link>
+      <description>Cómo planificar una tienda online en Cantabria que venda de verdad: plataforma, logística, pasarelas y SEO local. Sin humo.</description>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/tienda-online-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Ecommerce</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>Mantenimiento web para empresas en Cantabria: lo que sí, lo que no</title>
+      <link>https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</link>
+      <description>Qué incluye un buen mantenimiento web para empresas en Cantabria, cuánto cuesta y qué pasa cuando se descuida. Con ejemplos reales de la región.</description>
+      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Estrategia &amp; Negocios</category><category>Local - Cantabria</category><category>Mantenimiento &amp; Evolución</category>
+    </item>
+
+    <item>
+      <title>Cómo elegir empresa de diseño web en Santander</title>
+      <link>https://pindia.es/blog/posts/empresa-diseno-web-santander/</link>
+      <description>Guía honesta para elegir una empresa de diseño web en Santander: qué mirar, qué preguntar y cómo evitar los errores que vemos repetirse.</description>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/empresa-diseno-web-santander/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo</category><category>Local - Cantabria</category>
+    </item>
+
+    <item>
+      <title>Cuánto cuesta una página web en Cantabria</title>
+      <link>https://pindia.es/blog/posts/precio-pagina-web-cantabria/</link>
+      <description>Cuánto cuesta hacer una página web profesional en Cantabria: rangos de precio reales, qué influye en el presupuesto y qué deberías exigir antes de firmar.</description>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/precio-pagina-web-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo</category><category>Estrategia &amp; Negocios</category><category>Local - Cantabria</category>
+    </item>
 
     <item>
       <title>Caña Digital: digitalización y construcción se dan la mano en Cantabria</title>
@@ -15,7 +175,7 @@
       <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/cana-digital-2021/</guid>
       <author>info@pindia.es (Borja García)</author>
-      <category>eventos</category><category>digitalización</category><category>construcción</category>
+      <category>Comunidad</category><category>Estrategia &amp; Negocios</category><category>Integración &amp; Automatización</category>
     </item>
 
     <item>
@@ -25,7 +185,7 @@
       <pubDate>Fri, 29 Oct 2021 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/premios-ceoe-cepyme-2021/</guid>
       <author>info@pindia.es (Borja García)</author>
-      <category>eventos</category><category>premios</category><category>Cantabria</category>
+      <category>Comunidad</category><category>Local - Cantabria</category>
     </item>
 
     <item>
@@ -35,7 +195,7 @@
       <pubDate>Tue, 19 Oct 2021 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/finalistas-talento-cantabria/</guid>
       <author>info@pindia.es (Borja García)</author>
-      <category>premios</category><category>Cantabria</category><category>reconocimiento</category>
+      <category>Comunidad</category><category>Local - Cantabria</category>
     </item>
   </channel>
 </rss>

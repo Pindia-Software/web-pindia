@@ -109,18 +109,44 @@ renderer.image = ({ href, title, text }) => {
   return `<figure class="prose__figure"><img src="${escapeHTML(href)}" alt="${alt}"${ttl} loading="lazy" decoding="async" class="prose__img">${title ? `<figcaption class="prose__caption">${escapeHTML(title)}</figcaption>` : ''}</figure>`;
 };
 
-renderer.link = ({ href, title, tokens }) => {
-  const text = this?.parser?.parseInline ? this.parser.parseInline(tokens) : tokens.map(t => t.raw || t.text || '').join('');
+renderer.link = function({ href, title, tokens }) {
+  const text = this.parser.parseInline(tokens);
   const isExternal = /^https?:\/\//i.test(href) && !href.startsWith(SITE_URL);
   const rel = isExternal ? ' rel="noopener noreferrer" target="_blank"' : '';
   const ttl = title ? ` title="${escapeHTML(title)}"` : '';
   return `<a href="${escapeHTML(href)}"${ttl}${rel}>${text}</a>`;
 };
 
-renderer.heading = ({ text, depth, tokens }) => {
-  const inline = this?.parser?.parseInline ? this.parser.parseInline(tokens) : escapeHTML(text);
-  const id = slugify(text);
+renderer.heading = function({ text, depth, tokens }) {
+  const inline = this.parser.parseInline(tokens);
+  const plain = tokens.map(t => t.text || t.raw || '').join('');
+  const id = slugify(plain);
   return `<h${depth} id="${id}"><a href="#${id}" class="prose__anchor" aria-label="Enlace a esta sección">#</a>${inline}</h${depth}>`;
+};
+
+renderer.strong = function({ tokens }) {
+  return `<strong>${this.parser.parseInline(tokens)}</strong>`;
+};
+
+renderer.em = function({ tokens }) {
+  return `<em>${this.parser.parseInline(tokens)}</em>`;
+};
+
+renderer.codespan = ({ text }) => {
+  return `<code>${escapeHTML(text)}</code>`;
+};
+
+renderer.table = function({ header, rows }) {
+  const headHTML = header.map(cell => this.tablecell(cell)).join('');
+  const bodyHTML = rows.map(row => `<tr>${row.map(cell => this.tablecell(cell)).join('')}</tr>`).join('');
+  return `<div class="prose__table-wrapper"><table class="prose__table"><thead><tr>${headHTML}</tr></thead><tbody>${bodyHTML}</tbody></table></div>`;
+};
+
+renderer.tablecell = function({ tokens, header, align }) {
+  const text = this.parser.parseInline(tokens);
+  const alignAttr = align ? ` style="text-align:${align}"` : '';
+  const tag = header ? 'th' : 'td';
+  return `<${tag}${alignAttr}>${text}</${tag}>`;
 };
 
 marked.use({ renderer, gfm: true, breaks: false });
@@ -298,6 +324,43 @@ function commonHead({ title, description, canonical, ogImage, extraSchema = [], 
 ${extraSchema.map(s => `  <script type="application/ld+json">${s}</script>`).join('\n')}`;
 }
 
+// ── CTA Template ────────────────────────────────────────────────────────────
+
+function postCTAHTML() {
+  return `
+        <section class="post-cta" aria-labelledby="post-cta-title" style="margin-top:var(--sp-16);background:#0F172A;border:1px solid #1E293B;border-radius:var(--r-xl);overflow:hidden;max-width:880px;margin-inline:auto;position:relative" data-reveal>
+          <div class="post-cta__grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:0">
+            <div class="post-cta__media" style="position:relative;aspect-ratio:1/1;background:#0F172A">
+              <img src="/assets/img/blog/cta/robot-ayuda.webp" alt="Robot de Pindia con los brazos abiertos ofreciendo ayuda" loading="lazy" decoding="async" width="600" height="600" style="width:100%;height:100%;object-fit:cover;display:block">
+            </div>
+            <div class="post-cta__body" style="padding:var(--sp-10) var(--sp-10);color:#F8FAFC">
+              <span style="display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:var(--w-sb);letter-spacing:.08em;text-transform:uppercase;color:#FF7A73;margin-bottom:var(--sp-3)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                Pindia te acompaña
+              </span>
+              <h2 id="post-cta-title" style="font-size:var(--text-2xl);font-weight:var(--w-sb);line-height:1.2;color:#F8FAFC;margin-bottom:var(--sp-3)">Te echamos una mano con tu proyecto</h2>
+              <p style="font-size:var(--text-sm);color:#CBD5E1;line-height:1.65;margin-bottom:var(--sp-6)">
+                Auditorías, rediseños, integraciones o desarrollo a medida: ponemos nuestro equipo a tu disposición para resolver lo que tu web necesita.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center">
+                <a href="/contacto/" class="btn btn--primary">
+                  Cuéntanos tu caso
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/servicios/" style="font-size:var(--text-sm);font-weight:var(--w-md);color:#F8FAFC;text-decoration:underline;text-decoration-color:rgba(248,250,252,.35);text-underline-offset:4px">Ver servicios</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          @media (max-width: 768px) {
+            .post-cta__grid { grid-template-columns: 1fr !important; }
+            .post-cta__media { aspect-ratio: 16/10 !important; }
+            .post-cta__body { padding: var(--sp-8) var(--sp-6) !important; }
+          }
+        </style>`;
+}
+
 // ── Plantilla post individual ────────────────────────────────────────────────
 
 function renderPost(post) {
@@ -393,10 +456,24 @@ ${commonHead({
         <div class="container">
           <div class="post__header-inner">
 
-            <a href="/blog/" class="post__back" aria-label="Volver al listado del blog">
+            <a href="/blog/" id="post-back-link" class="post__back" aria-label="Volver al listado del blog">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
               Volver al blog
             </a>
+
+            <script>
+              (function() {
+                const params = new URLSearchParams(window.location.search);
+                const page = params.get('page');
+                const backLink = document.getElementById('post-back-link');
+                if (backLink && page) {
+                  const pageNum = parseInt(page, 10);
+                  if (pageNum > 1) {
+                    backLink.href = '/blog/page/' + pageNum + '/';
+                  }
+                }
+              })();
+            </script>
 
             <div class="post__meta">
               ${tags.map(t => `<span class="post__tag">${escapeHTML(t)}</span>`).join('')}
@@ -428,9 +505,10 @@ ${commonHead({
 
         ${galleryHTML}
 
+        ${postCTAHTML()}
+
         <footer class="post__footer">
           <a href="/blog/" class="btn btn--ghost">← Volver al blog</a>
-          <a href="/contacto/" class="btn btn--primary">Hablemos de tu proyecto</a>
         </footer>
       </div>
 
@@ -507,7 +585,7 @@ function renderBlogList(posts, pageNum, totalPages, tagList = [], activeTag = nu
     const cover = data.cover || '';
     const coverAlt = data.coverAlt || t;
     const tags = Array.isArray(data.tags) ? data.tags.slice(0, 2) : [];
-    const purl = `/blog/posts/${slug}/`;
+    const purl = `/blog/posts/${slug}/?page=${pageNum}`;
 
     return `
           <article class="blog-card">
