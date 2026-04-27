@@ -705,14 +705,7 @@ ${commonHead({
 
         ${paginationHTML}
 
-        <!-- CTA newsletter -->
-        <div style="margin-top:var(--sp-16);background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-xl);padding:var(--sp-10);text-align:center;max-width:600px;margin-inline:auto" data-reveal>
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true" style="margin-bottom:var(--sp-4)"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <h2 style="font-size:var(--text-xl);font-weight:var(--w-sb);color:var(--text-1);margin-bottom:var(--sp-2)">¿Quieres recibir noticias?</h2>
-          <p style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base)">
-            Próximamente newsletter. Déjanos tu email en el <a href="/contacto/" style="color:var(--accent)">formulario de contacto</a> y te avisamos cuando lo lancemos.
-          </p>
-        </div>
+        ${postCTAHTML()}
 
       </div>
     </section>
