@@ -7,8 +7,7 @@ description: >-
 date: 2021-10-19T00:00:00.000Z
 author: Borja García
 tags:
-  - Comunidad
-  - Local - Cantabria
+  - General
 cover: /assets/img/blog/finalistas-talento-cantabria/cover.webp
 coverAlt: Pindia Software seleccionada como finalista en los Premios Talento Cantabria
 images:

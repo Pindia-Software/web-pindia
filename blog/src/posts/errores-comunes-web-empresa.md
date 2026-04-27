@@ -6,9 +6,8 @@ description: >-
 date: 2026-03-05T00:00:00.000Z
 author: Borja García
 tags:
-  - Accesibilidad & Legal
-  - Diseño & Desarrollo
-  - Local - Cantabria
+  - Cumplimiento & Accesibilidad
+  - Diseño & Desarrollo Web
 cover: /assets/img/blog/errores-comunes-web-empresa/cover.webp
 coverAlt: Pantalla con errores comunes en una web corporativa
 draft: false

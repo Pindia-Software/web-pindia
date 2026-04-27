@@ -6,9 +6,8 @@ description: >-
 date: 2026-02-05T00:00:00.000Z
 author: Borja García
 tags:
-  - Diseño & Desarrollo
-  - Estrategia & Negocios
-  - Local - Cantabria
+  - Diseño & Desarrollo Web
+  - Negocio & Estrategia Digital
 cover: /assets/img/blog/ejemplos-paginas-web-empresas-cantabria/cover.webp
 coverAlt: Conjunto de páginas web de empresas reales de Cantabria
 draft: false

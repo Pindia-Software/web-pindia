@@ -6,10 +6,8 @@ description: >-
 date: 2026-04-23T00:00:00.000Z
 author: Borja García
 tags:
-  - Diseño & Desarrollo
-  - Local - Cantabria
-  - Mantenimiento & Evolución
-  - SEO & Marketing
+  - Diseño & Desarrollo Web
+  - SEO & Crecimiento
 cover: /assets/img/blog/migrar-web-sin-perder-seo/cover.webp
 coverAlt: Diagrama de migración web entre dos plataformas conservando el SEO
 draft: false

@@ -6,8 +6,7 @@ description: >-
 date: 2026-02-19T00:00:00.000Z
 author: Borja García
 tags:
-  - Local - Cantabria
-  - SEO & Marketing
+  - SEO & Crecimiento
 cover: /assets/img/blog/seo-local-cantabria/cover.webp
 coverAlt: Mapa de Santander con resultados de búsqueda local en Google
 draft: false

@@ -6,8 +6,7 @@ description: >-
 date: 2026-04-16T00:00:00.000Z
 author: Borja García
 tags:
-  - Integración & Automatización
-  - Local - Cantabria
+  - Negocio & Estrategia Digital
 cover: /assets/img/blog/integracion-erp-web-empresa/cover.webp
 coverAlt: Diagrama de integración entre ERP y web corporativa
 draft: false

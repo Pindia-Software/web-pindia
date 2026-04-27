@@ -6,9 +6,8 @@ description: >-
 date: 2026-03-12T00:00:00.000Z
 author: Borja García
 tags:
-  - Diseño & Desarrollo
-  - Estrategia & Negocios
-  - Local - Cantabria
+  - Diseño & Desarrollo Web
+  - Negocio & Estrategia Digital
 cover: /assets/img/blog/web-pyme-santander/cover.webp
 coverAlt: Web corporativa de una pyme de Santander vista en distintos dispositivos
 draft: false

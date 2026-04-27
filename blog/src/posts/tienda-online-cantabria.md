@@ -6,8 +6,7 @@ description: >-
 date: 2026-01-29T00:00:00.000Z
 author: Borja García
 tags:
-  - Ecommerce
-  - Local - Cantabria
+  - Diseño & Desarrollo Web
 cover: /assets/img/blog/tienda-online-cantabria/cover.webp
 coverAlt: Tienda online de productos cántabros vista en móvil y portátil
 draft: false

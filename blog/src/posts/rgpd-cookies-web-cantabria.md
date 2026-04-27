@@ -6,8 +6,7 @@ description: >-
 date: 2026-03-26T00:00:00.000Z
 author: Borja García
 tags:
-  - Accesibilidad & Legal
-  - Local - Cantabria
+  - Cumplimiento & Accesibilidad
 cover: /assets/img/blog/rgpd-cookies-web-cantabria/cover.webp
 coverAlt: Banner de cookies correcto en una web española
 draft: false

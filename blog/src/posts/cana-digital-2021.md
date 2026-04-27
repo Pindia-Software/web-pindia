@@ -7,9 +7,8 @@ description: >-
 date: 2021-11-11T00:00:00.000Z
 author: Borja García
 tags:
-  - Comunidad
-  - Estrategia & Negocios
-  - Integración & Automatización
+  - General
+  - Negocio & Estrategia Digital
 cover: /assets/img/blog/cana-digital-2021/cover.webp
 coverAlt: >-
   Equipo de Pindia Software en la primera edición de Caña Digital, organizada

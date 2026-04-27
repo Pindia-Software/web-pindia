@@ -6,9 +6,8 @@ description: >-
 date: 2026-01-08T00:00:00.000Z
 author: Borja García
 tags:
-  - Diseño & Desarrollo
-  - Estrategia & Negocios
-  - Local - Cantabria
+  - Diseño & Desarrollo Web
+  - Negocio & Estrategia Digital
 cover: /assets/img/blog/precio-pagina-web-cantabria/cover.webp
 coverAlt: Presupuesto de una página web profesional para una empresa de Cantabria
 draft: false

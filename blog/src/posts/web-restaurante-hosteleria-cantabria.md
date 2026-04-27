@@ -6,9 +6,7 @@ description: >-
 date: 2026-04-02T00:00:00.000Z
 author: Borja García
 tags:
-  - Diseño & Desarrollo
-  - Hostelería & Turismo
-  - Local - Cantabria
+  - Diseño & Desarrollo Web
 cover: /assets/img/blog/web-restaurante-hosteleria-cantabria/cover.webp
 coverAlt: Web de un restaurante en Santander vista en móvil con sistema de reservas
 draft: false

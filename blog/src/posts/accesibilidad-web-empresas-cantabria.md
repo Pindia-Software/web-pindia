@@ -6,9 +6,8 @@ description: >-
 date: 2026-04-09T00:00:00.000Z
 author: Borja García
 tags:
-  - Accesibilidad & Legal
-  - Diseño & Desarrollo
-  - Local - Cantabria
+  - Cumplimiento & Accesibilidad
+  - Diseño & Desarrollo Web
 cover: /assets/img/blog/accesibilidad-web-empresas-cantabria/cover.webp
 coverAlt: Pruebas de accesibilidad sobre la web de una empresa cántabra
 draft: false

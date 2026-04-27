@@ -7,8 +7,7 @@ description: >-
 date: 2021-10-29T00:00:00.000Z
 author: Borja García
 tags:
-  - Comunidad
-  - Local - Cantabria
+  - General
 cover: /assets/img/blog/premios-ceoe-cepyme-2021/cover.webp
 coverAlt: >-
   Cena de gala de los Premios CEOE-CEPYME Cantabria 2021 con el equipo de Pindia

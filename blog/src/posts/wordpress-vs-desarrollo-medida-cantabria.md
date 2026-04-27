@@ -6,8 +6,7 @@ description: >-
 date: 2026-02-12T00:00:00.000Z
 author: Borja García
 tags:
-  - Diseño & Desarrollo
-  - Local - Cantabria
+  - Diseño & Desarrollo Web
 cover: /assets/img/blog/wordpress-vs-desarrollo-medida-cantabria/cover.webp
 coverAlt: >-
   Comparativa entre WordPress y desarrollo web a medida para empresas en

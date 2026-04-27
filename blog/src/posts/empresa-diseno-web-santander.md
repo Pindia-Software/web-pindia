@@ -6,8 +6,7 @@ description: >-
 date: 2026-01-15T00:00:00.000Z
 author: Borja García
 tags:
-  - Diseño & Desarrollo
-  - Local - Cantabria
+  - Diseño & Desarrollo Web
 cover: /assets/img/blog/empresa-diseno-web-santander/cover.webp
 coverAlt: Equipo de diseño web trabajando en una empresa de Santander
 draft: false

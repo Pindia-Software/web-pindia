@@ -6,9 +6,8 @@ description: >-
 date: 2026-02-26T00:00:00.000Z
 author: Borja García
 tags:
-  - Local - Cantabria
-  - Mantenimiento & Evolución
-  - SEO & Marketing
+  - Diseño & Desarrollo Web
+  - SEO & Crecimiento
 cover: /assets/img/blog/velocidad-web-rendimiento-cantabria/cover.webp
 coverAlt: Resultado de PageSpeed Insights mostrando una web lenta y otra rápida
 draft: false

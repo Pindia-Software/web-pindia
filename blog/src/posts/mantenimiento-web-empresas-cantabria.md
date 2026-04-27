@@ -6,9 +6,8 @@ description: >-
 date: 2026-01-22T00:00:00.000Z
 author: Borja García
 tags:
-  - Estrategia & Negocios
-  - Local - Cantabria
-  - Mantenimiento & Evolución
+  - Diseño & Desarrollo Web
+  - Negocio & Estrategia Digital
 cover: /assets/img/blog/mantenimiento-web-empresas-cantabria/cover.webp
 coverAlt: Técnico revisando el mantenimiento de una web corporativa en Cantabria
 draft: false

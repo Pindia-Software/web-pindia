@@ -6,8 +6,7 @@ description: >-
 date: 2026-03-19T00:00:00.000Z
 author: Borja García
 tags:
-  - Local - Cantabria
-  - SEO & Marketing
+  - SEO & Crecimiento
 cover: /assets/img/blog/landing-page-conversion-cantabria/cover.webp
 coverAlt: Diseño de una landing page con buenos ratios de conversión
 draft: false
