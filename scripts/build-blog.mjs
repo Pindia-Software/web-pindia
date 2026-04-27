@@ -277,7 +277,7 @@ function cookieBannerHTML() {
 function commonHead({ title, description, canonical, ogImage, extraSchema = [], prev = '', next = '' }) {
   return `
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>${escapeHTML(title)}</title>
   <meta name="description" content="${escapeHTML(description)}">
   <link rel="canonical" href="${canonical}">
