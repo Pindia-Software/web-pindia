@@ -1665,7 +1665,6 @@ ul, ol { list-style: none; }
   pointer-events: auto;
 }
 .cookie-banner__card {
-  pointer-events: auto;
   position: relative;
   width: 100%;
   max-width: 560px;
