@@ -986,21 +986,22 @@ ul, ol { list-style: none; }
   align-items: flex-start;
 }
 
-.step-card__num {
+.step-card__media {
   flex-shrink: 0;
-  width: 56px;
-  height: 56px;
+  width: 96px;
+  height: 96px;
   border-radius: var(--r-full);
+  overflow: hidden;
   background: rgba(232 65 58 / 0.10);
   border: 1px solid var(--border-accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--text-xl);
-  font-weight: var(--w-xb);
-  color: var(--accent);
   position: relative;
   z-index: 1;
+}
+.step-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .step-card__body h3 {
