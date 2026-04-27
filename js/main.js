@@ -162,7 +162,7 @@
   }
 
   const options = {
-    threshold: 0.12,
+    threshold: 0,
     rootMargin: '0px 0px -48px 0px'
   };
 
