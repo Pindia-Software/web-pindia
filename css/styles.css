@@ -1914,6 +1914,9 @@ ul, ol { list-style: none; }
 .blog-filter:not(.is-active) .blog-filter__count {
   background: rgba(255 255 255 / 0.06);
 }
+@media (max-width: 767.98px) {
+  .blog-filters { display: none; }
+}
 
 /* ============================================
    PAGINACIÓN
