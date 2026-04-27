@@ -180,34 +180,167 @@
   });
 })();
 
-/* ── Cookie banner ── */
+/* ── Cookie banner + settings modal (RGPD/AEPD) ── */
 (function initCookies() {
-  const STORAGE_KEY = 'pindia_cookies_v1';
-  const banner      = document.getElementById('cookie-banner');
-  const btnAccept   = document.getElementById('cookie-accept');
-  const btnReject   = document.getElementById('cookie-reject');
+  const KEY_V2 = 'pindia_cookies_v2';
+  const KEY_V1 = 'pindia_cookies_v1';
 
+  const banner   = document.getElementById('cookie-banner');
+  const settings = document.getElementById('cookie-settings');
   if (!banner) return;
 
-  const consent = localStorage.getItem(STORAGE_KEY);
-  if (!consent) {
-    // Show after short delay so page renders first
-    setTimeout(() => banner.classList.add('is-visible'), 800);
+  const btnAccept   = document.getElementById('cookie-accept');
+  const btnReject   = document.getElementById('cookie-reject');
+  const btnOpen     = document.getElementById('cookie-settings-open');
+  const btnSAccept  = document.getElementById('cookie-settings-accept');
+  const btnSReject  = document.getElementById('cookie-settings-reject');
+  const btnSSave    = document.getElementById('cookie-settings-save');
+  const toggleA     = document.getElementById('cookie-toggle-analytics');
+
+  function readConsent() {
+    const v2 = localStorage.getItem(KEY_V2);
+    if (v2) {
+      try { return JSON.parse(v2); } catch (e) { /* fallthrough */ }
+    }
+    const v1 = localStorage.getItem(KEY_V1);
+    if (v1) {
+      const migrated = {
+        v: 2,
+        ts: new Date().toISOString(),
+        necessary: true,
+        analytics: v1 === 'accepted'
+      };
+      localStorage.setItem(KEY_V2, JSON.stringify(migrated));
+      localStorage.removeItem(KEY_V1);
+      return migrated;
+    }
+    return null;
   }
 
-  function setConsent(value) {
-    localStorage.setItem(STORAGE_KEY, value);
-    banner.classList.remove('is-visible');
-    if (value === 'accepted') {
+  function writeConsent(analytics) {
+    const data = {
+      v: 2,
+      ts: new Date().toISOString(),
+      necessary: true,
+      analytics: !!analytics
+    };
+    localStorage.setItem(KEY_V2, JSON.stringify(data));
+    return data;
+  }
+
+  function applyConsent(data) {
+    if (data && data.analytics) {
       loadAnalytics();
     }
   }
 
-  if (btnAccept) btnAccept.addEventListener('click', () => setConsent('accepted'));
-  if (btnReject) btnReject.addEventListener('click', () => setConsent('rejected'));
+  function hideBanner() {
+    banner.classList.remove('is-visible');
+  }
 
-  // If previously accepted, load analytics on page load
-  if (consent === 'accepted') loadAnalytics();
+  /* ── Modal ── */
+  let lastFocus = null;
+
+  function getFocusables() {
+    if (!settings) return [];
+    return Array.from(settings.querySelectorAll(
+      'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])'
+    )).filter(el => !el.hasAttribute('hidden'));
+  }
+
+  function openSettings() {
+    if (!settings) return;
+    lastFocus = document.activeElement;
+    const current = readConsent();
+    if (toggleA) toggleA.checked = current ? !!current.analytics : false;
+    settings.hidden = false;
+    requestAnimationFrame(() => settings.classList.add('is-open'));
+    document.body.style.overflow = 'hidden';
+    const focusables = getFocusables();
+    if (focusables.length) focusables[0].focus();
+    document.addEventListener('keydown', onKeydown);
+  }
+
+  function closeSettings() {
+    if (!settings) return;
+    settings.classList.remove('is-open');
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', onKeydown);
+    setTimeout(() => { settings.hidden = true; }, 250);
+    if (lastFocus && typeof lastFocus.focus === 'function') lastFocus.focus();
+  }
+
+  function onKeydown(e) {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      closeSettings();
+      return;
+    }
+    if (e.key === 'Tab') {
+      const f = getFocusables();
+      if (!f.length) return;
+      const first = f[0];
+      const last  = f[f.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
+    }
+  }
+
+  /* ── Bindings ── */
+  if (btnAccept) btnAccept.addEventListener('click', () => {
+    applyConsent(writeConsent(true));
+    hideBanner();
+  });
+  if (btnReject) btnReject.addEventListener('click', () => {
+    writeConsent(false);
+    hideBanner();
+  });
+  if (btnOpen) btnOpen.addEventListener('click', openSettings);
+
+  if (btnSAccept) btnSAccept.addEventListener('click', () => {
+    if (toggleA) toggleA.checked = true;
+    applyConsent(writeConsent(true));
+    hideBanner();
+    closeSettings();
+  });
+  if (btnSReject) btnSReject.addEventListener('click', () => {
+    if (toggleA) toggleA.checked = false;
+    writeConsent(false);
+    hideBanner();
+    closeSettings();
+  });
+  if (btnSSave) btnSSave.addEventListener('click', () => {
+    const a = !!(toggleA && toggleA.checked);
+    applyConsent(writeConsent(a));
+    hideBanner();
+    closeSettings();
+  });
+
+  if (settings) {
+    settings.querySelectorAll('[data-cookie-close]').forEach(el => {
+      el.addEventListener('click', closeSettings);
+    });
+  }
+
+  /* External triggers (footer link, política page button, etc.) */
+  document.querySelectorAll('[data-cookie-settings]').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openSettings();
+    });
+  });
+  window.openCookieSettings = openSettings;
+
+  /* ── Init state ── */
+  const consent = readConsent();
+  if (!consent) {
+    setTimeout(() => banner.classList.add('is-visible'), 800);
+  } else {
+    applyConsent(consent);
+  }
 })();
 
 /* ── Analytics loader (GA4, after consent) ── */

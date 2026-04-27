@@ -66,6 +66,16 @@ function indentPartial(block, indent) {
   return block.split('\n').map((line, i) => (i === 0 || line.length === 0) ? line : indent + line).join('\n');
 }
 
+function expandIncludes(html, depth = 0) {
+  if (depth > 10) return html;
+  const re = /([ \t]*)<!--\s*@include\s+([\w-]+)\s*-->/g;
+  return html.replace(re, (_, indent, name) => {
+    const partial = loadPartial(name);
+    const indented = indentPartial(partial, indent);
+    return expandIncludes(indented, depth + 1);
+  });
+}
+
 // ── Utilidades ───────────────────────────────────────────────────────────────
 
 function formatDateES(d) {
@@ -185,7 +195,7 @@ function footerHTML() {
 }
 
 function cookieBannerHTML() {
-  return indentPartial(loadPartial('cookie-banner'), '  ');
+  return indentPartial(expandIncludes(loadPartial('cookie-banner')), '  ');
 }
 
 function commonHead({ title, description, canonical, ogImage, extraSchema = [], prev = '', next = '' }) {

@@ -378,6 +378,7 @@
           <a href="/aviso-legal.html">Aviso legal</a>
           <a href="/politica-privacidad.html">Política de privacidad</a>
           <a href="/politica-cookies.html">Política de cookies</a>
+          <a href="#" data-cookie-settings>Preferencias de cookies</a>
         </nav>
       </div>
 
@@ -390,15 +391,134 @@
     class="cookie-banner"
     role="dialog"
     aria-live="polite"
-    aria-label="Aviso de cookies">
-    <div class="cookie-banner__inner">
-      <p class="cookie-banner__text">
-        Usamos cookies analíticas (Google Analytics 4) para mejorar tu experiencia. Por defecto están desactivadas. Puedes aceptarlas o rechazarlas. Más info en nuestra <a href="/politica-cookies.html">política de cookies</a>.
-      </p>
-      <div class="cookie-banner__actions">
-        <button id="cookie-reject" class="btn btn--secondary">Rechazar</button>
-        <button id="cookie-accept" class="btn btn--primary">Aceptar cookies</button>
+    aria-labelledby="cookie-banner-title"
+    aria-describedby="cookie-banner-text">
+    <div class="cookie-banner__card">
+      <div class="cookie-banner__mascot" aria-hidden="true">
+        <img
+          src="/assets/img/cookie-mascot.webp"
+          alt=""
+          width="128"
+          height="128"
+          loading="lazy"
+          decoding="async">
       </div>
+      <div class="cookie-banner__body">
+        <p class="cookie-banner__eyebrow">
+          <span class="cookie-banner__dot" aria-hidden="true"></span>
+          Cookies
+        </p>
+        <h2 id="cookie-banner-title" class="cookie-banner__title">
+          ¡Hola! Soy Pin <span aria-hidden="true">👋</span>
+        </h2>
+        <p id="cookie-banner-text" class="cookie-banner__text">
+          Utilizamos cookies para entender qué funciona y mejorar la web. Nada raro, nada vendido a terceros — tú decides. Detalles en la <a href="/politica-cookies.html">política de cookies</a>.
+        </p>
+        <div class="cookie-banner__actions">
+          <button id="cookie-reject" type="button" class="btn btn--ghost cookie-banner__btn">Rechazar</button>
+          <button id="cookie-settings-open" type="button" class="btn btn--secondary cookie-banner__btn">Configurar</button>
+          <button id="cookie-accept" type="button" class="btn btn--primary cookie-banner__btn">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="cookie-settings"
+    class="cookie-settings"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookie-settings-title"
+    hidden>
+    <div class="cookie-settings__backdrop" data-cookie-close></div>
+
+    <div class="cookie-settings__panel" role="document">
+      <header class="cookie-settings__header">
+        <div class="cookie-settings__brand">
+          <span class="cookie-settings__mascot" aria-hidden="true">
+            <img src="/assets/img/cookie-mascot.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </span>
+          <div>
+            <p class="cookie-settings__eyebrow">Configuración</p>
+            <h2 id="cookie-settings-title" class="cookie-settings__title">Tus preferencias de cookies</h2>
+          </div>
+        </div>
+        <button type="button" class="cookie-settings__close" data-cookie-close aria-label="Cerrar configuración de cookies">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="cookie-settings__body">
+        <p class="cookie-settings__intro">
+          Tú decides qué cookies activar. Las técnicas son imprescindibles para que la web funcione; el resto solo se cargan si das tu consentimiento. Más detalle en la <a href="/politica-cookies.html">política de cookies</a>.
+        </p>
+
+        <section class="cookie-cat" data-cookie-cat="necessary">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies técnicas</h3>
+              <span class="cookie-cat__badge cookie-cat__badge--required">Siempre activas</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Cookies técnicas (siempre activas)">
+              <input type="checkbox" checked disabled>
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Imprescindibles para el funcionamiento del sitio (recordar tu consentimiento, navegación segura, formulario de contacto). No identifican personalmente y no requieren consentimiento.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies técnicas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><code>pindia_cookies_v2</code></td>
+                  <td>Pindia (propia)</td>
+                  <td>1 año</td>
+                  <td>Almacena tu preferencia de consentimiento.</td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+
+        <section class="cookie-cat" data-cookie-cat="analytics">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies analíticas</h3>
+              <span class="cookie-cat__badge">Opcional</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Activar cookies analíticas">
+              <input type="checkbox" id="cookie-toggle-analytics" data-cookie-toggle="analytics">
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Google Analytics 4 con IP anonimizada. Nos ayudan a entender qué páginas funcionan y mejorar la web. Datos agregados, nunca compartidos para publicidad.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies analíticas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr><td><code>_ga</code></td><td>Google</td><td>2 años</td><td>Identificador anónimo de usuario.</td></tr>
+                <tr><td><code>_ga_*</code></td><td>Google</td><td>2 años</td><td>Estado de sesión de GA4.</td></tr>
+                <tr><td><code>_gid</code></td><td>Google</td><td>24 horas</td><td>Distingue usuarios.</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+      </div>
+
+      <footer class="cookie-settings__footer">
+        <button id="cookie-settings-reject" type="button" class="btn btn--ghost cookie-settings__btn">Rechazar todas</button>
+        <button id="cookie-settings-save" type="button" class="btn btn--secondary cookie-settings__btn">Guardar preferencias</button>
+        <button id="cookie-settings-accept" type="button" class="btn btn--primary cookie-settings__btn">Aceptar todas</button>
+      </footer>
     </div>
   </div>
 
