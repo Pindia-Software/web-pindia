@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- @include head-base -->
+  <title>Pindia Software | Agencia de Diseño Web y Desarrollo en Santander</title>
+  <meta name="description" content="Agencia de software a medida y diseño web en Santander. Desarrollamos aplicaciones .NET, webs de alto impacto y apps móviles para empresas de Cantabria y España. Presupuesto sin compromiso.">
+  <link rel="canonical" href="https://pindia.es/">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Pindia Software | Agencia de Diseño Web y Desarrollo en Santander">
+  <meta property="og:description" content="Agencia de software a medida y diseño web en Santander. Desarrollamos aplicaciones .NET, webs de alto impacto y apps móviles.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/og-home.webp">
+  <meta property="og:url"         content="https://pindia.es/">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Pindia Software | Agencia de Diseño Web y Desarrollo en Santander">
+  <meta name="twitter:description" content="Agencia de software a medida y diseño web en Santander.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/og-home.webp">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicons/favicon.png">
+  <link rel="manifest"         href="/manifest.webmanifest">
+  <meta name="theme-color"     content="#22293E">
+
+  <!-- Fonts: async load (non render-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+
+  <!-- Preload primer frame del scroll-video — desktop usa 480px, mobile 240px -->
+  <link rel="preload" as="image" href="/assets/videos/frames/frame_0001.webp" media="(min-width: 640px)" fetchpriority="low">
+  <link rel="preload" as="image" href="/assets/videos/frames/frame_0002.webp" media="(min-width: 640px)" fetchpriority="low">
+  <link rel="preload" as="image" href="/assets/videos/frames/frame_0003.webp" media="(min-width: 640px)" fetchpriority="low">
+  <link rel="preload" as="image" href="/assets/videos/frames-mobile/frame_0001.webp" media="(max-width: 639px)" fetchpriority="low">
+
+  <!-- GA4 ID — replace G-XXXXXXXXXX with your measurement ID -->
+  <script>window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';</script>
+
+  <!-- Critical CSS (tokens + base + responsive merged, minified) -->
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260426b">
+  <!-- scroll-video.css: non-blocking (animation kicks in tras carga inicial) -->
+  <link rel="stylesheet" href="/css/scroll-video.min.css?v=20260426b" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/css/scroll-video.min.css?v=20260426b"></noscript>
+
+  <!-- Schema: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Pindia Software",
+    "url": "https://pindia.es",
+    "inLanguage": "es-ES"
+  }
+  </script>
+
+  <!-- Schema: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pindia Software S.L.",
+    "url": "https://pindia.es",
+    "logo": "https://pindia.es/assets/icons/logo-nav.svg",
+    "email": "info@pindia.es",
+    "telephone": "+34942189733"
+  }
+  </script>
+
+  <!-- Schema: LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Pindia Software S.L.",
+    "legalName": "PINDIA SOFTWARE S.L.",
+    "taxID": "B67353748",
+    "url": "https://pindia.es",
+    "logo": "https://pindia.es/assets/icons/logo-nav.svg",
+    "image": "https://pindia.es/assets/img/og-home.webp",
+    "description": "Agencia de software a medida y diseño web en Santander. Desarrollo .NET, aplicaciones web, móviles y presencia digital.",
+    "telephone": "+34942189733",
+    "email": "info@pindia.es",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle Ramón Ramírez 5, 1º",
+      "addressLocality": "Santa Cruz de Bezana",
+      "addressRegion": "Cantabria",
+      "postalCode": "39100",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.4678,
+      "longitude": -3.8003
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }],
+    "areaServed": [
+      {"@type": "AdministrativeArea", "name": "Cantabria"},
+      {"@type": "Country", "name": "España"}
+    ],
+    "knowsAbout": [
+      "Desarrollo de software a medida",
+      "Diseño web",
+      "Aplicaciones móviles",
+      "APIs e integraciones",
+      "Digitalización de empresas",
+      "Tecnología .NET"
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué servicios ofrece Pindia Software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pindia Software ofrece desarrollo de software a medida (.NET), diseño web de alto impacto, aplicaciones móviles (iOS, Android, Windows) y APIs e integraciones. También somos creadores de TrowelApp, un SaaS de gestión para empresas constructoras."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde está ubicada Pindia Software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pindia Software está ubicada en Santa Cruz de Bezana (Cantabria, España), en Calle Ramón Ramírez 5, 1º, 39100. Trabajamos con clientes de toda España."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es TrowelApp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TrowelApp es un software SaaS para la digitalización de empresas constructoras. Incluye gestión de presupuestos, seguimiento económico, planificación, gestión técnica, documentación, planos, facturación y empleados. Disponible desde 0€ por usuario/mes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo puedo contactar con Pindia Software?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Puedes contactar con nosotros por email en info@pindia.es, por teléfono en el (+34) 942 18 97 33, o a través del formulario de contacto en nuestra web. También disponemos de WhatsApp Business."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <!-- @include navbar -->
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- ── HERO ─────────────────────────────────────────────── -->
+    <!--
+      .hero--scroll makes this section 300vh tall.
+      .hero__sticky stays in viewport (position:sticky) while
+      the extra height provides scroll distance for the animation.
+    -->
+    <section class="hero hero--scroll" id="hero-scroll" aria-label="Bienvenida">
+      <div class="hero__sticky">
+
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__grid" aria-hidden="true"></div>
+
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <div class="hero__eyebrow" aria-label="Agencia de software y diseño web en Cantabria">
+                Santa Cruz de Bezana · Cantabria · España
+              </div>
+
+              <h1 class="hero__h1">
+                <span class="hero__h1-line is-active">Diseñamos <em>presencia</em>.</span>
+                <span class="hero__h1-line">Construimos <em>software</em>.</span>
+                <span class="hero__h1-line">Digitalizamos <em>empresas</em>.</span>
+              </h1>
+
+              <div class="hero__sub-stack">
+                <p class="hero__sub hero__sub-line is-active">
+                  Webs que convierten y posicionan. Diseño mobile-first, SEO técnico avanzado y rendimiento medible para que tu marca destaque en Cantabria y toda España.
+                </p>
+                <p class="hero__sub hero__sub-line">
+                  Desarrollo a medida en .NET, web y móvil. Más de 10 años transformando procesos en aplicaciones reales, escalables y mantenibles.
+                </p>
+                <p class="hero__sub hero__sub-line">
+                  Del primer login al último informe. Integramos sistemas, automatizamos procesos y acompañamos a tu equipo en cada paso de la transformación digital.
+                </p>
+              </div>
+
+              <div class="hero__actions">
+                <a href="/contacto/" class="btn btn--primary btn--lg">
+                  Cuéntanos tu idea
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+
+            </div>
+          </div><!-- /.hero__inner -->
+        </div><!-- /.container -->
+
+        <!-- Robot fuera del container: absolute en .hero__sticky,
+             no compite con el grid de texto                        -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__glow"></div>
+
+          <canvas
+            id="scroll-canvas"
+            width="480"
+            height="762">
+          </canvas>
+
+          <div id="scroll-skeleton" class="hero__skeleton" aria-hidden="true">
+            <div class="hero__skeleton-pulse">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M21 12a9 9 0 1 1-6.219-8.56"/>
+              </svg>
+            </div>
+          </div>
+        </div><!-- /.hero__visual -->
+
+        <!-- Scroll hint — fades out after user starts scrolling -->
+        <div id="scroll-hint" class="hero__scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </div>
+
+      </div><!-- /.hero__sticky -->
+    </section>
+
+    <!-- ── ESPECIALIDADES ────────────────────────────────────── -->
+    <section class="section especialidades" id="servicios" aria-labelledby="esp-title">
+      <div class="container">
+
+        <div data-reveal>
+          <span class="section__label">Nuestros servicios</span>
+          <h2 id="esp-title" class="section__headline">Todo lo que tu empresa necesita</h2>
+          <p class="section__sub">
+            Desde el diseño hasta el servidor. Una sola agencia para toda tu presencia digital.
+          </p>
+        </div>
+
+        <div class="especialidades__grid" data-reveal-group>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="service-card__title">Desarrollo software a medida</h3>
+            <p class="service-card__desc">Aplicaciones .NET robustas y escalables: desktop, web, servicios, integraciones y Azure. Soluciones que encajan exactamente con tu proceso.</p>
+            <a href="/servicios/desarrollo-software.html" class="service-card__link">
+              Saber más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3 class="service-card__title">Diseño web y presencia online</h3>
+            <p class="service-card__desc">Webs que generan impacto desde el primer scroll. Diseño mobile-first, SEO técnico avanzado y rendimiento optimizado para convertir visitas en clientes.</p>
+            <a href="/servicios/diseno-web.html" class="service-card__link">
+              Saber más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3 class="service-card__title">Apps móviles</h3>
+            <p class="service-card__desc">Aplicaciones iOS, Android y Windows. Multiplataforma o nativas, con sincronización en la nube y diseño intuitivo para equipos de campo y gestión.</p>
+            <a href="/servicios/apps-mobile-api.html" class="service-card__link">
+              Saber más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h3 class="service-card__title">APIs e integraciones</h3>
+            <p class="service-card__desc">Conectamos tus sistemas. REST APIs, webhooks, integraciones con ERP, CRM, pasarelas de pago o cualquier servicio de terceros que tu negocio necesite.</p>
+            <a href="/servicios/apps-mobile-api.html" class="service-card__link">
+              Saber más
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DISEÑO WEB FEATURED ───────────────────────────────── -->
+    <section class="section diseno-web" aria-labelledby="dw-title">
+      <div class="container">
+        <div class="diseno-web__split">
+
+          <div data-reveal="left">
+            <div class="diseno-web__badge">Nuevo servicio</div>
+            <h2 id="dw-title" class="section__headline">Webs que venden<br><span class="text-accent">desde el primer scroll</span></h2>
+            <p class="section__sub" style="margin-bottom: var(--sp-8)">
+              No hacemos plantillas bonitas. Diseñamos experiencias digitales que posicionan tu marca y convierten visitantes en clientes. SEO, velocidad y accesibilidad desde el día uno.
+            </p>
+
+            <div class="diseno-web__features">
+              <div class="diseno-web__feature">
+                <div class="diseno-web__feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div>
+                  <h3>Rendimiento real</h3>
+                  <p>Core Web Vitals en verde. LCP &lt; 2.5s, CLS &lt; 0.1. Webs rápidas en cualquier dispositivo.</p>
+                </div>
+              </div>
+              <div class="diseno-web__feature">
+                <div class="diseno-web__feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                </div>
+                <div>
+                  <h3>SEO técnico avanzado</h3>
+                  <p>Schema markup, meta estratégicos, optimización local para Cantabria y nacional.</p>
+                </div>
+              </div>
+              <div class="diseno-web__feature">
+                <div class="diseno-web__feature-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                </div>
+                <div>
+                  <h3>Mobile-first siempre</h3>
+                  <p>Diseñado primero para móvil. El 70% de tus visitas llegan desde el teléfono.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: var(--sp-8)">
+              <a href="/servicios/diseno-web.html" class="btn btn--primary btn--lg">Ver servicio de diseño web</a>
+            </div>
+          </div>
+
+          <div data-reveal="right">
+            <div class="browser-frame">
+              <div class="browser-frame__bar" aria-hidden="true">
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__url"></div>
+              </div>
+              <div class="browser-frame__content">
+                <div class="browser-frame__placeholder">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="width:48px;height:48px;opacity:0.3"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                  <span>Portfolio de webs — próximamente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROCESO ───────────────────────────────────────────── -->
+    <section class="section section--alt proceso" aria-labelledby="proceso-title">
+      <div class="container">
+
+        <div class="text-center" data-reveal>
+          <span class="section__label">Cómo trabajamos</span>
+          <h2 id="proceso-title" class="section__headline">Del concepto a producción</h2>
+          <p class="section__sub" style="margin-inline:auto">
+            Un proceso claro, iterativo y sin sorpresas. Tú siempre sabes en qué punto está tu proyecto.
+          </p>
+        </div>
+
+        <div class="proceso__steps" data-reveal-group>
+
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">01</div>
+            <div class="step-card__body">
+              <h3>Entendemos</h3>
+              <p>Reunión de descubrimiento para conocer tu negocio, tus objetivos y a tus usuarios. Sin presuposiciones.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">02</div>
+            <div class="step-card__body">
+              <h3>Diseñamos</h3>
+              <p>Arquitectura, flujos y diseño visual. Todo aprobado contigo antes de escribir una línea de código.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">03</div>
+            <div class="step-card__body">
+              <h3>Desarrollamos</h3>
+              <p>Sprints cortos con demos reales. Código limpio, documentado y probado. Sin deuda técnica oculta.</p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">04</div>
+            <div class="step-card__body">
+              <h3>Lanzamos</h3>
+              <p>Despliegue, formación y soporte post-lanzamiento. El proyecto es tuyo y te dejamos con todas las herramientas.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TROWELAPP ─────────────────────────────────────────── -->
+    <section class="section trowelapp" id="trowelapp" aria-labelledby="trowel-title">
+      <div class="container">
+        <div class="trowelapp__inner">
+
+          <div data-reveal="left">
+            <div class="trowelapp__badge">Producto propio</div>
+            <h2 id="trowel-title" class="trowelapp__title">
+              TrowelApp — el software que digitaliza la construcción
+            </h2>
+            <p class="trowelapp__desc">
+              Diseñado y desarrollado por Pindia, TrowelApp es el SaaS que transforma cómo las empresas constructoras gestionan sus obras. Presupuestos, seguimiento económico, planos, empleados y más — desde el móvil o el PC.
+            </p>
+
+            <div class="trowelapp__features">
+              <div class="trowelapp__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Gestión de presupuestos colaborativa</span>
+              </div>
+              <div class="trowelapp__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Seguimiento económico en tiempo real</span>
+              </div>
+              <div class="trowelapp__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Control de presencia y partes de trabajo</span>
+              </div>
+              <div class="trowelapp__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Gestión de planos y documentación</span>
+              </div>
+              <div class="trowelapp__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>App móvil para trabajo en campo</span>
+              </div>
+              <div class="trowelapp__feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Subvencionable con Kit Digital</span>
+              </div>
+            </div>
+
+            <div class="trowelapp__actions">
+              <a href="/productos/trowelapp.html" class="btn btn--primary btn--lg">Ver TrowelApp</a>
+              <a href="https://trowelapp.com" target="_blank" rel="noopener" class="btn btn--secondary btn--lg">
+                trowelapp.com
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div data-reveal="right">
+            <div class="trowelapp__pricing" aria-label="Precios de TrowelApp">
+              <div class="price-card">
+                <div class="price-card__tier">Free</div>
+                <div class="price-card__price">€0</div>
+                <div class="price-card__unit">por usuario/mes</div>
+              </div>
+              <div class="price-card">
+                <div class="price-card__tier">Basic</div>
+                <div class="price-card__price">€5</div>
+                <div class="price-card__unit">por usuario/mes</div>
+              </div>
+              <div class="price-card is-featured">
+                <div class="price-card__tier">Plus</div>
+                <div class="price-card__price">€20</div>
+                <div class="price-card__unit">por usuario/mes</div>
+              </div>
+              <div class="price-card">
+                <div class="price-card__tier">Premium</div>
+                <div class="price-card__price">€35</div>
+                <div class="price-card__unit">por usuario/mes</div>
+              </div>
+            </div>
+            <p style="font-size:var(--text-xs);color:var(--text-3);margin-top:var(--sp-3);text-align:center">
+              Licencia base desde €99/mes · IVA no incluido
+            </p>
+
+            <div style="margin-top:var(--sp-8);background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-6);">
+              <div style="display:flex;align-items:center;gap:var(--sp-3);margin-bottom:var(--sp-3)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span style="font-size:var(--text-sm);font-weight:var(--w-sb);color:var(--text-1)">Premio Caña Digital 2021</span>
+              </div>
+              <p style="font-size:var(--text-xs);color:var(--text-3);line-height:var(--lh-base)">
+                Ganador de la 1ª edición del premio Caña Digital en la categoría Digitalización y Construcción.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROYECTOS ─────────────────────────────────────────── -->
+    <section class="section section--alt proyectos" id="proyectos" aria-labelledby="proy-title">
+      <div class="container">
+
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:var(--sp-4);margin-bottom:var(--sp-4)" data-reveal>
+          <div>
+            <span class="section__label">Casos de éxito</span>
+            <h2 id="proy-title" class="section__headline">Proyectos que hablan por sí solos</h2>
+          </div>
+          <a href="/proyectos/" class="btn btn--secondary">Ver todos los proyectos</a>
+        </div>
+
+        <div class="proyectos__grid" data-reveal-group>
+
+          <article class="project-card">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <span>Imagen pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Diseño web</span>
+                <span class="project-card__tag">SEO</span>
+              </div>
+              <h3 class="project-card__title">Proyecto web — pendiente</h3>
+              <p class="project-card__desc">Próximamente añadiremos aquí los proyectos de diseño web realizados para nuestros clientes.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>Imagen pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Software a medida</span>
+                <span class="project-card__tag">.NET</span>
+              </div>
+              <h3 class="project-card__title">Aplicación .NET — pendiente</h3>
+              <p class="project-card__desc">Próximamente añadiremos proyectos de software a medida con descripción, tecnologías y resultados.</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                <span>Imagen pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">App móvil</span>
+                <span class="project-card__tag">iOS · Android</span>
+              </div>
+              <h3 class="project-card__title">App móvil — pendiente</h3>
+              <p class="project-card__desc">Próximamente añadiremos proyectos de apps móviles con descripción y capturas de pantalla.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIOS ───────────────────────────────────────── -->
+    <section class="section testimonios" aria-labelledby="test-title">
+      <div class="container">
+
+        <div class="text-center" data-reveal>
+          <span class="section__label">Lo que dicen nuestros clientes</span>
+          <h2 id="test-title" class="section__headline">Resultados que generan confianza</h2>
+        </div>
+
+        <div class="testimonios__grid" data-reveal-group>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__text">
+              "Gran talento técnico y un compromiso diferenciador. Pindia entendió nuestras necesidades desde el primer día y entregó más de lo que esperábamos."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">JM</div>
+              <div>
+                <cite class="testimonial-card__name">José María Rodríguez</cite>
+                <div class="testimonial-card__role">CEO · 4Beats Solutions</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__text">
+              "Profesionalidad, capacidad de entrega y talento. El equipo de Pindia ha sido un socio tecnológico de confianza para nosotros."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">IC</div>
+              <div>
+                <cite class="testimonial-card__name">Iván Cabello</cite>
+                <div class="testimonial-card__role">Expertus Technology</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__text">
+              "Superaron nuestras expectativas con su conocimiento tecnológico y su comunicación clara. Un placer trabajar con un equipo tan comprometido."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">OG</div>
+              <div>
+                <cite class="testimonial-card__name">Osvaldo García</cite>
+                <div class="testimonial-card__role">Würth Elektronik</div>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RECONOCIMIENTOS ───────────────────────────────────── -->
+    <section class="section section--alt reconocimientos" aria-labelledby="rec-title">
+      <div class="container">
+
+        <div class="text-center" data-reveal>
+          <span class="section__label">Reconocimientos</span>
+          <h2 id="rec-title" class="section__headline">Avalados por la industria</h2>
+        </div>
+
+        <div class="reconocimientos__inner">
+          <div class="reconocimientos__list" data-reveal-group>
+
+            <div class="award-card">
+              <div class="award-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <div class="award-card__year">2021</div>
+                <div class="award-card__title">Finalistas Premios Talento Cantabria</div>
+                <div class="award-card__org">Reconocimiento al esfuerzo en proyectos empresariales sólidos y viables en Cantabria</div>
+              </div>
+            </div>
+
+            <div class="award-card">
+              <div class="award-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+              </div>
+              <div>
+                <div class="award-card__year">2021</div>
+                <div class="award-card__title">Premios CEOE-Cepyme Cantabria</div>
+                <div class="award-card__org">Oficina Acelera PYME · Reconocimiento empresarial regional</div>
+              </div>
+            </div>
+
+            <div class="award-card">
+              <div class="award-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div>
+                <div class="award-card__year">2021</div>
+                <div class="award-card__title">Ganadores 1ª Edición Caña Digital</div>
+                <div class="award-card__org">Digitalización y Construcción · TrowelApp</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BLOG PREVIEW ──────────────────────────────────────── -->
+    <section class="section blog-preview" aria-labelledby="blog-title">
+      <div class="container">
+
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:var(--sp-4)" data-reveal>
+          <div>
+            <span class="section__label">Últimas entradas</span>
+            <h2 id="blog-title" class="section__headline">Ideas y novedades</h2>
+          </div>
+          <a href="/blog/" class="btn btn--secondary">Ver todos los artículos</a>
+        </div>
+
+        <div class="blog-preview__grid" data-reveal-group>
+
+          <article class="blog-card">
+            <div class="blog-card__body">
+              <div class="blog-card__date">
+                <time datetime="2021-11-11">11 noviembre 2021</time>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="/blog/posts/cana-digital-2021/">1ª Edición Caña Digital: digitalización y construcción</a>
+              </h3>
+              <p class="blog-card__excerpt">Participamos en el evento inaugural sobre modernización del sector constructor, impulsado por Oficina Acelera PYME CEOE-CEPYME Cantabria.</p>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card__body">
+              <div class="blog-card__date">
+                <time datetime="2021-10-29">29 octubre 2021</time>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="/blog/posts/premios-ceoe-cepyme-2021/">Premios CEOE-Cepyme 2021</a>
+              </h3>
+              <p class="blog-card__excerpt">Pindia asistió a la ceremonia de premios que reconoce los mejores proyectos empresariales de Cantabria. Enhorabuena a todos los premiados.</p>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-card__body">
+              <div class="blog-card__date">
+                <time datetime="2021-10-19">19 octubre 2021</time>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="/blog/posts/finalistas-talento-cantabria/">Somos finalistas en los Premios Talento Cantabria</a>
+              </h3>
+              <p class="blog-card__excerpt">Nos enorgullece anunciar que Pindia Software es finalista en los premios que reconocen el esfuerzo y la viabilidad de proyectos empresariales en la región.</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────────────── -->
+    <section class="cta-final" aria-labelledby="cta-title">
+      <div class="container" style="position:relative;z-index:1">
+        <p class="cta-final__label" data-reveal>¿Tienes un proyecto en mente?</p>
+        <h2 id="cta-title" class="cta-final__title" data-reveal>
+          Cuéntanos tu idea.<br>La hacemos realidad.
+        </h2>
+        <p class="cta-final__sub" data-reveal>
+          Desde una web corporativa hasta una plataforma SaaS. Sin compromiso. Presupuesto en 48 horas.
+        </p>
+        <div data-reveal>
+          <a href="/contacto/" class="btn btn--primary btn--lg">Solicitar presupuesto gratuito</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ (GEO / SEO — visible en HTML, visualmente compacto) ── -->
+    <section class="section" aria-labelledby="faq-title" style="padding-block:var(--sp-16)">
+      <div class="container container--sm">
+        <h2 id="faq-title" class="section__headline text-center" style="margin-bottom:var(--sp-10)" data-reveal>Preguntas frecuentes</h2>
+        <dl style="display:flex;flex-direction:column;gap:var(--sp-4)" data-reveal-group>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-6)">
+            <dt style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);margin-bottom:var(--sp-2)">¿Qué servicios ofrece Pindia Software?</dt>
+            <dd style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base)">Pindia Software ofrece desarrollo de software a medida (.NET), diseño web de alto impacto, aplicaciones móviles (iOS, Android, Windows) y APIs e integraciones. También somos creadores de TrowelApp, un SaaS de gestión para empresas constructoras.</dd>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-6)">
+            <dt style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);margin-bottom:var(--sp-2)">¿Dónde está ubicada Pindia Software?</dt>
+            <dd style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base)">Estamos en Santa Cruz de Bezana (Cantabria, España), en Calle Ramón Ramírez 5, 1º, 39100. Trabajamos con clientes de toda España.</dd>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-6)">
+            <dt style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);margin-bottom:var(--sp-2)">¿Qué es TrowelApp?</dt>
+            <dd style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base)">TrowelApp es un software SaaS para la digitalización de empresas constructoras. Incluye gestión de presupuestos, seguimiento económico, planificación, gestión técnica, documentación, planos, facturación y empleados. Disponible desde 0€ por usuario/mes y subvencionable con Kit Digital.</dd>
+          </div>
+
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-6)">
+            <dt style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);margin-bottom:var(--sp-2)">¿Cuánto cuesta una web con Pindia Software?</dt>
+            <dd style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base)">El presupuesto depende del alcance del proyecto. Ofrecemos presupuesto personalizado y gratuito en menos de 48 horas. Contáctanos y cuéntanos tu idea: sin compromiso.</dd>
+          </div>
+
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <!-- @include footer -->
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <!-- @include cookie-banner -->
+
+  <!-- @include scripts -->
+
+</body>
+</html>

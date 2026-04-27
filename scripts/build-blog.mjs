@@ -40,9 +40,31 @@ const POSTS_OUT = join(ROOT, 'blog', 'posts');
 const PAGE_OUT  = join(ROOT, 'blog', 'page');
 const TAG_OUT   = join(ROOT, 'blog', 'tag');
 const BLOG_OUT  = join(ROOT, 'blog');
+const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
 const ASSET_VER = 'v=20260426b';
+
+// ── Partials (fuente única compartida con build-pages.mjs) ───────────────────
+
+const _partialCache = new Map();
+function loadPartial(name) {
+  if (_partialCache.has(name)) return _partialCache.get(name);
+  const html = readFileSync(join(PARTIALS, `${name}.html`), 'utf8').replace(/\n+$/, '');
+  _partialCache.set(name, html);
+  return html;
+}
+
+function applyPartialVars(html, vars = {}) {
+  // Convención coherente con build-pages.mjs: active="X" → active_X = ' aria-current="page"'
+  if (vars.active) vars[`active_${vars.active}`] = ' aria-current="page"';
+  return html.replace(/\{\{\s*([\w-]+)\s*\}\}/g, (_, k) => vars[k] ?? '');
+}
+
+function indentPartial(block, indent) {
+  if (!indent) return block;
+  return block.split('\n').map((line, i) => (i === 0 || line.length === 0) ? line : indent + line).join('\n');
+}
 
 // ── Utilidades ───────────────────────────────────────────────────────────────
 
@@ -155,129 +177,22 @@ marked.use({ renderer, gfm: true, breaks: false });
 // Idénticos a /blog/index.html para mantener coherencia visual + a11y.
 
 function navHTML(currentPage) {
-  const isActive = (page) => page === currentPage ? ' aria-current="page"' : '';
-  return `
-  <header class="nav" role="banner">
-    <div class="container">
-      <div class="nav__inner">
-
-        <a href="/web-pindia/" class="nav__logo" aria-label="Pindia Software — Inicio">
-          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" width="140" height="56" loading="eager">
-        </a>
-
-        <nav class="nav__links" aria-label="Navegación principal">
-          <a href="/servicios/" class="nav__link"${isActive('servicios')}>Servicios</a>
-          <a href="/proyectos/" class="nav__link"${isActive('proyectos')}>Proyectos</a>
-          <a href="/blog/" class="nav__link"${isActive('blog')}>Blog</a>
-        </nav>
-
-        <div class="nav__actions">
-          <a href="/contacto/" class="btn btn--primary">Hablemos</a>
-          <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-
-      </div>
-    </div>
-  </header>
-
-  <nav id="nav-drawer" class="nav__drawer" aria-label="Menú móvil">
-    <a href="/servicios/" class="nav__link"${isActive('servicios')}>Servicios</a>
-    <a href="/proyectos/" class="nav__link"${isActive('proyectos')}>Proyectos</a>
-    <a href="/blog/" class="nav__link"${isActive('blog')}>Blog</a>
-    <a href="/contacto/" class="btn btn--primary btn--lg" style="width:100%;margin-top:auto;">Hablemos de tu proyecto</a>
-  </nav>`.trim();
+  return indentPartial(applyPartialVars(loadPartial('navbar'), { active: currentPage }), '  ');
 }
 
 function footerHTML() {
-  return `
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-
-      <div class="footer__grid">
-
-        <div class="footer__brand">
-          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" class="footer__logo" width="120" height="48" loading="lazy">
-          <p>Agencia de software a medida y diseño web en Santander. Construimos tu presencia digital desde Cantabria para toda España.</p>
-        </div>
-
-        <nav class="footer__col" aria-label="Servicios">
-          <h3>Servicios</h3>
-          <ul class="footer__links" role="list">
-            <li><a href="/servicios/desarrollo-software.html">Desarrollo software</a></li>
-            <li><a href="/servicios/diseno-web.html">Diseño web</a></li>
-            <li><a href="/servicios/apps-mobile-api.html">Apps móviles</a></li>
-            <li><a href="/servicios/apps-mobile-api.html">APIs e integraciones</a></li>
-          </ul>
-        </nav>
-
-        <nav class="footer__col" aria-label="Empresa">
-          <h3>Empresa</h3>
-          <ul class="footer__links" role="list">
-            <li><a href="/proyectos/">Proyectos</a></li>
-            <li><a href="/productos/trowelapp.html">TrowelApp</a></li>
-            <li><a href="/blog/">Blog</a></li>
-            <li><a href="/contacto/">Contacto</a></li>
-          </ul>
-        </nav>
-
-        <div class="footer__col footer__nap">
-          <h3>Contacto</h3>
-          <address>
-            <a href="tel:+34942189733" class="footer__nap-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
-              (+34) 942 18 97 33
-            </a>
-            <a href="mailto:info@pindia.es" class="footer__nap-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              info@pindia.es
-            </a>
-            <a href="https://wa.me/34XXXXXXXXX" target="_blank" rel="noopener" class="footer__nap-item">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:var(--accent)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              WhatsApp Business
-            </a>
-            <span class="footer__nap-item" style="cursor:default">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Calle Ramón Ramírez 5, 1º, 39100 Santa Cruz de Bezana</span>
-            </span>
-          </address>
-        </div>
-
-      </div>
-
-      <div class="footer__bottom">
-        <p class="footer__copy">© 2024 PINDIA SOFTWARE S.L. · CIF B67353748</p>
-        <nav class="footer__legal" aria-label="Páginas legales">
-          <a href="/aviso-legal.html">Aviso legal</a>
-          <a href="/politica-privacidad.html">Política de privacidad</a>
-          <a href="/politica-cookies.html">Política de cookies</a>
-        </nav>
-      </div>
-
-    </div>
-  </footer>`.trim();
+  return indentPartial(loadPartial('footer'), '  ');
 }
 
 function cookieBannerHTML() {
-  return `
-  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
-    <div class="cookie-banner__inner">
-      <p class="cookie-banner__text">
-        Usamos cookies analíticas (Google Analytics 4) para mejorar tu experiencia. Por defecto están desactivadas. Puedes aceptarlas o rechazarlas. Más info en nuestra <a href="/politica-cookies.html">política de cookies</a>.
-      </p>
-      <div class="cookie-banner__actions">
-        <button id="cookie-reject" class="btn btn--secondary">Rechazar</button>
-        <button id="cookie-accept" class="btn btn--primary">Aceptar cookies</button>
-      </div>
-    </div>
-  </div>`.trim();
+  return indentPartial(loadPartial('cookie-banner'), '  ');
 }
 
 function commonHead({ title, description, canonical, ogImage, extraSchema = [], prev = '', next = '' }) {
+  const headBase   = indentPartial(loadPartial('head-base'),   '  ');
+  const headAssets = indentPartial(loadPartial('head-assets'), '  ');
   return `
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  ${headBase}
   <title>${escapeHTML(title)}</title>
   <meta name="description" content="${escapeHTML(description)}">
   <link rel="canonical" href="${canonical}">
@@ -300,24 +215,7 @@ function commonHead({ title, description, canonical, ogImage, extraSchema = [], 
   <meta name="twitter:description" content="${escapeHTML(description)}">
   <meta name="twitter:image"       content="${ogImage}">
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png">
-  <link rel="apple-touch-icon" href="/assets/favicons/favicon.png">
-  <link rel="manifest"         href="/manifest.webmanifest">
-  <meta name="theme-color"     content="#22293E">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
-
-  <!-- GA4 -->
-  <script>window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';</script>
-
-  <!-- Styles -->
-  <link rel="stylesheet" href="/css/styles.min.css?${ASSET_VER}">
+  ${headAssets}
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Blog Pindia Software" href="/blog/rss.xml">
@@ -327,38 +225,7 @@ ${extraSchema.map(s => `  <script type="application/ld+json">${s}</script>`).joi
 // ── CTA Template ────────────────────────────────────────────────────────────
 
 function postCTAHTML() {
-  return `
-        <section class="post-cta" aria-labelledby="post-cta-title" style="margin-top:var(--sp-16);background:#0F172A;border:1px solid #1E293B;border-radius:var(--r-xl);overflow:hidden;max-width:880px;margin-inline:auto;position:relative" data-reveal>
-          <div class="post-cta__grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:0">
-            <div class="post-cta__media" style="position:relative;aspect-ratio:1/1;background:#0F172A">
-              <img src="/assets/img/blog/cta/robot-ayuda.webp" alt="Robot de Pindia con los brazos abiertos ofreciendo ayuda" loading="lazy" decoding="async" width="600" height="600" style="width:100%;height:100%;object-fit:cover;display:block">
-            </div>
-            <div class="post-cta__body" style="padding:var(--sp-10) var(--sp-10);color:#F8FAFC">
-              <span style="display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:var(--w-sb);letter-spacing:.08em;text-transform:uppercase;color:#FF7A73;margin-bottom:var(--sp-3)">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-                Pindia te acompaña
-              </span>
-              <h2 id="post-cta-title" style="font-size:var(--text-2xl);font-weight:var(--w-sb);line-height:1.2;color:#F8FAFC;margin-bottom:var(--sp-3)">Te echamos una mano con tu proyecto</h2>
-              <p style="font-size:var(--text-sm);color:#CBD5E1;line-height:1.65;margin-bottom:var(--sp-6)">
-                Auditorías, rediseños, integraciones o desarrollo a medida: ponemos nuestro equipo a tu disposición para resolver lo que tu web necesita.
-              </p>
-              <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center">
-                <a href="/contacto/" class="btn btn--primary">
-                  Cuéntanos tu caso
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-                </a>
-                <a href="/servicios/" style="font-size:var(--text-sm);font-weight:var(--w-md);color:#F8FAFC;text-decoration:underline;text-decoration-color:rgba(248,250,252,.35);text-underline-offset:4px">Ver servicios</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <style>
-          @media (max-width: 768px) {
-            .post-cta__grid { grid-template-columns: 1fr !important; }
-            .post-cta__media { aspect-ratio: 16/10 !important; }
-            .post-cta__body { padding: var(--sp-8) var(--sp-6) !important; }
-          }
-        </style>`;
+  return '\n        ' + indentPartial(loadPartial('cta-blog'), '        ');
 }
 
 // ── Plantilla post individual ────────────────────────────────────────────────

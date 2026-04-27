@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- @include head-base -->
+  <title>Proyectos de Diseño Web y Software a Medida | Pindia Software Santander</title>
+  <meta name="description" content="Portfolio de proyectos de Pindia Software: diseño web, software a medida .NET y apps móviles para empresas en Santander y toda España.">
+  <link rel="canonical" href="https://pindia.es/proyectos/">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Proyectos de Diseño Web y Software a Medida | Pindia Software Santander">
+  <meta property="og:description" content="Portfolio de proyectos de Pindia Software: diseño web, software a medida .NET y apps móviles para empresas.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/og-home.webp">
+  <meta property="og:url"         content="https://pindia.es/proyectos/">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Proyectos | Pindia Software Santander">
+  <meta name="twitter:description" content="Portfolio de diseño web, software a medida y apps móviles. Trabajo real para clientes reales.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/og-home.webp">
+
+  <!-- @include head-assets -->
+
+  <!-- Filtros CSS-only: ocultar/mostrar cards por categoría -->
+  <style>
+    .portfolio-filters { display:flex; flex-wrap:wrap; gap:.75rem; margin-bottom:2.5rem; }
+    .portfolio-filters input[type="radio"] { position:absolute; opacity:0; width:0; height:0; }
+    .portfolio-filters label {
+      display:inline-flex; align-items:center; gap:.4rem;
+      padding:.5rem 1.25rem;
+      border:1px solid var(--border);
+      border-radius:var(--r-full);
+      font-size:var(--text-sm);
+      font-weight:var(--w-md);
+      color:var(--text-2);
+      cursor:pointer;
+      transition:background .15s, color .15s, border-color .15s;
+    }
+    .portfolio-filters input[type="radio"]:checked + label {
+      background:var(--accent);
+      color:#fff;
+      border-color:var(--accent);
+    }
+    .portfolio-filters label:hover { border-color:var(--accent); color:var(--text-1); }
+
+    /* Mostrar todo por defecto */
+    #filter-all:checked ~ .proyectos__grid .project-card { display:block; }
+    #filter-web:checked ~ .proyectos__grid .project-card { display:none; }
+    #filter-web:checked ~ .proyectos__grid .project-card[data-cat="web"] { display:block; }
+    #filter-software:checked ~ .proyectos__grid .project-card { display:none; }
+    #filter-software:checked ~ .proyectos__grid .project-card[data-cat="software"] { display:block; }
+    #filter-apps:checked ~ .proyectos__grid .project-card { display:none; }
+    #filter-apps:checked ~ .proyectos__grid .project-card[data-cat="apps"] { display:block; }
+  </style>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://pindia.es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Proyectos",
+        "item": "https://pindia.es/proyectos/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pindia Software S.L.",
+    "url": "https://pindia.es",
+    "logo": "https://pindia.es/assets/icons/logo-nav.svg",
+    "email": "info@pindia.es",
+    "telephone": "+34942189733"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <!-- @include navbar active="proyectos" -->
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- ── HERO PEQUEÑO ──────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-hero-title" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:var(--sp-16);background:var(--bg-main);">
+      <div class="container">
+        <nav aria-label="Ruta de navegación" style="margin-bottom:var(--sp-6)">
+          <ol style="list-style:none;padding:0;margin:0;display:flex;gap:var(--sp-2);font-size:var(--text-sm);color:var(--text-3)">
+            <li><a href="/web-pindia/" style="color:var(--text-3);text-decoration:none;">Inicio</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li style="color:var(--text-1)">Proyectos</li>
+          </ol>
+        </nav>
+        <div data-reveal style="max-width:760px">
+          <span class="section__label">Portfolio</span>
+          <h1 id="page-hero-title" class="section__headline" style="font-size:clamp(2rem,5vw,3.5rem)">Nuestros proyectos</h1>
+          <p class="section__sub">
+            Trabajo real para clientes reales. Diseño web, software a medida .NET y apps móviles para empresas de Cantabria y España. Más de 50 proyectos entregados y contando.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PORTFOLIO CON FILTROS ─────────────────────────────── -->
+    <section class="section" aria-labelledby="portfolio-title">
+      <div class="container">
+
+        <h2 id="portfolio-title" class="sr-only">Listado de proyectos</h2>
+
+        <!-- Filtros CSS-only -->
+        <div class="portfolio-filters" role="group" aria-label="Filtrar proyectos por categoría">
+
+          <input type="radio" name="portfolio-filter" id="filter-all" checked>
+          <label for="filter-all">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            Todos
+          </label>
+
+          <input type="radio" name="portfolio-filter" id="filter-web">
+          <label for="filter-web">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            Diseño web
+          </label>
+
+          <input type="radio" name="portfolio-filter" id="filter-software">
+          <label for="filter-software">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Software
+          </label>
+
+          <input type="radio" name="portfolio-filter" id="filter-apps">
+          <label for="filter-apps">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            Apps
+          </label>
+
+        </div>
+
+        <!-- Grid de proyectos -->
+        <div class="proyectos__grid" data-reveal-group>
+
+          <!-- WEB 1 -->
+          <article class="project-card" data-cat="web">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <span>Asset pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Diseño web</span>
+                <span class="project-card__tag">SEO</span>
+              </div>
+              <h3 class="project-card__title">Proyecto web corporativo — pendiente</h3>
+              <p class="project-card__desc">Diseño y desarrollo web corporativo con SEO técnico, optimización de rendimiento y adaptación mobile-first. Imágenes y detalles del cliente en revisión.</p>
+            </div>
+          </article>
+
+          <!-- WEB 2 -->
+          <article class="project-card" data-cat="web">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <span>Asset pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Diseño web</span>
+                <span class="project-card__tag">E-commerce</span>
+              </div>
+              <h3 class="project-card__title">Tienda online — pendiente</h3>
+              <p class="project-card__desc">Diseño de e-commerce con catálogo de productos, pasarela de pago integrada y panel de gestión de pedidos. Capturas pendientes de aprobación del cliente.</p>
+            </div>
+          </article>
+
+          <!-- SOFTWARE 1 -->
+          <article class="project-card" data-cat="software">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>Asset pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Software a medida</span>
+                <span class="project-card__tag">.NET</span>
+              </div>
+              <h3 class="project-card__title">Aplicación de gestión .NET — pendiente</h3>
+              <p class="project-card__desc">Aplicación de escritorio para gestión interna desarrollada con .NET y SQL Server. Integración con sistemas ERP del cliente. Detalles pendientes de aprobación.</p>
+            </div>
+          </article>
+
+          <!-- SOFTWARE 2 -->
+          <article class="project-card" data-cat="software">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>Asset pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Software a medida</span>
+                <span class="project-card__tag">Azure</span>
+                <span class="project-card__tag">API REST</span>
+              </div>
+              <h3 class="project-card__title">Plataforma cloud Azure — pendiente</h3>
+              <p class="project-card__desc">Plataforma SaaS desarrollada con ASP.NET Core y desplegada en Azure. Arquitectura de microservicios con CI/CD automatizado. Imágenes pendientes de aprobación.</p>
+            </div>
+          </article>
+
+          <!-- APPS 1 -->
+          <article class="project-card" data-cat="apps">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                <span>Asset pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">App móvil</span>
+                <span class="project-card__tag">iOS · Android</span>
+              </div>
+              <h3 class="project-card__title">App de gestión móvil — pendiente</h3>
+              <p class="project-card__desc">Aplicación multiplataforma iOS y Android desarrollada con .NET MAUI para gestión de equipos en campo. Sincronización en tiempo real con backend Azure.</p>
+            </div>
+          </article>
+
+          <!-- APPS 2 -->
+          <article class="project-card" data-cat="apps">
+            <div class="project-card__thumb">
+              <div class="project-card__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                <span>Asset pendiente del cliente</span>
+              </div>
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver proyecto</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">App móvil</span>
+                <span class="project-card__tag">Windows · Android</span>
+                <span class="project-card__tag">.NET MAUI</span>
+              </div>
+              <h3 class="project-card__title">App de control de presencia — pendiente</h3>
+              <p class="project-card__desc">Aplicación de control de presencia y partes de trabajo para empresa del sector industrial. Disponible en Windows, Android e iOS. Capturas pendientes de aprobación.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Nota de portfolio -->
+        <p style="text-align:center;font-size:var(--text-sm);color:var(--text-3);margin-top:var(--sp-8)" data-reveal>
+          Estamos añadiendo los proyectos completados con los activos aprobados por cada cliente. Si quieres ver ejemplos de trabajo real, <a href="/contacto/" style="color:var(--accent);text-decoration:none;">contacta con nosotros</a>.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────────────── -->
+    <section class="cta-final" aria-labelledby="cta-title">
+      <div class="container" style="position:relative;z-index:1">
+        <p class="cta-final__label" data-reveal>¿Tu empresa podría ser el siguiente caso de éxito?</p>
+        <h2 id="cta-title" class="cta-final__title" data-reveal>
+          Construyamos algo<br>juntos.
+        </h2>
+        <p class="cta-final__sub" data-reveal>
+          Cuéntanos tu proyecto. Presupuesto personalizado en menos de 48 horas, sin compromiso y sin letra pequeña.
+        </p>
+        <div data-reveal>
+          <a href="/contacto/" class="btn btn--primary btn--lg">Solicitar presupuesto gratuito</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <!-- @include footer -->
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <!-- @include cookie-banner -->
+
+  <!-- @include scripts -->
+
+</body>
+</html>

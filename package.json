@@ -2,11 +2,12 @@
   "name": "web-pindia",
   "private": true,
   "scripts": {
+    "build:pages": "node scripts/build-pages.mjs",
     "build:blog": "node scripts/build-blog.mjs",
     "minify:css": "csso -i css/styles.css -o css/styles.min.css && csso -i css/scroll-video.css -o css/scroll-video.min.css",
     "minify:js": "terser js/main.js -c passes=2 -m --comments=false -o js/main.min.js",
     "minify": "npm run minify:css && npm run minify:js",
-    "build": "npm run build:blog && npm run minify"
+    "build": "npm run build:pages && npm run build:blog && npm run minify"
   },
   "devDependencies": {
     "csso-cli": "^4.0.2",

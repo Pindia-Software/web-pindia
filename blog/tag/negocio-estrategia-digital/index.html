@@ -32,17 +32,17 @@
   <link rel="manifest"         href="/manifest.webmanifest">
   <meta name="theme-color"     content="#22293E">
 
-  <!-- Fonts -->
+  <!-- Fonts: async load (non render-blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
 
-  <!-- GA4 -->
+  <!-- GA4 ID — replace G-XXXXXXXXXX with your measurement ID -->
   <script>window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';</script>
 
-  <!-- Styles -->
+  <!-- Critical CSS (tokens + base + responsive merged, minified) -->
   <link rel="stylesheet" href="/css/styles.min.css?v=20260426b">
 
   <!-- RSS -->
@@ -71,8 +71,14 @@
 
         <div class="nav__actions">
           <a href="/contacto/" class="btn btn--primary">Hablemos</a>
-          <button class="nav__toggle" aria-expanded="false" aria-controls="nav-drawer" aria-label="Abrir menú">
-            <span></span><span></span><span></span>
+          <button
+            class="nav__toggle"
+            aria-expanded="false"
+            aria-controls="nav-drawer"
+            aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
 
@@ -80,6 +86,7 @@
     </div>
   </header>
 
+  <!-- Mobile drawer -->
   <nav id="nav-drawer" class="nav__drawer" aria-label="Menú móvil">
     <a href="/servicios/" class="nav__link">Servicios</a>
     <a href="/proyectos/" class="nav__link">Proyectos</a>
@@ -367,7 +374,12 @@
     </div>
   </footer>
 
-  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <div
+    id="cookie-banner"
+    class="cookie-banner"
+    role="dialog"
+    aria-live="polite"
+    aria-label="Aviso de cookies">
     <div class="cookie-banner__inner">
       <p class="cookie-banner__text">
         Usamos cookies analíticas (Google Analytics 4) para mejorar tu experiencia. Por defecto están desactivadas. Puedes aceptarlas o rechazarlas. Más info en nuestra <a href="/politica-cookies.html">política de cookies</a>.

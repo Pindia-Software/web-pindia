@@ -1,0 +1,38 @@
+<header class="nav" role="banner">
+  <div class="container">
+    <div class="nav__inner">
+
+      <a href="/web-pindia/" class="nav__logo" aria-label="Pindia Software — Inicio">
+        <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" width="140" height="56" loading="eager">
+      </a>
+
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="/servicios/" class="nav__link"{{active_servicios}}>Servicios</a>
+        <a href="/proyectos/" class="nav__link"{{active_proyectos}}>Proyectos</a>
+        <a href="/blog/" class="nav__link"{{active_blog}}>Blog</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="/contacto/" class="btn btn--primary">Hablemos</a>
+        <button
+          class="nav__toggle"
+          aria-expanded="false"
+          aria-controls="nav-drawer"
+          aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<nav id="nav-drawer" class="nav__drawer" aria-label="Menú móvil">
+  <a href="/servicios/" class="nav__link"{{active_servicios}}>Servicios</a>
+  <a href="/proyectos/" class="nav__link"{{active_proyectos}}>Proyectos</a>
+  <a href="/blog/" class="nav__link"{{active_blog}}>Blog</a>
+  <a href="/contacto/" class="btn btn--primary btn--lg" style="width:100%;margin-top:auto;">Hablemos de tu proyecto</a>
+</nav>
