@@ -573,6 +573,27 @@ ul, ol { list-style: none; }
   pointer-events: auto;
 }
 
+.hero__h1--animated .hero__h1-line::after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 0.85em;
+  background: var(--accent);
+  margin-left: 6px;
+  vertical-align: -0.08em;
+  opacity: 0;
+}
+
+.hero__h1--animated .hero__h1-line.is-typing::after,
+.hero__h1--animated .hero__h1-line.is-typed.is-active::after {
+  opacity: 1;
+  animation: hero-caret-blink 0.85s steps(2) infinite;
+}
+
+@keyframes hero-caret-blink {
+  to { opacity: 0; }
+}
+
 .hero__sub-stack {
   display: grid;
   margin-bottom: var(--sp-10);

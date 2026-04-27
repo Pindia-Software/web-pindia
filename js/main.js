@@ -512,6 +512,49 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
   const heroSubLines = section ? section.querySelectorAll('.hero__sub-line') : [];
   let lastLineIndex = -1;
 
+  /* Typewriter setup: snapshot text-node content per h1 line, then empty
+     them. Markup like <em> is preserved; chars stream back in document
+     order on first activation. Skip line 0 — visible from page load. */
+  heroLines.forEach((line, i) => {
+    if (i === 0) {
+      line._typed = true;
+      return;
+    }
+    const nodes = [];
+    const walker = document.createTreeWalker(line, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = walker.nextNode())) {
+      nodes.push({ node: n, full: n.nodeValue });
+      n.nodeValue = '';
+    }
+    line._typeNodes = nodes;
+    line._typed = false;
+  });
+
+  function playTypewriter(line) {
+    if (!line || line._typed || !line._typeNodes) return;
+    line._typed = true;
+    line.classList.add('is-typing');
+    const nodes = line._typeNodes;
+    const SPEED = 70;
+    let nodeIdx = 0, charIdx = 0;
+    function step() {
+      while (nodeIdx < nodes.length && charIdx >= nodes[nodeIdx].full.length) {
+        nodeIdx++;
+        charIdx = 0;
+      }
+      if (nodeIdx >= nodes.length) {
+        line.classList.remove('is-typing');
+        line.classList.add('is-typed');
+        return;
+      }
+      const cur = nodes[nodeIdx];
+      cur.node.nodeValue = cur.full.slice(0, ++charIdx);
+      setTimeout(step, SPEED);
+    }
+    step();
+  }
+
   if (!section || !canvas) return;
 
   const ctx         = canvas.getContext('2d', { alpha: true });
@@ -611,6 +654,7 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
         heroLines.forEach((el, i) => el.classList.toggle('is-active', i === idx));
         heroSubLines.forEach((el, i) => el.classList.toggle('is-active', i === idx));
         lastLineIndex = idx;
+        playTypewriter(heroLines[idx]);
       }
     }
   }
