@@ -175,9 +175,23 @@
     });
   }, options);
 
-  document.querySelectorAll('[data-reveal], [data-reveal-group]').forEach(el => {
-    observer.observe(el);
-  });
+  const reveals = document.querySelectorAll('[data-reveal], [data-reveal-group]');
+
+  const revealIfInViewport = () => {
+    const vh = window.innerHeight;
+    reveals.forEach(el => {
+      if (el.classList.contains('is-visible')) return;
+      const r = el.getBoundingClientRect();
+      if (r.top < vh && r.bottom > 0) {
+        el.classList.add('is-visible');
+        observer.unobserve(el);
+      }
+    });
+  };
+
+  reveals.forEach(el => observer.observe(el));
+  revealIfInViewport();
+  window.addEventListener('load', revealIfInViewport, { once: true });
 })();
 
 /* ── Cookie banner + settings modal (RGPD/AEPD) ── */
