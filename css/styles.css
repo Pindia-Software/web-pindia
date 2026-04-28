@@ -744,6 +744,9 @@ ul, ol { list-style: none; }
     box-shadow var(--dur-base);
   position: relative;
   overflow: hidden;
+}
+.service-card:has(.service-card__link),
+.service-card:has(a) {
   cursor: pointer;
 }
 .service-card::before {
@@ -2320,6 +2323,9 @@ ul, ol { list-style: none; }
 @media (min-width: 1024px) {
   .especialidades__grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .especialidades__grid--3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .proyectos__grid {
