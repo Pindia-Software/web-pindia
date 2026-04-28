@@ -1,3 +1,4 @@
-# Construction mode — block all indexing
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://pindia.es/sitemap.xml

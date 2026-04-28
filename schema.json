@@ -1,0 +1,32 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pindia Software",
+  "url": "https://pindia.es",
+  "logo": "https://pindia.es/assets/img/og-home.webp",
+  "description": "Agencia de software a medida y diseño web en Santander. Desarrollamos aplicaciones .NET, webs de alto impacto y apps móviles.",
+  "sameAs": [
+    "https://linkedin.com/company/pindia-software",
+    "https://github.com/pindia"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ramón Ramírez 5, Primero. Santa Cruz de Bezana",
+    "addressLocality": "Santa Cruz de Bezana",
+    "addressRegion": "Cantabria",
+    "postalCode": "39100",
+    "addressCountry": "ES"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Sales",
+    "email": "info@pindia.es"
+  },
+  "areaServed": "ES",
+  "knowsAbout": [
+    "Web Design",
+    "Software Development",
+    "Mobile Apps",
+    ".NET Applications"
+  ]
+}
