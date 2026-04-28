@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- @include head-base -->
+  <title>Caso de éxito: El Camino de Gaudí — Branding y web | Pindia Software</title>
+  <meta name="description" content="Cómo creamos la marca y la web de El Camino de Gaudí: logotipo C+G entrelazadas, arquitectura Vive · Explora · Sueña, hub de las tres rutas y captación de socios.">
+  <link rel="canonical" href="https://pindia.es/proyectos/el-camino-de-gaudi.html">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Caso de éxito: El Camino de Gaudí | Pindia Software">
+  <meta property="og:description" content="Identidad de marca y web corporativa para la asociación que une los tres edificios de Gaudí fuera de Cataluña: Comillas, León y Astorga.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/case-camino-gaudi-cover.webp">
+  <meta property="og:url"         content="https://pindia.es/proyectos/el-camino-de-gaudi.html">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Caso de éxito: El Camino de Gaudí | Pindia Software">
+  <meta name="twitter:description" content="Branding y web para la asociación que une las tres obras de Gaudí fuera de Cataluña. Logotipo C+G entrelazadas y arquitectura Vive · Explora · Sueña.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/case-camino-gaudi-cover.webp">
+
+  <!-- @include head-assets -->
+
+  <!-- Estilos específicos de la página de caso de éxito -->
+  <style>
+    .case-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      padding: var(--sp-6) var(--sp-8);
+      margin-top: var(--sp-8);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+    }
+    .case-meta__item { display: flex; flex-direction: column; gap: 4px; }
+    .case-meta__label {
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+    }
+    .case-meta__value {
+      font-size: var(--text-base);
+      font-weight: var(--w-md);
+      color: var(--text-1);
+    }
+    .case-meta__value a { color: var(--accent); text-decoration: none; }
+    .case-meta__value a:hover { text-decoration: underline; }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--sp-6) 0 0;
+      display: grid;
+      gap: var(--sp-3);
+    }
+    .check-list li {
+      display: flex;
+      gap: var(--sp-3);
+      align-items: flex-start;
+      color: var(--text-2);
+      font-size: var(--text-base);
+      line-height: var(--lh-base);
+    }
+    .check-list li::before {
+      content: "";
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      background: rgba(232 65 58 / 0.15);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8413A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Chips de stack y etiquetas */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .chip-row .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .45rem 1rem;
+      border-radius: var(--r-full);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      font-size: var(--text-sm);
+      font-weight: var(--w-md);
+      color: var(--text-2);
+    }
+    .chip-row .chip--accent {
+      background: rgba(232 65 58 / 0.08);
+      color: var(--accent);
+      border-color: rgba(232 65 58 / 0.25);
+    }
+
+    /* Galería del caso */
+    .case-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) {
+      .case-gallery { grid-template-columns: repeat(2, 1fr); }
+    }
+    .case-gallery__item {
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      background: var(--bg-card);
+      aspect-ratio: 16 / 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-3);
+      font-size: var(--text-sm);
+    }
+    .case-gallery__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .case-gallery__placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--sp-2);
+      color: var(--text-3);
+      text-align: center;
+      padding: var(--sp-4);
+    }
+    .case-gallery__placeholder svg { width: 36px; height: 36px; opacity: .6; }
+
+    /* Bloque dedicado al logotipo */
+    .logo-split {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-12);
+      align-items: center;
+    }
+    @media (min-width: 900px) {
+      .logo-split { grid-template-columns: 1fr 1fr; gap: var(--sp-16); }
+    }
+    .logo-split__visual {
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      background: var(--bg-card);
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .logo-split__visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .logo-split__placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--sp-2);
+      color: var(--text-3);
+      font-size: var(--text-sm);
+      text-align: center;
+      padding: var(--sp-6);
+    }
+    .logo-split__placeholder svg { width: 48px; height: 48px; opacity: .55; }
+
+    /* Tarjetas de las tres rutas */
+    .rutas-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) {
+      .rutas-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .ruta-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8) var(--sp-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-3);
+    }
+    .ruta-card__city {
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    .ruta-card__title {
+      font-size: var(--text-xl);
+      font-weight: var(--w-bd);
+      color: var(--text-1);
+      margin: 0;
+    }
+    .ruta-card__claim {
+      font-size: var(--text-base);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+    .ruta-card__link {
+      margin-top: auto;
+      font-size: var(--text-sm);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: var(--w-md);
+    }
+    .ruta-card__link:hover { text-decoration: underline; }
+
+    /* Pilares Vive · Explora · Sueña */
+    .pilar-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) {
+      .pilar-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .pilar-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8);
+    }
+    .pilar-card__title {
+      font-size: var(--text-2xl);
+      font-weight: var(--w-bd);
+      color: var(--accent);
+      margin: 0 0 var(--sp-3);
+    }
+    .pilar-card__desc {
+      font-size: var(--text-base);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+  </style>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio",    "item": "https://pindia.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://pindia.es/proyectos/" },
+      { "@type": "ListItem", "position": 3, "name": "El Camino de Gaudí", "item": "https://pindia.es/proyectos/el-camino-de-gaudi.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: CreativeWork (caso de éxito) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "El Camino de Gaudí — Branding y web corporativa",
+    "description": "Diseño de logotipo, identidad de marca, diseño web, desarrollo y mantenimiento del sitio de la Asociación El Camino de Gaudí, que une los tres únicos edificios de Antoni Gaudí fuera de Cataluña: El Capricho de Gaudí (Comillas), Casa Botines (León) y Palacio Gaudí (Astorga).",
+    "url": "https://pindia.es/proyectos/el-camino-de-gaudi.html",
+    "image": "https://pindia.es/assets/img/case-camino-gaudi-cover.webp",
+    "author":  { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "creator": { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "datePublished": "2024-07-12",
+    "inLanguage": "es-ES",
+    "keywords": "branding, diseño de logotipo, web corporativa, sector cultural, turismo, WordPress, Elementor, Antoni Gaudí, modernismo",
+    "about": [
+      "Branding", "Diseño de logotipo", "Diseño web", "Sector cultural", "Turismo", "WordPress", "Elementor", "Antoni Gaudí"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <!-- @include navbar active="proyectos" -->
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- ── HERO PEQUEÑO ──────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-hero-title" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:var(--sp-16);background:var(--bg-main);">
+      <div class="container">
+        <nav aria-label="Ruta de navegación" style="margin-bottom:var(--sp-6)">
+          <ol style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--sp-2);font-size:var(--text-sm);color:var(--text-3)">
+            <li><a href="/web-pindia/" style="color:var(--text-3);text-decoration:none;">Inicio</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li><a href="/proyectos/" style="color:var(--text-3);text-decoration:none;">Proyectos</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li style="color:var(--text-1)">El Camino de Gaudí</li>
+          </ol>
+        </nav>
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Caso de éxito · Branding + Web corporativa</span>
+          <h1 id="page-hero-title" class="section__headline" style="font-size:clamp(2rem,5vw,3.5rem)">
+            <span class="text-accent">El Camino de Gaudí</span>: sigue las huellas de su legado
+          </h1>
+          <p class="section__sub">
+            La Asociación El Camino de Gaudí nace para impulsar la figura de Antoni Gaudí como genio indiscutible del modernismo a través de un recorrido cultural que conecta sus tres únicas obras fuera de Cataluña: El Capricho de Gaudí (Comillas), Casa Botines (León) y Palacio Gaudí (Astorga). Pindia diseñó el logotipo, la identidad visual y el sitio web que actúa como hub del proyecto y como vehículo de captación de socios y amigos.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);margin-top:var(--sp-8)">
+            <a href="https://www.elcaminodegaudi.com" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Visitar web ↗</a>
+            <a href="/contacto/" class="btn btn--secondary btn--lg">Quiero algo así</a>
+          </div>
+        </div>
+
+        <div class="case-meta" data-reveal>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Cliente</span>
+            <span class="case-meta__value">Asociación El Camino de Gaudí</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Sector</span>
+            <span class="case-meta__value">Cultural · Turismo</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Ámbito</span>
+            <span class="case-meta__value">Cantabria + Castilla y León</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Año</span>
+            <span class="case-meta__value">2024</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Alcance</span>
+            <span class="case-meta__value">Branding · Diseño · Desarrollo · Mantenimiento</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">URL</span>
+            <span class="case-meta__value"><a href="https://www.elcaminodegaudi.com" target="_blank" rel="noopener">elcaminodegaudi.com ↗</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EL RETO ───────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="reto-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">El reto</span>
+          <h2 id="reto-title" class="section__headline">Lanzar una marca y un hub para <span class="text-accent">tres rutas, un mismo legado</span></h2>
+          <p class="section__sub">
+            El proyecto partía de cero: una iniciativa cultural recién creada, promovida por los responsables de los tres edificios, sin marca propia y sin presencia digital. La asociación necesitaba una identidad que articulara el relato de las tres rutas, conectara con los sitios hermanos de cada monumento y posicionara al Camino como referente cultural en torno al legado de Gaudí.
+          </p>
+          <p style="color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-4)">
+            Tres objetivos no negociables marcaron el proyecto:
+          </p>
+          <ul class="check-list">
+            <li><strong>Identidad propia</strong> que conviviera con las marcas de los tres monumentos sin solaparse, y que sirviera como paraguas reconocible.</li>
+            <li><strong>Hub de las tres rutas</strong>: un punto de entrada único capaz de derivar a las webs hermanas (<a href="https://casabotines.es" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">casabotines.es</a>, <a href="https://palaciodegaudi.es" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">palaciodegaudi.es</a>, <a href="https://elcaprichodegaudi.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">elcaprichodegaudi.com</a>) sin perder protagonismo.</li>
+            <li><strong>Captación de comunidad</strong>: socios corporativos y un Club de Amigos como CTA principal, frente al modelo transaccional clásico de venta de entradas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO VISUAL ───────────────────────────────────────── -->
+    <section class="section section--alt" aria-label="Captura de la web">
+      <div class="container">
+        <div data-reveal>
+          <div class="browser-frame">
+            <div class="browser-frame__bar" aria-hidden="true">
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__url">elcaminodegaudi.com</div>
+            </div>
+            <div class="browser-frame__content">
+              <img src="/assets/img/case-camino-gaudi-cover.webp" alt="Captura del sitio de El Camino de Gaudí: portada con el claim Sigue las huellas de su legado y acceso a las tres rutas" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DISEÑO DE LOGOTIPO ────────────────────────────────── -->
+    <section class="section" aria-labelledby="logo-title">
+      <div class="container">
+        <div class="logo-split">
+
+          <div data-reveal="left">
+            <span class="section__label">Diseño de logotipo</span>
+            <h2 id="logo-title" class="section__headline">Una <span class="text-accent">C</span> y una <span class="text-accent">G</span> que dibujan un camino</h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              El símbolo del proyecto resume su concepto en una sola pieza gráfica: una <strong>C</strong> de <em>Camino</em> y una <strong>G</strong> de <em>Gaudí</em> que se entrelazan trazando visualmente un recorrido. Dos letras, dos identidades, un mismo camino.
+            </p>
+            <p style="color:var(--text-2);line-height:var(--lh-base)">
+              El logotipo nace para ser sistema, no estampa. Funciona como marca paraguas, como sello en piezas editoriales, como avatar en redes y como motivo gráfico replicable a lo largo de la web. Acompaña al claim <em>"Sigue las huellas de su legado"</em> y al subtítulo <em>"Es un viaje sorprendente"</em>, que articulan toda la comunicación del proyecto.
+            </p>
+            <ul class="check-list">
+              <li><strong>Concepto único</strong>: dos letras entrelazadas que forman un trazado — la marca <em>es</em> el camino.</li>
+              <li><strong>Marca paraguas</strong>: convive con las identidades existentes de los tres monumentos sin competir con ellas.</li>
+              <li><strong>Aplicación digital</strong>: símbolo legible en favicon, redes y elementos gráficos del sitio.</li>
+              <li><strong>Asociado al claim</strong> <em>"Sigue las huellas de su legado"</em> como sistema verbal.</li>
+            </ul>
+          </div>
+
+          <div data-reveal="right">
+            <div class="logo-split__visual">
+              <div class="logo-split__placeholder" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12a4 4 0 0 1 4-4"/><path d="M16 12a4 4 0 0 1-4 4"/></svg>
+                <span>Pieza de logotipo — pendiente de aprobación del cliente</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DECISIONES DE DISEÑO Y ARQUITECTURA ──────────────── -->
+    <section class="section section--alt" aria-labelledby="decisiones-title">
+      <div class="container">
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Solución · Decisiones de diseño y arquitectura</span>
+          <h2 id="decisiones-title" class="section__headline">Cinco decisiones que definen el proyecto</h2>
+          <p class="section__sub">
+            La web no replica un esquema turístico al uso. Cada decisión responde al carácter del proyecto: cultural, narrativo, transversal a tres territorios y orientado a construir comunidad antes que a vender entradas.
+          </p>
+        </div>
+
+        <div class="especialidades__grid especialidades__grid--3" data-reveal-group>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="service-card__title">Tres ejes narrativos en el menú</h3>
+            <p class="service-card__desc"><strong>Vive · Explora · Sueña</strong>. Una arquitectura conceptual antes que un catálogo plano: experiencias y viajes (Vive), contenido educativo (Explora) e inspiración para talentos y jóvenes (Sueña). El menú habla del proyecto, no del back-office.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3 class="service-card__title">Tres rutas con identidad propia</h3>
+            <p class="service-card__desc">Cada monumento mantiene su propia voz y su propio sitio web. El Camino actúa como paraguas: presenta las rutas, contextualiza el legado y deriva al sitio hermano de cada edificio sin canibalizar tráfico ni mensaje.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h3 class="service-card__title">Logotipo como sistema de marca</h3>
+            <p class="service-card__desc">La C y la G entrelazadas trabajan como símbolo replicable: en el sitio, en las redes y en materiales del proyecto. Una pieza gráfica que resume el concepto y permite construir identidad sin depender exclusivamente del nombre.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="service-card__title">Captación de comunidad como CTA principal</h3>
+            <p class="service-card__desc"><strong>Socios Corporativos</strong> (entidades públicas y privadas) y <strong>Club de Amigos</strong> (personas individuales) en lugar de venta de entradas. Modelo de membresía que sostiene la asociación y construye base estable, frente a la conversión transaccional pura.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <h3 class="service-card__title">Feed de Instagram integrado</h3>
+            <p class="service-card__desc"><a href="https://www.instagram.com/elcaminodegaudi_oficial/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">@elcaminodegaudi_oficial</a> embebido como contenido vivo en la web. Mantiene el sitio actualizado sin obligar a la asociación a publicar dos veces, y aprovecha el canal donde ya hay actividad real.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <h3 class="service-card__title">Secciones editoriales propias</h3>
+            <p class="service-card__desc"><strong>Agenda Viajera</strong>, <strong>Noticias</strong>, <strong>No te lo pierdas</strong> y <strong>Guía para soñadores</strong>. Cuatro espacios editoriales que dan al proyecto vida cultural propia, más allá de la mera ficha de cada monumento.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ARQUITECTURA VIVE · EXPLORA · SUEÑA ───────────────── -->
+    <section class="section" aria-labelledby="pilares-title">
+      <div class="container">
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Arquitectura del sitio</span>
+          <h2 id="pilares-title" class="section__headline">Vive · Explora · Sueña</h2>
+          <p class="section__sub">
+            Tres ejes que estructuran toda la web. No son secciones pensadas desde la lógica interna de la asociación, sino desde la motivación del visitante: <em>quiero hacer algo</em>, <em>quiero aprender algo</em>, <em>quiero crear algo</em>.
+          </p>
+        </div>
+
+        <div class="pilar-grid" data-reveal-group>
+          <div class="pilar-card">
+            <h3 class="pilar-card__title">Vive</h3>
+            <p class="pilar-card__desc">Experiencias y viajes alrededor de las tres rutas. Lo que se puede hacer hoy: visitar, recorrer, asistir a actividades y planificar el viaje completo.</p>
+          </div>
+          <div class="pilar-card">
+            <h3 class="pilar-card__title">Explora</h3>
+            <p class="pilar-card__desc">Contenido educativo y divulgativo sobre Gaudí, el modernismo y los tres edificios. Refuerza el posicionamiento de la asociación como referente cultural.</p>
+          </div>
+          <div class="pilar-card">
+            <h3 class="pilar-card__title">Sueña</h3>
+            <p class="pilar-card__desc">Inspiración para talentos y jóvenes. Espacio orientado al público prioritario del proyecto: familias, niños y nuevas generaciones que conectan con el legado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LAS TRES RUTAS ─────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="rutas-title">
+      <div class="container">
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Las tres rutas</span>
+          <h2 id="rutas-title" class="section__headline">Tres ciudades, tres obras, un mismo recorrido</h2>
+          <p class="section__sub">
+            Cada ruta tiene ficha propia en la web, claim diferenciado y enlace al sitio hermano del monumento. El Camino actúa como entrada y como hilo narrativo común.
+          </p>
+        </div>
+
+        <div class="rutas-grid" data-reveal-group>
+
+          <article class="ruta-card">
+            <span class="ruta-card__city">Comillas · Cantabria</span>
+            <h3 class="ruta-card__title">El Capricho de Gaudí</h3>
+            <p class="ruta-card__claim">Ruta modernista bañada por el cantábrico.</p>
+            <a href="https://elcaprichodegaudi.com" target="_blank" rel="noopener" class="ruta-card__link">elcaprichodegaudi.com ↗</a>
+          </article>
+
+          <article class="ruta-card">
+            <span class="ruta-card__city">León</span>
+            <h3 class="ruta-card__title">Museo Casa Botines Gaudí</h3>
+            <p class="ruta-card__claim">Ruta cultural por una ciudad monumental.</p>
+            <a href="https://casabotines.es" target="_blank" rel="noopener" class="ruta-card__link">casabotines.es ↗</a>
+          </article>
+
+          <article class="ruta-card">
+            <span class="ruta-card__city">Astorga</span>
+            <h3 class="ruta-card__title">Palacio Gaudí</h3>
+            <p class="ruta-card__claim">Una ruta mágica por Astorga.</p>
+            <a href="https://palaciodegaudi.es" target="_blank" rel="noopener" class="ruta-card__link">palaciodegaudi.es ↗</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STACK TECNOLÓGICO ─────────────────────────────────── -->
+    <section class="section" aria-labelledby="stack-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Stack tecnológico</span>
+          <h2 id="stack-title" class="section__headline">WordPress, controlado y mantenible</h2>
+          <p class="section__sub">
+            WordPress sobre Astra con tema hijo propio (<code>astra-child</code>) y Elementor Pro como editor visual. La asociación puede actualizar agenda, noticias y contenidos editoriales sin intervención de Pindia, y el resto se gestiona desde el contrato de mantenimiento.
+          </p>
+          <div class="chip-row">
+            <span class="chip chip--accent">WordPress</span>
+            <span class="chip">Astra</span>
+            <span class="chip">Tema hijo · astra-child</span>
+            <span class="chip">Elementor Pro</span>
+            <span class="chip">Yoast SEO</span>
+            <span class="chip">Inavii Social Feed</span>
+            <span class="chip">Idioma único · ES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── GALERÍA ───────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="galeria-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Galería</span>
+          <h2 id="galeria-title" class="section__headline">El proyecto en imágenes</h2>
+          <p class="section__sub">
+            La portada del sitio ya está disponible. El resto de capturas y piezas de marca se irán publicando a medida que el cliente apruebe los activos.
+          </p>
+        </div>
+
+        <div class="case-gallery" data-reveal-group>
+          <div class="case-gallery__item">
+            <img src="/assets/img/case-camino-gaudi-cover.webp" alt="Portada del sitio elcaminodegaudi.com con el claim principal y acceso a las tres rutas" loading="lazy" decoding="async">
+          </div>
+          <div class="case-gallery__item">
+            <div class="case-gallery__placeholder" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12a4 4 0 0 1 4-4"/><path d="M16 12a4 4 0 0 1-4 4"/></svg>
+              <span>Logotipo C+G — pendiente de aprobación</span>
+            </div>
+          </div>
+          <div class="case-gallery__item">
+            <div class="case-gallery__placeholder" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <span>Detalle de las tres rutas — pendiente de aprobación</span>
+            </div>
+          </div>
+          <div class="case-gallery__item">
+            <div class="case-gallery__placeholder" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <span>Sección editorial — pendiente de aprobación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ETIQUETAS ─────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="tags-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <h2 id="tags-title" class="section__label" style="margin-bottom:var(--sp-4)">Etiquetas del proyecto</h2>
+          <div class="chip-row" style="margin-top:0">
+            <span class="chip">Branding</span>
+            <span class="chip">Diseño de logotipo</span>
+            <span class="chip">Web corporativa</span>
+            <span class="chip">Sector cultural · Turismo</span>
+            <span class="chip">WordPress</span>
+            <span class="chip">Elementor</span>
+          </div>
+          <p style="font-size:var(--text-sm);color:var(--text-3);margin-top:var(--sp-8)">
+            Fotografía y contenidos del sitio: aportados por la Asociación El Camino de Gaudí y los tres monumentos. Diseño de logotipo, identidad, diseño web, desarrollo y mantenimiento: Pindia Software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────────────── -->
+    <section class="cta-final" aria-labelledby="cta-title">
+      <div class="container" style="position:relative;z-index:1">
+        <p class="cta-final__label" data-reveal>¿Tu proyecto necesita marca y web a la vez?</p>
+        <h2 id="cta-title" class="cta-final__title" data-reveal>
+          Hagamos tu próximo<br>caso de éxito.
+        </h2>
+        <p class="cta-final__sub" data-reveal>
+          Presupuesto personalizado en menos de 48 horas. Sin compromiso, sin letra pequeña, sin atajos.
+        </p>
+        <div data-reveal style="display:flex;flex-wrap:wrap;gap:var(--sp-4);justify-content:center">
+          <a href="/contacto/" class="btn btn--primary btn--lg">Solicitar presupuesto gratuito</a>
+          <a href="/proyectos/" class="btn btn--secondary btn--lg">Ver más proyectos</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <!-- @include footer -->
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <!-- @include cookie-banner -->
+
+  <!-- @include scripts -->
+
+</body>
+</html>
