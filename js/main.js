@@ -518,6 +518,7 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
   heroLines.forEach((line, i) => {
     if (i === 0) {
       line._typed = true;
+      line.classList.add('is-active');
       return;
     }
     const nodes = [];
