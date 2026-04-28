@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- @include head-base -->
+  <title>Caso de éxito: Clínica Ofelia Casanueva — Web propia | Pindia Software</title>
+  <meta name="description" content="Cómo dotamos a Clínica Ofelia Casanueva (Santander) de su primera web propia: WordPress + Elementor, hero en vídeo, glosario de tratamientos, CTA dominante en WhatsApp y SEO local.">
+  <link rel="canonical" href="https://pindia.es/proyectos/clinica-ofelia-casanueva.html">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Caso de éxito: Clínica Ofelia Casanueva | Pindia Software">
+  <meta property="og:description" content="De Instagram-only a presencia web propia con posicionamiento local en Santander. WordPress, Elementor, hero en vídeo, glosario y SEO local.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/case-ofelia-cover.webp">
+  <meta property="og:url"         content="https://pindia.es/proyectos/clinica-ofelia-casanueva.html">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Caso de éxito: Clínica Ofelia Casanueva | Pindia Software">
+  <meta name="twitter:description" content="Web propia para clínica de medicina estética en Santander. WordPress + Elementor, hero en vídeo y SEO local.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/case-ofelia-cover.webp">
+
+  <!-- @include head-assets -->
+
+  <!-- Estilos específicos de la página de caso de éxito -->
+  <style>
+    .case-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      padding: var(--sp-6) var(--sp-8);
+      margin-top: var(--sp-8);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+    }
+    .case-meta__item { display: flex; flex-direction: column; gap: 4px; }
+    .case-meta__label {
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+    }
+    .case-meta__value {
+      font-size: var(--text-base);
+      font-weight: var(--w-md);
+      color: var(--text-1);
+    }
+    .case-meta__value a { color: var(--accent); text-decoration: none; }
+    .case-meta__value a:hover { text-decoration: underline; }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--sp-6) 0 0;
+      display: grid;
+      gap: var(--sp-3);
+    }
+    .check-list li {
+      display: flex;
+      gap: var(--sp-3);
+      align-items: flex-start;
+      color: var(--text-2);
+      font-size: var(--text-base);
+      line-height: var(--lh-base);
+    }
+    .check-list li::before {
+      content: "";
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      background: rgba(232 65 58 / 0.15);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8413A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Chips de stack y etiquetas */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .chip-row .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .45rem 1rem;
+      border-radius: var(--r-full);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      font-size: var(--text-sm);
+      font-weight: var(--w-md);
+      color: var(--text-2);
+    }
+    .chip-row .chip--accent {
+      background: rgba(232 65 58 / 0.08);
+      color: var(--accent);
+      border-color: rgba(232 65 58 / 0.25);
+    }
+
+    /* Galería del caso */
+    .case-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) {
+      .case-gallery { grid-template-columns: repeat(2, 1fr); }
+    }
+    .case-gallery__item {
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      background: var(--bg-card);
+      aspect-ratio: 16 / 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-3);
+      font-size: var(--text-sm);
+    }
+    .case-gallery__item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .case-gallery__placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--sp-2);
+      color: var(--text-3);
+    }
+    .case-gallery__placeholder svg { width: 36px; height: 36px; opacity: .6; }
+  </style>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio",    "item": "https://pindia.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://pindia.es/proyectos/" },
+      { "@type": "ListItem", "position": 3, "name": "Clínica Ofelia Casanueva", "item": "https://pindia.es/proyectos/clinica-ofelia-casanueva.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: CreativeWork (caso de éxito) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Clínica Ofelia Casanueva — Web corporativa",
+    "description": "Diseño, desarrollo y mantenimiento de la web propia de Clínica Ofelia Casanueva (Santander): WordPress con tema hijo sobre Hello Elementor, Elementor Pro, hero en vídeo, glosario de tratamientos, CTA dominante en WhatsApp y SEO local.",
+    "url": "https://pindia.es/proyectos/clinica-ofelia-casanueva.html",
+    "image": "https://pindia.es/assets/img/case-ofelia-cover.webp",
+    "author":  { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "creator": { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "datePublished": "2024-01-18",
+    "inLanguage": "es-ES",
+    "keywords": "diseño web, WordPress, Elementor, SEO local, medicina estética, Santander, Cantabria",
+    "about": [
+      "Diseño web", "WordPress", "Elementor", "SEO local", "Medicina estética", "Santander"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <!-- @include navbar active="proyectos" -->
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- ── HERO PEQUEÑO ──────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-hero-title" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:var(--sp-16);background:var(--bg-main);">
+      <div class="container">
+        <nav aria-label="Ruta de navegación" style="margin-bottom:var(--sp-6)">
+          <ol style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--sp-2);font-size:var(--text-sm);color:var(--text-3)">
+            <li><a href="/web-pindia/" style="color:var(--text-3);text-decoration:none;">Inicio</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li><a href="/proyectos/" style="color:var(--text-3);text-decoration:none;">Proyectos</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li style="color:var(--text-1)">Clínica Ofelia Casanueva</li>
+          </ol>
+        </nav>
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Caso de éxito · Web corporativa</span>
+          <h1 id="page-hero-title" class="section__headline" style="font-size:clamp(2rem,5vw,3.5rem)">
+            <span class="text-accent">Clínica Ofelia Casanueva</span>: una web a la altura de la clínica
+          </h1>
+          <p class="section__sub">
+            Una clínica de medicina estética con un Instagram impecable y un canal de WhatsApp ya consolidado pidió dar el salto a presencia web propia. Diseño, desarrollo y mantenimiento integral en tres meses, con foco en posicionamiento local en Santander, respeto absoluto al canal de captación que ya funcionaba y un nivel de detalle visual coherente con la marca.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);margin-top:var(--sp-8)">
+            <a href="https://clinicaofeliacasanueva.com" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Visitar web ↗</a>
+            <a href="/contacto/" class="btn btn--secondary btn--lg">Quiero algo así</a>
+          </div>
+        </div>
+
+        <div class="case-meta" data-reveal>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Cliente</span>
+            <span class="case-meta__value">Clínica Ofelia Casanueva</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Sector</span>
+            <span class="case-meta__value">Salud · Medicina estética</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Ubicación</span>
+            <span class="case-meta__value">Santander, Cantabria</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Año</span>
+            <span class="case-meta__value">2024</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Plazo</span>
+            <span class="case-meta__value">3 meses</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Alcance</span>
+            <span class="case-meta__value">Diseño · Desarrollo · Mantenimiento</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">URL</span>
+            <span class="case-meta__value"><a href="https://clinicaofeliacasanueva.com" target="_blank" rel="noopener">clinicaofeliacasanueva.com ↗</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EL RETO ───────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="reto-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">El reto</span>
+          <h2 id="reto-title" class="section__headline">De Instagram-only a <span class="text-accent">presencia web propia</span></h2>
+          <p class="section__sub">
+            La clínica partía de una situación poco frecuente: un perfil de Instagram (<a href="https://www.instagram.com/clinicaofeliacasanueva/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">@clinicaofeliacasanueva</a>) muy cuidado y elaborado y un canal de WhatsApp que ya funcionaba como vía principal de captación y de gestión de citas. No había web. La pregunta no era <em>cómo construir una</em>, sino <em>cómo construir una sin romper lo que ya iba bien</em>.
+          </p>
+          <p style="color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-4)">
+            Tres objetivos no negociables marcaron el proyecto:
+          </p>
+          <ul class="check-list">
+            <li><strong>Posicionamiento local</strong> en Santander para términos de medicina estética, dermatología, ginecoestética, capilar y cirugía maxilofacial.</li>
+            <li><strong>Coherencia con la marca</strong> que ya transmitía el Instagram: tono premium, cuidado y profesional.</li>
+            <li><strong>Sin imponer fricción nueva</strong> a las pacientes: el canal de contacto que ya funcionaba debía seguir siendo el principal.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO VISUAL ───────────────────────────────────────── -->
+    <section class="section section--alt" aria-label="Captura de la web">
+      <div class="container">
+        <div data-reveal>
+          <div class="browser-frame">
+            <div class="browser-frame__bar" aria-hidden="true">
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__url">clinicaofeliacasanueva.com</div>
+            </div>
+            <div class="browser-frame__content">
+              <img src="/assets/img/case-ofelia-cover.webp" alt="Captura de la home de Clínica Ofelia Casanueva: hero con vídeo y navegación principal" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DECISIONES DE DISEÑO Y UX ─────────────────────────── -->
+    <section class="section" aria-labelledby="decisiones-title">
+      <div class="container">
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Solución · Decisiones de diseño y UX</span>
+          <h2 id="decisiones-title" class="section__headline">Cinco decisiones que definen la web</h2>
+          <p class="section__sub">
+            La web no es una plantilla rellena con texto. Cada decisión responde a una realidad concreta de la clínica: cómo trabaja, cómo atiende, cómo la encuentran sus pacientes y qué tono debe transmitir desde el primer scroll.
+          </p>
+        </div>
+
+        <div class="especialidades__grid especialidades__grid--3" data-reveal-group>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3 class="service-card__title">CTA dominante en WhatsApp</h3>
+            <p class="service-card__desc">El canal de captación que ya funcionaba se respeta y se amplifica. WhatsApp aparece como llamada a la acción principal en hero, fichas de tratamiento y cierre de cada página. Nada de booking online forzado: cero fricción nueva para las pacientes.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3 class="service-card__title">Glosario terminológico de tratamientos</h3>
+            <p class="service-card__desc">Sección dedicada con definiciones de procedimientos (toxina botulínica, ácido hialurónico, peeling, hilos tensores, ginecoestética…). Palanca de SEO long-tail que captura búsquedas por nombre de tratamiento sin canibalizar las fichas comerciales.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <h3 class="service-card__title">Hero en vídeo</h3>
+            <p class="service-card__desc">La home arranca con un vídeo que muestra el espacio, el equipo y el tono de la clínica. La sensación premium se transmite en el primer segundo, sin depender de la lectura. Carga optimizada para no penalizar el LCP en móvil.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
+            </div>
+            <h3 class="service-card__title">Tarjeta regalo digital y física</h3>
+            <p class="service-card__desc">Producto pensado para fechas señaladas (Navidad, Día de la Madre, cumpleaños). Solicitud y pago vía WhatsApp con dos formatos —digital y física— para mantener la conversación dentro del canal ya consolidado.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3 class="service-card__title">Arquitectura de información clara</h3>
+            <p class="service-card__desc">Ocho secciones de menú —Dra. Ofelia, Equipo, Medicina Estética, Cabina, Piel, Capilar, Ginecología, Cirugía y Tecnología— más Glosario. Cada bloque tiene su entrada propia y resuelve la duda con la que llega la paciente.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+            <h3 class="service-card__title">SEO local desde el primer día</h3>
+            <p class="service-card__desc">Optimización para "medicina estética Santander", "clínica estética Cantabria", "dermatología Santander" y términos por tratamiento. Schema de servicio profesional, dirección postal, horario y datos de contacto consistentes en cada página.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DECISIÓN: SIN BLOG ────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="sinblog-title">
+      <div class="container">
+        <div class="diseno-web__split">
+          <div data-reveal="left">
+            <span class="section__label">Decisión consciente</span>
+            <h2 id="sinblog-title" class="section__headline">Sin blog, <span class="text-accent">por decisión expresa de la clienta</span></h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              No todos los proyectos necesitan blog. La clínica ya transmite contenido de manera continua a través de Instagram, donde el formato visual y la relación con la audiencia funcionan mejor que un feed RSS. Recomendamos no introducir un canal de contenido que iba a quedar abandonado o competir con el que ya rendía.
+            </p>
+            <p style="color:var(--text-2);line-height:var(--lh-base)">
+              En su lugar, las palancas de contenido se concentraron en el <strong>glosario de tratamientos</strong>, las <strong>fichas de cabina y tecnología</strong> y la <strong>biografía de la Dra. Ofelia y del equipo</strong>. Contenido que aporta valor SEO y de confianza sin obligar a la clínica a sostener un calendario editorial.
+            </p>
+          </div>
+          <div data-reveal="right">
+            <ul class="check-list" style="margin-top:0">
+              <li><strong>Instagram</strong> sigue siendo el canal de contenido vivo.</li>
+              <li><strong>Glosario terminológico</strong> cubre el long-tail SEO.</li>
+              <li><strong>Fichas de tratamiento</strong> con copy específico y bien estructurado.</li>
+              <li><strong>Biografías</strong> de Dra. Ofelia y equipo, palanca de E-E-A-T para Google.</li>
+              <li><strong>Sin compromiso editorial</strong> que la clínica tuviera que mantener.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RECORRIDO DEL SITIO ───────────────────────────────── -->
+    <section class="section" aria-labelledby="recorrido-title">
+      <div class="container">
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Recorrido del sitio</span>
+          <h2 id="recorrido-title" class="section__headline">Arquitectura de información</h2>
+          <p class="section__sub">
+            Nueve entradas principales de menú diseñadas para que cualquier paciente —ya sea por procedimiento, por especialidad o por interés en el equipo— encuentre la página correcta sin más de dos clics.
+          </p>
+        </div>
+
+        <div class="proceso__steps" data-reveal-group style="margin-top:var(--sp-12)">
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">01</div>
+            <div class="step-card__body">
+              <h3>Home con hero en vídeo</h3>
+              <p>Vídeo de bienvenida, accesos a las áreas clínicas, prueba social y CTA directa a WhatsApp. Pieza clave del tono premium.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">02</div>
+            <div class="step-card__body">
+              <h3>Dra. Ofelia y Equipo</h3>
+              <p>Páginas dedicadas a la Directora Médica y al equipo de 13 profesionales. Refuerzo de E-E-A-T para SEO en sector salud.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">03</div>
+            <div class="step-card__body">
+              <h3>Áreas clínicas</h3>
+              <p>Medicina Estética, Cabina, Piel, Capilar, Ginecología y Cirugía maxilofacial. Cada área con sus tratamientos y CTA propia.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">04</div>
+            <div class="step-card__body">
+              <h3>Tecnología</h3>
+              <p>Equipos y aparatología de la clínica. Refuerza percepción de inversión real y diferenciación frente a competencia.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">05</div>
+            <div class="step-card__body">
+              <h3>Glosario de tratamientos</h3>
+              <p>Definiciones por término. Captura SEO long-tail por nombre de procedimiento sin saturar las fichas comerciales.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-card__num" aria-hidden="true">06</div>
+            <div class="step-card__body">
+              <h3>Tarjeta regalo y legales</h3>
+              <p>Solicitud de tarjeta vía WhatsApp y páginas legales (aviso, privacidad, cookies) cumpliendo normativa española.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STACK TECNOLÓGICO ─────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="stack-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Stack tecnológico</span>
+          <h2 id="stack-title" class="section__headline">WordPress, controlado y mantenible</h2>
+          <p class="section__sub">
+            WordPress con tema hijo propio sobre Hello Elementor y Elementor Pro como editor visual. La clienta puede mantener cambios menores de copy y galería sin intervención de Pindia, y el resto se gestiona desde el contrato de mantenimiento.
+          </p>
+          <div class="chip-row">
+            <span class="chip chip--accent">WordPress</span>
+            <span class="chip">Tema hijo propio</span>
+            <span class="chip">Hello Elementor</span>
+            <span class="chip">Elementor Pro</span>
+            <span class="chip">Yoast SEO</span>
+            <span class="chip">WP Rocket</span>
+            <span class="chip">CookieYes</span>
+            <span class="chip">Idioma único · ES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIO ────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="testimonio-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px;margin-inline:auto">
+          <span class="section__label">Testimonio</span>
+          <h2 id="testimonio-title" class="section__headline">La voz de la clienta</h2>
+
+          <div class="testimonial-card" style="margin-top:var(--sp-8)">
+            <p class="testimonial-card__text">
+              "Un sitio web a la altura de la Clínica."
+            </p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">OC</div>
+              <div>
+                <div class="testimonial-card__name">Dra. Ofelia Casanueva</div>
+                <div class="testimonial-card__role">Directora Médica · Clínica Ofelia Casanueva</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ETIQUETAS ─────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="tags-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <h2 id="tags-title" class="section__label" style="margin-bottom:var(--sp-4)">Etiquetas del proyecto</h2>
+          <div class="chip-row" style="margin-top:0">
+            <span class="chip">Web corporativa</span>
+            <span class="chip">Sector salud</span>
+            <span class="chip">WordPress</span>
+            <span class="chip">Elementor</span>
+            <span class="chip">SEO local</span>
+          </div>
+          <p style="font-size:var(--text-sm);color:var(--text-3);margin-top:var(--sp-8)">
+            Fotografía, vídeo y copy del sitio: aportados por la clínica. Diseño, desarrollo y mantenimiento técnico: Pindia Software.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────────────── -->
+    <section class="cta-final" aria-labelledby="cta-title">
+      <div class="container" style="position:relative;z-index:1">
+        <p class="cta-final__label" data-reveal>¿Tu negocio también necesita web propia?</p>
+        <h2 id="cta-title" class="cta-final__title" data-reveal>
+          Hagamos tu próximo<br>caso de éxito.
+        </h2>
+        <p class="cta-final__sub" data-reveal>
+          Presupuesto personalizado en menos de 48 horas. Sin compromiso, sin letra pequeña, sin atajos.
+        </p>
+        <div data-reveal style="display:flex;flex-wrap:wrap;gap:var(--sp-4);justify-content:center">
+          <a href="/contacto/" class="btn btn--primary btn--lg">Solicitar presupuesto gratuito</a>
+          <a href="/proyectos/" class="btn btn--secondary btn--lg">Ver más proyectos</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <!-- @include footer -->
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <!-- @include cookie-banner -->
+
+  <!-- @include scripts -->
+
+</body>
+</html>
