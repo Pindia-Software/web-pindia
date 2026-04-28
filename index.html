@@ -34,11 +34,8 @@
   <!-- Schema.org structured data -->
   <link rel="alternate" type="application/ld+json" href="/schema.json">
 
-  <!-- Fonts: async load (non render-blocking) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+  <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260428d" crossorigin>
 
   <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
   <script>
@@ -48,13 +45,14 @@
   </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
-  <link rel="stylesheet" href="/css/styles.min.css?v=20260428c">
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260428d">
 
-  <!-- Preload primer frame del scroll-video — desktop usa 480px, mobile 240px -->
-  <link rel="preload" as="image" href="/assets/videos/frames/frame_0001.webp" media="(min-width: 640px)" fetchpriority="low">
+  <!-- Preload primer frame del scroll-video (LCP candidate) — high priority -->
+  <link rel="preload" as="image" href="/assets/videos/frames/frame_0001.webp" media="(min-width: 640px)" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/videos/frames-mobile/frame_0001.webp" media="(max-width: 639px)" fetchpriority="high">
+  <!-- Frames 2-3: low priority (warm-up para arranque suave del scroll, no afectan LCP) -->
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0002.webp" media="(min-width: 640px)" fetchpriority="low">
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0003.webp" media="(min-width: 640px)" fetchpriority="low">
-  <link rel="preload" as="image" href="/assets/videos/frames-mobile/frame_0001.webp" media="(max-width: 639px)" fetchpriority="low">
 
   <!-- Schema: WebSite -->
   <script type="application/ld+json">
@@ -1013,7 +1011,7 @@
   </div>
 
   <!-- JS (minified) -->
-  <script src="/js/main.min.js?v=20260428c" defer></script>
+  <script src="/js/main.min.js?v=20260428d" defer></script>
 
 </body>
 </html>

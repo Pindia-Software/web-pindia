@@ -23,11 +23,12 @@
 
   <!-- @include head-assets -->
 
-  <!-- Preload primer frame del scroll-video — desktop usa 480px, mobile 240px -->
-  <link rel="preload" as="image" href="/assets/videos/frames/frame_0001.webp" media="(min-width: 640px)" fetchpriority="low">
+  <!-- Preload primer frame del scroll-video (LCP candidate) — high priority -->
+  <link rel="preload" as="image" href="/assets/videos/frames/frame_0001.webp" media="(min-width: 640px)" fetchpriority="high">
+  <link rel="preload" as="image" href="/assets/videos/frames-mobile/frame_0001.webp" media="(max-width: 639px)" fetchpriority="high">
+  <!-- Frames 2-3: low priority (warm-up para arranque suave del scroll, no afectan LCP) -->
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0002.webp" media="(min-width: 640px)" fetchpriority="low">
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0003.webp" media="(min-width: 640px)" fetchpriority="low">
-  <link rel="preload" as="image" href="/assets/videos/frames-mobile/frame_0001.webp" media="(max-width: 639px)" fetchpriority="low">
 
   <!-- Schema: WebSite -->
   <script type="application/ld+json">
