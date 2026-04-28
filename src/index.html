@@ -51,9 +51,8 @@
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
   <link rel="stylesheet" href="/css/styles.min.css?v=20260428a">
-  <!-- scroll-video.css: non-blocking (animation kicks in tras carga inicial) -->
-  <link rel="stylesheet" href="/css/scroll-video.min.css?v=20260428a" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="/css/scroll-video.min.css?v=20260428a"></noscript>
+  <!-- scroll-video.css: bloqueante para evitar FOUC en hero (sticky, grid, robot positioning) -->
+  <link rel="stylesheet" href="/css/scroll-video.min.css?v=20260428a">
 
   <!-- Schema: WebSite -->
   <script type="application/ld+json">
