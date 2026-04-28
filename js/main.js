@@ -179,9 +179,9 @@
 
   const revealIfInViewport = () => {
     const vh = window.innerHeight;
-    reveals.forEach(el => {
+    const rects = Array.from(reveals).map(el => ({ el, r: el.getBoundingClientRect() }));
+    rects.forEach(({ el, r }) => {
       if (el.classList.contains('is-visible')) return;
-      const r = el.getBoundingClientRect();
       if (r.top < vh && r.bottom > 0) {
         el.classList.add('is-visible');
         observer.unobserve(el);
@@ -641,7 +641,7 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
 
   /* ── Update side effects for progress p (0–1) ── */
   function applyEffects(p) {
-    if (progress) progress.style.width = (p * 100) + '%';
+    if (progress) progress.style.transform = `scaleX(${p})`;
     if (hint)     hint.classList.toggle('is-hidden', p > 0.05);
     if (sticky) {
       const angle = p * Math.PI;
@@ -668,11 +668,17 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
      rendered before the sticky releases and the next section enters. */
   const ANIM_END = 0.85;
 
+  let _sectionRectCache = null;
+  let _lastScrollY = -1;
   function getUncappedProgress() {
-    const rect       = section.getBoundingClientRect();
+    if (window.scrollY === _lastScrollY && _sectionRectCache) {
+      return -_sectionRectCache.top / (section.offsetHeight - window.innerHeight);
+    }
+    _lastScrollY = window.scrollY;
+    _sectionRectCache = section.getBoundingClientRect();
     const scrollable = section.offsetHeight - window.innerHeight;
     if (scrollable <= 0) return 0;
-    return -rect.top / scrollable;
+    return -_sectionRectCache.top / scrollable;
   }
 
   function getRawProgress() {

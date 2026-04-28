@@ -549,7 +549,8 @@ ul, ol { list-style: none; }
 }
 
 .hero__h1-line:not(.is-active) {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 
 .hero__h1--animated {
@@ -560,6 +561,7 @@ ul, ol { list-style: none; }
   display: block;
   grid-column: 1;
   grid-row: 1;
+  visibility: hidden;
   opacity: 0;
   transform: translateY(14px);
   transition: opacity .5s ease, transform .5s ease;
@@ -567,7 +569,16 @@ ul, ol { list-style: none; }
   will-change: opacity, transform;
 }
 
+.hero__h1--animated .hero__h1-line:first-child {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: none;
+  pointer-events: auto;
+}
+
 .hero__h1--animated .hero__h1-line.is-active {
+  visibility: visible;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;

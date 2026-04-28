@@ -173,11 +173,13 @@
 
 .scroll-video-progress__fill {
   height: 100%;
-  width: 0%;
+  width: 100%;
   background: var(--accent);
   border-radius: var(--r-full);
-  transition: width 60ms linear;
   box-shadow: 0 0 8px var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 60ms linear;
 }
 
 /* ── Scroll hint ── */
