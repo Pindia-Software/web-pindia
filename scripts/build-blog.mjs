@@ -43,7 +43,7 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20260426b';
+const ASSET_VER = 'v=20260428a';
 
 // ── Partials (fuente única compartida con build-pages.mjs) ───────────────────
 
