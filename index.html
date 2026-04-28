@@ -532,6 +532,15 @@
 
     <!-- ── PROYECTOS ─────────────────────────────────────────── -->
     <section class="section section--alt proyectos" id="proyectos" aria-labelledby="proy-title">
+      <style>
+        .proyectos__grid .project-card { position: relative; }
+        .proyectos__grid .stretched-link::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+          z-index: 1;
+        }
+      </style>
       <div class="container">
 
         <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:var(--sp-4);margin-bottom:var(--sp-4)" data-reveal>
@@ -546,21 +555,21 @@
 
           <article class="project-card">
             <div class="project-card__thumb">
-              <div class="project-card__placeholder" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-                <span>Imagen pendiente del cliente</span>
-              </div>
+              <img src="/assets/img/case-pindia-home.webp" alt="Captura del home de pindia.es: hero con titular animado y robot mascota" loading="lazy" decoding="async">
               <div class="project-card__overlay">
-                <span class="btn btn--primary">Ver proyecto</span>
+                <span class="btn btn--primary">Ver caso de éxito</span>
               </div>
             </div>
             <div class="project-card__body">
               <div class="project-card__tags">
                 <span class="project-card__tag">Diseño web</span>
-                <span class="project-card__tag">SEO</span>
+                <span class="project-card__tag">SEO técnico</span>
+                <span class="project-card__tag">Lighthouse 100</span>
               </div>
-              <h3 class="project-card__title">Proyecto web — pendiente</h3>
-              <p class="project-card__desc">Próximamente añadiremos aquí los proyectos de diseño web realizados para nuestros clientes.</p>
+              <h3 class="project-card__title">
+                <a href="/proyectos/web-pindia.html" class="stretched-link" style="color:inherit;text-decoration:none">pindia.es — Nuestra propia web</a>
+              </h3>
+              <p class="project-card__desc">Web corporativa vanilla sin frameworks, build automatizado en Node, robot scroll-driven con secuencia de frames, SEO técnico y local optimizado para Cantabria, accesibilidad WCAG 2.1 AA y Core Web Vitals al 100.</p>
             </div>
           </article>
 
