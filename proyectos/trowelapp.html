@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Caso de éxito: TrowelApp — SaaS para constructoras | Pindia Software</title>
+  <meta name="description" content="Desarrollo end-to-end de TrowelApp, el SaaS de gestión para constructoras: infraestructura Azure, backend .NET Core, frontend Angular y apps multiplataforma en .NET MAUI. +5.000 usuarios activos en 6 países.">
+  <link rel="canonical" href="https://pindia.es/proyectos/trowelapp.html">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Caso de éxito: TrowelApp | Pindia Software">
+  <meta property="og:description" content="Diseño, desarrollo y operación del SaaS TrowelApp: Azure, .NET Core, Angular y .NET MAUI. Producto en producción con +5.000 usuarios en 6 países.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/trowelapp-logo.webp">
+  <meta property="og:url"         content="https://pindia.es/proyectos/trowelapp.html">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Caso de éxito: TrowelApp | Pindia Software">
+  <meta name="twitter:description" content="SaaS para constructoras desarrollado íntegramente por Pindia: Azure + .NET Core + Angular + MAUI. +5.000 usuarios activos.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/trowelapp-logo.webp">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicons/favicon.png">
+  <link rel="manifest"         href="/manifest.webmanifest">
+  <meta name="theme-color"     content="#22293E">
+
+  <!-- Fonts: async load (non render-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"></noscript>
+
+  <!-- GA4 ID — replace G-XXXXXXXXXX with your measurement ID -->
+  <script>window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';</script>
+
+  <!-- Critical CSS (tokens + base + responsive merged, minified) -->
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260426b">
+
+  <!-- Estilos específicos de la página de caso de éxito -->
+  <style>
+    .case-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      padding: var(--sp-6) var(--sp-8);
+      margin-top: var(--sp-8);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+    }
+    .case-meta__item { display: flex; flex-direction: column; gap: 4px; }
+    .case-meta__label {
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+    }
+    .case-meta__value {
+      font-size: var(--text-base);
+      font-weight: var(--w-md);
+      color: var(--text-1);
+    }
+    .case-meta__value a { color: var(--accent); text-decoration: none; }
+    .case-meta__value a:hover { text-decoration: underline; }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .35rem .9rem;
+      border-radius: var(--r-full);
+      background: rgba(46 204 113 / 0.12);
+      color: #1f9d55;
+      border: 1px solid rgba(46 204 113 / 0.35);
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--sp-4);
+    }
+    .status-badge__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2ecc71;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      margin-top: var(--sp-12);
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8) var(--sp-6);
+      text-align: center;
+    }
+    .stat-card__num {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: var(--w-bd);
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-card__label {
+      margin-top: var(--sp-3);
+      font-size: var(--text-sm);
+      color: var(--text-2);
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--sp-6) 0 0;
+      display: grid;
+      gap: var(--sp-3);
+    }
+    .check-list li {
+      position: relative;
+      padding-left: calc(20px + var(--sp-3));
+      color: var(--text-2);
+      font-size: var(--text-base);
+      line-height: var(--lh-base);
+    }
+    .check-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      background: rgba(232 65 58 / 0.15);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8413A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Chips de stack y etiquetas */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .chip-row .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .45rem 1rem;
+      border-radius: var(--r-full);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      font-size: var(--text-sm);
+      font-weight: var(--w-md);
+      color: var(--text-2);
+    }
+    .chip-row .chip--accent {
+      background: rgba(232 65 58 / 0.08);
+      color: var(--accent);
+      border-color: rgba(232 65 58 / 0.25);
+    }
+
+    /* Bloques de stack tecnológico */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) { .tech-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1080px) { .tech-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    .tech-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8);
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-3);
+    }
+    .tech-card__layer {
+      font-size: var(--text-xs);
+      font-weight: var(--w-bd);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .tech-card__title {
+      font-size: var(--text-xl);
+      font-weight: var(--w-bd);
+      color: var(--text-1);
+      margin: 0;
+    }
+    .tech-card__desc {
+      font-size: var(--text-sm);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+    .tech-card__meta {
+      margin-top: auto;
+      font-size: var(--text-xs);
+      color: var(--text-3);
+    }
+
+    /* Tarjetas de módulo del producto */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-5);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) { .modules-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1080px) { .modules-grid { grid-template-columns: repeat(3, 1fr); } }
+    .module-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-2);
+    }
+    .module-card__group {
+      font-size: var(--text-xs);
+      font-weight: var(--w-bd);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .module-card__title {
+      font-size: var(--text-lg);
+      font-weight: var(--w-bd);
+      color: var(--text-1);
+      margin: 0;
+    }
+    .module-card__desc {
+      font-size: var(--text-sm);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+
+    /* Lista de plataformas */
+    .platform-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--sp-5);
+      margin-top: var(--sp-10);
+    }
+    .platform-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-6);
+      text-align: center;
+    }
+    .platform-card__icon {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto var(--sp-3);
+      color: var(--accent);
+    }
+    .platform-card__name {
+      font-size: var(--text-base);
+      font-weight: var(--w-bd);
+      color: var(--text-1);
+      margin: 0 0 var(--sp-1);
+    }
+    .platform-card__sub {
+      font-size: var(--text-sm);
+      color: var(--text-3);
+      margin: 0;
+    }
+  </style>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio",    "item": "https://pindia.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://pindia.es/proyectos/" },
+      { "@type": "ListItem", "position": 3, "name": "TrowelApp", "item": "https://pindia.es/proyectos/trowelapp.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: CreativeWork (caso de éxito) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "TrowelApp — SaaS de gestión para empresas constructoras",
+    "description": "Diseño, desarrollo y operación end-to-end del SaaS TrowelApp: infraestructura cloud en Microsoft Azure, backend en .NET Core, frontend web en Angular y apps multiplataforma (iOS, Android, Windows) en .NET MAUI. Producto en producción con más de 5.000 usuarios activos en España, Portugal, Andorra, Argentina, México y Uruguay.",
+    "url": "https://pindia.es/proyectos/trowelapp.html",
+    "image": "https://pindia.es/assets/img/trowelapp-logo.webp",
+    "author":  { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "creator": { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "inLanguage": "es-ES",
+    "keywords": "SaaS, construcción, gestión de obra, .NET Core, Angular, .NET MAUI, Azure, multiplataforma, Verifactu, Holded",
+    "about": [
+      "SaaS", "Sector construcción", "Gestión de obra", "Backend .NET Core", "Frontend Angular", "Apps móviles MAUI", "Infraestructura Azure", "Multiplataforma"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <header class="nav" role="banner">
+    <div class="container">
+      <div class="nav__inner">
+
+        <a href="/web-pindia/" class="nav__logo" aria-label="Pindia Software — Inicio">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" width="140" height="56" loading="eager">
+        </a>
+
+        <nav class="nav__links" aria-label="Navegación principal">
+          <a href="/servicios/" class="nav__link">Servicios</a>
+          <a href="/proyectos/" class="nav__link" aria-current="page">Proyectos</a>
+          <a href="/blog/" class="nav__link">Blog</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a href="/contacto/" class="btn btn--primary">Hablemos</a>
+          <button
+            class="nav__toggle"
+            aria-expanded="false"
+            aria-controls="nav-drawer"
+            aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" class="nav__drawer" aria-label="Menú móvil">
+    <a href="/servicios/" class="nav__link">Servicios</a>
+    <a href="/proyectos/" class="nav__link" aria-current="page">Proyectos</a>
+    <a href="/blog/" class="nav__link">Blog</a>
+    <a href="/contacto/" class="btn btn--primary btn--lg" style="width:100%;margin-top:auto;">Hablemos de tu proyecto</a>
+  </nav>
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- ── HERO PEQUEÑO ──────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-hero-title" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:var(--sp-16);background:var(--bg-main);">
+      <div class="container">
+        <nav aria-label="Ruta de navegación" style="margin-bottom:var(--sp-6)">
+          <ol style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--sp-2);font-size:var(--text-sm);color:var(--text-3)">
+            <li><a href="/web-pindia/" style="color:var(--text-3);text-decoration:none;">Inicio</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li><a href="/proyectos/" style="color:var(--text-3);text-decoration:none;">Proyectos</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li style="color:var(--text-1)">TrowelApp</li>
+          </ol>
+        </nav>
+
+        <div data-reveal style="max-width:880px">
+          <span class="status-badge">
+            <span class="status-badge__dot" aria-hidden="true"></span>
+            En producción · +5.000 usuarios activos
+          </span>
+          <span class="section__label">Caso de éxito · SaaS multiplataforma</span>
+          <h1 id="page-hero-title" class="section__headline" style="font-size:clamp(2rem,5vw,3.5rem)">
+            <span class="text-accent">TrowelApp</span>: el SaaS que digitaliza el sector construcción, desarrollado de cero por Pindia
+          </h1>
+          <p class="section__sub">
+            Diseño, desarrollo y operación end-to-end del producto TrowelApp: infraestructura en Microsoft Azure, backend en .NET Core, panel web en Angular y aplicaciones nativas para iOS, Android y Windows con .NET MAUI. Un único equipo, un único producto, todas las capas. En producción y creciendo desde 2018.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);margin-top:var(--sp-8)">
+            <a href="https://trowelapp.com" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Ir a trowelapp.com ↗</a>
+            <a href="/trowelapp/" class="btn btn--secondary btn--lg">Ver ficha de producto</a>
+          </div>
+        </div>
+
+        <div class="case-meta" data-reveal>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Cliente</span>
+            <span class="case-meta__value">Trowel Technologies S.L. (producto del grupo)</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Sector</span>
+            <span class="case-meta__value">SaaS · Construcción · ConTech</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Mercados</span>
+            <span class="case-meta__value">España · Portugal · Andorra · Argentina · México · Uruguay</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Inicio</span>
+            <span class="case-meta__value">2018 · en evolución continua</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Alcance</span>
+            <span class="case-meta__value">Producto + Infra + Apps + Operación</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Equipo</span>
+            <span class="case-meta__value">Pindia Software</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EL RETO ───────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="reto-title">
+      <div class="container">
+        <div class="diseno-web__split">
+          <div data-reveal="left">
+            <span class="section__label">El reto</span>
+            <h2 id="reto-title" class="section__headline">Digitalizar un sector que aún <span class="text-accent">funciona en papel</span></h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              La construcción es uno de los sectores menos digitalizados de la economía. Presupuestos en Excel, partes de obra en papel, planos enviados por WhatsApp y desviaciones económicas que solo se ven cuando ya es demasiado tarde. TrowelApp nace para conectar oficina y obra en un único sistema, accesible desde el navegador y desde el móvil, en la oficina y a pie de tajo.
+            </p>
+            <p style="color:var(--text-2);line-height:var(--lh-base)">
+              El reto técnico era construir un producto SaaS multitenant, multiplataforma y multipaís, capaz de:
+            </p>
+            <ul class="check-list">
+              <li><strong>Soportar miles de usuarios concurrentes</strong> con sincronización en tiempo real entre web y móvil.</li>
+              <li><strong>Funcionar offline en obra</strong> — sin cobertura — y sincronizar al recuperar conexión.</li>
+              <li><strong>Cumplir normativa fiscal</strong> de cada país: Verifactu en España y facturación electrónica para 5 mercados más.</li>
+              <li><strong>Integrarse con el ecosistema</strong> existente del cliente: Holded, ERPs y herramientas contables.</li>
+              <li><strong>Escalar sin reescritura</strong>: un mismo código de negocio servido a empresas de 3 y de 300 usuarios.</li>
+            </ul>
+          </div>
+          <div data-reveal="right">
+            <div class="stat-strip" style="margin-top:0;grid-template-columns:1fr 1fr">
+              <div class="stat-card">
+                <div class="stat-card__num">+5.000</div>
+                <div class="stat-card__label">Usuarios activos</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">6</div>
+                <div class="stat-card__label">Países en producción</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">4</div>
+                <div class="stat-card__label">Plataformas (web · iOS · Android · Windows)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">12+</div>
+                <div class="stat-card__label">Módulos integrados</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO VISUAL ───────────────────────────────────────── -->
+    <section class="section section--alt" aria-label="Logotipo de TrowelApp">
+      <div class="container">
+        <div data-reveal style="text-align:center">
+          <img src="/assets/logotipo-trowel-positivo.svg" alt="Logotipo de TrowelApp, el SaaS de gestión para empresas constructoras desarrollado por Pindia" loading="lazy" decoding="async" style="width:clamp(280px,42vw,520px);height:auto;margin:0 auto var(--sp-6);display:block">
+          <p style="font-size:var(--text-sm);color:var(--text-3);margin:0">
+            TrowelApp es producto desarrollado y operado íntegramente por el equipo de Pindia Software. Web pública en <a href="https://trowelapp.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">trowelapp.com</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ALCANCE ───────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="alcance-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Alcance</span>
+          <h2 id="alcance-title" class="section__headline">Producto completo, no <span class="text-accent">integración de piezas</span></h2>
+          <p class="section__sub">
+            El equipo de Pindia ha desarrollado TrowelApp en su totalidad: arquitectura cloud, base de datos, API, panel web, apps móviles, integraciones con sistemas externos, despliegue continuo, observabilidad y soporte de producción. No hay subcontratación ni stack heredado: cada capa la firma el mismo equipo.
+          </p>
+        </div>
+
+        <div class="especialidades__grid especialidades__grid--3" style="margin-top:var(--sp-12)" data-reveal-group>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3 class="service-card__title">Infraestructura</h3>
+            <p class="service-card__desc">Arquitectura en Microsoft Azure: App Service, SQL Database, Storage, CDN y Monitor. Despliegue continuo desde repositorio, entornos separados de staging y producción y observabilidad end-to-end.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="service-card__title">Producto</h3>
+            <p class="service-card__desc">Backend, panel web Angular y apps móviles .NET MAUI mantenidos por el mismo equipo. Cambios atraviesan toda la pila sin handoffs ni traducciones de requisitos entre proveedores.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="service-card__title">Operación</h3>
+            <p class="service-card__desc">Soporte a clientes, monitorización 24/7, copias de seguridad cifradas, gestión de incidencias y plan de continuidad de negocio. SLA real, no comercial.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STACK TECNOLÓGICO ─────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="stack-title">
+      <div class="container">
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Stack tecnológico</span>
+          <h2 id="stack-title" class="section__headline">Una stack <span class="text-accent">.NET coherente</span> de extremo a extremo</h2>
+          <p class="section__sub">
+            Apostamos por una stack alineada alrededor de .NET y Microsoft Azure. La consecuencia: un único lenguaje (C#) en backend y móvil, un único proveedor cloud, herramientas de observabilidad integradas y la capacidad de mover personas entre capas sin curva de reaprendizaje.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-reveal-group>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Infraestructura</span>
+            <h3 class="tech-card__title">Microsoft Azure</h3>
+            <p class="tech-card__desc">App Service y SQL Database para la API y los datos transaccionales, Blob Storage para documentación y planos, Application Insights para observabilidad y Azure DevOps como orquestador de CI/CD.</p>
+            <p class="tech-card__meta">Cloud · IaaS + PaaS</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Backend</span>
+            <h3 class="tech-card__title">.NET Core</h3>
+            <p class="tech-card__desc">API REST en .NET Core con Entity Framework, autenticación JWT, multitenancy a nivel de fila y separación clara entre dominio, aplicación e infraestructura. Mismo lenguaje que el móvil — código compartido donde tiene sentido.</p>
+            <p class="tech-card__meta">C# · API REST · EF Core</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Frontend web</span>
+            <h3 class="tech-card__title">Angular</h3>
+            <p class="tech-card__desc">Panel de oficina en Angular: gestión completa de presupuestos, planificación, facturación y reporting. Componentes reutilizables, estado tipado y lazy loading por módulo para mantener el bundle bajo control.</p>
+            <p class="tech-card__meta">TypeScript · SPA · RxJS</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Apps móviles</span>
+            <h3 class="tech-card__title">.NET MAUI</h3>
+            <p class="tech-card__desc">Apps nativas para iOS, Android y Windows desde un único código C#. Interfaz adaptada a cada plataforma, acceso a hardware (cámara, GPS, almacenamiento) y modo offline para trabajo en obras sin cobertura.</p>
+            <p class="tech-card__meta">iOS · Android · Windows</p>
+          </article>
+
+        </div>
+
+        <div class="chip-row" style="margin-top:var(--sp-10);justify-content:flex-start" data-reveal>
+          <span class="chip chip--accent">Microsoft Azure</span>
+          <span class="chip chip--accent">.NET Core</span>
+          <span class="chip chip--accent">Angular</span>
+          <span class="chip chip--accent">.NET MAUI</span>
+          <span class="chip">C#</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">SQL Server</span>
+          <span class="chip">Entity Framework</span>
+          <span class="chip">Azure DevOps</span>
+          <span class="chip">Application Insights</span>
+          <span class="chip">JWT</span>
+          <span class="chip">REST</span>
+          <span class="chip">Multitenancy</span>
+          <span class="chip">Offline-first móvil</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MULTIPLATAFORMA ───────────────────────────────────── -->
+    <section class="section" aria-labelledby="multi-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Multiplataforma</span>
+          <h2 id="multi-title" class="section__headline">Mismo producto, <span class="text-accent">cuatro plataformas</span></h2>
+          <p class="section__sub">
+            La misma cuenta funciona en el navegador del jefe de obra, en el iPhone del encargado, en el Android del operario y en el portátil Windows del administrativo. Sincronización en tiempo real, modo offline para cuando la obra está sin cobertura y conflictos resueltos por servidor de forma determinista.
+          </p>
+        </div>
+
+        <div class="platform-grid" data-reveal-group>
+
+          <article class="platform-card">
+            <svg class="platform-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <h3 class="platform-card__name">Panel web</h3>
+            <p class="platform-card__sub">Angular · navegadores modernos</p>
+          </article>
+
+          <article class="platform-card">
+            <svg class="platform-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            <h3 class="platform-card__name">iOS</h3>
+            <p class="platform-card__sub">.NET MAUI · App Store</p>
+          </article>
+
+          <article class="platform-card">
+            <svg class="platform-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            <h3 class="platform-card__name">Android</h3>
+            <p class="platform-card__sub">.NET MAUI · Google Play</p>
+          </article>
+
+          <article class="platform-card">
+            <svg class="platform-card__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <h3 class="platform-card__name">Windows</h3>
+            <p class="platform-card__sub">.NET MAUI · escritorio</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MÓDULOS DEL PRODUCTO ──────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="modulos-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Módulos del producto</span>
+          <h2 id="modulos-title" class="section__headline">12 módulos integrados, <span class="text-accent">una sola plataforma</span></h2>
+          <p class="section__sub">
+            Cada módulo está pensado para un rol concreto de la empresa constructora — desde el operario que ficha en la obra hasta el gerente que firma la facturación final. Todos comparten el mismo dato y se comunican en tiempo real.
+          </p>
+        </div>
+
+        <div class="modules-grid" data-reveal-group>
+
+          <article class="module-card">
+            <span class="module-card__group">Gestión de obra</span>
+            <h3 class="module-card__title">Presupuestos</h3>
+            <p class="module-card__desc">Elaboración rápida de presupuestos por capítulos y partidas con control de costes generales. Envío al cliente desde la propia plataforma.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Gestión de obra</span>
+            <h3 class="module-card__title">Compras</h3>
+            <p class="module-card__desc">Gestión de pedidos, proveedores y albaranes vinculados al presupuesto de cada obra para detectar desviaciones antes de cerrar.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Gestión de obra</span>
+            <h3 class="module-card__title">Facturación</h3>
+            <p class="module-card__desc">Facturas de venta y de gasto por proyecto, certificaciones y conciliación. Compatible con Verifactu para cumplir la normativa fiscal española.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Gestión de obra</span>
+            <h3 class="module-card__title">Almacén</h3>
+            <p class="module-card__desc">Digitalización del control de existencias por obra y por almacén, con movimientos, reservas y trazabilidad de materiales.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Gestión de obra</span>
+            <h3 class="module-card__title">Gestor de planos</h3>
+            <p class="module-card__desc">Subida, versionado y consulta de planos desde móvil y web. Reduce el riesgo de ejecutar una obra con planos desactualizados.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Calidad</span>
+            <h3 class="module-card__title">Partes de trabajo</h3>
+            <p class="module-card__desc">Documentación en tiempo real durante las visitas a obra: incidencias, fotos, firmas y observaciones técnicas.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Calidad</span>
+            <h3 class="module-card__title">Inspecciones</h3>
+            <p class="module-card__desc">Planificación y ejecución de inspecciones con plantillas reutilizables. Resultados firmados en la propia app móvil.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Calidad</span>
+            <h3 class="module-card__title">Repasos</h3>
+            <p class="module-card__desc">Captura de defectos a pie de obra con foto, ubicación y responsable asignado. Seguimiento hasta su resolución.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Calidad</span>
+            <h3 class="module-card__title">Ensayos</h3>
+            <p class="module-card__desc">Plan de aseguramiento de la calidad con resultados de ensayos, registros y reporting consolidado por obra.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Tiempos</span>
+            <h3 class="module-card__title">Planificación</h3>
+            <p class="module-card__desc">Diagrama de Gantt por proyecto con fases, tareas, dependencias y recursos asignados. Reprogramación con un clic.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Tiempos</span>
+            <h3 class="module-card__title">Fichajes geolocalizados</h3>
+            <p class="module-card__desc">Registro horario del personal con geolocalización en obra. Cumple normativa de control horario y se integra con los partes de horas.</p>
+          </article>
+
+          <article class="module-card">
+            <span class="module-card__group">Tiempos</span>
+            <h3 class="module-card__title">Órdenes y partes de horas</h3>
+            <p class="module-card__desc">Órdenes de trabajo diarias creadas desde oficina o pie de obra y partes de horas vinculados al coste real de la obra.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INTEGRACIONES ─────────────────────────────────────── -->
+    <section class="section" aria-labelledby="integ-title">
+      <div class="container">
+        <div class="diseno-web__split">
+          <div data-reveal="left">
+            <span class="section__label">Integraciones</span>
+            <h2 id="integ-title" class="section__headline">Conectado al ecosistema <span class="text-accent">del cliente</span></h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              Una constructora no opera sola. Tiene contabilidad, fiscalidad, ERPs y herramientas de oficina que ya estaban antes de TrowelApp. Por eso construimos integraciones bidireccionales con los sistemas de mayor uso del sector, en lugar de pedirles que abandonen lo que ya funciona.
+            </p>
+            <ul class="check-list">
+              <li><strong>Verifactu (AEAT)</strong>: facturación electrónica conforme a la normativa fiscal española.</li>
+              <li><strong>Holded</strong>: sincronización con la solución contable y de gestión líder en la pyme española.</li>
+              <li><strong>Multimoneda y multipaís</strong>: producto operativo en seis países con normativas fiscales distintas.</li>
+              <li><strong>API documentada</strong>: integración con ERPs propietarios cuando el cliente lo requiere.</li>
+              <li><strong>Importación / exportación</strong>: presupuestos, partidas y datos maestros en formatos estándar del sector.</li>
+            </ul>
+          </div>
+          <div data-reveal="right">
+            <div class="stat-strip" style="margin-top:0;grid-template-columns:1fr 1fr">
+              <div class="stat-card">
+                <div class="stat-card__num">Verifactu</div>
+                <div class="stat-card__label">Facturación electrónica AEAT</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">Holded</div>
+                <div class="stat-card__label">Integración contable nativa</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">6</div>
+                <div class="stat-card__label">Normativas fiscales soportadas</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">API</div>
+                <div class="stat-card__label">REST documentada para terceros</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ACADEMY ───────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="academy-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Formación de usuario</span>
+          <h2 id="academy-title" class="section__headline">TrowelApp <span class="text-accent">Academy</span></h2>
+          <p class="section__sub">
+            Construir el producto es la mitad del trabajo: la otra mitad es que el operario, el capataz y el jefe de obra lo usen sin fricción. Por eso desarrollamos <a href="https://academy.trowelapp.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">academy.trowelapp.com</a>, el portal de formación y documentación oficial de TrowelApp.
+          </p>
+          <p style="color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-4)">
+            Cubre el alta de cuenta, el primer login, la guía del panel web y la app móvil, vídeos de cada módulo y casos de uso reales del sector. Mismo equipo, misma marca, misma stack — desplegado y mantenido por Pindia.
+          </p>
+          <div style="margin-top:var(--sp-8)">
+            <a href="https://academy.trowelapp.com" target="_blank" rel="noopener" class="btn btn--secondary">Visitar Trowel Academy ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TRACCIÓN ──────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="traccion-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Tracción</span>
+          <h2 id="traccion-title" class="section__headline">Producto vivo, en <span class="text-accent">producción real</span></h2>
+          <p class="section__sub">
+            TrowelApp no es un side project ni una demo. Es producto de pago, con clientes recurrentes, soporte, SLA y una hoja de ruta pública.
+          </p>
+        </div>
+
+        <div class="stat-strip" style="margin-top:var(--sp-12)" data-reveal-group>
+          <div class="stat-card">
+            <div class="stat-card__num">+5.000</div>
+            <div class="stat-card__label">Usuarios activos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">6</div>
+            <div class="stat-card__label">Países en producción</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">€299</div>
+            <div class="stat-card__label">/mes desde — IVA no incluido</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">Kit Digital</div>
+            <div class="stat-card__label">Solución subvencionable</div>
+          </div>
+        </div>
+
+        <p style="margin-top:var(--sp-10);max-width:820px;color:var(--text-2);line-height:var(--lh-base)" data-reveal>
+          TrowelApp está homologada como solución del programa <strong>Kit Digital</strong> del Gobierno de España en la categoría "Gestión de Procesos", lo que permite a pymes y autónomos cubrir con bono público parte del coste de la licencia.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── ETIQUETAS Y ESTADO ────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="tags-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <h2 id="tags-title" class="section__label" style="margin-bottom:var(--sp-4)">Etiquetas del proyecto</h2>
+          <div class="chip-row" style="margin-top:0">
+            <span class="chip">SaaS multitenant</span>
+            <span class="chip">Sector construcción</span>
+            <span class="chip">Microsoft Azure</span>
+            <span class="chip">.NET Core</span>
+            <span class="chip">Angular</span>
+            <span class="chip">.NET MAUI</span>
+            <span class="chip">iOS · Android · Windows</span>
+            <span class="chip">Verifactu</span>
+            <span class="chip">Holded</span>
+            <span class="chip">Kit Digital</span>
+            <span class="chip">Multipaís</span>
+          </div>
+          <p style="font-size:var(--text-sm);color:var(--text-3);margin-top:var(--sp-8);line-height:var(--lh-base)">
+            Producto desarrollado y operado por Pindia Software desde su concepción. Backend, panel web, apps móviles, infraestructura, integraciones, despliegue continuo y soporte de producción los firma el mismo equipo. Web pública: <a href="https://trowelapp.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">trowelapp.com</a> · Formación: <a href="https://academy.trowelapp.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">academy.trowelapp.com</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="post-cta" style="background:#0F172A;border:1px solid #1E293B;border-radius:var(--r-xl);overflow:hidden;max-width:880px;margin-inline:auto;position:relative" data-reveal>
+          <div class="post-cta__grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:0">
+            <div class="post-cta__media" style="position:relative;aspect-ratio:1/1;background:#0F172A">
+              <img src="/assets/img/cta-trowel-robot.webp" alt="Robot de Pindia equipado de obra: casco, brocha y herramientas, con una grúa y andamios al fondo" loading="lazy" decoding="async" width="1254" height="1254" style="width:100%;height:100%;object-fit:cover;display:block">
+            </div>
+            <div class="post-cta__body" style="padding:var(--sp-10) var(--sp-10);color:#F8FAFC">
+              <span style="display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:var(--w-sb);letter-spacing:.08em;text-transform:uppercase;color:#FF7A73;margin-bottom:var(--sp-3)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                ¿Tienes un producto SaaS en mente?
+              </span>
+              <h2 id="cta-title" style="font-size:var(--text-2xl);font-weight:var(--w-sb);line-height:1.2;color:#F8FAFC;margin-bottom:var(--sp-3)">Construyamos tu próxima plataforma</h2>
+              <p style="font-size:var(--text-sm);color:#CBD5E1;line-height:1.65;margin-bottom:var(--sp-6)">
+                Diseño, desarrollo y operación end-to-end. Mismo equipo de cero a producción. Presupuesto en menos de 48 horas, sin compromiso.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center">
+                <a href="/contacto/" class="btn btn--primary">
+                  Solicitar presupuesto gratuito
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/proyectos/" style="font-size:var(--text-sm);font-weight:var(--w-md);color:#F8FAFC;text-decoration:underline;text-decoration-color:rgba(248,250,252,.35);text-underline-offset:4px">Ver más proyectos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        @media (max-width: 768px) {
+          .post-cta__grid { grid-template-columns: 1fr !important; }
+          .post-cta__media { aspect-ratio: 16/10 !important; }
+          .post-cta__body { padding: var(--sp-8) var(--sp-6) !important; }
+        }
+      </style>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" class="footer__logo" width="120" height="48" loading="lazy">
+          <p>Agencia de software a medida y diseño web en Santander. Construimos tu presencia digital desde Cantabria para toda España.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Servicios">
+          <h3>Servicios</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/servicios/desarrollo-software.html">Desarrollo software</a></li>
+            <li><a href="/servicios/diseno-web.html">Diseño web</a></li>
+            <li><a href="/servicios/apps-mobile-api.html">Apps móviles</a></li>
+            <li><a href="/servicios/apps-mobile-api.html">APIs e integraciones</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Empresa">
+          <h3>Empresa</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/proyectos/">Proyectos</a></li>
+            <li><a href="/trowelapp/">TrowelApp</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col footer__nap">
+          <h3>Contacto</h3>
+          <address>
+            <a href="tel:+34942189733" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              (+34) 942 18 97 33
+            </a>
+            <a href="mailto:info@pindia.es" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@pindia.es
+            </a>
+            <a href="https://wa.me/34XXXXXXXXX" target="_blank" rel="noopener" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:var(--accent)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Business
+            </a>
+            <span class="footer__nap-item" style="cursor:default">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Calle Ramón Ramírez 5, 1º, 39100 Santa Cruz de Bezana</span>
+            </span>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 PINDIA SOFTWARE S.L. · CIF B67353748</p>
+        <nav class="footer__legal" aria-label="Páginas legales">
+          <a href="/aviso-legal.html">Aviso legal</a>
+          <a href="/politica-privacidad.html">Política de privacidad</a>
+          <a href="/politica-cookies.html">Política de cookies</a>
+          <a href="#" data-cookie-settings>Preferencias de cookies</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <div
+    id="cookie-banner"
+    class="cookie-banner"
+    role="dialog"
+    aria-live="polite"
+    aria-labelledby="cookie-banner-title"
+    aria-describedby="cookie-banner-text">
+    <div class="cookie-banner__card">
+      <div class="cookie-banner__mascot" aria-hidden="true">
+        <img
+          src="/assets/img/cookie-mascot.webp"
+          alt=""
+          width="128"
+          height="128"
+          loading="lazy"
+          decoding="async">
+      </div>
+      <div class="cookie-banner__body">
+        <p class="cookie-banner__eyebrow">
+          <span class="cookie-banner__dot" aria-hidden="true"></span>
+          Cookies
+        </p>
+        <h2 id="cookie-banner-title" class="cookie-banner__title">
+          ¡Hola! Soy Pin <span aria-hidden="true">👋</span>
+        </h2>
+        <p id="cookie-banner-text" class="cookie-banner__text">
+          Utilizamos cookies para entender qué funciona y mejorar la web. Nada raro, nada vendido a terceros — tú decides. Detalles en la <a href="/politica-cookies.html">política de cookies</a>.
+        </p>
+        <div class="cookie-banner__actions">
+          <button id="cookie-reject" type="button" class="btn btn--ghost cookie-banner__btn">Rechazar</button>
+          <button id="cookie-settings-open" type="button" class="btn btn--secondary cookie-banner__btn">Configurar</button>
+          <button id="cookie-accept" type="button" class="btn btn--primary cookie-banner__btn">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="cookie-settings"
+    class="cookie-settings"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookie-settings-title"
+    hidden>
+    <div class="cookie-settings__backdrop" data-cookie-close></div>
+
+    <div class="cookie-settings__panel" role="document">
+      <header class="cookie-settings__header">
+        <div class="cookie-settings__brand">
+          <span class="cookie-settings__mascot" aria-hidden="true">
+            <img src="/assets/img/cookie-mascot.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </span>
+          <div>
+            <p class="cookie-settings__eyebrow">Configuración</p>
+            <h2 id="cookie-settings-title" class="cookie-settings__title">Tus preferencias de cookies</h2>
+          </div>
+        </div>
+        <button type="button" class="cookie-settings__close" data-cookie-close aria-label="Cerrar configuración de cookies">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="cookie-settings__body">
+        <p class="cookie-settings__intro">
+          Tú decides qué cookies activar. Las técnicas son imprescindibles para que la web funcione; el resto solo se cargan si das tu consentimiento. Más detalle en la <a href="/politica-cookies.html">política de cookies</a>.
+        </p>
+
+        <section class="cookie-cat" data-cookie-cat="necessary">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies técnicas</h3>
+              <span class="cookie-cat__badge cookie-cat__badge--required">Siempre activas</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Cookies técnicas (siempre activas)">
+              <input type="checkbox" checked disabled>
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Imprescindibles para el funcionamiento del sitio (recordar tu consentimiento, navegación segura, formulario de contacto). No identifican personalmente y no requieren consentimiento.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies técnicas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><code>pindia_cookies_v2</code></td>
+                  <td>Pindia (propia)</td>
+                  <td>1 año</td>
+                  <td>Almacena tu preferencia de consentimiento.</td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+
+        <section class="cookie-cat" data-cookie-cat="analytics">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies analíticas</h3>
+              <span class="cookie-cat__badge">Opcional</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Activar cookies analíticas">
+              <input type="checkbox" id="cookie-toggle-analytics" data-cookie-toggle="analytics">
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Google Analytics 4 con IP anonimizada. Nos ayudan a entender qué páginas funcionan y mejorar la web. Datos agregados, nunca compartidos para publicidad.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies analíticas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr><td><code>_ga</code></td><td>Google</td><td>2 años</td><td>Identificador anónimo de usuario.</td></tr>
+                <tr><td><code>_ga_*</code></td><td>Google</td><td>2 años</td><td>Estado de sesión de GA4.</td></tr>
+                <tr><td><code>_gid</code></td><td>Google</td><td>24 horas</td><td>Distingue usuarios.</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+      </div>
+
+      <footer class="cookie-settings__footer">
+        <button id="cookie-settings-reject" type="button" class="btn btn--ghost cookie-settings__btn">Rechazar todas</button>
+        <button id="cookie-settings-save" type="button" class="btn btn--secondary cookie-settings__btn">Guardar preferencias</button>
+        <button id="cookie-settings-accept" type="button" class="btn btn--primary cookie-settings__btn">Aceptar todas</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- JS (minified) -->
+  <script src="/js/main.min.js?v=20260426b" defer></script>
+
+</body>
+</html>

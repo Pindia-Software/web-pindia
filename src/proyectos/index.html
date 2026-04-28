@@ -87,8 +87,6 @@
     #filter-web:checked ~ .proyectos__grid .project-card[data-cat="web"] { display:block; }
     #filter-software:checked ~ .proyectos__grid .project-card { display:none; }
     #filter-software:checked ~ .proyectos__grid .project-card[data-cat="software"] { display:block; }
-    #filter-apps:checked ~ .proyectos__grid .project-card { display:none; }
-    #filter-apps:checked ~ .proyectos__grid .project-card[data-cat="apps"] { display:block; }
   </style>
 
   <!-- Schema: BreadcrumbList -->
@@ -183,10 +181,38 @@
             Diseño web
           </label>
 
+          <input type="radio" name="portfolio-filter" id="filter-software">
+          <label for="filter-software">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Software a medida
+          </label>
+
         </div>
 
         <!-- Grid de proyectos -->
         <div class="proyectos__grid" data-reveal-group>
+
+          <!-- SOFTWARE 1 — Caso de éxito: TrowelApp SaaS -->
+          <article class="project-card" data-cat="software" style="position:relative">
+            <div class="project-card__thumb" style="background:#0F172A;display:flex;align-items:center;justify-content:center;padding:var(--sp-8)">
+              <img src="/assets/img/trowelapp-logo.webp" alt="Logotipo de TrowelApp, el SaaS de gestión para constructoras desarrollado por Pindia" loading="lazy" decoding="async" style="width:75%;height:auto;max-height:160px;object-fit:contain">
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver caso de éxito</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">SaaS</span>
+                <span class="project-card__tag">.NET Core</span>
+                <span class="project-card__tag">Angular</span>
+                <span class="project-card__tag">.NET MAUI</span>
+              </div>
+              <h3 class="project-card__title">
+                <a href="/proyectos/trowelapp.html" class="stretched-link" style="color:inherit;text-decoration:none">TrowelApp — SaaS para constructoras</a>
+              </h3>
+              <p class="project-card__desc">Producto SaaS multipaís y multiplataforma desarrollado de cero por Pindia: infraestructura en Azure, backend en .NET Core, panel web en Angular y apps nativas iOS, Android y Windows en .NET MAUI. En producción con +5.000 usuarios activos en 6 países.</p>
+            </div>
+          </article>
 
           <!-- WEB 1 — Caso de éxito: web propia de Pindia -->
           <article class="project-card" data-cat="web" style="position:relative">
