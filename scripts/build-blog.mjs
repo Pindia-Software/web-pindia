@@ -206,7 +206,6 @@ function commonHead({ title, description, canonical, ogImage, extraSchema = [], 
   <title>${escapeHTML(title)}</title>
   <meta name="description" content="${escapeHTML(description)}">
   <link rel="canonical" href="${canonical}">
-  <meta name="robots" content="noindex, nofollow">
   ${prev ? `<link rel="prev" href="${prev}">` : ''}
   ${next ? `<link rel="next" href="${next}">` : ''}
 

@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -f /Users/borjagarciacueto/Documents/Claude/Projects/web-pindia/assets/videos/frames/*)",
+      "Bash(ffmpeg -i /Users/borjagarciacueto/Documents/Claude/Projects/web-pindia/assets/videos/robot_pindia.mov -vf scale=480:-2:flags=lanczos,colorkey=0x000000:0.10:0.03,format=rgba /Users/borjagarciacueto/Documents/Claude/Projects/web-pindia/assets/videos/frames/frame_%04d.png -y)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git -C /Users/borjagarciacueto/Documents/Claude/Projects/web-pindia remote -v)",
+      "Bash(awk '{for\\(i=1;i<=length\\($0\\);i++\\){c=substr\\($0,i,1\\); if\\(c==\"{\"||c==\"}\"||c==\";\"||c==\"\\(\"||c==\"\\)\"\\){}}}' /Users/borjagarciacueto/Documents/Claude/Projects/web-pindia/js/main.min.js)",
+      "Bash(npm run *)",
+      "Bash(git rm *)",
+      "Bash(git check-ignore *)",
+      "Bash(cwebp -q 85 -m 6 \"assets/ChatGPT Image 27 abr 2026, 15_04_18.png\" -o \"assets/img/service-software.webp\")",
+      "Bash(cwebp -q 85 -m 6 \"assets/ChatGPT Image 27 abr 2026, 15_04_22.png\" -o \"assets/img/service-diseno-web.webp\")",
+      "Bash(cwebp -q 85 -m 6 \"assets/ChatGPT Image 27 abr 2026, 15_04_27.png\" -o \"assets/img/service-apps-mobile.webp\")",
+      "Bash(cwebp -q 85 -m 6 \"assets/ChatGPT Image 27 abr 2026, 15_05_10.png\" -o \"assets/img/service-apis.webp\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(cwebp -q 85 \"ChatGPT Image 27 abr 2026, 15_20_19.png\" -o img/proceso-entendemos.webp)",
+      "Bash(cwebp -q 85 \"ChatGPT Image 27 abr 2026, 15_21_44.png\" -o img/proceso-disenamos.webp)",
+      "Bash(cwebp -q 85 \"ChatGPT Image 27 abr 2026, 15_22_33.png\" -o img/proceso-desarrollamos.webp)",
+      "Bash(cwebp -q 85 \"ChatGPT Image 27 abr 2026, 15_23_32.png\" -o img/proceso-lanzamos.webp)",
+      "Bash(cwebp -q 85 \"assets/ChatGPT Image 28 abr 2026, 10_53_53.png\" -o \"assets/img/diseno-web-portfolio.webp\")",
+      "WebFetch(domain:clinicaofeliacasanueva.com)"
+    ]
+  }
+}
