@@ -42,28 +42,7 @@
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
   <link rel="stylesheet" href="/css/styles.min.css?v=20260426b">
 
-  <!-- Filtros CSS-only: ocultar/mostrar cards por categoría -->
   <style>
-    .portfolio-filters { display:flex; flex-wrap:wrap; gap:.75rem; margin-bottom:2.5rem; }
-    .portfolio-filters input[type="radio"] { position:absolute; opacity:0; width:0; height:0; }
-    .portfolio-filters label {
-      display:inline-flex; align-items:center; gap:.4rem;
-      padding:.5rem 1.25rem;
-      border:1px solid var(--border);
-      border-radius:var(--r-full);
-      font-size:var(--text-sm);
-      font-weight:var(--w-md);
-      color:var(--text-2);
-      cursor:pointer;
-      transition:background .15s, color .15s, border-color .15s;
-    }
-    .portfolio-filters input[type="radio"]:checked + label {
-      background:var(--accent);
-      color:#fff;
-      border-color:var(--accent);
-    }
-    .portfolio-filters label:hover { border-color:var(--accent); color:var(--text-1); }
-
     /* Stretched link: toda la project-card es clicable cuando hay link en el título */
     .project-card { position: relative; }
     .project-card .stretched-link::after {
@@ -98,13 +77,6 @@
       border-radius: 50%;
       background: var(--accent);
     }
-
-    /* Mostrar todo por defecto */
-    #filter-all:checked ~ .proyectos__grid .project-card { display:block; }
-    #filter-web:checked ~ .proyectos__grid .project-card { display:none; }
-    #filter-web:checked ~ .proyectos__grid .project-card[data-cat="web"] { display:block; }
-    #filter-software:checked ~ .proyectos__grid .project-card { display:none; }
-    #filter-software:checked ~ .proyectos__grid .project-card[data-cat="software"] { display:block; }
   </style>
 
   <!-- Schema: BreadcrumbList -->
@@ -220,29 +192,6 @@
       <div class="container">
 
         <h2 id="portfolio-title" class="sr-only">Listado de proyectos</h2>
-
-        <!-- Filtros CSS-only -->
-        <div class="portfolio-filters" role="group" aria-label="Filtrar proyectos por categoría">
-
-          <input type="radio" name="portfolio-filter" id="filter-all" checked>
-          <label for="filter-all">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-            Todos
-          </label>
-
-          <input type="radio" name="portfolio-filter" id="filter-web">
-          <label for="filter-web">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
-            Diseño web
-          </label>
-
-          <input type="radio" name="portfolio-filter" id="filter-software">
-          <label for="filter-software">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            Software a medida
-          </label>
-
-        </div>
 
         <!-- Grid de proyectos -->
         <div class="proyectos__grid" data-reveal-group>
