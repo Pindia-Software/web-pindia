@@ -40,8 +40,14 @@
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0003.webp" media="(min-width: 640px)" fetchpriority="low">
   <link rel="preload" as="image" href="/assets/videos/frames-mobile/frame_0001.webp" media="(max-width: 639px)" fetchpriority="low">
 
-  <!-- GA4 ID — replace G-XXXXXXXXXX with your measurement ID -->
-  <script>window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KSW7VRFCV6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KSW7VRFCV6');
+  </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
   <link rel="stylesheet" href="/css/styles.min.css?v=20260426b">
