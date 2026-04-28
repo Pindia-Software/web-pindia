@@ -317,7 +317,7 @@ ${commonHead({
     <nav class="post__breadcrumb" aria-label="Ruta de navegación">
       <div class="container">
         <ol>
-          <li><a href="/web-pindia/">Inicio</a></li>
+          <li><a href="/">Inicio</a></li>
           <li aria-hidden="true">/</li>
           <li><a href="/blog/">Blog</a></li>
           <li aria-hidden="true">/</li>
@@ -525,7 +525,7 @@ function renderBlogList(posts, pageNum, totalPages, tagList = [], activeTag = nu
     <nav class="post__breadcrumb" aria-label="Ruta de navegación">
       <div class="container">
         <ol>
-          <li><a href="/web-pindia/">Inicio</a></li>
+          <li><a href="/">Inicio</a></li>
           <li aria-hidden="true">/</li>
           ${activeTag
             ? `<li><a href="/blog/">Blog</a></li>
