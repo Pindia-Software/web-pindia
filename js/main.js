@@ -447,7 +447,7 @@ function loadAnalytics() {
           form.innerHTML = `
             <div class="form-success" role="status">
               <div class="form-success__image">
-                <img src="/assets/img/form-success-robot.webp" alt="Robot de Pindia celebrando" width="200" height="200" loading="eager">
+                <img src="/assets/img/form-success-robot.webp" alt="Robot de Pindia celebrando" width="280" height="280" loading="eager">
               </div>
               <div class="form-success__content">
                 <h3>¡Mensaje recibido!</h3>
