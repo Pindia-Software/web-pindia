@@ -20,7 +20,8 @@
       "Bash(cwebp -q 85 \"ChatGPT Image 27 abr 2026, 15_22_33.png\" -o img/proceso-desarrollamos.webp)",
       "Bash(cwebp -q 85 \"ChatGPT Image 27 abr 2026, 15_23_32.png\" -o img/proceso-lanzamos.webp)",
       "Bash(cwebp -q 85 \"assets/ChatGPT Image 28 abr 2026, 10_53_53.png\" -o \"assets/img/diseno-web-portfolio.webp\")",
-      "WebFetch(domain:clinicaofeliacasanueva.com)"
+      "WebFetch(domain:clinicaofeliacasanueva.com)",
+      "Bash(git commit *)"
     ]
   }
 }
