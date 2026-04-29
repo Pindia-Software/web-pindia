@@ -383,6 +383,18 @@ function loadAnalytics() {
     const startTime = Date.now();
     const honeypot  = form.querySelector('[name="website"]'); // honeypot field
 
+    // Limpia error cuando usuario corrige campo
+    form.querySelectorAll('[required]').forEach(field => {
+      field.addEventListener('input', () => {
+        if (field.value.trim()) {
+          field.removeAttribute('aria-invalid');
+          const wrapper = field.closest('.field');
+          const err = wrapper?.querySelector('.field__error');
+          if (err) err.hidden = true;
+        }
+      });
+    });
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
