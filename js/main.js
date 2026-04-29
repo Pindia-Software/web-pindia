@@ -434,12 +434,13 @@ function loadAnalytics() {
         if (res.ok) {
           form.innerHTML = `
             <div class="form-success" role="status">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                <polyline points="22 4 12 14.01 9 11.01"/>
-              </svg>
-              <h3>¡Mensaje enviado!</h3>
-              <p>Te responderemos en menos de 24 horas.</p>
+              <div class="form-success__image">
+                <img src="/assets/img/form-success-robot.webp" alt="Robot de Pindia celebrando" width="200" height="200" loading="eager">
+              </div>
+              <div class="form-success__content">
+                <h3>¡Mensaje recibido!</h3>
+                <p>Te contestaremos enseguida.</p>
+              </div>
             </div>`;
         } else {
           throw new Error('Server error');

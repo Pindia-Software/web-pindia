@@ -45,9 +45,12 @@
     .field__check { display:flex; align-items:flex-start; gap:var(--sp-3); cursor:pointer; }
     .field__check input { margin-top:2px; accent-color:var(--accent); flex-shrink:0; }
     .contact-form { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--r-xl); padding:var(--sp-8); }
-    .form-success { text-align:center; padding:var(--sp-12) 0; color:var(--accent); }
-    .form-success h3 { font-size:var(--text-2xl); color:var(--text-1); margin-top:var(--sp-4); }
-    .form-success p { color:var(--text-2); margin-top:var(--sp-2); }
+    .form-success { display:flex; flex-direction:column; align-items:center; gap:var(--sp-8); padding:var(--sp-12) var(--sp-8); text-align:center; }
+    .form-success__image { flex-shrink:0; }
+    .form-success__image img { display:block; width:160px; height:160px; }
+    .form-success__content {}
+    .form-success h3 { font-size:var(--text-2xl); font-weight:var(--w-sb); color:var(--text-1); margin:0; }
+    .form-success p { font-size:var(--text-base); color:var(--text-2); margin:var(--sp-2) 0 0 0; line-height:var(--lh-relaxed); }
     .form-error-global { background:rgba(232 65 58/0.1); border:1px solid rgba(232 65 58/0.3); border-radius:var(--r-md); padding:var(--sp-3) var(--sp-4); font-size:var(--text-sm); color:var(--accent); margin-top:var(--sp-4); }
     .contact-layout { display:grid; grid-template-columns:1fr; gap:var(--sp-10); }
     @media (min-width:900px) {
@@ -135,7 +138,7 @@
           <div data-reveal>
             <form
               class="contact-form"
-              data-endpoint="/api/contact"
+              data-endpoint="https://formspree.io/f/mqewrvrd"
               novalidate
               aria-label="Formulario de contacto">
 
