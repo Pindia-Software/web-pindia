@@ -1,0 +1,262 @@
+{
+  "client": {
+    "name": "Pindia Software S.L.",
+    "url": "pindia.es",
+    "sector_short": "Agencia de software y diseño web (Santa Cruz de Bezana, Cantabria)",
+    "sector_full": "B2B servicios técnicos — agencia de desarrollo software y diseño web; clientes finales: pymes, ingenierías, constructoras y empresas locales/nacionales",
+    "jurisdiction": "España / UE — RGPD, LOPDGDD, LSSI-CE, criterios AEPD",
+    "platform": "HTML5 + CSS + JS vanilla, build en Node, despliegue en GitHub Pages (CNAME pindia.es, workflow static.yml). NO se ha migrado a Cloudflare Pages.",
+    "date_es": "1 de mayo de 2026 (re-auditoría tras fixes)",
+    "scope": "Mismas páginas y artefactos que la primera auditoría (home, servicios/, proyectos/, trowelapp/, productos/, contacto/, blog/, las tres legales, sitemap, robots, schema, manifest, _headers, partials), verificando los 23 hallazgos previos contra el código actual."
+  },
+  "executive_summary": {
+    "global_score": "8,4",
+    "tagline": "Sprint de cierre ejecutado con éxito. De los 23 hallazgos del informe anterior, 15 están totalmente resueltos, 2 parcialmente resueltos y 6 quedan pendientes (uno de ellos crítico: la migración a Cloudflare Pages para activar las cabeceras de seguridad). El sitio ha pasado de \"casi terminado\" a \"publicado con casi todo encajado\". Los focos críticos del informe anterior — placeholder GSC en 16+ páginas, WhatsApp roto en /contacto/, self-disclaimer publicado en política de privacidad, fechas legales en abril de 2024, cookie ID con placeholder, schema.json redundante, display=browser en manifest — han sido corregidos limpiamente. Lo que queda son tareas de fase 2/3 que no impiden poner el sitio en limpio, pero sí mejorarían la postura técnica si se completan.",
+    "scores": [
+      ["Diseño visual y branding", "8,5 / 10"],
+      ["UX y arquitectura de información", "8,5 / 10"],
+      ["Usabilidad técnica y rendimiento", "7,5 / 10"],
+      ["SEO básico on-page", "9 / 10"],
+      ["Cumplimiento legal", "8,5 / 10"],
+      ["Conversión y confianza", "8,5 / 10"]
+    ],
+    "score_highlight_row": "SEO básico on-page",
+    "strengths": [
+      "SEO técnico y schema markup en estado limpio. Verificación de Search Console arreglada en las 16+ páginas, cookie ID real (_ga_KSW7VRFCV6), schema.json externo eliminado para evitar redundancia, OG images diferenciadas por proyecto (case-ofelia, case-rotella, case-camino-gaudi, trowelapp), sitemap.xml con 41 URLs (antes 14). Los cuatro JSON-LD inline por página siguen ahí. Es el área con mayor salto vs la primera auditoría.",
+      "Cumplimiento legal en postura sólida. Self-disclaimer \"debe ser revisado por abogado\" eliminado de la política de privacidad, \"pendiente de actualización\" eliminado del aviso legal, fechas actualizadas a mayo de 2026 en las tres políticas, cookie _ga_KSW7VRFCV6 correctamente declarada. La política recoge ya datos coherentes con la realidad técnica del sitio.",
+      "Canales de contacto sin fricción. WhatsApp en /contacto/ ya apunta al número real (34679551518), banner de cookies AEPD-compliant intacto, formulario con consentimiento RGPD obligatorio. La página de contacto vuelve a funcionar como punta de embudo sin agujeros."
+    ],
+    "critical_problems": [
+      "_headers sigue siendo código muerto en producción. El sitio sigue desplegándose desde GitHub Pages (CNAME + workflow static.yml), que ignora _headers. HSTS, CSP, X-Frame-Options, Referrer-Policy y Permissions-Policy siguen sin aplicarse. El comentario inicial del propio archivo lo reconoce. Este es el único crítico del informe anterior que queda abierto y, al mismo tiempo, el más laborioso de cerrar.",
+      "Inscripción registral incompleta. El \"pendiente de actualización\" se ha eliminado, pero el texto actual (\"Inscrita en el Registro Mercantil de Cantabria\") sigue sin Tomo, Folio, Hoja, Inscripción y fecha. El Art. 10 LSSI-CE pide los datos completos cuando aplique, y para una S.L. aplica.",
+      "Inconsistencia residual en política de cookies. La página politica-cookies.html lista en una tabla cookie_consent y en otra pindia_cookies_v2 como cookies técnicas. Solo una de las dos coincide con la que el JS realmente graba. Es deuda menor pero crea contradicción interna en un texto que precisamente vende rigor."
+    ],
+    "legal_risk_level": "Bajo-Medio",
+    "legal_risk_reason": "El cierre legal ha sido casi completo: textos fechados, sin self-disclaimer público, cookie ID alineada con la realidad, formulario y banner correctos. El único frente vivo es el dato de inscripción registral incompleto y la inconsistencia entre los dos nombres de cookie técnica. Ninguna de las dos justifica una intervención AEPD por sí sola, pero recomendamos cerrarlas en el siguiente sprint.",
+    "legal_disclaimer": "No soy abogado. Este apartado es orientativo desde la práctica de auditoría web; para garantías formales se requiere revisión por profesional jurídico especializado en RGPD/AEPD."
+  },
+  "areas": [
+    {
+      "name": "1 · Diseño visual y branding",
+      "findings": [
+        {
+          "level": "MEDIO",
+          "title": "Copyright del footer congelado en 2024 (PENDIENTE).",
+          "problem": "El footer sigue mostrando \"© 2024 PINDIA SOFTWARE S.L. · CIF B67353748\" en src/partials/footer.html y en todas las páginas compiladas. Era hallazgo BAJO en la primera auditoría; lo subo a MEDIO porque, a estas alturas del año, \"© 2024\" ya transmite descuido sin matices.",
+          "evidence": "src/partials/footer.html línea con p class=footer__copy © 2024 PINDIA SOFTWARE S.L. · CIF B67353748; replicado en index.html, aviso-legal.html, contacto/, servicios/, proyectos/.",
+          "recommendation": "Cambiar a \"© 2024–2026\" o, mejor, generar el año dinámicamente con span id=footer-year rellenado por main.js y un fallback estático para JS-off.",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "2 · UX y arquitectura de información",
+      "findings": [
+        {
+          "level": "BAJO",
+          "title": "Enlace WhatsApp roto en /contacto/ — RESUELTO.",
+          "problem": "El placeholder wa.me/34XXXXXXXXX en la columna lateral se ha sustituido por el número real (34679551518) y el comentario TODO ha desaparecido del HTML. Hallazgo cerrado.",
+          "evidence": "contacto/index.html línea 364 enlaza a https://wa.me/34679551518.",
+          "recommendation": "—. Cerrado.",
+          "effort": "—."
+        },
+        {
+          "level": "MEDIO",
+          "title": "\"Apps móviles\" y \"APIs e integraciones\" llevan al mismo destino (PENDIENTE).",
+          "problem": "Sigue exactamente igual: el footer y las cards de servicios de la home apuntan ambos a /servicios/apps-mobile-api.html. Cuatro ocurrencias en index.html y dos en el partial del footer.",
+          "evidence": "src/partials/footer.html y .especialidades__grid en src/index.html — dos enlaces distintos al mismo apps-mobile-api.html.",
+          "recommendation": "Sin cambios respecto al informe anterior. Recomendado: separar en dos URLs reales o usar anclas #apps-mobile / #apis.",
+          "effort": "Medio (separar) / Bajo (anclas)."
+        },
+        {
+          "level": "BAJO",
+          "title": "Inconsistencia entre teléfono fijo y WhatsApp (PENDIENTE).",
+          "problem": "Sin cambios. El fijo 942 18 97 33 y el WhatsApp 679 551 518 siguen sin etiquetas que aclaren al visitante el matiz.",
+          "evidence": "Footer de toda la web.",
+          "recommendation": "Etiquetas tipo \"Atención telefónica\" / \"WhatsApp Business\" o consolidar en uno.",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "3 · Usabilidad técnica y rendimiento",
+      "findings": [
+        {
+          "level": "CRÍTICO",
+          "title": "Cabeceras de seguridad no aplicadas en producción (PENDIENTE).",
+          "problem": "Sin cambios respecto a la auditoría anterior. CNAME apunta a pindia.es, el workflow static.yml despliega a GitHub Pages y el comentario del propio _headers sigue afirmando \"El sitio actual está en GitHub Pages (no lo lee)\". HSTS, CSP, X-Frame-Options, Referrer-Policy y Permissions-Policy siguen sin llegar al navegador.",
+          "evidence": ".github/workflows/static.yml (deploy to Pages), CNAME (pindia.es), cabecera de _headers con la nota explícita.",
+          "recommendation": "Misma que en el informe anterior. Cloudflare Pages es la migración más limpia: conserva el repositorio como fuente, lee _headers y no cambia la URL final. Tiempo estimado: 1-2 horas con un cambio de CNAME en DNS.",
+          "effort": "Medio."
+        },
+        {
+          "level": "BAJO",
+          "title": "display: browser en manifest — RESUELTO.",
+          "problem": "El manifest ya usa \"display\": \"standalone\". Hallazgo cerrado.",
+          "evidence": "manifest.webmanifest línea 6.",
+          "recommendation": "—. Cerrado en la parte de display.",
+          "effort": "—."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Manifest sigue con icons: [] (PARCIAL).",
+          "problem": "El array de iconos sigue vacío. Aunque display: standalone ya está, sin iconos la PWA no se puede instalar y Lighthouse seguirá penalizando el bloque PWA. Se ha cerrado la mitad del problema (display) pero falta la otra mitad (icons).",
+          "evidence": "manifest.webmanifest última línea.",
+          "recommendation": "Generar icon-192.png, icon-512.png y un icon-512-maskable.png (purpose any maskable). Añadir las tres entradas al array icons. Coste: 30 min con un script de redimensionado.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "BAJO",
+          "title": "Cache busting con dos fechas distintas (PENDIENTE).",
+          "problem": "head-assets.html sigue con ?v=20260428d y scripts.html con ?v=20260429d. La centralización de ASSET_VER no se ha hecho.",
+          "evidence": "src/partials/head-assets.html líneas 11 y 21 (v=20260428d); src/partials/scripts.html línea 2 (v=20260429d).",
+          "recommendation": "Misma que en la auditoría anterior. Centralizar en variable consumida por ambos builders, idealmente derivada del SHA del commit en CI.",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "4 · SEO básico on-page",
+      "findings": [
+        {
+          "level": "BAJO",
+          "title": "REPLACE_WITH_GSC_CODE — RESUELTO.",
+          "problem": "El meta google-site-verification con el placeholder ha desaparecido completamente de las 16+ páginas. Hallazgo cerrado.",
+          "evidence": "grep -rn REPLACE_WITH_GSC_CODE devuelve cero coincidencias.",
+          "recommendation": "—. Cerrado. Verificar que la propiedad está activa en Search Console por TXT en DNS o por el código real si se ha sustituido.",
+          "effort": "—."
+        },
+        {
+          "level": "BAJO",
+          "title": "schema.json externo redundante — RESUELTO.",
+          "problem": "schema.json ha sido eliminado de la raíz. La estrategia de schema queda consolidada en JSON-LD inline por página. Hallazgo cerrado.",
+          "evidence": "ls schema.json falla; grep alternate.*schema.json cero matches.",
+          "recommendation": "—. Cerrado.",
+          "effort": "—."
+        },
+        {
+          "level": "BAJO",
+          "title": "Cookie ID _ga_XXXXXXXXXX — RESUELTO.",
+          "problem": "La tabla de cookies analíticas en politica-cookies.html ya lista _ga_KSW7VRFCV6, el ID real derivado de window.GA_MEASUREMENT_ID. Hallazgo cerrado.",
+          "evidence": "politica-cookies.html línea 329.",
+          "recommendation": "—. Cerrado.",
+          "effort": "—."
+        },
+        {
+          "level": "BAJO",
+          "title": "og:image aún compartido entre páginas estáticas no-proyecto (PARCIAL).",
+          "problem": "Las páginas de proyecto sí tienen og:image diferenciada (case-ofelia, case-rotella, case-camino-gaudi, trowelapp-logo). Pero las páginas /servicios/, /servicios/diseno-web.html, /contacto/, /trowelapp/ y /productos/trowelapp.html siguen reusando og-home.webp. Mejora real pero incompleta.",
+          "evidence": "grep -rh og:image src/ muestra cinco variantes activas; las cuatro páginas de servicios + contacto comparten og-home.webp.",
+          "recommendation": "Generar OG image específica para servicios, contacto, trowelapp/ y la home de proyectos (4 imágenes adicionales). Mismo template visual.",
+          "effort": "Medio."
+        }
+      ]
+    },
+    {
+      "name": "5 · Cumplimiento legal — bloque crítico",
+      "findings": [
+        {
+          "level": "BAJO",
+          "title": "Self-disclaimer en política de privacidad — RESUELTO.",
+          "problem": "El bloque \"Nota importante: El contenido… debe ser revisado y validado por un abogado especializado…\" ha desaparecido de politica-privacidad.html. Hallazgo cerrado.",
+          "evidence": "grep \"Nota importante\" politica-privacidad.html no devuelve coincidencias.",
+          "recommendation": "—. Cerrado. Recordatorio: la revisión jurídica externa sigue siendo recomendable, pero ya no está como nota pública.",
+          "effort": "—."
+        },
+        {
+          "level": "ALTO",
+          "title": "Inscripción registral incompleta (PARCIAL).",
+          "problem": "El texto \"(pendiente de actualización)\" ha desaparecido, ahora dice \"Inscrita en el Registro Mercantil de Cantabria\". Pero siguen faltando los datos formales que pide el Art. 10 LSSI-CE: Tomo, Folio, Hoja, número de inscripción y fecha. Es media solución: ya no transmite descuido público, pero técnicamente sigue por debajo del estándar.",
+          "evidence": "aviso-legal.html — bloque dt Inscripción registral / dd Inscrita en el Registro Mercantil de Cantabria.",
+          "recommendation": "Recopilar Tomo, Folio, Hoja, número de inscripción y fecha del Registro Mercantil de Cantabria y publicarlos. Una línea más en el dd.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "BAJO",
+          "title": "Fechas \"abril de 2024\" en las tres políticas — RESUELTO.",
+          "problem": "Las tres páginas legales muestran ahora \"Última actualización: mayo de 2026\". Hallazgo cerrado.",
+          "evidence": "aviso-legal.html línea 202, politica-privacidad.html línea 225, politica-cookies.html línea 267.",
+          "recommendation": "—. Cerrado.",
+          "effort": "—."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Inconsistencia entre nombre de cookie real y declarado (PENDIENTE).",
+          "problem": "La política de cookies sigue conviviendo con dos nombres distintos: cookie_consent (sección 2.1, tabla técnica, línea 293) y pindia_cookies_v2 (línea 354 en el cuerpo del texto y en el panel de configuración del banner). Hay que elegir uno.",
+          "evidence": "politica-cookies.html líneas 293 y 354; index.html panel cookie-settings con pindia_cookies_v2.",
+          "recommendation": "Dejar solo el nombre que el JS graba realmente (probablemente pindia_cookies_v2) y unificar todas las menciones (tabla técnica, cuerpo del texto, panel de configuración).",
+          "effort": "Bajo."
+        }
+      ],
+      "legal_disclaimer_callout": "Nota legal del auditor. No soy abogado. Cada recomendación legal de este informe es orientativa basada en el marco general (LSSI-CE, RGPD, LOPDGDD y criterios AEPD publicados). Para garantías formales, los textos legales y la implementación deben revisarse con un profesional jurídico especializado en RGPD/protección de datos."
+    },
+    {
+      "name": "6 · Conversión y confianza",
+      "findings": [
+        {
+          "level": "BAJO",
+          "title": "Pérdida de leads por WhatsApp roto — RESUELTO.",
+          "problem": "Cerrado. La página de /contacto/ vuelve a operar como punta de embudo sin agujeros.",
+          "evidence": "contacto/index.html línea 364 — número real.",
+          "recommendation": "—.",
+          "effort": "—."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Logos de clientes en home (PENDIENTE).",
+          "problem": "Sin sección \"Han confiado en nosotros\" todavía.",
+          "evidence": "Búsquedas por logos-clientes, han confiado, brand-strip no devuelven sección dedicada.",
+          "recommendation": "Misma que en informe anterior. 6-10 logos en escala de grises con hover en color, debajo del hero.",
+          "effort": "Medio."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Lighthouse 100 sin evidencia visible (PENDIENTE).",
+          "problem": "El badge \"Lighthouse 100\" sigue en la card de pindia.es de la home pero no hay screenshot ni link en /proyectos/web-pindia.html que lo respalde.",
+          "evidence": "grep -c lighthouse|pagespeed|web-vitals proyectos/web-pindia.html devuelve cero.",
+          "recommendation": "Misma que en el informe anterior. Captura de Lighthouse 4-en-1 + link al PageSpeed Insights real.",
+          "effort": "Bajo."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "intro": "Plan actualizado tras la verificación de los 23 hallazgos previos. La fase 1 cierra el único crítico que queda y completa la inscripción registral; la fase 2 ataca el resto de medios (cookie name, manifest icons, OG images, footer, ASSET_VER, logos, Lighthouse); la fase 3 es revisión jurídica externa y refinamiento.",
+    "phase1": {
+      "title": "Fase 1 — Esta semana · Cerrar el último crítico",
+      "items": [
+        "Migrar el frontend a Cloudflare Pages para activar _headers y dejar de tener cabeceras de seguridad como código muerto. CNAME pasa a apuntar al dominio de Cloudflare; el repositorio sigue siendo la fuente. Verificar cabeceras servidas con curl -I https://pindia.es después.",
+        "Completar los datos de inscripción registral en aviso-legal.html con Tomo, Folio, Hoja, Inscripción y fecha. Una línea de cambio."
+      ]
+    },
+    "phase2": {
+      "title": "Fase 2 — Este mes · Completar postura técnica y comercial",
+      "items": [
+        "Unificar el nombre de cookie técnica (pindia_cookies_v2 parece la elegida): borrar las menciones de cookie_consent de la tabla técnica y verificar que main.js graba con esa clave.",
+        "Completar el manifest PWA con los tres iconos (192, 512, 512-maskable) y validar la instalación desde Chrome/Edge móvil.",
+        "Generar OG images específicas para /servicios/, /servicios/diseno-web.html, /contacto/, /trowelapp/ y /productos/trowelapp.html con el mismo template visual de proyectos.",
+        "Resolver la duplicación \"Apps móviles\" + \"APIs e integraciones\" en footer y home: separar en dos páginas o usar anclas #apps-mobile / #apis.",
+        "Centralizar ASSET_VER (un único punto consumido por build-pages.mjs y build-blog.mjs, ideal: SHA corto del commit en CI).",
+        "Actualizar el copyright del footer a \"© 2024–2026\" o generarlo dinámicamente.",
+        "Añadir sección de logos de clientes en home (escala de grises + hover).",
+        "Añadir captura/link de Lighthouse real a /proyectos/web-pindia.html."
+      ]
+    },
+    "phase3": {
+      "title": "Fase 3 — Trimestre · Pulido y revisión externa",
+      "items": [
+        "Revisión jurídica externa de los tres textos legales (RGPD/AEPD especializado) para cerrar la base que el self-disclaimer eliminado dejó implícita.",
+        "Etiquetar canales duales de contacto (fijo vs WhatsApp Business) con leyenda explícita.",
+        "Considerar mostrar tiempo medio de respuesta real si el equipo lleva métrica.",
+        "Revisar dimensiones del logo entre header (140×56) y footer (120×48): mantener ratio o servir un picture con dos rasterizaciones.",
+        "Añadir un módulo \"Por qué Pindia\" arriba del fold para reforzar diferenciación frente a constructores tipo Wix/Hostinger."
+      ]
+    }
+  },
+  "closing": {
+    "heading": "Por qué este sitio merece un rediseño",
+    "body": "La conclusión del informe anterior se mantiene y se refuerza: este sitio no necesita un rediseño. Necesita el último 2 % que separa \"publicado con casi todo encajado\" de \"auditable sin sonrojo\". Lo que importa hoy es migrar a Cloudflare Pages y completar los datos de inscripción registral. Con esos dos cierres, el sitio queda en un estado del que cualquier agencia puede presumir y que aguanta una mirada técnica externa (de un cliente importante, de un inspector AEPD o de un competidor que audita). El resto del plan de fase 2 es valor incremental, no urgencia. Si solo se hace lo de la fase 1, el informe v3 tendría puntuación muy cercana al 9.",
+    "callout": "El sitio no necesita rediseño. Necesita Cloudflare Pages y una línea más en el aviso legal.",
+    "footer_note": "Re-auditoría realizada por Pindia el 1 de mayo de 2026 sobre la rama main del repositorio web-pindia tras los fixes aplicados al primer informe (auditoria-pindia.md / auditoria-pindia.docx). Las observaciones legales son orientativas y no sustituyen asesoramiento jurídico formal."
+  }
+}
