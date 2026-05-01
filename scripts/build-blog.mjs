@@ -648,9 +648,9 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
     { loc: `${SITE_URL}/productos/trowelapp.html`,           lastmod: today, changefreq: 'monthly', priority: '0.9' },
     { loc: `${SITE_URL}/blog/`,                              lastmod: today, changefreq: 'weekly',  priority: '0.7' },
     { loc: `${SITE_URL}/contacto/`,                          lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/aviso-legal.html`,                   lastmod: today, changefreq: 'yearly',  priority: '0.2' },
-    { loc: `${SITE_URL}/politica-privacidad.html`,           lastmod: today, changefreq: 'yearly',  priority: '0.2' },
-    { loc: `${SITE_URL}/politica-cookies.html`,              lastmod: today, changefreq: 'yearly',  priority: '0.2' },
+    { loc: `${SITE_URL}/aviso-legal/`,                       lastmod: today, changefreq: 'yearly',  priority: '0.2' },
+    { loc: `${SITE_URL}/politica-privacidad/`,               lastmod: today, changefreq: 'yearly',  priority: '0.2' },
+    { loc: `${SITE_URL}/politica-cookies/`,                  lastmod: today, changefreq: 'yearly',  priority: '0.2' },
   ];
 
   const pageUrls = Array.from({ length: totalPages - 1 }, (_, i) => ({
