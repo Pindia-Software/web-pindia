@@ -1,5 +1,5 @@
 ---
-title: 'Accesibilidad web para empresas: por qué importa más de lo que crees'
+title: 'Accesibilidad web: por qué importa'
 description: >-
   Qué es la accesibilidad web (WCAG, EN 301 549) y por qué cualquier empresa,
   también en Cantabria, debería tomársela en serio.

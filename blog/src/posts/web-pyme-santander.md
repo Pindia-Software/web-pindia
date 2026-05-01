@@ -1,5 +1,5 @@
 ---
-title: 'Web para pymes en Santander: lo que de verdad necesitas (y lo que no)'
+title: 'Web para pymes: lo que realmente necesitas'
 description: >-
   Qué necesita realmente la web de una pyme en Santander: estructura mínima
   útil, presupuesto razonable y errores que conviene evitar.

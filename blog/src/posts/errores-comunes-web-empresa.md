@@ -1,5 +1,5 @@
 ---
-title: 10 errores que cometen las webs corporativas en Cantabria (y cómo se arreglan)
+title: '10 errores web (soluciones)'
 description: >-
   Los errores más frecuentes que vemos en webs corporativas de empresas de
   Cantabria, con ejemplos reales y soluciones aplicables.

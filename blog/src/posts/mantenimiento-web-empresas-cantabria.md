@@ -1,5 +1,5 @@
 ---
-title: 'Mantenimiento web para empresas en Cantabria: lo que sí, lo que no'
+title: 'Mantenimiento web: lo que sí funciona'
 description: >-
   Qué incluye un buen mantenimiento web para empresas en Cantabria, cuánto
   cuesta y qué pasa cuando se descuida. Con ejemplos reales de la región.

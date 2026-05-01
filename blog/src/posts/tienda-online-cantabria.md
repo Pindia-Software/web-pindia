@@ -1,5 +1,5 @@
 ---
-title: 'Crear una tienda online en Cantabria: lo que aprendemos cada proyecto'
+title: 'Tienda online: lo que aprendemos'
 description: >-
   Cómo planificar una tienda online en Cantabria que venda de verdad:
   plataforma, logística, pasarelas y SEO local. Sin humo.

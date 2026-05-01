@@ -1,5 +1,5 @@
 ---
-title: 'Caña Digital: digitalización y construcción se dan la mano en Cantabria'
+title: 'Caña Digital: construcción digital'
 description: >-
   Pindia Software participó en el primer evento Caña Digital organizado por la
   Oficina Acelera PYME de CEOE-CEPYME Cantabria, un encuentro sobre

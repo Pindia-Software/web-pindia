@@ -1,5 +1,5 @@
 ---
-title: 'Webs para restaurantes y hostelería en Cantabria: lo que sí funciona'
+title: 'Webs para restaurantes: lo que sí funciona'
 description: >-
   Cómo debe ser la web de un restaurante en Cantabria: reservas, carta, SEO
   local y errores que cuestan clientes. Con casos reales.

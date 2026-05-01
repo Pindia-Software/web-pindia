@@ -1,5 +1,5 @@
 ---
-title: 'SEO local en Cantabria: cómo aparecer cuando tus clientes te buscan'
+title: 'SEO local: cómo aparecer cuando te buscan'
 description: >-
   Guía práctica de SEO local en Cantabria: Google Business Profile, contenido
   geolocalizado, reseñas y enlaces locales. Con foco en pymes.

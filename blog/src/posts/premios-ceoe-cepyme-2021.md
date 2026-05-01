@@ -1,5 +1,5 @@
 ---
-title: Noche de reconocimientos en los Premios CEOE-CEPYME Cantabria 2021
+title: 'Premios CEOE-CEPYME 2021'
 description: >-
   Asistimos a la gala de los Premios CEOE-CEPYME Cantabria 2021, una noche en la
   que se reconoció el trabajo de empresas como IMEM Ascensores, CIC Consulting

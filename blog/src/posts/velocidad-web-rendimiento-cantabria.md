@@ -1,5 +1,5 @@
 ---
-title: 'Velocidad web y rendimiento: por qué tu web está perdiendo clientes'
+title: 'Velocidad web: pérdida de clientes'
 description: >-
   Cómo afecta la velocidad de tu web a las ventas y al SEO. Métricas reales,
   ejemplos en empresas de Cantabria y qué se puede hacer.
