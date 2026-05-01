@@ -404,7 +404,7 @@ ${commonHead({
 
 // ── Plantilla listado / paginación ───────────────────────────────────────────
 
-function renderBlogCard({ slug, data, hrefSuffix = '', headingLevel = 2 }) {
+function renderBlogCard({ slug, data, content = '', hrefSuffix = '', headingLevel = 2 }) {
   const t        = data.title;
   const d        = data.description || '';
   const dt       = data.date;
@@ -413,6 +413,7 @@ function renderBlogCard({ slug, data, hrefSuffix = '', headingLevel = 2 }) {
   const tags     = Array.isArray(data.tags) ? data.tags.slice(0, 2) : [];
   const purl     = `/blog/posts/${slug}/${hrefSuffix}`;
   const H        = `h${headingLevel}`;
+  const minutes  = content ? readingTime(content) : 0;
 
   return `<article class="blog-card">
             ${cover ? `
@@ -422,6 +423,7 @@ function renderBlogCard({ slug, data, hrefSuffix = '', headingLevel = 2 }) {
             <div class="blog-card__body">
               <div class="blog-card__date">
                 <time datetime="${formatDateISO(dt)}">${formatDateES(dt)}</time>
+                ${minutes ? `<span aria-hidden="true">·</span><span class="blog-card__reading-time">${minutes} min</span>` : ''}
               </div>
               <${H} class="blog-card__title">
                 <a href="${purl}">${escapeHTML(t)}</a>
@@ -486,8 +488,8 @@ function renderBlogList(posts, pageNum, totalPages, tagList = [], activeTag = nu
     publisher: { '@type': 'Organization', name: 'Pindia Software S.L.', url: SITE_URL },
   });
 
-  const cards = posts.map(({ slug, data }) =>
-    renderBlogCard({ slug, data, hrefSuffix: `?page=${pageNum}`, headingLevel: 2 })
+  const cards = posts.map(({ slug, data, content }) =>
+    renderBlogCard({ slug, data, content, hrefSuffix: `?page=${pageNum}`, headingLevel: 2 })
   ).join('\n\n          ');
 
   const paginationHTML = totalPages > 1 ? `
@@ -781,7 +783,7 @@ console.log('✓ sitemap.xml');
 
 // Partial: últimas 3 entradas para la home (consumido por build-pages.mjs)
 const homePreview = posts.slice(0, 3)
-  .map(({ slug, data }) => renderBlogCard({ slug, data, headingLevel: 3 }))
+  .map(({ slug, data, content }) => renderBlogCard({ slug, data, content, headingLevel: 3 }))
   .join('\n');
 writeFileSync(join(PARTIALS, 'home-blog-preview.html'), homePreview + '\n', 'utf8');
 console.log('✓ partial: home-blog-preview.html');

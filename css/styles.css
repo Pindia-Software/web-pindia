@@ -1444,6 +1444,14 @@ ul, ol { list-style: none; }
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: var(--sp-3);
+  display: flex;
+  gap: var(--sp-2);
+  align-items: center;
+}
+.blog-card__reading-time {
+  font-size: var(--text-xs);
+  font-weight: var(--w-med);
+  color: var(--text-3);
 }
 .blog-card__title {
   font-size: var(--text-lg);
