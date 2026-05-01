@@ -11,3 +11,16 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), interest-cohort=()
   Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+
+# Redirecciones 301 para documentos legales (duplicidad resuelta)
+/aviso-legal.html
+  status = 301
+  Location = /aviso-legal/
+
+/politica-cookies.html
+  status = 301
+  Location = /politica-cookies/
+
+/politica-privacidad.html
+  status = 301
+  Location = /politica-privacidad/
