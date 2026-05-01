@@ -1,0 +1,256 @@
+{
+  "client": {
+    "name": "Pindia Software S.L.",
+    "url": "pindia.es",
+    "sector_short": "Agencia de software a medida y diseño web (Bezana – Santander, Cantabria)",
+    "sector_full": "B2B servicios digitales — desarrollo a medida, diseño web, apps móviles e integraciones para empresas españolas, con foco regional en Cantabria",
+    "jurisdiction": "España / UE — RGPD, LOPDGDD, LSSI-CE y criterios AEPD",
+    "platform": "Stack propio HTML/CSS/JavaScript vanilla con build pipeline Node, desplegado en GitHub Pages (sin generator declarado)",
+    "date_es": "1 de mayo de 2026",
+    "scope": "Home, /servicios/, /proyectos/, /contacto/, /blog/, /aviso-legal.html, /politica-privacidad.html, /politica-cookies.html, /robots.txt y /sitemap.xml. Verificación en directo vía Chrome MCP — DOM, JSON-LD, formulario, banner de cookies en sesión limpia, recursos cargados y peso real de la home."
+  },
+  "executive_summary": {
+    "global_score": "7,6",
+    "tagline": "pindia.es es una web claramente profesional y construida con criterio: identidad visual potente (paleta navy + naranja, mascota Pin propia, hero con animación scroll-driven), arquitectura SEO sólida (canonical, OG, JSON-LD, sitemap, robots), tres páginas legales completas y un banner de cookies AEPD-compliant con triple botón al mismo nivel visual. Es un sitio que vende lo que la agencia hace. La nota no llega al 9 por dos motivos concretos: el peso de la home en producción (23,6 MB descargados, de los cuales 23 MB son los 112 frames WebP de la animación scroll-canvas) compromete las Core Web Vitals en móvil; y la accesibilidad y la política de privacidad tienen huecos —imágenes principales de servicio sin alt y la política no nombra a los encargados del tratamiento que el sitio realmente utiliza (Formspree, Google Analytics 4) ni declara las transferencias a EE.UU. con la base legal aplicable.",
+    "scores": [
+      ["Diseño visual y branding", "9 / 10"],
+      ["UX y arquitectura de información", "8 / 10"],
+      ["Usabilidad técnica y rendimiento", "5 / 10"],
+      ["SEO básico on-page", "8 / 10"],
+      ["Cumplimiento legal", "8 / 10"],
+      ["Conversión y confianza", "8 / 10"]
+    ],
+    "score_highlight_row": "Usabilidad técnica y rendimiento",
+    "strengths": [
+      "Identidad visual coherente y propia. Paleta navy 900 + naranja E8413A aplicada con disciplina, tipografía consistente, mascota Pin (cyborg + cookie-bot en el banner) reconocible. No parece un trabajo de plantilla — y no lo es.",
+      "Cumplimiento legal sólido y banner ejemplar. Aviso legal con LSSI-CE explícita y datos del responsable completos (denominación, CIF B67353748, domicilio, registro mercantil, contacto), política de privacidad con base legal del art. 6.1.a RGPD y derechos del interesado enumerados, política de cookies con tablas por categoría, y banner con tres botones — Rechazar, Configurar, Aceptar — al mismo nivel visual y con bloqueo previo de cookies analíticas.",
+      "SEO técnico bien construido. Cuatro JSON-LD (WebSite, Organization, ProfessionalService, FAQPage), sitemap.xml limpio con 28+ URLs incluyendo blog y páginas legales, robots.txt mínimo y correcto, canonical en cada página, OG y Twitter Cards, blog con tags, paginación y RSS. La base sobre la que crecer está hecha."
+    ],
+    "critical_problems": [
+      "Peso de la home: 23,6 MB. La animación scroll-canvas carga 112 frames WebP (~210 KB cada uno = ~23 MB solo en el hero). En 4G/conexión doméstica española típica son varios segundos extra de descarga y un golpe directo a LCP, INP y bounce rate móvil. Es el hallazgo más explotable comercialmente.",
+      "Imágenes principales sin alt. Las cuatro tarjetas de servicio (service-diseno-web.webp, service-software.webp, service-apps-mobile.webp, service-apis.webp) y los iconos de proceso de la home se sirven con alt vacío. Para una agencia que vende accesibilidad a sus clientes, dejar vacío el alt en las imágenes que comunican el servicio es un fallo de coherencia.",
+      "Política de privacidad no nombra encargados ni transferencias reales. El formulario va a Formspree (Formspree Inc., EE.UU.) y la analítica usa Google Analytics 4 (Google LLC, EE.UU.). La política habla de 'proveedores de servicios (como herramientas de email o CRM)' sin nombrarlos y dice 'no se realizan transferencias internacionales fuera del EEE salvo que los proveedores cuenten con las garantías adecuadas'. El criterio AEPD es nombrar al encargado, indicar la finalidad, identificar la transferencia y citar la base legal (Cláusulas Contractuales Tipo o Data Privacy Framework)."
+    ],
+    "legal_risk_level": "Bajo",
+    "legal_risk_reason": "Las páginas obligatorias existen, el banner es AEPD-compliant y el formulario recoge consentimiento con enlace a la política. El único riesgo real es la opacidad sobre los encargados del tratamiento y las transferencias a EE.UU. — algo subsanable con un párrafo bien redactado en la política de privacidad.",
+    "legal_disclaimer": "No soy abogado. Este apartado es orientativo desde la práctica de auditoría web; para garantías formales se requiere revisión por profesional jurídico especializado en RGPD/AEPD."
+  },
+  "areas": [
+    {
+      "name": "1 · Diseño visual y branding",
+      "findings": [
+        {
+          "level": "BAJO",
+          "title": "Tamaños inconsistentes en imágenes de servicio.",
+          "problem": "Tres de las cuatro imágenes de servicio se sirven a 724×724 px y la cuarta (service-apis.webp) a 1254×1254 px. Son las mismas tarjetas con la misma maqueta, así que la diferencia no aporta nada y obliga al navegador a redimensionar.",
+          "evidence": "naturalWidth/Height en home y /servicios/ index — tres imágenes a 724 y una a 1254.",
+          "recommendation": "Reexportar service-apis.webp a 724×724 (o subir las otras tres a 1254 si se quiere más calidad en retina). Mantener la misma resolución en todo el set.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "BAJO",
+          "title": "Cards de proyecto con cover muy oscuro above-the-fold.",
+          "problem": "En /proyectos/ la primera fila de tarjetas (TrowelApp, pindia.es, El Camino de Gaudí) tiene covers que aparecen como bloques negros durante un instante por la combinación de dark theme y lazy loading. Visualmente es un parpadeo que puede leerse como 'imagen rota'.",
+          "evidence": "Recorrido en directo y screenshots de /proyectos/. La primera fila está en viewport pero los covers solo se completan tras el wait.",
+          "recommendation": "Marcar las primeras 2-3 tarjetas above-the-fold con loading=eager y fetchpriority=high, y dejar loading=lazy en el resto. Alternativamente, añadir un placeholder LQIP/blur o un degradado de marca para evitar el bloque negro.",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "2 · UX y arquitectura de información",
+      "findings": [
+        {
+          "level": "MEDIO",
+          "title": "Falta tiempo de lectura visible en las cards del blog.",
+          "problem": "El builder del blog ya calcula tiempo de lectura (220 palabras/min) pero las tarjetas del listado solo muestran fecha, título, extracto y tags. Es un dato barato de añadir que reduce la fricción de '¿me leo esto?'.",
+          "evidence": "Listado en /blog/ — cada card muestra fecha y tags, sin tiempo de lectura.",
+          "recommendation": "Añadir el tiempo estimado al lado de la fecha en cada post-card (por ejemplo: '23 DE ABRIL DE 2026 · 6 min').",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Sin breadcrumb en las páginas legales.",
+          "problem": "Aviso legal, privacidad y cookies no tienen breadcrumb (sí lo tienen contacto, servicios y proyectos). En sitios B2B es común que el visitante llegue a estas páginas desde un footer y se quede sin orientación.",
+          "evidence": "/aviso-legal.html, /politica-privacidad.html, /politica-cookies.html.",
+          "recommendation": "Añadir el mismo nav aria-label='Ruta de navegación' que ya existe en /contacto/. Coste mínimo y consistencia ganada.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "La home concentra muchísimo contenido en una sola pantalla larga.",
+          "problem": "La home presenta servicios, metodología (4 pasos), proyectos, testimonios, blog, contacto, FAQ y cookies. Funciona, pero el usuario móvil ya ha hecho 8-10 scrolls antes de tomar una decisión. Cada bloque es bueno; juntos cargan al usuario.",
+          "evidence": "Recorrido completo de pindia.es — 11 H2 distintos en una misma página.",
+          "recommendation": "Considerar mover a la home solo 'valor + 4 servicios + 1 caso + CTA' y empujar metodología y FAQ a /servicios/ o a páginas dedicadas. Opción menos disruptiva: aplicar progressive disclosure (mostrar 2 proyectos en home y enlazar a /proyectos/).",
+          "effort": "Medio."
+        }
+      ]
+    },
+    {
+      "name": "3 · Usabilidad técnica y rendimiento",
+      "findings": [
+        {
+          "level": "CRÍTICO",
+          "title": "Peso de la home: 23,6 MB por la animación scroll-canvas.",
+          "problem": "La home descarga 112 frames WebP del cyborg (frame_0001.webp … frame_0112.webp) a una media de 210 KB cada uno, totalizando ~23 MB solo para el hero. En conexiones móviles reales esto se traduce en degradación de LCP, INP y consumo de datos del visitante. El propio sitio promete en su copy 'Core Web Vitals en verde' — el hallazgo entra en colisión directa con el discurso comercial.",
+          "evidence": "performance.getEntriesByType('resource') filtrado por frame_\\d+\\.webp: 112 archivos, 23.572 KB transferidos. pageWeightKB: 23.693 KB.",
+          "recommendation": "Tres opciones, en orden de impacto: (1) Sustituir la secuencia por un video WebM/AV1 — un vídeo de 8-10 s en AV1 a 1080p ronda los 1-2 MB, frente a 23 MB. (2) Reducir el frame set a 30-40 frames (1 de cada 3) e interpolar visualmente con CSS transform. (3) Cargar la animación bajo prefers-reduced-data e IntersectionObserver — solo si el usuario está cerca del hero y no tiene Save-Data activado. Implementar al menos la opción 3 antes de tocar lo demás.",
+          "effort": "Medio."
+        },
+        {
+          "level": "ALTO",
+          "title": "Falta LocalBusiness schema y sameAs en el JSON-LD.",
+          "problem": "Hay Organization y ProfessionalService, pero no LocalBusiness con dirección física, horario y geo, lo cual sería ideal para una empresa con sede en Bezana que apunta a 'Cantabria y España' como mercado. Tampoco hay sameAs con perfiles sociales (LinkedIn, GitHub) que refuerzan E-E-A-T.",
+          "evidence": "Schemas detectados: WebSite, Organization, ProfessionalService, FAQPage. Sin LocalBusiness ni sameAs.",
+          "recommendation": "Añadir LocalBusiness con address, geo, openingHoursSpecification (Lunes-Viernes 9:00-18:00, ya está en /contacto/), telephone, priceRange. En Organization/ProfessionalService, añadir sameAs con LinkedIn, GitHub, Instagram si existe.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "aria-hidden y role no aplicados consistentemente a iconos decorativos.",
+          "problem": "Las imágenes de servicio sin alt funcionan como decorativas según el contexto (tienen un H3 descriptivo y un párrafo). Pero un alt vacío por sí solo, sin role=presentation ni aria-hidden=true, deja a algún screen reader anunciando un 'image' vacío. Por contraste, el banner de cookies sí marca alt vacío y aria-hidden=true en su mascota.",
+          "evidence": "Comparativa entre cookie-banner__mascot img (correcto) y service-card__media img (alt vacío sin aria-hidden).",
+          "recommendation": "Si las imágenes son decorativas, añadir aria-hidden=true. Si son ilustrativas del servicio (lo razonable), darles un alt descriptivo: 'Ilustración de diseño web con palette y wireframes', etc. Ver hallazgo siguiente.",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "4 · SEO básico on-page",
+      "findings": [
+        {
+          "level": "ALTO",
+          "title": "50 % de las imágenes de la home sin atributo alt.",
+          "problem": "En la home, 10 de 20 img no tienen alt. Las que faltan son justo las que comunican los servicios (service-*.webp) y las del proceso (proceso-entendemos.webp, proceso-disenamos.webp, proceso-desarrollamos.webp, proceso-lanzamos.webp). En /servicios/ index la cifra es 6 de 8. Es accesibilidad y SEO de imágenes a la vez.",
+          "evidence": "imgsWithoutAlt: 10/20 en home, 6/8 en /servicios/. Las imágenes existen y se ven bien, solo les falta el atributo.",
+          "recommendation": "Añadir alt descriptivo (no técnico) a todas las imágenes informativas. Ejemplos: service-diseno-web.webp → 'Maqueta de diseño web responsive con paleta y wireframes'; service-software.webp → 'Servidores y cubos de datos representando desarrollo software a medida'; service-apps-mobile.webp → 'Aplicación móvil iOS y Android con icono de mapa'; service-apis.webp → 'Diagrama de integraciones REST y APIs entre sistemas'; proceso-*.webp → 'Paso N del proceso: descripción'.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "H2 con br que rompen el flujo semántico en frases.",
+          "problem": "Varias frases de la home llevan br para forzar saltos de línea visuales (Webs que venden<br><span>desde el primer scroll</span>). El renderizado se ve bien, pero al extraer el texto los crawlers leen 'Webs que vendendesde el primer scroll' sin espacio.",
+          "evidence": "document.querySelectorAll('h2') aplicado en directo devuelve concatenaciones sin espacio. Confirmado en src/index.html línea 321.",
+          "recommendation": "Sustituir br por un span class='block' con display:block en CSS, o añadir un espacio antes del br ('Webs que venden <br>'). Pequeño detalle, mejora extracción de texto en SEO/snippets.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Falta canonical entre /aviso-legal.html y /aviso-legal.",
+          "problem": "Ambas URLs (/aviso-legal.html y /aviso-legal) responden 200. Lo mismo ocurre con privacidad y cookies. No hay duplicación real porque GitHub Pages sirve la misma página, pero no hay link rel=canonical apuntando a una versión preferida desde la otra. Google puede indexar ambas.",
+          "evidence": "Fetch a /aviso-legal → 200; /aviso-legal.html → 200. Mismo comportamiento en privacidad y cookies.",
+          "recommendation": "Decidir cuál es la versión canónica (recomendado: la sin .html, más limpia) y o bien hacer 301 desde la otra, o establecer link rel=canonical consistente. En el sitemap.xml ya están listadas las .html, así que mejor canonicalizar a .html o cambiar el sitemap.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Algunos titles cerca del límite de truncado en SERP.",
+          "problem": "/servicios/ tiene un title de 79 caracteres ('Servicios de Desarrollo Software y Diseño Web | Pindia Software Santander'). Pasa el filtro pero está al límite — Google trunca alrededor de 580 px (~60-65 caracteres en español).",
+          "evidence": "Inspección de meta title en home (~64 chars, OK) y /servicios/ (79 chars, al límite).",
+          "recommendation": "Mantener cada title bajo 60-65 caracteres para evitar truncado. Por ejemplo: 'Servicios de software y diseño web | Pindia Santander' (54).",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "5 · Cumplimiento legal — bloque crítico",
+      "findings": [
+        {
+          "level": "ALTO",
+          "title": "La política de privacidad no nombra encargados ni declara transferencias a EE.UU.",
+          "problem": "El formulario de contacto envía a https://formspree.io/f/mqewrvrd (Formspree Inc., Brookline MA, EE.UU.) y la analítica usa Google Analytics 4 (Google LLC, Mountain View CA, EE.UU.). Ambos son encargados del tratamiento con transferencia internacional. La política dice 'puede hacer uso de proveedores de servicios (como herramientas de email o CRM)' sin nombrarlos, y 'no se realizan transferencias internacionales fuera del EEE salvo que los proveedores cuenten con las garantías adecuadas' — la frase es genérica y, en la práctica, sí hay transferencias a EE.UU. Esa redacción no satisface el criterio AEPD de información clara y específica.",
+          "evidence": "Endpoint del formulario en src/contacto/index.html línea 141. Cookies _ga, _ga_KSW7VRFCV6, _gid listadas en la propia política de cookies (sección 2.2). Sección 6 de privacidad sin nombres concretos.",
+          "recommendation": "Añadir a la sección 6 de la política de privacidad un párrafo equivalente a: 'Para el tratamiento de los datos del formulario utilizamos Formspree (Formspree Inc., con sede en EE.UU., adherido al Data Privacy Framework UE-EE.UU.). Para la analítica web utilizamos Google Analytics 4 (Google LLC, con sede en EE.UU., adherido al Data Privacy Framework UE-EE.UU.). Estas comunicaciones implican una transferencia internacional de datos amparada por las decisiones de adecuación correspondientes y/o cláusulas contractuales tipo.' Validar la adhesión efectiva al DPF de cada proveedor en el momento de redactar.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "La política de cookies no enlaza a la política de privacidad ni al aviso legal.",
+          "problem": "La política de cookies se sostiene sola y enumera bien las cookies, pero no enlaza explícitamente a la política de privacidad para el tratamiento de los datos derivados ni al aviso legal para la identificación del responsable. Es un detalle de coherencia documental.",
+          "evidence": "Recorrido de /politica-cookies.html — sección 6 'Contacto' y sección 5 'Actualización' no remiten a las otras dos políticas.",
+          "recommendation": "Añadir un enlace en la sección 1 o 2 a la política de privacidad ('Para más información sobre el tratamiento de los datos personales, consulta nuestra Política de Privacidad') y al aviso legal en la sección de contacto.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "BAJO",
+          "title": "Falta declaración expresa del derecho a retirar el consentimiento en el banner.",
+          "problem": "El banner es ejemplar (Rechazar / Configurar / Aceptar al mismo nivel) y la cookie cookie_consent permite revocar. Pero no hay un texto cortito en el banner que recuerde 'puedes cambiar tu elección en cualquier momento desde el botón de configuración del pie de página'. El criterio AEPD de 'facilidad equivalente para retirar como para otorgar' está cumplido en mecánica, pero no comunicado.",
+          "evidence": "Texto del banner: 'Utilizamos cookies para entender qué funciona y mejorar la web. Nada raro, nada vendido a terceros — tú decides. Detalles en la política de cookies.'",
+          "recommendation": "Añadir, dentro o debajo del banner, una línea: 'Puedes cambiar tu elección desde el enlace Cookies del pie en cualquier momento'. Y asegurarse de que existe un trigger persistente en el footer para reabrir el modal.",
+          "effort": "Bajo."
+        }
+      ],
+      "legal_disclaimer_callout": "Nota legal del auditor. No soy abogado. Cada recomendación legal de este informe es orientativa basada en el marco general (LSSI-CE, RGPD, LOPDGDD y criterios AEPD publicados). Para garantías formales, los textos legales y la implementación deben revisarse con un profesional jurídico especializado en RGPD/protección de datos."
+    },
+    {
+      "name": "6 · Conversión y confianza",
+      "findings": [
+        {
+          "level": "MEDIO",
+          "title": "Falta prueba social cuantificada (testimonios + métricas).",
+          "problem": "La home presenta proyectos con badges (.NET Core, Angular, Lighthouse 100, etc.) y un H2 'Resultados que generan confianza', pero no hay testimonios reales de cliente con nombre y empresa, ni métricas explícitas tipo '+5.000 usuarios activos en TrowelApp', 'Tiempo medio de respuesta < 24 h', 'Lighthouse 100 en 3 de 4 últimas entregas'. Son datos que la propia web menciona en frío y que multiplicarían el cierre.",
+          "evidence": "Home — sección 'Resultados que generan confianza' sin números reales junto al título; ficha de TrowelApp dice '+5.000 usuarios activos en 6 países' pero no aparece resaltado en home.",
+          "recommendation": "Bloque de 3-4 KPIs sobre fondo navy con números grandes en naranja: '+5.000 usuarios activos · 50+ proyectos entregados · 100/100 Lighthouse · <24 h de respuesta'. Añadir 2 testimonios reales con nombre, cargo y empresa, idealmente en el mismo bloque.",
+          "effort": "Medio."
+        },
+        {
+          "level": "MEDIO",
+          "title": "El CTA principal de la home queda muy ajustado al fold.",
+          "problem": "Sobre desktop 1512×789, la captura above-the-fold muestra el H1 'Diseñamos presencia.' y el subtítulo, pero el CTA 'Cuéntanos tu idea →' queda casi en el borde inferior del fold, acompañado de la mitad del cyborg. En móvil 390×844 entra mejor. La sensación es que el CTA se gana por scroll, no se regala.",
+          "evidence": "Screenshot inicial — CTA visible justo encima del 'SCROLL' indicator, sin holgura.",
+          "recommendation": "O subir el bloque de copy y CTA ~80 px (reducir el padding-top del hero), o duplicar el CTA en sticky en mobile. La mascota cyborg es preciosa pero come fold.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "BAJO",
+          "title": "Sin enlace a redes sociales en el footer.",
+          "problem": "El footer no muestra perfiles sociales (LinkedIn de la empresa, GitHub, posiblemente Instagram). Para una agencia, LinkedIn es prácticamente obligatorio para credibilidad B2B.",
+          "evidence": "Footer revisado en directo — solo enlaces internos a servicios, empresa y contacto.",
+          "recommendation": "Añadir bloque 'Síguenos' con LinkedIn y GitHub al menos. Esto se conecta con el sameAs del JSON-LD del hallazgo de schemas.",
+          "effort": "Bajo."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "intro": "Las acciones se agrupan en tres fases. La fase 1 ataca los hallazgos críticos y legales que deberían cerrarse antes de cualquier campaña; la fase 2 mejora conversión y SEO; la fase 3 aborda rediseño parcial de fondo y pulido.",
+    "phase1": {
+      "title": "Fase 1 — Semana 1-2 · Críticos y legales",
+      "items": [
+        "Reducir el peso del hero scroll-canvas: implementar carga condicional bajo IntersectionObserver y Save-Data y, en paralelo, reducir el frame set a 1 de cada 3 frames como mínimo. Objetivo: bajar la home de 23 MB a menos de 5 MB.",
+        "Añadir alt descriptivo a las cuatro imágenes de servicio y a los iconos de proceso de la home. Replicar en /servicios/ index.",
+        "Reescribir la sección 6 de la política de privacidad nombrando explícitamente Formspree y Google Analytics 4, con la base legal de transferencia internacional (Data Privacy Framework / cláusulas contractuales tipo).",
+        "Añadir enlace cruzado entre las tres páginas legales (privacidad ↔ cookies ↔ aviso legal) para coherencia documental.",
+        "Reexportar service-apis.webp a 724×724 para igualar el set."
+      ]
+    },
+    "phase2": {
+      "title": "Fase 2 — Mes 1 · Mejora de conversión y SEO",
+      "items": [
+        "Añadir LocalBusiness schema con dirección, horario y geo, y sameAs con LinkedIn/GitHub en Organization.",
+        "Añadir bloque de KPIs cuantificados en home (+5.000 usuarios, 50+ proyectos, Lighthouse 100, <24 h respuesta) y dos testimonios reales con nombre y empresa.",
+        "Añadir tiempo de lectura visible en las cards del listado del blog.",
+        "Marcar las 2-3 primeras tarjetas de /proyectos/ con loading=eager y fetchpriority=high y/o LQIP/blur placeholder.",
+        "Acortar titles que pasan de 65 caracteres en /servicios/, blog y páginas de servicio individuales.",
+        "Resolver la duplicación aviso-legal.html ↔ aviso-legal: redirigir o canonicalizar de forma consistente con el sitemap."
+      ]
+    },
+    "phase3": {
+      "title": "Fase 3 — Trimestre · Rediseño de fondo",
+      "items": [
+        "Replantear la home con progressive disclosure: mover metodología y FAQ a páginas dedicadas, dejar la home en valor + servicios + 1 caso destacado + CTA + bloque de prueba social.",
+        "Añadir breadcrumb a las páginas legales para coherencia con el resto del sitio.",
+        "Sustituir los br semánticos en titulares por span class=block con display:block en CSS.",
+        "Añadir bloque de redes sociales en footer con LinkedIn y GitHub.",
+        "Auditar consistencia ARIA en todos los iconos decorativos (aria-hidden=true o alt real, nunca alt vacío solo).",
+        "Considerar si la animación scroll-canvas merece la pena el esfuerzo de mantenimiento — un vídeo AV1 de 1-2 MB con scroll virtualizado da el 90 % del efecto al 5 % del coste."
+      ]
+    }
+  },
+  "closing": {
+    "heading": "Por qué este sitio merece un rediseño",
+    "body": "No lo necesita, lo cual es la mejor noticia para Pindia. pindia.es ya está en el cuartil alto de las webs de agencias españolas: identidad visual original, base legal sólida, SEO técnico cuidado, blog vivo, formulario hecho con criterio. La diferencia entre el 7,6 actual y el 9,2 al que puede ir está en pulir tres cosas concretas: bajar el peso del hero, completar el etiquetado de imágenes y declarar bien los encargados del tratamiento. Son mejoras de fase 1, todas de esfuerzo bajo o medio. El argumento comercial que sí está aquí es otro: si Pindia vende 'webs que convierten y posicionan, mobile-first y con SEO técnico avanzado', la propia web es el escaparate. Un visitante que llega desde móvil y espera 4-5 segundos al hero está leyendo un mensaje diferente al que dice el copy.",
+    "callout": "La web de una agencia es su mejor caso de estudio. Esta lo es casi siempre — y puede serlo todo el tiempo con tres mañanas de trabajo.",
+    "footer_note": "Auditoría realizada por Pindia el 1 de mayo de 2026 sobre la versión en producción de pindia.es. Las observaciones legales son orientativas y no sustituyen asesoramiento jurídico formal."
+  }
+}
