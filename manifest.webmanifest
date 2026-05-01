@@ -3,7 +3,7 @@
   "short_name": "Pindia",
   "description": "Agencia de software a medida y diseño web en Santander",
   "start_url": "/",
-  "display": "browser",
+  "display": "standalone",
   "background_color": "#0F1420",
   "theme_color": "#22293E",
   "icons": []
