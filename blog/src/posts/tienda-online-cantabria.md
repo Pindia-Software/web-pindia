@@ -56,4 +56,11 @@ Optimizar las fichas, llevar bien Google Business Profile, conseguir reseñas y 
 
 Una tienda online no se "termina". Es donde más impacto tiene el mantenimiento continuado: revisar el embudo de checkout cada mes, leer las analíticas, medir abandono de carrito, probar variantes. La mayoría de tiendas que fracasan no son por la tecnología; son porque nadie volvió a tocarlas.
 
+## Más en el blog
+
+- [Mantenimiento web: lo que sí funciona](../mantenimiento-web-empresas-cantabria/) — El mantenimiento es crucial en una tienda.
+- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — Una tienda lenta pierde conversión.
+- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/) — Cumplimiento de RGPD y pagos es obligatorio.
+- [Cómo hacer una landing que convierta](../landing-page-conversion-cantabria/) — Tu landing de tienda es todo.
+
 Si estás pensando en lanzar una tienda online en Cantabria, o si tienes una que no termina de despegar, [hablemos](/contacto/). Las primeras conversaciones nuestras suelen ahorrar mucho tiempo.

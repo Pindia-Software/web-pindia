@@ -20,6 +20,8 @@ Dos normativas, una mano y una guante. **RGPD** (europeo) regula el tratamiento 
 
 Lo importante: **no basta con tener un aviso de cookies**. Tiene que cumplir requisitos concretos. Y la AEPD sanciona, no avisa.
 
+(Para una visión más amplía de cumplimiento legal, incluyendo avisos legales, política de privacidad y DPA, [aquí está el resumen completo](../tu-web-cumple-ley/).)
+
 ## Qué necesita tu web sí o sí
 
 **Aviso legal** identificando a la empresa: razón social, NIF, dirección, contacto, datos de inscripción registral si aplica. Es obligatorio por LSSI y suelta multa quien no lo tiene.

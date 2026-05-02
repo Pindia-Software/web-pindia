@@ -55,4 +55,13 @@ El mantenimiento técnico es solo una parte. Una web también vive si el conteni
 
 ## Cómo lo hacemos en Pindia
 
-Mantenemos webs de pymes y empresas industriales en Cantabria, Asturias y País Vasco. Cada cliente tiene su persona de contacto, sus copias se prueban, y los partes mensuales son legibles para alguien no técnico. Si tu web actual se ha quedado huérfana o sospechas que el mantenimiento que pagas no es lo que crees, [hablemos](/contacto/) y te decimos qué encontramos.
+Mantenemos webs de pymes y empresas industriales en Cantabria, Asturias y País Vasco. Cada cliente tiene su persona de contacto, sus copias se prueban, y los partes mensuales son legibles para alguien no técnico.
+
+## Más en el blog
+
+- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — El mantenimiento debe incluir optimización de velocidad.
+- [10 errores web (soluciones)](../errores-comunes-web-empresa/) — Muchos errores vienen de falta de mantenimiento.
+- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/) — Cumplimiento legal requiere mantenimiento continuo.
+- [WordPress vs desarrollo a medida](../wordpress-vs-desarrollo-medida-cantabria/) — El coste de mantenimiento varía según tecnología.
+
+Si tu web actual se ha quedado huérfana o sospechas que el mantenimiento que pagas no es lo que crees, [hablemos](/contacto/) y te decimos qué encontramos.

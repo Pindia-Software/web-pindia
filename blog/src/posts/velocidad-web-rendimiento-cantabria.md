@@ -21,6 +21,8 @@ Google mide tres cosas para puntuar la experiencia de usuario en tu web: **LCP**
 
 No es una métrica de blogger técnico. Lo usa Google como factor real de posicionamiento. Y cuando hablamos de SEO local en Cantabria, donde la diferencia entre el puesto 4 y el 7 son cero clientes, esto importa.
 
+(Si quieres un análisis más profundo de cada métrica, [aquí explica Core Web Vitals en detalle](../core-web-vitals-que-son/).)
+
 ## Qué hace que una web vaya lenta
 
 Las causas más habituales que encontramos cuando auditamos una web de pyme en Santander:

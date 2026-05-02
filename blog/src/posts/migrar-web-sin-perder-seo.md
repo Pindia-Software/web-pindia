@@ -87,4 +87,11 @@ Una migración bien hecha desde el principio les habría costado un 30% más, y 
 
 Migrar tiene sentido si tu web actual es vieja, lenta, insegura, no responsive o no se puede mantener. **No migres por estética** sin más. Una migración seria cuesta dinero y tiene riesgo. Si la web actual hace su trabajo, mejorar lo existente puede ser más rentable que rehacer.
 
+## Más en el blog
+
+- [SEO local: cómo aparecer cuando te buscan](../seo-local-cantabria/) — Tu SEO local se pierde fácil en una migración mal hecha.
+- [Core Web Vitals: qué son y por qué importan](../core-web-vitals-que-son/) — La nueva web debe ser más rápida. Mide Core Web Vitals antes y después.
+- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — Una web nueva lenta es un fracaso.
+- [Wordpress vs desarrollo a medida](../wordpress-vs-desarrollo-medida-cantabria/) — Elige bien la plataforma antes de migrar.
+
 Si estás planificando una migración o un rediseño de web en Cantabria y quieres que se haga sin perder SEO, [hablemos](/contacto/). En la primera reunión te enseñamos el plan y los riesgos antes de tocar nada.

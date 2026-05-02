@@ -51,4 +51,11 @@ Pide ver proyectos reales de la agencia, no solo capturas. Pide un desglose por 
 
 A menudo se olvida en el presupuesto inicial y luego sorprende. Una web profesional necesita actualizaciones, copias de seguridad, monitorización y soporte. En Cantabria, los planes de mantenimiento razonables van desde los 40 hasta los 150 euros al mes según el nivel.
 
+## Más en el blog
+
+- [WordPress vs desarrollo a medida](../wordpress-vs-desarrollo-medida-cantabria/) — La elección de plataforma afecta el precio.
+- [Mantenimiento web: lo que sí funciona](../mantenimiento-web-empresas-cantabria/) — No olvides presupuestar mantenimiento.
+- [Desarrollo de webs con IA](../desarrollo-webs-ia-verdades-mentiras/) — ¿Reducirá el precio? Depende.
+- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — Una web cara pero lenta es dinero tirado.
+
 Si estás valorando hacer o rehacer la web de tu empresa y quieres un presupuesto claro, sin sorpresas y adaptado a tu sector, [hablemos](/contacto/).

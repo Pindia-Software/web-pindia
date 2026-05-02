@@ -56,6 +56,13 @@ Sé honesto contigo mismo: el SEO local **no es inmediato**. Un trabajo bien hec
 
 Tener varias fichas duplicadas en Google. No haber verificado la ficha. Usar un teléfono distinto en la web y en la ficha. Tener la web sin schema, sin sitemap o bloqueada por error. No tener versión móvil decente (ya casi nadie te busca desde sobremesa). No publicar contenido en seis meses. No pedir reseñas nunca.
 
+## Más en el blog
+
+- [Core Web Vitals: qué son y por qué importan](../core-web-vitals-que-son/) — Velocidad web es factor de ranking. El SEO local también.
+- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — La velocidad es crucial en SEO local.
+- [Cómo hacer una landing page que convierta](../landing-page-conversion-cantabria/) — El objetivo del SEO local es conversión.
+- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/) — Si cambias de web, protege tu posicionamiento local.
+
 ## Cómo te puede ayudar Pindia
 
 En Pindia hacemos SEO local técnico (web preparada, schema, velocidad, contenido) y acompañamos la parte continua con planes mensuales. Trabajamos con pymes en Santander, Torrelavega, Castro Urdiales y poblaciones más pequeñas de Cantabria que no quieren depender solo de boca-oreja. Si quieres que auditemos cómo está tu negocio en Google y te digamos qué moveríamos primero, [hablemos](/contacto/).
