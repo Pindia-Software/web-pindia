@@ -55,14 +55,22 @@
   });
 })();
 
-/* ── Reset scroll to top on homepage reload ── */
+/* ── Reset scroll to top on homepage reload ──
+   load event fires after all 112 hero frames preload, which can take
+   seconds. If the user already started scrolling, do NOT yank back. */
 (function resetHomepageScroll() {
   const path = window.location.pathname;
   const isHome = path === '/' || path.endsWith('/index.html');
   if (!isHome) return;
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-  window.addEventListener('load', () => window.scrollTo({ top: 0, left: 0, behavior: 'instant' }));
+  let userScrolled = false;
+  const onFirstScroll = () => { if (window.scrollY > 0) userScrolled = true; };
+  window.addEventListener('scroll', onFirstScroll, { passive: true });
+  window.addEventListener('load', () => {
+    window.removeEventListener('scroll', onFirstScroll);
+    if (!userScrolled) window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  });
 })();
 
 /* ── Nav: scroll state + mobile drawer ── */
