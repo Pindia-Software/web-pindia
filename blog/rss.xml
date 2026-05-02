@@ -5,8 +5,38 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Fri, 01 May 2026 16:12:15 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 12:10:03 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Core Web Vitals: qué son y por qué importan para tu web</title>
+      <link>https://pindia.es/blog/posts/core-web-vitals-que-son/</link>
+      <description>Core Web Vitals son las métricas que Google usa para ranking. LCP, INP y CLS explicados sin tecnicismos. Cómo medirlas y mejorarlas en tu web.</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/core-web-vitals-que-son/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>SEO &amp; Crecimiento</category><category>Diseño &amp; Desarrollo Web</category>
+    </item>
+
+    <item>
+      <title>Desarrollo de webs con IA: verdades y mentiras</title>
+      <link>https://pindia.es/blog/posts/desarrollo-webs-ia-verdades-mentiras/</link>
+      <description>ChatGPT, Cursor, GitHub Copilot. ¿Pueden reemplazar a un desarrollador? ¿Es oro todo lo que brilla? Qué hace bien la IA, dónde falla, y cuándo tiene sentido usarla.</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/desarrollo-webs-ia-verdades-mentiras/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>¿Tu web cumple con la ley? Avisos legales, cookies, RGPD y DPA explicados</title>
+      <link>https://pindia.es/blog/posts/tu-web-cumple-ley/</link>
+      <description>Aviso legal, política de cookies, RGPD, política de privacidad, DPA. Qué es obligatorio, qué riesgos hay si no lo haces, y cómo implementarlo sin perder 5.000 euros con abogados.</description>
+      <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/tu-web-cumple-ley/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Cumplimiento &amp; Accesibilidad</category><category>General</category>
+    </item>
 
     <item>
       <title>Cómo migrar tu web sin perder posicionamiento en Google</title>
