@@ -1,8 +1,8 @@
 ---
-title: 'Velocidad web: pérdida de clientes'
+title: 'Cómo acelerar una web lenta: guía de optimización para pymes'
 description: >-
-  Cómo afecta la velocidad de tu web a las ventas y al SEO. Métricas reales,
-  ejemplos en empresas de Cantabria y qué se puede hacer.
+  Soluciones prácticas para mejorar velocidad web en Cantabria. Diagnóstico, 
+  herramientas, qué arreglar primero y cuándo rehacer. Sin tecnicismos innecesarios.
 date: 2026-02-26T00:00:00.000Z
 author: Borja García
 tags:
@@ -13,15 +13,13 @@ coverAlt: Resultado de PageSpeed Insights mostrando una web lenta y otra rápida
 draft: false
 ---
 
-Hay un dato que cuando lo cuento por primera vez en una reunión nadie se lo cree del todo: **una web que carga en cuatro segundos ha perdido aproximadamente la mitad de sus visitantes** antes incluso de ver el contenido. Lo dicen los datos de Google, pero lo confirma cualquiera que haya mirado un Analytics con honestidad. La velocidad no es un capricho técnico: es una palanca de negocio.
+Hay un dato que cuando lo cuento por primera vez en una reunión nadie se lo cree del todo: **una web que carga en cuatro segundos ha perdido aproximadamente la mitad de sus visitantes** antes incluso de ver el contenido. Lo dicen los datos de Google, pero lo confirma cualquiera que haya mirado un Analytics con honestidad. La velocidad no es un capricho técnico: es dinero que se va.
 
-## Qué es Core Web Vitals y por qué importa
+## Por qué importa (para tu negocio, no para Google)
 
-Google mide tres cosas para puntuar la experiencia de usuario en tu web: **LCP** (cuánto tarda en pintarse el contenido principal), **INP** (cómo responde a la primera interacción) y **CLS** (cuánto se mueven los elementos al cargar). Si los tres están en verde, vas bien. Si alguno está en rojo, Google te baja en el ranking y los usuarios se van.
+Google usa velocidad como factor de ranking: más rápido = mejor posición en búsquedas. Pero el verdadero impacto es en conversión. Un usuario que espera tres segundos a que cargue tu web se va. Busca competencia. No vuelve. En Cantabria, donde la competencia local es feroz, cada segundo cuenta.
 
-No es una métrica de blogger técnico. Lo usa Google como factor real de posicionamiento. Y cuando hablamos de SEO local en Cantabria, donde la diferencia entre el puesto 4 y el 7 son cero clientes, esto importa.
-
-(Si quieres un análisis más profundo de cada métrica, [aquí explica Core Web Vitals en detalle](../core-web-vitals-que-son/).)
+Si quieres entender a fondo **qué** mide Google (Core Web Vitals, LCP, INP, CLS), [aquí hay un análisis completo](../core-web-vitals-que-son/). Este post es sobre **cómo** mejorarlo sin perder la cabeza.
 
 ## Qué hace que una web vaya lenta
 
@@ -43,13 +41,15 @@ Una empresa industrial de Torrelavega nos llamó porque las consultas comerciale
 
 No es magia. Es que durante años habían estado perdiendo gente que ni siquiera llegaba a leer su propuesta.
 
-## Qué métricas debes vigilar
+## Cómo medir (sin obsesionarse)
 
-**PageSpeed Insights** de Google es la primera parada. Mira la versión móvil, no la de escritorio. Si saca menos de 80 en móvil, hay trabajo.
+Usa **PageSpeed Insights** (pagespeed.web.dev) como barómetro rápido. Mira móvil, no escritorio. Menos de 50: alarma. Entre 50–80: hay trabajo. Más de 80: vas bien.
 
-**GTmetrix** te da un análisis más detallado y te dice qué archivos pesan más.
+**Search Console** (pestaña Experiencia) te muestra cómo lo ven usuarios reales. Es el dato que más importa.
 
-**Search Console > Experiencia > Core Web Vitals** te dice cómo te ven los usuarios reales que entran en tu web. Es la métrica que más cuenta.
+**GTmetrix** si quieres saber *qué* pesa (útil si necesitas prioridades).
+
+(Si quieres entender *qué* miden estas herramientas —LCP, INP, CLS—, [aquí explica Core Web Vitals en detalle](../core-web-vitals-que-son/).)
 
 ## Velocidad web en Cantabria: cosas concretas que funcionan
 
@@ -61,8 +61,27 @@ Si tu web está en WordPress, WP Rocket más Imagify (o equivalentes) resuelven 
 
 Una auditoría de rendimiento y plan de mejoras cuesta entre 300 y 600 euros. Aplicar las mejoras, según el alcance, entre 600 y 2.000. En la mayoría de pymes, el coste se amortiza en pocos meses solo por el aumento del tráfico orgánico y la mejora de conversión.
 
-## Cuándo no merece la pena optimizar y rehacer toca
+## Cuándo optimizar vs cuándo rehacer
 
-Si tu web es vieja (más de cinco años), tiene un theme abandonado, depende de plugins discontinuados o sufre de muchos problemas a la vez, llega un momento en que el coste de optimizar empieza a superar al de hacerla nueva. Es una conversación honesta que toca tener.
+Optimizar tiene sentido si tu web:
+- Tiene menos de 5 años.
+- El problema es específico (imágenes, plugins, hosting).
+- La estructura técnica es sólida.
 
-Si quieres que auditemos cómo va la velocidad de tu web y te digamos si tiene arreglo o no, [hablemos](/contacto/). En 48 horas tienes informe.
+Rehacer tiene sentido si tu web:
+- Es vieja (más de 5 años) y sufre de muchos males a la vez.
+- Depende de tecnología discontinuada.
+- El coste acumulado de arreglos supera al de hacer una web nueva.
+
+Es una conversación que merece honestidad: a veces optimizar es tirar dinero si la web tiene los días contados.
+
+## Más en el blog
+
+- [Core Web Vitals: qué son y cómo medirlas](../core-web-vitals-que-son/) — Si quieres entender exactamente qué mide Google.
+- [10 errores web (soluciones)](../errores-comunes-web-empresa/) — Velocidad lenta es el error #4, pero hay otros.
+- [SEO local: cómo aparecer cuando te buscan](../seo-local-cantabria/) — La velocidad es una parte del SEO local.
+- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/) — Si decides rehacer, protege tu posicionamiento.
+
+## Siguiente paso
+
+Si quieres que auditemos cómo va la velocidad de tu web y te digamos si tiene arreglo o no, [hablemos](/contacto/). En 48 horas tienes informe claro: qué arreglar, cuánto cuesta, y si tiene sentido o es mejor rehacer.
