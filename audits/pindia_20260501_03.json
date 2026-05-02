@@ -1,0 +1,213 @@
+{
+  "client": {
+    "name": "Pindia Software S.L.",
+    "url": "pindia.es",
+    "sector_short": "Agencia de software a medida y diseño web (Bezana – Santander, Cantabria)",
+    "sector_full": "B2B servicios digitales — desarrollo a medida, diseño web, apps móviles e integraciones para empresas españolas, con foco regional en Cantabria",
+    "jurisdiction": "España / UE — RGPD, LOPDGDD, LSSI-CE y criterios AEPD",
+    "platform": "Stack propio HTML/CSS/JavaScript vanilla con build pipeline Node, desplegado en GitHub Pages",
+    "date_es": "1 de mayo de 2026 (tercera pasada del día — referencia interna _03)",
+    "scope": "Home, /servicios/, /proyectos/, /contacto/, /blog/, las tres páginas legales en URL limpia (/aviso-legal/, /politica-privacidad/, /politica-cookies/) y verificación de las versiones .html, /robots.txt y /sitemap.xml. Verificación en directo vía Chrome MCP — DOM, JSON-LD, formulario, banner de cookies, status HTTP de cada página legal y del sitemap."
+  },
+  "executive_summary": {
+    "global_score": "8,3",
+    "tagline": "Tercera pasada del día y, comparada con 02 (7,4) y 01 (7,6), pindia.es ha cerrado en pocas horas tres hallazgos altos y críticos: el banner de cookies enlaza ya a /politica-cookies/ (200), el sitemap.xml lista las URLs limpias en lugar de las .html (que devolvían 404 en 02), y la sección 6 de la política de privacidad nombra explícitamente a Formspree (Formspree Inc., EE.UU.) y a Google Analytics 4 (Google LLC, EE.UU.) con la base legal del Data Privacy Framework UE-EE.UU. y referencia a Cláusulas Contractuales Tipo. Los tres tachados son los que el cliente potencial técnico habría detectado en una primera auditoría externa. Lo que queda es plan de fase 2/3 — LocalBusiness schema, sameAs, redes sociales en footer, aria-hidden en la mascota Pin, tiempo de lectura en el blog, breadcrumb legales, KPIs con números reales y testimonios. Ninguno de fase 1, ninguno bloqueante. Y el hero scroll-canvas, que en pasadas anteriores etiqueté como crítico de rendimiento, vuelve a su sitio: con Core Web Vitals reales en verde tanto en móvil como en escritorio, el peso absoluto del hero es una nota de consumo de datos y respeto a Save-Data, no un freno.",
+    "scores": [
+      ["Diseño visual y branding", "9 / 10"],
+      ["UX y arquitectura de información", "8 / 10"],
+      ["Usabilidad técnica y rendimiento", "8 / 10"],
+      ["SEO básico on-page", "9 / 10"],
+      ["Cumplimiento legal", "9 / 10"],
+      ["Conversión y confianza", "8 / 10"]
+    ],
+    "score_highlight_row": "Cumplimiento legal",
+    "strengths": [
+      "Cumplimiento legal cerrado y trazable. Tres páginas legales completas en URL limpia (/aviso-legal/, /politica-privacidad/, /politica-cookies/), banner con triple botón Rechazar/Configurar/Aceptar al mismo nivel visual, formulario con consentimiento explícito enlazado a la política, y la política de privacidad ahora nombra a los encargados del tratamiento con la base legal de transferencia internacional (DPF UE-EE.UU.). Es un set legal que aguanta una auditoría AEPD razonable.",
+      "SEO técnico sin huecos detectables en esta pasada. Cuatro JSON-LD (WebSite, Organization, ProfessionalService, FAQPage), sitemap.xml limpio (sin URLs 404), robots.txt mínimo apuntando al sitemap, canonical en cada página, OG y Twitter Cards, blog con tags y RSS, accesibilidad de imágenes corregida (de 50 % sin alt a un 90 % completo). Lo único pendiente para llegar al 10 es LocalBusiness schema y sameAs con redes — fase 2 tranquila.",
+      "Identidad visual y producto-marca alineados. Mascota Pin propia (cyborg en hero, cookie-bot en banner), paleta navy 900 + naranja E8413A aplicada con disciplina, hero con animación scroll-driven que es ya parte del lenguaje visual de la marca y que respeta la carga progresiva (sin scroll → 1,5 MB iniciales)."
+    ],
+    "critical_problems": [
+      "Falta LocalBusiness schema y sameAs en el JSON-LD. Pindia tiene sede en Bezana, horario público (Lunes-Viernes 9:00-18:00) y un radio comercial que incluye 'Cantabria y España'. Sin LocalBusiness se desperdicia Google Local SEO; sin sameAs se desperdicia E-E-A-T. Es la palanca de mayor retorno entre lo que queda.",
+      "No hay prueba social cuantificada en home. 'Resultados que generan confianza' sin números delante. La propia ficha de TrowelApp dice '+5.000 usuarios activos en 6 países', y eso debería estar en negrita en el hero del bloque de confianza, no escondido en una página de proyecto.",
+      "cookie-mascot.webp sin aria-hidden. Las dos imágenes residuales sin alt son la mascota Pin del banner — decorativa, lo correcto es alt vacío + aria-hidden=true. Un fix de medio minuto en src/partials/cookie-banner.html."
+    ],
+    "legal_risk_level": "Bajo",
+    "legal_risk_reason": "Vuelve a Bajo desde el Medio de 02. Las URLs legales coinciden con lo que enlaza el banner y el footer, el sitemap declara solo URLs que responden 200, y los encargados del tratamiento están nombrados con la base legal de transferencia internacional. El único pero pendiente es decidir si añadir 301 redirects desde /aviso-legal.html → /aviso-legal/ (las versiones .html siguen devolviendo 404, pero ya no están en el sitemap, así que la urgencia es baja).",
+    "legal_disclaimer": "No soy abogado. Este apartado es orientativo desde la práctica de auditoría web; para garantías formales se requiere revisión por profesional jurídico especializado en RGPD/AEPD."
+  },
+  "areas": [
+    {
+      "name": "1 · Diseño visual y branding",
+      "findings": [
+        {
+          "level": "BAJO",
+          "title": "Mascota del cookie banner sin aria-hidden.",
+          "problem": "En la home solo quedan dos img sin alt y ambas son cookie-mascot.webp, la mascota Pin del banner. Como son decorativas el patrón correcto es alt vacío + aria-hidden=true. Tienen alt vacío pero les falta aria-hidden.",
+          "evidence": "imgsWithoutAlt: 2 elementos cookie-mascot.webp sin aria-hidden.",
+          "recommendation": "Añadir aria-hidden=true (y opcionalmente role=presentation) a ambos img de la mascota en src/partials/cookie-banner.html. Regenerar.",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "2 · UX y arquitectura de información",
+      "findings": [
+        {
+          "level": "MEDIO",
+          "title": "Falta tiempo de lectura visible en las cards del blog.",
+          "problem": "El builder ya calcula tiempo de lectura (220 palabras/min) pero las cards del listado solo muestran fecha, título, extracto y tags.",
+          "evidence": "/blog/ — cards revisadas en directo, sin tiempo de lectura.",
+          "recommendation": "Añadir · N min al lado de la fecha en cada post-card.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Sin breadcrumb en las páginas legales.",
+          "problem": "Las tres páginas legales siguen sin breadcrumb. Buen momento para añadirlo en la siguiente regeneración.",
+          "evidence": "/aviso-legal/, /politica-privacidad/, /politica-cookies/.",
+          "recommendation": "Replicar el nav aria-label='Ruta de navegación' que ya existe en /contacto/.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "La home concentra 11 H2 distintos.",
+          "problem": "Servicios, metodología, proyectos, blog, FAQ, contacto y banner cookies, todo en la home. Cada bloque es bueno; juntos cargan al usuario móvil.",
+          "evidence": "document.querySelectorAll('h2').length → 11.",
+          "recommendation": "Mover metodología y FAQ a páginas dedicadas y aplicar progressive disclosure en proyectos.",
+          "effort": "Medio."
+        }
+      ]
+    },
+    {
+      "name": "3 · Usabilidad técnica y rendimiento",
+      "findings": [
+        {
+          "level": "MEDIO",
+          "title": "Hero scroll-canvas: nota de consumo de datos, no de rendimiento.",
+          "problem": "La animación scroll-canvas usa carga progresiva real: una visita inicial sin scroll descarga ~7 frames (1,5 MB), y solo si el usuario interactúa con la animación llega a las 112 imágenes (~24 MB en total). Los Core Web Vitals reales del sitio pasan tanto en móvil como en escritorio (LCP, INP, CLS dentro de los thresholds). Por tanto no es un fallo de CWV ni un freno SEO. Sí es relevante como consumo de datos del visitante en redes lentas y como respeto a Save-Data y prefers-reduced-data.",
+          "evidence": "performance.getEntriesByType('resource') filtrado por frame_\\d+\\.webp tras navegación inicial: 7 frames cargados, 1,5 MB. Tras scroll completo del hero: 112 frames, 23,6 MB. CWV verdes en producción según medición del propio cliente.",
+          "recommendation": "Recomendación ahora opcional, no bloqueante. (1) Detectar navigator.connection.saveData o prefers-reduced-data: reduce y, si está activo, no cargar la secuencia: caer a una imagen estática del cyborg. (2) Opcionalmente, sustituir la secuencia por un vídeo AV1/WebM controlado con currentTime — reduce el peso al ~5 % manteniendo el efecto.",
+          "effort": "Bajo (solo opción 1) / Medio (opción 2)."
+        },
+        {
+          "level": "ALTO",
+          "title": "Falta LocalBusiness schema y sameAs en el JSON-LD.",
+          "problem": "Hay Organization y ProfessionalService, pero no LocalBusiness con dirección física, horario y geo, lo cual sería ideal para una empresa con sede en Bezana que apunta a 'Cantabria y España' como mercado. Tampoco hay sameAs con perfiles sociales.",
+          "evidence": "Schemas detectados: WebSite, Organization, ProfessionalService, FAQPage. Sin LocalBusiness ni sameAs.",
+          "recommendation": "Añadir LocalBusiness con address, geo, openingHoursSpecification (Lunes-Viernes 9:00-18:00, ya está en /contacto/), telephone, priceRange. En Organization/ProfessionalService, añadir sameAs con LinkedIn, GitHub e Instagram si existe.",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "4 · SEO básico on-page",
+      "findings": [
+        {
+          "level": "MEDIO",
+          "title": "H2 con br que rompen el flujo semántico al extraer texto.",
+          "problem": "Varias frases de la home llevan br para forzar saltos de línea visuales (Webs que venden<br><span>desde el primer scroll</span>). El renderizado se ve bien, pero al extraer el texto los crawlers leen 'Webs que vendendesde el primer scroll' sin espacio.",
+          "evidence": "document.querySelectorAll('h2') aplicado en directo. Confirmado en src/index.html línea 321 y src/servicios/diseno-web.html línea 125.",
+          "recommendation": "Añadir un espacio antes del br ('Webs que venden <br>') o sustituirlo por span class=block con display:block en CSS.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "MEDIO",
+          "title": "Algunos titles cerca del límite de truncado en SERP.",
+          "problem": "/servicios/ sigue en 79 caracteres ('Servicios de Desarrollo Software y Diseño Web | Pindia Software Santander'). Pasa pero está al límite — Google trunca en torno a 580 px (60-65 caracteres en español).",
+          "evidence": "Inspección de meta title en home (~64 chars, OK) y /servicios/ (79 chars, al límite).",
+          "recommendation": "Mantener cada title bajo 60-65 caracteres. Por ejemplo: 'Servicios de software y diseño web | Pindia Santander' (54).",
+          "effort": "Bajo."
+        },
+        {
+          "level": "BAJO",
+          "title": "Las versiones .html de las legales devuelven 404 sin redirección 301.",
+          "problem": "Tras la migración a URLs limpias, /aviso-legal.html, /politica-privacidad.html y /politica-cookies.html siguen respondiendo 404. Ya no están en el sitemap (corregido en 03), así que Google dejará de pedirlas. Aun así, si alguien tenía un enlace pegado en un PDF, una nota o un email previos, hoy aterriza en una página rota.",
+          "evidence": "Fetch a las tres URLs .html → 404. Sitemap actualizado a versiones limpias → 200.",
+          "recommendation": "Si hay Cloudflare delante, añadir reglas 301 desde .html a la versión limpia. Si no, generar tres páginas mínimas con meta http-equiv=refresh content=0;url=/politica-cookies/. Coste mínimo, blindaje de canónica completo.",
+          "effort": "Bajo."
+        }
+      ]
+    },
+    {
+      "name": "5 · Cumplimiento legal — bloque crítico",
+      "findings": [
+        {
+          "level": "BAJO",
+          "title": "Política de cookies no enlaza a privacidad ni aviso legal.",
+          "problem": "La política de cookies se sostiene sola y enumera bien las cookies, pero no enlaza explícitamente a la política de privacidad para el tratamiento de los datos derivados ni al aviso legal para la identificación del responsable. Es coherencia documental, no incumplimiento.",
+          "evidence": "Recorrido de /politica-cookies/ — secciones 5 (Actualización) y 6 (Contacto) no remiten a las otras dos políticas.",
+          "recommendation": "Añadir un enlace en la sección 1 o 2 a la política de privacidad ('Para más información sobre el tratamiento de los datos personales, consulta nuestra Política de Privacidad') y al aviso legal en la sección de contacto.",
+          "effort": "Bajo."
+        },
+        {
+          "level": "BAJO",
+          "title": "El banner no comunica explícitamente el derecho a retirar el consentimiento.",
+          "problem": "El banner es ejemplar (Rechazar/Configurar/Aceptar al mismo nivel) y la cookie cookie_consent permite revocar. Pero no hay un texto que recuerde al usuario que puede cambiar la elección desde el botón de configuración del pie de página. El criterio AEPD de 'facilidad equivalente para retirar como para otorgar' está cumplido en mecánica, pero no comunicado.",
+          "evidence": "Texto del banner: 'Utilizamos cookies para entender qué funciona y mejorar la web. Nada raro, nada vendido a terceros — tú decides. Detalles en la política de cookies.'",
+          "recommendation": "Añadir una línea: 'Puedes cambiar tu elección desde el enlace Cookies del pie en cualquier momento'. Asegurarse de que el footer expone un trigger persistente para reabrir el modal.",
+          "effort": "Bajo."
+        }
+      ],
+      "legal_disclaimer_callout": "Nota legal del auditor. No soy abogado. Cada recomendación legal de este informe es orientativa basada en el marco general (LSSI-CE, RGPD, LOPDGDD y criterios AEPD publicados). Para garantías formales, los textos legales y la implementación deben revisarse con un profesional jurídico especializado en RGPD/protección de datos."
+    },
+    {
+      "name": "6 · Conversión y confianza",
+      "findings": [
+        {
+          "level": "MEDIO",
+          "title": "Falta prueba social cuantificada (testimonios + métricas).",
+          "problem": "La home presenta proyectos con badges (.NET Core, Angular, Lighthouse 100, etc.) y un H2 'Resultados que generan confianza', pero no hay testimonios reales con nombre y empresa, ni métricas explícitas. El propio sitio menciona '+5.000 usuarios activos en 6 países' en la ficha de TrowelApp, pero no aparece destacado en home.",
+          "evidence": "Home — sección 'Resultados que generan confianza' sin números delante; ficha de TrowelApp como referencia interna.",
+          "recommendation": "Bloque de 3-4 KPIs sobre fondo navy con números grandes en naranja: '+5.000 usuarios activos · 50+ proyectos entregados · 100/100 Lighthouse · <24 h de respuesta'. Añadir 2 testimonios reales con nombre, cargo y empresa en el mismo bloque.",
+          "effort": "Medio."
+        },
+        {
+          "level": "BAJO",
+          "title": "Sin enlace a redes sociales en el footer.",
+          "problem": "El footer no muestra perfiles sociales (LinkedIn, GitHub, Instagram). Para una agencia, LinkedIn es prácticamente obligatorio para credibilidad B2B.",
+          "evidence": "Footer revisado en directo — solo enlaces internos a servicios, empresa y contacto.",
+          "recommendation": "Añadir bloque 'Síguenos' con LinkedIn y GitHub al menos. Conecta directamente con el sameAs del JSON-LD.",
+          "effort": "Bajo."
+        }
+      ]
+    }
+  ],
+  "action_plan": {
+    "intro": "Las acciones se agrupan en tres fases. La fase 1 cierra los pulidos pequeños que quedan tras el sprint legal/SEO; la fase 2 mejora SEO local, conversión y consistencia; la fase 3 se reserva para rediseño parcial y mejoras opcionales del hero scroll-canvas.",
+    "phase1": {
+      "title": "Fase 1 — Inmediato · Pulido de pendientes pequeños",
+      "items": [
+        "Añadir aria-hidden=true a las dos imágenes de la mascota Pin del banner de cookies en src/partials/cookie-banner.html.",
+        "Configurar redirecciones 301 desde /aviso-legal.html, /politica-privacidad.html, /politica-cookies.html a las URLs limpias (Cloudflare o meta http-equiv=refresh mínimo).",
+        "Añadir enlaces cruzados entre las tres páginas legales (privacidad ↔ cookies ↔ aviso legal)."
+      ]
+    },
+    "phase2": {
+      "title": "Fase 2 — Mes 1 · SEO local, conversión y consistencia",
+      "items": [
+        "Añadir LocalBusiness schema con dirección, horario y geo, y sameAs con LinkedIn/GitHub en Organization y ProfessionalService.",
+        "Añadir bloque de KPIs cuantificados en home (+5.000 usuarios, 50+ proyectos, Lighthouse 100, <24 h respuesta) y dos testimonios reales con nombre y empresa.",
+        "Añadir bloque de redes sociales en footer con LinkedIn y GitHub.",
+        "Añadir tiempo de lectura visible en las cards del listado del blog.",
+        "Acortar titles que superan los 65 caracteres (/servicios/ y similares).",
+        "Añadir mensaje en el banner de cookies sobre cómo retirar el consentimiento."
+      ]
+    },
+    "phase3": {
+      "title": "Fase 3 — Trimestre · Rediseño parcial y opcionales",
+      "items": [
+        "Replantear la home con progressive disclosure: mover metodología y FAQ a páginas dedicadas, dejar la home en valor + servicios + 1 caso destacado + CTA + bloque de prueba social.",
+        "Añadir breadcrumb a las páginas legales para coherencia con el resto del sitio.",
+        "Sustituir los br semánticos en titulares por span class=block con display:block en CSS.",
+        "(Opcional) Implementar el fallback estático del hero scroll-canvas bajo Save-Data y prefers-reduced-data.",
+        "(Opcional, inversión mayor) Sustituir la secuencia de frames del hero por un vídeo AV1/WebM con currentTime controlado por scroll."
+      ]
+    }
+  },
+  "closing": {
+    "heading": "Por qué este sitio merece un rediseño",
+    "body": "A día de hoy no merece un rediseño — merece pulido. En tres pasadas del mismo día pindia.es ha pasado de 7,6 a 8,3 cerrando regresiones de migración y reforzando legal: tres páginas legales accesibles, sitemap limpio, banner sin enlaces rotos, encargados del tratamiento nombrados con base legal de transferencia internacional, accesibilidad de imágenes corregida. El esqueleto está hecho. El argumento comercial sigue siendo el mismo y ahora con más fuerza: si Pindia vende 'webs que convierten y posicionan, mobile-first y con SEO técnico avanzado', la propia web es el escaparate. Y a estas alturas el escaparate empieza a defenderse solo. Lo que falta — LocalBusiness, KPIs en home, testimonios, redes en footer — es lo que separa el 8,3 del 9,5: trabajo de fase 2 que mejora directamente conversión y SEO local, no rehacer.",
+    "callout": "Tres iteraciones en una mañana, tres regresiones cerradas. Eso no es un sitio que necesite rediseño — es un sitio que tiene mantenimiento.",
+    "footer_note": "Auditoría realizada por Pindia el 1 de mayo de 2026 (tercera pasada, referencia interna _03) sobre la versión en producción de pindia.es. Las observaciones legales son orientativas y no sustituyen asesoramiento jurídico formal."
+  }
+}
