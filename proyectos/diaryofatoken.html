@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Caso de éxito: Diary of a Token — Portal de noticias editado por una IA | Pindia Software</title>
+  <meta name="description" content="Diary of a Token es un portal bilingüe de noticias de IA y robótica editado por Toki, una redactora sintética construida sobre Claude. Pipeline autónomo 4×/día, 79+ fuentes monitorizadas, sitio estático en Cloudflare. Proyecto interno de Pindia Software.">
+  <link rel="canonical" href="https://pindia.es/proyectos/diaryofatoken.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Caso de éxito: Diary of a Token | Pindia Software">
+  <meta property="og:description" content="Portal de noticias de IA y robótica editado de forma autónoma por una redactora sintética (Toki) construida sobre Claude. Pipeline 4×/día, bilingüe ES/EN, 79+ fuentes monitorizadas.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/case-dot-cover.webp">
+  <meta property="og:url"         content="https://pindia.es/proyectos/diaryofatoken.html">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Caso de éxito: Diary of a Token | Pindia Software">
+  <meta name="twitter:description" content="Portal bilingüe de IA y robótica editado por una IA (Toki) construida sobre Claude. Cron 4×/día, sitio estático en Cloudflare, dos repos coordinados.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/case-dot-cover.webp">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicons/favicon.png">
+  <link rel="manifest"         href="/manifest.webmanifest">
+  <meta name="theme-color"     content="#22293E">
+
+  <!-- Schema.org structured data -->
+  <link rel="alternate" type="application/ld+json" href="/schema.json">
+
+  <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260502a" crossorigin>
+
+  <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
+  <script>
+    window.GA_MEASUREMENT_ID = 'G-KSW7VRFCV6';
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  </script>
+
+  <!-- Critical CSS (tokens + base + responsive merged, minified) -->
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260502a">
+
+  <!-- Estilos específicos de la página de caso de éxito -->
+  <style>
+    .case-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      padding: var(--sp-6) var(--sp-8);
+      margin-top: var(--sp-8);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+    }
+    .case-meta__item { display: flex; flex-direction: column; gap: 4px; }
+    .case-meta__label {
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+    }
+    .case-meta__value {
+      font-size: var(--text-base);
+      font-weight: var(--w-md);
+      color: var(--text-1);
+    }
+    .case-meta__value a { color: var(--accent); text-decoration: none; }
+    .case-meta__value a:hover { text-decoration: underline; }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .35rem .9rem;
+      border-radius: var(--r-full);
+      background: rgba(46 204 113 / 0.12);
+      color: #1f9d55;
+      border: 1px solid rgba(46 204 113 / 0.35);
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--sp-4);
+    }
+    .status-badge__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2ecc71;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      margin-top: var(--sp-12);
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8) var(--sp-6);
+      text-align: center;
+    }
+    .stat-card__num {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: var(--w-bd);
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-card__label {
+      margin-top: var(--sp-3);
+      font-size: var(--text-sm);
+      color: var(--text-2);
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--sp-6) 0 0;
+      display: grid;
+      gap: var(--sp-3);
+    }
+    .check-list li {
+      position: relative;
+      padding-left: calc(20px + var(--sp-3));
+      color: var(--text-2);
+      font-size: var(--text-base);
+      line-height: var(--lh-base);
+    }
+    .check-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      background: rgba(232 65 58 / 0.15);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8413A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Chips de stack y etiquetas */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .chip-row .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .45rem 1rem;
+      border-radius: var(--r-full);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      font-size: var(--text-sm);
+      font-weight: var(--w-md);
+      color: var(--text-2);
+    }
+    .chip-row .chip--accent {
+      background: rgba(232 65 58 / 0.08);
+      color: var(--accent);
+      border-color: rgba(232 65 58 / 0.25);
+    }
+
+    /* Bloques de stack tecnológico */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) { .tech-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1080px) { .tech-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    .tech-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8);
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-3);
+    }
+    .tech-card__layer {
+      font-size: var(--text-xs);
+      font-weight: var(--w-bd);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .tech-card__title {
+      font-size: var(--text-xl);
+      font-weight: var(--w-bd);
+      color: var(--text-1);
+      margin: 0;
+    }
+    .tech-card__desc {
+      font-size: var(--text-sm);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+    .tech-card__meta {
+      margin-top: auto;
+      font-size: var(--text-xs);
+      color: var(--text-3);
+    }
+
+    /* Pasos del pipeline */
+    .pipeline-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-5);
+      margin-top: var(--sp-10);
+      counter-reset: step;
+    }
+    @media (min-width: 720px) { .pipeline-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1080px) { .pipeline-grid { grid-template-columns: repeat(3, 1fr); } }
+    .pipeline-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-6);
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-2);
+      position: relative;
+    }
+    .pipeline-card__num {
+      font-size: var(--text-xs);
+      font-weight: var(--w-bd);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .pipeline-card__title {
+      font-size: var(--text-lg);
+      font-weight: var(--w-bd);
+      color: var(--text-1);
+      margin: 0;
+    }
+    .pipeline-card__desc {
+      font-size: var(--text-sm);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+
+    /* Tiers de fuentes */
+    .tier-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-4);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) { .tier-list { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1080px) { .tier-list { grid-template-columns: repeat(3, 1fr); } }
+    .tier-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-6);
+    }
+    .tier-card__id {
+      font-size: var(--text-xs);
+      font-weight: var(--w-bd);
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: var(--sp-2);
+    }
+    .tier-card__name {
+      font-size: var(--text-base);
+      font-weight: var(--w-bd);
+      color: var(--text-1);
+      margin: 0 0 var(--sp-2);
+    }
+    .tier-card__desc {
+      font-size: var(--text-sm);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+
+    /* Bloque retrato Toki */
+    .toki-split {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-12);
+      align-items: center;
+    }
+    @media (min-width: 900px) {
+      .toki-split { grid-template-columns: 1fr 1fr; gap: var(--sp-16); }
+    }
+    .toki-split__visual {
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      background: #000;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .toki-split__visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Reglas duras */
+    .rules-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-4);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) { .rules-grid { grid-template-columns: repeat(2, 1fr); } }
+    .rule-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-5) var(--sp-6);
+      display: flex;
+      gap: var(--sp-4);
+      align-items: flex-start;
+    }
+    .rule-card__num {
+      font-size: var(--text-lg);
+      font-weight: var(--w-bd);
+      color: var(--accent);
+      flex-shrink: 0;
+      min-width: 2ch;
+    }
+    .rule-card__text {
+      font-size: var(--text-sm);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+    .rule-card__text strong { color: var(--text-1); }
+  </style>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio",    "item": "https://pindia.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://pindia.es/proyectos/" },
+      { "@type": "ListItem", "position": 3, "name": "Diary of a Token", "item": "https://pindia.es/proyectos/diaryofatoken.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: CreativeWork (caso de éxito) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Diary of a Token — Portal de noticias de IA editado por una IA",
+    "description": "Portal bilingüe (ES/EN) de noticias sobre IA y robótica, editado de forma autónoma por Toki, una redactora sintética construida sobre Claude. Sitio estático servido por Cloudflare Workers, pipeline editorial 4×/día, 79+ fuentes monitorizadas. Proyecto interno de Pindia Software.",
+    "url": "https://pindia.es/proyectos/diaryofatoken.html",
+    "image": "https://pindia.es/assets/img/case-dot-cover.webp",
+    "author":  { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "creator": { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "datePublished": "2026-05-08",
+    "inLanguage": ["es-ES", "en-US"],
+    "keywords": "agente de IA, Claude, Anthropic, periodismo automatizado, sitio estático, Cloudflare Workers, agentes autónomos, Claude Code, DALL·E, transparencia IA",
+    "about": [
+      "Agentes de IA", "Claude", "Cloudflare Workers", "Sitio estático", "Bilingüe ES/EN", "Periodismo automatizado", "Pipeline editorial", "Transparencia IA"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <header class="nav" role="banner">
+    <div class="container">
+      <div class="nav__inner">
+
+        <a href="/" class="nav__logo" aria-label="Pindia Software — Inicio">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" width="140" height="56" loading="eager">
+        </a>
+
+        <nav class="nav__links" aria-label="Navegación principal">
+          <a href="/servicios/" class="nav__link">Servicios</a>
+          <a href="/proyectos/" class="nav__link" aria-current="page">Proyectos</a>
+          <a href="/blog/" class="nav__link">Blog</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a href="/contacto/" class="btn btn--primary">Hablemos</a>
+          <button
+            class="nav__toggle"
+            aria-expanded="false"
+            aria-controls="nav-drawer"
+            aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" class="nav__drawer" aria-label="Menú móvil">
+    <a href="/servicios/" class="nav__link">Servicios</a>
+    <a href="/proyectos/" class="nav__link" aria-current="page">Proyectos</a>
+    <a href="/blog/" class="nav__link">Blog</a>
+    <a href="/contacto/" class="btn btn--primary btn--lg" style="width:100%;margin-top:auto;">Hablemos de tu proyecto</a>
+  </nav>
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- ── HERO PEQUEÑO ──────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-hero-title" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:var(--sp-16);background:var(--bg-main);">
+      <div class="container">
+        <nav aria-label="Ruta de navegación" style="margin-bottom:var(--sp-6)">
+          <ol style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--sp-2);font-size:var(--text-sm);color:var(--text-3)">
+            <li><a href="/" style="color:var(--text-3);text-decoration:none;">Inicio</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li><a href="/proyectos/" style="color:var(--text-3);text-decoration:none;">Proyectos</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li style="color:var(--text-1)">Diary of a Token</li>
+          </ol>
+        </nav>
+
+        <div data-reveal style="max-width:880px">
+          <span class="status-badge">
+            <span class="status-badge__dot" aria-hidden="true"></span>
+            En producción · Pipeline autónomo 4×/día
+          </span>
+          <span class="section__label">Caso de éxito · I+D interna · Agentes de IA</span>
+          <h1 id="page-hero-title" class="section__headline" style="font-size:clamp(2rem,5vw,3.5rem)">
+            <span class="text-accent">Diary of a Token</span>: un portal de noticias de IA editado por una IA, construido por Pindia
+          </h1>
+          <p class="section__sub">
+            Proyecto interno de I+D para responder a una pregunta incómoda: ¿puede una IA cubrir la revolución de la IA con el rigor que esperarías de un periodista especializado? Diary of a Token es nuestra respuesta. Un portal bilingüe ES/EN que publica hasta 12 artículos al día, edita Toki —una redactora sintética construida sobre Claude— y firma cada pieza con transparencia radical, fuentes citadas y reglas duras que no se rompen.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);margin-top:var(--sp-8)">
+            <a href="https://diaryofatoken.com" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Visitar diaryofatoken.com ↗</a>
+            <a href="https://diaryofatoken.com/es/author/toki/" target="_blank" rel="noopener" class="btn btn--secondary btn--lg">Conoce a Toki ↗</a>
+          </div>
+        </div>
+
+        <div class="case-meta" data-reveal>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Cliente</span>
+            <span class="case-meta__value">Proyecto interno de Pindia Software</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Sector</span>
+            <span class="case-meta__value">Medios · IA aplicada · I+D</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Idiomas</span>
+            <span class="case-meta__value">Español + Inglés (simultáneo)</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Lanzamiento</span>
+            <span class="case-meta__value">2026 · Activo y en producción</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Alcance</span>
+            <span class="case-meta__value">Producto + Agente + Infra + Operación</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">URL</span>
+            <span class="case-meta__value"><a href="https://diaryofatoken.com" target="_blank" rel="noopener">diaryofatoken.com ↗</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO VISUAL ───────────────────────────────────────── -->
+    <section class="section section--alt" aria-label="Captura de la portada de Diary of a Token">
+      <div class="container">
+        <div data-reveal>
+          <div class="browser-frame">
+            <div class="browser-frame__bar" aria-hidden="true">
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__url">diaryofatoken.com</div>
+            </div>
+            <div class="browser-frame__content">
+              <img src="/assets/img/case-dot-cover.webp" alt="Portada de Diary of a Token: hero editorial con titular destacado, métrica visual y stack lateral de noticias por categorías" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EL RETO ───────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="reto-title">
+      <div class="container">
+        <div class="diseno-web__split">
+          <div data-reveal="left">
+            <span class="section__label">El reto</span>
+            <h2 id="reto-title" class="section__headline">¿Puede una IA cubrir <span class="text-accent">la revolución de la IA</span>?</h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              Desde 2022 la prensa generalista no llega a la velocidad del campo de la IA. Los titulares son apocalípticos o publicitarios; rara vez explican qué pasó, por qué importa y a quién afecta. La cobertura especializada de calidad existe, pero está fragmentada en decenas de medios y muchos en inglés. Hace falta otra cosa: agregación rigurosa, multilingüe, continua y con criterio editorial estable.
+            </p>
+            <p style="color:var(--text-2);line-height:var(--lh-base)">
+              El reto técnico era construir un sistema que funcionara como una redacción —no como un chatbot ni como un agregador automático— y que pudiera:
+            </p>
+            <ul class="check-list">
+              <li><strong>Leer 79+ fuentes en seis tiers</strong> y aplicar un criterio editorial coherente: laboratorios, prensa de referencia, papers, reguladores, prensa hispana y comunidad técnica.</li>
+              <li><strong>Publicar de forma autónoma</strong> hasta cuatro veces al día sin que un humano firme cada pieza, manteniendo trazabilidad completa al primary source.</li>
+              <li><strong>Redactar en ES + EN</strong> en paralelo, no traducir uno sobre otro: dos versiones simétricas con la misma firma editorial.</li>
+              <li><strong>Cumplir reglas duras innegociables</strong>: nada de predicciones, opinión, sarcasmo, antropomorfización ni inventar datos. Mejor cero artículos que filler.</li>
+              <li><strong>Generar su propia portada</strong> de cada artículo con DALL·E + sharp y un sistema de prompt-safety para descartar escenas problemáticas.</li>
+              <li><strong>Operar sin servidores</strong>: sitio estático, despliegue continuo, observabilidad sin frameworks y coste marginal cercano a cero.</li>
+            </ul>
+          </div>
+          <div data-reveal="right">
+            <div class="stat-strip" style="margin-top:0;grid-template-columns:1fr 1fr">
+              <div class="stat-card">
+                <div class="stat-card__num">×4</div>
+                <div class="stat-card__label">Ejecuciones autónomas al día</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">79+</div>
+                <div class="stat-card__label">Fuentes monitorizadas</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">2</div>
+                <div class="stat-card__label">Idiomas simultáneos (ES · EN)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">12</div>
+                <div class="stat-card__label">Tope diario de artículos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONOCE A TOKI ─────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="toki-title">
+      <div class="container">
+        <div class="toki-split">
+          <div data-reveal="left">
+            <span class="section__label">La editora</span>
+            <h2 id="toki-title" class="section__headline">Toki: <span class="text-accent">neutral, curiosa, verificable</span></h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              Toki no es una persona. Es un agente construido sobre Claude que opera bajo una identidad editorial estable definida en <code>.claude/agents/toki.md</code>. No opina, no predice, no antropomorfiza. Su voz es periodística: reporta lo que ocurre, atribuye lo que se dice, cita las fuentes.
+            </p>
+            <p style="color:var(--text-2);line-height:var(--lh-base)">
+              Cada artículo que publica lleva su firma porque ella es responsable del texto que produce. Cada afirmación factual es trazable a una de las fuentes listadas al final. Cuando dos fuentes se contradicen, lo menciona en el texto en lugar de elegir una versión. Y cuando ningún cluster supera el listón editorial, la respuesta correcta es publicar cero —y se publican cero.
+            </p>
+            <ul class="check-list">
+              <li><strong>Identidad estable</strong>: misma firma, mismas reglas, misma voz desde el primer artículo.</li>
+              <li><strong>Transparencia radical</strong>: cada pieza declara que la firma es una IA. Sin máscaras humanas.</li>
+              <li><strong>Sin opinión propia</strong>: ni especula, ni toma partido, ni hace pronósticos.</li>
+              <li><strong>Correcciones explícitas</strong>: los errores se publican con fecha. No se reescribe la historia.</li>
+            </ul>
+          </div>
+          <div data-reveal="right">
+            <div class="toki-split__visual">
+              <img src="/assets/img/case-dot-toki.webp" alt="Retrato oficial de Toki: rostro humano dividido por una malla digital verde de circuitos sobre fondo negro" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ARQUITECTURA ──────────────────────────────────────── -->
+    <section class="section" aria-labelledby="arq-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Arquitectura</span>
+          <h2 id="arq-title" class="section__headline">Dos repos, <span class="text-accent">una redacción</span></h2>
+          <p class="section__sub">
+            La identidad de Toki, sus reglas, su catálogo de fuentes y su scheduler viven separados del portal publicado. El periódico vive aparte de la redactora — igual que en un medio real. Esta separación nos permite cambiar a Toki sin tocar el sitio y cambiar el sitio sin tocar a Toki.
+          </p>
+        </div>
+
+        <div class="especialidades__grid especialidades__grid--3" style="margin-top:var(--sp-12)" data-reveal-group>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            </div>
+            <h3 class="service-card__title">Toki Agent</h3>
+            <p class="service-card__desc"><code>diary-of-a-token-toki-agent</code> guarda la identidad de Toki, el catálogo de 79+ fuentes en YAML, los scripts de ingest y generación de portadas, las plantillas del scheduler y el estado de las ejecuciones (URLs cubiertas, métricas de la última run).</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="service-card__title">Newsroom</h3>
+            <p class="service-card__desc"><code>diary-of-a-token-newsroom</code> es el portal estático: artículos en Markdown (<code>content/articles/{en,es}/</code>), templates HTML, CSS hecho a mano, Worker de analítica y pipeline de build en Node. Lo que Toki publica acaba aquí en cada cron tick.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="service-card__title">Mirror determinista</h3>
+            <p class="service-card__desc">Dos ficheros se duplican <em>por diseño</em>: <code>sources.yaml</code> (catálogo público) y <code>last-run.json</code> (diagnóstico público en <code>/last-run.json</code>). Si una ejecución no mira esos dos archivos, se considera incompleta.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PIPELINE EDITORIAL ────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="pipeline-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Pipeline editorial</span>
+          <h2 id="pipeline-title" class="section__headline">Nueve pasos, <span class="text-accent">cero atajos</span></h2>
+          <p class="section__sub">
+            En cada cron tick (06:00, 12:00, 18:00 y 00:00 hora local), Claude Desktop dispara una <em>scheduled task</em> que invoca al subagente Toki. El subagente lee su propia identidad y ejecuta el pipeline. Sin orquestador externo, sin servicio Python en medio, sin handoffs entre proveedores.
+          </p>
+        </div>
+
+        <div class="pipeline-grid" data-reveal-group>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">01 · Ingest</span>
+            <h3 class="pipeline-card__title">Leer 79+ fuentes</h3>
+            <p class="pipeline-card__desc">Toki lee RSS y HTML de cada fuente del catálogo, validando feeds caídos antes de empezar (<code>npm run verify:feeds</code> como gate previo).</p>
+          </article>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">02 · Cluster</span>
+            <h3 class="pipeline-card__title">Agrupar la misma historia</h3>
+            <p class="pipeline-card__desc">Detecta cuándo varias fuentes están cubriendo la misma noticia y las une en un cluster con todas sus URLs primarias.</p>
+          </article>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">03 · Filter</span>
+            <h3 class="pipeline-card__title">Aplicar el listón editorial</h3>
+            <p class="pipeline-card__desc">Listón por categoría: bajo en GenAI, Robotics, Business o Policy; alto en Research o Hardware (solo eventos landmark); muy alto en Industrial o Autonomous (solo despliegue real). Cero artículos es un resultado válido.</p>
+          </article>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">04 · Draft</span>
+            <h3 class="pipeline-card__title">Escribir ES + EN en paralelo</h3>
+            <p class="pipeline-card__desc">Hasta 3 pares de artículo por run, máximo 12/día. Versiones simétricas, ninguna traducción de la otra. Todas las fuentes se citan al final del texto.</p>
+          </article>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">05 · Cover art</span>
+            <h3 class="pipeline-card__title">Portada generada por DALL·E</h3>
+            <p class="pipeline-card__desc"><code>scripts/generate-image.mjs</code> genera la portada con DALL·E, la redimensiona y la convierte a WebP con <code>sharp</code>. Si DALL·E rechaza la escena, fallback a <code>coverStrategy: placeholder</code>.</p>
+          </article>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">06 · Validate</span>
+            <h3 class="pipeline-card__title">Schema del frontmatter</h3>
+            <p class="pipeline-card__desc"><code>npm run validate</code> verifica el frontmatter de cada Markdown contra un esquema estricto. Cualquier campo mal puesto aborta la run antes de publicar.</p>
+          </article>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">07 · Build</span>
+            <h3 class="pipeline-card__title">Compilar el sitio entero</h3>
+            <p class="pipeline-card__desc"><code>npm run build</code> regenera home, categorías, tags, archivo, autores, índice de búsqueda cliente y feeds RSS/Atom/sitemap. 100+ tests pasan como condición previa.</p>
+          </article>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">08 · Commit + push</span>
+            <h3 class="pipeline-card__title">A los dos repos, en orden</h3>
+            <p class="pipeline-card__desc">Primero newsroom (los artículos), después toki-agent (estado actualizado). Reintento con rebase si el push colisiona. Cualquier fallo va a <code>state/last-run.json → errors</code>.</p>
+          </article>
+
+          <article class="pipeline-card">
+            <span class="pipeline-card__num">09 · Maintain</span>
+            <h3 class="pipeline-card__title">Link-rot semanal</h3>
+            <p class="pipeline-card__desc">Cada lunes a las 04:00, una cron task adicional revisa los enlaces de todas las fuentes publicadas, marca los muertos y trae automáticamente la copia de Wayback Machine.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FUENTES POR TIERS ─────────────────────────────────── -->
+    <section class="section" aria-labelledby="tiers-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Catálogo de fuentes</span>
+          <h2 id="tiers-title" class="section__headline">Seis tiers, <span class="text-accent">79+ fuentes</span></h2>
+          <p class="section__sub">
+            El catálogo entero vive en <code>.claude/sources.yaml</code> y es público en <a href="https://diaryofatoken.com/es/sources/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">diaryofatoken.com/es/sources</a>. Cada fuente lleva un peso 1–10 que sirve de tiebreaker cuando dos clusters compiten por el mismo hueco del día.
+          </p>
+        </div>
+
+        <div class="tier-list" data-reveal-group>
+
+          <article class="tier-card">
+            <div class="tier-card__id">Tier 1 · Peso máximo</div>
+            <h3 class="tier-card__name">Actores principales</h3>
+            <p class="tier-card__desc">Laboratorios de IA (Anthropic, OpenAI, DeepMind, Meta, Mistral, DeepSeek, Qwen), fabricantes de robots, casas de chips, plataformas de conducción autónoma y nubes. Aquí nacen los lanzamientos.</p>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-card__id">Tier 2 · Referencia</div>
+            <h3 class="tier-card__name">Publicaciones de referencia</h3>
+            <p class="tier-card__desc">MIT Technology Review, Ars Technica, IEEE Spectrum, The Information y similares. Análisis original con criterio editorial humano contrastable.</p>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-card__id">Tier 3 · Hispanohablante</div>
+            <h3 class="tier-card__name">Prensa en español</h3>
+            <p class="tier-card__desc">Cobertura local del mercado hispanohablante, contexto regulatorio europeo y noticias que la prensa anglo no cubre.</p>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-card__id">Tier 4 · Académico</div>
+            <h3 class="tier-card__name">Papers y preprints</h3>
+            <p class="tier-card__desc">arXiv y repositorios académicos. Toki solo publica papers cuando representan landmark events, no cualquier preprint.</p>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-card__id">Tier 5 · Regulatorio</div>
+            <h3 class="tier-card__name">Reguladores e instituciones</h3>
+            <p class="tier-card__desc">AISI británico, EU AI Office, NIST, agencias de protección de datos, organismos sectoriales. La capa que distingue "anuncio" de "obligación legal".</p>
+          </article>
+
+          <article class="tier-card">
+            <div class="tier-card__id">Tier 6 · Comunidad</div>
+            <h3 class="tier-card__name">Agregadores y comunidad técnica</h3>
+            <p class="tier-card__desc">Hacker News, comunidades especializadas, agregadores. Peso bajo por defecto — sirven para detectar señales tempranas, no como fuente primaria.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STACK TECNOLÓGICO ─────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="stack-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Stack tecnológico</span>
+          <h2 id="stack-title" class="section__headline">Sin frameworks, sin bundlers, <span class="text-accent">sin servidores</span></h2>
+          <p class="section__sub">
+            Toda la stack apuesta por simplicidad operativa: Node 20 vanilla, HTML/CSS/JS escritos a mano y Cloudflare como única infraestructura. El sitio publicado es estático de principio a fin; la única lógica viva es un Worker que cuenta vistas con anti-spam por hash de IP.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-reveal-group>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Agente</span>
+            <h3 class="tech-card__title">Claude (Anthropic)</h3>
+            <p class="tech-card__desc">Toki es Claude leyendo su propia ficha de identidad. Modelo C — Claude as agent: el subagente <code>toki</code> ejecuta el pipeline sin orquestador externo. Credenciales vía Claude MAX desde Claude Desktop.</p>
+            <p class="tech-card__meta">Subagente · Claude MAX · Sin API key</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Orquestador</span>
+            <h3 class="tech-card__title">Claude Code · Scheduled tasks</h3>
+            <p class="tech-card__desc">El scheduler nativo de Claude Code dispara la skill cada 6 horas. Tres tareas configuradas: news run (4×/día), link-check semanal y smoke test bajo demanda.</p>
+            <p class="tech-card__meta">Cron · SKILL.md · Sin Python intermedio</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Build</span>
+            <h3 class="tech-card__title">Node 20 + ES modules</h3>
+            <p class="tech-card__desc">Pipeline propio en <code>scripts/</code>: <code>build-pages</code>, <code>build-articles</code>, <code>build-listings</code>, <code>build-search</code>, <code>build-feeds</code>. Markdown via <code>marked</code> + <code>gray-matter</code>. CSS minificado con <code>csso-cli</code>, JS con <code>terser</code>.</p>
+            <p class="tech-card__meta">Sin bundler · Sin transpilación</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Infra</span>
+            <h3 class="tech-card__title">Cloudflare Workers</h3>
+            <p class="tech-card__desc">Assets binding sirve <code>dist/</code> como sitio estático; Worker propio expone <code>/api/view</code>. D1 para contadores de vistas, KV con TTL 1h para dedup IP-hash. Backup diario a GitHub Actions.</p>
+            <p class="tech-card__meta">Workers · D1 · KV · Wrangler</p>
+          </article>
+
+        </div>
+
+        <div class="chip-row" style="margin-top:var(--sp-10);justify-content:flex-start" data-reveal>
+          <span class="chip chip--accent">Claude</span>
+          <span class="chip chip--accent">Claude Code</span>
+          <span class="chip chip--accent">Cloudflare Workers</span>
+          <span class="chip chip--accent">Cloudflare D1</span>
+          <span class="chip chip--accent">Cloudflare KV</span>
+          <span class="chip">Node 20</span>
+          <span class="chip">ES modules</span>
+          <span class="chip">marked</span>
+          <span class="chip">gray-matter</span>
+          <span class="chip">csso-cli</span>
+          <span class="chip">terser</span>
+          <span class="chip">chokidar (live-reload SSE)</span>
+          <span class="chip">node:test (100+ tests)</span>
+          <span class="chip">DALL·E</span>
+          <span class="chip">sharp</span>
+          <span class="chip">Wrangler</span>
+          <span class="chip">GitHub Actions</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── REGLAS DURAS ──────────────────────────────────────── -->
+    <section class="section" aria-labelledby="rules-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Reglas duras de la redacción</span>
+          <h2 id="rules-title" class="section__headline">Once cosas que Toki <span class="text-accent">nunca</span> hace</h2>
+          <p class="section__sub">
+            La lista canónica vive en <code>.claude/agents/toki.md §4</code>. Si un borrador rompe cualquiera de estas reglas, Toki lo descarta. Es la razón por la que cero artículos es un resultado posible —y aceptable.
+          </p>
+        </div>
+
+        <div class="rules-grid" data-reveal-group>
+          <div class="rule-card"><span class="rule-card__num">01</span><p class="rule-card__text"><strong>No predice el futuro.</strong> Las apuestas y los pronósticos quedan fuera del oficio.</p></div>
+          <div class="rule-card"><span class="rule-card__num">02</span><p class="rule-card__text"><strong>No toma posición política.</strong> Reporta posiciones; no las firma.</p></div>
+          <div class="rule-card"><span class="rule-card__num">03</span><p class="rule-card__text"><strong>No da consejo financiero</strong>, ni siquiera oblicuo.</p></div>
+          <div class="rule-card"><span class="rule-card__num">04</span><p class="rule-card__text"><strong>No antropomorfiza modelos.</strong> Los LLM no "creen", no "quieren", no "deciden".</p></div>
+          <div class="rule-card"><span class="rule-card__num">05</span><p class="rule-card__text"><strong>No inventa datos, cifras ni citas.</strong> Cero alucinación tolerada.</p></div>
+          <div class="rule-card"><span class="rule-card__num">06</span><p class="rule-card__text"><strong>No escribe en primera persona editorial.</strong> Sin "yo creo" ni "nosotros pensamos".</p></div>
+          <div class="rule-card"><span class="rule-card__num">07</span><p class="rule-card__text"><strong>No cita fuente secundaria sin verificar la primaria.</strong></p></div>
+          <div class="rule-card"><span class="rule-card__num">08</span><p class="rule-card__text"><strong>No cubre rumores sin confirmar</strong>, salvo que el rumor mismo sea la noticia y se enmarque como tal.</p></div>
+          <div class="rule-card"><span class="rule-card__num">09</span><p class="rule-card__text"><strong>No republica filtraciones embargadas.</strong></p></div>
+          <div class="rule-card"><span class="rule-card__num">10</span><p class="rule-card__text"><strong>No usa humor, ironía ni sarcasmo.</strong> La voz es directa, no irónica.</p></div>
+          <div class="rule-card"><span class="rule-card__num">11</span><p class="rule-card__text"><strong>No genera imágenes fuera del script oficial</strong> de portadas. Toda imagen pasa por el mismo prompt-safety filter.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TRANSPARENCIA IA ──────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="transp-title">
+      <div class="container">
+        <div class="diseno-web__split">
+          <div data-reveal="left">
+            <span class="section__label">Transparencia IA</span>
+            <h2 id="transp-title" class="section__headline">Mostramos a Toki, <span class="text-accent">no la escondemos</span></h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              Cubrimos IA: ocultar que la usamos para redactar sería incoherente. El retrato oficial de Toki es deliberadamente híbrido —medio rostro humano, medio malla de circuitos— para recordar visualmente, en cada artículo firmado, que detrás del texto hay un sistema de IA y no una persona.
+            </p>
+            <p style="color:var(--text-2);line-height:var(--lh-base)">
+              Cada artículo declara su firma sintética en la cabecera, en el perfil de autor y en la página de transparencia editorial. Y cuando Toki se equivoca, lo decimos: las correcciones se publican con fecha, sin reescribir la historia.
+            </p>
+            <ul class="check-list">
+              <li><strong>Firma visible</strong> en cada artículo + página de autor dedicada (<a href="https://diaryofatoken.com/es/author/toki/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">/es/author/toki/</a>).</li>
+              <li><strong>Política editorial completa</strong> pública en /es/transparencia-ia/, incluida la política de correcciones.</li>
+              <li><strong>Diagnóstico público</strong>: <a href="https://diaryofatoken.com/last-run.json" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">/last-run.json</a> muestra métricas de la última ejecución, incluidos errores.</li>
+              <li><strong>Kill switch</strong>: un fichero <code>.claude/PAUSED</code> detiene a Toki en el paso 2 del pipeline. Sin desplegar nada.</li>
+            </ul>
+          </div>
+          <div data-reveal="right">
+            <div class="stat-strip" style="margin-top:0;grid-template-columns:1fr 1fr">
+              <div class="stat-card">
+                <div class="stat-card__num">100%</div>
+                <div class="stat-card__label">Artículos con firma de IA declarada</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">SHA-256</div>
+                <div class="stat-card__label">Hash de IP en analítica · IP nunca guardada</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">90 días</div>
+                <div class="stat-card__label">Retención de backups D1</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">Wayback</div>
+                <div class="stat-card__label">Fallback automático para fuentes muertas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RESULTADO ─────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="result-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Resultado</span>
+          <h2 id="result-title" class="section__headline">Una redacción que <span class="text-accent">no duerme</span></h2>
+          <p class="section__sub">
+            Diary of a Token publica desde 2026 sin un humano firmando cada pieza. Toki ha ejecutado cientos de runs editoriales, ha leído miles de fuentes, ha descartado más historias de las que ha publicado y ha mantenido la misma voz desde el primer artículo. La operación —pipeline, infra, scheduler, mantenimiento— corre íntegramente en Pindia.
+          </p>
+        </div>
+
+        <div class="stat-strip" style="margin-top:var(--sp-12)" data-reveal-group>
+          <div class="stat-card">
+            <div class="stat-card__num">4×/día</div>
+            <div class="stat-card__label">Ejecuciones autónomas del pipeline</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">79+</div>
+            <div class="stat-card__label">Fuentes en seis tiers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">ES · EN</div>
+            <div class="stat-card__label">Artículos simétricos, no traducidos</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">€0</div>
+            <div class="stat-card__label">Coste de servidor · Solo Cloudflare</div>
+          </div>
+        </div>
+
+        <p style="margin-top:var(--sp-10);max-width:820px;color:var(--text-2);line-height:var(--lh-base)" data-reveal>
+          Diary of a Token es, además, nuestro laboratorio de I+D en agentes de IA aplicados: cada decisión de diseño (modelo C, dos repos coordinados, identidad por archivo, scheduler nativo) acaba alimentando los proyectos cliente de Pindia. Cuando construimos un agente para un cliente, ya hemos roto y arreglado todo eso en casa.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── ETIQUETAS ─────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="tags-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <h2 id="tags-title" class="section__label" style="margin-bottom:var(--sp-4)">Etiquetas del proyecto</h2>
+          <div class="chip-row" style="margin-top:0">
+            <span class="chip">Agente de IA</span>
+            <span class="chip">Claude</span>
+            <span class="chip">Claude Code</span>
+            <span class="chip">Periodismo automatizado</span>
+            <span class="chip">Sitio estático</span>
+            <span class="chip">Cloudflare Workers</span>
+            <span class="chip">D1 + KV</span>
+            <span class="chip">Bilingüe ES/EN</span>
+            <span class="chip">Transparencia IA</span>
+            <span class="chip">I+D interna</span>
+            <span class="chip">DALL·E</span>
+          </div>
+          <p style="font-size:var(--text-sm);color:var(--text-3);margin-top:var(--sp-8);line-height:var(--lh-base)">
+            Proyecto interno de Pindia Software. Identidad editorial de Toki, política editorial y supervisión humana las define Borja García Cueto, CEO. Sitio publicado: <a href="https://diaryofatoken.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">diaryofatoken.com</a> · Editora: <a href="https://diaryofatoken.com/es/author/toki/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">/es/author/toki/</a> · Fuentes: <a href="https://diaryofatoken.com/es/sources/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">/es/sources/</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="post-cta" style="background:#0F172A;border:1px solid #1E293B;border-radius:var(--r-xl);overflow:hidden;max-width:880px;margin-inline:auto;position:relative" data-reveal>
+          <div class="post-cta__grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:0">
+            <div class="post-cta__media" style="position:relative;aspect-ratio:1/1;background:#000;display:flex;align-items:center;justify-content:center;padding:var(--sp-10)">
+              <img src="/assets/img/case-dot-logo.webp" alt="Logotipo de Diary of a Token: símbolo de tendencia con flecha ascendente y wordmark TOKEN en verde sobre fondo negro" loading="lazy" decoding="async" style="max-width:100%;height:auto;display:block">
+            </div>
+            <div class="post-cta__body" style="padding:var(--sp-10) var(--sp-10);color:#F8FAFC">
+              <span style="display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:var(--w-sb);letter-spacing:.08em;text-transform:uppercase;color:#FF7A73;margin-bottom:var(--sp-3)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                ¿Quieres un agente de IA que opere así?
+              </span>
+              <h2 id="cta-title" style="font-size:var(--text-2xl);font-weight:var(--w-sb);line-height:1.2;color:#F8FAFC;margin-bottom:var(--sp-3)">Construyamos tu próximo agente</h2>
+              <p style="font-size:var(--text-sm);color:#CBD5E1;line-height:1.65;margin-bottom:var(--sp-6)">
+                Pipelines autónomos, identidades de agente estables, reglas duras innegociables, observabilidad pública. Lo hemos hecho para nosotros, podemos hacerlo para ti.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center">
+                <a href="/contacto/" class="btn btn--primary">
+                  Solicitar presupuesto gratuito
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/proyectos/" style="font-size:var(--text-sm);font-weight:var(--w-md);color:#F8FAFC;text-decoration:underline;text-decoration-color:rgba(248,250,252,.35);text-underline-offset:4px">Ver más proyectos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        @media (max-width: 768px) {
+          .post-cta__grid { grid-template-columns: 1fr !important; }
+          .post-cta__media { aspect-ratio: 16/10 !important; padding: var(--sp-8) !important; }
+          .post-cta__body { padding: var(--sp-8) var(--sp-6) !important; }
+        }
+      </style>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" class="footer__logo" width="120" height="48" loading="lazy">
+          <p>Agencia de software a medida y diseño web en Santander. Construimos tu presencia digital desde Cantabria para toda España.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Servicios">
+          <h3>Servicios</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/servicios/desarrollo-software.html">Desarrollo software</a></li>
+            <li><a href="/servicios/diseno-web.html">Diseño web</a></li>
+            <li><a href="/servicios/apps-mobile-api.html">Apps móviles</a></li>
+            <li><a href="/servicios/apps-mobile-api.html">APIs e integraciones</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Empresa">
+          <h3>Empresa</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/proyectos/">Proyectos</a></li>
+            <li><a href="/trowelapp/">TrowelApp</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col footer__nap">
+          <h3>Contacto</h3>
+          <address>
+            <a href="tel:+34942189733" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              (+34) 942 18 97 33
+            </a>
+            <a href="mailto:info@pindia.es" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@pindia.es
+            </a>
+            <a href="https://wa.me/34679551518" target="_blank" rel="noopener" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:var(--accent)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Business
+            </a>
+            <span class="footer__nap-item" style="cursor:default">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Calle Ramón Ramírez 5, 1º, 39100 Santa Cruz de Bezana</span>
+            </span>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 PINDIA SOFTWARE S.L. · CIF B67353748</p>
+        <nav class="footer__legal" aria-label="Páginas legales">
+          <a href="/aviso-legal/">Aviso legal</a>
+          <a href="/politica-privacidad/">Política de privacidad</a>
+          <a href="/politica-cookies/">Política de cookies</a>
+          <a href="#" data-cookie-settings>Preferencias de cookies</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <div
+    id="cookie-banner"
+    class="cookie-banner"
+    role="dialog"
+    aria-live="polite"
+    aria-labelledby="cookie-banner-title"
+    aria-describedby="cookie-banner-text">
+    <div class="cookie-banner__card">
+      <div class="cookie-banner__mascot" aria-hidden="true">
+        <img
+          src="/assets/img/cookie-mascot.webp"
+          alt=""
+          aria-hidden="true"
+          width="128"
+          height="128"
+          loading="lazy"
+          decoding="async">
+      </div>
+      <div class="cookie-banner__body">
+        <p class="cookie-banner__eyebrow">
+          <span class="cookie-banner__dot" aria-hidden="true"></span>
+          Cookies
+        </p>
+        <h2 id="cookie-banner-title" class="cookie-banner__title">
+          ¡Hola! Soy Pin <span aria-hidden="true">👋</span>
+        </h2>
+        <p id="cookie-banner-text" class="cookie-banner__text">
+          Utilizamos cookies para entender qué funciona y mejorar la web. Nada raro, nada vendido a terceros — tú decides. Detalles en la <a href="/politica-cookies/">política de cookies</a>.
+        </p>
+        <div class="cookie-banner__actions">
+          <button id="cookie-reject" type="button" class="btn btn--ghost cookie-banner__btn">Rechazar</button>
+          <button id="cookie-settings-open" type="button" class="btn btn--secondary cookie-banner__btn">Configurar</button>
+          <button id="cookie-accept" type="button" class="btn btn--primary cookie-banner__btn">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="cookie-settings"
+    class="cookie-settings"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookie-settings-title"
+    hidden>
+    <div class="cookie-settings__backdrop" data-cookie-close></div>
+
+    <div class="cookie-settings__panel" role="document">
+      <header class="cookie-settings__header">
+        <div class="cookie-settings__brand">
+          <span class="cookie-settings__mascot" aria-hidden="true">
+            <img src="/assets/img/cookie-mascot.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </span>
+          <div>
+            <p class="cookie-settings__eyebrow">Configuración</p>
+            <h2 id="cookie-settings-title" class="cookie-settings__title">Tus preferencias de cookies</h2>
+          </div>
+        </div>
+        <button type="button" class="cookie-settings__close" data-cookie-close aria-label="Cerrar configuración de cookies">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="cookie-settings__body">
+        <p class="cookie-settings__intro">
+          Tú decides qué cookies activar. Las técnicas son imprescindibles para que la web funcione; el resto solo se cargan si das tu consentimiento. Más detalle en la <a href="/politica-cookies/" target="_blank" rel="noopener noreferrer">política de cookies</a>.
+        </p>
+
+        <section class="cookie-cat" data-cookie-cat="necessary">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies técnicas</h3>
+              <span class="cookie-cat__badge cookie-cat__badge--required">Siempre activas</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Cookies técnicas (siempre activas)">
+              <input type="checkbox" checked disabled>
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Imprescindibles para el funcionamiento del sitio (recordar tu consentimiento, navegación segura, formulario de contacto). No identifican personalmente y no requieren consentimiento.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies técnicas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><code>pindia_cookies_v2</code></td>
+                  <td>Pindia (propia)</td>
+                  <td>1 año</td>
+                  <td>Almacena tu preferencia de consentimiento.</td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+
+        <section class="cookie-cat" data-cookie-cat="analytics">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies analíticas</h3>
+              <span class="cookie-cat__badge">Opcional</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Activar cookies analíticas">
+              <input type="checkbox" id="cookie-toggle-analytics" data-cookie-toggle="analytics">
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Google Analytics 4 con IP anonimizada. Nos ayudan a entender qué páginas funcionan y mejorar la web. Datos agregados, nunca compartidos para publicidad.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies analíticas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr><td><code>_ga</code></td><td>Google</td><td>2 años</td><td>Identificador anónimo de usuario.</td></tr>
+                <tr><td><code>_ga_*</code></td><td>Google</td><td>2 años</td><td>Estado de sesión de GA4.</td></tr>
+                <tr><td><code>_gid</code></td><td>Google</td><td>24 horas</td><td>Distingue usuarios.</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+      </div>
+
+      <footer class="cookie-settings__footer">
+        <button id="cookie-settings-reject" type="button" class="btn btn--ghost cookie-settings__btn">Rechazar todas</button>
+        <button id="cookie-settings-save" type="button" class="btn btn--secondary cookie-settings__btn">Guardar preferencias</button>
+        <button id="cookie-settings-accept" type="button" class="btn btn--primary cookie-settings__btn">Aceptar todas</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- JS (minified) -->
+  <script src="/js/main.min.js?v=20260502a" defer></script>
+
+</body>
+</html>
