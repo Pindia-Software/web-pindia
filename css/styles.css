@@ -2640,19 +2640,28 @@ ul, ol { list-style: none; }
   font-size: 1.0625rem;
   line-height: 1.75;
 }
-.prose > * + * { margin-top: var(--sp-5); }
+/* :where() neutraliza el margen UA de <p> sin contribuir a especificidad,
+   así las reglas de ritmo de abajo siempre ganan. */
+.prose :where(p) { margin-block: 0; }
+.prose > * + * { margin-top: var(--sp-6); }
 .prose h2,
 .prose h3,
 .prose h4 {
   color: var(--text-1);
   line-height: var(--lh-snug);
   scroll-margin-top: var(--sp-16);
-  margin-top: var(--sp-10);
+  margin-top: var(--sp-12);
 }
 .prose h2 { font-size: var(--text-2xl); font-weight: var(--w-bd); }
 .prose h3 { font-size: var(--text-xl); font-weight: var(--w-sb); }
 .prose h4 { font-size: var(--text-lg); font-weight: var(--w-sb); }
-.prose p { margin-block: 0; }
+/* Heading "owns" first content — gap menor que el rítmico */
+.prose > h2 + *,
+.prose > h3 + *,
+.prose > h4 + * { margin-top: var(--sp-3); }
+/* Aire después de listas para separarlas del párrafo siguiente */
+.prose > ul + *,
+.prose > ol + * { margin-top: var(--sp-8); }
 .prose a {
   color: var(--accent);
   text-decoration: underline;
@@ -2664,7 +2673,7 @@ ul, ol { list-style: none; }
 .prose em { font-style: italic; }
 .prose ul,
 .prose ol { padding-inline-start: var(--sp-6); }
-.prose li + li { margin-top: var(--sp-2); }
+.prose li + li { margin-top: var(--sp-3); }
 .prose blockquote {
   border-inline-start: 3px solid var(--accent);
   padding-inline-start: var(--sp-4);
