@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- @include head-base -->
+  <title>Caso de éxito: web comercial de TrowelApp (trowelapp.com) | Pindia Software</title>
+  <meta name="description" content="Diseño y desarrollo de la web comercial de TrowelApp (trowelapp.com): landing de conversión en HTML, CSS y JavaScript a medida, internacionalizada de 1 a 9 locales (España, LATAM y EN) y entregada en una semana por Pindia.">
+  <link rel="canonical" href="https://pindia.es/proyectos/web-trowelapp.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Caso de éxito: web comercial de TrowelApp | Pindia Software">
+  <meta property="og:description" content="Rediseño y desarrollo web de trowelapp.com: HTML/CSS/JS a medida, internacionalizada de 1 a 9 locales y entregada en una semana.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/case-trowelweb/cover.webp">
+  <meta property="og:url"         content="https://pindia.es/proyectos/web-trowelapp.html">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Caso de éxito: web comercial de TrowelApp | Pindia Software">
+  <meta name="twitter:description" content="Diseño + desarrollo de trowelapp.com: HTML/CSS/JS a medida, 9 locales, una semana de entrega.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/case-trowelweb/cover.webp">
+
+  <!-- @include head-assets -->
+
+  <!-- Estilos específicos de la página de caso de éxito -->
+  <style>
+    .case-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      padding: var(--sp-6) var(--sp-8);
+      margin-top: var(--sp-8);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+    }
+    .case-meta__item { display: flex; flex-direction: column; gap: 4px; }
+    .case-meta__label {
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+    }
+    .case-meta__value {
+      font-size: var(--text-base);
+      font-weight: var(--w-md);
+      color: var(--text-1);
+    }
+    .case-meta__value a { color: var(--accent); text-decoration: none; }
+    .case-meta__value a:hover { text-decoration: underline; }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .35rem .9rem;
+      border-radius: var(--r-full);
+      background: rgba(46 204 113 / 0.12);
+      color: #1f9d55;
+      border: 1px solid rgba(46 204 113 / 0.35);
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--sp-4);
+    }
+    .status-badge__dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #2ecc71;
+      animation: pulse 2s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .stat-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      margin-top: var(--sp-12);
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8) var(--sp-6);
+      text-align: center;
+    }
+    .stat-card__num {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: var(--w-bd);
+      color: var(--accent);
+      line-height: 1;
+    }
+    .stat-card__label {
+      margin-top: var(--sp-3);
+      font-size: var(--text-sm);
+      color: var(--text-2);
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--sp-6) 0 0;
+      display: grid;
+      gap: var(--sp-3);
+    }
+    .check-list li {
+      position: relative;
+      padding-left: calc(20px + var(--sp-3));
+      color: var(--text-2);
+      font-size: var(--text-base);
+      line-height: var(--lh-base);
+    }
+    .check-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 20px;
+      height: 20px;
+      background: rgba(232 65 58 / 0.15);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8413A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Chips de stack y etiquetas */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .chip-row .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .45rem 1rem;
+      border-radius: var(--r-full);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      font-size: var(--text-sm);
+      font-weight: var(--w-md);
+      color: var(--text-2);
+    }
+    .chip-row .chip--accent {
+      background: rgba(232 65 58 / 0.08);
+      color: var(--accent);
+      border-color: rgba(232 65 58 / 0.25);
+    }
+
+    /* Bloques de stack tecnológico */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 720px) { .tech-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1080px) { .tech-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    .tech-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: var(--sp-8);
+      display: flex;
+      flex-direction: column;
+      gap: var(--sp-3);
+    }
+    .tech-card__layer {
+      font-size: var(--text-xs);
+      font-weight: var(--w-bd);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .tech-card__title {
+      font-size: var(--text-xl);
+      font-weight: var(--w-bd);
+      color: var(--text-1);
+      margin: 0;
+    }
+    .tech-card__desc {
+      font-size: var(--text-sm);
+      color: var(--text-2);
+      line-height: var(--lh-base);
+      margin: 0;
+    }
+    .tech-card__meta {
+      margin-top: auto;
+      font-size: var(--text-xs);
+      color: var(--text-3);
+    }
+
+    /* Figura / captura del sitio */
+    .shot {
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      background: var(--bg-card);
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.10);
+    }
+    .shot img { display: block; width: 100%; height: auto; }
+    .shot figcaption {
+      padding: var(--sp-3) var(--sp-5);
+      font-size: var(--text-sm);
+      color: var(--text-3);
+      border-top: 1px solid var(--border);
+    }
+
+    /* Galería de mockups de producto */
+    .mock-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 880px) { .mock-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    /* Verticales / sectores */
+    .vgrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--sp-5);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 880px) { .vgrid { grid-template-columns: repeat(3, 1fr); } }
+    .vcard {
+      position: relative;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      border: 1px solid var(--border);
+    }
+    .vcard img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .vcard__label {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: var(--sp-5) var(--sp-5) var(--sp-4);
+      color: #fff;
+      font-weight: var(--w-sb);
+      font-size: var(--text-base);
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.86), rgba(15, 23, 42, 0));
+    }
+
+    /* Sección app móvil */
+    .app-split {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-10);
+      align-items: center;
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 880px) { .app-split { grid-template-columns: 0.9fr 1.1fr; } }
+    .app-split__media { display: flex; justify-content: center; }
+    .app-split__media img {
+      width: auto;
+      max-height: 560px;
+      height: auto;
+      border-radius: var(--r-xl);
+      box-shadow: 0 18px 44px rgba(15, 23, 42, 0.18);
+    }
+  </style>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio",    "item": "https://pindia.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://pindia.es/proyectos/" },
+      { "@type": "ListItem", "position": 3, "name": "Web comercial TrowelApp", "item": "https://pindia.es/proyectos/web-trowelapp.html" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: CreativeWork (caso de éxito) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Web comercial de TrowelApp (trowelapp.com)",
+    "description": "Diseño y desarrollo de la web comercial de TrowelApp, el SaaS de gestión de obra. Landing orientada a conversión construida en HTML, CSS y JavaScript a medida, internacionalizada de un único idioma (castellano) a nueve locales para España, Latinoamérica y mercado anglosajón. Entregada en una semana.",
+    "url": "https://pindia.es/proyectos/web-trowelapp.html",
+    "image": "https://pindia.es/assets/img/case-trowelweb/cover.webp",
+    "author":  { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "creator": { "@type": "Organization", "name": "Pindia Software S.L.", "url": "https://pindia.es" },
+    "inLanguage": "es-ES",
+    "datePublished": "2026-05-25",
+    "keywords": "diseño web, desarrollo web, landing, conversión, internacionalización, i18n, hreflang, HTML, CSS, JavaScript, WebP, SEO técnico, TrowelApp",
+    "about": [
+      "Diseño web", "Desarrollo web a medida", "Internacionalización", "Landing de conversión", "HTML CSS JavaScript", "SEO técnico", "Sector construcción"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <!-- @include navbar active="proyectos" -->
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- ── HERO PEQUEÑO ──────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-hero-title" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:var(--sp-16);background:var(--bg-main);">
+      <div class="container">
+        <nav aria-label="Ruta de navegación" style="margin-bottom:var(--sp-6)">
+          <ol style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--sp-2);font-size:var(--text-sm);color:var(--text-3)">
+            <li><a href="/" style="color:var(--text-3);text-decoration:none;">Inicio</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li><a href="/proyectos/" style="color:var(--text-3);text-decoration:none;">Proyectos</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li style="color:var(--text-1)">Web comercial TrowelApp</li>
+          </ol>
+        </nav>
+
+        <div data-reveal style="max-width:880px">
+          <span class="status-badge">
+            <span class="status-badge__dot" aria-hidden="true"></span>
+            En producción · trowelapp.com
+          </span>
+          <span class="section__label">Caso de éxito · Diseño + desarrollo web</span>
+          <h1 id="page-hero-title" class="section__headline" style="font-size:clamp(2rem,5vw,3.5rem)">
+            La web comercial de <span class="text-accent">TrowelApp</span>: de un idioma a nueve mercados en una semana
+          </h1>
+          <p class="section__sub">
+            Pindia diseñó y desarrolló de cero la nueva web comercial de TrowelApp, el SaaS de gestión de obra. Una landing orientada a conversión, construida en HTML, CSS y JavaScript a medida e internacionalizada de un único idioma —castellano— a nueve locales para España, Latinoamérica y el mercado anglosajón. Entregada en una semana.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);margin-top:var(--sp-8)">
+            <a href="https://trowelapp.com" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Ir a trowelapp.com ↗</a>
+            <a href="/proyectos/trowelapp.html" class="btn btn--secondary btn--lg">Ver el SaaS TrowelApp</a>
+          </div>
+        </div>
+
+        <div class="case-meta" data-reveal>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Cliente</span>
+            <span class="case-meta__value">TrowelApp</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Rol</span>
+            <span class="case-meta__value">Diseño + desarrollo web</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Año</span>
+            <span class="case-meta__value">2026</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Plazo</span>
+            <span class="case-meta__value">1 semana</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Stack</span>
+            <span class="case-meta__value">HTML · CSS · JavaScript</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Idiomas</span>
+            <span class="case-meta__value">9 locales (ES · LATAM · EN)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO VISUAL ───────────────────────────────────────── -->
+    <section class="section section--alt" aria-label="Captura de trowelapp.com">
+      <div class="container">
+        <div data-reveal style="max-width:980px;margin-inline:auto">
+          <figure class="shot">
+            <img src="/assets/img/case-trowelweb/cover.webp" alt="Web comercial de TrowelApp: panel de presupuestos del SaaS de gestión de obra, integrado como visual principal de la home" loading="eager" fetchpriority="high" decoding="async" width="1440" height="1160">
+            <figcaption>Home de trowelapp.com — el producto en el centro del mensaje «Tu obra, bajo control».</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EL RETO ───────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="reto-title">
+      <div class="container">
+        <div class="diseno-web__split">
+          <div data-reveal="left">
+            <span class="section__label">El reto</span>
+            <h2 id="reto-title" class="section__headline">Vender un SaaS complejo <span class="text-accent">en varios mercados</span></h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              TrowelApp ya tenía web, pero solo en castellano y centrada en un único mercado. El objetivo: una web comercial nueva, más clara y orientada a conversión, capaz de explicar un producto con muchos módulos y, a la vez, hablar a la vez a España, Latinoamérica y al mercado anglosajón. Con un plazo de una semana.
+            </p>
+            <ul class="check-list">
+              <li><strong>Comunicar un SaaS con muchos módulos</strong> —presupuestos, costes, calidad, tiempos— de forma simple y accionable.</li>
+              <li><strong>Internacionalizar la web</strong>: pasar de un solo idioma a 9 locales con <code>hreflang</code> correcto por mercado.</li>
+              <li><strong>Maximizar la conversión</strong> a «Agendar demo» en cada sección, sin saturar.</li>
+              <li><strong>Rendimiento y SEO técnico</strong> multipaís, con imágenes WebP y carga diferida.</li>
+              <li><strong>Entregar en una semana</strong>, diseño y desarrollo incluidos.</li>
+            </ul>
+          </div>
+          <div data-reveal="right">
+            <div class="stat-strip" style="margin-top:0;grid-template-columns:1fr 1fr">
+              <div class="stat-card">
+                <div class="stat-card__num">9</div>
+                <div class="stat-card__label">Idiomas y regiones</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">1 sem</div>
+                <div class="stat-card__label">De diseño a producción</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">8</div>
+                <div class="stat-card__label">Mercados internacionales</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__num">100%</div>
+                <div class="stat-card__label">A medida, sin CMS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── LA SOLUCIÓN ───────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="solucion-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">La solución</span>
+          <h2 id="solucion-title" class="section__headline">El producto, explicado <span class="text-accent">en tres golpes de vista</span></h2>
+          <p class="section__sub">
+            La home presenta el producto con mockups reales del SaaS y un selector de funcionalidades clave —presupuestos, control de costes y cashflow— para que cualquier visitante entienda el valor en segundos antes de pedir una demo.
+          </p>
+        </div>
+
+        <div class="mock-grid" data-reveal-group>
+          <figure class="shot">
+            <img src="/assets/img/case-trowelweb/presupuestos.webp" alt="Mockup de la pantalla de presupuestos de TrowelApp en la web comercial" loading="lazy" decoding="async" width="1440" height="1160">
+            <figcaption>Presupuestos</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="/assets/img/case-trowelweb/costes.webp" alt="Mockup de la pantalla de control de costes de TrowelApp en la web comercial" loading="lazy" decoding="async" width="1440" height="1160">
+            <figcaption>Control de costes</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="/assets/img/case-trowelweb/cashflow.webp" alt="Mockup de la pantalla de cashflow de TrowelApp en la web comercial" loading="lazy" decoding="async" width="1440" height="1160">
+            <figcaption>Cashflow</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── VERTICALES ────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="verticales-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Para quién</span>
+          <h2 id="verticales-title" class="section__headline">Una web que habla <span class="text-accent">a cada oficio</span></h2>
+          <p class="section__sub">
+            La web segmenta el mensaje por perfil de empresa. Cada vertical tiene su propia narrativa e imágenes reales de obra, para que el visitante se reconozca de inmediato.
+          </p>
+        </div>
+
+        <div class="vgrid" data-reveal-group>
+          <figure class="vcard">
+            <img src="/assets/img/case-trowelweb/vertical-contratistas.webp" alt="Vertical de contratistas: profesionales en una obra" loading="lazy" decoding="async">
+            <figcaption class="vcard__label">Contratistas</figcaption>
+          </figure>
+          <figure class="vcard">
+            <img src="/assets/img/case-trowelweb/vertical-multiservicios.webp" alt="Vertical de empresas de multiservicios y mantenimiento" loading="lazy" decoding="async">
+            <figcaption class="vcard__label">Multiservicios</figcaption>
+          </figure>
+          <figure class="vcard">
+            <img src="/assets/img/case-trowelweb/vertical-direccion.webp" alt="Vertical de dirección de obra" loading="lazy" decoding="async">
+            <figcaption class="vcard__label">Dirección de obra</figcaption>
+          </figure>
+          <figure class="vcard">
+            <img src="/assets/img/case-trowelweb/vertical-reformas.webp" alt="Vertical de empresas de reformas instalando parquet" loading="lazy" decoding="async">
+            <figcaption class="vcard__label">Reformas</figcaption>
+          </figure>
+          <figure class="vcard">
+            <img src="/assets/img/case-trowelweb/vertical-piscinas.webp" alt="Vertical de constructoras de piscinas" loading="lazy" decoding="async">
+            <figcaption class="vcard__label">Piscinas</figcaption>
+          </figure>
+          <figure class="vcard">
+            <img src="/assets/img/case-trowelweb/vertical-jardineria.webp" alt="Vertical de empresas de jardinería y paisajismo" loading="lazy" decoding="async">
+            <figcaption class="vcard__label">Jardinería</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── APP MÓVIL ─────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="app-title">
+      <div class="container">
+        <div class="app-split">
+          <div class="app-split__media" data-reveal="left">
+            <img src="/assets/img/case-trowelweb/app-mobile.webp" alt="App móvil de TrowelApp mostrando un proyecto de obra, presentada en la web comercial" loading="lazy" decoding="async" width="900" height="1956">
+          </div>
+          <div data-reveal="right">
+            <span class="section__label">App móvil</span>
+            <h2 id="app-title" class="section__headline">La obra, también <span class="text-accent">en el bolsillo</span></h2>
+            <p class="section__sub" style="margin-bottom:var(--sp-6)">
+              La web destaca la app móvil como pieza central del producto: trabajo a pie de obra, modo offline, geolocalización opcional y captura de fotos y firmas. El bloque combina mockup real y enlaces a las stores.
+            </p>
+            <ul class="check-list">
+              <li><strong>Mockup real</strong> de la app integrado en la narrativa de la home.</li>
+              <li><strong>Mensaje «oficina + obra»</strong>: web para la oficina, app para el tajo.</li>
+              <li><strong>Llamadas claras</strong> a descargar e iniciar la demo.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STACK TECNOLÓGICO ─────────────────────────────────── -->
+    <section class="section" aria-labelledby="stack-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Stack tecnológico</span>
+          <h2 id="stack-title" class="section__headline">Sin frameworks, <span class="text-accent">a medida y rápida</span></h2>
+          <p class="section__sub">
+            La misma filosofía que aplicamos a nuestra propia web: HTML, CSS y JavaScript a medida, sin CMS ni dependencias pesadas. Resultado: control total del marcado, rendimiento alto y una base i18n limpia para escalar a nuevos mercados.
+          </p>
+        </div>
+
+        <div class="tech-grid" data-reveal-group>
+          <article class="tech-card">
+            <span class="tech-card__layer">Estructura</span>
+            <h3 class="tech-card__title">HTML5 semántico</h3>
+            <p class="tech-card__desc">Marcado limpio y accesible, jerarquía de encabezados correcta y metadatos por idioma. Base sólida para SEO multipaís.</p>
+            <p class="tech-card__meta">Semántica · Accesibilidad</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Estilo</span>
+            <h3 class="tech-card__title">CSS a medida</h3>
+            <p class="tech-card__desc">Sistema de diseño propio con tokens, layout responsive y mobile-first. Sin framework de UI: solo lo que la web necesita.</p>
+            <p class="tech-card__meta">Responsive · Mobile-first</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Interacción</span>
+            <h3 class="tech-card__title">JavaScript vanilla</h3>
+            <p class="tech-card__desc">Selectores de funcionalidad, animaciones de entrada y componentes interactivos sin librerías externas. Ligero y mantenible.</p>
+            <p class="tech-card__meta">Sin dependencias</p>
+          </article>
+
+          <article class="tech-card">
+            <span class="tech-card__layer">Internacionalización</span>
+            <h3 class="tech-card__title">Arquitectura i18n</h3>
+            <p class="tech-card__desc">Nueve locales con <code>hreflang</code> por mercado y <code>x-default</code>, servidos tras Cloudflare. Listo para añadir más idiomas.</p>
+            <p class="tech-card__meta">hreflang · 9 locales</p>
+          </article>
+        </div>
+
+        <div class="chip-row" style="margin-top:var(--sp-10);justify-content:flex-start" data-reveal>
+          <span class="chip chip--accent">HTML5</span>
+          <span class="chip chip--accent">CSS3</span>
+          <span class="chip chip--accent">JavaScript</span>
+          <span class="chip chip--accent">i18n · hreflang</span>
+          <span class="chip">WebP</span>
+          <span class="chip">Lazy loading</span>
+          <span class="chip">Responsive</span>
+          <span class="chip">Mobile-first</span>
+          <span class="chip">SEO técnico</span>
+          <span class="chip">Cloudflare</span>
+          <span class="chip">Sin CMS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── INTERNACIONALIZACIÓN ──────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="i18n-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Internacionalización</span>
+          <h2 id="i18n-title" class="section__headline">De un idioma <span class="text-accent">a nueve locales</span></h2>
+          <p class="section__sub">
+            El mayor salto del proyecto: la web pasó de existir solo en castellano a servir nueve locales con su <code>hreflang</code> correspondiente, abriendo TrowelApp a siete países de habla hispana y al mercado anglosajón sin penalizar el SEO.
+          </p>
+          <div class="chip-row" style="margin-top:var(--sp-8)">
+            <span class="chip">es-ES</span>
+            <span class="chip">es-MX</span>
+            <span class="chip">es-AR</span>
+            <span class="chip">es-UY</span>
+            <span class="chip">es-CO</span>
+            <span class="chip">es-PE</span>
+            <span class="chip">es-CL</span>
+            <span class="chip">en</span>
+            <span class="chip">x-default</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RESULTADOS ────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="resultados-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Resultados</span>
+          <h2 id="resultados-title" class="section__headline">Una web nueva, multipaís y <span class="text-accent">en una semana</span></h2>
+          <p class="section__sub">
+            Diseño y desarrollo entregados en un único sprint de una semana, con una base técnica a medida lista para crecer.
+          </p>
+        </div>
+
+        <div class="stat-strip" style="margin-top:var(--sp-12)" data-reveal-group>
+          <div class="stat-card">
+            <div class="stat-card__num">9</div>
+            <div class="stat-card__label">Idiomas y regiones</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">8</div>
+            <div class="stat-card__label">Mercados internacionales</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">1 sem</div>
+            <div class="stat-card__label">De diseño a producción</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card__num">100%</div>
+            <div class="stat-card__label">A medida (HTML/CSS/JS)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ETIQUETAS ─────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="tags-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <h2 id="tags-title" class="section__label" style="margin-bottom:var(--sp-4)">Etiquetas del proyecto</h2>
+          <div class="chip-row" style="margin-top:0">
+            <span class="chip">Diseño web</span>
+            <span class="chip">Desarrollo web</span>
+            <span class="chip">HTML · CSS · JS</span>
+            <span class="chip">Internacionalización</span>
+            <span class="chip">Landing de conversión</span>
+            <span class="chip">SEO técnico</span>
+            <span class="chip">Multipaís</span>
+            <span class="chip">Cloudflare</span>
+          </div>
+          <p style="font-size:var(--text-sm);color:var(--text-3);margin-top:var(--sp-8);line-height:var(--lh-base)">
+            Web comercial diseñada y desarrollada por Pindia Software. Web pública: <a href="https://trowelapp.com" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">trowelapp.com</a> · Caso del producto SaaS: <a href="/proyectos/trowelapp.html" style="color:var(--accent);text-decoration:none">TrowelApp — SaaS para constructoras</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="post-cta" style="background:#0F172A;border:1px solid #1E293B;border-radius:var(--r-xl);overflow:hidden;max-width:880px;margin-inline:auto;position:relative" data-reveal>
+          <div class="post-cta__grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:0">
+            <div class="post-cta__media" style="position:relative;aspect-ratio:1/1;background:#0F172A">
+              <img src="/assets/img/case-trowelweb/cta-banner.webp" alt="Jefe de obra con casco y chaleco reflectante en una obra, imagen de la web comercial de TrowelApp" loading="lazy" decoding="async" width="1254" height="1254" style="width:100%;height:100%;object-fit:cover;display:block">
+            </div>
+            <div class="post-cta__body" style="padding:var(--sp-10) var(--sp-10);color:#F8FAFC">
+              <span style="display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:var(--w-sb);letter-spacing:.08em;text-transform:uppercase;color:#FF7A73;margin-bottom:var(--sp-3)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                ¿Necesitas una web así de rápida?
+              </span>
+              <h2 id="cta-title" style="font-size:var(--text-2xl);font-weight:var(--w-sb);line-height:1.2;color:#F8FAFC;margin-bottom:var(--sp-3)">Diseñamos y desarrollamos tu web a medida</h2>
+              <p style="font-size:var(--text-sm);color:#CBD5E1;line-height:1.65;margin-bottom:var(--sp-6)">
+                Diseño y desarrollo web a medida, internacionalización y SEO técnico. Mismo equipo de principio a fin. Presupuesto en menos de 48 horas, sin compromiso.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center">
+                <a href="/contacto/" class="btn btn--primary">
+                  Solicitar presupuesto gratuito
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/proyectos/" style="font-size:var(--text-sm);font-weight:var(--w-md);color:#F8FAFC;text-decoration:underline;text-decoration-color:rgba(248,250,252,.35);text-underline-offset:4px">Ver más proyectos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <style>
+        @media (max-width: 768px) {
+          .post-cta__grid { grid-template-columns: 1fr !important; }
+          .post-cta__media { aspect-ratio: 16/10 !important; }
+          .post-cta__body { padding: var(--sp-8) var(--sp-6) !important; }
+        }
+      </style>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <!-- @include footer -->
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <!-- @include cookie-banner -->
+
+  <!-- @include scripts -->
+
+</body>
+</html>
