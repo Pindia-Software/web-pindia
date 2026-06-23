@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Señales de uso de contenido (Cloudflare Content Signals Policy)
+# search: indexación en buscadores · ai-input: citas en respuestas de IA · ai-train: entrenamiento de modelos
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
 Sitemap: https://pindia.es/sitemap.xml
