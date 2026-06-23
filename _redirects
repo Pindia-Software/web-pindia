@@ -1,0 +1,4 @@
+# Redirecciones 301 (Cloudflare / Netlify). Formato: origen  destino  código.
+/aviso-legal.html          /aviso-legal/          301
+/politica-cookies.html     /politica-cookies/     301
+/politica-privacidad.html  /politica-privacidad/  301

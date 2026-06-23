@@ -1,8 +1,7 @@
-# NOTA: este fichero solo lo leen Cloudflare Pages / Netlify.
-# El sitio actual está en GitHub Pages (no lo lee). Estas reglas
-# se activarán automáticamente si se migra a CF Pages o Netlify.
-# Si se migra y se quiere caché agresivo de assets versionados,
-# añadir aquí: /css/* /js/* /assets/* → Cache-Control immutable 1 año.
+# Cabeceras de seguridad para Cloudflare (Workers static assets) / Netlify.
+# Las redirecciones 301 van en _redirects (este fichero solo admite cabeceras).
+# Para caché agresivo de assets versionados, añadir aquí:
+# /css/* /js/* /assets/* → Cache-Control immutable 1 año.
 
 /*
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
@@ -11,16 +10,3 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), interest-cohort=()
   Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://www.google-analytics.com; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
-
-# Redirecciones 301 para documentos legales (duplicidad resuelta)
-/aviso-legal.html
-  status = 301
-  Location = /aviso-legal/
-
-/politica-cookies.html
-  status = 301
-  Location = /politica-cookies/
-
-/politica-privacidad.html
-  status = 301
-  Location = /politica-privacidad/
