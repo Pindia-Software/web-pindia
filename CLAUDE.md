@@ -10,7 +10,7 @@ Sitio web corporativo de **Pindia Software** (https://pindia.es).
 
 - **Stack:** HTML5 + CSS3 + JavaScript vanilla. Sin framework, sin bundler frontend.
 - **Build:** Node scripts (Markdown → HTML para el blog, partials → HTML para páginas, minificación CSS/JS).
-- **Despliegue:** GitHub Pages, automático en push a `main` (`.github/workflows/`).
+- **Despliegue:** Cloudflare Workers (static assets), automático en push a `main` vía Workers Builds. Config en `wrangler.jsonc`. `_headers` y `_redirects` SÍ se aplican (Cloudflare los honra; GitHub Pages los ignoraba).
 - **Idioma de la web y de los commits:** español.
 
 ---
@@ -86,10 +86,13 @@ web-pindia/
 │   ├── build-pages.mjs
 │   ├── build-blog.mjs
 │   └── update-tags.mjs           (utilidad puntual: renombra tags en frontmatter)
-├── _headers                      (headers de seguridad para Cloudflare/Netlify)
+├── _headers                      (cabeceras de seguridad + Link headers — Cloudflare)
+├── _redirects                    (301s — Cloudflare)
+├── .assetsignore                 (qué NO sube Cloudflare Workers)
+├── wrangler.jsonc                (config deploy: Cloudflare Workers static assets)
+├── llms.txt                      (mapa del sitio para agentes IA — servido en /llms.txt)
 ├── robots.txt
-├── manifest.webmanifest
-└── .github/workflows/            (CI: build + deploy a Pages)
+└── manifest.webmanifest
 ```
 
 **Regla absoluta:** los HTML de la raíz, los de `/servicios|/productos|/proyectos|/contacto/` y todo lo que cuelga de `/blog/` (excepto `/blog/src/`) son **artefactos de build**. Si los editas a mano, el siguiente `npm run build:pages` o `build:blog` los pisa.
@@ -174,11 +177,14 @@ Convenciones:
 
 ---
 
-## Despliegue (GitHub Pages)
+## Despliegue (Cloudflare Workers)
 
-- Workflow en `.github/workflows/` se dispara en `push` a `main`.
-- Pasos: `npm install` → `build:blog` → `minify` → `rsync` a `_site/` → reescritura de paths absolutos para prefijar la base del repo (project page) → upload artifact → deploy.
-- `build:pages` **no** se ejecuta en CI explícitamente porque las páginas compiladas se commitean (los artefactos del blog y los `.min.*` se generan en cada deploy). Si añades una página nueva en `src/`, ejecuta `npm run build:pages` localmente y commitea el resultado.
+- El sitio se sirve como **Cloudflare Workers static assets** (config en `wrangler.jsonc`, `assets.directory = "."`, **sin script de Worker**). Dominios: `pindia.es` (apex, canónico) y `www.pindia.es`.
+- **Auto-deploy:** Workers Builds conectado al repo dispara en `push` a `main`. Build command: `npm install && npm run build`; deploy: `npx wrangler deploy`. (Sin conexión Git, se despliega a mano con `wrangler deploy`.)
+- **`_headers` y `_redirects` SÍ se aplican** aquí (Cloudflare los honra). En la antigua GitHub Pages eran no-ops — las cabeceras de seguridad solo existen gracias a este hosting.
+- **`.assetsignore`** controla qué NO se sube/sirve (node_modules, fuentes de build, `MANUAL_pindia.pdf`, backups, etc.).
+- `build:pages` se commitea (las páginas compiladas viven en el repo); el blog, `sitemap.xml` y los `.min.*` se regeneran en cada build. Si añades una página nueva en `src/`, ejecuta `npm run build:pages` localmente y commitea el resultado.
+- **`www` → 301 al apex** vía **Redirect Rule** de Cloudflare (los canonicals apuntan a `pindia.es`; sin la regla habría contenido duplicado).
 
 ---
 
