@@ -645,7 +645,7 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
     { loc: `${SITE_URL}/servicios/apps-mobile-api.html`,     lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/proyectos/`,                         lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/proyectos/web-pindia.html`,          lastmod: today, changefreq: 'monthly', priority: '0.7' },
-    { loc: `${SITE_URL}/productos/trowelapp.html`,           lastmod: today, changefreq: 'monthly', priority: '0.9' },
+    { loc: `${SITE_URL}/proyectos/trowelapp.html`,           lastmod: today, changefreq: 'monthly', priority: '0.9' },
     { loc: `${SITE_URL}/blog/`,                              lastmod: today, changefreq: 'weekly',  priority: '0.7' },
     { loc: `${SITE_URL}/contacto/`,                          lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/aviso-legal/`,                       lastmod: today, changefreq: 'yearly',  priority: '0.2' },

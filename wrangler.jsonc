@@ -1,0 +1,14 @@
+{
+  // Despliegue del sitio como Cloudflare Workers static assets.
+  // El sitio es estático: NO hay script de Worker (sin "main") → solo assets.
+  // Esto hace que _headers y _redirects (que GitHub Pages ignoraba) SÍ se apliquen.
+  // .assetsignore controla qué NO se sube/sirve.
+  // ponytail: assets-only. Si algún día hace falta negociación de contenido
+  // (Accept: text/markdown), se añade "main": "worker.js" y un fetch handler.
+  "name": "web-pindia",
+  "compatibility_date": "2026-06-01",
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash"
+  }
+}

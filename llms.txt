@@ -1,0 +1,29 @@
+# Pindia Software
+
+> Agencia de software a medida y diseño web en Santander (Cantabria, España). Desarrollamos aplicaciones .NET, webs de alto impacto, apps móviles y APIs para empresas. Presupuesto sin compromiso.
+
+Pindia Software es una empresa de desarrollo de software y diseño web con sede en Santa Cruz de Bezana (Cantabria). Contacto: info@pindia.es.
+
+## Servicios
+
+- [Servicios](https://pindia.es/servicios/): Resumen de servicios de desarrollo y diseño.
+- [Diseño web](https://pindia.es/servicios/diseno-web.html): Diseño y desarrollo web a medida.
+- [Desarrollo de software](https://pindia.es/servicios/desarrollo-software.html): Software a medida en .NET.
+- [Apps móviles y APIs](https://pindia.es/servicios/apps-mobile-api.html): Apps móviles e integraciones por API.
+
+## Productos y proyectos
+
+- [TrowelApp](https://pindia.es/trowelapp/): Software de gestión para constructoras (producto propio).
+- [Proyectos](https://pindia.es/proyectos/): Casos de trabajo en diseño web y software a medida.
+
+## Empresa
+
+- [Contacto](https://pindia.es/contacto/): Formulario y datos de contacto.
+- [Blog](https://pindia.es/blog/): Artículos sobre diseño web, SEO, negocio digital y cumplimiento.
+
+## Opcional
+
+- [Aviso legal](https://pindia.es/aviso-legal/)
+- [Política de privacidad](https://pindia.es/politica-privacidad/)
+- [Política de cookies](https://pindia.es/politica-cookies/)
+- [Sitemap completo (XML)](https://pindia.es/sitemap.xml): Todas las URLs, incluidos los posts del blog.

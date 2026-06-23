@@ -15,3 +15,9 @@ package.json
 package-lock.json
 README.md
 CLAUDE.md
+
+# No exponer: manual interno, backups de caveman, dir de build, basura del SO
+MANUAL_pindia.pdf
+*.original.md
+_site
+.DS_Store
