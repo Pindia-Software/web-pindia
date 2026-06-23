@@ -1,0 +1,17 @@
+# Excluye del upload de Cloudflare Workers (assets.directory = ".")
+# node_modules contiene el binario workerd (119 MiB > límite 25 MiB) → rompía el deploy
+node_modules
+
+# Fuentes y herramientas de build — no se sirven (el HTML de raíz ya está compilado)
+.git
+.github
+.claude
+scripts
+src
+blog/src
+audits
+docs
+package.json
+package-lock.json
+README.md
+CLAUDE.md
