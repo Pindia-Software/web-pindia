@@ -5,7 +5,7 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Fri, 10 Jul 2026 09:34:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 09:59:06 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -21,7 +21,7 @@
     <item>
       <title>Desarrollo de webs con IA: verdades y mentiras</title>
       <link>https://pindia.es/blog/posts/desarrollo-webs-ia-verdades-mentiras/</link>
-      <description>ChatGPT, Cursor, GitHub Copilot. ¿Pueden reemplazar a un desarrollador? ¿Es oro todo lo que brilla? Qué hace bien la IA, dónde falla, y cuándo tiene sentido usarla.</description>
+      <description>ChatGPT, Cursor, GitHub Copilot: ¿pueden reemplazar a un desarrollador? Qué hace bien la IA, dónde falla y cuándo tiene sentido usarla.</description>
       <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/desarrollo-webs-ia-verdades-mentiras/</guid>
       <author>info@pindia.es (Borja García)</author>
@@ -31,7 +31,7 @@
     <item>
       <title>¿Tu web cumple con la ley? Avisos legales, cookies, RGPD y DPA explicados</title>
       <link>https://pindia.es/blog/posts/tu-web-cumple-ley/</link>
-      <description>Aviso legal, política de cookies, RGPD, política de privacidad, DPA. Qué es obligatorio, qué riesgos hay si no lo haces, y cómo implementarlo sin perder 5.000 euros con abogados.</description>
+      <description>Aviso legal, cookies, RGPD, privacidad, DPA: qué es obligatorio, qué riesgos hay si no lo cumples y cómo implementarlo sin gastar 5.000€ en abogados.</description>
       <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/tu-web-cumple-ley/</guid>
       <author>info@pindia.es (Borja García)</author>
@@ -201,7 +201,7 @@
     <item>
       <title>Caña Digital: construcción digital</title>
       <link>https://pindia.es/blog/posts/cana-digital-2021/</link>
-      <description>Pindia Software participó en el primer evento Caña Digital organizado por la Oficina Acelera PYME de CEOE-CEPYME Cantabria, un encuentro sobre modernización del sector constructor.</description>
+      <description>Pindia participó en el primer Caña Digital de la Oficina Acelera PYME de CEOE-CEPYME Cantabria: un encuentro sobre modernización del sector constructor.</description>
       <pubDate>Thu, 11 Nov 2021 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/cana-digital-2021/</guid>
       <author>info@pindia.es (Borja García)</author>
@@ -211,7 +211,7 @@
     <item>
       <title>Premios CEOE-CEPYME 2021</title>
       <link>https://pindia.es/blog/posts/premios-ceoe-cepyme-2021/</link>
-      <description>Asistimos a la gala de los Premios CEOE-CEPYME Cantabria 2021, una noche en la que se reconoció el trabajo de empresas como IMEM Ascensores, CIC Consulting Informático y ANDROS.</description>
+      <description>Asistimos a la gala de los Premios CEOE-CEPYME Cantabria 2021, que reconoció el trabajo de empresas como IMEM Ascensores, CIC Consulting y ANDROS.</description>
       <pubDate>Fri, 29 Oct 2021 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/premios-ceoe-cepyme-2021/</guid>
       <author>info@pindia.es (Borja García)</author>
@@ -221,7 +221,7 @@
     <item>
       <title>Finalistas en los Premios Talento Cantabria</title>
       <link>https://pindia.es/blog/posts/finalistas-talento-cantabria/</link>
-      <description>Pindia Software fue seleccionada como finalista en los Premios Talento Cantabria, un reconocimiento al esfuerzo y al trabajo en proyectos empresariales desarrollados en la región.</description>
+      <description>Pindia Software, finalista en los Premios Talento Cantabria: un reconocimiento al trabajo en proyectos empresariales desarrollados en la región.</description>
       <pubDate>Tue, 19 Oct 2021 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/finalistas-talento-cantabria/</guid>
       <author>info@pindia.es (Borja García)</author>

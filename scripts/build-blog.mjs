@@ -521,7 +521,7 @@ function renderBlogList(posts, pageNum, totalPages, tagList = [], activeTag = nu
       : `Blog (página ${pageNum}) | Pindia Software`);
   const pageDesc = activeTag
     ? `Artículos del blog de Pindia Software etiquetados con "${activeTag.name}". Contenido sobre software, diseño web y digitalización.`
-    : 'Ideas, novedades y reflexiones sobre software, diseño web y digitalización desde Pindia Software en Santander. Artículos sobre tecnología, construcción y empresa.';
+    : 'Ideas y novedades sobre software, diseño web y digitalización desde Pindia Software en Santander. Tecnología, construcción y empresa.';
 
   const breadcrumbHTML = `
     <nav class="post__breadcrumb" aria-label="Ruta de navegación">
