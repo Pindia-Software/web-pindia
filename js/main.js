@@ -519,7 +519,12 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
    naturally by the 260vh container + sticky layout.
    ============================================ */
 (function initScrollVideo() {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile       = window.matchMedia('(max-width: 639px)').matches;
+  /* Hero estático (sin scroll-scrubbing) en móvil y con movimiento reducido:
+     dibuja un único frame y muestra el primer mensaje del H1. Evita la tarea
+     larga de JS (~1s) y la carga de 112 frames (~1,2 MB) → PageSpeed móvil. */
+  const staticHero     = prefersReduced || isMobile;
 
   const section  = document.getElementById('hero-scroll');
   const canvas   = document.getElementById('scroll-canvas');
@@ -529,7 +534,7 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
   const sticky   = section && section.querySelector('.hero__sticky');
   const heroH1   = section && section.querySelector('.hero__h1');
   const heroLines = heroH1 ? heroH1.querySelectorAll('.hero__h1-line') : [];
-  if (heroH1 && heroLines.length) heroH1.classList.add('hero__h1--animated');
+  if (!staticHero && heroH1 && heroLines.length) heroH1.classList.add('hero__h1--animated');
   const heroSubLines = section ? section.querySelectorAll('.hero__sub-line') : [];
   let lastLineIndex = -1;
 
@@ -540,6 +545,12 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
     if (i === 0) {
       line._typed = true;
       line.classList.add('is-active');
+      return;
+    }
+    if (staticHero) {
+      /* No vaciamos las líneas 2/3: quedan en el DOM (SEO) pero ocultas por
+         CSS (:not(.is-active) → display:none). Solo se muestra la línea 0. */
+      line._typed = true;
       return;
     }
     const nodes = [];
@@ -586,7 +597,6 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
   /* Mobile usa frames a 240px ancho (~10KB c/u, total ~1.3MB) en vez de
      480px (~200KB c/u, total ~22MB). Mismo número de frames, misma
      animación, 94% menos tráfico. */
-  const isMobile  = window.matchMedia('(max-width: 639px)').matches;
   const BASE_PATH = isMobile
     ? '/assets/videos/frames-mobile/frame_'
     : '/assets/videos/frames/frame_';
@@ -619,6 +629,13 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
     };
 
     frames[i] = img;
+  }
+
+  /* Hero estático: dibuja solo el primer frame (su onload añade .is-ready y
+     oculta el skeleton) y termina — sin loop rAF, sin listeners, sin más frames. */
+  if (staticHero) {
+    preloadFrame(FRAME_START);
+    return;
   }
 
   /* Eagerly preload first + last + a few key intermediates so the snap-to-end

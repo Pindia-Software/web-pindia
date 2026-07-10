@@ -3078,13 +3078,19 @@ ul, ol { list-style: none; }
 }
 
 /* ── Mobile < 640px ──
-   Animación activa con frames-mobile (240px, ~1.3MB total).
-   Mantiene 300vh + sticky para tener recorrido de scroll.       */
+   Hero ESTÁTICO: sin scroll-scrubbing (lo desactiva main.js dibujando un
+   único frame). Altura normal 100dvh, sticky desactivado. Mejora PageSpeed
+   móvil (sin tarea larga de JS ni 112 frames) y la UX (no obliga a scrollear). */
 @media (max-width: 639px) {
   .hero--scroll {
-    height: 300vh;
+    height: auto;
+    min-height: 100dvh;
   }
   .hero--scroll .hero__sticky {
+    position: relative;
+    top: auto;
+    height: auto;
+    min-height: 100dvh;
     align-items: flex-start;
   }
   .hero--scroll .hero__inner {
@@ -3092,6 +3098,9 @@ ul, ol { list-style: none; }
     padding-block: var(--sp-4) 0;
   }
   .hero--scroll .hero__actions {
+    display: none;
+  }
+  .hero--scroll .hero__scroll {
     display: none;
   }
   .hero__visual {
