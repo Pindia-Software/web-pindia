@@ -1,5 +1,6 @@
 ---
 title: '¿Tu web cumple con la ley? Avisos legales, cookies, RGPD y DPA explicados'
+metaTitle: '¿Tu web cumple la ley? Guía legal'
 description: >-
   Aviso legal, política de cookies, RGPD, política de privacidad, DPA. Qué es obligatorio, qué riesgos hay si no lo haces, y cómo implementarlo sin perder 5.000 euros con abogados.
 date: 2026-05-02

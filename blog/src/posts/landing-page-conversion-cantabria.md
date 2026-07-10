@@ -1,5 +1,6 @@
 ---
 title: Cómo hacer una landing page que de verdad convierta
+metaTitle: 'Cómo hacer una landing que convierta'
 description: >-
   Guía práctica para diseñar una landing page que convierta: estructura, copy,
   formularios y errores que hacen que la gente se vaya.

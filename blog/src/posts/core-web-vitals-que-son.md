@@ -1,5 +1,6 @@
 ---
 title: 'Core Web Vitals: qué son y por qué importan para tu web'
+metaTitle: 'Core Web Vitals: qué son y por qué importan'
 description: >-
   Core Web Vitals son las métricas que Google usa para ranking. LCP, INP y CLS explicados sin tecnicismos. Cómo medirlas y mejorarlas en tu web.
 date: 2026-05-02

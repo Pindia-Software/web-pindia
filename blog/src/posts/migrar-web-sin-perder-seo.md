@@ -1,5 +1,6 @@
 ---
 title: Cómo migrar tu web sin perder posicionamiento en Google
+metaTitle: 'Cómo migrar tu web sin perder SEO'
 description: >-
   Plan paso a paso para migrar la web de tu empresa sin perder SEO ni tráfico.
   Redirecciones, indexación y errores que cuestan caros.

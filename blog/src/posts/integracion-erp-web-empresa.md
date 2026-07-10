@@ -1,5 +1,6 @@
 ---
 title: 'Integrar tu ERP con la web: lo que sí merece la pena automatizar'
+metaTitle: 'Integrar tu ERP con la web: qué automatizar'
 description: >-
   Cuándo tiene sentido integrar la web con tu ERP (Holded, A3, Sage, SAP) y qué
   procesos automatizar primero. Casos reales en Cantabria.

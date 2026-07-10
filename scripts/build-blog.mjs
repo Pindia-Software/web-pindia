@@ -297,7 +297,7 @@ function renderPost(post) {
 <html lang="es">
 <head>
 ${commonHead({
-    title: `${title} | Blog Pindia Software`,
+    title: `${data.metaTitle || title} · Pindia`,
     description: description || `Artículo de Pindia Software: ${title}`,
     canonical: url,
     ogImage,
@@ -489,7 +489,7 @@ function renderBlogList(posts, pageNum, totalPages, tagList = [], activeTag = nu
   });
 
   const cards = posts.map(({ slug, data, content }) =>
-    renderBlogCard({ slug, data, content, hrefSuffix: `?page=${pageNum}`, headingLevel: 2 })
+    renderBlogCard({ slug, data, content, headingLevel: 2 })
   ).join('\n\n          ');
 
   const paginationHTML = totalPages > 1 ? `
@@ -640,12 +640,18 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
   const staticUrls = [
     { loc: `${SITE_URL}/`,                                   lastmod: today, changefreq: 'weekly',  priority: '1.0' },
     { loc: `${SITE_URL}/servicios/`,                         lastmod: today, changefreq: 'monthly', priority: '0.9' },
-    { loc: `${SITE_URL}/servicios/diseno-web.html`,          lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/servicios/desarrollo-software.html`, lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/servicios/apps-mobile-api.html`,     lastmod: today, changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/diseno-web`,               lastmod: today, changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/desarrollo-software`,      lastmod: today, changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/apps-mobile-api`,          lastmod: today, changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/trowelapp/`,                         lastmod: today, changefreq: 'monthly', priority: '0.9' },
     { loc: `${SITE_URL}/proyectos/`,                         lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/proyectos/web-pindia.html`,          lastmod: today, changefreq: 'monthly', priority: '0.7' },
-    { loc: `${SITE_URL}/proyectos/trowelapp.html`,           lastmod: today, changefreq: 'monthly', priority: '0.9' },
+    { loc: `${SITE_URL}/proyectos/trowelapp`,                lastmod: today, changefreq: 'monthly', priority: '0.9' },
+    { loc: `${SITE_URL}/proyectos/web-trowelapp`,            lastmod: today, changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/web-pindia`,               lastmod: today, changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/diaryofatoken`,            lastmod: today, changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/el-camino-de-gaudi`,       lastmod: today, changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/clinica-ofelia-casanueva`, lastmod: today, changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/construcciones-rotella`,   lastmod: today, changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/blog/`,                              lastmod: today, changefreq: 'weekly',  priority: '0.7' },
     { loc: `${SITE_URL}/contacto/`,                          lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/aviso-legal/`,                       lastmod: today, changefreq: 'yearly',  priority: '0.2' },

@@ -1,5 +1,6 @@
 ---
 title: 'RGPD y cookies en webs de empresas españolas: lo mínimo legal'
+metaTitle: 'RGPD y cookies en webs de empresa'
 description: >-
   Qué necesita una web española para cumplir con RGPD y la guía de cookies de la
   AEPD. Sanciones, banners, y casos de empresas en Cantabria.

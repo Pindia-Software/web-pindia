@@ -1,5 +1,6 @@
 ---
 title: Ejemplos de páginas web reales de empresas en Cantabria
+metaTitle: 'Ejemplos de webs de empresas en Cantabria'
 description: >-
   Ejemplos de páginas web profesionales de empresas en Cantabria: qué hacen
   bien, qué se podría mejorar y qué te sirve a ti como referencia.

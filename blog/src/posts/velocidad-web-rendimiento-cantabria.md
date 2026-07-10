@@ -1,5 +1,6 @@
 ---
 title: 'Cómo acelerar una web lenta: guía de optimización para pymes'
+metaTitle: 'Cómo acelerar una web lenta'
 description: >-
   Soluciones prácticas para mejorar velocidad web en Cantabria. Diagnóstico, 
   herramientas, qué arreglar primero y cuándo rehacer. Sin tecnicismos innecesarios.
