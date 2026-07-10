@@ -45,7 +45,7 @@
   --surface-soft:   #FAFBFC;
   --ink-1:          var(--navy-main);
   --ink-2:          rgba(34 41 62 / 0.72);
-  --ink-3:          rgba(34 41 62 / 0.55);
+  --ink-3:          rgba(34 41 62 / 0.66);
   --card-light:     #FFFFFF;
   --card-light-h:   #F8F9FB;
   --border-ink:        rgba(34 41 62 / 0.10);
@@ -58,7 +58,7 @@
   /* ── Text ── */
   --text-1: var(--beige);
   --text-2: rgba(234 231 224 / 0.65);
-  --text-3: rgba(234 231 224 / 0.40);
+  --text-3: rgba(234 231 224 / 0.58);
   --text-inv: var(--navy-900);
 
   /* ── Accent ── */
@@ -1481,6 +1481,10 @@ ul, ol { list-style: none; }
   --text-1: var(--ink-1);
   --text-2: var(--ink-2);
   --text-3: var(--ink-3);
+  /* Sección clara: naranja más oscuro para pasar contraste AA sobre fondo claro
+     (texto de acento y botón con texto blanco). */
+  --accent: var(--orange-d);
+  --accent-h: #A82E28;
   --border: var(--border-ink);
   background: var(--surface-muted);
   position: relative;
@@ -1913,6 +1917,9 @@ ul, ol { list-style: none; }
   max-height: calc(100dvh - var(--sp-8));
   display: flex;
   flex-direction: column;
+  /* Panel claro: naranja más oscuro para que eyebrow y enlaces pasen AA sobre blanco. */
+  --accent: var(--orange-d);
+  --accent-h: #A82E28;
   background: var(--white);
   color: var(--ink-1);
   border: 1px solid var(--border-ink);
