@@ -43,7 +43,7 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20260710b';
+const ASSET_VER = 'v=20260717a';
 
 // ── Partials (fuente única compartida con build-pages.mjs) ───────────────────
 
@@ -643,6 +643,7 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
     { loc: `${SITE_URL}/servicios/diseno-web`,               lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/servicios/desarrollo-software`,      lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/servicios/apps-mobile-api`,          lastmod: today, changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/mantenimiento-web`,        lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/trowelapp/`,                         lastmod: today, changefreq: 'monthly', priority: '0.9' },
     { loc: `${SITE_URL}/proyectos/`,                         lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/proyectos/trowelapp`,                lastmod: today, changefreq: 'monthly', priority: '0.9' },

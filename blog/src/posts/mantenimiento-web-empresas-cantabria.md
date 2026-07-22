@@ -1,27 +1,33 @@
 ---
-title: 'Mantenimiento web: lo que sí funciona'
+title: 'Mantenimiento web para empresas: qué incluye y cuánto cuesta de verdad'
+metaTitle: 'Mantenimiento web para empresas: qué incluye y cuánto cuesta'
 description: >-
-  Qué incluye un buen mantenimiento web para empresas en Cantabria, cuánto
-  cuesta y qué pasa cuando se descuida. Con ejemplos reales de la región.
+  Qué incluye un buen mantenimiento web, cuánto cuesta al mes de verdad y cómo
+  saber si el que pagas es un timo. Precios reales y sin humo, por una empresa
+  de desarrollo.
 date: 2026-01-22T00:00:00.000Z
 author: Borja García
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital
 cover: /assets/img/blog/mantenimiento-web-empresas-cantabria/cover.webp
-coverAlt: Técnico revisando el mantenimiento de una web corporativa en Cantabria
+coverAlt: Mantenimiento web para empresas — revisión técnica de una web corporativa
 draft: false
 ---
 
-Hay una conversación que tenemos casi cada mes con empresas cántabras: "nos hicieron la web hace tres años, pagamos, y no hemos vuelto a saber del que la hizo". Funcionar funciona. Pero en algún momento se rompe el formulario, o WordPress avisa de una actualización crítica, o aparece un error de SSL. Y entonces empieza la película.
+El **mantenimiento web** es lo que hace que tu web siga funcionando, siendo rápida y estando segura después del día que te la entregaron. Cuesta entre 40 y 200 € al mes según el alcance, y es la diferencia entre una web que dura años y una que un día deja de funcionar sin que nadie se entere.
+
+Hay una conversación que tenemos casi cada mes: "nos hicieron la web hace tres años, pagamos, y no hemos vuelto a saber del que la hizo". Funcionar funciona. Pero en algún momento se rompe el formulario, o WordPress avisa de una actualización crítica, o aparece un error de SSL. Y entonces empieza la película.
+
+Somos una empresa de desarrollo, así que te vamos a contar qué incluye un mantenimiento serio, qué debería costarte y cómo saber si el que estás pagando es humo.
 
 ## Qué es realmente el mantenimiento web
 
 No es solo "pasarle un antivirus". Una web profesional es software, y como cualquier software vive en un entorno que cambia: navegadores que se actualizan, servidores que migran, plugins que se rompen, normativa que cambia (cookies, RGPD, accesibilidad), y atacantes que prueban vulnerabilidades cada minuto.
 
-Un mantenimiento web serio cubre, como mínimo, cuatro frentes: actualizaciones técnicas, copias de seguridad, monitorización y soporte ante incidencias. Si tu plan no toca alguno de estos, no es mantenimiento, es una factura mensual.
+Un mantenimiento web serio cubre, como mínimo, cuatro frentes: **actualizaciones técnicas, copias de seguridad, monitorización y soporte ante incidencias**. Si tu plan no toca alguno de estos, no es mantenimiento, es una factura mensual.
 
-## Qué incluye un buen plan
+## Qué incluye un buen plan de mantenimiento web
 
 **Actualizaciones**: del CMS, de los plugins, del PHP o Node, de los certificados SSL. Aplicadas con criterio (no a ciegas) y probadas antes en un entorno de staging para que no se rompa nada en producción.
 
@@ -33,35 +39,229 @@ Un mantenimiento web serio cubre, como mínimo, cuatro frentes: actualizaciones 
 
 **Mejoras pequeñas continuas**: cambiar un texto, subir una nota de prensa, modificar un teléfono. Las pymes no pueden estar pidiendo presupuesto para cada coma.
 
-## Mantenimiento web para empresas en Cantabria: cuánto debería costar
+## Cuánto cuesta el mantenimiento web al mes
 
-En el mercado cántabro, vemos planes que van desde los 40 euros al mes hasta los 200 según el alcance. Una web corporativa estándar de una pyme de Santander se mantiene razonablemente bien por entre 60 y 120 euros mensuales, con horas mensuales incluidas para pequeños cambios.
+Los precios que se manejan en el mercado, sin rodeos:
 
-Si te ofrecen mantenimiento por 15 euros al mes, pregunta qué incluye. Casi seguro que es solo hosting, sin actualizaciones, sin monitorización y sin soporte humano.
+| Plan | Precio/mes | Para quién | Qué incluye |
+|------|-----------|------------|-------------|
+| Básico | 40–70 € | Web corporativa pequeña, pocos cambios | Actualizaciones, copias diarias, monitorización de caídas, soporte por email |
+| Estándar | 70–130 € | Pyme con web activa | Lo anterior + staging, horas mensuales de cambios, informe mensual, soporte telefónico |
+| Avanzado | 130–200 € | Tienda online o web con integraciones | Lo anterior + monitorización de pasarela y stock, prioridad de respuesta, optimización continua de rendimiento |
+
+Una web corporativa estándar de una pyme se mantiene razonablemente bien por **entre 60 y 120 € mensuales**, con horas incluidas para pequeños cambios.
+
+**Si te ofrecen mantenimiento por 15 € al mes, pregunta qué incluye.** Casi seguro que es solo hosting: sin actualizaciones, sin monitorización y sin soporte humano.
+
+Y el reverso: pagar 200 € por una web de cinco páginas que no cambia nunca tampoco tiene sentido. El precio debe salir del alcance, no del tamaño de tu empresa.
+
+## Qué debe poner en tu contrato de mantenimiento
+
+Aquí es donde se separan los planes serios de las facturas mensuales. Pide que aparezca por escrito:
+
+- **Frecuencia de las copias** y dónde se guardan (fuera del servidor de producción).
+- **Prueba de restauración**: cada cuánto se comprueba que la copia sirve.
+- **Tiempo de respuesta ante incidencias.** No "atención prioritaria", sino horas concretas.
+- **Qué pasa si la web se cae fuera de horario.**
+- **Horas de cambios incluidas** al mes y qué ocurre si no las gastas.
+- **Entorno de pruebas (staging)**: si actualizan directamente en producción, tarde o temprano te tiran la web.
+- **Informe mensual** legible por alguien no técnico.
+- **Quién es el propietario del hosting y del dominio.** Sorpresa habitual: no eres tú.
+
+Si tu proveedor se pone nervioso con esta lista, ya tienes la respuesta.
+
+## Cómo saber si el mantenimiento que pagas es un timo
+
+Señales que vemos cada semana:
+
+1. **No recibes ningún informe.** Si no te cuentan qué han hecho, probablemente no han hecho nada.
+2. **Nunca han restaurado una copia de prueba.**
+3. **Te enteras tú de que la web está caída.** La monitorización no existe.
+4. **Cada cambio de texto es un presupuesto nuevo.**
+5. **No sabes a quién llamar.** Solo hay un email genérico.
+6. **Tu web va lenta y nadie lo menciona.** Pásala por PageSpeed Insights: es gratis y tarda 30 segundos.
+7. **El WordPress está desactualizado.** Míralo tú mismo en el panel.
 
 ## Qué pasa cuando se descuida
 
-Vemos las consecuencias casi cada semana en empresas que vienen a pedir rescate. Webs hackeadas porque un plugin desactualizado tenía una vulnerabilidad pública desde hacía meses. Tiendas online que perdieron pedidos porque la pasarela de pago dejó de funcionar después de un cambio en el TPV y nadie lo notó. Webs penalizadas por Google porque tras una actualización fallida se rompió el sitemap. Una empresa de Castro Urdiales perdió tres meses de tráfico orgánico por un detalle así.
+Vemos las consecuencias casi cada semana en empresas que vienen a pedir rescate. Webs hackeadas porque un plugin desactualizado tenía una vulnerabilidad pública desde hacía meses. Tiendas online que perdieron pedidos porque la pasarela de pago dejó de funcionar tras un cambio en el TPV y nadie lo notó. Webs penalizadas por Google porque tras una actualización fallida se rompió el sitemap. Una empresa de Castro Urdiales perdió tres meses de tráfico orgánico por un detalle así.
 
-El coste medio de un rescate (limpieza de malware, restauración, recuperación de SEO) suele ser superior al de varios años de mantenimiento bien hecho. La cuenta no sale.
+**El coste medio de un rescate** (limpieza de malware, restauración, recuperación de SEO) suele ser superior al de varios años de mantenimiento bien hecho. La cuenta no sale.
+
+## Mantenimiento de WordPress vs de una web a medida
+
+No cuesta lo mismo, y conviene saber por qué.
+
+**WordPress** tiene más superficie que mantener: el core, el tema y cada plugin instalado. Cada uno se actualiza por su cuenta y pueden romperse entre ellos. Más piezas, más vigilancia, más riesgo. Es mantenimiento más caro *o* más arriesgado, elige.
+
+**Una web a medida** tiene solo el código que necesita. Menos superficie de ataque, menos dependencias, menos cosas que se rompen solas. El mantenimiento es más barato y más predecible.
+
+Es uno de los costes que casi nadie mira al pedir presupuesto de web, y a tres años pesa. Lo comparamos en [WordPress vs desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/).
 
 ## Mantenimiento interno o externo
 
-Hay empresas en Santander con un perfil técnico interno que pueden gestionar el mantenimiento. Si es tu caso, perfecto: nos coordinamos con tu equipo. Pero la mayoría de pymes no tiene ni va a tener una persona dedicada a esto. En esos casos, externalizar a una empresa de desarrollo web local en Cantabria sale más barato y duerme mejor.
+Hay empresas con un perfil técnico interno que pueden gestionarlo. Si es tu caso, perfecto: nos coordinamos con tu equipo. Pero la mayoría de pymes no tiene ni va a tener una persona dedicada a esto. En esos casos, externalizar sale más barato y duerme mejor.
 
 ## Y la parte de contenidos
 
-El mantenimiento técnico es solo una parte. Una web también vive si el contenido se actualiza: el blog se mueve, los casos de éxito se renuevan, las landings nuevas se publican. Eso no siempre lo hace la agencia, pero conviene tenerlo claro desde el principio. Si quieres que también lo llevemos, podemos. Si lo lleva tu equipo de marketing, mejor aún — solo necesitamos coordinarnos.
+El mantenimiento técnico es solo una parte. Una web también vive si el contenido se actualiza: el blog se mueve, los casos de éxito se renuevan, las landings nuevas se publican. Eso no siempre lo hace la agencia, pero conviene tenerlo claro desde el principio. Si quieres que también lo llevemos, podemos. Si lo lleva tu equipo de marketing, mejor aún: solo necesitamos coordinarnos.
 
 ## Cómo lo hacemos en Pindia
 
-Mantenemos webs de pymes y empresas industriales en Cantabria, Asturias y País Vasco. Cada cliente tiene su persona de contacto, sus copias se prueban, y los partes mensuales son legibles para alguien no técnico.
+Somos una empresa de desarrollo de software, no un revendedor de hosting. Mantenemos webs de pymes y empresas industriales en Cantabria, Asturias y País Vasco, y desarrollamos producto propio en producción ([TrowelApp](https://pindia.es/proyectos/trowelapp.html), un SaaS en varios países sobre .NET y Azure). La misma gente que sostiene eso sostiene tu web.
+
+Cada cliente tiene su persona de contacto, sus copias se prueban de verdad, y los partes mensuales son legibles para alguien no técnico.
+
+**¿No sabes qué mantenimiento tienes contratado?** Te lo miramos gratis y te decimos qué encontramos, aunque luego no nos contrates.
+
+**[Ver planes de mantenimiento →](https://pindia.es/servicios/mantenimiento-web)** · **[Auditoría gratuita de tu web →](https://pindia.es/contacto/)**
+
+## Preguntas frecuentes
+
+### ¿Qué es el mantenimiento web?
+
+Es el conjunto de tareas que mantienen una web funcionando, segura y actualizada después de su lanzamiento: actualizaciones de software, copias de seguridad, monitorización, soporte ante incidencias y pequeños cambios de contenido.
+
+### ¿Cuánto cuesta el mantenimiento de una página web al mes?
+
+Entre 40 y 200 € mensuales según el alcance. Una web corporativa de pyme se mantiene bien por 60–120 € al mes. Por debajo de 20 € normalmente solo estás pagando hosting.
+
+### ¿Es obligatorio el mantenimiento web?
+
+Legalmente no, pero en la práctica sí: sin actualizaciones tu web acaba siendo vulnerable, y el cumplimiento de cookies, RGPD y accesibilidad exige revisiones cuando cambia la normativa. La responsabilidad legal es tuya, no de tu agencia.
+
+### ¿Qué pasa si no hago mantenimiento a mi web?
+
+Con el tiempo aparecen vulnerabilidades, errores, caídas y pérdida de posicionamiento. El coste de un rescate (limpieza de malware, restauración y recuperación de SEO) suele superar el de varios años de mantenimiento.
+
+### ¿El mantenimiento web incluye el hosting?
+
+Depende del proveedor. A menudo se venden juntos y ahí está la confusión: un plan de 15 € al mes suele ser hosting con otro nombre. Pregunta siempre qué parte es alojamiento y qué parte es trabajo técnico.
+
+### ¿Puedo cambiar de empresa de mantenimiento web?
+
+Sí, siempre que tengas acceso al dominio, al hosting y al código. Compruébalo antes de firmar con nadie: es el motivo más frecuente por el que una empresa se queda atrapada con un proveedor que no le sirve.
+
+### ¿Cuánto cuesta mantener una tienda online?
+
+Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Suele partir de 130 € al mes.
 
 ## Más en el blog
 
-- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — El mantenimiento debe incluir optimización de velocidad.
-- [10 errores web (soluciones)](../errores-comunes-web-empresa/) — Muchos errores vienen de falta de mantenimiento.
-- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/) — Cumplimiento legal requiere mantenimiento continuo.
-- [WordPress vs desarrollo a medida](../wordpress-vs-desarrollo-medida-cantabria/) — El coste de mantenimiento varía según tecnología.
+- [Velocidad web: pérdida de clientes](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) — el mantenimiento debe incluir optimización de velocidad.
+- [10 errores web (soluciones)](https://pindia.es/blog/posts/errores-comunes-web-empresa/) — muchos errores vienen de falta de mantenimiento.
+- [¿Tu web cumple con la ley?](https://pindia.es/blog/posts/tu-web-cumple-ley/) — el cumplimiento legal requiere mantenimiento continuo.
+- [WordPress vs desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/) — el coste de mantenimiento varía según la tecnología.
 
-Si tu web actual se ha quedado huérfana o sospechas que el mantenimiento que pagas no es lo que crees, [hablemos](/contacto/) y te decimos qué encontramos.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el mantenimiento web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es el conjunto de tareas que mantienen una web funcionando, segura y actualizada después de su lanzamiento: actualizaciones de software, copias de seguridad, monitorización, soporte ante incidencias y pequeños cambios de contenido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta el mantenimiento de una página web al mes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entre 40 y 200 € mensuales según el alcance. Una web corporativa de pyme se mantiene bien por 60–120 € al mes. Por debajo de 20 € normalmente solo estás pagando hosting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es obligatorio el mantenimiento web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Legalmente no, pero en la práctica sí: sin actualizaciones tu web acaba siendo vulnerable, y el cumplimiento de cookies, RGPD y accesibilidad exige revisiones cuando cambia la normativa. La responsabilidad legal es tuya, no de tu agencia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si no hago mantenimiento a mi web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con el tiempo aparecen vulnerabilidades, errores, caídas y pérdida de posicionamiento. El coste de un rescate (limpieza de malware, restauración y recuperación de SEO) suele superar el de varios años de mantenimiento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El mantenimiento web incluye el hosting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende del proveedor. A menudo se venden juntos y ahí está la confusión: un plan de 15 € al mes suele ser hosting con otro nombre. Pregunta siempre qué parte es alojamiento y qué parte es trabajo técnico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo cambiar de empresa de mantenimiento web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, siempre que tengas acceso al dominio, al hosting y al código. Compruébalo antes de firmar con nadie: es el motivo más frecuente por el que una empresa se queda atrapada con un proveedor que no le sirve."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta mantener una tienda online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Suele partir de 130 € al mes."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ProfessionalService", "LocalBusiness"],
+  "name": "Pindia Software S.L.",
+  "legalName": "PINDIA SOFTWARE S.L.",
+  "taxID": "B67353748",
+  "url": "https://pindia.es",
+  "logo": "https://pindia.es/assets/icons/logo-nav.svg",
+  "image": "https://pindia.es/assets/img/og-home.webp",
+  "description": "Empresa de desarrollo de software y diseño web en Cantabria. Ofrece mantenimiento web para empresas: actualizaciones, copias de seguridad, monitorización y soporte.",
+  "telephone": "+34942189733",
+  "email": "info@pindia.es",
+  "sameAs": [],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Ramón Ramírez 5, 1º",
+    "addressLocality": "Santa Cruz de Bezana",
+    "addressRegion": "Cantabria",
+    "postalCode": "39100",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.4678,
+    "longitude": -3.8003
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }],
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "Cantabria"},
+    {"@type": "Country", "name": "España"}
+  ],
+  "knowsAbout": [
+    "Mantenimiento web",
+    "Mantenimiento de WordPress",
+    "Copias de seguridad y restauración",
+    "Monitorización de sitios web",
+    "Actualizaciones de seguridad",
+    "Soporte técnico web"
+  ]
+}
+</script>

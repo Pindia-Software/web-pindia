@@ -423,11 +423,11 @@ ul, ol { list-style: none; }
 
 .btn--primary {
   background: var(--accent);
-  color: var(--navy-950);
+  color: var(--white);
 }
 .btn--primary:hover {
   background: var(--accent-h);
-  color: var(--navy-950);
+  color: var(--white);
   box-shadow: var(--glow-accent);
 }
 
