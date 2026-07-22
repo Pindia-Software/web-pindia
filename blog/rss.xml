@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Wed, 22 Jul 2026 12:15:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 12:23:35 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Diseño web a medida: qué es, qué incluye y cuánto cuesta</title>
+      <link>https://pindia.es/blog/posts/diseno-web-a-medida/</link>
+      <description>Qué es el diseño web a medida, qué incluye de verdad, cuánto cuesta y cuándo merece la pena frente a una plantilla. Guía escrita por una empresa de desarrollo.</description>
+      <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/diseno-web-a-medida/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
 
     <item>
       <title>Core Web Vitals: qué son y por qué importan para tu web</title>

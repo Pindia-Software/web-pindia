@@ -163,6 +163,13 @@
   </url>
 
   <url>
+    <loc>https://pindia.es/blog/posts/diseno-web-a-medida/</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://pindia.es/blog/posts/core-web-vitals-que-son/</loc>
     <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
