@@ -5,7 +5,7 @@ description: >-
   Qué incluye un buen mantenimiento web, cuánto cuesta al mes de verdad y cómo
   saber si el que pagas es un timo. Precios reales y sin humo, por una empresa
   de desarrollo.
-date: 2026-01-22T00:00:00.000Z
+date: 2026-07-22T00:00:00.000Z
 author: Borja García
 tags:
   - Diseño & Desarrollo Web
@@ -54,6 +54,16 @@ Una web corporativa estándar de una pyme se mantiene razonablemente bien por **
 **Si te ofrecen mantenimiento por 15 € al mes, pregunta qué incluye.** Casi seguro que es solo hosting: sin actualizaciones, sin monitorización y sin soporte humano.
 
 Y el reverso: pagar 200 € por una web de cinco páginas que no cambia nunca tampoco tiene sentido. El precio debe salir del alcance, no del tamaño de tu empresa.
+
+## Nuestros planes de mantenimiento web
+
+En Pindia lo tenemos en tres niveles, sin letra pequeña. No somos los más baratos del mercado, y a estas alturas del artículo ya sabes por qué: incluimos actualizaciones probadas en staging, copias que se restauran de verdad y una persona a la que llamar.
+
+- **Básico — 99 €/mes**: actualizaciones, copias diarias con prueba de restauración, monitorización de caídas y soporte. Para una web corporativa que cambia poco.
+- **Estándar — 199 €/mes**: todo lo del Básico + **4 horas mensuales** de cambios, entorno de *staging* e informe mensual legible. Para la pyme con web activa.
+- **Avanzado — a medida**: para tienda online o web con integraciones, donde hay que vigilar pasarela de pago, stock y rendimiento de forma continua.
+
+Los tienes con el detalle completo en **[nuestra página de mantenimiento web →](https://pindia.es/servicios/mantenimiento-web)**. Y si no sabes qué estás pagando ahora, te lo auditamos gratis.
 
 ## Qué debe poner en tu contrato de mantenimiento
 
@@ -146,6 +156,10 @@ Sí, siempre que tengas acceso al dominio, al hosting y al código. Compruébalo
 
 Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Suele partir de 130 € al mes.
 
+### ¿Cuánto cuesta el mantenimiento web en Pindia?
+
+Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 horas mensuales de cambios incluidas) y Avanzado a medida para tiendas online o webs con integraciones. Todos incluyen copias con prueba de restauración, monitorización y soporte con persona de contacto. Los ves en detalle en nuestra [página de mantenimiento web](https://pindia.es/servicios/mantenimiento-web).
+
 ## Más en el blog
 
 - [Velocidad web: pérdida de clientes](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) — el mantenimiento debe incluir optimización de velocidad.
@@ -212,6 +226,14 @@ Más que una web corporativa, porque hay que vigilar la pasarela de pago, el sto
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Suele partir de 130 € al mes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta el mantenimiento web en Pindia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 horas mensuales de cambios incluidas) y Avanzado a medida para tiendas online o webs con integraciones. Todos incluyen copias con prueba de restauración, monitorización y soporte con persona de contacto."
       }
     }
   ]

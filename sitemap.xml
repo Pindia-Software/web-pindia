@@ -163,6 +163,13 @@
   </url>
 
   <url>
+    <loc>https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://pindia.es/blog/posts/diseno-web-a-medida/</loc>
     <lastmod>2026-07-17</lastmod>
     <changefreq>yearly</changefreq>
@@ -277,13 +284,6 @@
   <url>
     <loc>https://pindia.es/blog/posts/tienda-online-cantabria/</loc>
     <lastmod>2026-01-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</loc>
-    <lastmod>2026-01-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Wed, 22 Jul 2026 12:23:35 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 12:36:31 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Mantenimiento web para empresas: qué incluye y cuánto cuesta de verdad</title>
+      <link>https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</link>
+      <description>Qué incluye un buen mantenimiento web, cuánto cuesta al mes de verdad y cómo saber si el que pagas es un timo. Precios reales y sin humo, por una empresa de desarrollo.</description>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
 
     <item>
       <title>Diseño web a medida: qué es, qué incluye y cuánto cuesta</title>
@@ -176,16 +186,6 @@
       <guid isPermaLink="true">https://pindia.es/blog/posts/tienda-online-cantabria/</guid>
       <author>info@pindia.es (Borja García)</author>
       <category>Diseño &amp; Desarrollo Web</category>
-    </item>
-
-    <item>
-      <title>Mantenimiento web para empresas: qué incluye y cuánto cuesta de verdad</title>
-      <link>https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</link>
-      <description>Qué incluye un buen mantenimiento web, cuánto cuesta al mes de verdad y cómo saber si el que pagas es un timo. Precios reales y sin humo, por una empresa de desarrollo.</description>
-      <pubDate>Thu, 22 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</guid>
-      <author>info@pindia.es (Borja García)</author>
-      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
     </item>
 
     <item>
