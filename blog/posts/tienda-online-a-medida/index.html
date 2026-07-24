@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tienda online a medida: cuándo compensa y precio · Pindia</title>
+  <meta name="description" content="Qué es una tienda online a medida, en qué se diferencia de Shopify o WooCommerce, cuándo compensa el desarrollo a medida y cuánto cuesta. Guía de una empresa de desarrollo ecommerce.">
+  <link rel="canonical" href="https://pindia.es/blog/posts/tienda-online-a-medida/">
+  
+  
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Tienda online a medida: cuándo compensa y precio · Pindia">
+  <meta property="og:description" content="Qué es una tienda online a medida, en qué se diferencia de Shopify o WooCommerce, cuándo compensa el desarrollo a medida y cuánto cuesta. Guía de una empresa de desarrollo ecommerce.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/blog/tienda-online-a-medida/cover.webp">
+  <meta property="og:url"         content="https://pindia.es/blog/posts/tienda-online-a-medida/">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Tienda online a medida: cuándo compensa y precio · Pindia">
+  <meta name="twitter:description" content="Qué es una tienda online a medida, en qué se diferencia de Shopify o WooCommerce, cuándo compensa el desarrollo a medida y cuánto cuesta. Guía de una empresa de desarrollo ecommerce.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/blog/tienda-online-a-medida/cover.webp">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicons/favicon.png">
+  <link rel="manifest"         href="/manifest.webmanifest">
+  <meta name="theme-color"     content="#22293E">
+
+  <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260717a" crossorigin>
+
+  <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
+  <script>
+    window.GA_MEASUREMENT_ID = 'G-KSW7VRFCV6';
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  </script>
+
+  <!-- Critical CSS (tokens + base + responsive merged, minified) -->
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260717a">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Blog Pindia Software" href="/blog/rss.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://pindia.es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://pindia.es/blog/"},{"@type":"ListItem","position":3,"name":"Tienda online a medida: qué es, cuándo compensa y cuánto cuesta","item":"https://pindia.es/blog/posts/tienda-online-a-medida/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Tienda online a medida: qué es, cuándo compensa y cuánto cuesta","description":"Qué es una tienda online a medida, en qué se diferencia de Shopify o WooCommerce, cuándo compensa el desarrollo a medida y cuánto cuesta. Guía de una empresa de desarrollo ecommerce.","datePublished":"2026-07-24","author":{"@type":"Person","name":"Borja García"},"publisher":{"@type":"Organization","name":"Pindia Software S.L.","url":"https://pindia.es","logo":{"@type":"ImageObject","url":"https://pindia.es/assets/icons/logo-nav.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pindia.es/blog/posts/tienda-online-a-medida/"},"image":"https://pindia.es/assets/img/blog/tienda-online-a-medida/cover.webp","keywords":"Diseño & Desarrollo Web, Negocio & Estrategia Digital"}</script>
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="nav" role="banner">
+    <div class="container">
+      <div class="nav__inner">
+
+        <a href="/" class="nav__logo" aria-label="Pindia Software — Inicio">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" width="140" height="56" loading="eager">
+        </a>
+
+        <nav class="nav__links" aria-label="Navegación principal">
+          <a href="/servicios/" class="nav__link">Servicios</a>
+          <a href="/proyectos/" class="nav__link">Proyectos</a>
+          <a href="/blog/" class="nav__link" aria-current="page">Blog</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a href="/contacto/" class="btn btn--primary">Hablemos</a>
+          <button
+            class="nav__toggle"
+            aria-expanded="false"
+            aria-controls="nav-drawer"
+            aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" class="nav__drawer" aria-label="Menú móvil">
+    <a href="/servicios/" class="nav__link">Servicios</a>
+    <a href="/proyectos/" class="nav__link">Proyectos</a>
+    <a href="/blog/" class="nav__link" aria-current="page">Blog</a>
+    <a href="/contacto/" class="btn btn--primary btn--lg" style="width:100%;margin-top:auto;">Hablemos de tu proyecto</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- BREADCRUMB -->
+    <nav class="post__breadcrumb" aria-label="Ruta de navegación">
+      <div class="container">
+        <ol>
+          <li><a href="/">Inicio</a></li>
+          <li aria-hidden="true">/</li>
+          <li><a href="/blog/">Blog</a></li>
+          <li aria-hidden="true">/</li>
+          <li><span aria-current="page">Tienda online a medida: qué es, cuándo compensa y cuánto cuesta</span></li>
+        </ol>
+      </div>
+    </nav>
+
+    <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+      <header class="post__header">
+        <div class="container">
+          <div class="post__header-inner">
+
+            <a href="/blog/" id="post-back-link" class="post__back" aria-label="Volver al listado del blog">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Volver al blog
+            </a>
+
+            <script>
+              (function() {
+                const params = new URLSearchParams(window.location.search);
+                const page = params.get('page');
+                const backLink = document.getElementById('post-back-link');
+                if (backLink && page) {
+                  const pageNum = parseInt(page, 10);
+                  if (pageNum > 1) {
+                    backLink.href = '/blog/page/' + pageNum + '/';
+                  }
+                }
+              })();
+            </script>
+
+            <div class="post__meta">
+              <span class="post__tag">Diseño &amp; Desarrollo Web</span><span class="post__tag">Negocio &amp; Estrategia Digital</span>
+            </div>
+            <h1 class="post__title" itemprop="headline">Tienda online a medida: qué es, cuándo compensa y cuánto cuesta</h1>
+            <p class="post__lead">Qué es una tienda online a medida, en qué se diferencia de Shopify o WooCommerce, cuándo compensa el desarrollo a medida y cuánto cuesta. Guía de una empresa de desarrollo ecommerce.</p>
+            <div class="post__byline">
+              <time datetime="2026-07-24" itemprop="datePublished">24 de julio de 2026</time>
+              <span aria-hidden="true">·</span>
+              <span class="post__author" itemprop="author">Borja García</span>
+              <span aria-hidden="true">·</span>
+              <span class="post__reading-time">13 min de lectura</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+      <figure class="post__cover-wrap">
+        <div class="container">
+          <img class="post__cover" src="/assets/img/blog/tienda-online-a-medida/cover.webp" alt="Desarrollo de una tienda online a medida para empresas" itemprop="image" loading="eager" fetchpriority="high">
+        </div>
+      </figure>
+
+      <div class="container">
+        <div class="post__body prose" itemprop="articleBody">
+          <p>Una <strong>tienda online a medida</strong> es un ecommerce desarrollado para tu negocio y tu catálogo concretos, en lugar de una plantilla estándar de Shopify, WooCommerce o PrestaShop a la que tienes que adaptarte. Se ajusta a cómo vendes de verdad —tus productos, tus reglas de precio, tu logística, tus sistemas— y el código es tuyo.</p>
+<p>Cuesta más que arrancar una plantilla y tarda más en estar lista. A cambio, dejas de pelearte con los límites de un tema genérico y consigues una tienda que hace exactamente lo que tu operativa necesita, sin plugins pegados con celo.</p>
+<p>Hacemos <a href="https://pindia.es/servicios/desarrollo-software">desarrollo de software y web a medida</a>, así que tenemos un sesgo evidente y lo ponemos por delante. También te vamos a decir con claridad cuándo una plantilla estándar te resuelve y no necesitas un <strong>desarrollo ecommerce</strong> a medida.</p>
+<h2 id="que-es-una-tienda-online-a-medida-y-que-no"><a href="#que-es-una-tienda-online-a-medida-y-que-no" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Qué es una tienda online a medida (y qué no)</h2><p>Un <strong>desarrollo de tienda online a medida</strong> parte de tu proceso de venta, no de un catálogo de temas. Se estudia tu producto, tu forma de cobrar, tu logística y tus integraciones, y se construye exactamente eso: ni funciones de más que no usas, ni límites que te obliguen a montar apuaños.</p>
+<p><strong>Lo que NO es:</strong></p>
+<ul>
+<li><strong>No es una plantilla &quot;muy personalizada&quot;.</strong> Cambiar colores, tipografías y bloques de un tema de Shopify sigue siendo una plantilla, por mucho que la agencia lo llame &quot;diseño a medida&quot;. A medida es que la lógica se programa para ti, no solo la portada.</li>
+<li><strong>No es necesariamente carísima.</strong> Es el mito más extendido y ha dejado de ser cierto: el desarrollo asistido por IA ha bajado el coste de forma notable. Lo vemos más abajo.</li>
+<li><strong>No es &quot;todo desde cero&quot; por capricho.</strong> Se reutiliza lo que tiene sentido (pasarelas de pago, librerías, servicios en la nube). A medida significa que la tienda se ajusta a ti, no reinventar la rueda.</li>
+</ul>
+<p>La diferencia de fondo con una plantilla no es el aspecto: es que la plantilla <strong>te obliga a vender como ella espera</strong>. Cuando tu catálogo, tus precios o tu logística se salen de lo común, empiezas a acumular plugins, y cada plugin es una pieza más que se puede romper, ralentizar la web o dejar de mantenerse.</p>
+<h2 id="para-que-sirve-una-tienda-online-a-medida"><a href="#para-que-sirve-una-tienda-online-a-medida" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Para qué sirve una tienda online a medida</h2><p>En la práctica, un ecommerce a medida resuelve una de estas situaciones (o varias a la vez):</p>
+<ul>
+<li><strong>Catálogo complejo:</strong> miles de referencias, variantes, packs, tarifas por cliente, productos configurables o con reglas de precio que una plantilla no contempla.</li>
+<li><strong>Integración con tus sistemas:</strong> que la tienda hable con tu ERP, tu almacén, tu TPV físico o tu facturación, y no tengas que copiar pedidos y stock a mano.</li>
+<li><strong>Venta B2B o mayorista:</strong> precios por cliente, pedidos por referencia rápida, presupuestos, pago aplazado. La mayoría de plantillas están pensadas para B2C.</li>
+<li><strong>Rendimiento y experiencia propios:</strong> una tienda rápida y a tu manera, sin la carga de plugins que arrastra un WooCommerce lleno de extensiones.</li>
+</ul>
+<p>El <strong>desarrollo web ecommerce</strong> a medida casi nunca nace de un capricho estético: nace de un cuello de botella operativo que cuesta dinero cada mes.</p>
+<h2 id="tienda-a-medida-vs-shopify-woocommerce-y-prestashop"><a href="#tienda-a-medida-vs-shopify-woocommerce-y-prestashop" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Tienda a medida vs Shopify, WooCommerce y PrestaShop</h2><p>No hay un ganador absoluto: depende de tu caso.</p>
+<p><strong>Las plataformas estándar (Shopify, WooCommerce, PrestaShop)</strong> tienen todo el sentido cuando tu catálogo es sencillo y tu forma de vender es común: pocas referencias, precio único, envío estándar. Sales barato, arrancas ya y hay mucho profesional que las conoce. El coste aparece con el tiempo: cuotas y comisiones mensuales, plugins de pago que se acumulan, y un techo funcional que golpeas justo cuando el negocio empieza a crecer.</p>
+<p><strong>La tienda online a medida</strong> gana cuando el catálogo o la operativa se salen de lo estándar, cuando necesitas integrar la tienda con tu ERP o tu almacén, o cuando ya tienes una plantilla llena de plugins que se pelean entre sí. Cuesta más al principio y es tuya: sin comisiones por venta, sin cuota que sube cada año, sin depender de que un plugin de terceros siga existiendo.</p>
+<p>Regla práctica: si vender es tu negocio principal y tu forma de vender te diferencia, no la dejes en manos de una plantilla que usan también tus competidores. Lo mismo que contamos para las webs en <a href="https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/">WordPress o desarrollo a medida</a> aplica al ecommerce.</p>
+<h2 id="cuando-no-necesitas-una-tienda-a-medida"><a href="#cuando-no-necesitas-una-tienda-a-medida" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cuándo NO necesitas una tienda a medida</h2><p>Te lo decimos aunque no nos convenga:</p>
+<ul>
+<li><strong>Empiezas y quieres validar.</strong> Monta una plantilla decente, valida que se vende y luego hazla a medida. No inviertas en desarrollo antes de tener demanda.</li>
+<li><strong>Catálogo pequeño y estándar.</strong> Si vendes 20 productos con precio fijo y envío normal, Shopify o WooCommerce te sobran.</li>
+<li><strong>Presupuesto muy ajustado.</strong> Mejor una plantilla bien hecha que una tienda a medida a medias.</li>
+<li><strong>No tienes quién gestione el día a día.</strong> Una tienda, del tipo que sea, necesita alguien detrás (stock, pedidos, atención).</li>
+</ul>
+<p>Si estás en alguno de estos casos, coge una plataforma estándar y ahórrate la inversión. Para dar el paso con cabeza, lee también <a href="https://pindia.es/blog/posts/tienda-online-cantabria/">cómo planificar una tienda online que venda de verdad</a>.</p>
+<h2 id="que-incluye-realmente-el-desarrollo-de-una-tienda-online"><a href="#que-incluye-realmente-el-desarrollo-de-una-tienda-online" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Qué incluye realmente el desarrollo de una tienda online</h2><p>Esto es lo que estás pagando y lo que casi ningún presupuesto detalla:</p>
+<h3 id="arquitectura-y-catalogo"><a href="#arquitectura-y-catalogo" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Arquitectura y catálogo</h3><p>Cómo se modelan tus productos, variantes y tarifas, y cómo aguantará la tienda cuando crezca el catálogo y el tráfico. Es la parte invisible y la que decide si dentro de dos años sigue rápida o hay que rehacerla.</p>
+<h3 id="integraciones"><a href="#integraciones" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Integraciones</h3><p>Conectar la tienda con tu ERP, tu almacén, tu pasarela de pago o tu facturación. Es lo que más sube el presupuesto y lo que más retorno da, porque elimina el trabajo manual de pasar pedidos y stock de un sitio a otro. Lo contamos a fondo en <a href="https://pindia.es/blog/posts/integracion-erp-web-empresa/">integrar tu ERP con la web</a>.</p>
+<h3 id="pasarelas-de-pago-y-seguridad"><a href="#pasarelas-de-pago-y-seguridad" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Pasarelas de pago y seguridad</h3><p>Cobrar con tarjeta, Bizum, PayPal o pago aplazado, con la seguridad y el cumplimiento que eso exige (datos de cliente, protección de pagos). En una plantilla dependes de lo que traiga el plugin; a medida se ajusta a tu caso.</p>
+<h3 id="rendimiento"><a href="#rendimiento" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Rendimiento</h3><p>Una tienda lenta vende menos: cada segundo de más en cargar tira la conversión. Un ecommerce a medida se construye ligero, sin el lastre de decenas de plugins, y cuida los <a href="https://pindia.es/blog/posts/core-web-vitals-que-son/">Core Web Vitals</a> y la <a href="https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/">velocidad de carga</a> desde el diseño.</p>
+<h3 id="seo-para-ecommerce"><a href="#seo-para-ecommerce" class="prose__anchor" aria-label="Enlace a esta sección">#</a>SEO para ecommerce</h3><p>Estructura de categorías, URLs limpias, fichas de producto optimizadas, datos estructurados de producto y precio. Un <strong>diseño ecommerce</strong> a medida nace pensado para posicionar, no como un añadido posterior.</p>
+<h3 id="el-codigo"><a href="#el-codigo" class="prose__anchor" aria-label="Enlace a esta sección">#</a>El código</h3><p>Documentado y tuyo. Puedes llevártelo y mantenerlo con quien quieras. No te quedas atrapado con una plataforma ni con una agencia.</p>
+<h3 id="mantenimiento"><a href="#mantenimiento" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Mantenimiento</h3><p>Una tienda vive: pasarelas que cambian, dependencias que se actualizan, campañas que exigen ajustes. Un desarrollo serio se entrega con un plan de <a href="https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/">mantenimiento</a>, no se abandona tras el lanzamiento.</p>
+<h2 id="cuanto-cuesta-una-tienda-online-a-medida"><a href="#cuanto-cuesta-una-tienda-online-a-medida" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cuánto cuesta una tienda online a medida</h2><p>Depende del alcance, pero para situarte:</p>
+<ul>
+<li><strong>Una tienda a medida sencilla</strong> (catálogo acotado, pagos estándar, sin integraciones): <strong>desde unos 6.000 €</strong>.</li>
+<li><strong>Una tienda con integración a tu ERP o almacén</strong> y reglas de negocio propias: <strong>desde 12.000–20.000 €</strong>.</li>
+<li><strong>Un ecommerce complejo</strong> (B2B, multi-almacén, catálogo grande, varias integraciones): <strong>desde 25.000 €</strong> en adelante.</li>
+</ul>
+<p>Los factores que mueven el precio: tamaño y complejidad del catálogo, integraciones con otros sistemas, tipo de venta (B2C o B2B), pasarelas de pago y si los datos y productos ya existen o hay que migrarlos.</p>
+<p>Y un aviso: compara el <strong>coste a tres años</strong>, no el precio inicial. Una plataforma estándar suele sumar cuota mensual, comisiones por venta y plugins de pago; a medida pagas una vez el desarrollo y luego solo el mantenimiento. Haz la cuenta a 36 meses antes de decidir. Para una referencia de precios de web en general, mira <a href="https://pindia.es/blog/posts/precio-pagina-web-cantabria/">cuánto cuesta una página web</a>.</p>
+<h2 id="cuanto-se-tarda"><a href="#cuanto-se-tarda" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cuánto se tarda</h2><p>Entre 6 y 16 semanas para una tienda a medida típica:</p>
+<ol>
+<li><strong>Descubrimiento</strong> (1–2 semanas): entender tu catálogo, tus reglas de precio y tu logística de verdad.</li>
+<li><strong>Arquitectura y diseño</strong> (1–2 semanas): cómo se modela y cómo se ve, aprobado por ti antes de programar.</li>
+<li><strong>Desarrollo por fases</strong> (3–10 semanas): con entregas visibles para que valides sobre la marcha.</li>
+<li><strong>Migración, pruebas y lanzamiento</strong> (1–2 semanas): pasar productos y clientes, probar los pagos y formar a tu equipo.</li>
+</ol>
+<p>El cuello de botella real casi nunca es técnico: es tener el catálogo y los precios ordenados. Cuanto más limpios llegues, más rápido y barato sale.</p>
+<h2 id="la-ia-ha-cambiado-el-precio-esta-es-la-novedad"><a href="#la-ia-ha-cambiado-el-precio-esta-es-la-novedad" class="prose__anchor" aria-label="Enlace a esta sección">#</a>La IA ha cambiado el precio (esta es la novedad)</h2><p>Durante años la elección era binaria: barato y genérico, o bueno y caro. Ya no.</p>
+<p>Usamos IA en nuestro propio proceso de desarrollo, y no de forma decorativa. Eso acelera el código repetitivo, las primeras versiones, la migración de catálogos y las pruebas: trabajo necesario pero mecánico. Y en desarrollo el tiempo es el coste, así que baja precio y plazo.</p>
+<p>Lo que no cambia es la arquitectura, el criterio técnico, la seguridad de los pagos y la revisión. Una IA sin ingenieros detrás genera una tienda que funciona el primer día y te falla en la primera campaña fuerte. Por eso el <strong>desarrollo ecommerce</strong> a medida con IA no es gratis, pero está mucho más cerca de tu alcance de lo que estaba hace tres años.</p>
+<h2 id="como-elegir-empresa-de-desarrollo-ecommerce"><a href="#como-elegir-empresa-de-desarrollo-ecommerce" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cómo elegir empresa de desarrollo ecommerce</h2><p>Las preguntas que separan a los serios del resto:</p>
+<ol>
+<li><strong>¿El código es mío? ¿Puedo llevármelo?</strong></li>
+<li><strong>¿Cómo integráis la tienda con mi ERP, mi almacén y mi facturación?</strong></li>
+<li><strong>¿Cómo garantizáis que la tienda vaya rápida</strong> con el catálogo lleno?</li>
+<li><strong>¿Trabajáis por fases con entregas</strong> o me lo enseñáis todo al final?</li>
+<li><strong>¿Qué incluye el mantenimiento y qué cuesta al mes?</strong></li>
+<li><strong>¿Y las pasarelas de pago y la seguridad de los datos?</strong></li>
+<li><strong>¿Me vais a decir si una plantilla me resuelve</strong> en vez de venderme desarrollo sí o sí?</li>
+</ol>
+<h2 id="como-trabajamos-en-pindia"><a href="#como-trabajamos-en-pindia" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cómo trabajamos en Pindia</h2><p>Somos empresa de desarrollo, no revendedores de plantillas. La misma gente que haría tu tienda construye <a href="https://pindia.es/proyectos/trowelapp.html">TrowelApp</a>, un SaaS de gestión para constructoras en producción en varios países sobre <strong>.NET y Azure</strong>.</p>
+<p>Eso significa tres cosas para tu proyecto: que el rendimiento y la seguridad de los pagos no son un extra, que podemos integrar tu tienda con lo que haga falta (tu ERP, tu almacén, tu <a href="https://pindia.es/blog/posts/software-a-medida/">software a medida</a>), y que tienes un solo proveedor para web, tienda y software interno.</p>
+<p>Trabajamos desde Santa Cruz de Bezana para toda Cantabria y España.</p>
+<p><strong><a href="https://pindia.es/contacto/">Cuéntanos cómo vendes y te damos presupuesto en 48h →</a></strong></p>
+<p>Y si vemos que con una plantilla estándar resuelves, te lo diremos. Preferimos perder un proyecto a venderte algo que no necesitas.</p>
+<h2 id="preguntas-frecuentes"><a href="#preguntas-frecuentes" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Preguntas frecuentes</h2><h3 id="que-es-una-tienda-online-a-medida"><a href="#que-es-una-tienda-online-a-medida" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Qué es una tienda online a medida?</h3><p>Un ecommerce desarrollado específicamente para un negocio y su catálogo, en lugar de una plantilla estándar a la que hay que adaptarse. Se ajusta a tu forma de vender, se integra con tus sistemas (ERP, almacén, facturación) y el código es tuyo.</p>
+<h3 id="cuanto-cuesta-una-tienda-online-a-medida"><a href="#cuanto-cuesta-una-tienda-online-a-medida" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Cuánto cuesta una tienda online a medida?</h3><p>Desde unos 6.000 € una tienda sencilla, desde 12.000–20.000 € una con integración a tu ERP y reglas propias, y desde 25.000 € un ecommerce complejo o B2B. Depende del catálogo, las integraciones, el tipo de venta y las pasarelas. Compara el coste a tres años frente a la cuota y las comisiones de una plataforma estándar.</p>
+<h3 id="que-es-mejor-shopify-o-una-tienda-a-medida"><a href="#que-es-mejor-shopify-o-una-tienda-a-medida" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Qué es mejor, Shopify o una tienda a medida?</h3><p>Shopify (o WooCommerce, PrestaShop) es ideal si tu catálogo es sencillo y vendes de forma estándar: arrancas ya y sale barato. Una tienda a medida compensa cuando el catálogo o la operativa se salen de lo común, necesitas integrar tus sistemas o quieres evitar comisiones y cuotas crecientes.</p>
+<h3 id="se-puede-integrar-la-tienda-con-mi-erp"><a href="#se-puede-integrar-la-tienda-con-mi-erp" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Se puede integrar la tienda con mi ERP?</h3><p>Sí, y suele ser la razón principal para ir a medida. Una tienda a medida puede sincronizar productos, stock, precios y pedidos con tu ERP, tu almacén o tu facturación, y eliminar el trabajo manual de copiar datos entre sistemas.</p>
+<h3 id="cuanto-se-tarda-en-desarrollar-una-tienda-a-medida"><a href="#cuanto-se-tarda-en-desarrollar-una-tienda-a-medida" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Cuánto se tarda en desarrollar una tienda a medida?</h3><p>Entre 6 y 16 semanas según el alcance, trabajando por fases con entregas visibles. El retraso más habitual no es técnico: es no tener el catálogo y los precios ordenados antes de empezar.</p>
+<h3 id="una-tienda-a-medida-posiciona-mejor-en-google"><a href="#una-tienda-a-medida-posiciona-mejor-en-google" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Una tienda a medida posiciona mejor en Google?</h3><p>Puede posicionar mejor porque se construye ligera y con el SEO pensado desde el diseño: URLs limpias, fichas optimizadas, datos estructurados y buena velocidad. Una plantilla cargada de plugins suele penalizar el rendimiento, que hoy es un factor de posicionamiento.</p>
+<h3 id="puedo-migrar-mi-tienda-actual-a-una-a-medida"><a href="#puedo-migrar-mi-tienda-actual-a-una-a-medida" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Puedo migrar mi tienda actual a una a medida?</h3><p>Sí. Se migran productos, categorías, clientes y pedidos, y se cuidan las redirecciones para no perder el SEO ganado. Es una fase del proyecto que conviene planificar bien para no perder tráfico en el cambio.</p>
+<h2 id="mas-en-el-blog"><a href="#mas-en-el-blog" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Más en el blog</h2><ul>
+<li><a href="https://pindia.es/blog/posts/tienda-online-cantabria/">Tienda online: cómo planificar una que venda</a> — operativa, plataforma y logística antes del diseño.</li>
+<li><a href="https://pindia.es/blog/posts/integracion-erp-web-empresa/">Integrar tu ERP con la web</a> — qué automatizar cuando unes la tienda con tus sistemas.</li>
+<li><a href="https://pindia.es/blog/posts/software-a-medida/">Software a medida</a> — el mismo criterio, aplicado a tu software.</li>
+<li><a href="https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/">WordPress o desarrollo a medida</a> — estándar vs a medida, aplicado a webs.</li>
+</ul>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es una tienda online a medida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un ecommerce desarrollado específicamente para un negocio y su catálogo, en lugar de una plantilla estándar a la que hay que adaptarse. Se ajusta a tu forma de vender, se integra con tus sistemas (ERP, almacén, facturación) y el código es tuyo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta una tienda online a medida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Desde unos 6.000 € una tienda sencilla, desde 12.000–20.000 € una con integración a tu ERP y reglas propias, y desde 25.000 € un ecommerce complejo o B2B. Depende del catálogo, las integraciones, el tipo de venta y las pasarelas. Compara el coste a tres años frente a la cuota y las comisiones de una plataforma estándar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es mejor, Shopify o una tienda a medida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shopify (o WooCommerce, PrestaShop) es ideal si tu catálogo es sencillo y vendes de forma estándar: arrancas ya y sale barato. Una tienda a medida compensa cuando el catálogo o la operativa se salen de lo común, necesitas integrar tus sistemas o quieres evitar comisiones y cuotas crecientes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede integrar la tienda con mi ERP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, y suele ser la razón principal para ir a medida. Una tienda a medida puede sincronizar productos, stock, precios y pedidos con tu ERP, tu almacén o tu facturación, y eliminar el trabajo manual de copiar datos entre sistemas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto se tarda en desarrollar una tienda a medida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entre 6 y 16 semanas según el alcance, trabajando por fases con entregas visibles. El retraso más habitual no es técnico: es no tener el catálogo y los precios ordenados antes de empezar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Una tienda a medida posiciona mejor en Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puede posicionar mejor porque se construye ligera y con el SEO pensado desde el diseño: URLs limpias, fichas optimizadas, datos estructurados y buena velocidad. Una plantilla cargada de plugins suele penalizar el rendimiento, que hoy es un factor de posicionamiento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo migrar mi tienda actual a una a medida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Se migran productos, categorías, clientes y pedidos, y se cuidan las redirecciones para no perder el SEO ganado. Es una fase del proyecto que conviene planificar bien para no perder tráfico en el cambio."
+      }
+    }
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ProfessionalService", "LocalBusiness"],
+  "name": "Pindia Software S.L.",
+  "legalName": "PINDIA SOFTWARE S.L.",
+  "taxID": "B67353748",
+  "url": "https://pindia.es",
+  "logo": "https://pindia.es/assets/icons/logo-nav.svg",
+  "image": "https://pindia.es/assets/img/og-home.webp",
+  "description": "Empresa de desarrollo de tiendas online y ecommerce a medida en Cantabria. Desarrollo ecommerce, integraciones con ERP y sistemas de gestión sobre .NET y Azure.",
+  "telephone": "+34942189733",
+  "email": "info@pindia.es",
+  "sameAs": [],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Ramón Ramírez 5, 1º",
+    "addressLocality": "Santa Cruz de Bezana",
+    "addressRegion": "Cantabria",
+    "postalCode": "39100",
+    "addressCountry": "ES"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 43.4678,
+    "longitude": -3.8003
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "18:00"
+  }],
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "Cantabria"},
+    {"@type": "Country", "name": "España"}
+  ],
+  "knowsAbout": [
+    "Tienda online a medida",
+    "Desarrollo ecommerce",
+    "Diseño de tiendas online",
+    "Desarrollo web ecommerce",
+    "Integraciones con ERP y almacén",
+    "Tecnología .NET"
+  ]
+}
+</script>
+
+        </div>
+
+        
+
+        
+        <section class="post-cta" aria-labelledby="post-cta-title" style="margin-top:var(--sp-16);background:#0F172A;border:1px solid #1E293B;border-radius:var(--r-xl);overflow:hidden;max-width:880px;margin-inline:auto;position:relative" data-reveal>
+          <div class="post-cta__grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:0">
+            <div class="post-cta__media" style="position:relative;aspect-ratio:1/1;background:#0F172A">
+              <img src="/assets/img/blog/cta/robot-ayuda.webp" alt="Robot de Pindia con los brazos abiertos ofreciendo ayuda" loading="lazy" decoding="async" width="600" height="600" style="width:100%;height:100%;object-fit:cover;display:block">
+            </div>
+            <div class="post-cta__body" style="padding:var(--sp-10) var(--sp-10);color:#F8FAFC">
+              <span style="display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:var(--w-sb);letter-spacing:.08em;text-transform:uppercase;color:#FF7A73;margin-bottom:var(--sp-3)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                Pindia te acompaña
+              </span>
+              <h2 id="post-cta-title" style="font-size:var(--text-2xl);font-weight:var(--w-sb);line-height:1.2;color:#F8FAFC;margin-bottom:var(--sp-3)">Te echamos una mano con tu proyecto</h2>
+              <p style="font-size:var(--text-sm);color:#CBD5E1;line-height:1.65;margin-bottom:var(--sp-6)">
+                Auditorías, rediseños, integraciones o desarrollo a medida: ponemos nuestro equipo a tu disposición para resolver lo que tu web necesita.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center">
+                <a href="/contacto/" class="btn btn--primary">
+                  Cuéntanos tu caso
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/servicios/" style="font-size:var(--text-sm);font-weight:var(--w-md);color:#F8FAFC;text-decoration:underline;text-decoration-color:rgba(248,250,252,.35);text-underline-offset:4px">Ver servicios</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          @media (max-width: 768px) {
+            .post-cta__grid { grid-template-columns: 1fr !important; }
+            .post-cta__media { aspect-ratio: 16/10 !important; }
+            .post-cta__body { padding: var(--sp-8) var(--sp-6) !important; }
+          }
+        </style>
+
+        <footer class="post__footer">
+          <a href="/blog/" class="btn btn--ghost">← Volver al blog</a>
+        </footer>
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" class="footer__logo" width="120" height="48" loading="lazy">
+          <p>Agencia de software a medida y diseño web en Santander. Construimos tu presencia digital desde Cantabria para toda España.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Servicios">
+          <h3>Servicios</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/servicios/desarrollo-software">Desarrollo software</a></li>
+            <li><a href="/servicios/diseno-web">Diseño web</a></li>
+            <li><a href="/servicios/apps-mobile-api">Apps móviles</a></li>
+            <li><a href="/servicios/apps-mobile-api">APIs e integraciones</a></li>
+            <li><a href="/servicios/mantenimiento-web">Mantenimiento web</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Empresa">
+          <h3>Empresa</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/proyectos/">Proyectos</a></li>
+            <li><a href="/trowelapp/">TrowelApp</a></li>
+            <li><a href="/trowelapp/">Trowel + KIT Digital</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col footer__nap">
+          <h3>Contacto</h3>
+          <address>
+            <a href="tel:+34942189733" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              (+34) 942 18 97 33
+            </a>
+            <a href="mailto:info@pindia.es" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@pindia.es
+            </a>
+            <a href="https://wa.me/34679551518" target="_blank" rel="noopener nofollow" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:var(--accent)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Business
+            </a>
+            <span class="footer__nap-item" style="cursor:default">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Calle Ramón Ramírez 5, 1º, 39100 Santa Cruz de Bezana</span>
+            </span>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 PINDIA SOFTWARE S.L. · CIF B67353748</p>
+        <nav class="footer__legal" aria-label="Páginas legales">
+          <a href="/aviso-legal/">Aviso legal</a>
+          <a href="/politica-privacidad/">Política de privacidad</a>
+          <a href="/politica-cookies/">Política de cookies</a>
+          <a href="#" data-cookie-settings>Preferencias de cookies</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <div
+    id="cookie-banner"
+    class="cookie-banner"
+    role="dialog"
+    aria-live="polite"
+    aria-labelledby="cookie-banner-title"
+    aria-describedby="cookie-banner-text">
+    <div class="cookie-banner__card">
+      <div class="cookie-banner__mascot" aria-hidden="true">
+        <img
+          src="/assets/img/cookie-mascot.webp"
+          alt=""
+          aria-hidden="true"
+          width="128"
+          height="128"
+          loading="lazy"
+          decoding="async">
+      </div>
+      <div class="cookie-banner__body">
+        <p class="cookie-banner__eyebrow">
+          <span class="cookie-banner__dot" aria-hidden="true"></span>
+          Cookies
+        </p>
+        <h2 id="cookie-banner-title" class="cookie-banner__title">
+          ¡Hola! Soy Pin <span aria-hidden="true">👋</span>
+        </h2>
+        <p id="cookie-banner-text" class="cookie-banner__text">
+          Utilizamos cookies para entender qué funciona y mejorar la web. Nada raro, nada vendido a terceros — tú decides. Detalles en la <a href="/politica-cookies/">política de cookies</a>.
+        </p>
+        <div class="cookie-banner__actions">
+          <button id="cookie-reject" type="button" class="btn btn--ghost cookie-banner__btn">Rechazar</button>
+          <button id="cookie-settings-open" type="button" class="btn btn--secondary cookie-banner__btn">Configurar</button>
+          <button id="cookie-accept" type="button" class="btn btn--primary cookie-banner__btn">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="cookie-settings"
+    class="cookie-settings"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookie-settings-title"
+    hidden>
+    <div class="cookie-settings__backdrop" data-cookie-close></div>
+
+    <div class="cookie-settings__panel" role="document">
+      <header class="cookie-settings__header">
+        <div class="cookie-settings__brand">
+          <span class="cookie-settings__mascot" aria-hidden="true">
+            <img src="/assets/img/cookie-mascot.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </span>
+          <div>
+            <p class="cookie-settings__eyebrow">Configuración</p>
+            <h2 id="cookie-settings-title" class="cookie-settings__title">Tus preferencias de cookies</h2>
+          </div>
+        </div>
+        <button type="button" class="cookie-settings__close" data-cookie-close aria-label="Cerrar configuración de cookies">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="cookie-settings__body">
+        <p class="cookie-settings__intro">
+          Tú decides qué cookies activar. Las técnicas son imprescindibles para que la web funcione; el resto solo se cargan si das tu consentimiento. Más detalle en la <a href="/politica-cookies/" target="_blank" rel="noopener noreferrer">política de cookies</a>.
+        </p>
+
+        <section class="cookie-cat" data-cookie-cat="necessary">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies técnicas</h3>
+              <span class="cookie-cat__badge cookie-cat__badge--required">Siempre activas</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Cookies técnicas (siempre activas)">
+              <input type="checkbox" checked disabled>
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Imprescindibles para el funcionamiento del sitio (recordar tu consentimiento, navegación segura, formulario de contacto). No identifican personalmente y no requieren consentimiento.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies técnicas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><code>pindia_cookies_v2</code></td>
+                  <td>Pindia (propia)</td>
+                  <td>1 año</td>
+                  <td>Almacena tu preferencia de consentimiento.</td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+
+        <section class="cookie-cat" data-cookie-cat="analytics">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies analíticas</h3>
+              <span class="cookie-cat__badge">Opcional</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Activar cookies analíticas">
+              <input type="checkbox" id="cookie-toggle-analytics" data-cookie-toggle="analytics">
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Google Analytics 4 con IP anonimizada. Nos ayudan a entender qué páginas funcionan y mejorar la web. Datos agregados, nunca compartidos para publicidad.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies analíticas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr><td><code>_ga</code></td><td>Google</td><td>2 años</td><td>Identificador anónimo de usuario.</td></tr>
+                <tr><td><code>_ga_*</code></td><td>Google</td><td>2 años</td><td>Estado de sesión de GA4.</td></tr>
+                <tr><td><code>_gid</code></td><td>Google</td><td>24 horas</td><td>Distingue usuarios.</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+      </div>
+
+      <footer class="cookie-settings__footer">
+        <button id="cookie-settings-reject" type="button" class="btn btn--ghost cookie-settings__btn">Rechazar todas</button>
+        <button id="cookie-settings-save" type="button" class="btn btn--secondary cookie-settings__btn">Guardar preferencias</button>
+        <button id="cookie-settings-accept" type="button" class="btn btn--primary cookie-settings__btn">Aceptar todas</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="/js/main.min.js?v=20260717a" defer></script>
+
+</body>
+</html>

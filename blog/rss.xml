@@ -5,7 +5,7 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Fri, 24 Jul 2026 10:06:05 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 10:19:11 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -24,6 +24,16 @@
       <description>Qué es el software a medida, para qué sirve, cuándo compensa frente a un programa estándar y cuánto cuesta de verdad. Guía escrita por una empresa de desarrollo.</description>
       <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/software-a-medida/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>Tienda online a medida: qué es, cuándo compensa y cuánto cuesta</title>
+      <link>https://pindia.es/blog/posts/tienda-online-a-medida/</link>
+      <description>Qué es una tienda online a medida, en qué se diferencia de Shopify o WooCommerce, cuándo compensa el desarrollo a medida y cuánto cuesta. Guía de una empresa de desarrollo ecommerce.</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/tienda-online-a-medida/</guid>
       <author>info@pindia.es (Borja García)</author>
       <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
     </item>
