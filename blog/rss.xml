@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Fri, 24 Jul 2026 08:57:11 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2026 09:50:21 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Software a medida: qué es, para qué sirve y cuánto cuesta</title>
+      <link>https://pindia.es/blog/posts/software-a-medida/</link>
+      <description>Qué es el software a medida, para qué sirve, cuándo compensa frente a un programa estándar y cuánto cuesta de verdad. Guía escrita por una empresa de desarrollo.</description>
+      <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/software-a-medida/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
 
     <item>
       <title>Mantenimiento web para empresas: qué incluye y cuánto cuesta de verdad</title>
