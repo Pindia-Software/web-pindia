@@ -118,7 +118,7 @@ El mantenimiento técnico es solo una parte. Una web también vive si el conteni
 
 ## Cómo lo hacemos en Pindia
 
-Somos una empresa de desarrollo de software, no un revendedor de hosting. Mantenemos webs de pymes y empresas industriales en Cantabria, Asturias y País Vasco, y desarrollamos producto propio en producción ([TrowelApp](https://pindia.es/proyectos/trowelapp.html), un SaaS en varios países sobre .NET y Azure). La misma gente que sostiene eso sostiene tu web.
+Somos una empresa de desarrollo de software y [agencia de diseño web en Santander](https://pindia.es/servicios/diseno-web), no un revendedor de hosting. Mantenemos webs de pymes y empresas industriales en Cantabria, Asturias y País Vasco, y desarrollamos producto propio en producción ([TrowelApp](https://pindia.es/proyectos/trowelapp.html), un SaaS en varios países sobre .NET y Azure). La misma gente que sostiene eso sostiene tu web.
 
 Cada cliente tiene su persona de contacto, sus copias se prueban de verdad, y los partes mensuales son legibles para alguien no técnico.
 

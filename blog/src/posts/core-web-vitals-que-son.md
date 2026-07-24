@@ -126,7 +126,7 @@ Implementar mejoras (sin rediseño):
 - Optimización de JavaScript + diferimiento: 800-1.500 euros.
 - Reengineering de un slider o componente pesado: 1.500-2.500 euros.
 
-Si tu web es vieja (más de 5 años), los costes pueden subir. En ese caso, a veces es más rentable hacer una web nueva.
+Si tu web es vieja (más de 5 años), los costes pueden subir. En ese caso, a veces es más rentable hacer una web nueva con [nuestro servicio de diseño web](https://pindia.es/servicios/diseno-web).
 
 ## Más en el blog
 

@@ -23,51 +23,114 @@
 
   <!-- @include head-assets -->
 
-  <!-- Schema: BreadcrumbList -->
+  <!-- Schema: Service + FAQPage + BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://pindia.es/"
+        "@type": "Service",
+        "@id": "https://pindia.es/servicios/diseno-web#service",
+        "name": "Diseño web en Santander",
+        "serviceType": "Diseño y desarrollo de páginas web",
+        "description": "Diseño web mobile-first en Santander: SEO técnico, Core Web Vitals en verde, accesibilidad WCAG 2.1 AA y sistema de blog integrado. Presupuesto gratuito en 48 horas.",
+        "url": "https://pindia.es/servicios/diseno-web",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://pindia.es/#organization",
+          "name": "Pindia Software S.L.",
+          "url": "https://pindia.es/",
+          "telephone": "+34942189733",
+          "email": "info@pindia.es",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Calle Ramón Ramírez 5, 1º",
+            "addressLocality": "Santa Cruz de Bezana",
+            "addressRegion": "Cantabria",
+            "postalCode": "39100",
+            "addressCountry": "ES"
+          }
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Santander" },
+          { "@type": "AdministrativeArea", "name": "Cantabria" },
+          { "@type": "Country", "name": "España" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de diseño web",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño web corporativo a medida" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rediseño y migración de webs" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Optimización de Core Web Vitals" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Auditoría de accesibilidad WCAG 2.1 AA" } }
+          ]
+        }
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Servicios",
-        "item": "https://pindia.es/servicios/"
+        "@type": "FAQPage",
+        "@id": "https://pindia.es/servicios/diseno-web#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta el diseño de una página web en Santander?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende del alcance. Una web corporativa de 5–8 páginas con diseño a medida, SEO técnico y formulario de contacto se mueve en un rango distinto al de una plantilla montada en dos días, y por eso no publicamos una tarifa cerrada. Enviamos un presupuesto personalizado y gratuito en menos de 48 horas tras una llamada de 30 minutos, sin compromiso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tarda el diseño de una web?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Una web corporativa completa suele estar en producción entre 4 y 6 semanas: briefing, wireframes, diseño visual y desarrollo. Los proyectos con e-commerce, integraciones o varios idiomas necesitan más tiempo. Trabajamos por fases con entregas visibles en cada etapa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Trabajáis con WordPress o desarrolláis a medida?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las dos cosas, según convenga al proyecto. WordPress tiene sentido cuando necesitas publicar contenido a diario y gestionarlo tú mismo. El desarrollo a medida gana cuando la velocidad, la seguridad o una funcionalidad concreta son críticas: carga más rápido, no depende de plugins de terceros y no arrastra mantenimiento de actualizaciones constante."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Las webs son responsive y accesibles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Siempre. Diseñamos mobile-first porque cerca del 70 % de las visitas llegan desde el móvil, y cumplimos el estándar de accesibilidad WCAG 2.1 nivel AA. Es el mínimo con el que entregamos, no un extra que se cobra aparte."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Solo trabajáis con empresas de Cantabria?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Estamos en Santa Cruz de Bezana y atendemos presencialmente a empresas de Santander y toda Cantabria, pero trabajamos con clientes de toda España y también fuera. TrowelApp, nuestro propio producto, está en producción en seis países."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué pasa después del lanzamiento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La web es tuya, con su código y sus accesos. Formamos a tu equipo para que pueda gestionarla y ofrecemos planes de mantenimiento web opcionales que cubren actualizaciones, copias de seguridad, monitorización y soporte, sin permanencia obligatoria."
+            }
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Diseño web",
-        "item": "https://pindia.es/servicios/diseno-web"
+        "@type": "BreadcrumbList",
+        "@id": "https://pindia.es/servicios/diseno-web#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://pindia.es/" },
+          { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://pindia.es/servicios/" },
+          { "@type": "ListItem", "position": 3, "name": "Diseño web" }
+        ]
       }
     ]
-  }
-  </script>
-
-  <!-- Schema: Service -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Diseño web en Santander",
-    "description": "Diseño y desarrollo de sitios web profesionales en Santander. Mobile-first, SEO técnico, Core Web Vitals y accesibilidad WCAG.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Pindia Software S.L.",
-      "url": "https://pindia.es"
-    },
-    "areaServed": [
-      {"@type": "AdministrativeArea", "name": "Cantabria"},
-      {"@type": "Country", "name": "España"}
-    ],
-    "serviceType": "Diseño web"
   }
   </script>
 </head>
@@ -102,10 +165,10 @@
         <div data-reveal style="max-width:760px">
           <span class="section__label">Agencia de diseño web · Santander</span>
           <h1 id="page-hero-title" class="section__headline" style="font-size:clamp(2rem,5vw,3.5rem)">
-            Diseño web que <span class="text-accent">genera impacto</span>
+            Diseño web en Santander que <span class="text-accent">genera impacto</span>
           </h1>
           <p class="section__sub">
-            No hacemos plantillas bonitas. Diseñamos experiencias digitales que posicionan tu marca en Google y convierten visitantes en clientes. SEO técnico, velocidad real y accesibilidad desde el primer día.
+            No hacemos plantillas bonitas. Somos una agencia de diseño web en Santander que construye experiencias digitales para posicionar tu marca en Google y convertir visitantes en clientes. SEO técnico, velocidad real y accesibilidad desde el primer día, para empresas de Cantabria y de toda España.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);margin-top:var(--sp-8)">
             <a href="/contacto/" class="btn btn--primary btn--lg">Solicitar presupuesto</a>
@@ -176,6 +239,25 @@
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTEXTO LOCAL (SEO Santander) ────────────────────── -->
+    <section class="section" aria-labelledby="local-title">
+      <div class="container container--sm">
+        <div data-reveal>
+          <span class="section__label">Cerca de ti</span>
+          <h2 id="local-title" class="section__headline">Diseño de páginas web en Santander y Cantabria</h2>
+          <p class="section__sub">
+            Trabajamos desde Santa Cruz de Bezana, a diez minutos de Santander. Eso significa reuniones presenciales cuando hacen falta, respuesta rápida y un interlocutor técnico real en lugar de un formulario de soporte.
+          </p>
+          <p class="section__sub">
+            Hemos diseñado y desarrollado webs para constructoras, industria, consultoras y empresas de servicios de la región. Como empresa de diseño web en Santander conocemos el terreno, pero trabajamos igual de bien en remoto: buena parte de nuestros clientes están fuera de Cantabria.
+          </p>
+          <p class="section__sub">
+            Si buscas un diseñador web en Santander que además sepa de arquitectura, rendimiento y mantenimiento a largo plazo, ese es exactamente nuestro punto fuerte: somos una empresa de desarrollo de software, no solo un estudio de diseño.
+          </p>
         </div>
       </div>
     </section>
@@ -289,6 +371,114 @@
               <p>Implementación con código limpio y semántico. Pruebas de rendimiento, accesibilidad y compatibilidad. Lanzamiento, formación y soporte post-publicación.</p>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PRUEBA SOCIAL ─────────────────────────────────────── -->
+    <section class="section testimonios" aria-labelledby="dw-test-title">
+      <div class="container">
+
+        <div class="text-center" data-reveal>
+          <span class="section__label">Lo que dicen nuestros clientes</span>
+          <h2 id="dw-test-title" class="section__headline">Empresas que confían en nuestro diseño web</h2>
+        </div>
+
+        <div class="testimonios__grid" data-reveal-group>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__text">
+              "Gran talento técnico y un compromiso diferenciador. Pindia entendió nuestras necesidades desde el primer día y entregó más de lo que esperábamos."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">JM</div>
+              <div>
+                <cite class="testimonial-card__name">José María Rodríguez</cite>
+                <div class="testimonial-card__role">CEO · 4Beats Solutions</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__text">
+              "Profesionalidad, capacidad de entrega y talento. El equipo de Pindia ha sido un socio tecnológico de confianza para nosotros."
+            </p>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">IC</div>
+              <div>
+                <cite class="testimonial-card__name">Iván Cabello</cite>
+                <div class="testimonial-card__role">Expertus Technology</div>
+              </div>
+            </footer>
+          </blockquote>
+
+          <article class="testimonial-card">
+            <p class="section__label" style="margin-bottom:var(--sp-3)">Caso de éxito</p>
+            <p class="testimonial-card__text" style="font-style:normal">
+              Diseñamos y desarrollamos la web comercial de <strong>TrowelApp</strong>, nuestro propio SaaS para el sector de la construcción: mobile-first, Core Web Vitals en verde y pensada para convertir. Hoy es la puerta de entrada de un producto en producción en seis países.
+            </p>
+            <footer class="testimonial-card__author">
+              <a href="/proyectos/" class="btn btn--secondary">Ver el proyecto</a>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ───────────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="faq-title">
+      <div class="container container--sm">
+
+        <div class="text-center" data-reveal>
+          <span class="section__label">Preguntas frecuentes</span>
+          <h2 id="faq-title" class="section__headline">Preguntas frecuentes sobre diseño web</h2>
+        </div>
+
+        <div data-reveal-group style="margin-top:var(--sp-8);display:flex;flex-direction:column;gap:var(--sp-4)">
+
+          <details class="faq-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5) var(--sp-6)">
+            <summary style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);cursor:pointer">¿Cuánto cuesta el diseño de una página web en Santander?</summary>
+            <p style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-3)">
+              Depende del alcance. Una web corporativa de 5–8 páginas con diseño a medida, SEO técnico y formulario de contacto suele moverse en un rango distinto al de una plantilla montada en dos días, y por eso no publicamos una tarifa cerrada: sería mentir. Lo que sí hacemos es mandarte un presupuesto personalizado y gratuito en menos de 48 horas después de una llamada de 30 minutos. Sin compromiso y sin letra pequeña.
+            </p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5) var(--sp-6)">
+            <summary style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);cursor:pointer">¿Cuánto tarda el diseño de una web?</summary>
+            <p style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-3)">
+              Una web corporativa completa suele estar en producción entre 4 y 6 semanas: briefing, wireframes, diseño visual y desarrollo. Proyectos con e-commerce, integraciones o varios idiomas necesitan más. Trabajamos por fases con entregas visibles, así que en ningún momento estás esperando a ciegas.
+            </p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5) var(--sp-6)">
+            <summary style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);cursor:pointer">¿Trabajáis con WordPress o desarrolláis a medida?</summary>
+            <p style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-3)">
+              Las dos cosas, según lo que convenga al proyecto. WordPress tiene sentido cuando necesitas publicar contenido a diario y gestionarlo tú. El desarrollo a medida gana cuando la velocidad, la seguridad o una funcionalidad concreta son críticas: nuestras webs a medida cargan más rápido, no dependen de plugins de terceros y no tienen mantenimiento de actualizaciones constante. Te decimos honestamente cuál te conviene, aunque sea la opción más barata.
+            </p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5) var(--sp-6)">
+            <summary style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);cursor:pointer">¿Las webs son responsive y accesibles?</summary>
+            <p style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-3)">
+              Siempre. Diseñamos mobile-first porque cerca del 70 % de las visitas llegan desde el móvil, y cumplimos el estándar de accesibilidad WCAG 2.1 nivel AA. No es un extra que se cobra aparte: es el mínimo con el que entregamos.
+            </p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5) var(--sp-6)">
+            <summary style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);cursor:pointer">¿Solo trabajáis con empresas de Cantabria?</summary>
+            <p style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-3)">
+              No. Estamos en Santa Cruz de Bezana y atendemos presencialmente a empresas de Santander y toda Cantabria, pero trabajamos con clientes de toda España y también fuera. TrowelApp, nuestro propio producto, está en producción en seis países.
+            </p>
+          </details>
+
+          <details class="faq-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5) var(--sp-6)">
+            <summary style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);cursor:pointer">¿Qué pasa después del lanzamiento?</summary>
+            <p style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-3)">
+              La web es tuya, con su código y sus accesos. Te formamos para que puedas gestionarla y, si lo prefieres, tenemos <a href="/servicios/mantenimiento-web">planes de mantenimiento web</a> que cubren actualizaciones, copias de seguridad, monitorización y soporte. Sin permanencia obligatoria.
+            </p>
+          </details>
 
         </div>
       </div>

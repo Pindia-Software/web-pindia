@@ -18,7 +18,7 @@ El **diseño web a medida** consiste en diseñar y programar una web específica
 
 Cuesta más que una plantilla y tarda más. A cambio, no te quedas atrapado cuando el negocio crece.
 
-Somos una empresa de desarrollo, así que tenemos un sesgo evidente y lo ponemos por delante: esto es lo que hacemos. También te vamos a decir con claridad cuándo **no** te hace falta.
+Somos una empresa de desarrollo y [diseño web en Santander](https://pindia.es/servicios/diseno-web), así que tenemos un sesgo evidente y lo ponemos por delante: esto es lo que hacemos. También te vamos a decir con claridad cuándo **no** te hace falta.
 
 ## Qué es una web a medida (y qué no)
 
