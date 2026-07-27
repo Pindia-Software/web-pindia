@@ -11,7 +11,7 @@ tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital
 cover: /assets/img/blog/mantenimiento-web-empresas-cantabria/cover.webp
-coverAlt: Mantenimiento web para empresas — revisión técnica de una web corporativa
+coverAlt: Mantenimiento web para empresas, revisión técnica de una web corporativa
 draft: false
 ---
 
@@ -59,9 +59,9 @@ Y el reverso: pagar 200 € por una web de cinco páginas que no cambia nunca ta
 
 En Pindia lo tenemos en tres niveles, sin letra pequeña. No somos los más baratos del mercado, y a estas alturas del artículo ya sabes por qué: incluimos actualizaciones probadas en staging, copias que se restauran de verdad y una persona a la que llamar.
 
-- **Básico — 99 €/mes**: actualizaciones, copias diarias con prueba de restauración, monitorización de caídas y soporte. Para una web corporativa que cambia poco.
-- **Estándar — 199 €/mes**: todo lo del Básico + **4 horas mensuales** de cambios, entorno de *staging* e informe mensual legible. Para la pyme con web activa.
-- **Avanzado — a medida**: para tienda online o web con integraciones, donde hay que vigilar pasarela de pago, stock y rendimiento de forma continua.
+- **Básico, 99 €/mes**: actualizaciones, copias diarias con prueba de restauración, monitorización de caídas y soporte. Para una web corporativa que cambia poco.
+- **Estándar, 199 €/mes**: todo lo del Básico + **4 horas mensuales** de cambios, entorno de *staging* e informe mensual legible. Para la pyme con web activa.
+- **Avanzado, a medida**: para tienda online o web con integraciones, donde hay que vigilar pasarela de pago, stock y rendimiento de forma continua.
 
 Los tienes con el detalle completo en **[nuestra página de mantenimiento web →](https://pindia.es/servicios/mantenimiento-web)**. Y si no sabes qué estás pagando ahora, te lo auditamos gratis.
 
@@ -162,10 +162,10 @@ Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 hor
 
 ## Más en el blog
 
-- [Velocidad web: pérdida de clientes](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) — el mantenimiento debe incluir optimización de velocidad.
-- [10 errores web (soluciones)](https://pindia.es/blog/posts/errores-comunes-web-empresa/) — muchos errores vienen de falta de mantenimiento.
-- [¿Tu web cumple con la ley?](https://pindia.es/blog/posts/tu-web-cumple-ley/) — el cumplimiento legal requiere mantenimiento continuo.
-- [WordPress vs desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/) — el coste de mantenimiento varía según la tecnología.
+- [Velocidad web: pérdida de clientes](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/), el mantenimiento debe incluir optimización de velocidad.
+- [10 errores web (soluciones)](https://pindia.es/blog/posts/errores-comunes-web-empresa/), muchos errores vienen de falta de mantenimiento.
+- [¿Tu web cumple con la ley?](https://pindia.es/blog/posts/tu-web-cumple-ley/), el cumplimiento legal requiere mantenimiento continuo.
+- [WordPress vs desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), el coste de mantenimiento varía según la tecnología.
 
 <script type="application/ld+json">
 {

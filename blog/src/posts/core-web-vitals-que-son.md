@@ -130,9 +130,9 @@ Si tu web es vieja (más de 5 años), los costes pueden subir. En ese caso, a ve
 
 ## Más en el blog
 
-- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — Guía completa de optimización de velocidad.
-- [Errores comunes en webs de empresa](../errores-comunes-web-empresa/) — Problemas que ralentizan tu web.
-- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/) — Si optimizas Core Web Vitals, asegúrate también de cumplir RGPD.
+- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/), Guía completa de optimización de velocidad.
+- [Errores comunes en webs de empresa](../errores-comunes-web-empresa/), Problemas que ralentizan tu web.
+- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/), Si optimizas Core Web Vitals, asegúrate también de cumplir RGPD.
 
 ## Siguiente paso
 

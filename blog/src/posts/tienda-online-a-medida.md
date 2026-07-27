@@ -15,7 +15,7 @@ coverAlt: Desarrollo de una tienda online a medida para empresas
 draft: false
 ---
 
-Una **tienda online a medida** es un ecommerce desarrollado para tu negocio y tu catálogo concretos, en lugar de una plantilla estándar de Shopify, WooCommerce o PrestaShop a la que tienes que adaptarte. Se ajusta a cómo vendes de verdad —tus productos, tus reglas de precio, tu logística, tus sistemas— y el código es tuyo.
+Una **tienda online a medida** es un ecommerce desarrollado para tu negocio y tu catálogo concretos, en lugar de una plantilla estándar de Shopify, WooCommerce o PrestaShop a la que tienes que adaptarte. Se ajusta a cómo vendes de verdad, tus productos, tus reglas de precio, tu logística, tus sistemas, y el código es tuyo.
 
 Cuesta más que arrancar una plantilla y tarda más en estar lista. A cambio, dejas de pelearte con los límites de un tema genérico y consigues una tienda que hace exactamente lo que tu operativa necesita, sin plugins pegados con celo.
 
@@ -184,10 +184,10 @@ Sí. Se migran productos, categorías, clientes y pedidos, y se cuidan las redir
 
 ## Más en el blog
 
-- [Tienda online: cómo planificar una que venda](https://pindia.es/blog/posts/tienda-online-cantabria/) — operativa, plataforma y logística antes del diseño.
-- [Integrar tu ERP con la web](https://pindia.es/blog/posts/integracion-erp-web-empresa/) — qué automatizar cuando unes la tienda con tus sistemas.
-- [Software a medida](https://pindia.es/blog/posts/software-a-medida/) — el mismo criterio, aplicado a tu software.
-- [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/) — estándar vs a medida, aplicado a webs.
+- [Tienda online: cómo planificar una que venda](https://pindia.es/blog/posts/tienda-online-cantabria/), operativa, plataforma y logística antes del diseño.
+- [Integrar tu ERP con la web](https://pindia.es/blog/posts/integracion-erp-web-empresa/), qué automatizar cuando unes la tienda con tus sistemas.
+- [Software a medida](https://pindia.es/blog/posts/software-a-medida/), el mismo criterio, aplicado a tu software.
+- [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), estándar vs a medida, aplicado a webs.
 
 <script type="application/ld+json">
 {

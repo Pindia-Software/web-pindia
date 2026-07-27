@@ -135,14 +135,14 @@ Los anuncios (Google Ads) son tráfico de pago: apareces mientras pagas y dejas 
 
 ### ¿El posicionamiento web depende de la velocidad de mi web?
 
-Sí. Una web lenta posiciona peor y convierte peor. Google mide el rendimiento con las Core Web Vitals, y en búsqueda local —casi toda móvil— la velocidad es todavía más determinante.
+Sí. Una web lenta posiciona peor y convierte peor. Google mide el rendimiento con las Core Web Vitals, y en búsqueda local, casi toda móvil, la velocidad es todavía más determinante.
 
 ## Más en el blog
 
-- [SEO local: cómo aparecer cuando te buscan](https://pindia.es/blog/posts/seo-local-cantabria/) — la guía práctica: ficha de Google, reseñas, mapas y NAP.
-- [Cómo elegir empresa de diseño web en Santander](https://pindia.es/blog/posts/empresa-diseno-web-santander/) — qué mirar antes de contratar.
-- [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/) — cómo mide Google el rendimiento de tu web.
-- [Cómo acelerar una web lenta](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) — la velocidad también posiciona.
+- [SEO local: cómo aparecer cuando te buscan](https://pindia.es/blog/posts/seo-local-cantabria/), la guía práctica: ficha de Google, reseñas, mapas y NAP.
+- [Cómo elegir empresa de diseño web en Santander](https://pindia.es/blog/posts/empresa-diseno-web-santander/), qué mirar antes de contratar.
+- [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), cómo mide Google el rendimiento de tu web.
+- [Cómo acelerar una web lenta](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/), la velocidad también posiciona.
 
 <script type="application/ld+json">
 {
@@ -202,7 +202,7 @@ Sí. Una web lenta posiciona peor y convierte peor. Google mide el rendimiento c
       "name": "¿El posicionamiento web depende de la velocidad de mi web?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. Una web lenta posiciona peor y convierte peor. Google mide el rendimiento con las Core Web Vitals, y en búsqueda local —casi toda móvil— la velocidad es todavía más determinante."
+        "text": "Sí. Una web lenta posiciona peor y convierte peor. Google mide el rendimiento con las Core Web Vitals, y en búsqueda local, casi toda móvil, la velocidad es todavía más determinante."
       }
     }
   ]

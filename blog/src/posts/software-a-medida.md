@@ -124,7 +124,7 @@ Usamos IA en nuestro propio proceso de desarrollo, y no de forma decorativa: hem
 
 **Qué acelera:** código repetitivo, primeras versiones, migración de datos, pruebas, documentación. Trabajo necesario pero mecánico. Y en desarrollo el tiempo es el coste, así que eso baja precio y plazo.
 
-**Qué no cambia:** la arquitectura, el criterio técnico, la seguridad y la revisión. Una IA sin ingenieros detrás genera código que funciona el primer día y te explota el sexto mes. Por eso el software a medida con IA **no es gratis** — pero está mucho más cerca de tu alcance de lo que estaba hace tres años.
+**Qué no cambia:** la arquitectura, el criterio técnico, la seguridad y la revisión. Una IA sin ingenieros detrás genera código que funciona el primer día y te explota el sexto mes. Por eso el software a medida con IA **no es gratis**, pero está mucho más cerca de tu alcance de lo que estaba hace tres años.
 
 ## Cómo elegir empresa de desarrollo de software a medida
 
@@ -186,10 +186,10 @@ Sí. Reduce el tiempo de las partes mecánicas del desarrollo, y eso baja precio
 
 ## Más en el blog
 
-- [Diseño web a medida](https://pindia.es/blog/posts/diseno-web-a-medida/) — el mismo criterio, aplicado a tu web.
-- [Integrar tu ERP con la web](https://pindia.es/blog/posts/integracion-erp-web-empresa/) — qué automatizar cuando unes sistemas.
-- [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/) — estándar vs a medida, aplicado a webs.
-- [Mantenimiento web](https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/) — qué cuesta mantener el software después.
+- [Diseño web a medida](https://pindia.es/blog/posts/diseno-web-a-medida/), el mismo criterio, aplicado a tu web.
+- [Integrar tu ERP con la web](https://pindia.es/blog/posts/integracion-erp-web-empresa/), qué automatizar cuando unes sistemas.
+- [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), estándar vs a medida, aplicado a webs.
+- [Mantenimiento web](https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/), qué cuesta mantener el software después.
 
 <script type="application/ld+json">
 {

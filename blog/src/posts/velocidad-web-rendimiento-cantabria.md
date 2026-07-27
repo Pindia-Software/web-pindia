@@ -50,7 +50,7 @@ Usa **PageSpeed Insights** (pagespeed.web.dev) como barómetro rápido. Mira mó
 
 **GTmetrix** si quieres saber *qué* pesa (útil si necesitas prioridades).
 
-(Si quieres entender *qué* miden estas herramientas —LCP, INP, CLS—, [aquí explica Core Web Vitals en detalle](../core-web-vitals-que-son/).)
+(Si quieres entender *qué* miden estas herramientas, LCP, INP, CLS, [aquí explica Core Web Vitals en detalle](../core-web-vitals-que-son/).)
 
 ## Velocidad web en Cantabria: cosas concretas que funcionan
 
@@ -78,10 +78,10 @@ Es una conversación que merece honestidad: a veces optimizar es tirar dinero si
 
 ## Más en el blog
 
-- [Core Web Vitals: qué son y cómo medirlas](../core-web-vitals-que-son/) — Si quieres entender exactamente qué mide Google.
-- [10 errores web (soluciones)](../errores-comunes-web-empresa/) — Velocidad lenta es el error #4, pero hay otros.
-- [SEO local: cómo aparecer cuando te buscan](../seo-local-cantabria/) — La velocidad es una parte del SEO local.
-- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/) — Si decides rehacer, protege tu posicionamiento.
+- [Core Web Vitals: qué son y cómo medirlas](../core-web-vitals-que-son/), Si quieres entender exactamente qué mide Google.
+- [10 errores web (soluciones)](../errores-comunes-web-empresa/), Velocidad lenta es el error #4, pero hay otros.
+- [SEO local: cómo aparecer cuando te buscan](../seo-local-cantabria/), La velocidad es una parte del SEO local.
+- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/), Si decides rehacer, protege tu posicionamiento.
 
 ## Siguiente paso
 

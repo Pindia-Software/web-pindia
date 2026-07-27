@@ -82,8 +82,8 @@ Trabajamos con varias empresas cántabras que, por sector o por contrato, necesi
 
 ## Más en el blog
 
-- [10 errores web (soluciones)](../errores-comunes-web-empresa/) — Algunos errores comunes son problemas de accesibilidad.
-- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/) — Accesibilidad es parte del cumplimiento legal en Europa.
-- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/) — Migrar mal puede perder accesibilidad también.
+- [10 errores web (soluciones)](../errores-comunes-web-empresa/), Algunos errores comunes son problemas de accesibilidad.
+- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/), Accesibilidad es parte del cumplimiento legal en Europa.
+- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/), Migrar mal puede perder accesibilidad también.
 
 Si tu empresa tiene que cumplir con accesibilidad web (por obligación o porque quiere ganar clientes que la valoran), [hablemos](/contacto/). Hacemos auditorías y refactorizamos webs para llegar al nivel WCAG 2.2 AA, que es el estándar europeo exigible.

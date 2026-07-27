@@ -14,7 +14,7 @@ images:
   - src: /assets/img/blog/cana-digital-2021/foto-2.webp
     alt: Encuentro Caña Digital con empresas del sector tecnológico y constructor
     caption: >-
-      Mesa de trabajo en Caña Digital — empresas tecnológicas y constructoras
+      Mesa de trabajo en Caña Digital, empresas tecnológicas y constructoras
       debaten sobre digitalización.
 draft: false
 ---

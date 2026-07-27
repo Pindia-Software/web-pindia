@@ -48,7 +48,7 @@ Como con cualquier proyecto, la cifra final depende menos del número de product
 
 ## SEO para una tienda online en Santander
 
-Aquí pasa algo que mucha gente no entiende: si vendes en toda España, no compites en Cantabria, compites con todo el país. Es una guerra distinta. Pero si tu producto tiene anclaje local —productos cántabros, marca regional, recogida en tienda física en Santander—, el SEO local se vuelve un activo. Empresas como **El Capricho de Cantabria**, queserías de Liébana o cervecerías artesanas de Castro Urdiales han crecido apoyándose en eso.
+Aquí pasa algo que mucha gente no entiende: si vendes en toda España, no compites en Cantabria, compites con todo el país. Es una guerra distinta. Pero si tu producto tiene anclaje local, productos cántabros, marca regional, recogida en tienda física en Santander, el SEO local se vuelve un activo. Empresas como **El Capricho de Cantabria**, queserías de Liébana o cervecerías artesanas de Castro Urdiales han crecido apoyándose en eso.
 
 Optimizar las fichas, llevar bien Google Business Profile, conseguir reseñas y publicar contenido que ancle marca con territorio (recetas, historias de origen, eventos locales) genera tráfico cualificado y barato.
 
@@ -58,9 +58,9 @@ Una tienda online no se "termina". Es donde más impacto tiene el mantenimiento 
 
 ## Más en el blog
 
-- [Mantenimiento web: lo que sí funciona](../mantenimiento-web-empresas-cantabria/) — El mantenimiento es crucial en una tienda.
-- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — Una tienda lenta pierde conversión.
-- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/) — Cumplimiento de RGPD y pagos es obligatorio.
-- [Cómo hacer una landing que convierta](../landing-page-conversion-cantabria/) — Tu landing de tienda es todo.
+- [Mantenimiento web: lo que sí funciona](../mantenimiento-web-empresas-cantabria/), El mantenimiento es crucial en una tienda.
+- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/), Una tienda lenta pierde conversión.
+- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/), Cumplimiento de RGPD y pagos es obligatorio.
+- [Cómo hacer una landing que convierta](../landing-page-conversion-cantabria/), Tu landing de tienda es todo.
 
 Si estás pensando en lanzar una tienda online en Cantabria, o si tienes una que no termina de despegar, [hablemos](/contacto/). Las primeras conversaciones nuestras suelen ahorrar mucho tiempo.

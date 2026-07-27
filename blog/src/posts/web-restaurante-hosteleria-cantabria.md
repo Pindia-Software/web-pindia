@@ -12,7 +12,7 @@ coverAlt: Web de un restaurante en Santander vista en móvil con sistema de rese
 draft: false
 ---
 
-La hostelería es uno de los sectores que más facturación deja sobre la mesa por culpa de webs mal hechas. Lo decimos sabiendo lo que decimos: hemos rediseñado la web de varios restaurantes en Cantabria —desde el Sardinero hasta Comillas— y el patrón es siempre el mismo. La gente entra para ver dos cosas: **la carta y cómo reservar**. Si cualquiera de las dos falla, se ha ido.
+La hostelería es uno de los sectores que más facturación deja sobre la mesa por culpa de webs mal hechas. Lo decimos sabiendo lo que decimos: hemos rediseñado la web de varios restaurantes en Cantabria, desde el Sardinero hasta Comillas, y el patrón es siempre el mismo. La gente entra para ver dos cosas: **la carta y cómo reservar**. Si cualquiera de las dos falla, se ha ido.
 
 ## Qué busca el cliente en la web de un restaurante
 

@@ -23,9 +23,9 @@ El evento, celebrado en Santander, congregó a representantes de distintos secto
 
 Los galardones de esta edición recayeron en tres empresas que representan bien la diversidad del sector empresarial cántabro:
 
-- **IMEM Ascensores** — premiada por su trayectoria y consolidación como referente en el sector de la elevación en Cantabria.
-- **CIC Consulting Informático** — reconocida por su labor en la transformación digital de empresas de la región, un ámbito muy cercano al nuestro.
-- **ANDROS** — galardonada por su proyección y su apuesta por la innovación.
+- **IMEM Ascensores**, premiada por su trayectoria y consolidación como referente en el sector de la elevación en Cantabria.
+- **CIC Consulting Informático**, reconocida por su labor en la transformación digital de empresas de la región, un ámbito muy cercano al nuestro.
+- **ANDROS**, galardonada por su proyección y su apuesta por la innovación.
 
 ## Enhorabuena a los premiados
 

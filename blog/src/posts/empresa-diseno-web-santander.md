@@ -44,7 +44,7 @@ Si las respuestas son vagas o tipo eslogan, no es buena señal. Las empresas que
 
 ## Banderas rojas que vemos a menudo
 
-Presupuestos sin desglose. Plazos imposibles ("te la lanzamos en una semana"). Garantías de "primera posición en Google" — eso lo prometen quienes no van a cumplirlo. Falta de contrato o un contrato genérico copiado. Nula propuesta de medición posterior: si nadie va a mirar Analytics después, ¿para qué se hace la web?
+Presupuestos sin desglose. Plazos imposibles ("te la lanzamos en una semana"). Garantías de "primera posición en Google", eso lo prometen quienes no van a cumplirlo. Falta de contrato o un contrato genérico copiado. Nula propuesta de medición posterior: si nadie va a mirar Analytics después, ¿para qué se hace la web?
 
 ## Lo que hacemos diferente en Pindia
 

@@ -66,9 +66,9 @@ Si llevas años en WordPress y tu web va bien, no la cambies por moda. Si te est
 
 ## Más en el blog
 
-- [Desarrollo de webs con IA](../desarrollo-webs-ia-verdades-mentiras/) — ¿Qué rol juega IA en WordPress vs medida?
-- [Cuánto cuesta una página web](../precio-pagina-web-cantabria/) — El presupuesto varía según plataforma.
-- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/) — Migrar de WordPress a medida requiere cuidado.
-- [Mantenimiento web: lo que sí funciona](../mantenimiento-web-empresas-cantabria/) — Mantenimiento es diferente según tecnología.
+- [Desarrollo de webs con IA](../desarrollo-webs-ia-verdades-mentiras/), ¿Qué rol juega IA en WordPress vs medida?
+- [Cuánto cuesta una página web](../precio-pagina-web-cantabria/), El presupuesto varía según plataforma.
+- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/), Migrar de WordPress a medida requiere cuidado.
+- [Mantenimiento web: lo que sí funciona](../mantenimiento-web-empresas-cantabria/), Mantenimiento es diferente según tecnología.
 
 En Pindia trabajamos con ambos enfoques (y con los híbridos). La conversación correcta no es "qué tecnología", es "qué problema". Si quieres que te ayudemos a decidir antes de gastar dinero en algo que no toca, [hablemos](/contacto/).

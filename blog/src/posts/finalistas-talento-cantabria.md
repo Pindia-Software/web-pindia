@@ -28,7 +28,7 @@ Llegar a la fase final es ya un reconocimiento en sí mismo, y nos lo tomamos co
 
 Pindia Software nació con una convicción: que las empresas de cualquier tamaño merecen acceder a software bien hecho, diseñado específicamente para sus necesidades, y no a soluciones genéricas que no terminan de encajar.
 
-Desde Santander hemos trabajado con clientes de sectores muy distintos — construcción, servicios profesionales, industria — y en todos los casos el punto de partida ha sido el mismo: escuchar, entender el negocio y construir herramientas que de verdad se usen.
+Desde Santander hemos trabajado con clientes de sectores muy distintos, construcción, servicios profesionales, industria, y en todos los casos el punto de partida ha sido el mismo: escuchar, entender el negocio y construir herramientas que de verdad se usen.
 
 Ser finalistas en Talento Cantabria supone un reconocimiento a ese trabajo, al equipo que hay detrás y a los clientes que han confiado en nosotros desde el principio.
 

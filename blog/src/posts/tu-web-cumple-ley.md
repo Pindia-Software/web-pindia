@@ -206,9 +206,9 @@ O lo puedes dejar, ahorrar 400 euros, y arriesgar 2.000-5.000 euros en multa cua
 
 ## Más en el blog
 
-- [RGPD y cookies: lo mínimo legal](../rgpd-cookies-web-cantabria/) — Análisis detallado de banners, CMP y errores comunes.
-- [Accesibilidad web en empresas](../accesibilidad-web-empresas-cantabria/) — Cumplimiento legal también incluye WCAG.
-- [Errores comunes en webs](../errores-comunes-web-empresa/) — A veces la falta de cumplimiento es síntoma de negligencia general.
+- [RGPD y cookies: lo mínimo legal](../rgpd-cookies-web-cantabria/), Análisis detallado de banners, CMP y errores comunes.
+- [Accesibilidad web en empresas](../accesibilidad-web-empresas-cantabria/), Cumplimiento legal también incluye WCAG.
+- [Errores comunes en webs](../errores-comunes-web-empresa/), A veces la falta de cumplimiento es síntoma de negligencia general.
 
 ## Siguiente paso
 

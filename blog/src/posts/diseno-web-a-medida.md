@@ -116,7 +116,7 @@ Usamos IA en nuestro propio proceso de desarrollo, y no de forma decorativa: hem
 
 **Qué acelera:** maquetación, código repetitivo, migración de contenidos, primeras versiones, metadatos. Trabajo necesario pero mecánico. Y en desarrollo el tiempo es el coste, así que eso baja precio y plazo.
 
-**Qué no cambia:** la arquitectura, el criterio técnico, la seguridad y la revisión. Una IA sin ingenieros detrás genera código que funciona el primer día y te explota el sexto mes. Por eso una web a medida con IA **no es gratis** — pero está mucho más cerca de una plantilla de lo que estaba hace tres años.
+**Qué no cambia:** la arquitectura, el criterio técnico, la seguridad y la revisión. Una IA sin ingenieros detrás genera código que funciona el primer día y te explota el sexto mes. Por eso una web a medida con IA **no es gratis**, pero está mucho más cerca de una plantilla de lo que estaba hace tres años.
 
 ## Cómo elegir empresa de diseño web a medida
 
@@ -180,10 +180,10 @@ Sí. Reduce el tiempo de las partes mecánicas del desarrollo, y eso baja precio
 
 ## Más en el blog
 
-- [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/) — la comparativa completa entre las dos opciones.
-- [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/) — el desglose de precios y los costes ocultos.
-- [Mantenimiento web](https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/) — qué cuesta mantenerla después.
-- [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/) — cómo mide Google el rendimiento de tu web.
+- [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), la comparativa completa entre las dos opciones.
+- [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), el desglose de precios y los costes ocultos.
+- [Mantenimiento web](https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/), qué cuesta mantenerla después.
+- [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), cómo mide Google el rendimiento de tu web.
 
 <script type="application/ld+json">
 {

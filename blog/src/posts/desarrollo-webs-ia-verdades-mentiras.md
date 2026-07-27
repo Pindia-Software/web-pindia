@@ -140,9 +140,9 @@ Los desarrolladores que integren IA como herramienta van a ir más rápido. Los 
 
 ## Más en el blog
 
-- [WordPress vs desarrollo a medida en Cantabria](../wordpress-vs-desarrollo-medida-cantabria/) — Elegir entre soluciones prefabricadas e IA vs código custom.
-- [Precio de una página web en Cantabria](../precio-pagina-web-cantabria/) — Cuánto cuesta realmente una web (con IA o sin).
-- [Core Web Vitals: qué son y por qué importan](../core-web-vitals-que-son/) — Una web rápida requiere más que solo código: requiere arquitectura.
+- [WordPress vs desarrollo a medida en Cantabria](../wordpress-vs-desarrollo-medida-cantabria/), Elegir entre soluciones prefabricadas e IA vs código custom.
+- [Precio de una página web en Cantabria](../precio-pagina-web-cantabria/), Cuánto cuesta realmente una web (con IA o sin).
+- [Core Web Vitals: qué son y por qué importan](../core-web-vitals-que-son/), Una web rápida requiere más que solo código: requiere arquitectura.
 
 ## Si necesitás una web
 

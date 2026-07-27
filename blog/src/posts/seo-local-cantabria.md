@@ -12,7 +12,7 @@ coverAlt: Mapa de Santander con resultados de búsqueda local en Google
 draft: false
 ---
 
-Si tu empresa trabaja con clientes locales —y la mayoría de pymes cántabras lo hacen—, **el SEO local es probablemente la inversión digital con mejor retorno** que puedes hacer. Aparecer en el top 3 del mapa de Google cuando alguien busca "fontanero en Santander" o "asesoría en Torrelavega" mueve cuántos negocios reales nadie sabe a ciencia cierta, pero es mucho.
+Si tu empresa trabaja con clientes locales, y la mayoría de pymes cántabras lo hacen, **el SEO local es probablemente la inversión digital con mejor retorno** que puedes hacer. Aparecer en el top 3 del mapa de Google cuando alguien busca "fontanero en Santander" o "asesoría en Torrelavega" mueve cuántos negocios reales nadie sabe a ciencia cierta, pero es mucho.
 
 ## Qué es el SEO local y por qué importa en Cantabria
 
@@ -58,10 +58,10 @@ Tener varias fichas duplicadas en Google. No haber verificado la ficha. Usar un 
 
 ## Más en el blog
 
-- [Core Web Vitals: qué son y por qué importan](../core-web-vitals-que-son/) — Velocidad web es factor de ranking. El SEO local también.
-- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/) — La velocidad es crucial en SEO local.
-- [Cómo hacer una landing page que convierta](../landing-page-conversion-cantabria/) — El objetivo del SEO local es conversión.
-- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/) — Si cambias de web, protege tu posicionamiento local.
+- [Core Web Vitals: qué son y por qué importan](../core-web-vitals-que-son/), Velocidad web es factor de ranking. El SEO local también.
+- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/), La velocidad es crucial en SEO local.
+- [Cómo hacer una landing page que convierta](../landing-page-conversion-cantabria/), El objetivo del SEO local es conversión.
+- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/), Si cambias de web, protege tu posicionamiento local.
 
 ## Cómo te puede ayudar Pindia
 
