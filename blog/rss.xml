@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Mon, 27 Jul 2026 08:36:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2026 08:38:04 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Diseño web profesional: qué es y cómo saber si tu web lo tiene</title>
+      <link>https://pindia.es/blog/posts/diseno-web-profesional/</link>
+      <description>Qué diferencia un diseño web profesional de una plantilla o un apaño casero: los 7 criterios objetivos que lo definen y un checklist para saber si tu web los cumple.</description>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/diseno-web-profesional/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
 
     <item>
       <title>Posicionamiento web en Santander: qué es, cuánto cuesta y cómo elegir empresa</title>
