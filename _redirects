@@ -1,4 +1,26 @@
 # Redirecciones 301 (Cloudflare / Netlify). Formato: origen  destino  código.
+
+# --- Legales: fichero .html plano -> carpeta (rediseño flat->dir) ---
 /aviso-legal.html          /aviso-legal/          301
 /politica-cookies.html     /politica-cookies/     301
 /politica-privacidad.html  /politica-privacidad/  301
+
+# --- Fix SEO: .html indexadas emiten 307 (temporal) por html_handling.
+#     Forzamos 301 permanente hacia la URL limpia para conservar posicionamiento. ---
+# Servicios
+/servicios/diseno-web.html          /servicios/diseno-web          301
+/servicios/desarrollo-software.html  /servicios/desarrollo-software  301
+/servicios/apps-mobile-api.html     /servicios/apps-mobile-api     301
+/servicios/mantenimiento-web.html   /servicios/mantenimiento-web   301
+# Proyectos
+/proyectos/clinica-ofelia-casanueva.html  /proyectos/clinica-ofelia-casanueva  301
+/proyectos/construcciones-rotella.html    /proyectos/construcciones-rotella     301
+/proyectos/diaryofatoken.html       /proyectos/diaryofatoken       301
+/proyectos/el-camino-de-gaudi.html  /proyectos/el-camino-de-gaudi  301
+/proyectos/trowelapp.html           /proyectos/trowelapp           301
+/proyectos/web-pindia.html          /proyectos/web-pindia          301
+/proyectos/web-trowelapp.html       /proyectos/web-trowelapp       301
+
+# --- URL vieja movida en el rediseño: /productos/trowelapp -> /trowelapp/ (hoy da 404) ---
+/productos/trowelapp.html   /trowelapp/   301
+/productos/trowelapp        /trowelapp/   301
