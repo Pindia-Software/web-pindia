@@ -653,6 +653,7 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
     { loc: `${SITE_URL}/proyectos/el-camino-de-gaudi`,       lastmod: today, changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/proyectos/clinica-ofelia-casanueva`, lastmod: today, changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/proyectos/construcciones-rotella`,   lastmod: today, changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/limon-hoteles`,            lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/blog/`,                              lastmod: today, changefreq: 'weekly',  priority: '0.7' },
     { loc: `${SITE_URL}/contacto/`,                          lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/aviso-legal/`,                       lastmod: today, changefreq: 'yearly',  priority: '0.2' },
