@@ -10,6 +10,8 @@ author: Borja García
 tags:
   - SEO & Crecimiento
   - Negocio & Estrategia Digital
+cover: /assets/img/blog/seo-local-santander/cover.webp
+coverAlt: 'Marcador de mapa y lupa sobre un mapa de Santander, ilustrando el SEO local'
 draft: true
 ---
 
