@@ -758,3 +758,77 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
   requestAnimationFrame(tick);
 
 })();
+
+/* ============================================
+   Carrusel de proyectos (scroll-snap + flechas)
+   ============================================ */
+(function () {
+  document.querySelectorAll('.carousel').forEach(function (car) {
+    var track = car.querySelector('.carousel__track');
+    if (!track) return;
+    var prev = car.querySelector('[data-dir="prev"]');
+    var next = car.querySelector('[data-dir="next"]');
+
+    var raf = null;
+    function stepSize() {
+      var item = track.querySelector('.carousel__item');
+      var gap = parseFloat(getComputedStyle(track).columnGap) || 24;
+      return item ? item.getBoundingClientRect().width + gap : track.clientWidth * 0.8;
+    }
+    function maxScroll() { return track.scrollWidth - track.clientWidth; }
+    function update() {
+      if (prev) prev.disabled = track.scrollLeft <= 4;
+      if (next) next.disabled = track.scrollLeft >= maxScroll() - 4;
+    }
+    function ease(p) { return p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2; }
+    function animateTo(target) {
+      target = Math.max(0, Math.min(target, maxScroll()));
+      var start = track.scrollLeft;
+      var dist = target - start;
+      if (Math.abs(dist) < 1) return;
+      if (raf) cancelAnimationFrame(raf);
+      var dur = 420, t0 = null;
+      function frame(now) {
+        if (t0 === null) t0 = now;
+        var p = Math.min(1, (now - t0) / dur);
+        track.scrollLeft = start + dist * ease(p);
+        if (p < 1) raf = requestAnimationFrame(frame); else update();
+      }
+      raf = requestAnimationFrame(frame);
+    }
+    if (prev) prev.addEventListener('click', function () { animateTo(track.scrollLeft - stepSize()); });
+    if (next) next.addEventListener('click', function () { animateTo(track.scrollLeft + stepSize()); });
+
+    // Arrastre con ratón (las pantallas táctiles usan el scroll nativo con inercia)
+    var down = false, startX = 0, startScroll = 0, moved = false;
+    track.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      if (raf) cancelAnimationFrame(raf);
+      down = true; moved = false; startX = e.clientX; startScroll = track.scrollLeft;
+      try { track.setPointerCapture(e.pointerId); } catch (_) {}
+      track.classList.add('is-dragging');
+    });
+    track.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      var dx = e.clientX - startX;
+      if (Math.abs(dx) > 4) moved = true;
+      track.scrollLeft = startScroll - dx;
+    });
+    function release() {
+      if (!down) return;
+      down = false;
+      track.classList.remove('is-dragging');
+      update();
+    }
+    track.addEventListener('pointerup', release);
+    track.addEventListener('pointercancel', release);
+    // Un arrastre no debe activar el enlace de la tarjeta
+    track.addEventListener('click', function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); }
+    }, true);
+
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  });
+})();
