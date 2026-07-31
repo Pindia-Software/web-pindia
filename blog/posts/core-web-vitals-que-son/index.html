@@ -33,7 +33,7 @@
   <meta name="theme-color"     content="#22293E">
 
   <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260717a" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260731a" crossorigin>
 
   <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
   <script>
@@ -43,7 +43,7 @@
   </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
-  <link rel="stylesheet" href="/css/styles.min.css?v=20260717a">
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260731a">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Blog Pindia Software" href="/blog/rss.xml">
@@ -157,7 +157,26 @@
         </div>
       </figure>
 
-      <div class="container">
+      <div class="post__layout">
+        <aside class="post-toc-wrap">
+          <nav class="post-toc" aria-label="Índice de contenidos">
+            <p class="post-toc__title">En este artículo</p>
+            <ol class="post-toc__list">
+              <li><a href="#que-son-core-web-vitals">Qué son Core Web Vitals</a></li>
+              <li><a href="#por-que-importa-el-negocio-detras">Por qué importa: el negocio detrás</a></li>
+              <li><a href="#lcp-contenido-principal-lento">LCP: contenido principal lento</a></li>
+              <li><a href="#inp-respuesta-al-usuario">INP: respuesta al usuario</a></li>
+              <li><a href="#cls-contenido-que-salta">CLS: contenido que salta</a></li>
+              <li><a href="#como-medir-core-web-vitals">Cómo medir Core Web Vitals</a></li>
+              <li><a href="#mejoras-que-funcionan-sin-codigo-a-medida">Mejoras que funcionan (sin código a medida)</a></li>
+              <li><a href="#caso-real-tienda-online-de-santander">Caso real: tienda online de Santander</a></li>
+              <li><a href="#cuanto-cuesta-mejorar-core-web-vitals">Cuánto cuesta mejorar Core Web Vitals</a></li>
+              <li><a href="#mas-en-el-blog">Más en el blog</a></li>
+              <li><a href="#siguiente-paso">Siguiente paso</a></li>
+            </ol>
+          </nav>
+          
+        </aside>
         <div class="post__body prose" itemprop="articleBody">
           <p>Google cambió las reglas. Hace años la velocidad importaba &quot;un poco&quot;. Hoy es un factor de ranking directo que puede costar clientes. Core Web Vitals son tres números que miden cómo experimenta alguien tu web en realidad. No es teoría; es lo que Google ve cuando entra en tu sitio.</p>
 <h2 id="que-son-core-web-vitals"><a href="#que-son-core-web-vitals" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Qué son Core Web Vitals</h2><p>Google vigila tres cosas en tu web:</p>
@@ -241,7 +260,9 @@
 <h2 id="siguiente-paso"><a href="#siguiente-paso" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Siguiente paso</h2><p>¿Quieres saber cómo están tus Core Web Vitals? <a href="/contacto/">Hablemos</a>. Auditamos, medimos con datos de usuario real, y te decimos qué se puede hacer sin destrozar presupuesto.</p>
 
         </div>
+      </div>
 
+      <div class="container">
         
 
         
@@ -492,7 +513,7 @@
     </div>
   </div>
 
-  <script src="/js/main.min.js?v=20260717a" defer></script>
+  <script src="/js/main.min.js?v=20260731a" defer></script>
 
 </body>
 </html>

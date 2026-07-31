@@ -33,7 +33,7 @@
   <meta name="theme-color"     content="#22293E">
 
   <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260717a" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260731a" crossorigin>
 
   <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
   <script>
@@ -43,7 +43,7 @@
   </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
-  <link rel="stylesheet" href="/css/styles.min.css?v=20260717a">
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260731a">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Blog Pindia Software" href="/blog/rss.xml">
@@ -157,7 +157,18 @@
         </div>
       </figure>
 
-      <div class="container">
+      <div class="post__layout">
+        <aside class="post-toc-wrap">
+          <nav class="post-toc" aria-label="Índice de contenidos">
+            <p class="post-toc__title">En este artículo</p>
+            <ol class="post-toc__list">
+              <li><a href="#un-cafe-con-mucho-fondo">Un café con mucho fondo</a></li>
+              <li><a href="#por-que-la-construccion-tiene-un-reto-digital-especifico">Por qué la construcción tiene un reto digital específico</a></li>
+              <li><a href="#lo-que-nos-llevamos">Lo que nos llevamos</a></li>
+            </ol>
+          </nav>
+          
+        </aside>
         <div class="post__body prose" itemprop="articleBody">
           <p>El pasado mes de noviembre tuvimos la suerte de participar en la primera edición de <strong>Caña Digital</strong>, un evento organizado por la <strong>Oficina Acelera PYME de CEOE-CEPYME Cantabria</strong> con un objetivo tan sencillo como necesario: juntar a empresas del sector de la construcción y a empresas tecnológicas para hablar de digitalización.</p>
 <h2 id="un-cafe-con-mucho-fondo"><a href="#un-cafe-con-mucho-fondo" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Un café con mucho fondo</h2><p>El formato es lo que tiene de especial la Caña Digital: nada de ponencias magistrales ni salas de conferencias. La conversación fluye alrededor de una mesa, entre profesionales que conocen bien sus sectores y que llegaron con ganas de aprender y de contarse las suyas.</p>
@@ -170,7 +181,9 @@
 <p>Si quieres saber más sobre cómo podemos ayudar a tu empresa constructora a dar el paso digital, <a href="/contacto/">cuéntanoslo</a>.</p>
 
         </div>
+      </div>
 
+      <div class="container">
         
         <section class="post-gallery" aria-labelledby="gallery-title">
           <h2 id="gallery-title" class="post-gallery__title">Galería</h2>
@@ -431,7 +444,7 @@
     </div>
   </div>
 
-  <script src="/js/main.min.js?v=20260717a" defer></script>
+  <script src="/js/main.min.js?v=20260731a" defer></script>
 
 </body>
 </html>

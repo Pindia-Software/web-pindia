@@ -33,7 +33,7 @@
   <meta name="theme-color"     content="#22293E">
 
   <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260717a" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260731a" crossorigin>
 
   <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
   <script>
@@ -43,7 +43,7 @@
   </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
-  <link rel="stylesheet" href="/css/styles.min.css?v=20260717a">
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260731a">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Blog Pindia Software" href="/blog/rss.xml">
@@ -157,7 +157,18 @@
         </div>
       </figure>
 
-      <div class="container">
+      <div class="post__layout">
+        <aside class="post-toc-wrap">
+          <nav class="post-toc" aria-label="Índice de contenidos">
+            <p class="post-toc__title">En este artículo</p>
+            <ol class="post-toc__list">
+              <li><a href="#que-son-los-premios-talento-cantabria">Qué son los Premios Talento Cantabria</a></li>
+              <li><a href="#nuestro-proyecto">Nuestro proyecto</a></li>
+              <li><a href="#gracias">Gracias</a></li>
+            </ol>
+          </nav>
+          
+        </aside>
         <div class="post__body prose" itemprop="articleBody">
           <p>Tenemos una noticia que nos hace especial ilusión compartir: <strong>Pindia Software ha sido seleccionada como finalista en los Premios Talento Cantabria</strong>.</p>
 <h2 id="que-son-los-premios-talento-cantabria"><a href="#que-son-los-premios-talento-cantabria" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Qué son los Premios Talento Cantabria</h2><p>Los Premios Talento Cantabria reconocen el esfuerzo, la capacidad de innovación y el impacto de proyectos empresariales desarrollados en la región. Son un escaparate del talento local y una forma de poner en valor el trabajo de quienes apuestan por construir empresa en Cantabria.</p>
@@ -169,7 +180,9 @@
 <p>Seguimos trabajando. Si tienes un proyecto en mente, <a href="/contacto/">hablemos</a>.</p>
 
         </div>
+      </div>
 
+      <div class="container">
         
         <section class="post-gallery" aria-labelledby="gallery-title">
           <h2 id="gallery-title" class="post-gallery__title">Galería</h2>
@@ -430,7 +443,7 @@
     </div>
   </div>
 
-  <script src="/js/main.min.js?v=20260717a" defer></script>
+  <script src="/js/main.min.js?v=20260731a" defer></script>
 
 </body>
 </html>

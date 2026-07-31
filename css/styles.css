@@ -2705,6 +2705,108 @@ ul, ol { list-style: none; }
 }
 .prose pre code { background: none; border: 0; padding: 0; }
 
+/* ── Layout del post con índice lateral ──────────────────────── */
+/* Móvil / tablet: columna única centrada, mismo padding que .container
+   para que el contenido quede alineado con la cabecera y el cover. */
+.post__layout {
+  max-width: var(--post-col);
+  margin-inline: auto;
+  padding-inline: var(--sp-6);
+}
+@media (min-width: 1024px) {
+  .post__layout { padding-inline: var(--sp-8); }
+}
+
+/* Escritorio ancho: rejilla más ancha que el container (hasta 1500px) con el
+   contenido a 760 centrado en el viewport (sigue alineado con la cabecera, que
+   también está centrada) y el índice fijo en el lateral izquierdo, ya con holgura. */
+@media (min-width: 1200px) {
+  .post__layout {
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: 1fr var(--post-col) 1fr;
+    column-gap: var(--sp-10);
+  }
+  .post-toc-wrap { grid-column: 1; justify-self: end; align-self: stretch; width: min(320px, 100%); }
+  .post__layout .post__body { grid-column: 2; max-width: none; margin-inline: 0; }
+  .post__layout .post-toc {
+    position: sticky;
+    top: calc(var(--nav-h) + var(--sp-5));
+    margin: 0;
+    max-height: calc(100vh - var(--nav-h) - var(--sp-10));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+/* ── Índice de contenidos del post ───────────────────────────── */
+.post-toc {
+  margin-block: 0 var(--sp-10);
+  padding: 0;
+}
+.post-toc__title {
+  margin: 0 0 var(--sp-3);
+  font-size: var(--text-xs);
+  font-weight: var(--w-reg);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-1);
+}
+.post-toc__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--sp-1);
+}
+.post-toc__list li { margin: 0; }
+.post-toc__list a {
+  display: block;
+  color: var(--text-1);
+  font-weight: 300;
+  text-decoration: none;
+  line-height: var(--lh-snug);
+  padding: var(--sp-2) 0 var(--sp-2) var(--sp-4);
+  border-left: 2px solid var(--border);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.post-toc__list a:hover { color: var(--text-1); border-left-color: var(--accent); }
+
+/* ── FAQ en acordeón ─────────────────────────────────────────── */
+.faq-accordion { display: grid; gap: var(--sp-3); }
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--bg-card);
+}
+.faq-item__q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-4) var(--sp-5);
+  cursor: pointer;
+  color: var(--text-1);
+  font-weight: var(--w-sb);
+  line-height: var(--lh-snug);
+  list-style: none;
+}
+.faq-item__q::-webkit-details-marker { display: none; }
+.faq-item__q:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; border-radius: var(--r-md); }
+.faq-item__chevron { flex: none; color: var(--accent); transition: transform 0.25s ease; }
+.faq-item[open] .faq-item__chevron { transform: rotate(180deg); }
+.faq-item__a {
+  padding: 0 var(--sp-5) var(--sp-5);
+  color: var(--text-2);
+  line-height: var(--lh-base);
+}
+.faq-item__a :where(p) { margin: 0; }
+.faq-item__a :where(p) + p { margin-top: var(--sp-3); }
+.faq-item__a a { color: var(--accent); text-decoration: underline; text-underline-offset: 0.18em; }
+@media (hover: hover) {
+  .faq-item:hover { border-color: rgba(255 255 255 / 0.14); }
+}
+
 .prose__figure {
   margin: var(--sp-8) 0;
   text-align: center;

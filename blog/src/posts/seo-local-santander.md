@@ -19,7 +19,7 @@ El **SEO local** es el trabajo para que tu negocio aparezca en Google cuando alg
 
 Para una pyme de Santander o Cantabria es, casi siempre, el SEO que más rápido da resultados. Hay menos competencia que en las búsquedas nacionales y la intención de compra es altísima: quien busca un servicio "cerca" suele querer contratarlo ya.
 
-Somos una [empresa de posicionamiento web](https://pindia.es/servicios/posicionamiento-web) y también de desarrollo, así que esta guía va sin humo: lo que de verdad mueve la aguja en local, en el orden en que lo haríamos.
+Somos una [empresa de posicionamiento web](https://pindia.es/servicios/posicionamiento-web) y también de desarrollo, así que en esta guía te explicamos sin humo qué es, por qué te interesa y, sobre todo, por qué hacerlo bien es bastante más difícil de lo que parece.
 
 ## Qué es el SEO local (y en qué se diferencia del SEO normal)
 
@@ -32,69 +32,31 @@ Cuando buscas un servicio en tu ciudad, Google te enseña dos cosas por encima d
 
 El SEO local trabaja los dos frentes a la vez. Y el primero, el pack del mapa, depende sobre todo de una herramienta gratuita que mucha gente tiene abandonada: Google Business Profile.
 
-## Google Business Profile: tu activo local número uno
+## No es rellenar una ficha: lo que de verdad decide quién sale primero
 
-**Google Business Profile** (antes Google My Business) es tu ficha de empresa en Google y en Google Maps. Es lo primero que ve quien te busca y, en local, lo que más pesa para salir en el mapa. Optimizarla bien es la acción con mejor relación esfuerzo/resultado que existe.
+El pack del mapa depende en buena parte de tu ficha de **Google Business Profile** (antes Google My Business), y aquí está el primer malentendido: mucha gente cree que es rellenar cuatro campos y ya está. No lo es. Google decide a quién enseña según decenas de señales que se refuerzan entre sí (la categoría exacta, la coherencia de tus datos por toda la web, las reseñas, cómo se comporta quien te encuentra, la cercanía…) y que además cambian cada pocos meses. Tener la ficha completa te pone en la carrera; ganar el pack local es otra liga.
 
-Lo mínimo que tiene que estar impecable:
+Con las reseñas pasa lo mismo: pesan muchísimo en local, pero conseguirlas de forma constante y sin saltarte las normas de Google (que penaliza con dureza en cuanto huele algo raro) es un trabajo fino, no un "pide a tus clientes que te valoren".
 
-- **Categoría principal correcta** y las secundarias que apliquen. Es una de las señales más fuertes de por qué búsquedas apareces.
-- **NAP coherente:** nombre, dirección y teléfono exactos, escritos igual aquí, en tu web y en cualquier directorio. Una dirección con dos formatos distintos confunde a Google.
-- **Descripción, horario, servicios y zona de actuación** completos y con tus palabras clave locales de forma natural.
-- **Fotos reales** de tu negocio, tu equipo y tu trabajo. Las fichas con fotos reciben muchas más visitas y clics.
-- **Publicaciones periódicas** (novedades, ofertas, casos). Una ficha viva transmite a Google que el negocio está activo.
+## Donde casi todos los intentos caseros se quedan a medias: la parte técnica
 
-Si solo pudieras hacer una cosa de toda esta guía, sería esta: reclamar y optimizar tu ficha.
+El mapa es solo la mitad. La otra mitad, los resultados orgánicos, dependen de tu web: que Google la entienda como local y relevante, que cargue rápido, que esté bien estructurada y marcada con los datos correctos. Esto ya no es marketing, es desarrollo, y es justo donde la mayoría de intentos por tu cuenta se quedan cortos, porque hay que meterse en el código.
 
-## Las reseñas: el combustible del pack local
+Aquí, siendo una empresa de desarrollo, jugamos en casa: el SEO técnico y el rendimiento no se los pedimos a nadie, los aplicamos nosotros en tu web. Y sí, [una web lenta](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) tira por tierra todo el trabajo del mapa.
 
-Las reseñas no son solo prueba social para el cliente. Son un **factor de posicionamiento local** de primer orden: cantidad, frecuencia, nota media y, cada vez más, que respondas a todas.
+## Elegir las palabras: con datos, no a corazonadas
 
-Lo que funciona y es sostenible:
+El error más caro del SEO local es pelear meses por palabras que nadie busca, o que traen visitas pero no clientes. Acertar exige datos reales de búsqueda (volumen, competencia, intención) que solo se ven con herramientas profesionales de pago, y criterio para leerlos. Es el análisis con el que arrancamos cualquier proyecto, y lo que separa una estrategia que trae trabajo de una lista de palabras bonitas.
 
-- **Pide reseñas de forma sistemática** a los clientes contentos, justo cuando acaban de tener una buena experiencia. Un enlace directo a tu ficha reduce la fricción a un clic.
-- **Responde a todas, también a las malas.** Una respuesta educada a una crítica dice más de ti que diez estrellas sin contestar.
-- **Nada de reseñas falsas.** Google las detecta y penaliza, y el riesgo no compensa jamás.
+## ¿No puedo hacer esto yo con una IA?
 
-## Optimiza tu web para el SEO local
+Es la pregunta lógica hoy, y la respuesta honesta es: la IA te da lo mismo que esta guía, una idea general del terreno. Lo que no te da es el resultado.
 
-El pack local te mete en el mapa, pero para el segundo frente (los resultados orgánicos) necesitas una web que Google entienda como local y relevante. Aquí es donde, siendo desarrolladores, jugamos en casa.
+No tiene los datos de búsqueda de tu mercado ni las herramientas para conseguirlos, no entra a tocar el código de tu web, no gestiona tu ficha ni responde tus reseñas cada semana, y no aporta el criterio ni la constancia que el SEO exige. Saber *qué* hay que hacer es el 20% del trabajo; hacerlo bien, con datos, y sostenerlo mes a mes es el 80% restante. Ahí es donde se gana o se pierde, y ahí es donde una IA (o un rato de buena voluntad un domingo) se queda a mitad de camino.
 
-### Páginas de servicio con la ciudad
+## Es un trabajo continuo, no un botón que se pulsa
 
-Una página por servicio importante que mencione tu zona de forma natural, por ejemplo "[diseño web en Santander](https://pindia.es/servicios/diseno-web)". No se trata de repetir "Santander" cien veces, sino de que el contenido responda de verdad a quien busca ese servicio en tu ciudad.
-
-### Datos estructurados LocalBusiness
-
-Marcar tu web con schema **LocalBusiness** (dirección, teléfono, horario, geolocalización) le da a Google tu información local en un formato que lee sin ambigüedad. Es técnico, pero marca diferencia y casi nadie lo tiene bien.
-
-### NAP y velocidad
-
-El mismo nombre, dirección y teléfono que en tu ficha, visibles en la web. Y una web rápida y mobile-first: la mayoría de las búsquedas locales se hacen desde el móvil y por la calle, así que si carga lenta, pierdes al cliente antes de que te vea. Lo contamos en [velocidad web y rendimiento](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/).
-
-## Keywords locales: por qué luchar (y por qué no)
-
-No todas las búsquedas locales valen lo mismo. Merece la pena centrarse en las que combinan volumen razonable y baja competencia, que en ciudades como Santander suele ser mucho más asumible que a nivel nacional.
-
-La forma seria de hacerlo es con datos, no a ojo: mirar qué busca de verdad la gente de tu zona, con cuánto volumen y contra quién competirías. Es exactamente el análisis que hacemos al arrancar cualquier proyecto de posicionamiento, y evita el error clásico de pelear meses por una palabra que nadie busca o que no te trae clientes.
-
-## Directorios y enlaces locales
-
-Aparecer en directorios de calidad (cámaras de comercio, asociaciones sectoriales, guías locales serias) con tu NAP coherente refuerza tu presencia local. Y un enlace desde un medio o una web de Cantabria vale, para local, más que muchos enlaces genéricos de fuera. Calidad y coherencia, no cantidad.
-
-## Cuánto tarda el SEO local en dar resultados
-
-Menos que el SEO nacional, pero no es inmediato. Con la ficha bien optimizada, las primeras mejoras en el mapa pueden verse en pocas semanas. Para posiciones sólidas en orgánico local, cuenta con dos a cuatro meses, según el punto de partida y la competencia de tu sector en la zona.
-
-Cualquiera que te prometa el número uno en una semana, o miente o no sabe de lo que habla. El SEO local bien hecho es constante y acumulativo: cada mes suma.
-
-## Errores que vemos una y otra vez
-
-- **Tener la ficha de Google abandonada** o sin reclamar. El activo más potente, sin usar.
-- **NAP incoherente** entre ficha, web y directorios.
-- **Ignorar las reseñas**, no pedirlas nunca y no responder a las que llegan.
-- **Una web lenta o no adaptada a móvil**, que tira por tierra el trabajo del mapa.
-- **Perseguir tráfico de vanidad** en vez de las búsquedas que traen clientes de tu zona.
+Con la ficha bien optimizada, las primeras mejoras en el mapa pueden verse en pocas semanas; para posiciones sólidas en orgánico local, cuenta con dos a cuatro meses. Y no termina ahí: Google cambia, tu competencia se mueve y las señales hay que mantenerlas. Cualquiera que te prometa el número uno en una semana, o miente o no sabe de lo que habla. El SEO local bien hecho es constante y acumulativo, y por eso funciona mejor como un acompañamiento que como un arreglo puntual.
 
 ## Cómo lo trabajamos en Pindia
 

@@ -33,7 +33,7 @@
   <meta name="theme-color"     content="#22293E">
 
   <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260717a" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260731a" crossorigin>
 
   <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
   <script>
@@ -43,7 +43,7 @@
   </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
-  <link rel="stylesheet" href="/css/styles.min.css?v=20260717a">
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260731a">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="Blog Pindia Software" href="/blog/rss.xml">
@@ -157,7 +157,28 @@
         </div>
       </figure>
 
-      <div class="container">
+      <div class="post__layout">
+        <aside class="post-toc-wrap">
+          <nav class="post-toc" aria-label="Índice de contenidos">
+            <p class="post-toc__title">En este artículo</p>
+            <ol class="post-toc__list">
+              <li><a href="#que-es-realmente-el-mantenimiento-web">Qué es realmente el mantenimiento web</a></li>
+              <li><a href="#que-incluye-un-buen-plan-de-mantenimiento-web">Qué incluye un buen plan de mantenimiento web</a></li>
+              <li><a href="#cuanto-cuesta-el-mantenimiento-web-al-mes">Cuánto cuesta el mantenimiento web al mes</a></li>
+              <li><a href="#nuestros-planes-de-mantenimiento-web">Nuestros planes de mantenimiento web</a></li>
+              <li><a href="#que-debe-poner-en-tu-contrato-de-mantenimiento">Qué debe poner en tu contrato de mantenimiento</a></li>
+              <li><a href="#como-saber-si-el-mantenimiento-que-pagas-es-un-timo">Cómo saber si el mantenimiento que pagas es un timo</a></li>
+              <li><a href="#que-pasa-cuando-se-descuida">Qué pasa cuando se descuida</a></li>
+              <li><a href="#mantenimiento-de-wordpress-vs-de-una-web-a-medida">Mantenimiento de WordPress vs de una web a medida</a></li>
+              <li><a href="#mantenimiento-interno-o-externo">Mantenimiento interno o externo</a></li>
+              <li><a href="#y-la-parte-de-contenidos">Y la parte de contenidos</a></li>
+              <li><a href="#como-lo-hacemos-en-pindia">Cómo lo hacemos en Pindia</a></li>
+              <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+              <li><a href="#mas-en-el-blog">Más en el blog</a></li>
+            </ol>
+          </nav>
+          
+        </aside>
         <div class="post__body prose" itemprop="articleBody">
           <p>El <strong>mantenimiento web</strong> es lo que hace que tu web siga funcionando, siendo rápida y estando segura después del día que te la entregaron. Cuesta entre 40 y 200 € al mes según el alcance, y es la diferencia entre una web que dura años y una que un día deja de funcionar sin que nadie se entere.</p>
 <p>Hay una conversación que tenemos casi cada mes: &quot;nos hicieron la web hace tres años, pagamos, y no hemos vuelto a saber del que la hizo&quot;. Funcionar funciona. Pero en algún momento se rompe el formulario, o WordPress avisa de una actualización crítica, o aparece un error de SSL. Y entonces empieza la película.</p>
@@ -214,15 +235,41 @@
 <p>Cada cliente tiene su persona de contacto, sus copias se prueban de verdad, y los partes mensuales son legibles para alguien no técnico.</p>
 <p><strong>¿No sabes qué mantenimiento tienes contratado?</strong> Te lo miramos gratis y te decimos qué encontramos, aunque luego no nos contrates.</p>
 <p><strong><a href="https://pindia.es/servicios/mantenimiento-web">Ver planes de mantenimiento →</a></strong> · <strong><a href="https://pindia.es/contacto/">Auditoría gratuita de tu web →</a></strong></p>
-<h2 id="preguntas-frecuentes"><a href="#preguntas-frecuentes" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Preguntas frecuentes</h2><h3 id="que-es-el-mantenimiento-web"><a href="#que-es-el-mantenimiento-web" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Qué es el mantenimiento web?</h3><p>Es el conjunto de tareas que mantienen una web funcionando, segura y actualizada después de su lanzamiento: actualizaciones de software, copias de seguridad, monitorización, soporte ante incidencias y pequeños cambios de contenido.</p>
-<h3 id="cuanto-cuesta-el-mantenimiento-de-una-pagina-web-al-mes"><a href="#cuanto-cuesta-el-mantenimiento-de-una-pagina-web-al-mes" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Cuánto cuesta el mantenimiento de una página web al mes?</h3><p>Entre 40 y 200 € mensuales según el alcance. Una web corporativa de pyme se mantiene bien por 60–120 € al mes. Por debajo de 20 € normalmente solo estás pagando hosting.</p>
-<h3 id="es-obligatorio-el-mantenimiento-web"><a href="#es-obligatorio-el-mantenimiento-web" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Es obligatorio el mantenimiento web?</h3><p>Legalmente no, pero en la práctica sí: sin actualizaciones tu web acaba siendo vulnerable, y el cumplimiento de cookies, RGPD y accesibilidad exige revisiones cuando cambia la normativa. La responsabilidad legal es tuya, no de tu agencia.</p>
-<h3 id="que-pasa-si-no-hago-mantenimiento-a-mi-web"><a href="#que-pasa-si-no-hago-mantenimiento-a-mi-web" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Qué pasa si no hago mantenimiento a mi web?</h3><p>Con el tiempo aparecen vulnerabilidades, errores, caídas y pérdida de posicionamiento. El coste de un rescate (limpieza de malware, restauración y recuperación de SEO) suele superar el de varios años de mantenimiento.</p>
-<h3 id="el-mantenimiento-web-incluye-el-hosting"><a href="#el-mantenimiento-web-incluye-el-hosting" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿El mantenimiento web incluye el hosting?</h3><p>Depende del proveedor. A menudo se venden juntos y ahí está la confusión: un plan de 15 € al mes suele ser hosting con otro nombre. Pregunta siempre qué parte es alojamiento y qué parte es trabajo técnico.</p>
-<h3 id="puedo-cambiar-de-empresa-de-mantenimiento-web"><a href="#puedo-cambiar-de-empresa-de-mantenimiento-web" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Puedo cambiar de empresa de mantenimiento web?</h3><p>Sí, siempre que tengas acceso al dominio, al hosting y al código. Compruébalo antes de firmar con nadie: es el motivo más frecuente por el que una empresa se queda atrapada con un proveedor que no le sirve.</p>
-<h3 id="cuanto-cuesta-mantener-una-tienda-online"><a href="#cuanto-cuesta-mantener-una-tienda-online" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Cuánto cuesta mantener una tienda online?</h3><p>Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Suele partir de 130 € al mes.</p>
-<h3 id="cuanto-cuesta-el-mantenimiento-web-en-pindia"><a href="#cuanto-cuesta-el-mantenimiento-web-en-pindia" class="prose__anchor" aria-label="Enlace a esta sección">#</a>¿Cuánto cuesta el mantenimiento web en Pindia?</h3><p>Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 horas mensuales de cambios incluidas) y Avanzado a medida para tiendas online o webs con integraciones. Todos incluyen copias con prueba de restauración, monitorización y soporte con persona de contacto. Los ves en detalle en nuestra <a href="https://pindia.es/servicios/mantenimiento-web">página de mantenimiento web</a>.</p>
-<h2 id="mas-en-el-blog"><a href="#mas-en-el-blog" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Más en el blog</h2><ul>
+<h2 id="preguntas-frecuentes"><a href="#preguntas-frecuentes" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Preguntas frecuentes</h2>
+          <div class="faq-accordion">
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Qué es el mantenimiento web?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Es el conjunto de tareas que mantienen una web funcionando, segura y actualizada después de su lanzamiento: actualizaciones de software, copias de seguridad, monitorización, soporte ante incidencias y pequeños cambios de contenido.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Cuánto cuesta el mantenimiento de una página web al mes?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Entre 40 y 200 € mensuales según el alcance. Una web corporativa de pyme se mantiene bien por 60–120 € al mes. Por debajo de 20 € normalmente solo estás pagando hosting.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Es obligatorio el mantenimiento web?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Legalmente no, pero en la práctica sí: sin actualizaciones tu web acaba siendo vulnerable, y el cumplimiento de cookies, RGPD y accesibilidad exige revisiones cuando cambia la normativa. La responsabilidad legal es tuya, no de tu agencia.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Qué pasa si no hago mantenimiento a mi web?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Con el tiempo aparecen vulnerabilidades, errores, caídas y pérdida de posicionamiento. El coste de un rescate (limpieza de malware, restauración y recuperación de SEO) suele superar el de varios años de mantenimiento.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿El mantenimiento web incluye el hosting?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Depende del proveedor. A menudo se venden juntos y ahí está la confusión: un plan de 15 € al mes suele ser hosting con otro nombre. Pregunta siempre qué parte es alojamiento y qué parte es trabajo técnico.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Puedo cambiar de empresa de mantenimiento web?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Sí, siempre que tengas acceso al dominio, al hosting y al código. Compruébalo antes de firmar con nadie: es el motivo más frecuente por el que una empresa se queda atrapada con un proveedor que no le sirve.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Cuánto cuesta mantener una tienda online?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Suele partir de 130 € al mes.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Cuánto cuesta el mantenimiento web en Pindia?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 horas mensuales de cambios incluidas) y Avanzado a medida para tiendas online o webs con integraciones. Todos incluyen copias con prueba de restauración, monitorización y soporte con persona de contacto. Los ves en detalle en nuestra <a href="https://pindia.es/servicios/mantenimiento-web">página de mantenimiento web</a>.</p></div>
+            </details>
+          </div><h2 id="mas-en-el-blog"><a href="#mas-en-el-blog" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Más en el blog</h2><ul>
 <li><a href="https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/">Velocidad web: pérdida de clientes</a>, el mantenimiento debe incluir optimización de velocidad.</li>
 <li><a href="https://pindia.es/blog/posts/errores-comunes-web-empresa/">10 errores web (soluciones)</a>, muchos errores vienen de falta de mantenimiento.</li>
 <li><a href="https://pindia.es/blog/posts/tu-web-cumple-ley/">¿Tu web cumple con la ley?</a>, el cumplimiento legal requiere mantenimiento continuo.</li>
@@ -348,7 +395,9 @@
 </script>
 
         </div>
+      </div>
 
+      <div class="container">
         
 
         
@@ -599,7 +648,7 @@
     </div>
   </div>
 
-  <script src="/js/main.min.js?v=20260717a" defer></script>
+  <script src="/js/main.min.js?v=20260731a" defer></script>
 
 </body>
 </html>

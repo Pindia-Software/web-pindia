@@ -43,7 +43,7 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20260717a';
+const ASSET_VER = 'v=20260731a';
 
 // ── Partials (fuente única compartida con build-pages.mjs) ───────────────────
 
@@ -183,6 +183,62 @@ renderer.tablecell = function({ tokens, header, align }) {
 
 marked.use({ renderer, gfm: true, breaks: false });
 
+// ── Índice de contenidos (TOC) desde los H2 del post ─────────────────────────
+// Se genera a partir del HTML ya renderizado. Solo si hay 3+ secciones.
+function buildTOC(html) {
+  const items = [];
+  const re = /<h2 id="([^"]+)">(?:<a[^>]*>#<\/a>)?([\s\S]*?)<\/h2>/g;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    const id = m[1];
+    const text = m[2].replace(/<[^>]+>/g, '').trim();
+    if (!text || id === 'gallery-title') continue;
+    items.push({ id, text });
+  }
+  if (items.length < 3) return '';
+  return `<nav class="post-toc" aria-label="Índice de contenidos">
+            <p class="post-toc__title">En este artículo</p>
+            <ol class="post-toc__list">
+              ${items.map(it => `<li><a href="#${it.id}">${escapeHTML(it.text)}</a></li>`).join('\n              ')}
+            </ol>
+          </nav>
+          `;
+}
+
+// ── FAQ como acordeón (<details>/<summary>, sin JS) ──────────────────────────
+// Detecta la sección "Preguntas frecuentes" (h2) y convierte cada h3 + respuesta
+// en un <details>. Se corta en el siguiente h2. No-op si el post no tiene FAQ.
+function accordionizeFAQ(html) {
+  const h2Re = /<h2 id="preguntas-frecuentes">[\s\S]*?<\/h2>/;
+  const m = h2Re.exec(html);
+  if (!m) return html;
+
+  const afterIdx = m.index + m[0].length;
+  const rest = html.slice(afterIdx);
+  const nextH2 = rest.search(/<h2[\s>]/);
+  const faqInner = nextH2 === -1 ? rest : rest.slice(0, nextH2);
+  const tail = nextH2 === -1 ? '' : rest.slice(nextH2);
+
+  const items = [];
+  const qRe = /<h3 id="[^"]*">(?:<a[^>]*>#<\/a>)?([\s\S]*?)<\/h3>([\s\S]*?)(?=<h3[\s>]|$)/g;
+  let q;
+  while ((q = qRe.exec(faqInner)) !== null) {
+    const question = q[1].trim();
+    const answer = q[2].trim();
+    if (question) items.push({ question, answer });
+  }
+  if (!items.length) return html;
+
+  const accordion = `<div class="faq-accordion">
+            ${items.map(it => `<details class="faq-item">
+              <summary class="faq-item__q">${it.question}<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a">${it.answer}</div>
+            </details>`).join('\n            ')}
+          </div>`;
+
+  return html.slice(0, m.index) + m[0] + '\n          ' + accordion + tail;
+}
+
 // ── Partials (nav, footer, cookie banner) ────────────────────────────────────
 // Idénticos a /blog/index.html para mantener coherencia visual + a11y.
 
@@ -255,7 +311,9 @@ function renderPost(post) {
   const url         = `${SITE_URL}/blog/posts/${slug}/`;
   const ogImage     = cover ? `${SITE_URL}${cover}` : `${SITE_URL}/assets/img/og-home.webp`;
   const minutes     = readingTime(content);
-  const htmlBody    = marked.parse(content);
+  const rawBody     = marked.parse(content);
+  const tocHTML     = buildTOC(rawBody);
+  const htmlBody    = accordionizeFAQ(rawBody);
 
   const breadcrumb = JSON.stringify({
     '@context': 'https://schema.org',
@@ -374,11 +432,14 @@ ${commonHead({
         </div>
       </figure>` : ''}
 
-      <div class="container">
+      <div class="post__layout">
+        ${tocHTML ? `<aside class="post-toc-wrap">\n          ${tocHTML}\n        </aside>` : ''}
         <div class="post__body prose" itemprop="articleBody">
           ${htmlBody}
         </div>
+      </div>
 
+      <div class="container">
         ${galleryHTML}
 
         ${postCTAHTML()}
