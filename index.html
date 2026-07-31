@@ -30,7 +30,7 @@
   <meta name="theme-color"     content="#22293E">
 
   <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260731a" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260731b" crossorigin>
 
   <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
   <script>
@@ -40,7 +40,7 @@
   </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
-  <link rel="stylesheet" href="/css/styles.min.css?v=20260731a">
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260731b">
 
   <!-- Preload primer frame del scroll-video (LCP candidate) — high priority -->
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0001.webp" media="(min-width: 640px)" fetchpriority="high">
@@ -307,63 +307,61 @@
           </p>
         </div>
 
-        <div class="especialidades__grid" data-reveal-group>
+        <div class="svc-grid" data-reveal-group>
 
-          <article class="service-card service-card--cover">
-            <div class="service-card__cover" aria-hidden="true">
-              <img src="/assets/img/service-diseno-web.webp" alt="Maqueta de diseño web responsive con paleta y wireframes" loading="lazy" decoding="async">
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">Diseño web y presencia online</h3>
-              <p class="service-card__desc">Webs que generan impacto desde el primer scroll. Diseño mobile-first, SEO técnico avanzado y rendimiento optimizado para convertir visitas en clientes.</p>
-              <a href="/servicios/diseno-web" class="service-card__link">
-                Saber más
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
+          <a class="svc-cell" href="/servicios/diseno-web">
+            <span class="svc-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16"/><line x1="3" y1="9" x2="21" y2="9"/><circle cx="6" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </span>
+            <h3 class="svc-cell__title">Diseño web y presencia online</h3>
+            <p class="svc-cell__desc">Webs que convierten y posicionan. Mobile-first, SEO técnico y rendimiento medible.</p>
+            <span class="svc-cell__more">Saber más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
 
-          <article class="service-card service-card--cover">
-            <div class="service-card__cover" aria-hidden="true">
-              <img src="/assets/img/service-software.webp" alt="Servidores y cubos de datos representando desarrollo software a medida" loading="lazy" decoding="async">
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">Desarrollo software a medida</h3>
-              <p class="service-card__desc">Aplicaciones .NET robustas y escalables: desktop, web, servicios, integraciones y Azure. Soluciones que encajan exactamente con tu proceso.</p>
-              <a href="/servicios/desarrollo-software" class="service-card__link">
-                Saber más
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
+          <a class="svc-cell" href="/servicios/desarrollo-software">
+            <span class="svc-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <h3 class="svc-cell__title">Desarrollo software a medida</h3>
+            <p class="svc-cell__desc">Aplicaciones .NET a medida: desktop, web, servicios, integraciones y Azure.</p>
+            <span class="svc-cell__more">Saber más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
 
-          <article class="service-card service-card--cover">
-            <div class="service-card__cover" aria-hidden="true">
-              <img src="/assets/img/service-apps-mobile.webp" alt="Aplicación móvil iOS y Android con icono de mapa" loading="lazy" decoding="async">
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">Apps móviles</h3>
-              <p class="service-card__desc">Aplicaciones iOS, Android y Windows. Multiplataforma o nativas, con sincronización en la nube y diseño intuitivo para equipos de campo y gestión.</p>
-              <a href="/servicios/apps-mobile-api" class="service-card__link">
-                Saber más
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
+          <a class="svc-cell" href="/servicios/apps-mobile-api">
+            <span class="svc-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="1"/><line x1="10.5" y1="18" x2="13.5" y2="18"/></svg>
+            </span>
+            <h3 class="svc-cell__title">Apps móviles</h3>
+            <p class="svc-cell__desc">iOS, Android y Windows. Multiplataforma con .NET MAUI o nativas.</p>
+            <span class="svc-cell__more">Saber más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
 
-          <article class="service-card service-card--cover">
-            <div class="service-card__cover" aria-hidden="true">
-              <img src="/assets/img/service-apis.webp" alt="Diagrama de integraciones REST y APIs entre sistemas" loading="lazy" decoding="async">
-            </div>
-            <div class="service-card__body">
-              <h3 class="service-card__title">APIs e integraciones</h3>
-              <p class="service-card__desc">Conectamos tus sistemas. REST APIs, webhooks, integraciones con ERP, CRM, pasarelas de pago o cualquier servicio de terceros que tu negocio necesite.</p>
-              <a href="/servicios/apps-mobile-api" class="service-card__link">
-                Saber más
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </a>
-            </div>
-          </article>
+          <a class="svc-cell" href="/servicios/apps-mobile-api">
+            <span class="svc-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </span>
+            <h3 class="svc-cell__title">APIs e integraciones</h3>
+            <p class="svc-cell__desc">REST APIs, webhooks e integraciones con ERP, CRM y pasarelas de pago.</p>
+            <span class="svc-cell__more">Saber más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+
+          <a class="svc-cell" href="/servicios/mantenimiento-web">
+            <span class="svc-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </span>
+            <h3 class="svc-cell__title">Mantenimiento web</h3>
+            <p class="svc-cell__desc">Actualizaciones, copias, monitorización y soporte con persona real.</p>
+            <span class="svc-cell__more">Saber más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+
+          <a class="svc-cell" href="/servicios/posicionamiento-web">
+            <span class="svc-cell__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="m8.5 11.5 2 2 3.5-4"/></svg>
+            </span>
+            <h3 class="svc-cell__title">Posicionamiento web (SEO)</h3>
+            <p class="svc-cell__desc">SEO técnico, SEO local y contenidos para posicionar tu negocio en Google.</p>
+            <span class="svc-cell__more">Saber más <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
 
         </div>
       </div>
@@ -1014,7 +1012,7 @@
   </div>
 
   <!-- JS (minified) -->
-  <script src="/js/main.min.js?v=20260731a" defer></script>
+  <script src="/js/main.min.js?v=20260731b" defer></script>
 
 </body>
 </html>

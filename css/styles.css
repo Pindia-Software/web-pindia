@@ -744,6 +744,76 @@ ul, ol { list-style: none; }
   margin-top: var(--sp-12);
 }
 
+/* ── Rejilla de servicios con líneas (sin cajas, esquinas rectas) ── */
+.svc-grid {
+  margin-top: var(--sp-12);
+  display: grid;
+  grid-template-columns: 1fr;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+.svc-cell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-8);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: background var(--dur-base);
+}
+.svc-cell::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: -1px; right: -1px;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--dur-base) var(--ease);
+}
+.svc-cell:hover { background: var(--bg-card); }
+.svc-cell:hover::before { transform: scaleX(1); }
+.svc-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.svc-cell__icon {
+  display: flex;
+  color: var(--accent);
+  margin-bottom: var(--sp-1);
+}
+.svc-cell__icon svg { width: 28px; height: 28px; }
+.svc-cell__title {
+  font-size: var(--text-xl);
+  font-weight: var(--w-sb);
+  color: var(--text-1);
+  line-height: var(--lh-snug);
+}
+.svc-cell__desc {
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  line-height: var(--lh-base);
+  flex: 1;
+}
+.svc-cell__more {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--text-sm);
+  font-weight: var(--w-sb);
+  color: var(--accent);
+  margin-top: var(--sp-2);
+}
+.svc-cell__more svg { width: 16px; height: 16px; transition: transform var(--dur-base); }
+.svc-cell:hover .svc-cell__more svg { transform: translateX(4px); }
+
+@media (min-width: 640px) {
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 960px) {
+  .svc-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 .service-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
