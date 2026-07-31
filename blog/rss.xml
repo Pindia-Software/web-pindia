@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Fri, 31 Jul 2026 08:13:17 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 09:42:42 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>¿Cuánto cuesta hacer una app? Precios y factores en 2026</title>
+      <link>https://pindia.es/blog/posts/cuanto-cuesta-hacer-una-app/</link>
+      <description>Cuánto cuesta desarrollar una app móvil: rangos de precio por tipo, qué factores lo determinan, cómo abaratar sin arriesgar y cuánto se tarda. Guía de una empresa de desarrollo.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/cuanto-cuesta-hacer-una-app/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
 
     <item>
       <title>Diseño web profesional: qué es y cómo saber si tu web lo tiene</title>
