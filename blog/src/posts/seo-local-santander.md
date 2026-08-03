@@ -12,7 +12,7 @@ tags:
   - Negocio & Estrategia Digital
 cover: /assets/img/blog/seo-local-santander/cover.webp
 coverAlt: 'Marcador de mapa y lupa sobre un mapa de Santander, ilustrando el SEO local'
-draft: true
+draft: false
 ---
 
 El **SEO local** es el trabajo para que tu negocio aparezca en Google cuando alguien busca cerca de ti, por ejemplo "fontanero en Santander" o "asesoría en Cantabria". No compites con toda España: compites por la gente que está a tu lado y que puede acabar siendo tu cliente esta misma semana.

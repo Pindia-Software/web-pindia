@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Fri, 31 Jul 2026 10:55:12 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 06:44:32 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>App nativa, híbrida o web: cuál elegir para tu empresa</title>
+      <link>https://pindia.es/blog/posts/app-nativa-hibrida-web/</link>
+      <description>Diferencias entre app nativa, app híbrida (multiplataforma) y app web (PWA): rendimiento, coste, mantenimiento y cuándo conviene cada una. Guía práctica de una empresa de desarrollo.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/app-nativa-hibrida-web/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
 
     <item>
       <title>¿Cuánto cuesta hacer una app? Precios y factores en 2026</title>
@@ -14,6 +24,26 @@
       <description>Cuánto cuesta desarrollar una app móvil: rangos de precio por tipo, qué factores lo determinan, cómo abaratar sin arriesgar y cuánto se tarda. Guía de una empresa de desarrollo.</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/cuanto-cuesta-hacer-una-app/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>SEO local en Santander: cómo posicionar tu negocio en Google</title>
+      <link>https://pindia.es/blog/posts/seo-local-santander/</link>
+      <description>Guía práctica de SEO local para pymes de Santander y Cantabria: Google Business Profile, reseñas, keywords locales y web optimizada para aparecer en el mapa de Google. Escrita por una empresa de desarrollo.</description>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/seo-local-santander/</guid>
+      <author>info@pindia.es (Borja García)</author>
+      <category>SEO &amp; Crecimiento</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>ERP a medida: qué es, cuándo compensa frente a uno estándar y cuánto cuesta</title>
+      <link>https://pindia.es/blog/posts/erp-a-medida/</link>
+      <description>Qué es un ERP a medida, en qué se diferencia de un ERP estándar como SAP u Odoo, cuándo compensa desarrollarlo y cuánto cuesta. Guía de una empresa de desarrollo de software.</description>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/erp-a-medida/</guid>
       <author>info@pindia.es (Borja García)</author>
       <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
     </item>

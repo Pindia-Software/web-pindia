@@ -12,7 +12,7 @@ tags:
   - Negocio & Estrategia Digital
 cover: /assets/img/blog/erp-a-medida/cover.webp
 coverAlt: Sistema ERP a medida para la gestión de una empresa
-draft: true
+draft: false
 ---
 
 Un **ERP a medida** es un sistema de gestión desarrollado específicamente para tu empresa y tus procesos, en lugar de un paquete estándar (SAP, Odoo, Sage, Velneo) al que tienes que adaptar tu forma de trabajar. Reúne en un solo sitio lo que tu negocio necesita de verdad, encaja con cómo operas y el código es tuyo.

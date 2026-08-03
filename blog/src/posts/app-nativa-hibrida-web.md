@@ -12,7 +12,7 @@ tags:
   - Negocio & Estrategia Digital
 cover: /assets/img/blog/app-nativa-hibrida-web/cover.webp
 coverAlt: 'Comparativa entre app nativa, app híbrida y app web en la pantalla de un móvil'
-draft: true
+draft: false
 ---
 
 Cuando una empresa decide dar el salto al móvil, casi siempre aparece la misma duda: ¿hacemos una **app nativa**, una **app híbrida** o nos vale con una **app web**? Es una decisión que marca el coste, el rendimiento y el mantenimiento de los próximos años, así que conviene tomarla con criterio y no por moda.
