@@ -24,3 +24,8 @@
 # --- URL vieja movida en el rediseño: /productos/trowelapp -> /trowelapp/ (hoy da 404) ---
 /productos/trowelapp.html   /trowelapp/   301
 /productos/trowelapp        /trowelapp/   301
+
+# --- Contenido retirado: caso de éxito Construcciones Rotella (ver Azure #13683).
+#     301 al portfolio para no dejar enlaces rotos y conservar autoridad. ---
+/proyectos/construcciones-rotella.html  /proyectos/  301
+/proyectos/construcciones-rotella       /proyectos/  301
