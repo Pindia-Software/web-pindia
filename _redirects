@@ -21,6 +21,10 @@
 /proyectos/web-pindia.html          /proyectos/web-pindia          301
 /proyectos/web-trowelapp.html       /proyectos/web-trowelapp       301
 
+# --- Paginación del blog sin número: raíz -> listado (Google la infiere y da 404) ---
+/blog/page/   /blog/   301
+/blog/page    /blog/   301
+
 # --- URL vieja movida en el rediseño: /productos/trowelapp -> /trowelapp/ (hoy da 404) ---
 /productos/trowelapp.html   /trowelapp/   301
 /productos/trowelapp        /trowelapp/   301

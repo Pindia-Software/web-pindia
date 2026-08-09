@@ -2672,6 +2672,43 @@ ul, ol { list-style: none; }
   gap: var(--sp-6);
 }
 
+.post-related { margin-top: var(--sp-16); }
+.post-related__title {
+  font-size: var(--text-2xl);
+  font-weight: var(--w-sb);
+  margin-bottom: var(--sp-6);
+}
+
+/* Bloque "Más en el blog" en páginas de servicio (enlazado interno hacia posts) */
+.blog-links {
+  list-style: none;
+  margin-top: var(--sp-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+.blog-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-4) var(--sp-6);
+  font-size: var(--text-base);
+  font-weight: var(--w-med);
+  color: var(--text-1);
+  text-decoration: none;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.blog-links a:hover,
+.blog-links a:focus-visible {
+  border-color: var(--accent);
+  transform: translateX(3px);
+}
+.blog-links svg { flex: none; color: var(--accent); }
+
 .blog-card { display: flex; flex-direction: column; }
 
 .blog-card__cover-link {

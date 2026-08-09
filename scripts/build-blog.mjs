@@ -43,7 +43,7 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20260807a';
+const ASSET_VER = 'v=20260809a';
 
 // ── Partials (fuente única compartida con build-pages.mjs) ───────────────────
 
@@ -295,7 +295,7 @@ function postCTAHTML() {
 
 // ── Plantilla post individual ────────────────────────────────────────────────
 
-function renderPost(post) {
+function renderPost(post, allPosts) {
   const { slug, data, content } = post;
   const title       = data.title;
   const description = data.description || '';
@@ -442,6 +442,8 @@ ${commonHead({
       <div class="container">
         ${galleryHTML}
 
+        ${renderRelated(post, allPosts)}
+
         ${postCTAHTML()}
 
         <footer class="post__footer">
@@ -497,6 +499,37 @@ function renderBlogCard({ slug, data, content = '', hrefSuffix = '', headingLeve
               </a>
             </div>
           </article>`;
+}
+
+// Artículos relacionados: enlazado interno entre posts (crea rutas de rastreo
+// hacia los posts que solo viven en el sitemap). Prioriza etiquetas compartidas,
+// desempata por fecha y completa con los más recientes hasta 3 tarjetas.
+function renderRelated(current, allPosts) {
+  const curTags = new Set(Array.isArray(current.data.tags) ? current.data.tags : []);
+  const others  = allPosts.filter(p => p.slug !== current.slug);
+  if (!others.length) return '';
+
+  const related = others
+    .map(p => {
+      const pTags  = Array.isArray(p.data.tags) ? p.data.tags : [];
+      const shared = pTags.filter(t => curTags.has(t)).length;
+      return { post: p, shared, time: new Date(p.data.date).getTime() };
+    })
+    .sort((a, b) => b.shared - a.shared || b.time - a.time)
+    .slice(0, 3)
+    .map(s => s.post);
+
+  const cards = related
+    .map(({ slug, data, content }) => renderBlogCard({ slug, data, content, headingLevel: 3 }))
+    .join('\n\n            ');
+
+  return `
+        <section class="post-related" aria-labelledby="post-related-title">
+          <h2 id="post-related-title" class="post-related__title">Sigue leyendo</h2>
+          <div class="blog-grid" data-reveal-group>
+            ${cards}
+          </div>
+        </section>`;
 }
 
 function renderTagBar(tagList, activeTag) {
@@ -807,7 +840,7 @@ for (const post of posts) {
   const outDir  = join(POSTS_OUT, post.slug);
   const outFile = join(outDir, 'index.html');
   mkdirSync(outDir, { recursive: true });
-  writeFileSync(outFile, renderPost(post), 'utf8');
+  writeFileSync(outFile, renderPost(post, posts), 'utf8');
   console.log(`✓ post: ${post.slug}`);
 }
 
