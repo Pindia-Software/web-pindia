@@ -33,3 +33,9 @@
 #     301 al portfolio para no dejar enlaces rotos y conservar autoridad. ---
 /proyectos/construcciones-rotella.html  /proyectos/  301
 /proyectos/construcciones-rotella       /proyectos/  301
+
+# --- Fusión de contenido: la guía de SEO local de Cantabria se integró en la de
+#     Santander para eliminar canibalización entre ambas guías. 301 para conservar
+#     la autoridad acumulada desde feb 2026. ---
+/blog/posts/seo-local-cantabria/   /blog/posts/seo-local-santander/  301
+/blog/posts/seo-local-cantabria    /blog/posts/seo-local-santander   301

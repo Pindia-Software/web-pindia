@@ -35,31 +35,23 @@
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": "https://pindia.es/#website",
     "name": "Pindia Software",
     "url": "https://pindia.es",
-    "inLanguage": "es-ES"
+    "inLanguage": "es-ES",
+    "publisher": { "@id": "https://pindia.es/#organization" }
   }
   </script>
 
-  <!-- Schema: Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Pindia Software S.L.",
-    "url": "https://pindia.es",
-    "logo": "https://pindia.es/assets/icons/logo-nav.svg",
-    "email": "info@pindia.es",
-    "telephone": "+34942189733",
-    "sameAs": []
-  }
-  </script>
-
-  <!-- Schema: LocalBusiness -->
+  <!-- Schema: LocalBusiness — entidad canónica de la empresa.
+       Se define UNA sola vez aquí, con @id fijo. El resto de páginas la
+       referencian con {"@id": "https://pindia.es/#organization"} en lugar de
+       repetir los datos. No dupliques este bloque ni lo redefinas en otra página. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": ["ProfessionalService", "LocalBusiness"],
+    "@id": "https://pindia.es/#organization",
     "name": "Pindia Software S.L.",
     "legalName": "PINDIA SOFTWARE S.L.",
     "taxID": "B67353748",

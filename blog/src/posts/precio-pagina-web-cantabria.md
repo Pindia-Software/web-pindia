@@ -1,8 +1,9 @@
 ---
-title: Cuánto cuesta una página web en Cantabria
+title: 'Cuánto cuesta una página web: precios reales en 2026'
+metaTitle: 'Cuánto cuesta una página web | Precios reales 2026'
 description: >-
-  Cuánto cuesta hacer una página web profesional en Cantabria: rangos de precio
-  reales, qué influye en el presupuesto y qué deberías exigir antes de firmar.
+  Cuánto cuesta una página web profesional: rangos de precio reales por tipo de
+  proyecto, qué influye en el presupuesto y qué exigir antes de firmar.
 date: 2026-01-08T00:00:00.000Z
 author: Borja García
 tags:
@@ -21,7 +22,7 @@ Una web no es un producto de catálogo. Lo que cuesta es la suma de tres cosas: 
 
 Cuando alguien te ofrece "una web por 300 euros", probablemente esté hablando de una plantilla genérica con tu logo encima. Funciona. Hasta que necesitas modificar algo, posicionar en Google o que cargue rápido en móvil.
 
-## Rangos de precio reales en Cantabria
+## Rangos de precio reales por tipo de web
 
 Lo que vemos en el mercado, hablando con empresas de la región y revisando presupuestos que nos enseñan los clientes:
 
@@ -37,7 +38,7 @@ El número de páginas pesa menos de lo que la gente cree. Lo que de verdad muev
 
 También influye una cosa poco visible: el rigor técnico. Una web que carga en menos de un segundo en móvil, cumple WCAG, tiene cabeceras de seguridad y está bien indexada en Google requiere más trabajo que una web "que se ve". Pero es la diferencia entre captar clientes o que tu web sea una tarjeta de visita digital muerta.
 
-## Cuánto cuesta una web en Cantabria si la comparas con Madrid o Barcelona
+## Cuánto cuesta una web según dónde esté la agencia
 
 A igual calidad, los presupuestos en Cantabria suelen estar entre un 15 y un 30 por ciento por debajo de los de las grandes agencias de Madrid o Barcelona. No porque trabajemos peor, sino porque la estructura de costes de una agencia regional es más ligera. Esto es una buena noticia para empresas de Santander, Torrelavega o Castro Urdiales que quieren calidad de capital sin pagar overhead de capital.
 
@@ -49,7 +50,7 @@ Pide ver proyectos reales de la agencia, no solo capturas. Pide un desglose por 
 
 ## Y el mantenimiento
 
-A menudo se olvida en el presupuesto inicial y luego sorprende. Una web profesional necesita actualizaciones, copias de seguridad, monitorización y soporte. En Cantabria, los planes de mantenimiento razonables van desde los 40 hasta los 150 euros al mes según el nivel.
+A menudo se olvida en el presupuesto inicial y luego sorprende. Una web profesional necesita actualizaciones, copias de seguridad, monitorización y soporte. Nuestros planes van de **99 euros al mes** para una web corporativa a **199** para una pyme con web activa, y suben a partir de ahí si hay tienda online o integraciones.
 
 ## Más en el blog
 

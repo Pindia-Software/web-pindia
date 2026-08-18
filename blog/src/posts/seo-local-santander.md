@@ -44,6 +44,20 @@ El mapa es solo la mitad. La otra mitad, los resultados orgánicos, dependen de 
 
 Aquí, siendo una empresa de desarrollo, jugamos en casa: el SEO técnico y el rendimiento no se los pedimos a nadie, los aplicamos nosotros en tu web. Y sí, [una web lenta](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) tira por tierra todo el trabajo del mapa.
 
+## Las señales que Google mira fuera de tu web
+
+Buena parte del ranking local no se decide en tu web ni en tu ficha, sino en lo que otros dicen de ti. Cuentan dos cosas.
+
+La primera es el **NAP**: nombre, dirección y teléfono. Google necesita verlos idénticos en todas partes, y ese "idénticos" es más estricto de lo que parece. "Calle Vargas 12" y "C/ Vargas, 12" son dos negocios distintos para un algoritmo. La mayoría de empresas arrastra tres o cuatro variantes repartidas entre directorios antiguos, redes sociales y fichas que alguien creó hace años y nadie recuerda. Encontrarlas y unificarlas es trabajo lento y poco agradecido, pero es de lo que más mueve la aguja.
+
+La segunda es la **prominencia local**: menciones y enlaces desde fuentes de la zona. En Cantabria el mapa de esas fuentes es corto y concreto, y eso juega a favor de quien lo conoce. Medios como El Diario Montañés o Cantabria Económica, organizaciones como CEOE-CEPYME Cantabria, el ICANE, las cámaras de comercio y las asociaciones sectoriales pesan mucho más que cualquier directorio genérico nacional. Saber a cuáles merece la pena llamar, y con qué excusa, es la diferencia entre conseguir tres enlaces buenos y perder dos meses.
+
+## Lo que vemos cada semana cuando auditamos un negocio
+
+Casi siempre aparecen los mismos problemas, y casi ninguno es evidente desde fuera: fichas duplicadas compitiendo entre ellas, fichas sin verificar, un teléfono en la web distinto al de Google, la web sin schema o bloqueada a los buscadores por un error de configuración, y meses sin publicar nada.
+
+Ninguno de estos fallos da la cara. Tu web se ve bien, tu ficha existe, y sin embargo no apareces. Por eso el punto de partida sensato no es ponerse a publicar, es mirar qué está roto.
+
 ## Elegir las palabras: con datos, no a corazonadas
 
 El error más caro del SEO local es pelear meses por palabras que nadie busca, o que traen visitas pero no clientes. Acertar exige datos reales de búsqueda (volumen, competencia, intención) que solo se ven con herramientas profesionales de pago, y criterio para leerlos. Es el análisis con el que arrancamos cualquier proyecto, y lo que separa una estrategia que trae trabajo de una lista de palabras bonitas.
@@ -143,51 +157,3 @@ Depende del estado de partida de tu web y tu ficha, y de la competencia de tu se
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": ["ProfessionalService", "LocalBusiness"],
-  "name": "Pindia Software S.L.",
-  "legalName": "PINDIA SOFTWARE S.L.",
-  "taxID": "B67353748",
-  "url": "https://pindia.es",
-  "logo": "https://pindia.es/assets/icons/logo-nav.svg",
-  "image": "https://pindia.es/assets/img/og-home.webp",
-  "description": "Empresa de posicionamiento web y SEO local en Santander y Cantabria. SEO técnico, SEO local y Google Business Profile sobre webs desarrolladas a medida.",
-  "telephone": "+34942189733",
-  "email": "info@pindia.es",
-  "sameAs": [],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Calle Ramón Ramírez 5, 1º",
-    "addressLocality": "Santa Cruz de Bezana",
-    "addressRegion": "Cantabria",
-    "postalCode": "39100",
-    "addressCountry": "ES"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 43.4678,
-    "longitude": -3.8003
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }],
-  "areaServed": [
-    {"@type": "AdministrativeArea", "name": "Cantabria"},
-    {"@type": "City", "name": "Santander"},
-    {"@type": "Country", "name": "España"}
-  ],
-  "knowsAbout": [
-    "SEO local",
-    "Posicionamiento web",
-    "Google Business Profile",
-    "SEO técnico",
-    "Posicionamiento en Google",
-    "Marketing digital local"
-  ]
-}
-</script>

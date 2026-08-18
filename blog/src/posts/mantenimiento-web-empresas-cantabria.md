@@ -43,13 +43,13 @@ Un mantenimiento web serio cubre, como mínimo, cuatro frentes: **actualizacione
 
 Los precios que se manejan en el mercado, sin rodeos:
 
-| Plan | Precio/mes | Para quién | Qué incluye |
+| Nivel | Precio/mes | Para quién | Qué incluye |
 |------|-----------|------------|-------------|
-| Básico | 40–70 € | Web corporativa pequeña, pocos cambios | Actualizaciones, copias diarias, monitorización de caídas, soporte por email |
-| Estándar | 70–130 € | Pyme con web activa | Lo anterior + staging, horas mensuales de cambios, informe mensual, soporte telefónico |
-| Avanzado | 130–200 € | Tienda online o web con integraciones | Lo anterior + monitorización de pasarela y stock, prioridad de respuesta, optimización continua de rendimiento |
+| Mínimo | 40–70 € | Web corporativa pequeña, pocos cambios | Actualizaciones, copias diarias, monitorización de caídas, soporte por email |
+| Intermedio | 70–130 € | Pyme con web activa | Lo anterior + staging, horas mensuales de cambios, informe mensual, soporte telefónico |
+| Alto | 130–200 € | Tienda online o web con integraciones | Lo anterior + monitorización de pasarela y stock, prioridad de respuesta, optimización continua de rendimiento |
 
-Una web corporativa estándar de una pyme se mantiene razonablemente bien por **entre 60 y 120 € mensuales**, con horas incluidas para pequeños cambios.
+Una web corporativa de pyme con soporte real, horas incluidas para cambios y copias que se restauran de verdad se mueve en la **parte alta de esa horquilla**, no en la baja.
 
 **Si te ofrecen mantenimiento por 15 € al mes, pregunta qué incluye.** Casi seguro que es solo hosting: sin actualizaciones, sin monitorización y sin soporte humano.
 
@@ -134,7 +134,7 @@ Es el conjunto de tareas que mantienen una web funcionando, segura y actualizada
 
 ### ¿Cuánto cuesta el mantenimiento de una página web al mes?
 
-Entre 40 y 200 € mensuales según el alcance. Una web corporativa de pyme se mantiene bien por 60–120 € al mes. Por debajo de 20 € normalmente solo estás pagando hosting.
+Entre 40 y 200 € mensuales según el alcance. Con soporte real, horas incluidas y copias que se restauran de verdad, una web corporativa de pyme se mueve en la parte alta de esa horquilla. Por debajo de 20 € normalmente solo estás pagando hosting.
 
 ### ¿Es obligatorio el mantenimiento web?
 
@@ -154,7 +154,7 @@ Sí, siempre que tengas acceso al dominio, al hosting y al código. Compruébalo
 
 ### ¿Cuánto cuesta mantener una tienda online?
 
-Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Suele partir de 130 € al mes.
+Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Queda por encima de los planes estándar y se presupuesta según el alcance.
 
 ### ¿Cuánto cuesta el mantenimiento web en Pindia?
 
@@ -185,7 +185,7 @@ Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 hor
       "name": "¿Cuánto cuesta el mantenimiento de una página web al mes?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entre 40 y 200 € mensuales según el alcance. Una web corporativa de pyme se mantiene bien por 60–120 € al mes. Por debajo de 20 € normalmente solo estás pagando hosting."
+        "text": "Entre 40 y 200 € mensuales según el alcance. Con soporte real, horas incluidas y copias que se restauran de verdad, una web corporativa de pyme se mueve en la parte alta de esa horquilla. Por debajo de 20 € normalmente solo estás pagando hosting."
       }
     },
     {
@@ -225,7 +225,7 @@ Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 hor
       "name": "¿Cuánto cuesta mantener una tienda online?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Suele partir de 130 € al mes."
+        "text": "Más que una web corporativa, porque hay que vigilar la pasarela de pago, el stock y las integraciones. Queda por encima de los planes estándar y se presupuesta según el alcance."
       }
     },
     {
@@ -240,50 +240,3 @@ Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 hor
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": ["ProfessionalService", "LocalBusiness"],
-  "name": "Pindia Software S.L.",
-  "legalName": "PINDIA SOFTWARE S.L.",
-  "taxID": "B67353748",
-  "url": "https://pindia.es",
-  "logo": "https://pindia.es/assets/icons/logo-nav.svg",
-  "image": "https://pindia.es/assets/img/og-home.webp",
-  "description": "Empresa de desarrollo de software y diseño web en Cantabria. Ofrece mantenimiento web para empresas: actualizaciones, copias de seguridad, monitorización y soporte.",
-  "telephone": "+34942189733",
-  "email": "info@pindia.es",
-  "sameAs": [],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Calle Ramón Ramírez 5, 1º",
-    "addressLocality": "Santa Cruz de Bezana",
-    "addressRegion": "Cantabria",
-    "postalCode": "39100",
-    "addressCountry": "ES"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 43.4678,
-    "longitude": -3.8003
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }],
-  "areaServed": [
-    {"@type": "AdministrativeArea", "name": "Cantabria"},
-    {"@type": "Country", "name": "España"}
-  ],
-  "knowsAbout": [
-    "Mantenimiento web",
-    "Mantenimiento de WordPress",
-    "Copias de seguridad y restauración",
-    "Monitorización de sitios web",
-    "Actualizaciones de seguridad",
-    "Soporte técnico web"
-  ]
-}
-</script>

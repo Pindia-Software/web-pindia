@@ -332,8 +332,9 @@ function renderPost(post, allPosts) {
     description,
     datePublished: dateISO,
     author: { '@type': 'Person', name: author },
-    publisher: { '@type': 'Organization', name: 'Pindia Software S.L.', url: SITE_URL,
-      logo: { '@type': 'ImageObject', url: `${SITE_URL}/assets/icons/logo-nav.svg` } },
+    // La entidad de empresa se define una sola vez en la home. Aquí solo se
+    // referencia por @id para no crear una entidad nueva en cada post.
+    publisher: { '@id': `${SITE_URL}/#organization` },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     ...(cover ? { image: ogImage } : {}),
     ...(tags.length ? { keywords: tags.join(', ') } : {}),
@@ -579,7 +580,7 @@ function renderBlogList(posts, pageNum, totalPages, tagList = [], activeTag = nu
     name: 'Blog de Pindia Software',
     url: `${SITE_URL}/blog/`,
     description: 'Ideas, novedades y reflexiones sobre software, diseño web y digitalización',
-    publisher: { '@type': 'Organization', name: 'Pindia Software S.L.', url: SITE_URL },
+    publisher: { '@id': `${SITE_URL}/#organization` },
   });
 
   const cards = posts.map(({ slug, data, content }) =>

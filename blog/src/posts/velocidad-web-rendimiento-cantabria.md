@@ -80,7 +80,7 @@ Es una conversación que merece honestidad: a veces optimizar es tirar dinero si
 
 - [Core Web Vitals: qué son y cómo medirlas](../core-web-vitals-que-son/), Si quieres entender exactamente qué mide Google.
 - [10 errores web (soluciones)](../errores-comunes-web-empresa/), Velocidad lenta es el error #4, pero hay otros.
-- [SEO local: cómo aparecer cuando te buscan](../seo-local-cantabria/), La velocidad es una parte del SEO local.
+- [SEO local en Santander](../seo-local-santander/), La velocidad es una parte del SEO local.
 - [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/), Si decides rehacer, protege tu posicionamiento.
 
 ## Siguiente paso

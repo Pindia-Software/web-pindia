@@ -50,7 +50,7 @@ La buena noticia: como la competencia local es baja, con hacer bien lo básico y
 
 Esto es lo que estás pagando (o lo que tienes que hacer tú):
 
-- **SEO local**: optimizar tu ficha de Google, conseguir reseñas y mantener tus datos (nombre, dirección, teléfono) idénticos en todas partes. Es la palanca más rentable y la explicamos a fondo en [SEO local: cómo aparecer cuando te buscan](https://pindia.es/blog/posts/seo-local-cantabria/).
+- **SEO local**: optimizar tu ficha de Google, conseguir reseñas y mantener tus datos (nombre, dirección, teléfono) idénticos en todas partes. Es la palanca más rentable y la explicamos a fondo en [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/).
 - **SEO on-page**: títulos, descripciones y contenido de cada página orientados a lo que busca la gente, incluyendo el "en Santander" donde tiene sentido.
 - **SEO técnico**: que Google pueda rastrear e indexar tu web sin problemas, con datos estructurados y URLs limpias.
 - **Rendimiento**: una web lenta no posiciona. Google lo mide con las [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), y una web lenta [pierde clientes](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) además de posiciones.
@@ -139,7 +139,7 @@ Sí. Una web lenta posiciona peor y convierte peor. Google mide el rendimiento c
 
 ## Más en el blog
 
-- [SEO local: cómo aparecer cuando te buscan](https://pindia.es/blog/posts/seo-local-cantabria/), la guía práctica: ficha de Google, reseñas, mapas y NAP.
+- [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/), la guía práctica: ficha de Google, reseñas, mapas y NAP.
 - [Cómo elegir empresa de diseño web en Santander](https://pindia.es/blog/posts/empresa-diseno-web-santander/), qué mirar antes de contratar.
 - [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), cómo mide Google el rendimiento de tu web.
 - [Cómo acelerar una web lenta](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/), la velocidad también posiciona.
@@ -209,51 +209,3 @@ Sí. Una web lenta posiciona peor y convierte peor. Google mide el rendimiento c
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": ["ProfessionalService", "LocalBusiness"],
-  "name": "Pindia Software S.L.",
-  "legalName": "PINDIA SOFTWARE S.L.",
-  "taxID": "B67353748",
-  "url": "https://pindia.es",
-  "logo": "https://pindia.es/assets/icons/logo-nav.svg",
-  "image": "https://pindia.es/assets/img/og-home.webp",
-  "description": "Empresa de diseño web y posicionamiento web en Santander (Cantabria). SEO local, SEO técnico, rendimiento y contenido para empresas.",
-  "telephone": "+34942189733",
-  "email": "info@pindia.es",
-  "sameAs": [],
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Calle Ramón Ramírez 5, 1º",
-    "addressLocality": "Santa Cruz de Bezana",
-    "addressRegion": "Cantabria",
-    "postalCode": "39100",
-    "addressCountry": "ES"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 43.4678,
-    "longitude": -3.8003
-  },
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }],
-  "areaServed": [
-    {"@type": "City", "name": "Santander"},
-    {"@type": "AdministrativeArea", "name": "Cantabria"},
-    {"@type": "Country", "name": "España"}
-  ],
-  "knowsAbout": [
-    "Posicionamiento web",
-    "SEO local",
-    "SEO técnico",
-    "Google Business Profile",
-    "Core Web Vitals",
-    "Diseño web en Santander"
-  ]
-}
-</script>

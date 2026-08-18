@@ -75,7 +75,7 @@ Una landing nunca está terminada. Hay que medir conversión, identificar dónde
 
 - [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/), Una landing lenta mata conversión.
 - [10 errores web (soluciones)](../errores-comunes-web-empresa/), Errores que reducen tu conversión.
-- [SEO local: cómo aparecer cuando te buscan](../seo-local-cantabria/), El tráfico empieza en SEO, la conversión en landing.
+- [SEO local en Santander](../seo-local-santander/), El tráfico empieza en SEO, la conversión en landing.
 - [Cuánto cuesta una página web](../precio-pagina-web-cantabria/), Una buena landing es una inversión, no un gasto.
 
 Si tienes campañas en marcha y la landing actual no está funcionando, o quieres lanzar una nueva línea de negocio en Cantabria con una landing potente, [hablemos](/contacto/). Empezamos por entender qué quieres conseguir y montamos solo lo necesario.
