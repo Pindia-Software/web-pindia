@@ -43,7 +43,17 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20260809a';
+const ASSET_VER = 'v=20260818a';
+
+// Autora de referencia del blog. Su perfil se enlaza desde el schema (Person.sameAs)
+// y desde la caja de autor al final de cada post: es señal de E-E-A-T, que Google
+// pondera especialmente en contenido de precios y asesoramiento.
+// Si un post lo firma otra persona, se muestra su nombre sin enlazar este perfil.
+const AUTHOR_PROFILE = {
+  name: 'Beatriz Santa Cruz Llanillo',
+  sameAs: 'https://www.linkedin.com/in/beatriz-santa-cruz-llanillo-1766b5170/',
+  role: 'Responsable de proyectos en Pindia Software',
+};
 
 // ── Partials (fuente única compartida con build-pages.mjs) ───────────────────
 
@@ -289,6 +299,20 @@ ${extraSchema.map(s => `  <script type="application/ld+json">${s}</script>`).joi
 
 // ── CTA Template ────────────────────────────────────────────────────────────
 
+function authorBoxHTML(author) {
+  const esPerfil = author === AUTHOR_PROFILE.name;
+  const role = esPerfil && AUTHOR_PROFILE.role
+    ? `\n          <p class="post-author__role">${escapeHTML(AUTHOR_PROFILE.role)}</p>`
+    : '';
+  const link = esPerfil
+    ? `\n          <a class="post-author__link" href="${AUTHOR_PROFILE.sameAs}" rel="me noopener" target="_blank">Ver perfil en LinkedIn</a>`
+    : '';
+  return `<aside class="post-author" aria-label="Sobre la autora">
+          <p class="post-author__eyebrow">Escrito por</p>
+          <p class="post-author__name">${escapeHTML(author)}</p>${role}${link}
+        </aside>`;
+}
+
 function postCTAHTML() {
   return '\n        ' + indentPartial(loadPartial('cta-blog'), '        ');
 }
@@ -331,7 +355,9 @@ function renderPost(post, allPosts) {
     headline: title,
     description,
     datePublished: dateISO,
-    author: { '@type': 'Person', name: author },
+    author: author === AUTHOR_PROFILE.name
+      ? { '@type': 'Person', name: author, sameAs: [AUTHOR_PROFILE.sameAs] }
+      : { '@type': 'Person', name: author },
     // La entidad de empresa se define una sola vez en la home. Aquí solo se
     // referencia por @id para no crear una entidad nueva en cada post.
     publisher: { '@id': `${SITE_URL}/#organization` },
@@ -442,6 +468,8 @@ ${commonHead({
 
       <div class="container">
         ${galleryHTML}
+
+        ${authorBoxHTML(author)}
 
         ${renderRelated(post, allPosts)}
 

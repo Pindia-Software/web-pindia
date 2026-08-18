@@ -6,7 +6,7 @@ description: >-
   Odoo, cuándo compensa desarrollarlo y cuánto cuesta. Guía de una empresa de
   desarrollo de software.
 date: 2026-07-28T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

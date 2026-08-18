@@ -5,7 +5,7 @@ description: >-
   Guía práctica para diseñar una landing page que convierta: estructura, copy,
   formularios y errores que hacen que la gente se vaya.
 date: 2026-03-19T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - SEO & Crecimiento
 cover: /assets/img/blog/landing-page-conversion-cantabria/cover.webp

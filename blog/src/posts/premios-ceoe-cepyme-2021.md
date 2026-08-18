@@ -2,7 +2,7 @@
 title: 'Premios CEOE-CEPYME 2021'
 description: 'Asistimos a la gala de los Premios CEOE-CEPYME Cantabria 2021, que reconoció el trabajo de empresas como IMEM Ascensores, CIC Consulting y ANDROS.'
 date: 2021-10-29T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - General
 cover: /assets/img/blog/premios-ceoe-cepyme-2021/cover.webp

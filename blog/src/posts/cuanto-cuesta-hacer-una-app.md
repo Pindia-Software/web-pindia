@@ -6,7 +6,7 @@ description: >-
   factores lo determinan, cómo abaratar sin arriesgar y cuánto se tarda. Guía de
   una empresa de desarrollo.
 date: 2026-07-30T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

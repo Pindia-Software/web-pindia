@@ -5,7 +5,7 @@ description: >-
   merece la pena frente a una plantilla. Guía escrita por una empresa de
   desarrollo.
 date: 2026-07-17T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

@@ -4,7 +4,7 @@ description: >-
   Cómo planificar una tienda online en Cantabria que venda de verdad:
   plataforma, logística, pasarelas y SEO local. Sin humo.
 date: 2026-01-29T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
 cover: /assets/img/blog/tienda-online-cantabria/cover.webp

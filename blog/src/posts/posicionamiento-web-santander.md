@@ -6,7 +6,7 @@ description: >-
   tarda en notarse y cómo elegir empresa. Guía honesta por una empresa de
   desarrollo.
 date: 2026-07-24T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - SEO & Crecimiento
   - Negocio & Estrategia Digital

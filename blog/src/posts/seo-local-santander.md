@@ -6,7 +6,7 @@ description: >-
   Business Profile, reseñas, keywords locales y web optimizada para aparecer en
   el mapa de Google. Escrita por una empresa de desarrollo.
 date: 2026-07-30T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - SEO & Crecimiento
   - Negocio & Estrategia Digital

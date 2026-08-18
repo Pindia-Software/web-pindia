@@ -5,7 +5,7 @@ description: >-
   Cuándo tiene sentido integrar la web con tu ERP (Holded, A3, Sage, SAP) y qué
   procesos automatizar primero. Casos reales en Cantabria.
 date: 2026-04-16T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Negocio & Estrategia Digital
 cover: /assets/img/blog/integracion-erp-web-empresa/cover.webp

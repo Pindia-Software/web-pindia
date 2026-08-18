@@ -2672,6 +2672,42 @@ ul, ol { list-style: none; }
   gap: var(--sp-6);
 }
 
+/* Caja de autoría al final del post. Señal de E-E-A-T: quién firma y dónde
+   verificarlo. Solo enlaza el perfil cuando firma la autora de referencia. */
+.post-author {
+  max-width: var(--post-col);
+  margin: var(--sp-16) auto 0;
+  padding: var(--sp-6);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+}
+.post-author__eyebrow {
+  font-size: var(--text-xs);
+  font-weight: var(--w-med);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: var(--sp-2);
+}
+.post-author__name {
+  font-size: var(--text-lg);
+  font-weight: var(--w-sb);
+  color: var(--text-1);
+  line-height: var(--lh-snug);
+}
+.post-author__role {
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  margin-top: var(--sp-1);
+}
+.post-author__link {
+  display: inline-block;
+  margin-top: var(--sp-3);
+  font-size: var(--text-sm);
+  font-weight: var(--w-med);
+}
+
 .post-related { margin-top: var(--sp-16); }
 .post-related__title {
   font-size: var(--text-2xl);

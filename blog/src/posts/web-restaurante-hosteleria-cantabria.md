@@ -4,7 +4,7 @@ description: >-
   Cómo debe ser la web de un restaurante en Cantabria: reservas, carta, SEO
   local y errores que cuestan clientes. Con casos reales.
 date: 2026-04-02T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
 cover: /assets/img/blog/web-restaurante-hosteleria-cantabria/cover.webp

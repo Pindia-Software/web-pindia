@@ -2,7 +2,7 @@
 title: Finalistas en los Premios Talento Cantabria
 description: 'Pindia Software, finalista en los Premios Talento Cantabria: un reconocimiento al trabajo en proyectos empresariales desarrollados en la región.'
 date: 2021-10-19T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - General
 cover: /assets/img/blog/finalistas-talento-cantabria/cover.webp

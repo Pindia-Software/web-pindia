@@ -5,7 +5,7 @@ description: >-
   Plan paso a paso para migrar la web de tu empresa sin perder SEO ni tráfico.
   Redirecciones, indexación y errores que cuestan caros.
 date: 2026-04-23T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - SEO & Crecimiento

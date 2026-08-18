@@ -4,7 +4,7 @@ description: >-
   Guía honesta para elegir una empresa de diseño web en Santander: qué mirar,
   qué preguntar y cómo evitar los errores que vemos repetirse.
 date: 2026-01-15T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
 cover: /assets/img/blog/empresa-diseno-web-santander/cover.webp

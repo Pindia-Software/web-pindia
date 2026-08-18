@@ -2,7 +2,7 @@
 title: 'Desarrollo de webs con IA: verdades y mentiras'
 description: 'ChatGPT, Cursor, GitHub Copilot: ¿pueden reemplazar a un desarrollador? Qué hace bien la IA, dónde falla y cuándo tiene sentido usarla.'
 date: 2026-05-02
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

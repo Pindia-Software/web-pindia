@@ -6,7 +6,7 @@ description: >-
   saber si el que pagas es un timo. Precios reales y sin humo, por una empresa
   de desarrollo.
 date: 2026-07-22T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

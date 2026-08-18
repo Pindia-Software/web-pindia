@@ -6,7 +6,7 @@ description: >-
   programa estándar y cuánto cuesta de verdad. Guía escrita por una empresa de
   desarrollo.
 date: 2026-07-24T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

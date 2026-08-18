@@ -5,7 +5,7 @@ description: >-
   Qué necesita una web española para cumplir con RGPD y la guía de cookies de la
   AEPD. Sanciones, banners, y casos de empresas en Cantabria.
 date: 2026-03-26T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Cumplimiento & Accesibilidad
 cover: /assets/img/blog/rgpd-cookies-web-cantabria/cover.webp

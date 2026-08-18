@@ -6,7 +6,7 @@ description: >-
   los 7 criterios objetivos que lo definen y un checklist para saber si tu web
   los cumple.
 date: 2026-07-27T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

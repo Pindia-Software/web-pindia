@@ -4,7 +4,7 @@ description: >-
   Los errores más frecuentes que vemos en webs corporativas de empresas de
   Cantabria, con ejemplos reales y soluciones aplicables.
 date: 2026-03-05T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Cumplimiento & Accesibilidad
   - Diseño & Desarrollo Web

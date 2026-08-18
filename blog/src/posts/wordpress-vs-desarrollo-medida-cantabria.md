@@ -4,7 +4,7 @@ description: >-
   WordPress vs desarrollo web a medida para empresas en Cantabria: ventajas,
   costes y cuándo tiene sentido cada uno. Sin religión.
 date: 2026-02-12T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
 cover: /assets/img/blog/wordpress-vs-desarrollo-medida-cantabria/cover.webp

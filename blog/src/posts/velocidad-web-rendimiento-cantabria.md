@@ -5,7 +5,7 @@ description: >-
   Soluciones prácticas para mejorar velocidad web en Cantabria. Diagnóstico, 
   herramientas, qué arreglar primero y cuándo rehacer. Sin tecnicismos innecesarios.
 date: 2026-02-26T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - SEO & Crecimiento

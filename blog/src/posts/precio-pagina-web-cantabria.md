@@ -5,7 +5,7 @@ description: >-
   Cuánto cuesta una página web profesional: rangos de precio reales por tipo de
   proyecto, qué influye en el presupuesto y qué exigir antes de firmar.
 date: 2026-01-08T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

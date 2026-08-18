@@ -4,7 +4,7 @@ description: >-
   Qué necesita realmente la web de una pyme en Santander: estructura mínima
   útil, presupuesto razonable y errores que conviene evitar.
 date: 2026-03-12T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

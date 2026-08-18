@@ -4,7 +4,7 @@ description: >-
   Qué es la accesibilidad web (WCAG, EN 301 549) y por qué cualquier empresa,
   también en Cantabria, debería tomársela en serio.
 date: 2026-04-09T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Cumplimiento & Accesibilidad
   - Diseño & Desarrollo Web

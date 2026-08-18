@@ -5,7 +5,7 @@ description: >-
   Ejemplos de páginas web profesionales de empresas en Cantabria: qué hacen
   bien, qué se podría mejorar y qué te sirve a ti como referencia.
 date: 2026-02-05T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital

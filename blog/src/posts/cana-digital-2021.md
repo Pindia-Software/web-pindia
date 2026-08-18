@@ -2,7 +2,7 @@
 title: 'Caña Digital: construcción digital'
 description: 'Pindia participó en el primer Caña Digital de la Oficina Acelera PYME de CEOE-CEPYME Cantabria: un encuentro sobre modernización del sector constructor.'
 date: 2021-11-11T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - General
   - Negocio & Estrategia Digital

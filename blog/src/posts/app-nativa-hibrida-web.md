@@ -6,7 +6,7 @@ description: >-
   rendimiento, coste, mantenimiento y cuándo conviene cada una. Guía práctica de
   una empresa de desarrollo.
 date: 2026-07-30T00:00:00.000Z
-author: Borja García
+author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital
