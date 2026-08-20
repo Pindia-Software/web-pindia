@@ -444,12 +444,18 @@
     <section class="section section--alt proyectos" id="proyectos" aria-labelledby="proy-title">
       <style>
         .proyectos .project-card { position: relative; }
+        /* El bloque contenedor del pseudo es .project-card__body (position:absolute),
+           no la tarjeta. Se estira hacia arriba y .project-card (overflow:hidden) lo
+           recorta justo al area de la tarjeta: asi toda la tarjeta es clicable. */
         .proyectos .stretched-link::after {
           content: '';
           position: absolute;
-          inset: 0;
+          inset: -1000px 0 0 0;
           z-index: 1;
         }
+        /* Evita que el arrastre del carrusel dispare el drag nativo de enlace/imagen. */
+        .proyectos .stretched-link,
+        .proyectos .project-card__thumb img { -webkit-user-drag: none; }
       </style>
       <div class="container">
 

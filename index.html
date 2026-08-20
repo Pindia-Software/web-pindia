@@ -30,7 +30,7 @@
   <meta name="theme-color"     content="#22293E">
 
   <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260818a" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260820a" crossorigin>
 
   <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
   <script>
@@ -40,7 +40,7 @@
   </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
-  <link rel="stylesheet" href="/css/styles.min.css?v=20260818a">
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260820a">
 
   <!-- Preload primer frame del scroll-video (LCP candidate) — high priority -->
   <link rel="preload" as="image" href="/assets/videos/frames/frame_0001.webp" media="(min-width: 640px)" fetchpriority="high">
@@ -530,12 +530,18 @@
     <section class="section section--alt proyectos" id="proyectos" aria-labelledby="proy-title">
       <style>
         .proyectos .project-card { position: relative; }
+        /* El bloque contenedor del pseudo es .project-card__body (position:absolute),
+           no la tarjeta. Se estira hacia arriba y .project-card (overflow:hidden) lo
+           recorta justo al area de la tarjeta: asi toda la tarjeta es clicable. */
         .proyectos .stretched-link::after {
           content: '';
           position: absolute;
-          inset: 0;
+          inset: -1000px 0 0 0;
           z-index: 1;
         }
+        /* Evita que el arrastre del carrusel dispare el drag nativo de enlace/imagen. */
+        .proyectos .stretched-link,
+        .proyectos .project-card__thumb img { -webkit-user-drag: none; }
       </style>
       <div class="container">
 
@@ -1089,7 +1095,7 @@
   </div>
 
   <!-- JS (minified) -->
-  <script src="/js/main.min.js?v=20260818a" defer></script>
+  <script src="/js/main.min.js?v=20260820a" defer></script>
 
 </body>
 </html>

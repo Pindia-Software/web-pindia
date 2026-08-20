@@ -805,13 +805,19 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
       if (e.pointerType !== 'mouse' || e.button !== 0) return;
       if (raf) cancelAnimationFrame(raf);
       down = true; moved = false; startX = e.clientX; startScroll = track.scrollLeft;
-      try { track.setPointerCapture(e.pointerId); } catch (_) {}
-      track.classList.add('is-dragging');
     });
     track.addEventListener('pointermove', function (e) {
       if (!down) return;
       var dx = e.clientX - startX;
-      if (Math.abs(dx) > 4) moved = true;
+      // La captura de puntero se activa solo cuando hay arrastre real: si se
+      // capturase ya en pointerdown, el click posterior se redirigiria al track
+      // y los enlaces de las tarjetas nunca se abririan.
+      if (!moved) {
+        if (Math.abs(dx) <= 4) return;
+        moved = true;
+        try { track.setPointerCapture(e.pointerId); } catch (_) {}
+        track.classList.add('is-dragging');
+      }
       track.scrollLeft = startScroll - dx;
     });
     function release() {
