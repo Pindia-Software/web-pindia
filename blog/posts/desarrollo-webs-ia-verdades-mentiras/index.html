@@ -174,7 +174,7 @@
               <li><a href="#que-no-dejar-a-ia">Qué NO dejar a IA</a></li>
               <li><a href="#el-futuro">El futuro</a></li>
               <li><a href="#mas-en-el-blog">Más en el blog</a></li>
-              <li><a href="#si-necesitas-una-web">Si necesitás una web</a></li>
+              <li><a href="#si-necesitas-una-web">Si necesitas una web</a></li>
             </ol>
           </nav>
           
@@ -195,7 +195,7 @@
 <p>Pensar en datos. ¿Qué información necesita la web? ¿Cómo se estructura? ¿Qué pasa si el usuario está offline?</p>
 <p>Pensar en seguridad. ¿Dónde entra la entrada del usuario? ¿Podría injectar SQL? ¿Qué rutas protejo?</p>
 <p>Pensar en rendimiento. ¿Cuántos usuarios simultáneos? ¿Cacheo qué? ¿Dónde está el cuello de botella?</p>
-<p>ChatGPT puede escribir código que haría lo anterior. Pero si vos no entendés qué debería hacer, no sabés ni pedirle correctamente. Y si ChatGPT genera código inseguro, lenguaje de consultores.</p>
+<p>ChatGPT puede escribir código que haría lo anterior. Pero si tú no entiendes qué debería hacer, no sabes ni pedírselo bien. Y si ChatGPT genera código inseguro, lenguaje de consultores.</p>
 <p>Ejemplo de la vida real: pedimos a ChatGPT que generara un endpoint de login. Escribió código sin sanitización de entrada, sin rate limiting, sin hashing de contraseña correcto. Parecía funcional. Un desarrollador junior sin experiencia hubiera puesto eso en producción.</p>
 <p>Una IA no piensa en &quot;¿y si alguien intenta romper esto?&quot; Una IA no conoce tu negocio. Una IA no sabe que en tu web &quot;offline-first&quot; es un requisito fundamental.</p>
 <h2 id="donde-la-ia-si-funciona"><a href="#donde-la-ia-si-funciona" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Dónde la IA sí funciona</h2><p><strong>Scaffolding y boilerplate.</strong> &quot;Genera una estructura Next.js con TypeScript, ESLint y Testing Library.&quot; 2 minutos, no 30.</p>
@@ -220,24 +220,24 @@
 <p><strong>Un componente React generado con IA.</strong> Parecía correcto. Pero tenía un memory leak (event listeners no se removían). El cliente se dio cuenta cuando la app se ralentizaba tras 10 minutos de uso.</p>
 <h2 id="el-flujo-real-ia-humano"><a href="#el-flujo-real-ia-humano" class="prose__anchor" aria-label="Enlace a esta sección">#</a>El flujo real: IA + humano</h2><p>Aquí es donde funciona:</p>
 <ol>
-<li><strong>Vos describes el problema.</strong> &quot;Necesito un endpoint que devuelva el top 10 de posts por engagement, cachéados 1 hora, con paginación.&quot;</li>
+<li><strong>Tú describes el problema.</strong> &quot;Necesito un endpoint que devuelva el top 10 de posts por engagement, cachéados 1 hora, con paginación.&quot;</li>
 <li><strong>IA genera un primer borrador.</strong> 10 minutos en vez de 1 hora.</li>
-<li><strong>Vos lo revisás críticamente.</strong> ¿Hay validación? ¿Está protegido contra SQL injection? ¿El cache es eficiente? ¿Qué pasa si no hay posts?</li>
-<li><strong>Vos lo ajustás.</strong> Agregás error handling, validación, casos edge.</li>
-<li><strong>Vos lo testeas.</strong> Tests unitarios + integración.</li>
+<li><strong>Tú lo revisas críticamente.</strong> ¿Hay validación? ¿Está protegido contra SQL injection? ¿El cache es eficiente? ¿Qué pasa si no hay posts?</li>
+<li><strong>Tú lo ajustas.</strong> Añades control de errores, validación y casos límite.</li>
+<li><strong>Tú lo pruebas.</strong> Tests unitarios + integración.</li>
 <li><strong>Sale a producción.</strong></li>
 </ol>
 <p>Eso es desarrollo moderno con IA. No es &quot;ChatGPT escribe todo&quot;. Es &quot;IA acelera lo tedioso, yo pienso en lo importante&quot;.</p>
 <h2 id="cuando-contratar-una-agencia-no-ia"><a href="#cuando-contratar-una-agencia-no-ia" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cuándo contratar una agencia (no IA)</h2><p>Un startup llamó diciendo: &quot;Queremos una web, que sea rápida, que escale a 1M de usuarios, y que ChatGPT la haga para ahorrar.&quot; Tenían presupuesto para 2 webs decentes.</p>
-<p>La respuesta honesta: si querés que escale a 1M usuarios sin que se caiga, necesitás arquitectura, testing, monitoreo, iteración. IA te da código. Un equipo senior te da un sistema.</p>
+<p>La respuesta honesta: si quieres que escale a un millón de usuarios sin caerse, necesitas arquitectura, pruebas, monitorización e iteración. IA te da código. Un equipo senior te da un sistema.</p>
 <p>No es &quot;IA o desarrolladores&quot;. Es &quot;IA para lo mecánico, desarrolladores para lo inteligente&quot;.</p>
-<h2 id="el-mercado-hoy"><a href="#el-mercado-hoy" class="prose__anchor" aria-label="Enlace a esta sección">#</a>El mercado hoy</h2><p>Hay un boom de &quot;agencias IA&quot; que venden &quot;webs en 24 horas con ChatGPT&quot;. Entregan: Webflow + ChatGPT autofill. Bonito, rápido, frágil. Primer cambio, primera bug, se rompe. Cliente acude a una agencia de verdad. Costo real: el doble.</p>
+<h2 id="el-mercado-hoy"><a href="#el-mercado-hoy" class="prose__anchor" aria-label="Enlace a esta sección">#</a>El mercado hoy</h2><p>Hay un boom de &quot;agencias IA&quot; que venden &quot;webs en 24 horas con ChatGPT&quot;. Entregan: Webflow + ChatGPT autofill. Bonito, rápido, frágil. Al primer cambio se rompe, y el cliente acaba en una agencia de verdad. Coste real: el doble.</p>
 <p>Al mismo tiempo, hay desarrolladores que han integrado IA en su flujo y entregan más rápido, mejor, sin sacrificar calidad. Esos son los que crecen.</p>
 <h2 id="tecnologias-que-si-funcionan-con-ia-hoy"><a href="#tecnologias-que-si-funcionan-con-ia-hoy" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Tecnologías que sí funcionan con IA hoy</h2><p><strong>Next.js + Vercel.</strong> Cursor (IDE basado en Claude) + Copilot generan scaffolding. El boilerplate lleva 10 minutos. Lógica, que haga el humano.</p>
 <p><strong>Astro para webs estáticas.</strong> &quot;Genera una landing con componentes.&quot; IA lo hace bien. Es JSX + props, no hay sorpresas de runtime.</p>
 <p><strong>APIs con Hono.</strong> Pequeño, agresivo. Copilot predice bien las rutas.</p>
 <p><strong>Testing con Vitest.</strong> IA genera tests decentes. Vitest es rápido para iterar.</p>
-<p><strong>Documentación con Mintlify.</strong> IA genera esqueletos. Vos editas para precisión.</p>
+<p><strong>Documentación con Mintlify.</strong> IA genera esqueletos. Tú los editas para que sean precisos.</p>
 <h2 id="que-no-dejar-a-ia"><a href="#que-no-dejar-a-ia" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Qué NO dejar a IA</h2><ul>
 <li>Decisiones de arquitectura.</li>
 <li>Validación y seguridad.</li>
@@ -254,9 +254,9 @@
 <li><a href="../precio-pagina-web-cantabria/">Precio de una página web en Cantabria</a>, Cuánto cuesta realmente una web (con IA o sin).</li>
 <li><a href="../core-web-vitals-que-son/">Core Web Vitals: qué son y por qué importan</a>, Una web rápida requiere más que solo código: requiere arquitectura.</li>
 </ul>
-<h2 id="si-necesitas-una-web"><a href="#si-necesitas-una-web" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Si necesitás una web</h2><p>Si viniste buscando &quot;¿puedo hacer una web con ChatGPT?&quot;: técnicamente, sí. Será mediocre. Tendrá bugs de seguridad. Costará el doble reescribirla cuando falle.</p>
-<p>Si viniste buscando &quot;¿pueden hacerla en 2 días?&quot;: no. Una web buena necesita diseño, lógica, testing, deployment, monitoreo. Una agencia que usa IA bien puede ser más rápida. Una que depende de IA es más lenta (por debugging).</p>
-<p>Si querés que hablemos sobre cuál es el mejor approach para tu proyecto específico (IA, freelancer, agencia), <a href="/contacto/">escribinos</a>.</p>
+<h2 id="si-necesitas-una-web"><a href="#si-necesitas-una-web" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Si necesitas una web</h2><p>Si viniste buscando &quot;¿puedo hacer una web con ChatGPT?&quot;: técnicamente, sí. Será mediocre. Tendrá bugs de seguridad. Costará el doble reescribirla cuando falle.</p>
+<p>Si viniste buscando &quot;¿pueden hacerla en 2 días?&quot;: no. Una web buena necesita diseño, lógica, pruebas, despliegue y monitorización. Una agencia que usa IA bien puede ser más rápida. Una que depende de IA es más lenta, porque se le va el tiempo en depurar.</p>
+<p>Si quieres que hablemos sobre cuál es el mejor enfoque para tu proyecto (IA, autónomo o agencia), <a href="/contacto/">escríbenos</a>.</p>
 
         </div>
       </div>

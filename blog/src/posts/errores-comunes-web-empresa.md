@@ -37,7 +37,7 @@ Solución: probar el formulario una vez al mes. Configurar respuesta automática
 
 Lo hablamos en otro artículo, pero merece repetirse: si tu web tarda más de tres segundos en móvil, estás perdiendo dinero. Lo que pasa es que no lo ves, porque la gente que se va no aparece en el formulario.
 
-Solución: PageSpeed Insights y plan de mejora. Imágenes WebP, caché, plugins limpios. ([Aquí puedes ver en detalle cómo mejorar velocidad](../velocidad-web-rendimiento-cantabria/) y [qué son Core Web Vitals](../core-web-vitals-que-son/).)
+Solución: PageSpeed Insights y plan de mejora. Imágenes WebP, caché, plugins limpios. ([Qué son los Core Web Vitals y por qué una web lenta pierde clientes](../core-web-vitals-que-son/).)
 
 ## 5. Cero contenido nuevo en años
 
@@ -67,7 +67,7 @@ Solución: invertir una vez en una sesión de fotos profesional con tu equipo y 
 
 Banners de cookies que solo tienen botón de "aceptar" sin posibilidad de rechazar, o sin información clara, o que cargan los scripts antes de que el usuario haya consentido. Esto, además de feo, es ilegal y la AEPD ya está sancionando.
 
-Solución: implementar un Consent Management Platform serio (Cookiebot, Iubenda o similar) y cargar los scripts después del consentimiento, no antes. ([Leer más sobre RGPD y cookies](../rgpd-cookies-web-cantabria/) e [checklist completo de cumplimiento legal](../tu-web-cumple-ley/).)
+Solución: implementar un Consent Management Platform serio (Cookiebot, Iubenda o similar) y cargar los scripts después del consentimiento, no antes. ([Qué exige la ley: aviso legal, cookies, RGPD y DPA](../tu-web-cumple-ley/).)
 
 ## 10. No medir nada
 

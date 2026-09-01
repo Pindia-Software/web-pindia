@@ -1,8 +1,8 @@
 ---
-title: 'Core Web Vitals: qué son y por qué importan para tu web'
-metaTitle: 'Core Web Vitals: qué son y por qué importan'
+title: 'Core Web Vitals: qué son y por qué una web lenta pierde clientes'
+metaTitle: 'Core Web Vitals y velocidad web: guía para empresas'
 description: >-
-  Core Web Vitals son las métricas que Google usa para ranking. LCP, INP y CLS explicados sin tecnicismos. Cómo medirlas y mejorarlas en tu web.
+  Qué son los Core Web Vitals, qué hace lenta a una web de empresa, cuánto cuesta arreglarlo y cuándo sale más a cuenta rehacerla.
 date: 2026-05-02
 author: Beatriz Santa Cruz Llanillo
 tags:
@@ -79,7 +79,7 @@ Aquí el remedio es fácil: **siempre define dimensiones** en imágenes, reserva
 
 ## Cómo medir Core Web Vitals
 
-**PageSpeed Insights** (pagespeed.web.dev). Introducis vuestra URL y Google os da una puntuación. Mira móvil, no escritorio. Si está en verde (>80), bien. Amarillo (50-79), cuidado. Rojo (<50), acción urgente.
+**PageSpeed Insights** (pagespeed.web.dev). Introduces tu URL y Google te da una puntuación. Mira móvil, no escritorio. Si está en verde (>80), bien. Amarillo (50-79), cuidado. Rojo (<50), acción urgente.
 
 **Search Console.** Ve a "Experiencia > Core Web Vitals". Aquí ves datos de usuarios reales. Es lo que Google usa para decidir ranking. Si aquí estás en rojo, SearchConsole te lo avisa.
 
@@ -87,50 +87,57 @@ Aquí el remedio es fácil: **siempre define dimensiones** en imágenes, reserva
 
 **Chrome DevTools.** En el navegador, abre DevTools > Lighthouse. Ejecuta una auditoría. Menos preciso que PageSpeed (que mide usuario real), pero rápido de iterar durante desarrollo.
 
-## Mejoras que funcionan (sin código a medida)
+## Qué hace lenta a una web de empresa
 
-Si tu web es WordPress:
+Cuando auditamos una web lenta, los culpables se repiten tanto que casi se pueden adivinar antes de mirar:
 
-- **Plugins de cache:** WP Super Cache o WP Rocket comparten contenido estático y reducen LCP un 30-50%.
-- **Optimización de imágenes:** Imagify o SmushIT comprimen todas las imágenes a WebP automáticamente.
-- **Lazy loading:** Muchos temas lo tienen integrado. Asegúrate de que no sea agresivo (que no tarde demasiado en cargar imágenes en scroll).
-- **Diferir CSS/JS no crítico:** Plugins como Autoptimize lo hacen automáticamente.
+**Las imágenes.** El sospechoso número uno, con diferencia. Fotos de varios megas subidas tal cual desde un móvil, catálogos enteros sin comprimir. Solo esto suele explicar la mitad del peso de una página.
 
-Si es una web custom (HTML/CSS/JS):
+**Los plugins zombis.** Una web con veintitantos plugins activos, la mitad sin usar y otra parte sin actualizar. Cada uno carga su JavaScript y su CSS en páginas que no los necesitan.
 
-- Definir dimensiones en todas las imágenes (`width` y `height` en HTML o CSS).
-- Usar `loading="lazy"` en imágenes below-the-fold.
-- `font-display: swap` en `@font-face` para que se vea tipografía fallback mientras carga la web font.
-- Comprimir imágenes a WebP.
-- Servir desde CDN (Cloudflare gratis suma mucho).
-- Minificar CSS y JS.
-- Diferir scripts que no se necesitan al cargar (`defer` o `async`).
+**Los temas todo en uno.** Plantillas que traen animaciones, sliders y constructores para mil casos de uso, y tu web los carga aunque uses tres bloques. Si notas la web pesada y llevas un constructor visual, casi siempre es por aquí.
 
-## Caso real: tienda online de Santander
+**El alojamiento.** Hostings compartidos donde tu web convive con cientos más. Cuando a un vecino le entra tráfico, lo pagas tú.
 
-Una tienda de ropa de Santander tenía LCP en 4,5 segundos (imágenes de 6 MB cada una), INP en 450ms (JavaScript de slider sin optimizar), CLS en 0,15 (elementos sin dimensiones definidas). Ranking: posición 8 en búsquedas locales.
+**Los scripts de terceros.** Tres tipografías externas, un chat, un mapa de calor, un píxel y un gestor de etiquetas con todo dentro. Dos segundos de carga solo en cosas que no son tu contenido.
 
-Tras dos semanas:
-- Imágenes a WebP con lazy loading. LCP → 1,2 segundos.
-- Defer de JavaScript no crítico, optimización de slider. INP → 120ms.
-- Dimensiones a todas las imágenes. CLS → 0,01.
+## Por qué no se arregla instalando un plugin
 
-Tres meses después, pasó a posición 3 en búsquedas locales. La métrica de conversión (precio medio de pedido) no cambió, pero el volumen de tráfico orgánico subió un 180%.
+Es la reacción natural: si el problema es la velocidad, instalo un plugin de caché y listo. Funciona a medias y por poco tiempo, y conviene saber por qué.
 
-## Cuánto cuesta mejorar Core Web Vitals
+Un plugin de caché mejora la primera métrica y no toca las otras dos. La respuesta a la interacción depende de qué JavaScript se ejecuta y cuándo, y eso hay que mirarlo caso por caso. La estabilidad visual depende de cómo esté construido el maquetado, y ningún plugin va a reservarle el hueco a un banner que aparece tarde.
 
-Una auditoría de Core Web Vitals y reporte de mejoras: 300-500 euros. Se entrega en 48 horas.
+Y hay un efecto secundario que vemos a menudo: la optimización agresiva por plugin rompe cosas. Se difiere un script que hacía falta, se comprime una imagen que era el logo, deja de funcionar un formulario. Sin alguien que sepa qué está tocando, cambias un problema medible por otro que no ves.
 
-Implementar mejoras (sin rediseño):
-- Optimización de imágenes + cache + lazy loading: 600-1.000 euros.
-- Optimización de JavaScript + diferimiento: 800-1.500 euros.
-- Reengineering de un slider o componente pesado: 1.500-2.500 euros.
+Por eso una optimización seria empieza por medir con datos de usuarios reales y por decidir qué merece la pena tocar, no por instalar nada.
 
-Si tu web es vieja (más de 5 años), los costes pueden subir. En ese caso, a veces es más rentable hacer una web nueva con [nuestro servicio de diseño web](https://pindia.es/servicios/diseno-web).
+## Segundo caso real: empresa industrial de Torrelavega
+
+Nos llamaron porque las consultas comerciales habían bajado y no sabían por qué. No había pasado nada raro: la web cargaba en 6,8 segundos en móvil, las imágenes del catálogo pesaban 8 MB cada una y el tema llevaba años sin actualizar.
+
+Dos semanas de trabajo, y el tiempo de carga bajó a 1,2 segundos. Tres meses después, las consultas orgánicas habían subido un 35 % sin haber tocado una sola línea del contenido.
+
+No hay magia: llevaban años perdiendo gente que ni siquiera llegaba a leer su propuesta.
+
+## Cuánto cuesta arreglarlo
+
+Una auditoría de rendimiento con datos de usuario real y un plan priorizado se mueve entre 300 y 600 euros. Aplicar las mejoras, según el alcance, entre 600 y 2.000.
+
+En la mayoría de pymes se amortiza en pocos meses, y no por el SEO: por la gente que sí llega a ver la web.
+
+## Cuándo optimizar y cuándo rehacer
+
+Esta es la conversación que de verdad importa, y merece honestidad porque a veces optimizar es tirar el dinero.
+
+**Optimizar tiene sentido** si tu web tiene menos de cinco años, el problema está localizado (las imágenes, un componente, el alojamiento) y la estructura técnica de debajo es sólida.
+
+**Rehacer tiene sentido** si la web arrastra varios males a la vez, depende de tecnología que ya no se mantiene, o si sumando los arreglos previsibles te acercas al coste de una web nueva. En ese caso, gastar en optimizar una web que tiene los días contados es dinero que no vuelve.
+
+Si estás en ese punto, los tramos de precio están en [cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/).
 
 ## Más en el blog
 
-- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/), Guía completa de optimización de velocidad.
+- [Cuánto cuesta una página web](../precio-pagina-web-cantabria/), si optimizar no compensa y toca rehacerla.
 - [Errores comunes en webs de empresa](../errores-comunes-web-empresa/), Problemas que ralentizan tu web.
 - [¿Tu web cumple con la ley?](../tu-web-cumple-ley/), Si optimizas Core Web Vitals, asegúrate también de cumplir RGPD.
 

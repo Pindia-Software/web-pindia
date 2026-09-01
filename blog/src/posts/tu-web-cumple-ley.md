@@ -1,7 +1,7 @@
 ---
 title: '¿Tu web cumple con la ley? Avisos legales, cookies, RGPD y DPA explicados'
 metaTitle: '¿Tu web cumple la ley? Guía legal'
-description: 'Aviso legal, cookies, RGPD, privacidad, DPA: qué es obligatorio, qué riesgos hay si no lo cumples y cómo implementarlo sin gastar 5.000€ en abogados.'
+description: 'Aviso legal, cookies, RGPD y DPA: qué es obligatorio, qué banner acepta la AEPD, quién responde ante una sanción y los fallos que más se repiten.'
 date: 2026-05-02
 author: Beatriz Santa Cruz Llanillo
 tags:
@@ -46,11 +46,11 @@ Riesgo: Alto. AEPD sanciona activamente. Multas: desde 2.000 euros (casos leves)
 
 **4. DPA (Data Processing Agreement) - obligatorio por RGPD si subcontratas**
 
-Si usas un email marketing (Mailchimp, Brevo), analytics (Google Analytics 4), hosting (Ionos, AWS), o cualquier tercero que procese datos por ti, necesitás un DPA.
+Si usas un email marketing (Mailchimp, Brevo), analytics (Google Analytics 4), hosting (Ionos, AWS), o cualquier tercero que procese datos por ti, necesitas un DPA.
 
 Un DPA es un contrato donde ese tercero se compromete a cumplir RGPD, a no vender datos, a encriptarlos en tránsito, etc.
 
-¿Por qué importa? Porque vos eres el "responsable" (quien decide qué datos se recogen). El tercero es el "encargado" (quien los procesa). Si el encargado falla, también te multan a vos.
+¿Por qué importa? Porque tú eres el "responsable" (quien decide qué datos se recogen). El tercero es el "encargado" (quien los procesa). Si el encargado falla, la multa también te llega a ti.
 
 Riesgo: Muy alto. Una auditoria descubre que tu Mailchimp no tiene DPA firmado. Multa: 1.000-3.000 euros (porque no es tu culpa directamente, pero deberías haberlo hecho).
 
@@ -78,7 +78,7 @@ Un cliente reportó a AEPD. La agencia investigó, confirmó violaciones. Multa:
 
 Total: 4.700 euros por no gastar 500 euros en documentación + implementación correcta.
 
-## Qué necesitás (el checklist real)
+## Qué necesitas (el checklist real)
 
 ### 1. Aviso Legal
 
@@ -93,7 +93,7 @@ Longitud: media página. Puedes copiarlo de otra pyme del sector y adaptarlo.
 
 Dónde va: footer de todas las páginas. Link `<a href="/aviso-legal/">Aviso Legal</a>`.
 
-Costo: 0 euros si lo escribes vos, 200-400 si contratás consultoría. No necesitás abogado.
+Coste: 0 euros si lo escribes tú, 200-400 si contratas consultoría. No necesitas abogado.
 
 ### 2. Política de Cookies
 
@@ -109,7 +109,7 @@ Implementación:
 - **Almacenar consentimiento.** Guardar en localStorage o cookie (paradójicamente) qué eligió.
 - **Respetar la elección.** Si rechaza analytics, no cargues Google Analytics tag.
 
-Costo: 0 euros si usas una librería libre (como iubenda o cookiebot Free tier). 20-50 euros/mes si usas solución premium.
+Coste: 0 euros si usas una librería libre (como iubenda o cookiebot Free tier). 20-50 euros/mes si usas solución premium.
 
 Riesgo si no lo tienes: multa de 500-3.000 euros + usuarios enfadados.
 
@@ -134,7 +134,7 @@ Herramientas:
 
 Dónde va: footer, link `<a href="/politica-privacidad/">Política de Privacidad</a>`.
 
-Costo realista: 100-400 euros.
+Coste realista: 100-400 euros.
 
 Riesgo si no lo tienes: multa de 1.000-20.000 euros (dependiendo de gravedad). AEPD lo considera una violación seria.
 
@@ -154,25 +154,55 @@ Cómo conseguirlo:
 - La mayoría de proveedores tienen un DPA estándar. Busca en su sitio: Settings > Privacy / Compliance / DPA. Descárgalo o firmalo online.
 - Algunos no lo tienen visible. Email a soporte: "¿Podéis compartir DPA estándar?" Te lo envían en 24-48 horas.
 
-Costo: 0 euros. Es administrativo.
+Coste: 0 euros. Es administrativo.
 
 Riesgo si no lo tienes: si AEPD audita, ve que usas Mailchimp sin DPA, multa de 500-2.000 euros. Es un riesgo más bajo que no tener política, pero visible.
 
-## Implementación práctica: paso a paso
+## El banner de cookies que la AEPD acepta
 
-**Semana 1:**
-- Escribe o genera aviso legal (2 horas).
-- Escribe o genera política de privacidad (4 horas, o paga 200 euros y en 1 día).
+Aquí es donde falla la mayoría de webs de empresa, y es la parte que la AEPD mira primero porque se ve desde fuera sin pedir nada.
 
-**Semana 2:**
-- Implementa banner de cookies (3 horas con iubenda gratis, o 200 euros con consultor).
-- Actualiza footer con links a avisos y políticas.
+**Tres opciones con el mismo peso visual: Aceptar, Rechazar y Configurar.** Si tu banner solo tiene "Aceptar", o si "Rechazar" es un enlace pequeño en gris al fondo, estás incumpliendo. La AEPD lo dejó claro hace años y hay sanciones públicas por esto exacto.
 
-**Semana 3:**
-- Descarga DPAs de Mailchimp, Google Analytics, hosting. Firmalo (30 minutos).
-- Documenta qué datos procesas (lista: emails, teléfonos, IPs, cookies). 1 hora.
+**Y la parte que no se ve:** las cookies de analítica, marcado y publicidad no pueden cargarse antes del consentimiento. Si tu Google Analytics o tu píxel de Meta se ejecutan nada más entrar, antes de que nadie haya pulsado nada, incumples aunque el banner sea perfecto. Solo las cookies estrictamente técnicas se libran, y son muchas menos de las que la gente cree.
 
-**Total real:** 10-15 horas de trabajo, 0-400 euros de terceros. Si pagas a un consultor, 300-800 euros y 2-3 días.
+Esto último es la razón por la que un banner instalado como un plugin más no basta: alguien tiene que tocar cómo y cuándo se cargan los scripts de tu web. Es trabajo de desarrollo, no de configuración.
+
+## Los cinco fallos que más vemos
+
+**Banner solo con "Aceptar".** El más frecuente con diferencia. Hace unos años se toleraba. Hoy no.
+
+**Scripts que cargan antes del consentimiento.** El anterior con corbata: banner correcto, comportamiento incorrecto.
+
+**Política de privacidad fósil.** Si la tuya menciona la "Ley Orgánica 15/1999", lleva más de un lustro obsoleta y lo puede comprobar cualquiera en diez segundos.
+
+**Formularios sin casilla de consentimiento.** Cualquier formulario que recoja datos personales necesita consentimiento explícito e informado sobre qué vas a hacer con ellos.
+
+**Newsletter sin doble confirmación.** Sin el email de verificación, no puedes demostrar que el suscriptor quiso suscribirse. Y la carga de la prueba es tuya.
+
+## Quién responde ante la AEPD: tu empresa, no tu agencia
+
+Esta es la frase que conviene leer dos veces. **Legalmente, el responsable del tratamiento es la empresa titular de la web.** La AEPD sanciona al titular, no a quien programó el sitio.
+
+Puedes tener un contrato con tu proveedor, y debes tenerlo, pero eso regula vuestra relación, no te quita la responsabilidad frente al regulador. Es decir: si tu agencia te montó la web mal, la multa te llega a ti y luego ya reclamarás.
+
+Por eso el cumplimiento no es un extra que se negocia al final del presupuesto. Una web barata y rápida que deja esto a medias te traslada un riesgo que no habías calculado.
+
+## Segundo caso real: empresa industrial en Santander
+
+Llegaron con una propuesta de sanción de la AEPD de 5.000 euros encima de la mesa. Tres incumplimientos a la vez: cookies cargando antes del consentimiento, política de privacidad de 2014 y formulario de contacto sin casilla de aceptación.
+
+Adecuamos la web en una semana y presentaron alegaciones acreditando las correcciones. La sanción se redujo. Pero el susto, el tiempo y el coste eran evitables por completo, y el trabajo de arreglarlo fue una fracción de lo que costaba la multa.
+
+## Por qué esto se hace mal tan a menudo
+
+Sobre el papel parece administrativo: cuatro documentos y un banner. En la práctica se tuerce por tres motivos.
+
+El primero es que los textos genéricos no valen. Una política de privacidad copiada de otra web describe un tratamiento de datos que no es el tuyo, y eso es precisamente lo que se comprueba en una inspección.
+
+El segundo es que la parte que decide el cumplimiento es técnica, no legal: qué scripts carga tu web, cuándo los carga y qué pasa cuando el usuario dice que no. Eso no se resuelve pegando un documento en el pie de página.
+
+El tercero es que no es un trabajo que se hace una vez. Cambias una herramienta de analítica, añades un chat, integras un formulario nuevo, y el inventario de cookies que declaraste deja de ser cierto.
 
 ## Red flags: qué hace que AEPD te mire
 
@@ -185,14 +215,14 @@ Riesgo si no lo tienes: si AEPD audita, ve que usas Mailchimp sin DPA, multa de 
 
 Cualquiera de estos puede resultar en auditoria + multa.
 
-## Cuándo contratar un abogado (de verdad necesitás)
+## Cuándo contratar un abogado (cuándo hace falta de verdad)
 
-- **Operación compleja.** Si procesas datos de trabajadores, menores, datos médicos, datos bancarios. Necesitás asesoría.
+- **Operación compleja.** Si procesas datos de trabajadores, menores, datos médicos, datos bancarios. Necesitas asesoría.
 - **Operación transfronteriza.** Si tienes clientes en otros países (UE, UK, California). El RGPD aplica, pero pueden aplicar leyes locales adicionales.
-- **Incidente de datos.** Si alguien se cuela en tu base de datos. Necesitás saber qué hacer, cómo notificar, cómo documentar.
-- **Duda genuina.** Si no entendés qué datos procesas o cuál es tu base legal. Mejor pagar consultoría que una multa de 5.000 euros.
+- **Incidente de datos.** Si alguien se cuela en tu base de datos. Necesitas saber qué hacer, cómo notificar, cómo documentar.
+- **Duda genuina.** Si no entiendes qué datos procesas o cuál es tu base legal. Mejor pagar consultoría que una multa de 5.000 euros.
 
-Costo de abogado: 100-200 euros/hora, típicamente 500-2.000 euros por asesoría completa.
+Coste de abogado: 100-200 euros/hora, típicamente 500-2.000 euros por asesoría completa.
 
 ## El resumen para empezar hoy
 
@@ -206,10 +236,9 @@ O lo puedes dejar, ahorrar 400 euros, y arriesgar 2.000-5.000 euros en multa cua
 
 ## Más en el blog
 
-- [RGPD y cookies: lo mínimo legal](../rgpd-cookies-web-cantabria/), Análisis detallado de banners, CMP y errores comunes.
-- [Accesibilidad web en empresas](../accesibilidad-web-empresas-cantabria/), Cumplimiento legal también incluye WCAG.
+- [Accesibilidad web en empresas](../accesibilidad-web-empresas-cantabria/), el cumplimiento legal también incluye WCAG.
 - [Errores comunes en webs](../errores-comunes-web-empresa/), A veces la falta de cumplimiento es síntoma de negligencia general.
 
 ## Siguiente paso
 
-Si no tienes claro cómo empezar o necesitás una auditoria de cumplimiento de tu web actual, [hablemos](/contacto/). En 48 horas tienes un informe de qué te falta y cuál es el riesgo real.
+Si no tienes claro cómo empezar o necesitas una auditoría de cumplimiento de tu web actual, [hablemos](/contacto/). En 48 horas tienes un informe de qué te falta y cuál es el riesgo real.

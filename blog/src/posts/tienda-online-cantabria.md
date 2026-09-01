@@ -59,7 +59,7 @@ Una tienda online no se "termina". Es donde más impacto tiene el mantenimiento 
 ## Más en el blog
 
 - [Mantenimiento web: lo que sí funciona](../mantenimiento-web-empresas-cantabria/), El mantenimiento es crucial en una tienda.
-- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/), Una tienda lenta pierde conversión.
+- [Core Web Vitals y velocidad web](../core-web-vitals-que-son/), una tienda lenta pierde conversión.
 - [¿Tu web cumple con la ley?](../tu-web-cumple-ley/), Cumplimiento de RGPD y pagos es obligatorio.
 - [Cómo hacer una landing que convierta](../landing-page-conversion-cantabria/), Tu landing de tienda es todo.
 

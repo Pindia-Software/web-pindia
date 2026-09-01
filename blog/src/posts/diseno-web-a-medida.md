@@ -2,8 +2,7 @@
 title: 'Diseño web a medida: qué es, qué incluye y cuánto cuesta'
 description: >-
   Qué es el diseño web a medida, qué incluye de verdad, cuánto cuesta y cuándo
-  merece la pena frente a una plantilla. Guía escrita por una empresa de
-  desarrollo.
+  merece la pena frente a una plantilla.
 date: 2026-07-17T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:
@@ -85,6 +84,34 @@ Te lo decimos aunque no nos convenga:
 - **Es temporal**: un evento, una campaña de tres meses.
 
 Si estás en alguno de estos casos, coge una plantilla buena y ahórrate la llamada. Si dudas entre las dos opciones, lo comparamos a fondo en [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/).
+
+## Qué necesita de verdad la web de una pyme
+
+Una pyme de quince personas no necesita la misma web que un grupo de trescientas, y sin embargo muchas agencias venden el mismo producto a las dos con el mismo discurso. Hacer una web a medida no significa hacerla grande: significa hacer exactamente lo que hace falta.
+
+**Lo que no se discute:**
+
+- **Una home que diga qué haces, para quién y dónde.** Si falta uno de los tres, la web no está haciendo su trabajo.
+- **Una página por servicio.** Tres servicios son tres páginas, no un acordeón en la home. Cada página es una puerta de entrada; si los juntas, Google solo te posiciona por "servicios", que no lo busca nadie.
+- **Una página de equipo con caras y nombres.** Compites contra empresas más grandes, y tu ventaja es que el cliente puede ver quién va a coger el teléfono.
+- **Una página de contacto completa**, con dirección, teléfono, horario y datos estructurados. Es la base del SEO local.
+- **Cumplimiento legal en condiciones.** No es decorativo, la AEPD sanciona.
+
+**Lo que probablemente no necesitas:**
+
+- **Un blog que no vas a alimentar.** Una sección de noticias parada desde hace tres años da peor imagen que no tenerla.
+- **Animaciones de más.** Suelen impresionar a quien aprueba la web y estorbar a quien la usa.
+- **Vídeo de fondo en reproducción automática.** Pesa, distrae y medio mundo lo bloquea.
+- **Un chat sin nadie detrás.** Un chat mal atendido es peor que ninguno.
+- **Multi-idioma porque queda bien.** Solo si tienes clientes reales en ese idioma. Un inglés mediocre cuesta dinero y daña la marca.
+
+Sobre el número de páginas, la mayoría de pymes se resuelve con entre cinco y nueve. Más suele ser sobrediseño y menos suele quedarse corto.
+
+## En qué página merece la pena invertir
+
+Si solo pudieras optimizar dos páginas, serían la home y la del servicio que más vendes. Son las que reciben tráfico y las que convierten, y una buena página de servicio capta más consultas que toda la home.
+
+Lo hemos comprobado: con una empresa de servicios profesionales rehicimos una sola página, la de su servicio principal. Las consultas orgánicas de ese servicio se duplicaron en cuatro meses. La home seguía exactamente igual.
 
 ## Cuánto cuesta una web a medida
 

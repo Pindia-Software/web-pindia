@@ -37,7 +37,7 @@ Pensar en seguridad. ¿Dónde entra la entrada del usuario? ¿Podría injectar S
 
 Pensar en rendimiento. ¿Cuántos usuarios simultáneos? ¿Cacheo qué? ¿Dónde está el cuello de botella?
 
-ChatGPT puede escribir código que haría lo anterior. Pero si vos no entendés qué debería hacer, no sabés ni pedirle correctamente. Y si ChatGPT genera código inseguro, lenguaje de consultores.
+ChatGPT puede escribir código que haría lo anterior. Pero si tú no entiendes qué debería hacer, no sabes ni pedírselo bien. Y si ChatGPT genera código inseguro, lenguaje de consultores.
 
 Ejemplo de la vida real: pedimos a ChatGPT que generara un endpoint de login. Escribió código sin sanitización de entrada, sin rate limiting, sin hashing de contraseña correcto. Parecía funcional. Un desarrollador junior sin experiencia hubiera puesto eso en producción.
 
@@ -86,11 +86,11 @@ Una IA no piensa en "¿y si alguien intenta romper esto?" Una IA no conoce tu ne
 
 Aquí es donde funciona:
 
-1. **Vos describes el problema.** "Necesito un endpoint que devuelva el top 10 de posts por engagement, cachéados 1 hora, con paginación."
+1. **Tú describes el problema.** "Necesito un endpoint que devuelva el top 10 de posts por engagement, cachéados 1 hora, con paginación."
 2. **IA genera un primer borrador.** 10 minutos en vez de 1 hora.
-3. **Vos lo revisás críticamente.** ¿Hay validación? ¿Está protegido contra SQL injection? ¿El cache es eficiente? ¿Qué pasa si no hay posts?
-4. **Vos lo ajustás.** Agregás error handling, validación, casos edge.
-5. **Vos lo testeas.** Tests unitarios + integración.
+3. **Tú lo revisas críticamente.** ¿Hay validación? ¿Está protegido contra SQL injection? ¿El cache es eficiente? ¿Qué pasa si no hay posts?
+4. **Tú lo ajustas.** Añades control de errores, validación y casos límite.
+5. **Tú lo pruebas.** Tests unitarios + integración.
 6. **Sale a producción.**
 
 Eso es desarrollo moderno con IA. No es "ChatGPT escribe todo". Es "IA acelera lo tedioso, yo pienso en lo importante".
@@ -99,13 +99,13 @@ Eso es desarrollo moderno con IA. No es "ChatGPT escribe todo". Es "IA acelera l
 
 Un startup llamó diciendo: "Queremos una web, que sea rápida, que escale a 1M de usuarios, y que ChatGPT la haga para ahorrar." Tenían presupuesto para 2 webs decentes.
 
-La respuesta honesta: si querés que escale a 1M usuarios sin que se caiga, necesitás arquitectura, testing, monitoreo, iteración. IA te da código. Un equipo senior te da un sistema.
+La respuesta honesta: si quieres que escale a un millón de usuarios sin caerse, necesitas arquitectura, pruebas, monitorización e iteración. IA te da código. Un equipo senior te da un sistema.
 
 No es "IA o desarrolladores". Es "IA para lo mecánico, desarrolladores para lo inteligente".
 
 ## El mercado hoy
 
-Hay un boom de "agencias IA" que venden "webs en 24 horas con ChatGPT". Entregan: Webflow + ChatGPT autofill. Bonito, rápido, frágil. Primer cambio, primera bug, se rompe. Cliente acude a una agencia de verdad. Costo real: el doble.
+Hay un boom de "agencias IA" que venden "webs en 24 horas con ChatGPT". Entregan: Webflow + ChatGPT autofill. Bonito, rápido, frágil. Al primer cambio se rompe, y el cliente acaba en una agencia de verdad. Coste real: el doble.
 
 Al mismo tiempo, hay desarrolladores que han integrado IA en su flujo y entregan más rápido, mejor, sin sacrificar calidad. Esos son los que crecen.
 
@@ -119,7 +119,7 @@ Al mismo tiempo, hay desarrolladores que han integrado IA en su flujo y entregan
 
 **Testing con Vitest.** IA genera tests decentes. Vitest es rápido para iterar.
 
-**Documentación con Mintlify.** IA genera esqueletos. Vos editas para precisión.
+**Documentación con Mintlify.** IA genera esqueletos. Tú los editas para que sean precisos.
 
 ## Qué NO dejar a IA
 
@@ -144,10 +144,10 @@ Los desarrolladores que integren IA como herramienta van a ir más rápido. Los 
 - [Precio de una página web en Cantabria](../precio-pagina-web-cantabria/), Cuánto cuesta realmente una web (con IA o sin).
 - [Core Web Vitals: qué son y por qué importan](../core-web-vitals-que-son/), Una web rápida requiere más que solo código: requiere arquitectura.
 
-## Si necesitás una web
+## Si necesitas una web
 
 Si viniste buscando "¿puedo hacer una web con ChatGPT?": técnicamente, sí. Será mediocre. Tendrá bugs de seguridad. Costará el doble reescribirla cuando falle.
 
-Si viniste buscando "¿pueden hacerla en 2 días?": no. Una web buena necesita diseño, lógica, testing, deployment, monitoreo. Una agencia que usa IA bien puede ser más rápida. Una que depende de IA es más lenta (por debugging).
+Si viniste buscando "¿pueden hacerla en 2 días?": no. Una web buena necesita diseño, lógica, pruebas, despliegue y monitorización. Una agencia que usa IA bien puede ser más rápida. Una que depende de IA es más lenta, porque se le va el tiempo en depurar.
 
-Si querés que hablemos sobre cuál es el mejor approach para tu proyecto específico (IA, freelancer, agencia), [escribinos](/contacto/).
+Si quieres que hablemos sobre cuál es el mejor enfoque para tu proyecto (IA, autónomo o agencia), [escríbenos](/contacto/).

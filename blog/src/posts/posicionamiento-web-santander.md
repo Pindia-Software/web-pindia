@@ -52,7 +52,7 @@ Esto es lo que estás pagando (o lo que tienes que hacer tú):
 - **SEO local**: optimizar tu ficha de Google, conseguir reseñas y mantener tus datos (nombre, dirección, teléfono) idénticos en todas partes. Es la palanca más rentable y la explicamos a fondo en [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/).
 - **SEO on-page**: títulos, descripciones y contenido de cada página orientados a lo que busca la gente, incluyendo el "en Santander" donde tiene sentido.
 - **SEO técnico**: que Google pueda rastrear e indexar tu web sin problemas, con datos estructurados y URLs limpias.
-- **Rendimiento**: una web lenta no posiciona. Google lo mide con las [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), y una web lenta [pierde clientes](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) además de posiciones.
+- **Rendimiento**: una web lenta no posiciona. Google lo mide con las [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), y una web lenta [pierde clientes](https://pindia.es/blog/posts/core-web-vitals-que-son/) además de posiciones.
 - **Contenido**: artículos y páginas que respondan a lo que tu cliente busca. Sin contenido útil, no hay posicionamiento que aguante.
 - **Autoridad**: enlaces desde otras webs locales (asociaciones, prensa, proveedores). Es la palanca más lenta y la que más diferencia.
 
@@ -141,7 +141,6 @@ Sí. Una web lenta posiciona peor y convierte peor. Google mide el rendimiento c
 - [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/), la guía práctica: ficha de Google, reseñas, mapas y NAP.
 - [Cómo elegir empresa de diseño web en Santander](https://pindia.es/blog/posts/empresa-diseno-web-santander/), qué mirar antes de contratar.
 - [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), cómo mide Google el rendimiento de tu web.
-- [Cómo acelerar una web lenta](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/), la velocidad también posiciona.
 
 <script type="application/ld+json">
 {

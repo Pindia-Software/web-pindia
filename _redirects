@@ -39,3 +39,13 @@
 #     la autoridad acumulada desde feb 2026. ---
 /blog/posts/seo-local-cantabria/   /blog/posts/seo-local-santander/  301
 /blog/posts/seo-local-cantabria    /blog/posts/seo-local-santander   301
+
+# --- Fusión de contenido (sep 2026): tres posts finos se integraron en las piezas
+#     que ya cubrían la misma intención, para dejar de repartir señales.
+#     301 para conservar la autoridad acumulada desde enero-mayo 2026. ---
+/blog/posts/rgpd-cookies-web-cantabria/        /blog/posts/tu-web-cumple-ley/        301
+/blog/posts/rgpd-cookies-web-cantabria         /blog/posts/tu-web-cumple-ley         301
+/blog/posts/velocidad-web-rendimiento-cantabria/  /blog/posts/core-web-vitals-que-son/  301
+/blog/posts/velocidad-web-rendimiento-cantabria   /blog/posts/core-web-vitals-que-son   301
+/blog/posts/web-pyme-santander/                /blog/posts/diseno-web-a-medida/      301
+/blog/posts/web-pyme-santander                 /blog/posts/diseno-web-a-medida       301

@@ -91,8 +91,7 @@ Migrar tiene sentido si tu web actual es vieja, lenta, insegura, no responsive o
 ## Más en el blog
 
 - [SEO local en Santander](../seo-local-santander/), Tu SEO local se pierde fácil en una migración mal hecha.
-- [Core Web Vitals: qué son y por qué importan](../core-web-vitals-que-son/), La nueva web debe ser más rápida. Mide Core Web Vitals antes y después.
-- [Velocidad web: pérdida de clientes](../velocidad-web-rendimiento-cantabria/), Una web nueva lenta es un fracaso.
+- [Core Web Vitals y velocidad web](../core-web-vitals-que-son/), La nueva web debe ser más rápida. Mide Core Web Vitals antes y después.
 - [Wordpress vs desarrollo a medida](../wordpress-vs-desarrollo-medida-cantabria/), Elige bien la plataforma antes de migrar.
 
 Si estás planificando una migración o un rediseño de web en Cantabria y quieres que se haga sin perder SEO, [hablemos](/contacto/). En la primera reunión te enseñamos el plan y los riesgos antes de tocar nada.

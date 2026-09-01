@@ -5,7 +5,7 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Tue, 01 Sep 2026 13:16:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 13:52:03 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -141,7 +141,7 @@
     <item>
       <title>Diseño web a medida: qué es, qué incluye y cuánto cuesta</title>
       <link>https://pindia.es/blog/posts/diseno-web-a-medida/</link>
-      <description>Qué es el diseño web a medida, qué incluye de verdad, cuánto cuesta y cuándo merece la pena frente a una plantilla. Guía escrita por una empresa de desarrollo.</description>
+      <description>Qué es el diseño web a medida, qué incluye de verdad, cuánto cuesta y cuándo merece la pena frente a una plantilla.</description>
       <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/diseno-web-a-medida/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -149,9 +149,9 @@
     </item>
 
     <item>
-      <title>Core Web Vitals: qué son y por qué importan para tu web</title>
+      <title>Core Web Vitals: qué son y por qué una web lenta pierde clientes</title>
       <link>https://pindia.es/blog/posts/core-web-vitals-que-son/</link>
-      <description>Core Web Vitals son las métricas que Google usa para ranking. LCP, INP y CLS explicados sin tecnicismos. Cómo medirlas y mejorarlas en tu web.</description>
+      <description>Qué son los Core Web Vitals, qué hace lenta a una web de empresa, cuánto cuesta arreglarlo y cuándo sale más a cuenta rehacerla.</description>
       <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/core-web-vitals-que-son/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -171,7 +171,7 @@
     <item>
       <title>¿Tu web cumple con la ley? Avisos legales, cookies, RGPD y DPA explicados</title>
       <link>https://pindia.es/blog/posts/tu-web-cumple-ley/</link>
-      <description>Aviso legal, cookies, RGPD, privacidad, DPA: qué es obligatorio, qué riesgos hay si no lo cumples y cómo implementarlo sin gastar 5.000€ en abogados.</description>
+      <description>Aviso legal, cookies, RGPD y DPA: qué es obligatorio, qué banner acepta la AEPD, quién responde ante una sanción y los fallos que más se repiten.</description>
       <pubDate>Sat, 02 May 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/tu-web-cumple-ley/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -219,16 +219,6 @@
     </item>
 
     <item>
-      <title>RGPD y cookies en webs de empresas españolas: lo mínimo legal</title>
-      <link>https://pindia.es/blog/posts/rgpd-cookies-web-cantabria/</link>
-      <description>Qué necesita una web española para cumplir con RGPD y la guía de cookies de la AEPD. Sanciones, banners, y casos de empresas en Cantabria.</description>
-      <pubDate>Thu, 26 Mar 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/rgpd-cookies-web-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Cumplimiento &amp; Accesibilidad</category>
-    </item>
-
-    <item>
       <title>Cómo hacer una landing page que de verdad convierta</title>
       <link>https://pindia.es/blog/posts/landing-page-conversion-cantabria/</link>
       <description>Guía práctica para diseñar una landing page que convierta: estructura, copy, formularios y errores que hacen que la gente se vaya.</description>
@@ -239,16 +229,6 @@
     </item>
 
     <item>
-      <title>Web para pymes: lo que realmente necesitas</title>
-      <link>https://pindia.es/blog/posts/web-pyme-santander/</link>
-      <description>Qué necesita realmente la web de una pyme en Santander: estructura mínima útil, presupuesto razonable y errores que conviene evitar.</description>
-      <pubDate>Thu, 12 Mar 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/web-pyme-santander/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
-    </item>
-
-    <item>
       <title>10 errores web (soluciones)</title>
       <link>https://pindia.es/blog/posts/errores-comunes-web-empresa/</link>
       <description>Los errores más frecuentes que vemos en webs corporativas de empresas de Cantabria, con ejemplos reales y soluciones aplicables.</description>
@@ -256,16 +236,6 @@
       <guid isPermaLink="true">https://pindia.es/blog/posts/errores-comunes-web-empresa/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Cumplimiento &amp; Accesibilidad</category><category>Diseño &amp; Desarrollo Web</category>
-    </item>
-
-    <item>
-      <title>Cómo acelerar una web lenta: guía de optimización para pymes</title>
-      <link>https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/</link>
-      <description>Soluciones prácticas para mejorar velocidad web en Cantabria. Diagnóstico,  herramientas, qué arreglar primero y cuándo rehacer. Sin tecnicismos innecesarios.</description>
-      <pubDate>Thu, 26 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Diseño &amp; Desarrollo Web</category><category>SEO &amp; Crecimiento</category>
     </item>
 
     <item>

@@ -82,7 +82,7 @@ Cobrar con tarjeta, Bizum, PayPal o pago aplazado, con la seguridad y el cumplim
 
 ### Rendimiento
 
-Una tienda lenta vende menos: cada segundo de más en cargar tira la conversión. Un ecommerce a medida se construye ligero, sin el lastre de decenas de plugins, y cuida los [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/) y la [velocidad de carga](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) desde el diseño.
+Una tienda lenta vende menos: cada segundo de más en cargar tira la conversión. Un ecommerce a medida se construye ligero, sin el lastre de decenas de plugins, y cuida los [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/) desde el diseño.
 
 ### SEO para ecommerce
 

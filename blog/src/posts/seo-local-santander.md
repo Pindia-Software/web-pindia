@@ -41,7 +41,7 @@ Con las reseñas pasa lo mismo: pesan muchísimo en local, pero conseguirlas de 
 
 El mapa es solo la mitad. La otra mitad, los resultados orgánicos, dependen de tu web: que Google la entienda como local y relevante, que cargue rápido, que esté bien estructurada y marcada con los datos correctos. Esto ya no es marketing, es desarrollo, y es justo donde la mayoría de intentos por tu cuenta se quedan cortos, porque hay que meterse en el código.
 
-Aquí, siendo una empresa de desarrollo, jugamos en casa: el SEO técnico y el rendimiento no se los pedimos a nadie, los aplicamos nosotros en tu web. Y sí, [una web lenta](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/) tira por tierra todo el trabajo del mapa.
+Aquí, siendo una empresa de desarrollo, jugamos en casa: el SEO técnico y el rendimiento no se los pedimos a nadie, los aplicamos nosotros en tu web. Y sí, [una web lenta](https://pindia.es/blog/posts/core-web-vitals-que-son/) tira por tierra todo el trabajo del mapa.
 
 ## Las señales que Google mira fuera de tu web
 
@@ -104,8 +104,8 @@ Depende del estado de partida de tu web y tu ficha, y de la competencia de tu se
 ## Más en el blog
 
 - [Software a medida](https://pindia.es/blog/posts/software-a-medida/), el criterio general del desarrollo a medida.
-- [Velocidad web y rendimiento](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/), por qué una web rápida posiciona y convierte mejor.
-- [Web para pymes en Santander](https://pindia.es/blog/posts/web-pyme-santander/), qué necesita la web de un pequeño negocio local.
+- [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), por qué una web rápida posiciona y convierte mejor.
+- [Diseño web a medida](https://pindia.es/blog/posts/diseno-web-a-medida/), qué necesita de verdad la web de una pyme.
 
 <script type="application/ld+json">
 {

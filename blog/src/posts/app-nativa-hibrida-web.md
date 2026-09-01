@@ -93,7 +93,7 @@ Trabajamos sobre todo con .NET MAUI para apps multiplataforma (iOS, Android y Wi
 
 - [Software a medida](https://pindia.es/blog/posts/software-a-medida/), el criterio general del desarrollo a medida.
 - [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), la misma decisión aplicada a webs.
-- [Velocidad web y rendimiento](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/), por qué el rendimiento importa también en móvil.
+- [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), por qué el rendimiento importa también en móvil.
 
 <script type="application/ld+json">
 {

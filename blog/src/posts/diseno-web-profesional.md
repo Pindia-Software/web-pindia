@@ -38,7 +38,7 @@ Esto es lo que separa una web profesional de un apaño, lo veas o no a simple vi
 
 ### 1. Rendimiento y velocidad
 
-Una web profesional carga en menos de 2-3 segundos y responde al instante. La velocidad no es un capricho técnico: cada segundo de más tira la conversión y Google lo usa como factor de posicionamiento. Se mide con los [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), y una plantilla cargada de plugins casi nunca los pasa. Lo contamos en [velocidad y rendimiento web](https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/).
+Una web profesional carga en menos de 2-3 segundos y responde al instante. La velocidad no es un capricho técnico: cada segundo de más tira la conversión y Google lo usa como factor de posicionamiento. Se mide con los [Core Web Vitals](https://pindia.es/blog/posts/core-web-vitals-que-son/), y una plantilla cargada de plugins casi nunca los pasa.
 
 ### 2. Diseño y experiencia de usuario (UX)
 
