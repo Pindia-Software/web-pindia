@@ -5,7 +5,7 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Tue, 01 Sep 2026 06:22:02 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 06:55:32 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -14,6 +14,16 @@
       <description>Cuánto cuesta una página web en 2026: precios reales por tramo, qué compras en cada uno, los costes ocultos y qué exigir antes de firmar.</description>
       <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/precio-pagina-web-cantabria/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>WordPress, plantilla o desarrollo a medida: cuál elegir en 2026</title>
+      <link>https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/</link>
+      <description>WordPress, plantilla o desarrollo a medida: cuándo gana cada uno, qué cuesta a tres años y cómo decidir. Lo explica quien hace las tres.</description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
     </item>
@@ -236,16 +246,6 @@
       <guid isPermaLink="true">https://pindia.es/blog/posts/velocidad-web-rendimiento-cantabria/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Diseño &amp; Desarrollo Web</category><category>SEO &amp; Crecimiento</category>
-    </item>
-
-    <item>
-      <title>WordPress o desarrollo a medida: cuál te conviene</title>
-      <link>https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/</link>
-      <description>WordPress vs desarrollo web a medida para empresas en Cantabria: ventajas, costes y cuándo tiene sentido cada uno. Sin religión.</description>
-      <pubDate>Thu, 12 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Diseño &amp; Desarrollo Web</category>
     </item>
 
     <item>
