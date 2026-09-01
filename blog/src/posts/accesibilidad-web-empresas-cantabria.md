@@ -1,89 +1,236 @@
 ---
-title: 'Accesibilidad web: por qué importa'
+title: 'Accesibilidad web: qué exige la ley y qué incumple casi todo el mundo'
+metaTitle: 'Accesibilidad web: qué exige la ley en 2026'
 description: >-
-  Qué es la accesibilidad web (WCAG, EN 301 549) y por qué cualquier empresa,
-  también en Cantabria, debería tomársela en serio.
-date: 2026-04-09T00:00:00.000Z
+  Qué exige la accesibilidad web tras la Ley 11/2023, a quién obliga de verdad,
+  qué incumplen casi todas las webs y por qué los widgets no valen.
+date: 2026-09-01T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:
   - Cumplimiento & Accesibilidad
   - Diseño & Desarrollo Web
 cover: /assets/img/blog/accesibilidad-web-empresas-cantabria/cover.webp
-coverAlt: Pruebas de accesibilidad sobre la web de una empresa cántabra
+coverAlt: Pruebas de accesibilidad sobre la web de una empresa
 draft: false
 ---
 
-La accesibilidad web es uno de esos temas que la mayoría de pymes piensa que no le toca. "Eso es para webs de la administración" o "no tengo presupuesto para esos detalles". Y se equivocan en varios frentes a la vez: en el legal, en el de negocio y en el ético. Vamos a por ello sin sermones.
+La normativa europea de accesibilidad lleva **más de un año en aplicación** y la mayoría de webs de empresa española sigue sin cumplirla. No por mala fe: porque casi nadie se enteró de que le tocaba, y porque el que sí se enteró creyó que se resolvía instalando un widget.
 
-## Qué es la accesibilidad web
+Este artículo explica qué exige la ley de verdad, a quién obliga (y a quién no, que también conviene saberlo), qué incumple casi todo el mundo sin saberlo y por qué la solución rápida que te van a vender no funciona.
 
-La accesibilidad web es el conjunto de prácticas que hacen que una web sea **usable por cualquier persona**, incluyendo personas con discapacidad visual, auditiva, motora o cognitiva, y personas mayores con limitaciones funcionales. La referencia internacional son las **WCAG** (Web Content Accessibility Guidelines), actualmente en versión 2.2.
+## Qué es la accesibilidad web, y qué no es
 
-En Europa, la norma de referencia es la **EN 301 549**, que recoge las WCAG y añade requisitos. La Ley española de accesibilidad (Ley 11/2023 y normativa derivada) extiende la obligación a sectores cada vez más amplios.
+La accesibilidad web es que tu web se pueda usar sin depender de ver bien, oír bien, mover bien las manos o procesar la información igual que la media. Personas con discapacidad visual, auditiva, motora o cognitiva. Y también personas mayores, que son muchísimas más, y personas en una situación temporal: un brazo escayolado, una pantalla al sol, una conexión mala.
 
-## Quién está obligado por ley
+La referencia técnica son las **WCAG** (Web Content Accessibility Guidelines), hoy en versión 2.2, y en Europa la norma **EN 301 549**, que las recoge y añade requisitos. El nivel que se exige en la práctica es el **AA**.
 
-Hace años solo aplicaba al sector público. Hoy aplica a:
+Lo que **no** es: una barra lateral con botones para agrandar la letra. Volvemos a eso más abajo, porque es la trampa más extendida del sector.
 
-- Toda la administración pública (incluido el Ayuntamiento de Santander, Gobierno de Cantabria, etc.)
-- Empresas que prestan servicios al sector público
-- Banca, transporte, telecomunicaciones, e-commerce con cierto volumen, y servicios audiovisuales por la **Directiva Europea de Accesibilidad (Ley 11/2023)** que entró en aplicación en junio de 2025
-- Empresas con más de 250 empleados o cierto volumen en sectores afectados
+## Qué cambió con la normativa europea
 
-Si tu empresa entra en alguno de estos supuestos, la accesibilidad ya no es opcional: las inspecciones y sanciones empiezan a llegar.
+Durante años, la accesibilidad web solo obligaba al sector público. Eso se acabó.
 
-## Por qué importa aunque no estés obligado
+La **Ley 11/2023**, que traspone la directiva europea de accesibilidad al ordenamiento español, extendió las obligaciones al sector privado y entró en aplicación el **28 de junio de 2025**. Desde entonces, una lista amplia de productos y servicios digitales tiene que ser accesible por obligación legal, no por buena voluntad.
 
-Hay tres motivos prácticos:
+Y hay un matiz que se pasa por alto: no obliga solo a la web pública de la empresa. Alcanza también a los servicios digitales que prestas, que en muchos casos es donde está el problema de verdad.
 
-**Más clientes**. Aproximadamente el 15% de la población tiene algún tipo de discapacidad. Sumemos a personas mayores con dificultades funcionales (la población de Cantabria envejece más rápido que la media nacional) y a personas en circunstancias temporales (mano lesionada, conexión mala, contexto ruidoso). Una web inaccesible deja fuera a una parte importante del mercado.
+## A quién obliga, y a quién no
 
-**Mejor SEO**. Google premia las webs accesibles. Etiquetas semánticas, textos alternativos, estructura clara: lo que mejora la accesibilidad mejora el SEO casi siempre.
+Entran de lleno, entre otros:
 
-**Mejor calidad técnica**. Una web accesible suele ser una web mejor hecha. Más rápida, más mantenible, más limpia.
+- **Comercio electrónico.** Si vendes online a consumidores, estás dentro.
+- **Banca y servicios financieros** a consumidores.
+- **Transporte de pasajeros** y sus servicios digitales.
+- **Telecomunicaciones** y servicios audiovisuales.
+- **Libros electrónicos** y sus plataformas.
+- **Toda la administración pública** y, por arrastre, quien le presta servicios: si te presentas a licitaciones, te lo van a exigir en el pliego.
 
-## Lo mínimo que debe cumplir tu web
+Y ahora lo que no te va a contar quien quiera venderte una auditoría: **las microempresas que prestan servicios están exceptuadas**. Si tienes menos de diez personas y no superas los umbrales de facturación, la obligación como tal no te alcanza.
 
-Sin entrar en tecnicismos, las cosas básicas que se exigen y que la mayoría de webs incumplen:
+Que no te obligue no significa que no te convenga, y los motivos están en la sección siguiente. Pero preferimos que sepas dónde estás antes de que alguien te venda urgencia que no tienes.
 
-**Contraste suficiente** entre texto y fondo. Los grises clarísimos sobre blanco que están de moda fallan WCAG.
+## Qué pasa si no cumples
 
-**Texto alternativo (alt) en las imágenes**. Lo que describe la imagen para alguien que no la ve. Cero por ciento de las webs que auditamos lo tienen al 100%.
+Hay régimen sancionador, y escala según la gravedad hasta cifras de seis dígitos en los casos serios. Pero por experiencia, la sanción no es lo que primero te va a doler.
 
-**Navegación con teclado**. Sin necesidad de ratón. Esto excluye a más gente de la que parece.
+Lo que llega antes es esto: **el pliego que no puedes firmar**. Cada vez más licitaciones, públicas y privadas, y cada vez más contratos con grandes clientes, piden una declaración de conformidad de accesibilidad. Si tu web no cumple, no es que te multen: es que no te presentas.
 
-**Estructura semántica con encabezados** correctos (un H1 por página, jerarquía coherente).
+Ese es el coste real y el que vemos materializarse de verdad.
 
-**Formularios con etiquetas correctas** (label asociado a cada input, mensajes de error accesibles).
+## Por qué importa aunque no te obligue
 
-**Vídeos con subtítulos** si los usas.
+**Es mercado que estás dejando fuera.** Alrededor del 15 % de la población tiene alguna discapacidad. Súmale la población mayor, que en el norte de España pesa más que la media nacional, y las situaciones temporales. No es un colectivo minoritario, es una parte sustancial de tus clientes potenciales.
 
-**Sin información transmitida solo por color**. ("Los campos rojos son obligatorios" no vale: hay que decirlo también con texto).
+**Coincide casi entero con el SEO técnico.** Estructura semántica, encabezados jerarquizados, textos alternativos, enlaces que dicen a dónde van, formularios bien etiquetados. Google lee tu web de una forma parecida a como la lee un lector de pantalla, así que lo que haces por accesibilidad lo cobras dos veces.
 
-## Auditoría de accesibilidad: cómo se hace
+**Es un indicador de calidad.** Una web accesible suele ser una web mejor construida: más limpia, más rápida y más barata de mantener. Cuando auditamos accesibilidad casi siempre encontramos, de paso, los problemas de rendimiento.
 
-Una auditoría seria combina herramientas automáticas (Axe, WAVE, Lighthouse) y revisión manual. Las automáticas detectan aproximadamente un 30% de los problemas; el resto requiere ojo humano. Una auditoría en una web de pyme cántabra suele costar entre 600 y 1.500 euros y deja un informe con priorización clara.
+## Lo que casi todas las webs incumplen
 
-## Caso real: una empresa industrial cántabra
+De lo que vemos auditando, esto es lo que falla una y otra vez:
 
-Una empresa industrial cántabra que vende también en mercados europeos nos pidió hacer accesible su web. Motivo: una licitación pública europea les exigió un VPAT (declaración de conformidad de accesibilidad) que no podían firmar con la web vieja. Tras tres semanas de trabajo (refactorización de plantillas, alts, contraste, formularios), pudieron presentarse. Ganaron la licitación. La inversión se cubrió en una semana.
+**El contraste.** Los grises claros sobre blanco que llevan años de moda no pasan el nivel AA. Es el incumplimiento más común y el más fácil de detectar desde fuera.
 
-## Mitos sobre la accesibilidad
+**Los textos alternativos.** Nunca hemos auditado una web que los tuviera todos y bien. O faltan, o son el nombre del archivo, o describen la imagen sin decir qué función cumple.
 
-**"Hace mi web fea"**. No. Mira la web del NYT, de la BBC, de Apple. Son perfectamente accesibles y son de las webs mejor diseñadas del mundo.
+**La navegación con teclado.** Recorrer la web entera sin tocar el ratón. Menús que no se abren, modales de los que no se sale, y el foco invisible porque alguien quitó el contorno azul por estética.
 
-**"Es muy caro"**. Si se piensa desde el principio, casi no añade coste. Si se hace luego como parche, sí encarece. Por eso conviene exigirlo a la agencia desde la primera reunión.
+**La jerarquía de encabezados.** Varios H1, saltos de H2 a H4, o encabezados usados para poner texto grande. Rompe la navegación por estructura, que es como se mueve por una página quien usa lector de pantalla.
 
-**"Pongo un widget de accesibilidad y resuelto"**. Los widgets tipo "barra de accesibilidad lateral" no resuelven nada. Son maquillaje y la AEPD y otras autoridades europeas ya los están señalando como insuficientes.
+**Los formularios.** Etiquetas no asociadas al campo, errores señalados solo en rojo, mensajes que el lector de pantalla no anuncia.
 
-## Accesibilidad web en Cantabria: nuestra experiencia
+**La información transmitida solo por color.** "Los campos en rojo son obligatorios" no vale si el color es la única pista.
 
-Trabajamos con varias empresas cántabras que, por sector o por contrato, necesitan webs accesibles: empresas industriales con clientes europeos, empresas que trabajan para el sector público, empresas de servicios sociales. Cuando lo planificamos desde el principio, no es complicado. Cuando hay que arreglarlo después, lleva más esfuerzo pero también es perfectamente abordable.
+**Los vídeos sin subtítulos**, que además te penalizan con la mitad de la gente que los ve en silencio.
+
+## Los widgets de accesibilidad no valen
+
+Esto merece decirse claro porque es una industria entera vendiendo humo.
+
+Los overlays (esas barritas laterales con el icono del muñeco que prometen "hacer tu web accesible con una línea de código") no arreglan los problemas de fondo. No pueden: un script externo no sabe qué describe cada imagen, no puede reordenar tu HTML mal estructurado ni asociar etiquetas a campos que no las tienen.
+
+Lo que sí hacen es darte una falsa sensación de cumplimiento. En Estados Unidos, donde este tipo de demandas lleva años, las webs con overlay instalado han sido demandadas igual, y en algunos casos precisamente por ellos. Y una parte de la comunidad de usuarios de lectores de pantalla los desactiva activamente porque interfieren con sus propias herramientas.
+
+Si alguien te ofrece cumplimiento de accesibilidad instalando un script, no te está resolviendo el problema: te está vendiendo la coartada.
+
+## Cómo se audita de verdad
+
+Las herramientas automáticas (Axe, WAVE, Lighthouse) detectan en torno a un tercio de los problemas. Son útiles para el primer barrido y no sirven para certificar nada.
+
+El resto exige revisión manual: recorrer la web con teclado, escucharla con lector de pantalla, comprobar que los mensajes de error se anuncian, verificar que el contenido tiene sentido leído en orden. Eso lo hace una persona, tarda, y es la parte que separa un informe útil de un PDF de capturas.
+
+Una auditoría de accesibilidad sobre una web de pyme, con revisión manual e informe priorizado, se mueve entre 600 y 1.500 euros. La refactorización posterior depende de lo que salga, y es donde cambia mucho según cómo esté construida la web.
+
+## Caso real: la licitación que no podían firmar
+
+Una empresa industrial que vende en mercados europeos nos llamó con prisa. No les preocupaba la accesibilidad: les preocupaba que una licitación pública europea les exigía una declaración de conformidad que no podían firmar con la web que tenían.
+
+Tres semanas de trabajo: refactorización de plantillas, textos alternativos, contraste, formularios y navegación por teclado. Pudieron presentarse. Ganaron la licitación. La inversión se cubrió en una semana.
+
+Esa es la conversación real sobre accesibilidad en el mundo de la empresa, y no va de sanciones.
+
+## Cuesta mucho menos antes que después
+
+Si la accesibilidad se plantea desde el diseño, el sobrecoste es casi nulo: es elegir bien los colores, estructurar bien el HTML y probar con teclado. Está dentro de hacer las cosas bien.
+
+Si hay que meterla en una web ya construida, sobre todo si es una plantilla comercial con constructor visual, la historia cambia. A veces hay que rehacer plantillas enteras porque el marcado que genera la herramienta no hay por dónde cogerlo, y ahí es cuando la cuenta empieza a acercarse a la de una web nueva.
+
+Por eso la accesibilidad se pide en la primera reunión con tu proveedor, no en la última.
+
+## Tres mitos que conviene enterrar
+
+**"Hace la web fea."** No. Las webs de referencia mundial en diseño cumplen AA. La accesibilidad limita algunos caprichos de contraste, no el diseño.
+
+**"Es carísimo."** Como parte del proyecto, no. Como parche sobre una web mal construida, sí. La diferencia la decides tú al contratar.
+
+**"A mi sector no le afecta."** Puede que la ley no te obligue hoy. El pliego de tu próximo cliente grande, probablemente sí.
+
+## Cómo lo hacemos en Pindia
+
+Entregamos con WCAG 2.2 AA como mínimo, no como extra facturable: contraste comprobado, navegación por teclado con foco visible, estructura semántica, formularios etiquetados y textos alternativos escritos por una persona. Esta misma web se construyó así.
+
+Y si lo que necesitas es una auditoría de la web que ya tienes, con un informe priorizado por impacto y riesgo en vez de un volcado de la herramienta automática, es un trabajo que hacemos por separado.
+
+## Preguntas frecuentes
+
+### ¿Es obligatoria la accesibilidad web para una empresa privada?
+
+Desde el 28 de junio de 2025 sí, para una lista amplia de sectores: comercio electrónico, banca, transporte, telecomunicaciones, servicios audiovisuales y libros electrónicos, además de quien presta servicios a la administración. Las microempresas de servicios están exceptuadas.
+
+### ¿Qué nivel de accesibilidad hay que cumplir?
+
+El nivel AA de las WCAG 2.2, que es lo que recoge la norma europea EN 301 549. El nivel AAA existe pero no es exigible con carácter general.
+
+### ¿Sirve instalar un widget o una barra de accesibilidad?
+
+No. Un script externo no puede describir tus imágenes, reordenar tu HTML ni etiquetar campos que no tienen etiqueta. Da apariencia de cumplimiento sin cumplimiento, y muchos usuarios de lectores de pantalla los desactivan porque estorban.
+
+### ¿Cuánto cuesta hacer accesible una web?
+
+Una auditoría con revisión manual e informe priorizado, entre 600 y 1.500 euros. La corrección depende de cómo esté construida la web: si es a medida suele ser asumible, y si es una plantilla con constructor visual a veces sale más a cuenta rehacerla.
+
+### ¿Qué pasa si mi web no es accesible?
+
+Hay régimen sancionador, pero lo que llega antes en la práctica es quedarte fuera de licitaciones y contratos que exigen declaración de conformidad. Es el coste que vemos materializarse de verdad.
+
+### ¿La accesibilidad mejora el posicionamiento en Google?
+
+Indirectamente y bastante. Estructura semántica, encabezados jerarquizados, textos alternativos y enlaces descriptivos son a la vez requisitos de accesibilidad y buenas prácticas de SEO técnico.
+
+### ¿Puedo comprobar yo si mi web cumple?
+
+Puedes hacerte una idea rápida: recorre tu web entera sin tocar el ratón y mira si sabes en todo momento dónde está el foco. Si te pierdes o te quedas atrapado en algún sitio, ya tienes la respuesta. Certificar el cumplimiento es otra cosa y exige revisión manual completa.
 
 ## Más en el blog
 
-- [10 errores web (soluciones)](../errores-comunes-web-empresa/), Algunos errores comunes son problemas de accesibilidad.
-- [¿Tu web cumple con la ley?](../tu-web-cumple-ley/), Accesibilidad es parte del cumplimiento legal en Europa.
-- [Migrar web sin perder SEO](../migrar-web-sin-perder-seo/), Migrar mal puede perder accesibilidad también.
+- [¿Tu web cumple con la ley?](https://pindia.es/blog/posts/tu-web-cumple-ley/), aviso legal, cookies, RGPD y DPA en el mismo sitio.
+- [Diseño web profesional](https://pindia.es/blog/posts/diseno-web-profesional/), los criterios objetivos que separan una web buena de un apaño.
+- [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), el otro requisito técnico que casi nadie mira.
+- [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), si toca rehacerla, los tramos reales.
 
-Si tu empresa tiene que cumplir con accesibilidad web (por obligación o porque quiere ganar clientes que la valoran), [hablemos](/contacto/). Hacemos auditorías y refactorizamos webs para llegar al nivel WCAG 2.2 AA, que es el estándar europeo exigible.
+Si tienes que acreditar accesibilidad para un pliego o quieres saber a qué distancia está tu web del nivel AA, [hablemos](/contacto/).
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Es obligatoria la accesibilidad web para una empresa privada?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Desde el 28 de junio de 2025 sí, para una lista amplia de sectores: comercio electrónico, banca, transporte, telecomunicaciones, servicios audiovisuales y libros electrónicos, además de quien presta servicios a la administración. Las microempresas de servicios están exceptuadas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué nivel de accesibilidad hay que cumplir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El nivel AA de las WCAG 2.2, que es lo que recoge la norma europea EN 301 549. El nivel AAA existe pero no es exigible con carácter general."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Sirve instalar un widget o una barra de accesibilidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Un script externo no puede describir tus imágenes, reordenar tu HTML ni etiquetar campos que no tienen etiqueta. Da apariencia de cumplimiento sin cumplimiento, y muchos usuarios de lectores de pantalla los desactivan porque estorban."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta hacer accesible una web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Una auditoría con revisión manual e informe priorizado, entre 600 y 1.500 euros. La corrección depende de cómo esté construida la web: si es a medida suele ser asumible, y si es una plantilla con constructor visual a veces sale más a cuenta rehacerla."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si mi web no es accesible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hay régimen sancionador, pero lo que llega antes en la práctica es quedarte fuera de licitaciones y contratos que exigen declaración de conformidad de accesibilidad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La accesibilidad mejora el posicionamiento en Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indirectamente y bastante. Estructura semántica, encabezados jerarquizados, textos alternativos y enlaces descriptivos son a la vez requisitos de accesibilidad y buenas prácticas de SEO técnico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo comprobar yo mismo si mi web cumple?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puedes hacerte una idea rápida recorriendo la web entera sin tocar el ratón: si te pierdes o te quedas atrapado, ya tienes la respuesta. Certificar el cumplimiento es otra cosa y exige revisión manual completa."
+      }
+    }
+  ]
+}
+</script>

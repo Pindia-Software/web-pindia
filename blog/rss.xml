@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Tue, 01 Sep 2026 13:52:03 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 13:56:32 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Accesibilidad web: qué exige la ley y qué incumple casi todo el mundo</title>
+      <link>https://pindia.es/blog/posts/accesibilidad-web-empresas-cantabria/</link>
+      <description>Qué exige la accesibilidad web tras la Ley 11/2023, a quién obliga de verdad, qué incumplen casi todas las webs y por qué los widgets no valen.</description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/accesibilidad-web-empresas-cantabria/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Cumplimiento &amp; Accesibilidad</category><category>Diseño &amp; Desarrollo Web</category>
+    </item>
 
     <item>
       <title>Desarrollo ecommerce: cómo es un proyecto de tienda online por dentro</title>
@@ -34,6 +44,16 @@
       <description>Cuánto cuesta una tienda online: precio de desarrollo por tramos, los costes recurrentes que nadie suma y la cuenta real a tres años.</description>
       <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/precio-tienda-online/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>Diseño web para restaurantes: lo que de verdad trae reservas</title>
+      <link>https://pindia.es/blog/posts/web-restaurante-hosteleria-cantabria/</link>
+      <description>Cómo debe ser la web de un restaurante para que traiga reservas: carta indexable, reservas directas, SEO local y los errores que cuestan clientes.</description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/web-restaurante-hosteleria-cantabria/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
     </item>
@@ -196,26 +216,6 @@
       <guid isPermaLink="true">https://pindia.es/blog/posts/integracion-erp-web-empresa/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Negocio &amp; Estrategia Digital</category>
-    </item>
-
-    <item>
-      <title>Accesibilidad web: por qué importa</title>
-      <link>https://pindia.es/blog/posts/accesibilidad-web-empresas-cantabria/</link>
-      <description>Qué es la accesibilidad web (WCAG, EN 301 549) y por qué cualquier empresa, también en Cantabria, debería tomársela en serio.</description>
-      <pubDate>Thu, 09 Apr 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/accesibilidad-web-empresas-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Cumplimiento &amp; Accesibilidad</category><category>Diseño &amp; Desarrollo Web</category>
-    </item>
-
-    <item>
-      <title>Webs para restaurantes: lo que sí funciona</title>
-      <link>https://pindia.es/blog/posts/web-restaurante-hosteleria-cantabria/</link>
-      <description>Cómo debe ser la web de un restaurante en Cantabria: reservas, carta, SEO local y errores que cuestan clientes. Con casos reales.</description>
-      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/web-restaurante-hosteleria-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Diseño &amp; Desarrollo Web</category>
     </item>
 
     <item>

@@ -184,6 +184,13 @@
   </url>
 
   <url>
+    <loc>https://pindia.es/blog/posts/accesibilidad-web-empresas-cantabria/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://pindia.es/blog/posts/desarrollo-ecommerce/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
@@ -199,6 +206,13 @@
 
   <url>
     <loc>https://pindia.es/blog/posts/precio-tienda-online/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/posts/web-restaurante-hosteleria-cantabria/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -317,20 +331,6 @@
   </url>
 
   <url>
-    <loc>https://pindia.es/blog/posts/accesibilidad-web-empresas-cantabria/</loc>
-    <lastmod>2026-04-09</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/posts/web-restaurante-hosteleria-cantabria/</loc>
-    <lastmod>2026-04-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://pindia.es/blog/posts/landing-page-conversion-cantabria/</loc>
     <lastmod>2026-03-19</lastmod>
     <changefreq>yearly</changefreq>
@@ -430,6 +430,13 @@
 
   <url>
     <loc>https://pindia.es/blog/tag/negocio-estrategia-digital/page/3/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/tag/negocio-estrategia-digital/page/4/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
