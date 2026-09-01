@@ -2,9 +2,8 @@
 title: 'App nativa, híbrida o web: cuál elegir para tu empresa'
 metaTitle: 'App nativa, híbrida o web: cuál elegir'
 description: >-
-  Diferencias entre app nativa, app híbrida (multiplataforma) y app web (PWA):
-  rendimiento, coste, mantenimiento y cuándo conviene cada una. Guía práctica de
-  una empresa de desarrollo.
+  App nativa, híbrida o web: diferencias reales en rendimiento, coste y
+  mantenimiento, y cuál conviene a tu empresa en cada caso.
 date: 2026-07-30T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:

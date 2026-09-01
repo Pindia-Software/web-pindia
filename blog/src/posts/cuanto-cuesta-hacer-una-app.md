@@ -3,8 +3,7 @@ title: '¿Cuánto cuesta hacer una app? Precios y factores en 2026'
 metaTitle: '¿Cuánto cuesta hacer una app? Precios 2026'
 description: >-
   Cuánto cuesta desarrollar una app móvil: rangos de precio por tipo, qué
-  factores lo determinan, cómo abaratar sin arriesgar y cuánto se tarda. Guía de
-  una empresa de desarrollo.
+  factores lo determinan y cuánto se tarda en tenerla lista.
 date: 2026-07-30T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:

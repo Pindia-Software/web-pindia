@@ -3,8 +3,7 @@ title: 'Diseño web profesional: qué es y cómo saber si tu web lo tiene'
 metaTitle: 'Diseño web profesional: qué es y cómo saberlo'
 description: >-
   Qué diferencia un diseño web profesional de una plantilla o un apaño casero:
-  los 7 criterios objetivos que lo definen y un checklist para saber si tu web
-  los cumple.
+  los 7 criterios que lo definen y si tu web los cumple.
 date: 2026-07-27T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:

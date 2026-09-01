@@ -3,8 +3,7 @@ title: 'Mantenimiento web para empresas: qué incluye y cuánto cuesta de verdad
 metaTitle: 'Mantenimiento web para empresas: qué incluye y cuánto cuesta'
 description: >-
   Qué incluye un buen mantenimiento web, cuánto cuesta al mes de verdad y cómo
-  saber si el que pagas es un timo. Precios reales y sin humo, por una empresa
-  de desarrollo.
+  saber si el que estás pagando es humo. Precios reales.
 date: 2026-07-22T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:

@@ -5,7 +5,7 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Tue, 01 Sep 2026 06:55:32 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 06:58:45 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
 
     <item>
@@ -31,7 +31,7 @@
     <item>
       <title>App nativa, híbrida o web: cuál elegir para tu empresa</title>
       <link>https://pindia.es/blog/posts/app-nativa-hibrida-web/</link>
-      <description>Diferencias entre app nativa, app híbrida (multiplataforma) y app web (PWA): rendimiento, coste, mantenimiento y cuándo conviene cada una. Guía práctica de una empresa de desarrollo.</description>
+      <description>App nativa, híbrida o web: diferencias reales en rendimiento, coste y mantenimiento, y cuál conviene a tu empresa en cada caso.</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/app-nativa-hibrida-web/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -41,7 +41,7 @@
     <item>
       <title>¿Cuánto cuesta hacer una app? Precios y factores en 2026</title>
       <link>https://pindia.es/blog/posts/cuanto-cuesta-hacer-una-app/</link>
-      <description>Cuánto cuesta desarrollar una app móvil: rangos de precio por tipo, qué factores lo determinan, cómo abaratar sin arriesgar y cuánto se tarda. Guía de una empresa de desarrollo.</description>
+      <description>Cuánto cuesta desarrollar una app móvil: rangos de precio por tipo, qué factores lo determinan y cuánto se tarda en tenerla lista.</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/cuanto-cuesta-hacer-una-app/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -51,7 +51,7 @@
     <item>
       <title>SEO local en Santander: cómo posicionar tu negocio en Google</title>
       <link>https://pindia.es/blog/posts/seo-local-santander/</link>
-      <description>Guía práctica de SEO local para pymes de Santander y Cantabria: Google Business Profile, reseñas, keywords locales y web optimizada para aparecer en el mapa de Google. Escrita por una empresa de desarrollo.</description>
+      <description>SEO local en Santander y Cantabria: cómo aparecer en el mapa de Google, qué pesa de verdad en el ranking local y cuánto tarda en notarse.</description>
       <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/seo-local-santander/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -61,7 +61,7 @@
     <item>
       <title>ERP a medida: qué es, cuándo compensa frente a uno estándar y cuánto cuesta</title>
       <link>https://pindia.es/blog/posts/erp-a-medida/</link>
-      <description>Qué es un ERP a medida, en qué se diferencia de un ERP estándar como SAP u Odoo, cuándo compensa desarrollarlo y cuánto cuesta. Guía de una empresa de desarrollo de software.</description>
+      <description>Qué es un ERP a medida, en qué se diferencia de uno estándar como SAP u Odoo, cuándo compensa desarrollarlo y cuánto cuesta.</description>
       <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/erp-a-medida/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -71,7 +71,7 @@
     <item>
       <title>Diseño web profesional: qué es y cómo saber si tu web lo tiene</title>
       <link>https://pindia.es/blog/posts/diseno-web-profesional/</link>
-      <description>Qué diferencia un diseño web profesional de una plantilla o un apaño casero: los 7 criterios objetivos que lo definen y un checklist para saber si tu web los cumple.</description>
+      <description>Qué diferencia un diseño web profesional de una plantilla o un apaño casero: los 7 criterios que lo definen y si tu web los cumple.</description>
       <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/diseno-web-profesional/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -81,7 +81,7 @@
     <item>
       <title>Posicionamiento web en Santander: qué es, cuánto cuesta y cómo elegir empresa</title>
       <link>https://pindia.es/blog/posts/posicionamiento-web-santander/</link>
-      <description>Qué es el posicionamiento web en Santander, qué incluye, cuánto cuesta, cuánto tarda en notarse y cómo elegir empresa. Guía honesta por una empresa de desarrollo.</description>
+      <description>Qué es el posicionamiento web en Santander, qué incluye, cuánto cuesta, cuánto tarda en notarse y cómo elegir empresa sin jugártela.</description>
       <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/posicionamiento-web-santander/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -91,7 +91,7 @@
     <item>
       <title>Software a medida: qué es, para qué sirve y cuánto cuesta</title>
       <link>https://pindia.es/blog/posts/software-a-medida/</link>
-      <description>Qué es el software a medida, para qué sirve, cuándo compensa frente a un programa estándar y cuánto cuesta de verdad. Guía escrita por una empresa de desarrollo.</description>
+      <description>Qué es el software a medida, para qué sirve, cuándo compensa frente a un programa estándar y cuánto cuesta de verdad.</description>
       <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/software-a-medida/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -101,7 +101,7 @@
     <item>
       <title>Tienda online a medida: qué es, cuándo compensa y cuánto cuesta</title>
       <link>https://pindia.es/blog/posts/tienda-online-a-medida/</link>
-      <description>Qué es una tienda online a medida, en qué se diferencia de Shopify o WooCommerce, cuándo compensa el desarrollo a medida y cuánto cuesta. Guía de una empresa de desarrollo ecommerce.</description>
+      <description>Qué es una tienda online a medida, en qué se diferencia de Shopify o WooCommerce, cuándo compensa el desarrollo propio y cuánto cuesta.</description>
       <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/tienda-online-a-medida/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
@@ -111,7 +111,7 @@
     <item>
       <title>Mantenimiento web para empresas: qué incluye y cuánto cuesta de verdad</title>
       <link>https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</link>
-      <description>Qué incluye un buen mantenimiento web, cuánto cuesta al mes de verdad y cómo saber si el que pagas es un timo. Precios reales y sin humo, por una empresa de desarrollo.</description>
+      <description>Qué incluye un buen mantenimiento web, cuánto cuesta al mes de verdad y cómo saber si el que estás pagando es humo. Precios reales.</description>
       <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>

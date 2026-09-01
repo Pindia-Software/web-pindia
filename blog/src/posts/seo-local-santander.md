@@ -2,9 +2,8 @@
 title: 'SEO local en Santander: cómo posicionar tu negocio en Google'
 metaTitle: 'SEO local en Santander: guía para posicionar en Google'
 description: >-
-  Guía práctica de SEO local para pymes de Santander y Cantabria: Google
-  Business Profile, reseñas, keywords locales y web optimizada para aparecer en
-  el mapa de Google. Escrita por una empresa de desarrollo.
+  SEO local en Santander y Cantabria: cómo aparecer en el mapa de Google, qué
+  pesa de verdad en el ranking local y cuánto tarda en notarse.
 date: 2026-07-30T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:

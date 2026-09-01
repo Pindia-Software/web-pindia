@@ -3,8 +3,7 @@ title: 'Tienda online a medida: qué es, cuándo compensa y cuánto cuesta'
 metaTitle: 'Tienda online a medida: cuándo compensa y precio'
 description: >-
   Qué es una tienda online a medida, en qué se diferencia de Shopify o
-  WooCommerce, cuándo compensa el desarrollo a medida y cuánto cuesta. Guía de
-  una empresa de desarrollo ecommerce.
+  WooCommerce, cuándo compensa el desarrollo propio y cuánto cuesta.
 date: 2026-07-24T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:

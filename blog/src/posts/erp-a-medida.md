@@ -2,9 +2,8 @@
 title: 'ERP a medida: qué es, cuándo compensa frente a uno estándar y cuánto cuesta'
 metaTitle: 'ERP a medida: cuándo compensa y cuánto cuesta'
 description: >-
-  Qué es un ERP a medida, en qué se diferencia de un ERP estándar como SAP u
-  Odoo, cuándo compensa desarrollarlo y cuánto cuesta. Guía de una empresa de
-  desarrollo de software.
+  Qué es un ERP a medida, en qué se diferencia de uno estándar como SAP u Odoo,
+  cuándo compensa desarrollarlo y cuánto cuesta.
 date: 2026-07-28T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:

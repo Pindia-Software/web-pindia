@@ -3,8 +3,7 @@ title: 'Software a medida: qué es, para qué sirve y cuánto cuesta'
 metaTitle: 'Software a medida: qué es y cuánto cuesta'
 description: >-
   Qué es el software a medida, para qué sirve, cuándo compensa frente a un
-  programa estándar y cuánto cuesta de verdad. Guía escrita por una empresa de
-  desarrollo.
+  programa estándar y cuánto cuesta de verdad.
 date: 2026-07-24T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:
