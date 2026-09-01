@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Tue, 01 Sep 2026 07:28:02 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 13:16:15 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Desarrollo ecommerce: cómo es un proyecto de tienda online por dentro</title>
+      <link>https://pindia.es/blog/posts/desarrollo-ecommerce/</link>
+      <description>Qué implica un proyecto de desarrollo ecommerce: fases, catálogo, integraciones con ERP, migración sin perder ventas y cómo elegir equipo.</description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/desarrollo-ecommerce/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
 
     <item>
       <title>Cuánto cuesta una página web: precios reales en 2026</title>
@@ -14,6 +24,16 @@
       <description>Cuánto cuesta una página web en 2026: precios reales por tramo, qué compras en cada uno, los costes ocultos y qué exigir antes de firmar.</description>
       <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/precio-pagina-web-cantabria/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>Precio de una tienda online: cuánto cuesta montarla y mantenerla</title>
+      <link>https://pindia.es/blog/posts/precio-tienda-online/</link>
+      <description>Cuánto cuesta una tienda online: precio de desarrollo por tramos, los costes recurrentes que nadie suma y la cuenta real a tres años.</description>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/precio-tienda-online/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
     </item>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Desarrollo ecommerce: cómo es el proyecto por dentro · Pindia</title>
+  <meta name="description" content="Qué implica un proyecto de desarrollo ecommerce: fases, catálogo, integraciones con ERP, migración sin perder ventas y cómo elegir equipo.">
+  <link rel="canonical" href="https://pindia.es/blog/posts/desarrollo-ecommerce/">
+  
+  
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Desarrollo ecommerce: cómo es el proyecto por dentro · Pindia">
+  <meta property="og:description" content="Qué implica un proyecto de desarrollo ecommerce: fases, catálogo, integraciones con ERP, migración sin perder ventas y cómo elegir equipo.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/og-home.webp">
+  <meta property="og:url"         content="https://pindia.es/blog/posts/desarrollo-ecommerce/">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Desarrollo ecommerce: cómo es el proyecto por dentro · Pindia">
+  <meta name="twitter:description" content="Qué implica un proyecto de desarrollo ecommerce: fases, catálogo, integraciones con ERP, migración sin perder ventas y cómo elegir equipo.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/og-home.webp">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicons/favicon.png">
+  <link rel="manifest"         href="/manifest.webmanifest">
+  <meta name="theme-color"     content="#22293E">
+
+  <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260820a" crossorigin>
+
+  <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
+  <script>
+    window.GA_MEASUREMENT_ID = 'G-KSW7VRFCV6';
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+  </script>
+
+  <!-- Critical CSS (tokens + base + responsive merged, minified) -->
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260820a">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Blog Pindia Software" href="/blog/rss.xml">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://pindia.es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://pindia.es/blog/"},{"@type":"ListItem","position":3,"name":"Desarrollo ecommerce: cómo es un proyecto de tienda online por dentro","item":"https://pindia.es/blog/posts/desarrollo-ecommerce/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Desarrollo ecommerce: cómo es un proyecto de tienda online por dentro","description":"Qué implica un proyecto de desarrollo ecommerce: fases, catálogo, integraciones con ERP, migración sin perder ventas y cómo elegir equipo.","datePublished":"2026-09-01","author":{"@type":"Person","name":"Beatriz Santa Cruz Llanillo","sameAs":["https://www.linkedin.com/in/beatriz-santa-cruz-llanillo-1766b5170/"]},"publisher":{"@id":"https://pindia.es/#organization"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pindia.es/blog/posts/desarrollo-ecommerce/"},"keywords":"Diseño & Desarrollo Web, Negocio & Estrategia Digital"}</script>
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="nav" role="banner">
+    <div class="container">
+      <div class="nav__inner">
+
+        <a href="/" class="nav__logo" aria-label="Pindia Software — Inicio">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" width="140" height="56" loading="eager">
+        </a>
+
+        <nav class="nav__links" aria-label="Navegación principal">
+          <a href="/servicios/" class="nav__link">Servicios</a>
+          <a href="/proyectos/" class="nav__link">Proyectos</a>
+          <a href="/blog/" class="nav__link" aria-current="page">Blog</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a href="/contacto/" class="btn btn--primary">Hablemos</a>
+          <button
+            class="nav__toggle"
+            aria-expanded="false"
+            aria-controls="nav-drawer"
+            aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" class="nav__drawer" aria-label="Menú móvil">
+    <a href="/servicios/" class="nav__link">Servicios</a>
+    <a href="/proyectos/" class="nav__link">Proyectos</a>
+    <a href="/blog/" class="nav__link" aria-current="page">Blog</a>
+    <a href="/contacto/" class="btn btn--primary btn--lg" style="width:100%;margin-top:auto;">Hablemos de tu proyecto</a>
+  </nav>
+
+  <main id="main">
+
+    <!-- BREADCRUMB -->
+    <nav class="post__breadcrumb" aria-label="Ruta de navegación">
+      <div class="container">
+        <ol>
+          <li><a href="/">Inicio</a></li>
+          <li aria-hidden="true">/</li>
+          <li><a href="/blog/">Blog</a></li>
+          <li aria-hidden="true">/</li>
+          <li><span aria-current="page">Desarrollo ecommerce: cómo es un proyecto de tienda online por dentro</span></li>
+        </ol>
+      </div>
+    </nav>
+
+    <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+
+      <header class="post__header">
+        <div class="container">
+          <div class="post__header-inner">
+
+            <a href="/blog/" id="post-back-link" class="post__back" aria-label="Volver al listado del blog">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              Volver al blog
+            </a>
+
+            <script>
+              (function() {
+                const params = new URLSearchParams(window.location.search);
+                const page = params.get('page');
+                const backLink = document.getElementById('post-back-link');
+                if (backLink && page) {
+                  const pageNum = parseInt(page, 10);
+                  if (pageNum > 1) {
+                    backLink.href = '/blog/page/' + pageNum + '/';
+                  }
+                }
+              })();
+            </script>
+
+            <div class="post__meta">
+              <span class="post__tag">Diseño &amp; Desarrollo Web</span><span class="post__tag">Negocio &amp; Estrategia Digital</span>
+            </div>
+            <h1 class="post__title" itemprop="headline">Desarrollo ecommerce: cómo es un proyecto de tienda online por dentro</h1>
+            <p class="post__lead">Qué implica un proyecto de desarrollo ecommerce: fases, catálogo, integraciones con ERP, migración sin perder ventas y cómo elegir equipo.</p>
+            <div class="post__byline">
+              <time datetime="2026-09-01" itemprop="datePublished">1 de septiembre de 2026</time>
+              <span aria-hidden="true">·</span>
+              <span class="post__author" itemprop="author">Beatriz Santa Cruz Llanillo</span>
+              <span aria-hidden="true">·</span>
+              <span class="post__reading-time">10 min de lectura</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      
+
+      <div class="post__layout">
+        <aside class="post-toc-wrap">
+          <nav class="post-toc" aria-label="Índice de contenidos">
+            <p class="post-toc__title">En este artículo</p>
+            <ol class="post-toc__list">
+              <li><a href="#los-tres-caminos-del-desarrollo-ecommerce">Los tres caminos del desarrollo ecommerce</a></li>
+              <li><a href="#las-fases-reales-de-un-proyecto">Las fases reales de un proyecto</a></li>
+              <li><a href="#el-catalogo-es-el-proyecto">El catálogo es el proyecto</a></li>
+              <li><a href="#integraciones-donde-se-va-el-presupuesto">Integraciones: donde se va el presupuesto</a></li>
+              <li><a href="#migrar-una-tienda-que-ya-vende">Migrar una tienda que ya vende</a></li>
+              <li><a href="#b2c-y-b2b-no-son-el-mismo-desarrollo">B2C y B2B no son el mismo desarrollo</a></li>
+              <li><a href="#rendimiento-y-conversion-no-son-lo-mismo-pero-se-tocan">Rendimiento y conversión no son lo mismo, pero se tocan</a></li>
+              <li><a href="#como-elegir-empresa-de-desarrollo-ecommerce">Cómo elegir empresa de desarrollo ecommerce</a></li>
+              <li><a href="#cuanto-cuesta-y-cuanto-se-tarda">Cuánto cuesta y cuánto se tarda</a></li>
+              <li><a href="#como-trabajamos-en-pindia">Cómo trabajamos en Pindia</a></li>
+              <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+              <li><a href="#mas-en-el-blog">Más en el blog</a></li>
+            </ol>
+          </nav>
+          
+        </aside>
+        <div class="post__body prose" itemprop="articleBody">
+          <p>El <strong>desarrollo ecommerce</strong> no es montar una web con carrito. Es construir el sistema que sostiene un negocio de venta: catálogo, stock, precios, pagos, envíos, devoluciones y los datos que conectan todo eso con lo que ya usas para facturar.</p>
+<p>Esa es la razón por la que los proyectos de tienda online se tuercen más que los de web corporativa. Una web corporativa que falla da mala imagen. Un ecommerce que falla pierde pedidos, y a veces los pierde sin que nadie se entere hasta que cuadras el mes.</p>
+<p>Somos una empresa de desarrollo, así que vamos a contar cómo es el proyecto por dentro: qué se decide en cada fase, dónde se rompen, y qué separa a un equipo que ha montado tiendas de uno que ha montado webs.</p>
+<h2 id="los-tres-caminos-del-desarrollo-ecommerce"><a href="#los-tres-caminos-del-desarrollo-ecommerce" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Los tres caminos del desarrollo ecommerce</h2><p>Antes de nada, &quot;desarrollo ecommerce&quot; describe tres cosas distintas y conviene saber en cuál estás:</p>
+<p><strong>Plataforma configurada.</strong> Shopify, WooCommerce o PrestaShop con una plantilla, el catálogo cargado y los métodos de pago y envío puestos. Es integración y configuración, no desarrollo. Arranca rápido y tiene techo.</p>
+<p><strong>Plataforma extendida.</strong> La misma base, pero con desarrollo propio encima: módulos a medida, integraciones con tus sistemas, lógica de precios que la plataforma no cubre. Es donde vive la mayoría de proyectos serios de pyme.</p>
+<p><strong>Desarrollo a medida.</strong> El sistema se construye desde tu operativa. Compensa cuando las reglas de negocio son el producto: B2B con tarifas por cliente, configuradores, multi-almacén, catálogos que cambian solos. Lo comparamos a fondo en <a href="https://pindia.es/blog/posts/tienda-online-a-medida/">tienda online a medida</a>.</p>
+<p>Un equipo que solo sabe hacer uno de los tres te va a recomendar ese, independientemente de tu caso.</p>
+<h2 id="las-fases-reales-de-un-proyecto"><a href="#las-fases-reales-de-un-proyecto" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Las fases reales de un proyecto</h2><p><strong>Descubrimiento.</strong> No va de diseño, va de operativa: cómo llega el pedido a tu almacén, quién actualiza el stock, qué pasa con una devolución, cómo se factura. Si esta fase se salta, todo lo demás se construye sobre suposiciones y se paga después.</p>
+<p><strong>Arquitectura de catálogo.</strong> Categorías, atributos, variantes y filtros. Es la decisión más determinante del proyecto y la que más se despacha en diez minutos. Volvemos a ella enseguida porque merece su propia sección.</p>
+<p><strong>Diseño de la experiencia de compra.</strong> Ficha de producto, listado, carrito y proceso de pago. Aquí no se decora: cada paso que añades al proceso de compra te cuesta pedidos, y cada duda que la ficha no resuelve es un abandono.</p>
+<p><strong>Desarrollo e integraciones.</strong> La parte que la gente cree que es todo el proyecto, y que suele ser menos de la mitad del esfuerzo.</p>
+<p><strong>Carga de catálogo y contenidos.</strong> El cuello de botella real. Casi siempre.</p>
+<p><strong>Pruebas de verdad.</strong> No es &quot;abrir la tienda y ver si carga&quot;. Es simular compras con distintos métodos de pago, comprobar que el stock se descuenta, que el email de confirmación sale, que la factura se genera y que una devolución no deja el inventario descuadrado.</p>
+<p><strong>Lanzamiento y las dos semanas siguientes.</strong> Las incidencias de un ecommerce aparecen con el uso real, no en pruebas. Un equipo que desaparece el día del lanzamiento es una señal de alarma.</p>
+<h2 id="el-catalogo-es-el-proyecto"><a href="#el-catalogo-es-el-proyecto" class="prose__anchor" aria-label="Enlace a esta sección">#</a>El catálogo es el proyecto</h2><p>Si te quedas con una sola idea de este artículo, que sea esta.</p>
+<p>Un catálogo vendible no son nombres y precios. Son atributos estructurados para que los filtros sirvan de algo, categorías pensadas para cómo busca tu cliente y no para cómo está organizado tu almacén, variantes coherentes, fotos consistentes y descripciones propias. Si copias el texto del fabricante, Google lo ignora y tu comprador también, porque está leyendo lo mismo en otras diez tiendas.</p>
+<p>Y hay una decisión técnica que casi nadie ve venir: <strong>dónde vive la verdad del catálogo</strong>. Si tu stock y tus precios están en un ERP, la tienda no puede ser una segunda fuente de verdad que alguien actualiza a mano. Definir eso al principio evita el problema más caro y más frecuente del ecommerce, que es vender algo que no tienes.</p>
+<h2 id="integraciones-donde-se-va-el-presupuesto"><a href="#integraciones-donde-se-va-el-presupuesto" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Integraciones: donde se va el presupuesto</h2><p>En una tienda de pyme las habituales son cuatro: <strong>ERP o programa de gestión</strong> (stock, precios, altas de producto), <strong>almacén o logística</strong> (preparación y seguimiento), <strong>transportistas</strong> (tarifas y etiquetas) y <strong>facturación</strong>.</p>
+<p>Cada una parece un checkbox y ninguna lo es. La parte fácil de una integración es leer los datos; la difícil es decidir qué pasa cuando falla. Qué ocurre si el ERP no responde a las tres de la tarde de un día de campaña, si dos pedidos compran la última unidad a la vez, si una devolución llega antes de que se procese el pago. Un equipo con experiencia en ecommerce te pregunta esto en la primera reunión. Uno que solo ha hecho webs, no.</p>
+<h2 id="migrar-una-tienda-que-ya-vende"><a href="#migrar-una-tienda-que-ya-vende" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Migrar una tienda que ya vende</h2><p>Es un proyecto distinto y bastante más delicado, porque no partes de cero: partes de algo que factura.</p>
+<p>Hay que trasladar productos, clientes, pedidos históricos y, sobre todo, el posicionamiento. Cada URL de producto y de categoría que cambie necesita su redirección, y en un catálogo grande eso son miles de reglas que no se pueden improvisar el día del lanzamiento. Una migración de ecommerce mal planificada cuesta meses de tráfico y de ventas, y la caída no se recupera sola.</p>
+<p>El detalle de cómo se conserva el posicionamiento está en <a href="https://pindia.es/blog/posts/migrar-web-sin-perder-seo/">migrar tu web sin perder posicionamiento</a>. Para una tienda, súmale que también estás migrando dinero en curso: pedidos abiertos, suscripciones activas y devoluciones pendientes.</p>
+<h2 id="b2c-y-b2b-no-son-el-mismo-desarrollo"><a href="#b2c-y-b2b-no-son-el-mismo-desarrollo" class="prose__anchor" aria-label="Enlace a esta sección">#</a>B2C y B2B no son el mismo desarrollo</h2><p>Se agrupan bajo la misma palabra y comparten poco.</p>
+<p>Un <strong>B2C</strong> vive de la conversión: velocidad, ficha de producto convincente, proceso de compra corto y confianza. El diseño y el rendimiento pesan mucho.</p>
+<p>Un <strong>B2B</strong> vive de las reglas: tarifas distintas por cliente, precios ocultos hasta iniciar sesión, pedidos por referencia y cantidad, pedidos mínimos, presupuestos que se aprueban antes de cobrarse, condiciones de pago aplazado. Aquí el diseño importa menos y la lógica lo es casi todo, y por eso el B2B se va a desarrollo a medida con mucha más frecuencia.</p>
+<p>Si tu negocio es mixto, el proyecto tiene que resolver los dos comportamientos sobre el mismo catálogo, y eso es una decisión de arquitectura que se toma al principio o no se toma.</p>
+<h2 id="rendimiento-y-conversion-no-son-lo-mismo-pero-se-tocan"><a href="#rendimiento-y-conversion-no-son-lo-mismo-pero-se-tocan" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Rendimiento y conversión no son lo mismo, pero se tocan</h2><p>En ecommerce la velocidad no es una cuestión de orgullo técnico, es facturación. Cada segundo de carga en la ficha de producto y en el proceso de pago se paga en pedidos que no se completan, y el móvil es donde más duele porque es donde está el tráfico.</p>
+<p>Lo que hay que medir son <a href="https://pindia.es/blog/posts/core-web-vitals-que-son/">Core Web Vitals</a> con datos reales de tus usuarios, no de laboratorio, y mirarlos por plantilla: la home suele ir bien y el listado con filtros, mal. Y luego está la otra mitad, que es la fricción: pasos innecesarios, formularios largos, gastos de envío que aparecen al final. Una tienda rápida con un proceso de compra malo sigue sin vender.</p>
+<h2 id="como-elegir-empresa-de-desarrollo-ecommerce"><a href="#como-elegir-empresa-de-desarrollo-ecommerce" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cómo elegir empresa de desarrollo ecommerce</h2><p>Cuatro preguntas que separan bastante bien:</p>
+<p><strong>¿Puedo ver tiendas vuestras funcionando?</strong> Ábrelas en el móvil, mete algo en el carrito y llega hasta el pago. Se aprende más en dos minutos que en una hora de reunión.</p>
+<p><strong>¿Qué pasa si el ERP no responde durante una campaña?</strong> Si la respuesta es una cara de sorpresa, no han integrado muchos.</p>
+<p><strong>¿Quién carga el catálogo y quién escribe las descripciones?</strong> Si no está claro en el presupuesto, aparecerá como sobrecoste o como trabajo tuyo a última hora.</p>
+<p><strong>¿Qué hacéis las dos semanas siguientes al lanzamiento?</strong> Es cuando aparecen los problemas de verdad.</p>
+<h2 id="cuanto-cuesta-y-cuanto-se-tarda"><a href="#cuanto-cuesta-y-cuanto-se-tarda" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cuánto cuesta y cuánto se tarda</h2><p>Un proyecto de desarrollo ecommerce va de unos 1.500 a 4.000 € si es una plataforma configurada, desde 6.000 € una tienda a medida sencilla, de 12.000 a 20.000 € con integración a ERP y desde 25.000 € un ecommerce complejo o B2B. El plazo, entre 6 y 12 semanas para complejidad media.</p>
+<p>El desglose completo, con los costes recurrentes que no aparecen en el presupuesto de desarrollo, está en <a href="https://pindia.es/blog/posts/precio-tienda-online/">precio de una tienda online</a>.</p>
+<h2 id="como-trabajamos-en-pindia"><a href="#como-trabajamos-en-pindia" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Cómo trabajamos en Pindia</h2><p>Empezamos por la operativa y por dónde viven tus datos, porque de ahí sale la arquitectura y de la arquitectura sale el presupuesto. Somos una empresa de desarrollo de software, así que las integraciones con ERP y las reglas de negocio raras no son un añadido incómodo: suelen ser la parte interesante del proyecto.</p>
+<h2 id="preguntas-frecuentes"><a href="#preguntas-frecuentes" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Preguntas frecuentes</h2>
+          <div class="faq-accordion">
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Qué es el desarrollo ecommerce?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Es el diseño y la construcción del sistema que sostiene una venta online: catálogo, stock, precios, pagos, envíos y las integraciones con los sistemas que ya usas. Va bastante más allá de poner un carrito en una web.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Cuánto cuesta un proyecto de desarrollo ecommerce?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>De 1.500 a 4.000 € una plataforma configurada, desde 6.000 € una tienda a medida sencilla, de 12.000 a 20.000 € con integración a ERP y desde 25.000 € un ecommerce complejo o B2B. A eso hay que sumar los costes recurrentes de vender online.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Cuánto se tarda en desarrollar una tienda online?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Entre 6 y 12 semanas para una complejidad media, más si hay integración con ERP o migración de una tienda existente. El plazo lo suele marcar el catálogo, no el desarrollo.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Se puede integrar la tienda con mi ERP?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Sí, y en la mayoría de proyectos serios es el núcleo del trabajo. Lo importante es decidir desde el principio dónde vive la verdad del stock y de los precios, y qué hace la tienda cuando el ERP no responde.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Qué es más difícil, un ecommerce B2C o uno B2B?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Son difíciles en cosas distintas. El B2C se juega en conversión, velocidad y confianza. El B2B se juega en reglas: tarifas por cliente, pedidos mínimos, precios ocultos y pago aplazado. El B2B acaba en desarrollo a medida con más frecuencia.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Puedo migrar mi tienda actual sin perder ventas?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Sí, si la migración se planifica: mapa de redirecciones producto a producto, traslado de clientes y pedidos, y un plan para los pedidos abiertos durante el cambio. Improvisarlo cuesta meses de tráfico y de facturación.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item__q">¿Necesito una plataforma o un desarrollo a medida?<svg class="faq-item__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
+              <div class="faq-item__a"><p>Depende de cuántas reglas de negocio propias tengas. Si vendes productos estándar a consumidor final, una plataforma suele bastar. Si tus precios, tarifas o procesos son particulares, la plataforma se acaba convirtiendo en un obstáculo.</p></div>
+            </details>
+          </div><h2 id="mas-en-el-blog"><a href="#mas-en-el-blog" class="prose__anchor" aria-label="Enlace a esta sección">#</a>Más en el blog</h2><ul>
+<li><a href="https://pindia.es/blog/posts/tienda-online-a-medida/">Tienda online a medida</a>, cuándo compensa frente a una plataforma estándar.</li>
+<li><a href="https://pindia.es/blog/posts/precio-tienda-online/">Precio de una tienda online</a>, el desarrollo y los costes recurrentes, juntos.</li>
+<li><a href="https://pindia.es/blog/posts/integracion-erp-web-empresa/">Integrar tu ERP con la web</a>, qué merece la pena automatizar y qué no.</li>
+<li><a href="https://pindia.es/blog/posts/tienda-online-cantabria/">Cómo planificar una tienda online que venda</a>, la operativa antes que la plataforma.</li>
+</ul>
+<p>Si tienes un proyecto de ecommerce entre manos, o una tienda que se te ha quedado pequeña, <a href="/contacto/">hablemos</a>.</p>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es el desarrollo ecommerce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es el diseño y la construcción del sistema que sostiene una venta online: catálogo, stock, precios, pagos, envíos y las integraciones con los sistemas que ya usas. Va bastante más allá de poner un carrito en una web."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta un proyecto de desarrollo ecommerce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De 1.500 a 4.000 € una plataforma configurada, desde 6.000 € una tienda a medida sencilla, de 12.000 a 20.000 € con integración a ERP y desde 25.000 € un ecommerce complejo o B2B. A eso hay que sumar los costes recurrentes de vender online."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto se tarda en desarrollar una tienda online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entre 6 y 12 semanas para una complejidad media, más si hay integración con ERP o migración de una tienda existente. El plazo lo suele marcar el catálogo, no el desarrollo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede integrar la tienda con mi ERP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, y en la mayoría de proyectos serios es el núcleo del trabajo. Lo importante es decidir desde el principio dónde vive la verdad del stock y de los precios, y qué hace la tienda cuando el ERP no responde."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es más difícil, un ecommerce B2C o uno B2B?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son difíciles en cosas distintas. El B2C se juega en conversión, velocidad y confianza. El B2B se juega en reglas: tarifas por cliente, pedidos mínimos, precios ocultos y pago aplazado. El B2B acaba en desarrollo a medida con más frecuencia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo migrar mi tienda actual sin perder ventas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, si la migración se planifica: mapa de redirecciones producto a producto, traslado de clientes y pedidos, y un plan para los pedidos abiertos durante el cambio. Improvisarlo cuesta meses de tráfico y de facturación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesito una plataforma o un desarrollo a medida?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende de cuántas reglas de negocio propias tengas. Si vendes productos estándar a consumidor final, una plataforma suele bastar. Si tus precios, tarifas o procesos son particulares, la plataforma se acaba convirtiendo en un obstáculo."
+      }
+    }
+  ]
+}
+</script>
+
+        </div>
+      </div>
+
+      <div class="container">
+        
+
+        <aside class="post-author" aria-label="Sobre la autora">
+          <p class="post-author__eyebrow">Escrito por</p>
+          <p class="post-author__name">Beatriz Santa Cruz Llanillo</p>
+          <p class="post-author__role">Responsable de proyectos en Pindia Software</p>
+          <a class="post-author__link" href="https://www.linkedin.com/in/beatriz-santa-cruz-llanillo-1766b5170/" rel="me noopener" target="_blank">Ver perfil en LinkedIn</a>
+        </aside>
+
+        
+        <section class="post-related" aria-labelledby="post-related-title">
+          <h2 id="post-related-title" class="post-related__title">Sigue leyendo</h2>
+          <div class="blog-grid" data-reveal-group>
+            <article class="blog-card">
+            
+            <a href="/blog/posts/precio-pagina-web-cantabria/" class="blog-card__cover-link" tabindex="-1" aria-hidden="true">
+              <img src="/assets/img/blog/precio-pagina-web-cantabria/cover.webp" alt="Presupuesto y precio de una página web profesional para una empresa" class="blog-card__cover" loading="lazy" decoding="async" width="800" height="450">
+            </a>
+            <div class="blog-card__body">
+              <div class="blog-card__date">
+                <time datetime="2026-09-01">1 de septiembre de 2026</time>
+                <span aria-hidden="true">·</span><span class="blog-card__reading-time">13 min</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="/blog/posts/precio-pagina-web-cantabria/">Cuánto cuesta una página web: precios reales en 2026</a>
+              </h3>
+              <p class="blog-card__excerpt">Cuánto cuesta una página web en 2026: precios reales por tramo, qué compras en cada uno, los costes ocultos y qué exigir antes de firmar.</p>
+              <div class="blog-card__tags"><span class="post__tag">Diseño &amp; Desarrollo Web</span><span class="post__tag">Negocio &amp; Estrategia Digital</span></div>
+              <a href="/blog/posts/precio-pagina-web-cantabria/" class="blog-card__more" aria-label="Leer Cuánto cuesta una página web: precios reales en 2026">
+                Leer artículo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+            <article class="blog-card">
+            
+            <div class="blog-card__body">
+              <div class="blog-card__date">
+                <time datetime="2026-09-01">1 de septiembre de 2026</time>
+                <span aria-hidden="true">·</span><span class="blog-card__reading-time">10 min</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="/blog/posts/precio-tienda-online/">Precio de una tienda online: cuánto cuesta montarla y mantenerla</a>
+              </h3>
+              <p class="blog-card__excerpt">Cuánto cuesta una tienda online: precio de desarrollo por tramos, los costes recurrentes que nadie suma y la cuenta real a tres años.</p>
+              <div class="blog-card__tags"><span class="post__tag">Diseño &amp; Desarrollo Web</span><span class="post__tag">Negocio &amp; Estrategia Digital</span></div>
+              <a href="/blog/posts/precio-tienda-online/" class="blog-card__more" aria-label="Leer Precio de una tienda online: cuánto cuesta montarla y mantenerla">
+                Leer artículo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+            <article class="blog-card">
+            
+            <a href="/blog/posts/wordpress-vs-desarrollo-medida-cantabria/" class="blog-card__cover-link" tabindex="-1" aria-hidden="true">
+              <img src="/assets/img/blog/wordpress-vs-desarrollo-medida-cantabria/cover.webp" alt="Comparativa entre WordPress, plantilla y desarrollo web a medida" class="blog-card__cover" loading="lazy" decoding="async" width="800" height="450">
+            </a>
+            <div class="blog-card__body">
+              <div class="blog-card__date">
+                <time datetime="2026-09-01">1 de septiembre de 2026</time>
+                <span aria-hidden="true">·</span><span class="blog-card__reading-time">11 min</span>
+              </div>
+              <h3 class="blog-card__title">
+                <a href="/blog/posts/wordpress-vs-desarrollo-medida-cantabria/">WordPress, plantilla o desarrollo a medida: cuál elegir en 2026</a>
+              </h3>
+              <p class="blog-card__excerpt">WordPress, plantilla o desarrollo a medida: cuándo gana cada uno, qué cuesta a tres años y cómo decidir. Lo explica quien hace las tres.</p>
+              <div class="blog-card__tags"><span class="post__tag">Diseño &amp; Desarrollo Web</span><span class="post__tag">Negocio &amp; Estrategia Digital</span></div>
+              <a href="/blog/posts/wordpress-vs-desarrollo-medida-cantabria/" class="blog-card__more" aria-label="Leer WordPress, plantilla o desarrollo a medida: cuál elegir en 2026">
+                Leer artículo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+          </div>
+        </section>
+
+        
+        <section class="post-cta" aria-labelledby="post-cta-title" style="margin-top:var(--sp-16);background:#0F172A;border:1px solid #1E293B;border-radius:var(--r-xl);overflow:hidden;max-width:880px;margin-inline:auto;position:relative" data-reveal>
+          <div class="post-cta__grid" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:0">
+            <div class="post-cta__media" style="position:relative;aspect-ratio:1/1;background:#0F172A">
+              <img src="/assets/img/blog/cta/robot-ayuda.webp" alt="Robot de Pindia con los brazos abiertos ofreciendo ayuda" loading="lazy" decoding="async" width="600" height="600" style="width:100%;height:100%;object-fit:cover;display:block">
+            </div>
+            <div class="post-cta__body" style="padding:var(--sp-10) var(--sp-10);color:#F8FAFC">
+              <span style="display:inline-flex;align-items:center;gap:6px;font-size:var(--text-xs);font-weight:var(--w-sb);letter-spacing:.08em;text-transform:uppercase;color:#FF7A73;margin-bottom:var(--sp-3)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                Pindia te acompaña
+              </span>
+              <h2 id="post-cta-title" style="font-size:var(--text-2xl);font-weight:var(--w-sb);line-height:1.2;color:#F8FAFC;margin-bottom:var(--sp-3)">Te echamos una mano con tu proyecto</h2>
+              <p style="font-size:var(--text-sm);color:#CBD5E1;line-height:1.65;margin-bottom:var(--sp-6)">
+                Auditorías, rediseños, integraciones o desarrollo a medida: ponemos nuestro equipo a tu disposición para resolver lo que tu web necesita.
+              </p>
+              <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);align-items:center">
+                <a href="/contacto/" class="btn btn--primary">
+                  Cuéntanos tu caso
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-left:6px"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                </a>
+                <a href="/servicios/" style="font-size:var(--text-sm);font-weight:var(--w-md);color:#F8FAFC;text-decoration:underline;text-decoration-color:rgba(248,250,252,.35);text-underline-offset:4px">Ver servicios</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          @media (max-width: 768px) {
+            .post-cta__grid { grid-template-columns: 1fr !important; }
+            .post-cta__media { aspect-ratio: 16/10 !important; }
+            .post-cta__body { padding: var(--sp-8) var(--sp-6) !important; }
+          }
+        </style>
+
+        <footer class="post__footer">
+          <a href="/blog/" class="btn btn--ghost">← Volver al blog</a>
+        </footer>
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" class="footer__logo" width="120" height="48" loading="lazy">
+          <p>Agencia de software a medida y diseño web en Santander. Construimos tu presencia digital desde Cantabria para toda España.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Servicios">
+          <h3>Servicios</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/servicios/desarrollo-software">Desarrollo software</a></li>
+            <li><a href="/servicios/diseno-web">Diseño web</a></li>
+            <li><a href="/servicios/apps-mobile-api">Apps móviles</a></li>
+            <li><a href="/servicios/apps-mobile-api">APIs e integraciones</a></li>
+            <li><a href="/servicios/mantenimiento-web">Mantenimiento web</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Empresa">
+          <h3>Empresa</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/proyectos/">Proyectos</a></li>
+            <li><a href="/trowelapp/">TrowelApp</a></li>
+            <li><a href="/trowelapp/">Trowel + KIT Digital</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col footer__nap">
+          <h3>Contacto</h3>
+          <address>
+            <a href="tel:+34942189733" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              (+34) 942 18 97 33
+            </a>
+            <a href="mailto:info@pindia.es" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@pindia.es
+            </a>
+            <a href="https://wa.me/34679551518" target="_blank" rel="noopener nofollow" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:var(--accent)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Business
+            </a>
+            <span class="footer__nap-item" style="cursor:default">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Calle Ramón Ramírez 5, 1º, 39100 Santa Cruz de Bezana</span>
+            </span>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 PINDIA SOFTWARE S.L. · CIF B67353748</p>
+        <nav class="footer__legal" aria-label="Páginas legales">
+          <a href="/aviso-legal/">Aviso legal</a>
+          <a href="/politica-privacidad/">Política de privacidad</a>
+          <a href="/politica-cookies/">Política de cookies</a>
+          <a href="#" data-cookie-settings>Preferencias de cookies</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <div
+    id="cookie-banner"
+    class="cookie-banner"
+    role="dialog"
+    aria-live="polite"
+    aria-labelledby="cookie-banner-title"
+    aria-describedby="cookie-banner-text">
+    <div class="cookie-banner__card">
+      <div class="cookie-banner__mascot" aria-hidden="true">
+        <img
+          src="/assets/img/cookie-mascot.webp"
+          alt=""
+          aria-hidden="true"
+          width="128"
+          height="128"
+          loading="lazy"
+          decoding="async">
+      </div>
+      <div class="cookie-banner__body">
+        <p class="cookie-banner__eyebrow">
+          <span class="cookie-banner__dot" aria-hidden="true"></span>
+          Cookies
+        </p>
+        <h2 id="cookie-banner-title" class="cookie-banner__title">
+          ¡Hola! Soy Pin <span aria-hidden="true">👋</span>
+        </h2>
+        <p id="cookie-banner-text" class="cookie-banner__text">
+          Utilizamos cookies para entender qué funciona y mejorar la web. Nada raro, nada vendido a terceros, tú decides. Detalles en la <a href="/politica-cookies/">política de cookies</a>.
+        </p>
+        <div class="cookie-banner__actions">
+          <button id="cookie-reject" type="button" class="btn btn--ghost cookie-banner__btn">Rechazar</button>
+          <button id="cookie-settings-open" type="button" class="btn btn--secondary cookie-banner__btn">Configurar</button>
+          <button id="cookie-accept" type="button" class="btn btn--primary cookie-banner__btn">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="cookie-settings"
+    class="cookie-settings"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookie-settings-title"
+    hidden>
+    <div class="cookie-settings__backdrop" data-cookie-close></div>
+
+    <div class="cookie-settings__panel" role="document">
+      <header class="cookie-settings__header">
+        <div class="cookie-settings__brand">
+          <span class="cookie-settings__mascot" aria-hidden="true">
+            <img src="/assets/img/cookie-mascot.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </span>
+          <div>
+            <p class="cookie-settings__eyebrow">Configuración</p>
+            <h2 id="cookie-settings-title" class="cookie-settings__title">Tus preferencias de cookies</h2>
+          </div>
+        </div>
+        <button type="button" class="cookie-settings__close" data-cookie-close aria-label="Cerrar configuración de cookies">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="cookie-settings__body">
+        <p class="cookie-settings__intro">
+          Tú decides qué cookies activar. Las técnicas son imprescindibles para que la web funcione; el resto solo se cargan si das tu consentimiento. Más detalle en la <a href="/politica-cookies/" target="_blank" rel="noopener noreferrer">política de cookies</a>.
+        </p>
+
+        <section class="cookie-cat" data-cookie-cat="necessary">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies técnicas</h3>
+              <span class="cookie-cat__badge cookie-cat__badge--required">Siempre activas</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Cookies técnicas (siempre activas)">
+              <input type="checkbox" checked disabled>
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Imprescindibles para el funcionamiento del sitio (recordar tu consentimiento, navegación segura, formulario de contacto). No identifican personalmente y no requieren consentimiento.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies técnicas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><code>pindia_cookies_v2</code></td>
+                  <td>Pindia (propia)</td>
+                  <td>1 año</td>
+                  <td>Almacena tu preferencia de consentimiento.</td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+
+        <section class="cookie-cat" data-cookie-cat="analytics">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies analíticas</h3>
+              <span class="cookie-cat__badge">Opcional</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Activar cookies analíticas">
+              <input type="checkbox" id="cookie-toggle-analytics" data-cookie-toggle="analytics">
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Google Analytics 4 con IP anonimizada. Nos ayudan a entender qué páginas funcionan y mejorar la web. Datos agregados, nunca compartidos para publicidad.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies analíticas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr><td><code>_ga</code></td><td>Google</td><td>2 años</td><td>Identificador anónimo de usuario.</td></tr>
+                <tr><td><code>_ga_*</code></td><td>Google</td><td>2 años</td><td>Estado de sesión de GA4.</td></tr>
+                <tr><td><code>_gid</code></td><td>Google</td><td>24 horas</td><td>Distingue usuarios.</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+      </div>
+
+      <footer class="cookie-settings__footer">
+        <button id="cookie-settings-reject" type="button" class="btn btn--ghost cookie-settings__btn">Rechazar todas</button>
+        <button id="cookie-settings-save" type="button" class="btn btn--secondary cookie-settings__btn">Guardar preferencias</button>
+        <button id="cookie-settings-accept" type="button" class="btn btn--primary cookie-settings__btn">Aceptar todas</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="/js/main.min.js?v=20260820a" defer></script>
+
+</body>
+</html>

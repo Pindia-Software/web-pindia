@@ -106,7 +106,7 @@ Depende del alcance, pero para situarte:
 
 Los factores que mueven el precio: tamaño y complejidad del catálogo, integraciones con otros sistemas, tipo de venta (B2C o B2B), pasarelas de pago y si los datos y productos ya existen o hay que migrarlos.
 
-Y un aviso: compara el **coste a tres años**, no el precio inicial. Una plataforma estándar suele sumar cuota mensual, comisiones por venta y plugins de pago; a medida pagas una vez el desarrollo y luego solo el mantenimiento. Haz la cuenta a 36 meses antes de decidir. Para una referencia de precios de web en general, mira [cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/).
+Y un aviso: compara el **coste a tres años**, no el precio inicial. Una plataforma estándar suele sumar cuota mensual, comisiones por venta y plugins de pago; a medida pagas una vez el desarrollo y luego solo el mantenimiento. Esa cuenta, con números, está en [precio de una tienda online](https://pindia.es/blog/posts/precio-tienda-online/). Para una referencia de precios de web en general, mira [cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/).
 
 ## Cuánto se tarda
 
@@ -183,6 +183,8 @@ Sí. Se migran productos, categorías, clientes y pedidos, y se cuidan las redir
 
 ## Más en el blog
 
+- [Precio de una tienda online](https://pindia.es/blog/posts/precio-tienda-online/), el desarrollo y los costes recurrentes, juntos.
+- [Desarrollo ecommerce](https://pindia.es/blog/posts/desarrollo-ecommerce/), cómo es el proyecto por dentro: fases, catálogo e integraciones.
 - [Tienda online: cómo planificar una que venda](https://pindia.es/blog/posts/tienda-online-cantabria/), operativa, plataforma y logística antes del diseño.
 - [Integrar tu ERP con la web](https://pindia.es/blog/posts/integracion-erp-web-empresa/), qué automatizar cuando unes la tienda con tus sistemas.
 - [Software a medida](https://pindia.es/blog/posts/software-a-medida/), el mismo criterio, aplicado a tu software.

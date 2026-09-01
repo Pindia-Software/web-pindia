@@ -25,7 +25,7 @@ Estos son los rangos que se manejan en el mercado español, y en los que nos mov
 - **Plantilla configurada** (tema comprado, tus textos y tu logo encima): **600 a 1.500 €**.
 - **Web corporativa a medida** (diseño propio, cinco a diez páginas, SEO técnico, formulario, panel para editar contenido): **desde unos 3.000 €**.
 - **Web corporativa con SEO trabajado, blog e integraciones ligeras** (CRM, calendario de citas, newsletter): **3.500 a 7.000 €**. Es la franja donde entra la mayoría de pymes que se toman la web como canal de venta.
-- **Tienda online a medida**: **desde 6.000 €** una tienda sencilla, y **12.000 a 20.000 €** si se integra con tu ERP o almacén.
+- **Tienda online a medida**: **desde 6.000 €** una tienda sencilla, y **12.000 a 20.000 €** si se integra con tu ERP o almacén. El desglose completo, con los costes recurrentes de vender online, está en [precio de una tienda online](https://pindia.es/blog/posts/precio-tienda-online/).
 - **Web con desarrollo propio detrás** (área de cliente, configuradores, multi-idioma, procesos de negocio): a partir de ahí y hasta donde pida el proyecto. Aquí ya no estás comprando una web, estás comprando [software a medida](https://pindia.es/blog/posts/software-a-medida/).
 
 Y una cifra que casi nadie pone en la misma tabla, aunque forma parte del precio: el **mantenimiento**, entre 99 y 199 € al mes para una web corporativa. Volvemos a ello al final, porque es donde se decide si la web fue cara o barata de verdad.

@@ -42,9 +42,9 @@ Los textos del catálogo son tu SEO. Una ficha con 30 palabras genéricas no pos
 
 ## Cuánto cuesta una tienda online en Cantabria
 
-Una tienda online sólida de pyme en Cantabria, con catálogo de hasta unos cientos de productos, integraciones razonables (Redsys, Bizum, transportista, RGPD) y diseño a medida, parte de unos **5.000 euros**. Con sincronización con ERP, multi-idioma o B2B, la cifra sube fácil a 8.000–15.000.
+Una tienda online sólida de pyme, con catálogo de hasta unos cientos de productos, integraciones razonables (Redsys, Bizum, transportista, RGPD) y diseño a medida, parte de unos **6.000 euros**. Con sincronización con ERP, multi-idioma o B2B, la cifra sube a **12.000-20.000**.
 
-Como con cualquier proyecto, la cifra final depende menos del número de productos y más de cuántos sistemas tiene que tocar y cuánto contenido hay que crear.
+Como con cualquier proyecto, la cifra final depende menos del número de productos y más de cuántos sistemas tiene que tocar y cuánto contenido hay que crear. Y el precio de desarrollo es solo la mitad: el desglose con los costes recurrentes de vender online está en [precio de una tienda online](https://pindia.es/blog/posts/precio-tienda-online/).
 
 ## SEO para una tienda online en Santander
 

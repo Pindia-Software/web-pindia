@@ -184,7 +184,28 @@
   </url>
 
   <url>
+    <loc>https://pindia.es/blog/page/6/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/posts/desarrollo-ecommerce/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://pindia.es/blog/posts/precio-pagina-web-cantabria/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/posts/precio-tienda-online/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -437,6 +458,13 @@
 
   <url>
     <loc>https://pindia.es/blog/tag/negocio-estrategia-digital/page/3/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/tag/negocio-estrategia-digital/page/4/</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
