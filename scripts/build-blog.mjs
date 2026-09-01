@@ -764,6 +764,7 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
     { loc: `${SITE_URL}/`,                                   lastmod: today, changefreq: 'weekly',  priority: '1.0' },
     { loc: `${SITE_URL}/servicios/`,                         lastmod: today, changefreq: 'monthly', priority: '0.9' },
     { loc: `${SITE_URL}/servicios/diseno-web`,               lastmod: today, changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/diseno-web-torrelavega`,   lastmod: today, changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/servicios/desarrollo-software`,      lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/servicios/apps-mobile-api`,          lastmod: today, changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/servicios/mantenimiento-web`,        lastmod: today, changefreq: 'monthly', priority: '0.8' },
