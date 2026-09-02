@@ -1,82 +1,189 @@
 ---
-title: '10 errores web (soluciones)'
+title: 'Los 10 errores que encontramos en casi todas las webs de empresa'
+metaTitle: '10 errores comunes en webs de empresa'
 description: >-
-  Los errores más frecuentes que vemos en webs corporativas de empresas de
-  Cantabria, con ejemplos reales y soluciones aplicables.
-date: 2026-03-05T00:00:00.000Z
+  Los diez fallos que se repiten sector tras sector al auditar webs de empresa,
+  cómo detectar cuáles tienes y cuáles se arreglan sin rehacer la web.
+date: 2026-09-02T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:
   - Cumplimiento & Accesibilidad
   - Diseño & Desarrollo Web
 cover: /assets/img/blog/errores-comunes-web-empresa/cover.webp
-coverAlt: Pantalla con errores comunes en una web corporativa
+coverAlt: Auditoría de una web de empresa mostrando errores frecuentes
 draft: false
 ---
 
-Auditamos varias webs cada mes, casi siempre de empresas en Cantabria que sospechan que algo no va bien. Lo curioso es que los errores se repiten, sector tras sector, año tras año. Aquí van los diez que más se cruzan en nuestro radar, con la solución de cada uno.
+Auditamos varias webs de empresa cada mes, casi siempre porque alguien sospecha que algo no funciona pero no sabe qué. Y lo llamativo es que **los fallos se repiten**: mismo sector o distinto, web de hace dos años o de hace diez, aparecen los mismos diez una y otra vez.
 
-## 1. La home no dice qué hace la empresa
+Van aquí para que puedas hacer el diagnóstico tú. La mayoría se detectan desde fuera, sin herramientas y sin saber de tecnología. Si reconoces tres o más, tu web no está trabajando para ti.
 
-Es el error más común. Entras en la home de una empresa y lees frases como "soluciones innovadoras adaptadas al cliente". Vale, pero ¿qué venden? Una persona debería entender en menos de cinco segundos a qué se dedica tu empresa, para quién y dónde. Si no, has perdido al visitante.
+## 1. La home no dice a qué os dedicáis
 
-Solución: una frase clara en la primera línea de la home. "Fabricamos componentes mecanizados para la industria del automóvil desde Santander". Eso. Sin poesía.
+El más común con diferencia. Entras y lees "soluciones innovadoras adaptadas a las necesidades de nuestros clientes". Vale, ¿pero qué vendéis?
 
-## 2. Web no responsive o mal responsive
+Una persona debería entender en cinco segundos qué hacéis, para quién y desde dónde. "Fabricamos componentes mecanizados para automoción desde Santander" no gana premios de redacción y funciona diez veces mejor que cualquier frase con la palabra "soluciones".
 
-Más del 70% del tráfico de una web pyme media en Cantabria viene de móvil. Webs que se ven bien en sobremesa pero en móvil tienen el menú escondido detrás del logo, los botones imposibles de pulsar y los formularios desbordados. Pasa más de lo que parece.
+**Cómo detectarlo:** enséñale tu home a alguien ajeno al sector durante cinco segundos y pregúntale a qué te dedicas. La cara que ponga es el diagnóstico.
 
-Solución: revisar la web en un móvil real (no el simulador del navegador). Si necesita arreglo y el theme lo permite, son horas. Si el theme no lo permite, toca rehacer.
+## 2. En móvil no funciona bien
 
-## 3. Formulario de contacto que no llega a nadie
+La mayoría de tu tráfico llega desde un móvil, y sin embargo casi todas las webs se diseñan y se revisan en un portátil. El resultado son menús que no se abren, botones imposibles de pulsar con el dedo y formularios que se salen de la pantalla.
 
-Hemos visto webs en las que el formulario llevaba dos años enviando a una cuenta de Gmail abandonada. La empresa pensaba que no le llegaban consultas; en realidad, llegaban y nadie las leía.
+**Cómo detectarlo:** haz el recorrido completo desde tu móvil, no desde el simulador del navegador. Desde la home hasta enviar una consulta. Si te irrita algo, a un cliente le irrita más, y él sí se va.
 
-Solución: probar el formulario una vez al mes. Configurar respuesta automática al cliente (te confirma que llegó) y notificación al equipo comercial real, no a info@.
+## 3. El formulario no llega a nadie
 
-## 4. Velocidad lamentable en móvil
+Hemos visto webs cuyo formulario llevaba dos años enviando a una cuenta abandonada. La empresa creía que no le llegaban consultas. Llegaban, y nadie las leía.
 
-Lo hablamos en otro artículo, pero merece repetirse: si tu web tarda más de tres segundos en móvil, estás perdiendo dinero. Lo que pasa es que no lo ves, porque la gente que se va no aparece en el formulario.
+Es el error más caro de la lista porque es invisible: no se manifiesta como un problema, se manifiesta como silencio.
 
-Solución: PageSpeed Insights y plan de mejora. Imágenes WebP, caché, plugins limpios. ([Qué son los Core Web Vitals y por qué una web lenta pierde clientes](../core-web-vitals-que-son/).)
+**Cómo detectarlo:** envíate una consulta ahora mismo desde el formulario, como si fueras un cliente. Y repítelo cada mes.
 
-## 5. Cero contenido nuevo en años
+## 4. Va lenta en móvil
 
-La sección "noticias" con la última entrada de marzo de 2019. Mensaje: aquí no pasa nada. Para Google, web abandonada. Para el cliente, empresa abandonada.
+Si tu web tarda más de tres segundos en cargar en un móvil con datos, estás perdiendo gente. Y no lo ves, porque quien se va no aparece en ninguna estadística de formularios.
 
-Solución: o publicas con regularidad razonable (una vez al mes mínimo), o quitas la sección. Mejor sin blog que con un blog muerto.
+**Cómo detectarlo:** ábrela con datos móviles, no con tu wifi, y cuenta. Lo que ves tú desde la oficina con fibra no es lo que ve tu cliente. El detalle está en [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/).
 
-## 6. Faltan datos de contacto físicos
+## 5. Nada nuevo desde hace años
 
-Webs de empresas con sede en Santander que en la página de contacto solo tienen un formulario. Sin teléfono, sin dirección, sin mapa. Mala señal para los clientes (no se fían) y mala señal para Google (peor SEO local).
+La sección de noticias con la última entrada de hace cuatro años. Para el cliente, el mensaje es "aquí no pasa nada". Para Google, una web abandonada.
 
-Solución: dirección completa, teléfono visible, mapa embebido. Schema de LocalBusiness en el código.
+Y ojo, porque esto tiene una solución que casi nadie considera: si no vas a publicar, **quita la sección**. Es mejor no tener blog que tener uno muerto con la fecha a la vista.
 
-## 7. Páginas de servicios genéricas y planas
+## 6. Faltan los datos de contacto de verdad
 
-"Diseño y desarrollo de soluciones a medida para sus necesidades." ¿Para quién? ¿Qué problema resuelves? ¿Qué cuesta? Las páginas de servicios genéricas no posicionan y no convierten.
+Páginas de contacto que solo tienen un formulario. Sin teléfono, sin dirección, sin horario. Genera desconfianza en el visitante y te penaliza en las búsquedas locales, donde esos datos son justo lo que se compara.
 
-Solución: una página por servicio principal, escrita pensando en lo que tu cliente busca en Google. "Mantenimiento industrial preventivo en Cantabria" en lugar de "servicios técnicos".
+**Cómo detectarlo:** mira si un cliente podría llamarte o llegar a tu puerta sin salir de tu web.
 
-## 8. Imágenes de stock que la gente reconoce
+## 7. Las páginas de servicios son un folleto
 
-La señora del auricular sonriendo mientras teclea. El chico con barba que apunta a una pantalla. Tus clientes han visto esa foto en otras tres webs esta semana. El stock barato resta credibilidad.
+"Diseño y desarrollo de soluciones a medida para sus necesidades." ¿Para quién? ¿Qué problema resuelve? ¿Cuánto cuesta?
 
-Solución: invertir una vez en una sesión de fotos profesional con tu equipo y tus instalaciones reales. Vale para varios años. En Cantabria hay buenos fotógrafos a precio razonable.
+Las páginas de servicio genéricas no posicionan, porque nadie busca esas palabras, y no convierten, porque no responden nada. Y hay una versión peor: meter los tres servicios en un acordeón de la home, con lo que renuncias a tres puertas de entrada y te quedas con una.
 
-## 9. Aviso de cookies inútil o ilegal
+## 8. Fotos de banco de imágenes reconocibles
 
-Banners de cookies que solo tienen botón de "aceptar" sin posibilidad de rechazar, o sin información clara, o que cargan los scripts antes de que el usuario haya consentido. Esto, además de feo, es ilegal y la AEPD ya está sancionando.
+La señora del auricular sonriendo. El equipo diverso aplaudiendo en una sala de reuniones. Tu cliente ha visto esa foto en otras tres webs esta semana, y lo que le transmite es que no tienes nada propio que enseñar.
 
-Solución: implementar un Consent Management Platform serio (Cookiebot, Iubenda o similar) y cargar los scripts después del consentimiento, no antes. ([Qué exige la ley: aviso legal, cookies, RGPD y DPA](../tu-web-cumple-ley/).)
+En sectores donde vendes capacidad (industria, construcción, hostelería) esto es especialmente caro, porque tus instalaciones y tu producto **son** el argumento de venta.
 
-## 10. No medir nada
+## 9. El banner de cookies no cumple
 
-Webs sin Google Analytics o con Analytics roto desde hace años. Si no mides, no sabes lo que pasa. Si no sabes lo que pasa, no puedes mejorar nada.
+Banners con un único botón de "Aceptar", o con "Rechazar" escondido en gris, o que cargan la analítica antes de que el usuario haya consentido nada. Esto último incumple aunque el banner parezca correcto.
 
-Solución: GA4 instalado, Search Console verificado, paneles claros que alguien mire una vez al mes mínimo.
+No es un detalle estético: hay sanciones y responde la empresa titular, no quien hizo la web. Lo desarrollamos en [qué exige la ley](https://pindia.es/blog/posts/tu-web-cumple-ley/).
 
-## Errores que vemos especialmente en webs antiguas de empresas en Santander
+**Cómo detectarlo:** entra en tu web de incógnito y mira si tienes tres opciones con el mismo peso visual.
 
-Los errores se acumulan más en webs viejas. Si la tuya tiene cinco años o más, posiblemente tengas tres o cuatro de esta lista. Lo bueno: la mayoría se arreglan sin rehacer la web. Lo malo: hay que ponerse.
+## 10. Nadie mide nada
 
-En Pindia hacemos auditorías web rápidas para empresas en Cantabria con un informe claro y un plan priorizado: qué arreglar primero, qué después y qué dejar pasar. Si quieres saber cómo está tu web sin compromiso, [hablemos](/contacto/).
+Webs sin analítica, o con la analítica rota desde una migración que nadie revisó. Si no mides, no sabes si la web funciona, y todas las decisiones sobre ella se toman por intuición o por gusto personal.
+
+**Cómo detectarlo:** pregunta en tu empresa cuántas consultas llegaron por la web el mes pasado. Si nadie sabe la cifra, ya tienes la respuesta.
+
+## Lo que dicen estos errores juntos
+
+Ninguno de los diez es un problema de diseño. Se pueden dar todos a la vez en una web bonita, y de hecho es lo más habitual: la web se aprobó porque gustaba, y nadie comprobó si funcionaba.
+
+Hay otro patrón: casi todos son problemas de **mantenimiento**, no de construcción. El formulario funcionaba el día del lanzamiento, la analítica estaba puesta, el blog empezó bien. Lo que falló fue que nadie volvió a mirar.
+
+## La buena noticia y la mala
+
+**La buena:** siete de los diez se arreglan sin rehacer la web. Son horas de trabajo, no un proyecto nuevo.
+
+**La mala:** dos de ellos, el rendimiento en móvil y el cumplimiento de cookies, a veces no se pueden resolver del todo sobre lo que hay. Si la web se construyó con una plantilla que genera un marcado que no hay por dónde coger, se puede maquillar pero no arreglar, y ahí toca decidir si merece la pena seguir invirtiendo en ella. Esa conversación está en [cuándo optimizar y cuándo rehacer](https://pindia.es/blog/posts/core-web-vitals-que-son/).
+
+## Preguntas frecuentes
+
+### ¿Cómo sé si mi web tiene problemas?
+
+Haz el recorrido completo desde tu móvil con datos, envíate una consulta por el formulario y enséñale la home a alguien de fuera del sector cinco segundos. Con esas tres pruebas detectas la mayoría de los fallos de esta lista sin necesidad de herramientas.
+
+### ¿Cuál es el error más caro de todos?
+
+El formulario que no llega a nadie, porque es invisible: no parece un problema, parece que no hay clientes. Hemos visto empresas creyendo que su web no funcionaba cuando lo que fallaba era el buzón de destino.
+
+### ¿Hace falta rehacer la web para arreglar esto?
+
+En la mayoría de casos no. Siete de los diez son horas de trabajo sobre lo que ya tienes. Los que suelen obligar a plantearse una web nueva son el rendimiento en móvil y el cumplimiento legal, cuando la plataforma de base no da más de sí.
+
+### ¿Cada cuánto hay que revisar una web de empresa?
+
+Una revisión de funcionamiento al menos cada tres meses, y el formulario cada mes. La mayoría de estos errores no aparecen el día del lanzamiento: aparecen porque nadie vuelve a mirar.
+
+### ¿Es mejor no tener blog que tener uno desactualizado?
+
+Sí. Una sección de noticias con la última entrada de hace años comunica abandono y es de lo primero que ve un cliente que está comparando proveedores. Si no vas a publicar con regularidad, quítala.
+
+### ¿Las fotos de stock son tan malas?
+
+En sectores donde vendes capacidad, sí. Tus instalaciones, tu equipo y tu producto son el argumento de venta, y sustituirlos por una imagen genérica transmite exactamente lo contrario de lo que quieres.
+
+## Más en el blog
+
+- [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), por qué una web lenta pierde clientes.
+- [¿Tu web cumple con la ley?](https://pindia.es/blog/posts/tu-web-cumple-ley/), cookies, RGPD y quién responde ante una sanción.
+- [Diseño web profesional](https://pindia.es/blog/posts/diseno-web-profesional/), los criterios objetivos para juzgar una web.
+- [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), si toca rehacerla, los tramos reales.
+
+Si has reconocido varios de estos en tu web y quieres saber cuáles tienen arreglo y cuáles no, [hablemos](/contacto/).
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo sé si mi web tiene problemas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Haz el recorrido completo desde tu móvil con datos, envíate una consulta por el formulario y enséñale la home a alguien de fuera del sector cinco segundos. Con esas tres pruebas detectas la mayoría de los fallos habituales."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuál es el error más caro en la web de una empresa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El formulario que no llega a nadie, porque es invisible: no parece un problema, parece que no hay clientes. Hemos visto empresas creyendo que su web no funcionaba cuando lo que fallaba era el buzón de destino."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hace falta rehacer la web para arreglar estos errores?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En la mayoría de casos no: son horas de trabajo sobre lo que ya tienes. Los que suelen obligar a plantearse una web nueva son el rendimiento en móvil y el cumplimiento legal, cuando la plataforma de base no da más de sí."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cada cuánto hay que revisar una web de empresa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Una revisión de funcionamiento al menos cada tres meses, y el formulario cada mes. La mayoría de estos errores no aparecen el día del lanzamiento, sino porque nadie vuelve a mirar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es mejor no tener blog que tener uno desactualizado?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Una sección de noticias con la última entrada de hace años comunica abandono y es de lo primero que ve un cliente que está comparando proveedores. Si no vas a publicar con regularidad, quítala."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Son tan malas las fotos de banco de imágenes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En sectores donde vendes capacidad, sí. Tus instalaciones, tu equipo y tu producto son el argumento de venta, y sustituirlos por una imagen genérica transmite lo contrario de lo que quieres."
+      }
+    }
+  ]
+}
+</script>

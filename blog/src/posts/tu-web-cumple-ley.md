@@ -237,7 +237,7 @@ O lo puedes dejar, ahorrar 400 euros, y arriesgar 2.000-5.000 euros en multa cua
 ## Más en el blog
 
 - [Accesibilidad web en empresas](../accesibilidad-web-empresas-cantabria/), el cumplimiento legal también incluye WCAG.
-- [Errores comunes en webs](../errores-comunes-web-empresa/), A veces la falta de cumplimiento es síntoma de negligencia general.
+- [Los 10 errores más comunes en webs de empresa](../errores-comunes-web-empresa/), A veces la falta de cumplimiento es síntoma de negligencia general.
 
 ## Siguiente paso
 

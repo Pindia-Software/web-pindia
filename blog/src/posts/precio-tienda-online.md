@@ -130,7 +130,7 @@ Entre 6 y 12 semanas una tienda de complejidad media, más si hay integración c
 ## Más en el blog
 
 - [Tienda online a medida](https://pindia.es/blog/posts/tienda-online-a-medida/), cuándo compensa frente a una plataforma estándar.
-- [Cómo planificar una tienda online que venda](https://pindia.es/blog/posts/tienda-online-cantabria/), la operativa antes que la plataforma.
+- [Antes de montar una tienda online](https://pindia.es/blog/posts/tienda-online-cantabria/), la operativa antes que la plataforma.
 - [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), los tramos de precio del resto de proyectos web.
 - [Mantenimiento web](https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/), qué cuesta cuidar lo que ya tienes en producción.
 

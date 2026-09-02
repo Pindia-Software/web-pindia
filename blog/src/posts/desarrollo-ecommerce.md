@@ -141,7 +141,7 @@ Depende de cuántas reglas de negocio propias tengas. Si vendes productos están
 - [Tienda online a medida](https://pindia.es/blog/posts/tienda-online-a-medida/), cuándo compensa frente a una plataforma estándar.
 - [Precio de una tienda online](https://pindia.es/blog/posts/precio-tienda-online/), el desarrollo y los costes recurrentes, juntos.
 - [Integrar tu ERP con la web](https://pindia.es/blog/posts/integracion-erp-web-empresa/), qué merece la pena automatizar y qué no.
-- [Cómo planificar una tienda online que venda](https://pindia.es/blog/posts/tienda-online-cantabria/), la operativa antes que la plataforma.
+- [Antes de montar una tienda online](https://pindia.es/blog/posts/tienda-online-cantabria/), la operativa antes que la plataforma.
 
 Si tienes un proyecto de ecommerce entre manos, o una tienda que se te ha quedado pequeña, [hablemos](/contacto/).
 

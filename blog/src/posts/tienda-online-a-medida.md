@@ -62,7 +62,7 @@ Te lo decimos aunque no nos convenga:
 - **Presupuesto muy ajustado.** Mejor una plantilla bien hecha que una tienda a medida a medias.
 - **No tienes quién gestione el día a día.** Una tienda, del tipo que sea, necesita alguien detrás (stock, pedidos, atención).
 
-Si estás en alguno de estos casos, coge una plataforma estándar y ahórrate la inversión. Para dar el paso con cabeza, lee también [cómo planificar una tienda online que venda de verdad](https://pindia.es/blog/posts/tienda-online-cantabria/).
+Si estás en alguno de estos casos, coge una plataforma estándar y ahórrate la inversión. Para dar el paso con cabeza, lee también [qué operativa hay que tener resuelta antes](https://pindia.es/blog/posts/tienda-online-cantabria/).
 
 ## Qué incluye realmente el desarrollo de una tienda online
 
@@ -185,7 +185,7 @@ Sí. Se migran productos, categorías, clientes y pedidos, y se cuidan las redir
 
 - [Precio de una tienda online](https://pindia.es/blog/posts/precio-tienda-online/), el desarrollo y los costes recurrentes, juntos.
 - [Desarrollo ecommerce](https://pindia.es/blog/posts/desarrollo-ecommerce/), cómo es el proyecto por dentro: fases, catálogo e integraciones.
-- [Tienda online: cómo planificar una que venda](https://pindia.es/blog/posts/tienda-online-cantabria/), operativa, plataforma y logística antes del diseño.
+- [Antes de montar una tienda online](https://pindia.es/blog/posts/tienda-online-cantabria/), operativa, plataforma y logística antes del diseño.
 - [Integrar tu ERP con la web](https://pindia.es/blog/posts/integracion-erp-web-empresa/), qué automatizar cuando unes la tienda con tus sistemas.
 - [Software a medida](https://pindia.es/blog/posts/software-a-medida/), el mismo criterio, aplicado a tu software.
 - [WordPress o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), estándar vs a medida, aplicado a webs.

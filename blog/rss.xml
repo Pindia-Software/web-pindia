@@ -5,8 +5,18 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Wed, 02 Sep 2026 07:15:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 09:08:33 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Ejemplos de páginas web reales de empresas en Cantabria</title>
+      <link>https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/</link>
+      <description>Seis casos reales de webs de empresa en Cantabria por sector: qué tenían antes, qué se cambió, qué funcionó y qué se podría mejorar.</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
 
     <item>
       <title>Cómo elegir empresa de diseño web en Santander</title>
@@ -19,6 +29,26 @@
     </item>
 
     <item>
+      <title>Los 10 errores que encontramos en casi todas las webs de empresa</title>
+      <link>https://pindia.es/blog/posts/errores-comunes-web-empresa/</link>
+      <description>Los diez fallos que se repiten sector tras sector al auditar webs de empresa, cómo detectar cuáles tienes y cuáles se arreglan sin rehacer la web.</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/errores-comunes-web-empresa/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Cumplimiento &amp; Accesibilidad</category><category>Diseño &amp; Desarrollo Web</category>
+    </item>
+
+    <item>
+      <title>Landing page: por qué la mayoría no convierte</title>
+      <link>https://pindia.es/blog/posts/landing-page-conversion-cantabria/</link>
+      <description>Qué es una landing page, por qué casi ninguna convierte, qué la diferencia de la home, cuánto cuesta y cuándo compensa hacerla.</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/landing-page-conversion-cantabria/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>SEO &amp; Crecimiento</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
       <title>Cómo migrar tu web sin perder posicionamiento en Google</title>
       <link>https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</link>
       <description>Por qué las migraciones hunden el tráfico, cuánto se pierde de verdad, cuánto tarda en recuperarse y qué exigir a quien te la haga.</description>
@@ -26,6 +56,16 @@
       <guid isPermaLink="true">https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Diseño &amp; Desarrollo Web</category><category>SEO &amp; Crecimiento</category>
+    </item>
+
+    <item>
+      <title>Antes de montar una tienda online: la operativa que decide si vende</title>
+      <link>https://pindia.es/blog/posts/tienda-online-cantabria/</link>
+      <description>La plataforma es la última decisión, no la primera. Stock, envíos, devoluciones y facturación: lo que hay que resolver antes de construir nada.</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/tienda-online-cantabria/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
     </item>
 
     <item>
@@ -226,46 +266,6 @@
       <guid isPermaLink="true">https://pindia.es/blog/posts/integracion-erp-web-empresa/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Negocio &amp; Estrategia Digital</category>
-    </item>
-
-    <item>
-      <title>Cómo hacer una landing page que de verdad convierta</title>
-      <link>https://pindia.es/blog/posts/landing-page-conversion-cantabria/</link>
-      <description>Guía práctica para diseñar una landing page que convierta: estructura, copy, formularios y errores que hacen que la gente se vaya.</description>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/landing-page-conversion-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>SEO &amp; Crecimiento</category>
-    </item>
-
-    <item>
-      <title>10 errores web (soluciones)</title>
-      <link>https://pindia.es/blog/posts/errores-comunes-web-empresa/</link>
-      <description>Los errores más frecuentes que vemos en webs corporativas de empresas de Cantabria, con ejemplos reales y soluciones aplicables.</description>
-      <pubDate>Thu, 05 Mar 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/errores-comunes-web-empresa/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Cumplimiento &amp; Accesibilidad</category><category>Diseño &amp; Desarrollo Web</category>
-    </item>
-
-    <item>
-      <title>Ejemplos de páginas web reales de empresas en Cantabria</title>
-      <link>https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/</link>
-      <description>Ejemplos de páginas web profesionales de empresas en Cantabria: qué hacen bien, qué se podría mejorar y qué te sirve a ti como referencia.</description>
-      <pubDate>Thu, 05 Feb 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
-    </item>
-
-    <item>
-      <title>Tienda online: lo que aprendemos</title>
-      <link>https://pindia.es/blog/posts/tienda-online-cantabria/</link>
-      <description>Cómo planificar una tienda online en Cantabria que venda de verdad: plataforma, logística, pasarelas y SEO local. Sin humo.</description>
-      <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/tienda-online-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Diseño &amp; Desarrollo Web</category>
     </item>
 
     <item>

@@ -138,7 +138,7 @@ Si estás en ese punto, los tramos de precio están en [cuánto cuesta una pági
 ## Más en el blog
 
 - [Cuánto cuesta una página web](../precio-pagina-web-cantabria/), si optimizar no compensa y toca rehacerla.
-- [Errores comunes en webs de empresa](../errores-comunes-web-empresa/), Problemas que ralentizan tu web.
+- [Los 10 errores más comunes en webs de empresa](../errores-comunes-web-empresa/), Problemas que ralentizan tu web.
 - [¿Tu web cumple con la ley?](../tu-web-cumple-ley/), Si optimizas Core Web Vitals, asegúrate también de cumplir RGPD.
 
 ## Siguiente paso

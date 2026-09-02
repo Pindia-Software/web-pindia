@@ -13,7 +13,9 @@ coverAlt: Diagrama de integración entre ERP y web corporativa
 draft: false
 ---
 
-Cuando una empresa de Cantabria nos pide hacer una web "que se conecte con el ERP", la primera reunión no va de tecnología. Va de procesos. Porque integrar la web con el ERP es, antes que nada, una decisión sobre qué quieres dejar de hacer a mano. Y eso pide bajar al detalle.
+Cuando una empresa nos pide hacer una web "que se conecte con el ERP", la primera reunión no va de tecnología. Va de procesos. Porque integrar la web con el ERP es, antes que nada, una decisión sobre qué quieres dejar de hacer a mano. Y eso pide bajar al detalle.
+
+Un aviso para que no pierdas el tiempo: este artículo va de **conectar la web con el ERP que ya tienes**. Si lo que te estás planteando es desarrollar un sistema de gestión propio porque el estándar se te queda corto, esa es otra conversación y está en [ERP a medida](https://pindia.es/blog/posts/erp-a-medida/).
 
 ## Por qué integrar la web con el ERP
 

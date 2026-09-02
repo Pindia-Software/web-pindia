@@ -162,7 +162,7 @@ Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 hor
 ## Más en el blog
 
 - [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), el mantenimiento debe incluir el rendimiento.
-- [10 errores web (soluciones)](https://pindia.es/blog/posts/errores-comunes-web-empresa/), muchos errores vienen de falta de mantenimiento.
+- [Los 10 errores más comunes en webs de empresa](https://pindia.es/blog/posts/errores-comunes-web-empresa/), muchos errores vienen de falta de mantenimiento.
 - [¿Tu web cumple con la ley?](https://pindia.es/blog/posts/tu-web-cumple-ley/), el cumplimiento legal requiere mantenimiento continuo.
 - [WordPress vs desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), el coste de mantenimiento varía según la tecnología.
 

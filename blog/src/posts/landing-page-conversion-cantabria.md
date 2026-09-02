@@ -1,81 +1,167 @@
 ---
-title: Cómo hacer una landing page que de verdad convierta
-metaTitle: 'Cómo hacer una landing que convierta'
+title: 'Landing page: por qué la mayoría no convierte'
+metaTitle: 'Landing page que convierte: qué falla de verdad'
 description: >-
-  Guía práctica para diseñar una landing page que convierta: estructura, copy,
-  formularios y errores que hacen que la gente se vaya.
-date: 2026-03-19T00:00:00.000Z
+  Qué es una landing page, por qué casi ninguna convierte, qué la diferencia de
+  la home, cuánto cuesta y cuándo compensa hacerla.
+date: 2026-09-02T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:
   - SEO & Crecimiento
+  - Negocio & Estrategia Digital
 cover: /assets/img/blog/landing-page-conversion-cantabria/cover.webp
-coverAlt: Diseño de una landing page con buenos ratios de conversión
+coverAlt: Landing page de captación vista en escritorio y móvil
 draft: false
 ---
 
-Una landing page es probablemente la pieza más rentable que puede crear una empresa cántabra que está invirtiendo en marketing digital. Pero la mayoría de las landings que vemos en producción son malas, y el problema casi nunca es el diseño: es el copywriting y la estructura. Vamos a desmontar qué hace que una landing convierta.
+Una landing page es de las piezas más rentables que puede tener una empresa que invierte en publicidad. También es de las que peor se hacen: la mayoría de las que vemos en producción no convierten, y el motivo casi nunca es el diseño.
 
-## Qué es exactamente una landing page
+Es el mensaje. Y como el mensaje no se ve en una maqueta, nadie lo revisa antes de aprobar la página.
 
-Una landing es una página de aterrizaje con un solo objetivo: que el visitante haga una acción concreta. Pedir presupuesto, descargar una guía, reservar una cita, comprar. Una sola. Si tu landing tiene cinco objetivos, no tiene ninguno.
+## Qué es una landing page y qué no
 
-Por eso una landing **no es la home**. Una home tiene que servir a perfiles distintos. Una landing está hecha para una campaña, una intención y un público.
+Una landing es una página con **un solo objetivo**: que quien llega haga una acción concreta. Pedir presupuesto, reservar una cita, descargar algo, comprar. Una.
 
-## La estructura que funciona
+Si tiene cinco objetivos no tiene ninguno, y esa es la primera razón por la que fallan: se aprueban como si fueran una página más de la web, con su menú completo, sus enlaces a todas partes y tres llamadas a la acción compitiendo entre sí.
 
-Lo que vemos que mejor convierte, después de analizar decenas de landings de clientes nuestros en Cantabria, sigue una estructura parecida:
+Por eso **una landing no es la home**. La home tiene que servir a perfiles distintos que llegan por motivos distintos. La landing está hecha para una campaña, una intención y un público concreto. Son productos diferentes aunque se parezcan en la pantalla.
 
-**Cabecera con titular potente**. En menos de siete segundos el visitante tiene que entender qué le ofreces y por qué le interesa. "Reformamos tu baño en Santander en menos de 10 días. Sin sorpresas, llave en mano." Esto vende. "Soluciones a medida en reformas integrales" no.
+## Por qué casi ninguna convierte
 
-**Beneficios concretos, no características**. La gente no compra "20 años de experiencia": compra "vas a tener tu obra terminada antes de tu cumpleaños". Traduce siempre lo que haces en lo que el cliente gana.
+De las que auditamos, los motivos se repiten:
 
-**Prueba social**. Testimonios reales, con nombre y empresa. Logos de clientes si tienes permiso. Casos con números (ahorro logrado, plazo, resultado). Sin esto, el visitante no se fía.
+**Habla de la empresa, no del cliente.** "Veinte años de experiencia" y "compromiso con la calidad" no son argumentos, son lo que dice todo el mundo. Quien llega a una landing tiene un problema y quiere saber si se lo resuelves, en cuánto tiempo y por cuánto.
 
-**Imágenes reales**. Tus instalaciones, tu equipo, tus proyectos. Stock no convierte, transmite que no tienes nada que enseñar.
+**El titular no dice nada.** "Soluciones integrales en reformas" contra "Reformamos tu baño en menos de diez días, precio cerrado". La diferencia entre las dos no es de estilo: es que la segunda responde y la primera no.
 
-**Llamada a la acción clara**. Un solo botón, repetido en distintos puntos de la página. Texto en imperativo y específico ("Pídenos presupuesto", no "Enviar"). Color contrastado.
+**Da demasiadas salidas.** Menú completo, enlaces al blog, iconos de redes sociales. Cada enlace es una puerta para que alguien se vaya sin dejarte nada.
 
-**Formulario corto**. Cada campo extra reduce la conversión. Si solo necesitas nombre, teléfono y mensaje, no pidas más. Las tres preguntas que crees imprescindibles, casi siempre se pueden hacer luego en el primer contacto.
+**Pide demasiado.** Un formulario que exige nueve campos para responder "¿cuánto cuesta esto?" filtra a la mayoría de gente interesada. Casi todo lo que crees imprescindible se puede preguntar en la primera llamada.
 
-## El copy es el 80%
+**Esconde el teléfono.** En B2B y en servicios locales mucha gente prefiere llamar. Obligarles a rellenar un formulario les pierde.
 
-Una landing fea con copy bueno convierte mejor que una landing preciosa con copy malo. Esto que parece obvio se ignora siempre. Las pymes invierten en diseñador y se olvidan del redactor.
+**Va lenta.** Especialmente grave aquí, porque a una landing se llega desde un anuncio que has pagado. Cada persona que se va antes de que cargue es dinero tirado dos veces.
 
-El copy de landing tiene reglas: hablar al cliente de tú a tú, frases cortas, párrafos de tres líneas máximo, sin jerga interna, con el lenguaje del cliente. Si vendes a constructoras de Cantabria, habla como un jefe de obra, no como un consultor de Madrid.
+## El mensaje es el trabajo, y por eso se hace mal
 
-## Errores que matan la conversión
+Una landing fea con el mensaje bien resuelto convierte más que una preciosa con el mensaje mal. Esto se sabe y se ignora sistemáticamente, porque el diseño se ve y el mensaje no.
 
-**Pedir demasiados datos en el formulario**. Cinco campos máximo para un primer contacto. Si necesitas DNI, dirección, NIF y horario preferido para responder a "¿cuánto cuesta esto?", estás filtrando a la mayoría de gente interesada.
+La parte difícil no es escribir bonito. Es averiguar qué le preocupa de verdad a quien va a llegar ahí: qué duda le frena, qué comparación está haciendo, qué le da miedo del proveedor anterior. Eso no sale de una reunión de una hora ni lo genera una plantilla, sale de conocer el negocio y de mirar qué preguntan los clientes reales cuando llaman.
 
-**No tener teléfono visible**. Mucha gente, sobre todo en pymes y B2B, prefiere llamar. Esconder el teléfono cuesta clientes.
+Y tiene una consecuencia práctica incómoda: si tu proveedor te presupuesta una landing sin preguntarte nada sobre tus clientes, te está vendiendo una maqueta.
 
-**Demasiados enlaces que sacan al visitante**. Una landing no tiene menú completo. Tiene logo, oferta, formulario y poco más. Cada enlace al exterior es una puerta para que se vaya.
+## Cuándo compensa hacer una landing
 
-**Carga lenta**. Hablamos de esto hasta el aburrimiento, pero una landing que tarda más de dos segundos pierde gente antes incluso de mostrarse.
+**Si vas a invertir en publicidad.** Mandar tráfico de pago a la home es el error más caro que se puede cometer con un presupuesto de campaña. Necesitas un destino específico para cada campaña.
 
-**No optimizar para móvil**. La mayoría del tráfico viene de móvil. Si el botón de acción no se ve sin hacer scroll en móvil, error grave.
+**Si lanzas un servicio nuevo** que todavía no tiene sitio en la estructura de la web.
 
-## Landing page en Cantabria: cuándo tiene sentido
+**Si tienes un servicio que vende mucho más que los demás** y merece una página trabajada aparte, incluso sin publicidad.
 
-Una landing tiene más sentido si vas a invertir en publicidad (Google Ads, Meta Ads, LinkedIn) y necesitas un destino específico para esa campaña. También si lanzas un servicio nuevo que aún no tiene página propia, o un evento, o una promoción de temporada.
+**Cuándo no:** si no vas a mandar tráfico a ella. Una landing sin campaña detrás ni posicionamiento propio es una página que no visita nadie.
 
-Para una pyme de servicios en Santander que captura clientes locales, una landing por servicio principal puede multiplicar las consultas de Google Ads sin tocar el presupuesto.
+## Cuánto cuesta
 
-## Cuánto debería costar una landing
+Una landing bien hecha, con estructura, diseño, mensaje trabajado y la integración con tu sistema de contacto, parte de **800 a 1.500 euros** según el nivel. Lo que mueve el precio hacia arriba es el trabajo de mensaje, si lo escribimos nosotros, y las integraciones.
 
-Una landing bien hecha (estructura, diseño, copy, integración con tu CRM o email, A/B test inicial) parte de **800-1.500 euros** dependiendo del nivel. Los extras grandes vienen del copywriting (si lo escribimos nosotros) y de la integración con sistemas externos.
+Una landing barata sin trabajo de mensaje y sin medición es un gasto, no una inversión, sobre todo si detrás vas a poner presupuesto de publicidad: estarás pagando por llevar gente a una página que no cierra.
 
-Una landing barata sin copy ni medición es un gasto, no una inversión.
+## Sin medición, no hay landing
 
-## Medir y mejorar es donde está el dinero
+Una landing no se termina el día que se publica. Se publica, se mide y se corrige.
 
-Una landing nunca está terminada. Hay que medir conversión, identificar dónde se va la gente, probar variantes. Una empresa que mide y prueba mejora un 20-50% en seis meses sin gastar más en publicidad.
+Lo que hay que saber es qué porcentaje de quien llega convierte, y en qué punto se va el resto. Con eso se decide qué probar. Una empresa que mide y ajusta mejora de forma notable en unos meses **sin aumentar el gasto en publicidad**, que es el único ahorro real en captación.
+
+Si nadie va a mirar esos datos, es mejor no hacer la landing y ahorrarse también la campaña.
+
+## Preguntas frecuentes
+
+### ¿Qué diferencia hay entre una landing page y la home?
+
+La home sirve a perfiles distintos que llegan por motivos distintos, así que tiene menú, secciones y varias salidas. Una landing tiene un solo objetivo y un solo público, y todo lo que no lleve a esa acción sobra.
+
+### ¿Cuánto cuesta una landing page?
+
+Entre 800 y 1.500 euros una landing bien hecha, con estructura, diseño, trabajo de mensaje e integración con tu sistema de contacto. Lo que más mueve el precio es quién escribe los textos y las integraciones que necesite.
+
+### ¿Por qué mi landing no convierte?
+
+Los motivos más frecuentes: el titular no dice qué resuelves, el texto habla de tu empresa en lugar del problema del cliente, hay demasiadas salidas, el formulario pide de más o la página va lenta. Casi nunca es el diseño.
+
+### ¿Puedo usar la home como destino de mis anuncios?
+
+Puedes, y es el error más caro que se puede cometer con un presupuesto de campaña. La home no está hecha para una intención concreta, así que pagas por tráfico que se dispersa en cuanto llega.
+
+### ¿Cuántos campos debe tener el formulario?
+
+Los mínimos para poder devolver la llamada. Cada campo extra reduce la conversión, y casi todo lo que parece imprescindible se puede preguntar en el primer contacto.
+
+### ¿Merece la pena una landing si no hago publicidad?
+
+Solo si esa página va a recibir tráfico por otra vía, como posicionamiento propio para un servicio que vende mucho. Una landing sin nadie que llegue a ella es una página invisible.
 
 ## Más en el blog
 
-- [Core Web Vitals y velocidad web](../core-web-vitals-que-son/), una landing lenta mata la conversión.
-- [10 errores web (soluciones)](../errores-comunes-web-empresa/), Errores que reducen tu conversión.
-- [SEO local en Santander](../seo-local-santander/), El tráfico empieza en SEO, la conversión en landing.
-- [Cuánto cuesta una página web](../precio-pagina-web-cantabria/), Una buena landing es una inversión, no un gasto.
+- [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), una landing lenta quema presupuesto de campaña.
+- [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/), el tráfico empieza aquí y la conversión termina en la landing.
+- [Diseño web profesional](https://pindia.es/blog/posts/diseno-web-profesional/), los criterios que separan una web que funciona de una bonita.
+- [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), los tramos del resto de proyectos.
 
-Si tienes campañas en marcha y la landing actual no está funcionando, o quieres lanzar una nueva línea de negocio en Cantabria con una landing potente, [hablemos](/contacto/). Empezamos por entender qué quieres conseguir y montamos solo lo necesario.
+Si estás poniendo dinero en campañas y las consultas no llegan, [hablemos](/contacto/). Lo primero es ver dónde se está cayendo la gente, que rara vez está donde parece.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué diferencia hay entre una landing page y la home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La home sirve a perfiles distintos que llegan por motivos distintos, así que tiene menú, secciones y varias salidas. Una landing tiene un solo objetivo y un solo público, y todo lo que no lleve a esa acción sobra."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta una landing page?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entre 800 y 1.500 euros una landing bien hecha, con estructura, diseño, trabajo de mensaje e integración con tu sistema de contacto. Lo que más mueve el precio es quién escribe los textos y las integraciones que necesite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué mi landing page no convierte?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los motivos más frecuentes: el titular no dice qué resuelves, el texto habla de tu empresa en lugar del problema del cliente, hay demasiadas salidas, el formulario pide de más o la página va lenta. Casi nunca es el diseño."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo usar la home como destino de mis anuncios?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puedes, y es el error más caro que se puede cometer con un presupuesto de campaña. La home no está hecha para una intención concreta, así que pagas por tráfico que se dispersa en cuanto llega."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántos campos debe tener el formulario de una landing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los mínimos para poder devolver la llamada. Cada campo extra reduce la conversión, y casi todo lo que parece imprescindible se puede preguntar en el primer contacto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Merece la pena una landing page si no hago publicidad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solo si esa página va a recibir tráfico por otra vía, como posicionamiento propio para un servicio que vende mucho. Una landing sin nadie que llegue a ella es una página invisible."
+      }
+    }
+  ]
+}
+</script>

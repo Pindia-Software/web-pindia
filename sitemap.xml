@@ -184,6 +184,13 @@
   </url>
 
   <url>
+    <loc>https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://pindia.es/blog/posts/empresa-diseno-web-santander/</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>yearly</changefreq>
@@ -191,7 +198,28 @@
   </url>
 
   <url>
+    <loc>https://pindia.es/blog/posts/errores-comunes-web-empresa/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/posts/landing-page-conversion-cantabria/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
     <loc>https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/posts/tienda-online-cantabria/</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
@@ -338,34 +366,6 @@
   </url>
 
   <url>
-    <loc>https://pindia.es/blog/posts/landing-page-conversion-cantabria/</loc>
-    <lastmod>2026-03-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/posts/errores-comunes-web-empresa/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/</loc>
-    <lastmod>2026-02-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/posts/tienda-online-cantabria/</loc>
-    <lastmod>2026-01-29</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://pindia.es/blog/posts/cana-digital-2021/</loc>
     <lastmod>2021-11-11</lastmod>
     <changefreq>yearly</changefreq>
@@ -384,34 +384,6 @@
     <lastmod>2021-10-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/tag/diseno-desarrollo-web/</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/tag/diseno-desarrollo-web/page/2/</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/tag/diseno-desarrollo-web/page/3/</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <url>
-    <loc>https://pindia.es/blog/tag/diseno-desarrollo-web/page/4/</loc>
-    <lastmod>2026-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
   </url>
 
   <url>
@@ -437,6 +409,34 @@
 
   <url>
     <loc>https://pindia.es/blog/tag/negocio-estrategia-digital/page/4/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/tag/diseno-desarrollo-web/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/tag/diseno-desarrollo-web/page/2/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/tag/diseno-desarrollo-web/page/3/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/blog/tag/diseno-desarrollo-web/page/4/</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
