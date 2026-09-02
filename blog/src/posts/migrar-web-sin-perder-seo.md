@@ -1,97 +1,221 @@
 ---
-title: Cómo migrar tu web sin perder posicionamiento en Google
-metaTitle: 'Cómo migrar tu web sin perder SEO'
+title: 'Cómo migrar tu web sin perder posicionamiento en Google'
+metaTitle: 'Migrar una web sin perder posicionamiento'
 description: >-
-  Plan paso a paso para migrar la web de tu empresa sin perder SEO ni tráfico.
-  Redirecciones, indexación y errores que cuestan caros.
-date: 2026-04-23T00:00:00.000Z
+  Por qué las migraciones hunden el tráfico, cuánto se pierde de verdad, cuánto
+  tarda en recuperarse y qué exigir a quien te la haga.
+date: 2026-09-02T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - SEO & Crecimiento
 cover: /assets/img/blog/migrar-web-sin-perder-seo/cover.webp
-coverAlt: Diagrama de migración web entre dos plataformas conservando el SEO
+coverAlt: Migración de una web conservando el posicionamiento en Google
 draft: false
 ---
 
-Hay un momento de pánico que hemos visto repetirse: la empresa lanza una web nueva y a las dos semanas el tráfico orgánico se ha hundido. Ya no aparecen donde aparecían. Lo que antes traía clientes, ahora trae aire. La nueva web es más bonita, más rápida, mejor en todo. Pero está más abajo en Google. Lo que ha pasado, casi siempre, es una **migración mal hecha**.
+Hay un momento de pánico que se repite: la empresa lanza la web nueva, y a las dos o tres semanas el tráfico orgánico se ha hundido. La web es más bonita, más rápida y mejor en todo. Pero ya no aparece donde aparecía, y lo que antes traía clientes ahora no trae nada.
 
-## Por qué una migración pone en riesgo tu SEO
+Casi siempre es lo mismo: **una migración mal hecha**. Y lo peor es que no se nota el día del lanzamiento, cuando aún se podría corregir barato, sino semanas después, cuando ya has celebrado la web nueva.
 
-Google ha indexado tu web tal y como está: cada página tiene una URL, un contenido, un peso interno y enlaces externos apuntando hacia ella. Cuando lanzas una web nueva, todo eso puede romperse: cambian las URLs, cambian los títulos, cambia la estructura, desaparecen páginas, y los enlaces que apuntaban a tus contenidos van a parar a una página que ya no existe (404).
+## El caso que mejor lo explica
 
-Si no se gestiona, en pocas semanas pierdes posiciones que llevaban años consolidándose. Y recuperarlas no es barato.
+Una asesoría vino a vernos después de rediseñar su web con otro proveedor. Tráfico orgánico: **caída del 70 % en seis semanas**.
 
-## Qué hacer **antes** de la migración
+El diagnóstico fue rápido. La web nueva tenía URLs nuevas y nadie había redirigido las viejas. Las páginas que llevaban años posicionando por sus servicios principales sencillamente habían dejado de existir, y todos los enlaces externos que apuntaban a ellas iban a parar a un error.
 
-**Auditoría completa de la web actual**. Lo primero. Saber exactamente qué páginas tiene tu web, qué tráfico orgánico genera cada una y qué keywords trae. Herramientas: Search Console, Analytics, Screaming Frog, Ahrefs/SEMrush si tienes presupuesto.
+El rescate llevó cuatro meses: rehacer el mapa completo, montar las redirecciones que faltaban, recuperar contenido perdido buscando en archivos históricos de internet y reescribir las páginas clave. Recuperaron el 90 % del tráfico.
 
-**Mapeo de URLs**. Una hoja de cálculo con tres columnas: URL antigua, URL nueva, tipo de redirección (301 normalmente). Cada página existente debería tener un destino. Esto es lo que más se descuida y lo que más daño hace.
+La cuenta final: cuatro meses de tráfico bajo, y pagar dos veces. Hacer la migración bien desde el principio les habría costado un 30 % más que la migración que contrataron, y cero tráfico perdido.
 
-**Inventario de enlaces externos**. Qué webs (medios, directorios, otros blogs) están enlazando a las tuyas. Esos enlaces son oro y hay que asegurarse de que llegan a algún sitio útil después de la migración.
+## Qué se pierde exactamente cuando migras
 
-**Backup completo**. Web actual íntegra, base de datos, archivos. Por si algo va mal.
+Conviene entender por qué esto es delicado, porque desde fuera parece que solo estás cambiando el aspecto de la web.
 
-**Estructura nueva pensada para SEO**. La web nueva debe respetar la estructura semántica (H1 únicos, jerarquía coherente), los metadatos (títulos y descripciones por página) y los datos estructurados.
+Google no indexa "tu empresa". Indexa **páginas**, una a una. Cada página tiene una dirección concreta, un contenido, un peso ganado con el tiempo y, con suerte, enlaces de otras webs apuntando hacia ella. Todo eso está asociado a esa dirección.
 
-## Las redirecciones 301: el corazón de la migración
+Cuando lanzas una web nueva, cambian las direcciones, cambia la estructura, desaparecen páginas y se reorganiza el contenido. Si no se le explica a Google qué se ha convertido en qué, lo que ve es un montón de páginas que han desaparecido y otras nuevas que no conoce y que tienen que empezar de cero.
 
-Una redirección **301** le dice a Google: "esto se ha mudado permanentemente a esta otra URL". Si está bien hecha, Google traslada el peso SEO de la página vieja a la nueva. Si está mal hecha o no existe, Google considera que la página ha desaparecido y pierde el peso.
+Ese "empezar de cero" es lo que llevaba años construido.
 
-Tres cosas críticas:
+## Por qué salen mal
 
-**Cada URL antigua debe ir a una URL nueva relevante** (no todas a la home). Si la página antigua hablaba de "mantenimiento industrial en Cantabria", la redirección debe ir a la página equivalente, no a "/inicio".
+De las migraciones fallidas que hemos rescatado, las causas se repiten:
 
-**Cadenas de redirecciones cortas**. URL vieja → URL nueva, en un solo paso. No saltar por tres redirecciones consecutivas: cada salto pierde fuerza.
+**No hubo mapa de redirecciones**, o se hizo a medias con las páginas que alguien recordaba. Es la causa número uno con diferencia.
 
-**Verificar después del lanzamiento**. Probar todas las redirecciones críticas y revisar Search Console las semanas siguientes para detectar errores 404 que se hayan colado.
+**Todo redirigido a la home.** Se hace pensando que así no hay errores. Google lo interpreta como que esas páginas ya no existen y no traslada nada.
 
-## Qué hacer **el día del lanzamiento**
+**Se cambiaron direcciones sin necesidad.** Si una página ya posicionaba, cambiar su dirección por criterio estético es regalar posiciones a cambio de nada.
 
-**Revisar el robots.txt**. Que no esté bloqueando indexación por accidente (un error clásico: dejarse el `Disallow: /` del entorno de pruebas).
+**Se borró contenido que "no parecía importante".** Esa página de hace cinco años que nadie mira puede ser justo la que tiene enlaces externos que sostienen el resto del dominio.
 
-**Sitemap nuevo subido a Search Console**. Y comprobar que se está leyendo bien.
+**Se lanzó sin probar**, con la web nueva bloqueada a los buscadores porque nadie quitó la instrucción que se puso durante el desarrollo. Es un fallo tonto, es más frecuente de lo que parece, y cuesta semanas.
 
-**Probar formularios, búsqueda interna, idiomas, herramientas**. Lo que no se prueba, se rompe.
+## El mapa de redirecciones es el proyecto
 
-**Activar la nueva ficha en Google Business Profile** si la URL ha cambiado.
+Si hay una sola cosa que separa una migración buena de un desastre, es esta.
 
-## Qué hacer **después** de la migración
+Cada dirección antigua tiene que llegar a la nueva página equivalente, en un solo salto, y equivalente de verdad: si la página vieja hablaba de un servicio concreto, tiene que llegar a la página de ese servicio, no a la portada.
 
-**Vigilar Search Console** todos los días la primera semana, dos veces por semana el primer mes. Buscar páginas con errores 404, problemas de indexación, caída de impresiones por consultas concretas.
+En una web corporativa son unas decenas de reglas. En una tienda online con catálogo, son miles, y ahí ya no es un trabajo que se hace la víspera del lanzamiento con una hoja de cálculo improvisada.
 
-**Comparar tráfico** semana a semana con el periodo anterior. Una caída del 10-20% temporal es relativamente normal en migraciones grandes. Una caída del 50% en mes dos es un problema serio que hay que investigar.
+Cuando pidas presupuesto para un rediseño, esta es la pregunta que más información te va a dar: **cómo van a hacer el mapa de redirecciones y quién lo va a verificar después**. Si la respuesta es que lo verán al final, ya sabes qué va a pasar.
 
-**Recuperar enlaces rotos** reclamando a los sitios externos importantes que actualicen sus enlaces si las URLs han cambiado significativamente.
+## Lo que casi nadie migra y luego se echa de menos
 
-## Caso real: empresa de servicios profesionales en Santander
+Más allá de las páginas, hay cuatro cosas que suelen quedarse por el camino:
 
-Una asesoría de Santander vino a Pindia tras una migración fallida. La agencia anterior había rediseñado la web sin redirigir las URLs viejas. Resultado: caída del 70% del tráfico orgánico en seis semanas. Las páginas que posicionaban "asesoría laboral Santander" o "alta autónomos Cantabria" ya no existían y los enlaces externos apuntaban a 404s.
+**Los archivos descargables.** Catálogos, fichas técnicas y documentos en PDF que llevan años enlazados desde fuera y que a veces reciben más visitas que media web.
 
-Trabajo de rescate: rehicimos el mapeo completo, montamos las redirecciones 301 que faltaban, recuperamos contenido perdido buscando en archive.org cuando hizo falta, y reescribimos las páginas clave. En cuatro meses recuperamos el 90% del tráfico anterior. Pero costó: cuatro meses de tráfico bajo y la inversión doble (la migración inicial y la corrección).
+**Las imágenes con nombre propio**, que en algunos sectores traen tráfico por búsqueda de imágenes.
 
-Una migración bien hecha desde el principio les habría costado un 30% más, y nada de tráfico perdido.
+**Los enlaces externos.** Si un medio, una asociación o un directorio te enlazó hace años, ese enlace vale mucho y hay que asegurarse de que sigue llegando a algún sitio útil.
 
-## Errores frecuentes
+**La coherencia con tu ficha de Google.** Si cambias direcciones y la ficha de tu negocio sigue apuntando a la vieja, pierdes justo donde más duele en un negocio local.
 
-**Lanzar antes de probar.** Cero pruebas en staging, lanzamos directo. Garantizado que algo falla.
+## Cuánto se pierde y cuánto tarda en recuperarse
 
-**Cambiar URLs sin necesidad.** Si tu URL actual posiciona, no la cambies por estética. Mantenla.
+Con expectativas realistas se sufre menos.
 
-**Borrar páginas viejas que no parecen importantes.** Esa página de hace cinco años puede tener enlaces externos que no recuerdas. Bórrala solo si compruebas que no aporta nada.
+Incluso en una migración bien hecha es normal una **caída temporal**, de en torno al 10 o el 20 %, durante unas semanas: Google tiene que volver a rastrear, entender la nueva estructura y recolocar todo. Eso se recupera solo.
 
-**No actualizar enlaces internos.** Si dejas enlaces internos apuntando a URLs viejas y dependiendo solo de redirecciones, encadenas saltos y desperdicias presupuesto de rastreo.
+Lo que no es normal es una caída del 50 % o más, o una caída que sigue creciendo pasado el primer mes. Eso no se arregla esperando, y cuanto más se tarde en detectarlo, más caro sale.
 
-**Olvidarte de los recursos** (PDFs, imágenes con SEO propio): también se redirigen.
+Una migración fallida rescatada a tiempo se recupera en semanas. Rescatada a los seis meses, en trimestres, y a veces no del todo.
 
-## Cuándo migrar y cuándo no
+## Migrar una tienda online es otra liga
 
-Migrar tiene sentido si tu web actual es vieja, lenta, insegura, no responsive o no se puede mantener. **No migres por estética** sin más. Una migración seria cuesta dinero y tiene riesgo. Si la web actual hace su trabajo, mejorar lo existente puede ser más rentable que rehacer.
+Merece aviso aparte. En un ecommerce no solo migras contenido: migras catálogo, clientes, pedidos históricos, suscripciones activas y devoluciones en curso.
+
+A las miles de reglas de redirección de productos y categorías se le suma que hay dinero en movimiento durante el cambio. Es un proyecto distinto y hay que presupuestarlo como tal, no como un rediseño con carrito. Lo desarrollamos en [desarrollo ecommerce](https://pindia.es/blog/posts/desarrollo-ecommerce/).
+
+## Cuándo NO migrar
+
+Esto también hay que decirlo. Migrar cuesta dinero y tiene riesgo, así que tiene que compensar.
+
+**Migra** si tu web es vieja, lenta, insegura, no funciona bien en móvil o ya no se puede mantener. Ahí el riesgo de quedarse es mayor que el de moverse.
+
+**No migres solo por estética.** Si la web actual hace su trabajo y trae consultas, mejorar lo que hay suele ser más rentable que rehacerlo, y desde luego menos arriesgado. Si el problema es que va lenta, a veces se arregla sin tocar la estructura: lo vemos en [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/).
+
+## Qué exigirle a quien te la haga
+
+Cuatro cosas por escrito, antes de empezar:
+
+**Un inventario de lo que hay hoy**, con qué páginas traen tráfico y por qué búsquedas. Sin eso, nadie puede saber qué está protegiendo.
+
+**El mapa de redirecciones como entregable**, no como tarea implícita.
+
+**Un periodo de vigilancia posterior**, con quién mira los datos, con qué frecuencia y durante cuánto tiempo. Un mes es el mínimo razonable.
+
+**Qué pasa si el tráfico cae.** Quién lo arregla y con qué cargo. Esta es la pregunta que separa a quien ha hecho migraciones de quien ha hecho webs.
+
+## Cuánto cuesta hacerlo bien
+
+La parte de migración de un rediseño, hecha en serio, suele añadir entre un 20 y un 30 % sobre el proyecto. Parece mucho hasta que lo comparas con lo que cuesta un rescate: en el caso de arriba fue pagar el proyecto dos veces más cuatro meses sin consultas.
+
+Los tramos de precio de un rediseño completo están en [cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/).
+
+## Preguntas frecuentes
+
+### ¿Se pierde posicionamiento al cambiar de web?
+
+Algo, temporalmente, incluso haciéndolo bien: es normal una caída del 10 al 20 % durante unas semanas mientras Google reindexa. Lo que no es normal es perder la mitad del tráfico o que la caída siga creciendo pasado el primer mes.
+
+### ¿Qué es lo más importante en una migración web?
+
+El mapa de redirecciones: que cada dirección antigua lleve, en un solo salto, a la página nueva equivalente. Es la causa número uno de las migraciones fallidas que rescatamos.
+
+### ¿Puedo cambiar el diseño sin cambiar las URLs?
+
+Sí, y cuando es posible es lo más seguro. Si tus direcciones actuales ya posicionan, mantenerlas elimina la mayor parte del riesgo de la migración.
+
+### ¿Cuánto tarda en recuperarse el tráfico después de migrar?
+
+Unas semanas si la migración se hizo bien. Si hubo errores y se detectan pronto, también semanas. Si se descubren meses después, la recuperación se mide en trimestres y no siempre es completa.
+
+### ¿Qué pasa con los enlaces que otras webs tienen hacia la mía?
+
+Siguen funcionando si la dirección antigua redirige correctamente. Si no, se convierten en errores y pierdes el valor que aportaban, que suele ser una parte importante de la autoridad del dominio.
+
+### ¿Es más difícil migrar una tienda online?
+
+Bastante. Además de las páginas, migras catálogo, clientes, pedidos históricos y suscripciones, con miles de reglas de redirección y dinero en curso durante el cambio. Es un proyecto propio, no un rediseño con carrito.
+
+### ¿Cuánto cuesta hacer una migración bien?
+
+Suele añadir entre un 20 y un 30 % al coste del rediseño. Es sensiblemente menos que rescatar una migración fallida, que implica pagar el proyecto dos veces y meses de tráfico perdido.
 
 ## Más en el blog
 
-- [SEO local en Santander](../seo-local-santander/), Tu SEO local se pierde fácil en una migración mal hecha.
-- [Core Web Vitals y velocidad web](../core-web-vitals-que-son/), La nueva web debe ser más rápida. Mide Core Web Vitals antes y después.
-- [Wordpress vs desarrollo a medida](../wordpress-vs-desarrollo-medida-cantabria/), Elige bien la plataforma antes de migrar.
+- [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), los tramos de un rediseño completo.
+- [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), si el problema es la velocidad, quizá no hace falta migrar.
+- [WordPress, plantilla o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), elige bien la plataforma antes de moverte.
+- [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/), lo primero que se resiente en una migración de negocio local.
 
-Si estás planificando una migración o un rediseño de web en Cantabria y quieres que se haga sin perder SEO, [hablemos](/contacto/). En la primera reunión te enseñamos el plan y los riesgos antes de tocar nada.
+Si estás planificando un rediseño y quieres que no te cueste el posicionamiento, [hablemos](/contacto/). En la primera reunión te enseñamos qué hay en juego y dónde está el riesgo, antes de tocar nada.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Se pierde posicionamiento al cambiar de web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Algo, temporalmente, incluso haciéndolo bien: es normal una caída del 10 al 20 % durante unas semanas mientras Google reindexa. Lo que no es normal es perder la mitad del tráfico o que la caída siga creciendo pasado el primer mes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es lo más importante en una migración web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El mapa de redirecciones: que cada dirección antigua lleve, en un solo salto, a la página nueva equivalente. Es la causa número uno de las migraciones fallidas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo cambiar el diseño sin cambiar las URLs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, y cuando es posible es lo más seguro. Si tus direcciones actuales ya posicionan, mantenerlas elimina la mayor parte del riesgo de la migración."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tarda en recuperarse el tráfico después de migrar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unas semanas si la migración se hizo bien. Si hubo errores y se detectan pronto, también semanas. Si se descubren meses después, la recuperación se mide en trimestres y no siempre es completa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa con los enlaces que otras webs tienen hacia la mía?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Siguen funcionando si la dirección antigua redirige correctamente. Si no, se convierten en errores y pierdes el valor que aportaban, que suele ser una parte importante de la autoridad del dominio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es más difícil migrar una tienda online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bastante. Además de las páginas, migras catálogo, clientes, pedidos históricos y suscripciones, con miles de reglas de redirección y dinero en curso durante el cambio. Es un proyecto propio, no un rediseño con carrito."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta hacer una migración bien?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suele añadir entre un 20 y un 30 % al coste del rediseño. Es sensiblemente menos que rescatar una migración fallida, que implica pagar el proyecto dos veces y meses de tráfico perdido."
+      }
+    }
+  ]
+}
+</script>

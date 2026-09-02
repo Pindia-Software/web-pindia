@@ -5,8 +5,28 @@
     <link>https://pindia.es/blog/</link>
     <description>Noticias y artículos sobre software, diseño web y tecnología para empresas en Santander.</description>
     <language>es-es</language>
-    <lastBuildDate>Tue, 01 Sep 2026 13:56:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 07:15:47 GMT</lastBuildDate>
     <atom:link href="https://pindia.es/blog/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Cómo elegir empresa de diseño web en Santander</title>
+      <link>https://pindia.es/blog/posts/empresa-diseno-web-santander/</link>
+      <description>Cómo elegir empresa de diseño web en Santander: los tres tipos de proveedor, qué preguntar, cómo comparar presupuestos que no se parecen y qué exigir.</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/empresa-diseno-web-santander/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>Negocio &amp; Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>Cómo migrar tu web sin perder posicionamiento en Google</title>
+      <link>https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</link>
+      <description>Por qué las migraciones hunden el tráfico, cuánto se pierde de verdad, cuánto tarda en recuperarse y qué exigir a quien te la haga.</description>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</guid>
+      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
+      <category>Diseño &amp; Desarrollo Web</category><category>SEO &amp; Crecimiento</category>
+    </item>
 
     <item>
       <title>Accesibilidad web: qué exige la ley y qué incumple casi todo el mundo</title>
@@ -199,16 +219,6 @@
     </item>
 
     <item>
-      <title>Cómo migrar tu web sin perder posicionamiento en Google</title>
-      <link>https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</link>
-      <description>Plan paso a paso para migrar la web de tu empresa sin perder SEO ni tráfico. Redirecciones, indexación y errores que cuestan caros.</description>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/migrar-web-sin-perder-seo/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Diseño &amp; Desarrollo Web</category><category>SEO &amp; Crecimiento</category>
-    </item>
-
-    <item>
       <title>Integrar tu ERP con la web: lo que sí merece la pena automatizar</title>
       <link>https://pindia.es/blog/posts/integracion-erp-web-empresa/</link>
       <description>Cuándo tiene sentido integrar la web con tu ERP (Holded, A3, Sage, SAP) y qué procesos automatizar primero. Casos reales en Cantabria.</description>
@@ -254,16 +264,6 @@
       <description>Cómo planificar una tienda online en Cantabria que venda de verdad: plataforma, logística, pasarelas y SEO local. Sin humo.</description>
       <pubDate>Thu, 29 Jan 2026 00:00:00 GMT</pubDate>
       <guid isPermaLink="true">https://pindia.es/blog/posts/tienda-online-cantabria/</guid>
-      <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
-      <category>Diseño &amp; Desarrollo Web</category>
-    </item>
-
-    <item>
-      <title>Cómo elegir empresa de diseño web en Santander</title>
-      <link>https://pindia.es/blog/posts/empresa-diseno-web-santander/</link>
-      <description>Guía honesta para elegir una empresa de diseño web en Santander: qué mirar, qué preguntar y cómo evitar los errores que vemos repetirse.</description>
-      <pubDate>Thu, 15 Jan 2026 00:00:00 GMT</pubDate>
-      <guid isPermaLink="true">https://pindia.es/blog/posts/empresa-diseno-web-santander/</guid>
       <author>info@pindia.es (Beatriz Santa Cruz Llanillo)</author>
       <category>Diseño &amp; Desarrollo Web</category>
     </item>
