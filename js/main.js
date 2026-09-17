@@ -838,3 +838,93 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
     update();
   });
 })();
+
+/* ── WhatsApp: burbuja + filtro (qué necesita → dónde está) ──
+   Sin JS la burbuja es un enlace directo a wa.me. Con JS abre el panel
+   y el último paso enlaza a wa.me con el mensaje ya redactado. */
+(function initWhatsApp() {
+  const root = document.querySelector('[data-wa]');
+  if (!root) return;
+
+  const phone  = root.dataset.waPhone;
+  const toggle = root.querySelector('[data-wa-toggle]');
+  const panel  = root.querySelector('.wa__panel');
+  const step1  = root.querySelector('[data-wa-step="1"]');
+  const step2  = root.querySelector('[data-wa-step="2"]');
+  const places = root.querySelectorAll('[data-wa-place]');
+  let topic = '';
+
+  // La burbuja deja de ser enlace y pasa a controlar el panel
+  toggle.setAttribute('role', 'button');
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.setAttribute('aria-controls', panel.id);
+  toggle.removeAttribute('target');
+
+  function showStep(n) {
+    step1.hidden = n !== 1;
+    step2.hidden = n !== 2;
+  }
+
+  function open() {
+    showStep(1);
+    panel.hidden = false;
+    root.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-label', 'Cerrar WhatsApp');
+    const first = step1.querySelector('button');
+    if (first) first.focus();
+    document.addEventListener('keydown', onKeydown);
+    document.addEventListener('click', onOutside);
+  }
+
+  function close(returnFocus) {
+    panel.hidden = true;
+    root.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Escríbenos por WhatsApp');
+    document.removeEventListener('keydown', onKeydown);
+    document.removeEventListener('click', onOutside);
+    if (returnFocus) toggle.focus();
+  }
+
+  function onKeydown(e) {
+    if (e.key === 'Escape') close(true);
+  }
+
+  function onOutside(e) {
+    if (!root.contains(e.target)) close(false);
+  }
+
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    panel.hidden ? open() : close(true);
+  });
+  root.querySelector('[data-wa-close]').addEventListener('click', () => close(true));
+  root.querySelector('[data-wa-back]').addEventListener('click', () => {
+    showStep(1);
+    const prev = step1.querySelector(`[data-wa-topic="${topic}"]`);
+    if (prev) prev.focus();
+  });
+
+  step1.querySelectorAll('[data-wa-topic]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      topic = btn.dataset.waTopic;
+      places.forEach((a) => {
+        const text = `Hola, Pindia. Vengo de vuestra web y me gustaría ${topic}. ${a.dataset.waPlace}`;
+        a.href = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+      });
+      showStep(2);
+      step2.querySelector('.wa__question').focus();
+    });
+  });
+
+  places.forEach((a) => {
+    a.addEventListener('click', () => {
+      // Solo mide si GA ya está cargado (consentimiento de analítica dado)
+      if (typeof window.gtag === 'function' && document.getElementById('gtag-script')) {
+        window.gtag('event', 'whatsapp_click', { topic, place: a.dataset.waPlace });
+      }
+      close(false);
+    });
+  });
+})();

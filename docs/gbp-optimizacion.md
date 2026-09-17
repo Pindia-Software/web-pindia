@@ -8,7 +8,9 @@
 
 ---
 
-## 0 · NAP — RESUELTO (30-jul)
+## 0 · NAP — RESUELTO (30-jul) · CAMBIADO (17-sep)
+
+> 🔄 **Cambio 17-sep-2026:** el **único teléfono de Pindia pasa a ser `+34 679 55 15 18`** (móvil + WhatsApp). La web ya solo muestra ese número (footer, contacto, legales, schema) y tiene burbuja de WhatsApp. **En la ficha:** poner `679 55 15 18` como principal y **quitar el `942 18 97 33`**. Lo de abajo queda como histórico.
 
 > ✅ **Decisión tomada:** teléfono **principal de la ficha = `942 18 97 33`** (fijo, el mismo que la web) + **secundario = `679 55 15 18`** (móvil/WhatsApp). El 663 queda solo en TrowelApp. **No hay que tocar pindia.es** (ambos números ya conviven en la web). Falta solo **añadir el 2º número en la ficha** (Editar perfil → Información de contacto → Teléfono → "Agregar número de teléfono").
 
@@ -35,7 +37,7 @@ Hay **3 teléfonos** repartidos y eso penaliza en el Local pack. Hay que unifica
 - **Nombre del negocio:** `Pindia Software`
   *(sin coletillas tipo "· Diseño web Santander" — Google penaliza el keyword stuffing en el nombre).*
 - **Dirección:** `Calle Ramón Ramírez 5, 1º · 39100 Santa Cruz de Bezana · Cantabria · España`
-- **Teléfono principal:** `+34 942 18 97 33` · **Secundario:** `679 55 15 18`
+- **Teléfono (único desde 17-sep):** `+34 679 55 15 18` · ~~principal `942 18 97 33`~~ retirado
 - **Web:** `https://pindia.es/` (ver UTM en §9)
 - **Email (si el campo lo permite / desde web):** `info@pindia.es`
 - **Horario:** Lunes a viernes, **9:00–18:00**. Sábado y domingo: cerrado.
@@ -277,6 +279,7 @@ Hola [Nombre], sin prisa y sin agobiar 🙂 ¿pudiste ver lo de la reseña de Go
 - [x] Material gráfico preparado en PNG/JPG: logo + portada + 6 fotos de galería (§6)
 - [x] **Decidir teléfono principal del NAP** → principal `942 18 97 33` + secundario `679 55 15 18` *(30-jul)*
 - [x] Poner en la ficha el teléfono principal `942 18 97 33` + añadir secundario `679 55 15 18` *(30-jul)*
+- [ ] **17-sep:** en la ficha, `679 55 15 18` como principal y eliminar el `942 18 97 33`
 - [ ] Verificar dirección y horario idénticos a la web
 - [ ] Categoría principal `Diseñador de páginas web` + 3 secundarias
 - [ ] Pegar descripción (§3)

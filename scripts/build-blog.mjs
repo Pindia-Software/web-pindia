@@ -43,7 +43,7 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20260820a';
+const ASSET_VER = 'v=20260917a';
 
 // Autora de referencia del blog. Su perfil se enlaza desde el schema (Person.sameAs)
 // y desde la caja de autor al final de cada post: es señal de E-E-A-T, que Google
@@ -257,7 +257,7 @@ function navHTML(currentPage) {
 }
 
 function footerHTML() {
-  return indentPartial(loadPartial('footer'), '  ');
+  return indentPartial(expandIncludes(loadPartial('footer')), '  ');
 }
 
 function cookieBannerHTML() {
