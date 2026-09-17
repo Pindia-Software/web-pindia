@@ -10,7 +10,7 @@
 
 ## 0 · NAP — RESUELTO (30-jul) · CAMBIADO (17-sep)
 
-> 🔄 **Cambio 17-sep-2026:** el **único teléfono de Pindia pasa a ser `+34 679 55 15 18`** (móvil + WhatsApp). La web ya solo muestra ese número (footer, contacto, legales, schema) y tiene burbuja de WhatsApp. **En la ficha:** poner `679 55 15 18` como principal y **quitar el `942 18 97 33`**. Lo de abajo queda como histórico.
+> 🔄 **Cambio 17-sep-2026:** el **único teléfono de Pindia pasa a ser `+34 679 55 15 18`** (móvil + WhatsApp). La web ya solo muestra ese número (footer, contacto, legales, schema) y tiene burbuja de WhatsApp. **En la ficha:** cambio enviado el 17-sep (`679 55 15 18` único y principal, `942 18 97 33` eliminado), pendiente de revisión de Google. Lo de abajo queda como histórico.
 
 > ✅ **Decisión tomada:** teléfono **principal de la ficha = `942 18 97 33`** (fijo, el mismo que la web) + **secundario = `679 55 15 18`** (móvil/WhatsApp). El 663 queda solo en TrowelApp. **No hay que tocar pindia.es** (ambos números ya conviven en la web). Falta solo **añadir el 2º número en la ficha** (Editar perfil → Información de contacto → Teléfono → "Agregar número de teléfono").
 
@@ -279,7 +279,7 @@ Hola [Nombre], sin prisa y sin agobiar 🙂 ¿pudiste ver lo de la reseña de Go
 - [x] Material gráfico preparado en PNG/JPG: logo + portada + 6 fotos de galería (§6)
 - [x] **Decidir teléfono principal del NAP** → principal `942 18 97 33` + secundario `679 55 15 18` *(30-jul)*
 - [x] Poner en la ficha el teléfono principal `942 18 97 33` + añadir secundario `679 55 15 18` *(30-jul)*
-- [ ] **17-sep:** en la ficha, `679 55 15 18` como principal y eliminar el `942 18 97 33`
+- [x] **17-sep:** en la ficha, `679 55 15 18` como principal y eliminado el `942 18 97 33` (enviado; pendiente de revisión de Google)
 - [ ] Verificar dirección y horario idénticos a la web
 - [ ] Categoría principal `Diseñador de páginas web` + 3 secundarias
 - [ ] Pegar descripción (§3)
