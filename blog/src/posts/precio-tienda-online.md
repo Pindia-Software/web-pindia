@@ -9,6 +9,8 @@ author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital
+cover: /assets/img/blog/precio-tienda-online/cover.webp
+coverAlt: 'Escaparate de una tienda online con su catálogo de productos, una etiqueta de precio y monedas'
 draft: false
 ---
 

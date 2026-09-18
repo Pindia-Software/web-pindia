@@ -9,6 +9,8 @@ author: Beatriz Santa Cruz Llanillo
 tags:
   - Diseño & Desarrollo Web
   - Negocio & Estrategia Digital
+cover: /assets/img/blog/desarrollo-ecommerce/cover.webp
+coverAlt: 'Tienda online vista por dentro, conectada a los módulos de catálogo, pagos e integración con el ERP'
 draft: false
 ---
 
