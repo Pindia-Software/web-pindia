@@ -87,7 +87,7 @@ web-pindia/
 
 ## Configuración antes de publicar
 
-- [ ] Reemplazar `G-XXXXXXXXXX` en `index.html` (y en todas las páginas) con el ID real de GA4 — buscar `window.GA_MEASUREMENT_ID`
+- [x] ID de GA4 (`G-KSW7VRFCV6`) definido en `js/main.js` → `loadAnalytics()`. No va inline en el `<head>`: la CSP de `_headers` bloquea scripts inline.
 - [ ] Añadir el número real de WhatsApp Business en el footer de todas las páginas (buscar `34XXXXXXXXX`)
 - [ ] Crear y subir imágenes OG: `/assets/img/og-home.webp` (y variantes por sección), tamaño 1200×630 px
 - [ ] Crear el favicon set completo y guardarlo en `/assets/favicons/`:

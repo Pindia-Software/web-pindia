@@ -367,7 +367,7 @@
 
 /* ── Analytics loader (GA4, after consent) ── */
 function loadAnalytics() {
-  const GA_ID = window.GA_MEASUREMENT_ID; // Set in <head>: window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'
+  const GA_ID = 'G-KSW7VRFCV6'; // Inline en el head no vale: la CSP bloquea scripts inline
   if (!GA_ID || document.getElementById('gtag-script')) return;
 
   const script = document.createElement('script');

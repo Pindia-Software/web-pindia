@@ -7,12 +7,15 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), camera=(), microphone=(), interest-cohort=()
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com; font-src 'self'; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
   Link: </llms.txt>; rel="describedby"; type="text/markdown"
   Link: </sitemap.xml>; rel="sitemap"; type="application/xml"
 
-# Caché agresivo de assets. CSS/JS/fuentes van versionados con ?v= en el HTML,
+# Caché agresivo de assets. CSS y JS van versionados con ?v= en el HTML,
 # así que un cambio real fuerza una URL nueva → seguro cachear 1 año immutable.
+# Las fuentes NO llevan ?v=: el @font-face de styles.css las pide sin query y el
+# preload debe coincidir, o el navegador se las descarga dos veces. Si alguna vez
+# hay que sustituir un woff2, se renombra el fichero.
 /css/*
   Cache-Control: public, max-age=31536000, immutable
 /js/*
