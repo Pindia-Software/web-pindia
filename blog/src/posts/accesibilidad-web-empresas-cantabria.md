@@ -99,7 +99,7 @@ Las herramientas automáticas (Axe, WAVE, Lighthouse) detectan en torno a un ter
 
 El resto exige revisión manual: recorrer la web con teclado, escucharla con lector de pantalla, comprobar que los mensajes de error se anuncian, verificar que el contenido tiene sentido leído en orden. Eso lo hace una persona, tarda, y es la parte que separa un informe útil de un PDF de capturas.
 
-Una auditoría de accesibilidad sobre una web de pyme, con revisión manual e informe priorizado, se mueve entre 600 y 1.500 euros. La refactorización posterior depende de lo que salga, y es donde cambia mucho según cómo esté construida la web.
+Una auditoría de accesibilidad sobre una web de pyme, con revisión manual e informe priorizado, se mueve entre 600 y 1.500 euros. La refactorización posterior depende de lo que salga, y es donde cambia mucho según cómo esté construida la web: sobre un [diseño web a medida](https://pindia.es/servicios/diseno-web) se toca el marcado y ya está, sobre una plantilla cerrada a veces no hay por dónde entrar.
 
 ## Caso real: la licitación que no podían firmar
 
@@ -127,7 +127,7 @@ Por eso la accesibilidad se pide en la primera reunión con tu proveedor, no en 
 
 ## Cómo lo hacemos en Pindia
 
-Entregamos con WCAG 2.2 AA como mínimo, no como extra facturable: contraste comprobado, navegación por teclado con foco visible, estructura semántica, formularios etiquetados y textos alternativos escritos por una persona. Esta misma web se construyó así.
+En nuestros proyectos de [diseño y desarrollo web en Cantabria](https://pindia.es/servicios/diseno-web) entregamos con WCAG 2.2 AA como mínimo, no como extra facturable: contraste comprobado, navegación por teclado con foco visible, estructura semántica, formularios etiquetados y textos alternativos escritos por una persona. Esta misma web se construyó así.
 
 Y si lo que necesitas es una auditoría de la web que ya tienes, con un informe priorizado por impacto y riesgo en vez de un volcado de la herramienta automática, es un trabajo que hacemos por separado.
 

@@ -93,8 +93,8 @@ Si fallas en tres o más, no tienes un problema de diseño: tienes una web que n
 
 Depende del alcance, pero para situarte, y hablando de webs bien hechas (no plantillas):
 
-- **Una web corporativa profesional** (varias páginas, SEO base, responsive, legal): normalmente **desde 1.500–3.000 €**.
-- **Una web a medida** con desarrollo propio, integraciones o funcionalidades específicas: **desde 4.000–6.000 €** en adelante.
+- **Una web corporativa profesional** (varias páginas, SEO base, responsive, legal): normalmente **desde 1.500 a 3.000 €**.
+- **Una web a medida** con desarrollo propio, integraciones o funcionalidades específicas: **desde 4.000 a 6.000 €** en adelante.
 
 Lo barato de verdad no es la plantilla de 300 €: es la web que te trae clientes. Antes de comparar presupuestos por precio, compáralos por lo que incluyen de estos 7 criterios. Tienes el detalle en [cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/).
 
@@ -103,7 +103,7 @@ Lo barato de verdad no es la plantilla de 300 €: es la web que te trae cliente
 Da igual que sea un **diseñador web** freelance o una **agencia de diseño web**: las preguntas que separan a los profesionales del resto son las mismas.
 
 1. **¿Me pasáis el resultado de PageSpeed** antes de entregar?
-2. **¿El SEO técnico va incluido** o es un extra que se factura aparte?
+2. **¿El SEO técnico va incluido** o es un extra que se factura aparte? En nuestro [diseño web profesional](https://pindia.es/servicios/diseno-web) va de serie, y el trabajo continuo de [posicionamiento](https://pindia.es/servicios/posicionamiento-web) se contrata aparte porque es otra cosa.
 3. **¿La web cumple accesibilidad y RGPD** de serie?
 4. **¿El diseño es propio o una plantilla** adaptada? (Que te lo digan claro.)
 5. **¿Qué pasa después: mantenimiento, actualizaciones, soporte?**
@@ -120,7 +120,7 @@ La misma gente que haría tu web mantiene producto propio en producción, [Trowe
 
 Trabajamos desde Santa Cruz de Bezana para toda Cantabria y España.
 
-**[Cuéntanos qué necesitas y te damos presupuesto en 48h →](https://pindia.es/contacto/)**
+**[Cuéntanos qué necesitas y te damos presupuesto en 48h](https://pindia.es/contacto/)**
 
 ## Preguntas frecuentes
 
@@ -138,7 +138,7 @@ Compruébalo con lo medible: que cargue en menos de 3 segundos (PageSpeed Insigh
 
 ### ¿Cuánto cuesta un diseño web profesional?
 
-Una web corporativa profesional suele ir desde 1.500–3.000 €, y una web a medida con desarrollo propio desde 4.000–6.000 € en adelante. Compara los presupuestos por lo que incluyen (velocidad, SEO, accesibilidad, legal), no solo por el precio: una plantilla de 300 € que no te trae clientes es más cara que una web que sí lo hace.
+Una web corporativa profesional suele ir desde 1.500 a 3.000 €, y una web a medida con desarrollo propio desde 4.000 a 6.000 € en adelante. Compara los presupuestos por lo que incluyen (velocidad, SEO, accesibilidad, legal), no solo por el precio: una plantilla de 300 € que no te trae clientes es más cara que una web que sí lo hace.
 
 ### ¿El SEO va incluido en un diseño web profesional?
 
@@ -189,7 +189,7 @@ Si tu web es un canal para conseguir clientes, sí. Una pyme se juega más en ca
       "name": "¿Cuánto cuesta un diseño web profesional?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Una web corporativa profesional suele ir desde 1.500–3.000 €, y una web a medida con desarrollo propio desde 4.000–6.000 € en adelante. Compara los presupuestos por lo que incluyen (velocidad, SEO, accesibilidad, legal), no solo por el precio: una plantilla de 300 € que no te trae clientes es más cara que una web que sí lo hace."
+        "text": "Una web corporativa profesional suele ir desde 1.500 a 3.000 €, y una web a medida con desarrollo propio desde 4.000 a 6.000 € en adelante. Compara los presupuestos por lo que incluyen (velocidad, SEO, accesibilidad, legal), no solo por el precio: una plantilla de 300 € que no te trae clientes es más cara que una web que sí lo hace."
       }
     },
     {

@@ -11,7 +11,7 @@ coverAlt: 'Código generado por IA en pantalla con herramientas de desarrollo'
 draft: false
 ---
 
-Hace un año, ChatGPT escribía código que no funcionaba y había que reescribir todo. Hoy, GitHub Copilot predice líneas de código tan bien que muchos desarrolladores confían en él como si fuera un colega. La IA en desarrollo web ha mejorado. Pero sigue habiendo mito y mucho marketing alrededor. Vamos a separarlos.
+Hace un año, ChatGPT escribía código que no funcionaba y había que reescribir todo. Hoy, GitHub Copilot predice líneas de código tan bien que muchos desarrolladores confían en él como si fuera un colega. La IA en desarrollo web ha mejorado. Pero sigue habiendo mito y mucho marketing alrededor. Vamos a separarlos, desde la experiencia de quien hace [diseño y desarrollo web a medida](https://pindia.es/servicios/diseno-web) todos los días.
 
 ## La verdad sobre IA generativa y código
 
@@ -148,6 +148,6 @@ Los desarrolladores que integren IA como herramienta van a ir más rápido. Los 
 
 Si viniste buscando "¿puedo hacer una web con ChatGPT?": técnicamente, sí. Será mediocre. Tendrá bugs de seguridad. Costará el doble reescribirla cuando falle.
 
-Si viniste buscando "¿pueden hacerla en 2 días?": no. Una web buena necesita diseño, lógica, pruebas, despliegue y monitorización. Una agencia que usa IA bien puede ser más rápida. Una que depende de IA es más lenta, porque se le va el tiempo en depurar.
+Si viniste buscando "¿pueden hacerla en 2 días?": no. Una [web profesional a medida](https://pindia.es/servicios/diseno-web) necesita diseño, lógica, pruebas, despliegue y monitorización. Una agencia que usa IA bien puede ser más rápida. Una que depende de IA es más lenta, porque se le va el tiempo en depurar.
 
 Si quieres que hablemos sobre cuál es el mejor enfoque para tu proyecto (IA, autónomo o agencia), [escríbenos](/contacto/).

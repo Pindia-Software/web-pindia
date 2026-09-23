@@ -97,7 +97,7 @@ Si estás en alguno de estos casos, coge una herramienta estándar y ahórrate l
 Depende del alcance, pero para situarte:
 
 - **Una herramienta o automatización sencilla** (un módulo, una integración concreta): **desde unos 6.000 €**.
-- **Una aplicación a medida** con varias pantallas y usuarios: **desde 12.000–20.000 €**.
+- **Una aplicación a medida** con varias pantallas y usuarios: **desde 12.000 a 20.000 €**.
 - **Un sistema de gestión completo** con varios módulos e integraciones: **desde 25.000 €** en adelante.
 
 Los factores que mueven el precio: número de módulos, integraciones con otros sistemas, número de usuarios, nivel de seguridad y si los datos ya existen o hay que migrarlos.
@@ -108,10 +108,10 @@ Y un aviso: compara el **coste a tres años**, no el precio inicial. Un software
 
 Entre 6 y 16 semanas para un software a medida típico:
 
-1. **Descubrimiento** (1–2 semanas): entender tu proceso de verdad, no el que está escrito.
-2. **Arquitectura y diseño** (1–2 semanas): cómo se estructura, aprobado por ti antes de programar.
-3. **Desarrollo por fases** (3–10 semanas): con entregas visibles para que valides sobre la marcha.
-4. **Pruebas y puesta en producción** (1–2 semanas): seguridad, rendimiento y formación a tu equipo.
+1. **Descubrimiento** (1 a 2 semanas): entender tu proceso de verdad, no el que está escrito.
+2. **Arquitectura y diseño** (1 a 2 semanas): cómo se estructura, aprobado por ti antes de programar.
+3. **Desarrollo por fases** (3 a 10 semanas): con entregas visibles para que valides sobre la marcha.
+4. **Pruebas y puesta en producción** (1 a 2 semanas): seguridad, rendimiento y formación a tu equipo.
 
 El cuello de botella real casi nunca es técnico: es tener claros los procesos y los datos. Cuanto más ordenado llegues, más rápido y barato sale.
 
@@ -131,7 +131,7 @@ Las preguntas que separan a los serios del resto:
 
 1. **¿El código es mío? ¿Puedo llevármelo?**
 2. **¿Cómo garantizáis que escale** cuando crezca el uso?
-3. **¿Qué pasa con la seguridad y mis datos?**
+3. **¿Qué pasa con la seguridad y mis datos?** Pregúntalo antes de firmar, no después. Puedes ver [cómo enfocamos el desarrollo a medida](https://pindia.es/servicios/desarrollo-software) para saber qué deberías estar exigiendo.
 4. **¿Trabajáis por fases con entregas** o me lo enseñáis todo al final?
 5. **¿Qué incluye el mantenimiento y qué cuesta al mes?**
 6. **¿Tenéis producto propio en producción?** Quien sostiene su propio software sabe lo que es mantener el tuyo.
@@ -145,7 +145,7 @@ Eso significa tres cosas para tu proyecto: que la arquitectura y la seguridad no
 
 Trabajamos desde Santa Cruz de Bezana para toda Cantabria y España.
 
-**[Cuéntanos tu proceso y te damos presupuesto en 48h →](https://pindia.es/contacto/)**
+**[Cuéntanos tu proceso y te damos presupuesto en 48h](https://pindia.es/contacto/)**
 
 Y si vemos que con un software estándar resuelves, te lo diremos. Preferimos perder un proyecto a venderte algo que no necesitas.
 
@@ -161,7 +161,7 @@ Para automatizar un proceso propio (presupuestos, partes, stock), unir sistemas 
 
 ### ¿Cuánto cuesta el software a medida?
 
-Desde unos 6.000 € una herramienta sencilla, desde 12.000–20.000 € una aplicación a medida y desde 25.000 € un sistema de gestión completo. Depende de los módulos, las integraciones, los usuarios y la seguridad. Compara siempre el coste a tres años frente a las licencias de un software estándar.
+Desde unos 6.000 € una herramienta sencilla, desde 12.000 a 20.000 € una aplicación a medida y desde 25.000 € un sistema de gestión completo. Depende de los módulos, las integraciones, los usuarios y la seguridad. Compara siempre el coste a tres años frente a las licencias de un software estándar.
 
 ### ¿Qué diferencia hay entre software a medida y software estándar?
 
@@ -216,7 +216,7 @@ Sí. Reduce el tiempo de las partes mecánicas del desarrollo, y eso baja precio
       "name": "¿Cuánto cuesta el software a medida?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Desde unos 6.000 € una herramienta sencilla, desde 12.000–20.000 € una aplicación a medida y desde 25.000 € un sistema de gestión completo. Depende de los módulos, las integraciones, los usuarios y la seguridad. Compara siempre el coste a tres años frente a las licencias de un software estándar."
+        "text": "Desde unos 6.000 € una herramienta sencilla, desde 12.000 a 20.000 € una aplicación a medida y desde 25.000 € un sistema de gestión completo. Depende de los módulos, las integraciones, los usuarios y la seguridad. Compara siempre el coste a tres años frente a las licencias de un software estándar."
       }
     },
     {

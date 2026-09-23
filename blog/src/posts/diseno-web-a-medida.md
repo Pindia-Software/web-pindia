@@ -115,7 +115,7 @@ Lo hemos comprobado: con una empresa de servicios profesionales rehicimos una so
 
 ## Cuánto cuesta una web a medida
 
-Depende del alcance, pero para situarte: **desde unos 3.000 €** una web a medida corporativa, frente a los 600–1.500 € de una plantilla. Una tienda online o una web con integraciones sube desde ahí.
+Depende del alcance, pero para situarte: **desde unos 3.000 €** una web a medida corporativa, frente a los 600-1.500 € de una plantilla. Una tienda online o una web con integraciones sube desde ahí.
 
 Los factores que mueven el precio: número de páginas, funcionalidades, integraciones, idiomas y si los contenidos existen o hay que crearlos.
 
@@ -128,8 +128,8 @@ Y un aviso: compara el **coste a tres años**, no el precio inicial. Una plantil
 Entre 4 y 10 semanas para una web a medida típica:
 
 1. **Descubrimiento** (1 semana): qué necesita tu negocio.
-2. **Arquitectura y diseño** (1–2 semanas): estructura y aspecto, aprobados por ti antes de programar.
-3. **Desarrollo** (2–5 semanas).
+2. **Arquitectura y diseño** (1 a 2 semanas): estructura y aspecto, aprobados por ti antes de programar.
+3. **Desarrollo** (2 a 5 semanas).
 4. **Contenidos** (en paralelo): **el cuello de botella real**.
 5. **Pruebas y lanzamiento** (1 semana): rendimiento, accesibilidad, SEO, dispositivos.
 
@@ -151,7 +151,7 @@ Las preguntas que separan a los serios del resto:
 
 1. **¿Es plantilla o a medida de verdad?** Si esquivan la respuesta, ya la tienes.
 2. **¿El código es mío? ¿Puedo llevármelo?**
-3. **¿Qué rendimiento me garantizáis?** Una empresa seria te habla de Core Web Vitals sin que se lo pidas.
+3. **¿Qué rendimiento me garantizáis?** Una empresa seria te habla de Core Web Vitals sin que se lo pidas, y publica [qué incluye su servicio de diseño web](https://pindia.es/servicios/diseno-web) en vez de improvisarlo por presupuesto.
 4. **¿Qué pasa cuando crezca?**
 5. **¿Qué incluye el mantenimiento y qué cuesta al mes?**
 6. **¿Quién escribe los textos?** Sorpresa habitual: tú.
@@ -167,7 +167,7 @@ Eso significa tres cosas para tu proyecto: que el rendimiento y la arquitectura 
 
 Trabajamos desde Santa Cruz de Bezana para toda Cantabria y España.
 
-**[Cuéntanos tu proyecto y te damos presupuesto en 48h →](https://pindia.es/contacto/)**
+**[Cuéntanos tu proyecto y te damos presupuesto en 48h](https://pindia.es/contacto/)**
 
 Y si vemos que con una plantilla resuelves, te lo diremos. Preferimos perder un proyecto a venderte algo que no necesitas.
 
@@ -179,7 +179,7 @@ Una web diseñada y programada específicamente para tu empresa, en lugar de ada
 
 ### ¿Cuánto cuesta una web a medida?
 
-Desde unos 3.000 € una web corporativa, frente a 600–1.500 € de una plantilla. El precio depende del número de páginas, las funcionalidades, las integraciones y los idiomas. Compara siempre el coste a tres años, no el inicial.
+Desde unos 3.000 € una web corporativa, frente a 600-1.500 € de una plantilla. El precio depende del número de páginas, las funcionalidades, las integraciones y los idiomas. Compara siempre el coste a tres años, no el inicial.
 
 ### ¿Cuál es la diferencia entre web a medida y plantilla?
 
@@ -230,7 +230,7 @@ Sí. Reduce el tiempo de las partes mecánicas del desarrollo, y eso baja precio
       "name": "¿Cuánto cuesta una web a medida?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Desde unos 3.000 € una web corporativa, frente a 600–1.500 € de una plantilla. El precio depende del número de páginas, las funcionalidades, las integraciones y los idiomas. Compara siempre el coste a tres años, no el inicial."
+        "text": "Desde unos 3.000 € una web corporativa, frente a 600-1.500 € de una plantilla. El precio depende del número de páginas, las funcionalidades, las integraciones y los idiomas. Compara siempre el coste a tres años, no el inicial."
       }
     },
     {

@@ -101,7 +101,7 @@ Una tienda vive: pasarelas que cambian, dependencias que se actualizan, campaña
 Depende del alcance, pero para situarte:
 
 - **Una tienda a medida sencilla** (catálogo acotado, pagos estándar, sin integraciones): **desde unos 6.000 €**.
-- **Una tienda con integración a tu ERP o almacén** y reglas de negocio propias: **desde 12.000–20.000 €**.
+- **Una tienda con integración a tu ERP o almacén** y reglas de negocio propias: **desde 12.000 a 20.000 €**.
 - **Un ecommerce complejo** (B2B, multi-almacén, catálogo grande, varias integraciones): **desde 25.000 €** en adelante.
 
 Los factores que mueven el precio: tamaño y complejidad del catálogo, integraciones con otros sistemas, tipo de venta (B2C o B2B), pasarelas de pago y si los datos y productos ya existen o hay que migrarlos.
@@ -112,10 +112,10 @@ Y un aviso: compara el **coste a tres años**, no el precio inicial. Una platafo
 
 Entre 6 y 16 semanas para una tienda a medida típica:
 
-1. **Descubrimiento** (1–2 semanas): entender tu catálogo, tus reglas de precio y tu logística de verdad.
-2. **Arquitectura y diseño** (1–2 semanas): cómo se modela y cómo se ve, aprobado por ti antes de programar.
-3. **Desarrollo por fases** (3–10 semanas): con entregas visibles para que valides sobre la marcha.
-4. **Migración, pruebas y lanzamiento** (1–2 semanas): pasar productos y clientes, probar los pagos y formar a tu equipo.
+1. **Descubrimiento** (1 a 2 semanas): entender tu catálogo, tus reglas de precio y tu logística de verdad.
+2. **Arquitectura y diseño** (1 a 2 semanas): cómo se modela y cómo se ve, aprobado por ti antes de programar.
+3. **Desarrollo por fases** (3 a 10 semanas): con entregas visibles para que valides sobre la marcha.
+4. **Migración, pruebas y lanzamiento** (1 a 2 semanas): pasar productos y clientes, probar los pagos y formar a tu equipo.
 
 El cuello de botella real casi nunca es técnico: es tener el catálogo y los precios ordenados. Cuanto más limpios llegues, más rápido y barato sale.
 
@@ -133,7 +133,7 @@ Las preguntas que separan a los serios del resto:
 
 1. **¿El código es mío? ¿Puedo llevármelo?**
 2. **¿Cómo integráis la tienda con mi ERP, mi almacén y mi facturación?**
-3. **¿Cómo garantizáis que la tienda vaya rápida** con el catálogo lleno?
+3. **¿Cómo garantizáis que la tienda vaya rápida** con el catálogo lleno? El rendimiento se decide en el [desarrollo web a medida](https://pindia.es/servicios/diseno-web), no en un plugin que se instala al final.
 4. **¿Trabajáis por fases con entregas** o me lo enseñáis todo al final?
 5. **¿Qué incluye el mantenimiento y qué cuesta al mes?**
 6. **¿Y las pasarelas de pago y la seguridad de los datos?**
@@ -147,7 +147,7 @@ Eso significa tres cosas para tu proyecto: que el rendimiento y la seguridad de 
 
 Trabajamos desde Santa Cruz de Bezana para toda Cantabria y España.
 
-**[Cuéntanos cómo vendes y te damos presupuesto en 48h →](https://pindia.es/contacto/)**
+**[Cuéntanos cómo vendes y te damos presupuesto en 48h](https://pindia.es/contacto/)**
 
 Y si vemos que con una plantilla estándar resuelves, te lo diremos. Preferimos perder un proyecto a venderte algo que no necesitas.
 
@@ -159,7 +159,7 @@ Un ecommerce desarrollado específicamente para un negocio y su catálogo, en lu
 
 ### ¿Cuánto cuesta una tienda online a medida?
 
-Desde unos 6.000 € una tienda sencilla, desde 12.000–20.000 € una con integración a tu ERP y reglas propias, y desde 25.000 € un ecommerce complejo o B2B. Depende del catálogo, las integraciones, el tipo de venta y las pasarelas. Compara el coste a tres años frente a la cuota y las comisiones de una plataforma estándar.
+Desde unos 6.000 € una tienda sencilla, desde 12.000 a 20.000 € una con integración a tu ERP y reglas propias, y desde 25.000 € un ecommerce complejo o B2B. Depende del catálogo, las integraciones, el tipo de venta y las pasarelas. Compara el coste a tres años frente a la cuota y las comisiones de una plataforma estándar.
 
 ### ¿Qué es mejor, Shopify o una tienda a medida?
 
@@ -208,7 +208,7 @@ Sí. Se migran productos, categorías, clientes y pedidos, y se cuidan las redir
       "name": "¿Cuánto cuesta una tienda online a medida?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Desde unos 6.000 € una tienda sencilla, desde 12.000–20.000 € una con integración a tu ERP y reglas propias, y desde 25.000 € un ecommerce complejo o B2B. Depende del catálogo, las integraciones, el tipo de venta y las pasarelas. Compara el coste a tres años frente a la cuota y las comisiones de una plataforma estándar."
+        "text": "Desde unos 6.000 € una tienda sencilla, desde 12.000 a 20.000 € una con integración a tu ERP y reglas propias, y desde 25.000 € un ecommerce complejo o B2B. Depende del catálogo, las integraciones, el tipo de venta y las pasarelas. Compara el coste a tres años frente a la cuota y las comisiones de una plataforma estándar."
       }
     },
     {

@@ -16,7 +16,7 @@ draft: false
 
 La respuesta corta: **si el trabajo de tu web es publicar contenido que edita tu equipo, WordPress**. Si tu web tiene que hacer algo (calcular, reservar, configurar, hablar con tu ERP, cargar en medio segundo), **desarrollo a medida**. Y si solo necesitas existir con dignidad durante un año, **una plantilla decente**, sin complejos.
 
-El problema es que casi nadie plantea la pregunta así. Se plantea como una guerra de religión, normalmente por parte de quien solo sabe hacer una de las tres. Nosotros hacemos las tres, así que vamos a comparar sin bando.
+El problema es que casi nadie plantea la pregunta así. Se plantea como una guerra de religión, normalmente por parte de quien solo sabe hacer una de las tres. Nosotros hacemos las tres, incluido el [desarrollo web a medida](https://pindia.es/servicios/diseno-web), así que vamos a comparar sin bando.
 
 ## Son tres opciones, no dos
 
@@ -89,7 +89,7 @@ Súmale los 36 meses a cada opción antes de comparar. El orden de los presupues
 
 **La moda.** Astro o Next.js son excelentes, y para un sitio de dos páginas de servicios y tres artículos al mes son matar moscas a cañonazos.
 
-**Lo que diga una agencia que solo hace una cosa.** Si te ofrecen la misma tecnología sea cual sea tu proyecto, no te están asesorando, te están vendiendo su inventario. Pregunta cuándo fue la última vez que recomendaron lo contrario.
+**Lo que diga una agencia que solo hace una cosa.** Si te ofrecen la misma tecnología sea cual sea tu proyecto, no te están asesorando, te están vendiendo su inventario. Nosotros publicamos [qué incluye cada opción](https://pindia.es/servicios/diseno-web) precisamente para que se pueda comparar. Pregunta cuándo fue la última vez que recomendaron lo contrario.
 
 ## Las tres diferencias que sí se miden
 

@@ -31,6 +31,6 @@ Los galardones de esta edición recayeron en tres empresas que representan bien 
 
 Desde Pindia Software queremos felicitar a las tres empresas premiadas. Es un orgullo compartir ecosistema empresarial con compañías que demuestran que en Cantabria se hace gran trabajo.
 
-Eventos como este nos recuerdan que el esfuerzo sostenido, la innovación y el compromiso con el territorio tienen su reconocimiento. Y nos animan a seguir construyendo proyectos que aporten valor a las empresas de nuestra región.
+Eventos como este nos recuerdan que el esfuerzo sostenido, la innovación y el compromiso con el territorio tienen su reconocimiento. Y nos animan a seguir construyendo proyectos que aporten valor a las empresas de nuestra región, desde el [diseño web a medida](https://pindia.es/servicios/diseno-web) hasta el [software de gestión](https://pindia.es/servicios/desarrollo-software).
 
 Si tienes un proyecto en mente y quieres contárnoslo, estamos en [Santander y disponibles para hablar](/contacto/).

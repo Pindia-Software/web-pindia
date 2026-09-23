@@ -18,7 +18,7 @@ Una tienda online no es una web con carrito. Es un negocio entero funcionando en
 
 Por eso, cuando alguien nos pide montar un ecommerce, lo primero que hacemos es bajar el ritmo. **La plataforma es la última decisión, no la primera**, y elegirla antes de tiempo es la causa más frecuente de tiendas que se quedan cortas al año.
 
-Este artículo es sobre lo que hay que tener resuelto antes de que nadie escriba una línea de código.
+Este artículo es sobre lo que hay que tener resuelto antes de que nadie escriba una línea de código, lo miremos como un proyecto de [desarrollo web a medida](https://pindia.es/servicios/diseno-web) o como una plataforma estándar.
 
 ## Las preguntas que hay que responder antes
 
@@ -54,7 +54,7 @@ Tres cosas que se repiten tanto que ya las damos por hechas:
 
 **Los primeros pedidos rompen cosas.** Siempre. Una dirección con un formato raro, un pago que se queda a medias, un artículo con dos variantes que descuenta mal. Por eso las dos semanas siguientes al lanzamiento hay que tener a alguien mirando, y por eso desconfiamos de quien entrega y desaparece.
 
-**Vender no empieza el día del lanzamiento.** Una tienda recién publicada no tiene tráfico. Si no hay un plan para traer gente, por posicionamiento, por campañas o porque ya tienes clientes a quienes avisar, tendrás una tienda perfecta sin visitas.
+**Vender no empieza el día del lanzamiento.** Una tienda recién publicada no tiene tráfico. Si no hay un plan para traer gente, por [posicionamiento web](https://pindia.es/servicios/posicionamiento-web), por campañas o porque ya tienes clientes a quienes avisar, tendrás una tienda perfecta sin visitas.
 
 ## El error de plantearlo como un proyecto de web
 

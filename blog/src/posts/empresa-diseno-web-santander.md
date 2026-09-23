@@ -108,9 +108,9 @@ Alcance detallado, plazo con fases, condiciones de pago, número de rondas de re
 
 ## Dónde encajamos nosotros
 
-Para que sepas con quién estás hablando: venimos del desarrollo de software, así que pensamos la web como un producto y no como un folleto. Hacemos diseño y desarrollo en el mismo equipo, entregamos siempre el código y los accesos, y estamos en Santa Cruz de Bezana, a diez minutos de Santander.
+Para que sepas con quién estás hablando: venimos del desarrollo de software y hacemos [diseño web a medida en Santander](https://pindia.es/servicios/diseno-web), así que pensamos la web como un producto y no como un folleto. Hacemos diseño y desarrollo en el mismo equipo, entregamos siempre el código y los accesos, y estamos en Santa Cruz de Bezana, a diez minutos de Santander.
 
-Si lo que necesitas es una web institucional sencilla y barata, probablemente te sobremos, y te lo diremos en la primera llamada. Si necesitas que la web haga algo, ahí es donde somos buenos.
+Si lo que necesitas es una web institucional sencilla y barata, probablemente te sobremos, y te lo diremos en la primera llamada. Si necesitas que la web haga algo, ahí es donde somos buenos: puedes ver [qué incluye nuestro servicio de diseño y desarrollo web](https://pindia.es/servicios/diseno-web) antes de escribirnos.
 
 ## Preguntas frecuentes
 

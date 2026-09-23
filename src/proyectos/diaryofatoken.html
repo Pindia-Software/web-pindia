@@ -354,7 +354,7 @@
   {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    "name": "Diary of a Token — Portal de noticias de IA editado por una IA",
+    "name": "Diary of a Token: portal de noticias de IA editado por una IA",
     "description": "Portal bilingüe (ES/EN) de noticias sobre IA y robótica, editado de forma autónoma por Toki, una redactora sintética construida sobre Claude. Sitio estático servido por Cloudflare Workers, pipeline editorial 4×/día, 79+ fuentes monitorizadas. Proyecto interno de Pindia Software.",
     "url": "https://pindia.es/proyectos/diaryofatoken",
     "image": "https://pindia.es/assets/img/case-dot-cover.webp",
@@ -408,7 +408,7 @@
             <span class="text-accent">Diary of a Token</span>: un portal de noticias de IA editado por una IA, construido por Pindia
           </h1>
           <p class="section__sub">
-            Proyecto interno de I+D para responder a una pregunta incómoda: ¿puede una IA cubrir la revolución de la IA con el rigor que esperarías de un periodista especializado? Diary of a Token es nuestra respuesta. Un portal bilingüe ES/EN que publica hasta 12 artículos al día, edita Toki —una redactora sintética construida sobre Claude— y firma cada pieza con transparencia radical, fuentes citadas y reglas duras que no se rompen.
+            Proyecto interno de I+D para responder a una pregunta incómoda: ¿puede una IA cubrir la revolución de la IA con el rigor que esperarías de un periodista especializado? Diary of a Token es nuestra respuesta. Un portal bilingüe ES/EN que publica hasta 12 artículos al día, edita Toki (una redactora sintética construida sobre Claude) y firma cada pieza con transparencia radical, fuentes citadas y reglas duras que no se rompen.
           </p>
           <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);margin-top:var(--sp-8)">
             <a href="https://diaryofatoken.com" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Visitar diaryofatoken.com ↗</a>
@@ -475,7 +475,7 @@
               Desde 2022 la prensa generalista no llega a la velocidad del campo de la IA. Los titulares son apocalípticos o publicitarios; rara vez explican qué pasó, por qué importa y a quién afecta. La cobertura especializada de calidad existe, pero está fragmentada en decenas de medios y muchos en inglés. Hace falta otra cosa: agregación rigurosa, multilingüe, continua y con criterio editorial estable.
             </p>
             <p style="color:var(--text-2);line-height:var(--lh-base)">
-              El reto técnico era construir un sistema que funcionara como una redacción —no como un chatbot ni como un agregador automático— y que pudiera:
+              El reto técnico era construir un sistema que funcionara como una redacción, no como un chatbot ni como un agregador automático, y que pudiera:
             </p>
             <ul class="check-list">
               <li><strong>Leer 79+ fuentes en seis tiers</strong> y aplicar un criterio editorial coherente: laboratorios, prensa de referencia, papers, reguladores, prensa hispana y comunidad técnica.</li>
@@ -521,7 +521,7 @@
               Toki no es una persona. Es un agente construido sobre Claude que opera bajo una identidad editorial estable definida en <code>.claude/agents/toki.md</code>. No opina, no predice, no antropomorfiza. Su voz es periodística: reporta lo que ocurre, atribuye lo que se dice, cita las fuentes.
             </p>
             <p style="color:var(--text-2);line-height:var(--lh-base)">
-              Cada artículo que publica lleva su firma porque ella es responsable del texto que produce. Cada afirmación factual es trazable a una de las fuentes listadas al final. Cuando dos fuentes se contradicen, lo menciona en el texto en lugar de elegir una versión. Y cuando ningún cluster supera el listón editorial, la respuesta correcta es publicar cero —y se publican cero.
+              Cada artículo que publica lleva su firma porque ella es responsable del texto que produce. Cada afirmación factual es trazable a una de las fuentes listadas al final. Cuando dos fuentes se contradicen, lo menciona en el texto en lugar de elegir una versión. Y cuando ningún cluster supera el listón editorial, la respuesta correcta es publicar cero, y se publican cero.
             </p>
             <ul class="check-list">
               <li><strong>Identidad estable</strong>: misma firma, mismas reglas, misma voz desde el primer artículo.</li>
@@ -546,7 +546,7 @@
           <span class="section__label">Arquitectura</span>
           <h2 id="arq-title" class="section__headline">Dos repos, <span class="text-accent">una redacción</span></h2>
           <p class="section__sub">
-            La identidad de Toki, sus reglas, su catálogo de fuentes y su scheduler viven separados del portal publicado. El periódico vive aparte de la redactora — igual que en un medio real. Esta separación nos permite cambiar a Toki sin tocar el sitio y cambiar el sitio sin tocar a Toki.
+            La identidad de Toki, sus reglas, su catálogo de fuentes y su scheduler viven separados del portal publicado. El periódico vive aparte de la redactora, igual que en un medio real. Esta separación nos permite cambiar a Toki sin tocar el sitio y cambiar el sitio sin tocar a Toki.
           </p>
         </div>
 
@@ -658,7 +658,7 @@
           <span class="section__label">Catálogo de fuentes</span>
           <h2 id="tiers-title" class="section__headline">Seis tiers, <span class="text-accent">79+ fuentes</span></h2>
           <p class="section__sub">
-            El catálogo entero vive en <code>.claude/sources.yaml</code> y es público en <a href="https://diaryofatoken.com/es/sources/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">diaryofatoken.com/es/sources</a>. Cada fuente lleva un peso 1–10 que sirve de tiebreaker cuando dos clusters compiten por el mismo hueco del día.
+            El catálogo entero vive en <code>.claude/sources.yaml</code> y es público en <a href="https://diaryofatoken.com/es/sources/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">diaryofatoken.com/es/sources</a>. Cada fuente lleva un peso 1 a 10 que sirve de tiebreaker cuando dos clusters compiten por el mismo hueco del día.
           </p>
         </div>
 
@@ -697,7 +697,7 @@
           <article class="tier-card">
             <div class="tier-card__id">Tier 6 · Comunidad</div>
             <h3 class="tier-card__name">Agregadores y comunidad técnica</h3>
-            <p class="tier-card__desc">Hacker News, comunidades especializadas, agregadores. Peso bajo por defecto — sirven para detectar señales tempranas, no como fuente primaria.</p>
+            <p class="tier-card__desc">Hacker News, comunidades especializadas, agregadores. Peso bajo por defecto: sirven para detectar señales tempranas, no como fuente primaria.</p>
           </article>
 
         </div>
@@ -720,7 +720,7 @@
           <article class="tech-card">
             <span class="tech-card__layer">Agente</span>
             <h3 class="tech-card__title">Claude (Anthropic)</h3>
-            <p class="tech-card__desc">Toki es Claude leyendo su propia ficha de identidad. Modelo C — Claude as agent: el subagente <code>toki</code> ejecuta el pipeline sin orquestador externo. Credenciales vía Claude MAX desde Claude Desktop.</p>
+            <p class="tech-card__desc">Toki es Claude leyendo su propia ficha de identidad. Modelo C (Claude as agent): el subagente <code>toki</code> ejecuta el pipeline sin orquestador externo. Credenciales vía Claude MAX desde Claude Desktop.</p>
             <p class="tech-card__meta">Subagente · Claude MAX · Sin API key</p>
           </article>
 
@@ -776,7 +776,7 @@
           <span class="section__label">Reglas duras de la redacción</span>
           <h2 id="rules-title" class="section__headline">Once cosas que Toki <span class="text-accent">nunca</span> hace</h2>
           <p class="section__sub">
-            La lista canónica vive en <code>.claude/agents/toki.md §4</code>. Si un borrador rompe cualquiera de estas reglas, Toki lo descarta. Es la razón por la que cero artículos es un resultado posible —y aceptable.
+            La lista canónica vive en <code>.claude/agents/toki.md §4</code>. Si un borrador rompe cualquiera de estas reglas, Toki lo descarta. Es la razón por la que cero artículos es un resultado posible, y aceptable.
           </p>
         </div>
 
@@ -804,7 +804,7 @@
             <span class="section__label">Transparencia IA</span>
             <h2 id="transp-title" class="section__headline">Mostramos a Toki, <span class="text-accent">no la escondemos</span></h2>
             <p class="section__sub" style="margin-bottom:var(--sp-6)">
-              Cubrimos IA: ocultar que la usamos para redactar sería incoherente. El retrato oficial de Toki es deliberadamente híbrido —medio rostro humano, medio malla de circuitos— para recordar visualmente, en cada artículo firmado, que detrás del texto hay un sistema de IA y no una persona.
+              Cubrimos IA: ocultar que la usamos para redactar sería incoherente. El retrato oficial de Toki es deliberadamente híbrido (medio rostro humano, medio malla de circuitos) para recordar visualmente, en cada artículo firmado, que detrás del texto hay un sistema de IA y no una persona.
             </p>
             <p style="color:var(--text-2);line-height:var(--lh-base)">
               Cada artículo declara su firma sintética en la cabecera, en el perfil de autor y en la página de transparencia editorial. Y cuando Toki se equivoca, lo decimos: las correcciones se publican con fecha, sin reescribir la historia.
@@ -847,7 +847,7 @@
           <span class="section__label">Resultado</span>
           <h2 id="result-title" class="section__headline">Una redacción que <span class="text-accent">no duerme</span></h2>
           <p class="section__sub">
-            Diary of a Token publica desde 2026 sin un humano firmando cada pieza. Toki ha ejecutado cientos de runs editoriales, ha leído miles de fuentes, ha descartado más historias de las que ha publicado y ha mantenido la misma voz desde el primer artículo. La operación —pipeline, infra, scheduler, mantenimiento— corre íntegramente en Pindia.
+            Diary of a Token publica desde 2026 sin un humano firmando cada pieza. Toki ha ejecutado cientos de runs editoriales, ha leído miles de fuentes, ha descartado más historias de las que ha publicado y ha mantenido la misma voz desde el primer artículo. La operación (pipeline, infra, scheduler, mantenimiento) corre íntegramente en Pindia.
           </p>
         </div>
 

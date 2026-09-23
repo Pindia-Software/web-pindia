@@ -14,9 +14,11 @@ coverAlt: Landing page de captación vista en escritorio y móvil
 draft: false
 ---
 
-Una landing page es de las piezas más rentables que puede tener una empresa que invierte en publicidad. También es de las que peor se hacen: la mayoría de las que vemos en producción no convierten, y el motivo casi nunca es el diseño.
+Una landing page es de las piezas más rentables que puede tener una empresa que invierte en publicidad. También es de las que peor se hacen: la mayoría de las que vemos en producción no convierten, y el motivo casi nunca es el diseño. Lo decimos desde el lado de quien las construye, porque una landing es un encargo de [diseño web a medida](https://pindia.es/servicios/diseno-web) con un objetivo muy estrecho.
 
 Es el mensaje. Y como el mensaje no se ve en una maqueta, nadie lo revisa antes de aprobar la página.
+
+Y una landing sin tráfico no convierte nada, así que suele ir de la mano de [posicionamiento web](https://pindia.es/servicios/posicionamiento-web) o de una campaña de pago.
 
 ## Qué es una landing page y qué no
 
@@ -103,7 +105,7 @@ Solo si esa página va a recibir tráfico por otra vía, como posicionamiento pr
 ## Más en el blog
 
 - [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), una landing lenta quema presupuesto de campaña.
-- [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/), el tráfico empieza aquí y la conversión termina en la landing.
+- [Posicionamiento web y SEO local en Santander](https://pindia.es/blog/posts/posicionamiento-web-santander/), el tráfico empieza aquí y la conversión termina en la landing.
 - [Diseño web profesional](https://pindia.es/blog/posts/diseno-web-profesional/), los criterios que separan una web que funciona de una bonita.
 - [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), los tramos del resto de proyectos.
 

@@ -29,8 +29,8 @@
   <link rel="manifest"         href="/manifest.webmanifest">
   <meta name="theme-color"     content="#22293E">
 
-  <!-- Inter self-hosted (variable, latin subset) — preload del woff2 crítico -->
-  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260917a" crossorigin>
+  <!-- Inter self-hosted (variable, latin subset). Preload del woff2 crítico -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2?v=20260923a" crossorigin>
 
   <!-- Google Tag Manager (loaded conditionally via cookie consent in main.js) -->
   <script>
@@ -40,7 +40,7 @@
   </script>
 
   <!-- Critical CSS (tokens + base + responsive merged, minified) -->
-  <link rel="stylesheet" href="/css/styles.min.css?v=20260917a">
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260923a">
 
   <!-- Schema: Service + FAQPage + BreadcrumbList -->
   <script type="application/ld+json">
@@ -58,6 +58,12 @@
         "areaServed": [
           { "@type": "City", "name": "Santander" },
           { "@type": "City", "name": "Torrelavega" },
+          { "@type": "City", "name": "Santa Cruz de Bezana" },
+          { "@type": "City", "name": "Camargo" },
+          { "@type": "City", "name": "Castro Urdiales" },
+          { "@type": "City", "name": "Laredo" },
+          { "@type": "City", "name": "Santoña" },
+          { "@type": "City", "name": "Comillas" },
           { "@type": "AdministrativeArea", "name": "Cantabria" },
           { "@type": "Country", "name": "España" }
         ],
@@ -81,7 +87,7 @@
             "name": "¿Cuánto cuesta el diseño de una página web en Santander?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Depende del alcance. Una web corporativa de 5–8 páginas con diseño a medida, SEO técnico y formulario de contacto se mueve en un rango distinto al de una plantilla montada en dos días, y por eso no publicamos una tarifa cerrada. Enviamos un presupuesto personalizado y gratuito en menos de 48 horas tras una llamada de 30 minutos, sin compromiso."
+              "text": "Una web corporativa a medida parte de unos 3.000 €, y una plantilla configurada se mueve entre 600 y 1.500 €. A partir de ahí depende de cuántas páginas tenga, de si hay idiomas o integraciones y de quién escriba el contenido. Enviamos un presupuesto cerrado y desglosado en menos de 48 horas tras una llamada de 30 minutos, sin compromiso."
             }
           },
           {
@@ -135,6 +141,46 @@
         ]
       },
       {
+        "@type": "ItemList",
+        "@id": "https://pindia.es/servicios/diseno-web#casos",
+        "name": "Proyectos de diseño web en Cantabria",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Clínica Ofelia Casanueva",
+              "about": "Diseño, desarrollo y mantenimiento de la web de una clínica de medicina estética en Santander",
+              "url": "https://pindia.es/proyectos/clinica-ofelia-casanueva",
+              "creator": { "@id": "https://pindia.es/#organization" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Limón Hoteles",
+              "about": "Web unificada y bilingüe para un grupo hotelero de Cantabria con cinco alojamientos",
+              "url": "https://pindia.es/proyectos/limon-hoteles",
+              "creator": { "@id": "https://pindia.es/#organization" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "El Camino de Gaudí",
+              "about": "Branding, identidad visual y web para la asociación cultural que une las obras de Gaudí fuera de Cataluña",
+              "url": "https://pindia.es/proyectos/el-camino-de-gaudi",
+              "creator": { "@id": "https://pindia.es/#organization" }
+            }
+          }
+        ]
+      },
+      {
         "@type": "BreadcrumbList",
         "@id": "https://pindia.es/servicios/diseno-web#breadcrumb",
         "itemListElement": [
@@ -160,7 +206,7 @@
     <div class="container">
       <div class="nav__inner">
 
-        <a href="/" class="nav__logo" aria-label="Pindia Software — Inicio">
+        <a href="/" class="nav__logo" aria-label="Pindia Software, inicio">
           <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" width="140" height="56" loading="eager">
         </a>
 
@@ -303,7 +349,10 @@
             Trabajamos desde Santa Cruz de Bezana, a diez minutos de Santander. Eso significa reuniones presenciales cuando hacen falta, respuesta rápida y un interlocutor técnico real en lugar de un formulario de soporte.
           </p>
           <p class="section__sub">
-            Cantabria es una región pequeña y esa es una ventaja para ti: desde Bezana llegamos en menos de media hora a Santander, a Torrelavega y al valle del Besaya, a Camargo, a Castro Urdiales o a Laredo. Hemos diseñado y desarrollado webs para constructoras, industria, consultoras, hostelería y empresas de servicios de la región, así que conocemos el terreno y sabemos a qué compite cada sector.
+            Cantabria es una región pequeña y esa es una ventaja para ti: desde Bezana llegamos en menos de media hora a Santander, a Torrelavega y al valle del Besaya, a Camargo, a Castro Urdiales, a Laredo o a Santoña. Hemos diseñado y desarrollado webs para clínicas, hostelería, turismo, constructoras, industria y consultoras de la región, así que conocemos el terreno y sabemos a qué compite cada sector.
+          </p>
+          <p class="section__sub">
+            Conocer el terreno importa más de lo que parece en una web local. Salir en el mapa de Google, que es de donde vienen buena parte de las llamadas de un negocio de Santander, depende de señales que se preparan durante el desarrollo, no después. Lo contamos entero en la guía de <a href="/blog/posts/posicionamiento-web-santander/" style="color:var(--accent);">posicionamiento web y SEO local en Santander</a>.
           </p>
           <p class="section__sub">
             Si tu empresa está en la comarca del Besaya, tenemos una página específica sobre <a href="/servicios/diseno-web-torrelavega" style="color:var(--accent);">diseño web en Torrelavega</a>, con el detalle de cómo trabajamos ahí.
@@ -311,6 +360,134 @@
           <p class="section__sub">
             Dicho esto, la cercanía no es el argumento principal y no queremos venderla como si lo fuera: buena parte de nuestros clientes están fuera de Cantabria y el trabajo se entrega igual. Si buscas un diseñador web en Santander que además sepa de arquitectura, rendimiento y mantenimiento a largo plazo, ese es el punto fuerte real: somos una empresa de desarrollo de software, no solo un estudio de diseño.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CASOS REALES EN CANTABRIA ─────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="casos-title">
+      <div class="container">
+
+        <div class="text-center" data-reveal>
+          <span class="section__label">Trabajo entregado, no maquetas</span>
+          <h2 id="casos-title" class="section__headline">Webs que hemos diseñado en Cantabria</h2>
+          <p class="section__sub" style="max-width:720px;margin-inline:auto">
+            Tres proyectos reales, con cliente, sector y plazo. Puedes abrir cada web y juzgarla tú: se cargan rápido, se leen en el móvil y cada una resuelve un problema distinto.
+          </p>
+        </div>
+
+        <div class="proyectos__grid" data-reveal-group style="margin-top:var(--sp-12)">
+
+          <article class="project-card" style="position:relative">
+            <div class="project-card__thumb">
+              <img src="/assets/img/case-ofelia-cover.webp" width="1920" height="1283" alt="Home de Clínica Ofelia Casanueva, clínica de medicina estética en Santander" loading="lazy" decoding="async">
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver caso de éxito</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Santander</span>
+                <span class="project-card__tag">Salud</span>
+                <span class="project-card__tag">SEO local</span>
+              </div>
+              <h3 class="project-card__title">
+                <a href="/proyectos/clinica-ofelia-casanueva" class="stretched-link" style="color:inherit;text-decoration:none">Clínica Ofelia Casanueva</a>
+              </h3>
+              <p class="project-card__desc">Una clínica de medicina estética de Santander que captaba solo por Instagram y WhatsApp y no tenía web. Diseño, desarrollo y mantenimiento en tres meses, con posicionamiento local para sus tratamientos y sin tocar el canal de contacto que ya le funcionaba.</p>
+            </div>
+          </article>
+
+          <article class="project-card" style="position:relative">
+            <div class="project-card__thumb">
+              <img src="/assets/img/case-limon-cover.webp" width="1920" height="1080" alt="Home de limonhoteles.com con la bahía de Santander" loading="lazy" decoding="async">
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver caso de éxito</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Cantabria</span>
+                <span class="project-card__tag">Hostelería</span>
+                <span class="project-card__tag">Reservas</span>
+              </div>
+              <h3 class="project-card__title">
+                <a href="/proyectos/limon-hoteles" class="stretched-link" style="color:inherit;text-decoration:none">Limón Hoteles</a>
+              </h3>
+              <p class="project-card__desc">Un grupo con cinco alojamientos en Cantabria y cinco webs sueltas. Las unificamos en una sola marca sin aplanar la personalidad de cada casa, con reserva conectada al motor Avirato en la landing de cada hotel y el sitio completo en español e inglés.</p>
+            </div>
+          </article>
+
+          <article class="project-card" style="position:relative">
+            <div class="project-card__thumb" style="background:linear-gradient(135deg, #d4a574 0%, #8b6f47 100%)">
+              <img src="/assets/img/case-camino-gaudi-cover.webp" width="1920" height="1283" alt="Home de elcaminodegaudi.com con el claim Sigue las huellas de su legado" loading="lazy" decoding="async">
+              <div class="project-card__overlay">
+                <span class="btn btn--primary">Ver caso de éxito</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-card__tag">Comillas</span>
+                <span class="project-card__tag">Cultural</span>
+                <span class="project-card__tag">Branding</span>
+              </div>
+              <h3 class="project-card__title">
+                <a href="/proyectos/el-camino-de-gaudi" class="stretched-link" style="color:inherit;text-decoration:none">El Camino de Gaudí</a>
+              </h3>
+              <p class="project-card__desc">Una asociación cultural recién creada, sin marca y sin web, que une las tres obras de Gaudí fuera de Cataluña. Le hicimos el logotipo, la identidad visual y el sitio que hace de hub de las tres rutas y capta socios.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="text-center" data-reveal style="margin-top:var(--sp-10)">
+          <a href="/proyectos/" class="btn btn--secondary btn--lg">Ver todos los proyectos</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── PERFILES POR SECTOR ───────────────────────────────── -->
+    <section class="section" aria-labelledby="perfiles-title">
+      <div class="container">
+        <div data-reveal>
+          <span class="section__label">Tejido empresarial de la región</span>
+          <h2 id="perfiles-title" class="section__headline">No toda empresa de Santander necesita la misma web</h2>
+          <p class="section__sub">Es la conversación de la primera reunión, y la que decide el presupuesto.</p>
+        </div>
+
+        <div class="especialidades__grid especialidades__grid--3" data-reveal-group>
+
+          <article class="service-card">
+            <h3 class="service-card__title">El negocio que vive del mapa</h3>
+            <p>Clínicas, asesorías, talleres, hostelería. Lo que decide si suena el teléfono no es la web entera: es salir en el pack local de Google y que el contacto esté a un toque. Tiene que ir rápida en móvil y llevar el SEO local preparado desde el desarrollo, no añadido después.</p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">La industria del polígono</h3>
+            <p>Guarnizo, Candina, Trascueto, Barros. Vende a otras empresas y muchas veces fuera de España, así que el comprador es técnico. El catálogo en PDF es el enemigo: las fichas tienen que ser páginas indexables, y casi siempre hace falta versión en inglés.</p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Construcción e ingeniería</h3>
+            <p>Su trabajo llega por licitación y por prescripción, así que la web funciona como aval: alguien la consulta antes de adjudicar. Necesita obras con página propia, datos del proyecto y acreditaciones visibles.</p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Turismo y hostelería</h3>
+            <p>Compite contra los portales de reserva, que se llevan comisión de cada cliente que debería haber reservado directo. La web tiene que entrar por los ojos en quince segundos y llevar a la reserva propia sin fricción.</p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Lo que comparten todas</h3>
+            <p>Velocidad real en móvil, cumplimiento legal resuelto y contenido que no caduque en seis meses. Sin eso, el resto da igual por bonita que quede.</p>
+          </article>
+
+          <article class="service-card">
+            <h3 class="service-card__title">Seis ejemplos reales</h3>
+            <p>Lo que había antes y lo que cambió en seis empresas de la región, sector por sector, está comentado en <a href="/blog/posts/ejemplos-paginas-web-empresas-cantabria/" style="color:var(--accent);">ejemplos de páginas web de empresas en Cantabria</a>.</p>
+          </article>
+
         </div>
       </div>
     </section>
@@ -466,15 +643,18 @@
             </footer>
           </blockquote>
 
-          <article class="testimonial-card">
-            <p class="section__label" style="margin-bottom:var(--sp-3)">Caso de éxito</p>
-            <p class="testimonial-card__text" style="font-style:normal">
-              Diseñamos y desarrollamos la web comercial de <strong>TrowelApp</strong>, nuestro propio SaaS para el sector de la construcción: mobile-first, Core Web Vitals en verde y pensada para convertir. Hoy es la puerta de entrada de un producto en producción en seis países.
+          <blockquote class="testimonial-card">
+            <p class="testimonial-card__text">
+              "Un sitio web a la altura de la Clínica."
             </p>
             <footer class="testimonial-card__author">
-              <a href="/proyectos/" class="btn btn--secondary">Ver el proyecto</a>
+              <div class="testimonial-card__avatar" aria-hidden="true">OC</div>
+              <div>
+                <cite class="testimonial-card__name">Dra. Ofelia Casanueva</cite>
+                <div class="testimonial-card__role">Directora Médica · Clínica Ofelia Casanueva, Santander</div>
+              </div>
             </footer>
-          </article>
+          </blockquote>
 
         </div>
       </div>
@@ -494,7 +674,7 @@
           <details class="faq-item" style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);padding:var(--sp-5) var(--sp-6)">
             <summary style="font-size:var(--text-base);font-weight:var(--w-sb);color:var(--text-1);cursor:pointer">¿Cuánto cuesta el diseño de una página web en Santander?</summary>
             <p style="font-size:var(--text-sm);color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-3)">
-              Depende del alcance. Una web corporativa de 5–8 páginas con diseño a medida, SEO técnico y formulario de contacto suele moverse en un rango distinto al de una plantilla montada en dos días, y por eso no publicamos una tarifa cerrada: sería mentir. Lo que sí hacemos es mandarte un presupuesto personalizado y gratuito en menos de 48 horas después de una llamada de 30 minutos. Sin compromiso y sin letra pequeña.
+              Una web corporativa a medida parte de <strong>unos 3.000 €</strong>, y una plantilla configurada se mueve entre <strong>600 y 1.500 €</strong>. A partir de ahí depende de cuántas páginas tenga, de si hay idiomas o integraciones y de quién escriba el contenido, que es la partida que más se subestima. Los tramos están desglosados en <a href="/blog/posts/precio-pagina-web-cantabria/" style="color:var(--accent);">cuánto cuesta una página web</a>. Te mandamos un presupuesto cerrado y gratuito en menos de 48 horas después de una llamada de 30 minutos, sin compromiso y sin letra pequeña.
             </p>
           </details>
 
@@ -862,7 +1042,7 @@
   </div>
 
   <!-- JS (minified) -->
-  <script src="/js/main.min.js?v=20260917a" defer></script>
+  <script src="/js/main.min.js?v=20260923a" defer></script>
 
 </body>
 </html>

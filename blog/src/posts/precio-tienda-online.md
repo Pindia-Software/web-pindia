@@ -16,7 +16,7 @@ draft: false
 
 Montar una tienda online cuesta **desde unos 1.500 € sobre una plataforma estándar** y **desde unos 6.000 € a medida**. Pero ese número es el que menos importa, y es justo el único que casi todo el mundo compara.
 
-Un ecommerce no se paga una vez: se paga cada mes y en cada venta. Comisión de la pasarela, cuota de la plataforma, aplicaciones de pago, transporte, devoluciones y un mantenimiento más caro que el de una web normal. Este artículo pone números a las dos partes, porque la decisión sensata sale de sumarlas.
+Un ecommerce no se paga una vez: se paga cada mes y en cada venta, y ese reparto cambia mucho según vayas con una plataforma cerrada o con [desarrollo a medida](https://pindia.es/servicios/diseno-web). Comisión de la pasarela, cuota de la plataforma, aplicaciones de pago, transporte, devoluciones y un mantenimiento más caro que el de una web normal. Este artículo pone números a las dos partes, porque la decisión sensata sale de sumarlas.
 
 ## Cuánto cuesta desarrollar una tienda online
 
@@ -42,6 +42,8 @@ Aquí está la parte que no aparece en el presupuesto de desarrollo y que decide
 **Aplicaciones y extensiones de pago.** El talón de Aquiles de las plataformas estándar. Cada función que la plataforma no trae de serie es una suscripción más: filtros avanzados, suscripciones, facturación, sincronización, reseñas, multi-idioma. Cinco aplicaciones a 20 € son 1.200 € al año, todos los años.
 
 **Alojamiento.** Un ecommerce autoalojado necesita más que una web corporativa, y sobre todo necesita aguantar picos: una campaña, unas rebajas, una mención que funciona.
+
+**Mantenimiento.** Actualizaciones, copias, incidencias de pago y cambios de catálogo. Un contrato de [mantenimiento web](https://pindia.es/servicios/mantenimiento-web) para una tienda es más caro que para una web corporativa, y saltárselo es la forma más rápida de acabar sin cobrar un pedido.
 
 **Transporte y logística.** Tarifas de transportista, embalaje y, sobre todo, devoluciones. En algunos sectores la tasa de devolución se come el margen entero si no se ha calculado antes.
 

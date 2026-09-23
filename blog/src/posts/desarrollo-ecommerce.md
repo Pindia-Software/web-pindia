@@ -18,7 +18,7 @@ El **desarrollo ecommerce** no es montar una web con carrito. Es construir el si
 
 Esa es la razón por la que los proyectos de tienda online se tuercen más que los de web corporativa. Una web corporativa que falla da mala imagen. Un ecommerce que falla pierde pedidos, y a veces los pierde sin que nadie se entere hasta que cuadras el mes.
 
-Somos una empresa de desarrollo, así que vamos a contar cómo es el proyecto por dentro: qué se decide en cada fase, dónde se rompen, y qué separa a un equipo que ha montado tiendas de uno que ha montado webs.
+Somos una empresa de [desarrollo web a medida](https://pindia.es/servicios/diseno-web), así que vamos a contar cómo es el proyecto por dentro: qué se decide en cada fase, dónde se rompen, y qué separa a un equipo que ha montado tiendas de uno que ha montado webs.
 
 ## Los tres caminos del desarrollo ecommerce
 
@@ -106,7 +106,7 @@ El desglose completo, con los costes recurrentes que no aparecen en el presupues
 
 ## Cómo trabajamos en Pindia
 
-Empezamos por la operativa y por dónde viven tus datos, porque de ahí sale la arquitectura y de la arquitectura sale el presupuesto. Somos una empresa de desarrollo de software, así que las integraciones con ERP y las reglas de negocio raras no son un añadido incómodo: suelen ser la parte interesante del proyecto.
+Empezamos por la operativa y por dónde viven tus datos, porque de ahí sale la arquitectura y de la arquitectura sale el presupuesto. Somos una empresa de [desarrollo de software a medida](https://pindia.es/servicios/desarrollo-software), así que las integraciones con ERP y las reglas de negocio raras no son un añadido incómodo: suelen ser la parte interesante del proyecto.
 
 ## Preguntas frecuentes
 

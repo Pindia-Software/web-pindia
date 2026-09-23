@@ -44,9 +44,9 @@ Los precios que se manejan en el mercado, sin rodeos:
 
 | Nivel | Precio/mes | Para quién | Qué incluye |
 |------|-----------|------------|-------------|
-| Mínimo | 40–70 € | Web corporativa pequeña, pocos cambios | Actualizaciones, copias diarias, monitorización de caídas, soporte por email |
-| Intermedio | 70–130 € | Pyme con web activa | Lo anterior + staging, horas mensuales de cambios, informe mensual, soporte telefónico |
-| Alto | 130–200 € | Tienda online o web con integraciones | Lo anterior + monitorización de pasarela y stock, prioridad de respuesta, optimización continua de rendimiento |
+| Mínimo | 40 a 70 € | Web corporativa pequeña, pocos cambios | Actualizaciones, copias diarias, monitorización de caídas, soporte por email |
+| Intermedio | 70 a 130 € | Pyme con web activa | Lo anterior + staging, horas mensuales de cambios, informe mensual, soporte telefónico |
+| Alto | 130 a 200 € | Tienda online o web con integraciones | Lo anterior + monitorización de pasarela y stock, prioridad de respuesta, optimización continua de rendimiento |
 
 Una web corporativa de pyme con soporte real, horas incluidas para cambios y copias que se restauran de verdad se mueve en la **parte alta de esa horquilla**, no en la baja.
 
@@ -62,7 +62,7 @@ En Pindia lo tenemos en tres niveles, sin letra pequeña. No somos los más bara
 - **Estándar, 199 €/mes**: todo lo del Básico + **4 horas mensuales** de cambios, entorno de *staging* e informe mensual legible. Para la pyme con web activa.
 - **Avanzado, a medida**: para tienda online o web con integraciones, donde hay que vigilar pasarela de pago, stock y rendimiento de forma continua.
 
-Los tienes con el detalle completo en **[nuestra página de mantenimiento web →](https://pindia.es/servicios/mantenimiento-web)**. Y si no sabes qué estás pagando ahora, te lo auditamos gratis.
+Los tienes con el detalle completo en **[nuestra página de mantenimiento web](https://pindia.es/servicios/mantenimiento-web)**. Y si no sabes qué estás pagando ahora, te lo auditamos gratis.
 
 ## Qué debe poner en tu contrato de mantenimiento
 
@@ -123,7 +123,7 @@ Cada cliente tiene su persona de contacto, sus copias se prueban de verdad, y lo
 
 **¿No sabes qué mantenimiento tienes contratado?** Te lo miramos gratis y te decimos qué encontramos, aunque luego no nos contrates.
 
-**[Ver planes de mantenimiento →](https://pindia.es/servicios/mantenimiento-web)** · **[Auditoría gratuita de tu web →](https://pindia.es/contacto/)**
+**[Ver planes de mantenimiento](https://pindia.es/servicios/mantenimiento-web)** · **[Auditoría gratuita de tu web](https://pindia.es/contacto/)**
 
 ## Preguntas frecuentes
 

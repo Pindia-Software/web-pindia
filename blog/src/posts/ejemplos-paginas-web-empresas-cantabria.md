@@ -96,7 +96,7 @@ Si te ves aquí, la parte de operativa está en [antes de montar una tienda onli
 
 **Todos resolvieron un problema concreto de negocio**, no un problema de imagen. El PDF que escondía el catálogo, la comisión de la plataforma de reservas, las obras invisibles, el stock que mentía. Ninguno de esos problemas se arregla con un rediseño bonito.
 
-**En todos hay alguien dentro que se ocupa.** Es el factor que más se repite y el que menos se presupuesta. Sin una persona que actualice el contenido, ninguna web sobrevive dos años en buen estado, y ninguna de estas sería hoy un buen ejemplo.
+**En todos hay alguien dentro que se ocupa.** Es el factor que más se repite y el que menos se presupuesta. Sin una persona que actualice el contenido, o sin un contrato de [mantenimiento web](https://pindia.es/servicios/mantenimiento-web) que lo cubra, ninguna web sobrevive dos años en buen estado, y ninguna de estas sería hoy un buen ejemplo.
 
 ## Qué mirar cuando veas ejemplos de otras agencias
 
@@ -110,7 +110,7 @@ Ya que estás comparando, tres cosas que puedes comprobar tú en dos minutos y q
 
 ## Si quieres ver casos de tu sector
 
-No publicamos todos estos en el porfolio porque algunos clientes prefieren discreción, pero se pueden enseñar en una reunión, con datos de antes y después.
+No publicamos todos estos en el porfolio porque algunos clientes prefieren discreción, pero se pueden enseñar en una reunión, con datos de antes y después. Todos salieron de un proyecto de [diseño web a medida en Cantabria](https://pindia.es/servicios/diseno-web), no de una plantilla adaptada.
 
 Si estás valorando rehacer la web de tu empresa, [hablemos](/contacto/). Te enseñamos los del sector que más se parezca al tuyo y empezamos por ahí, que es bastante mejor punto de partida que una plantilla.
 

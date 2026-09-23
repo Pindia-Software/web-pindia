@@ -14,7 +14,7 @@ draft: false
 
 Una pyme de Bilbao recibió una multa de 2.000 euros por no tener política de cookies. Otro e-commerce de Logroño recibió un aviso de un usuario (traducido con Google): "Habéis procesado mis datos sin consentimiento y voy a reportaros a Aepd.es" (la Agencia Española de Protección de Datos). No hizo nada, y seis meses después, llegó la multa: 4.500 euros.
 
-No es raro. Es que muchas webs en España cumplen "a medias" o directamente no cumplen. Y la AEPD cada año sanciona más casos. Vamos a desmitificar qué es obligatorio, qué es riesgo real, y cómo no gastar 5.000 euros con un abogado.
+No es raro. Es que muchas webs en España cumplen "a medias" o directamente no cumplen. Y la AEPD cada año sanciona más casos. Vamos a desmitificar qué es obligatorio, qué es riesgo real, y cómo no gastar 5.000 euros con un abogado. Lo contamos desde el lado técnico, que es el nuestro: en cada proyecto de [diseño web a medida](https://pindia.es/servicios/diseno-web) esto va montado de serie.
 
 ## Los cuatro pilares: qué es obligatorio
 
@@ -202,7 +202,7 @@ El primero es que los textos genéricos no valen. Una política de privacidad co
 
 El segundo es que la parte que decide el cumplimiento es técnica, no legal: qué scripts carga tu web, cuándo los carga y qué pasa cuando el usuario dice que no. Eso no se resuelve pegando un documento en el pie de página.
 
-El tercero es que no es un trabajo que se hace una vez. Cambias una herramienta de analítica, añades un chat, integras un formulario nuevo, y el inventario de cookies que declaraste deja de ser cierto.
+El tercero es que no es un trabajo que se hace una vez. Cambias una herramienta de analítica, añades un chat, integras un formulario nuevo, y el inventario de cookies que declaraste deja de ser cierto. Por eso la revisión del cumplimiento entra en el [mantenimiento web](https://pindia.es/servicios/mantenimiento-web) y no en el proyecto inicial.
 
 ## Red flags: qué hace que AEPD te mire
 

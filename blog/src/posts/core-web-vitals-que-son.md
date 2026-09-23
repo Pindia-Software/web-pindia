@@ -13,7 +13,7 @@ coverAlt: 'Comparación de métricas Core Web Vitals en Google PageSpeed Insight
 draft: false
 ---
 
-Google cambió las reglas. Hace años la velocidad importaba "un poco". Hoy es un factor de ranking directo que puede costar clientes. Core Web Vitals son tres números que miden cómo experimenta alguien tu web en realidad. No es teoría; es lo que Google ve cuando entra en tu sitio.
+Google cambió las reglas. Hace años la velocidad importaba "un poco". Hoy es un factor de ranking directo que puede costar clientes, y una de las primeras cosas que miramos en cualquier proyecto de [posicionamiento web](https://pindia.es/servicios/posicionamiento-web). Core Web Vitals son tres números que miden cómo experimenta alguien tu web en realidad. No es teoría; es lo que Google ve cuando entra en tu sitio.
 
 ## Qué son Core Web Vitals
 
@@ -118,6 +118,8 @@ Nos llamaron porque las consultas comerciales habían bajado y no sabían por qu
 Dos semanas de trabajo, y el tiempo de carga bajó a 1,2 segundos. Tres meses después, las consultas orgánicas habían subido un 35 % sin haber tocado una sola línea del contenido.
 
 No hay magia: llevaban años perdiendo gente que ni siquiera llegaba a leer su propuesta.
+
+Y hay un punto en el que optimizar deja de salir a cuenta y compensa más un [diseño web a medida](https://pindia.es/servicios/diseno-web) construido rápido desde el principio.
 
 ## Cuánto cuesta arreglarlo
 

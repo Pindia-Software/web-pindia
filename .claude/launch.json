@@ -4,8 +4,32 @@
     {
       "name": "pindia-static",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-l", "4321", "."],
+      "runtimeArgs": [
+        "serve",
+        "-l",
+        "4321",
+        "."
+      ],
       "port": 4321
+    },
+    {
+      "name": "pindia-verify",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "serve",
+        "-l",
+        "8137",
+        "."
+      ],
+      "port": 8137
+    },
+    {
+      "name": "trowel-web",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "/Users/beatriz/Documents/GitHub/web-trowel/web-trowel/scripts/dev-server.mjs"
+      ],
+      "port": 8080
     }
   ]
 }

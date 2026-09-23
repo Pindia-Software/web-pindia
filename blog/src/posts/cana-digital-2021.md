@@ -29,9 +29,9 @@ El foco de esta primera edición fue la **modernización del sector constructor*
 
 ## Por qué la construcción tiene un reto digital específico
 
-La industria de la construcción es uno de los sectores que más tarde ha llegado a la transformación digital. Las obras son entornos cambiantes, con muchos intervinientes y documentación dispersa. La comunicación entre oficina técnica, jefes de obra y subcontratas todavía se resuelve en muchas empresas a base de llamadas, correos y hojas de cálculo.
+La industria de la construcción es uno de los sectores que más tarde ha llegado a la transformación digital. Las obras son entornos cambiantes, con muchos intervinientes y documentación dispersa. La comunicación entre oficina técnica, jefes de obra y subcontratas todavía se resuelve en muchas empresas a base de llamadas, correos y hojas de cálculo, cuando una [app móvil conectada a la oficina](https://pindia.es/servicios/apps-mobile-api) resolvería la mitad.
 
-Desde **Pindia Software** llevamos tiempo trabajando con empresas del sector y sabemos que la resistencia al cambio no es capricho: los procesos son complejos y cualquier herramienta nueva tiene que encajar en la realidad del día a día de una obra. Eso es precisamente lo que intentamos con **Trowel App**, nuestra aplicación específica para equipos de construcción.
+Desde **Pindia Software** llevamos tiempo haciendo [software a medida](https://pindia.es/servicios/desarrollo-software) para empresas del sector y sabemos que la resistencia al cambio no es capricho: los procesos son complejos y cualquier herramienta nueva tiene que encajar en la realidad del día a día de una obra. Eso es precisamente lo que intentamos con **Trowel App**, nuestra aplicación específica para equipos de construcción.
 
 ## Lo que nos llevamos
 

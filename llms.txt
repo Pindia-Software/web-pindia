@@ -1,25 +1,47 @@
 # Pindia Software
 
-> Agencia de software a medida y diseño web en Santander (Cantabria, España). Desarrollamos aplicaciones .NET, webs de alto impacto, apps móviles y APIs para empresas. Presupuesto sin compromiso.
+> Agencia de diseño web y desarrollo de software a medida en Santander (Cantabria, España). Webs a medida, rediseños, aplicaciones .NET, apps móviles y APIs para empresas. Presupuesto sin compromiso en 48 horas.
 
-Pindia Software es una empresa de desarrollo de software y diseño web con sede en Santa Cruz de Bezana (Cantabria). Contacto: info@pindia.es.
+Pindia Software es una empresa de desarrollo de software y diseño web con sede en Santa Cruz de Bezana (Cantabria), a diez minutos de Santander. Trabaja con empresas de toda Cantabria y del resto de España. Contacto: info@pindia.es · +34 679 55 15 18 (también WhatsApp).
 
 ## Servicios
 
-- [Servicios](https://pindia.es/servicios/): Resumen de servicios de desarrollo y diseño.
-- [Diseño web](https://pindia.es/servicios/diseno-web.html): Diseño y desarrollo web a medida.
-- [Desarrollo de software](https://pindia.es/servicios/desarrollo-software.html): Software a medida en .NET.
-- [Apps móviles y APIs](https://pindia.es/servicios/apps-mobile-api.html): Apps móviles e integraciones por API.
+- [Servicios](https://pindia.es/servicios/): Resumen de servicios de diseño, desarrollo y mantenimiento.
+- [Diseño web](https://pindia.es/servicios/diseno-web): Diseño y desarrollo web a medida en Santander y Cantabria. Incluye casos reales de la región, perfiles por sector y precios de partida.
+- [Diseño web en Torrelavega](https://pindia.es/servicios/diseno-web-torrelavega): Variante local para la comarca del Besaya.
+- [Desarrollo de software](https://pindia.es/servicios/desarrollo-software): Software a medida en .NET, ERPs e integraciones.
+- [Apps móviles y APIs](https://pindia.es/servicios/apps-mobile-api): Apps móviles multiplataforma e integraciones por API.
+- [Mantenimiento web](https://pindia.es/servicios/mantenimiento-web): Planes de mantenimiento desde 99 €/mes.
+- [Posicionamiento web](https://pindia.es/servicios/posicionamiento-web): SEO técnico y local para empresas de Santander y Cantabria.
 
-## Productos y proyectos
+## Producto propio
 
-- [TrowelApp](https://pindia.es/trowelapp/): Software de gestión para constructoras (producto propio).
-- [Proyectos](https://pindia.es/proyectos/): Casos de trabajo en diseño web y software a medida.
+- [TrowelApp](https://pindia.es/trowelapp/): SaaS de gestión de obra para empresas constructoras. Presupuestos, control de costes, planificación y documentación, desde el móvil o el PC.
+
+## Proyectos y casos de éxito
+
+- [Proyectos](https://pindia.es/proyectos/): Portfolio completo.
+- [Clínica Ofelia Casanueva](https://pindia.es/proyectos/clinica-ofelia-casanueva): Web corporativa para una clínica de medicina estética de Santander, con posicionamiento local.
+- [Limón Hoteles](https://pindia.es/proyectos/limon-hoteles): Web unificada y bilingüe para un grupo hotelero de Cantabria con cinco alojamientos, con reserva conectada al motor Avirato.
+- [El Camino de Gaudí](https://pindia.es/proyectos/el-camino-de-gaudi): Branding, identidad visual y web para la asociación cultural que une las tres obras de Gaudí fuera de Cataluña.
+- [Web comercial de TrowelApp](https://pindia.es/proyectos/web-trowelapp): Landing de conversión internacionalizada a nueve locales.
+- [TrowelApp (producto)](https://pindia.es/proyectos/trowelapp): El SaaS por dentro, arquitectura y módulos.
+- [pindia.es](https://pindia.es/proyectos/web-pindia): Nuestra propia web, con las decisiones técnicas documentadas.
+- [Diary of a Token](https://pindia.es/proyectos/diaryofatoken): Proyecto de I+D interna, un portal de noticias editado por un agente de IA.
 
 ## Empresa
 
-- [Contacto](https://pindia.es/contacto/): Formulario y datos de contacto.
-- [Blog](https://pindia.es/blog/): Artículos sobre diseño web, SEO, negocio digital y cumplimiento.
+- [Contacto](https://pindia.es/contacto/): Formulario, teléfono y datos de contacto.
+- [Blog](https://pindia.es/blog/): Artículos sobre diseño y desarrollo web, SEO y crecimiento, negocio y estrategia digital, y cumplimiento y accesibilidad.
+
+## Guías de referencia del blog
+
+- [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/): Precios reales por tramos en 2026.
+- [Diseño web a medida](https://pindia.es/blog/posts/diseno-web-a-medida/): Qué es, qué incluye y cuánto cuesta.
+- [Posicionamiento web y SEO local en Santander](https://pindia.es/blog/posts/posicionamiento-web-santander/): Qué es, cuánto cuesta y cómo elegir empresa.
+- [WordPress, plantilla o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/): Cuál elegir y con qué criterio.
+- [Software a medida](https://pindia.es/blog/posts/software-a-medida/): Para qué sirve y cuándo compensa frente a uno estándar.
+- [¿Tu web cumple con la ley?](https://pindia.es/blog/posts/tu-web-cumple-ley/): Aviso legal, cookies, RGPD y DPA.
 
 ## Opcional
 
@@ -27,3 +49,4 @@ Pindia Software es una empresa de desarrollo de software y diseño web con sede 
 - [Política de privacidad](https://pindia.es/politica-privacidad/)
 - [Política de cookies](https://pindia.es/politica-cookies/)
 - [Sitemap completo (XML)](https://pindia.es/sitemap.xml): Todas las URLs, incluidos los posts del blog.
+- [RSS del blog](https://pindia.es/blog/rss.xml)

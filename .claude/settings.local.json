@@ -21,7 +21,19 @@
       "Bash(cwebp -q 85 \"ChatGPT Image 27 abr 2026, 15_23_32.png\" -o img/proceso-lanzamos.webp)",
       "Bash(cwebp -q 85 \"assets/ChatGPT Image 28 abr 2026, 10_53_53.png\" -o \"assets/img/diseno-web-portfolio.webp\")",
       "WebFetch(domain:clinicaofeliacasanueva.com)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Read(//Users/beatriz/Downloads/**)",
+      "Bash(python3 -c \"import openpyxl\")",
+      "mcp__azure-devops__wit_query_by_wiql",
+      "mcp__azure-devops__wit_get_work_items_batch_by_ids",
+      "Bash(ls -1 ~/Documents/GitHub/ 2>/dev/null)",
+      "mcp__15651274-facf-430c-b7a9-db86dfed3bf5__execute_report",
+      "mcp__e7690217-e751-45bf-8f2b-5b8f489b85a3__create_draft",
+      "Bash(mdls -name kMDItemNumberOfPages -raw /Users/beatriz/Desktop/informe-semanal-2026-07-24.pdf)",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf=/Users/beatriz/Desktop/informe-semanal-2026-07-24.pdf file:///Users/beatriz/Desktop/informe-semanal-2026-07-24.html)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless=new --disable-gpu --window-size=760,2000 --virtual-time-budget=1500 --run-all-compositor-stages-before-draw --dump-dom file:///Users/beatriz/Desktop/informe-semanal-2026-07-24.html)",
+      "Bash(python3 -)"
     ]
   }
 }

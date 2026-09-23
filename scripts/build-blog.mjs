@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * build-blog.mjs — Compilador de posts Markdown del blog de Pindia Software
+ * build-blog.mjs: compilador de posts Markdown del blog de Pindia Software
  *
  * Lee:   /blog/src/posts/*.md
  * Genera:
@@ -16,9 +16,9 @@
  *   date        (YYYY-MM-DD, requerido)
  *   author      (string)
  *   tags        (lista)
- *   cover       (path absoluto a la imagen principal — hero + listado + og:image)
+ *   cover       (path absoluto a la imagen principal: hero + listado + og:image)
  *   coverAlt    (alt text del cover)
- *   images      (lista de { src, alt, caption } — galería al final del post)
+ *   images      (lista de { src, alt, caption }: galería al final del post)
  *   draft       (true/false, por defecto false)
  *
  * Markdown: sintaxis estándar + imágenes ![alt](/ruta) inline.
@@ -43,7 +43,7 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20260917a';
+const ASSET_VER = 'v=20260923a';
 
 // Autora de referencia del blog. Su perfil se enlaza desde el schema (Person.sameAs)
 // y desde la caja de autor al final de cada post: es señal de E-E-A-T, que Google
@@ -640,7 +640,7 @@ function renderBlogList(posts, pageNum, totalPages, tagList = [], activeTag = nu
   const pageTitle = activeTag
     ? `${activeTag.name} | Blog Pindia Software`
     : (isFirst
-      ? 'Blog — Ideas sobre software, diseño web y digitalización | Pindia Software'
+      ? 'Blog: ideas sobre software, diseño web y digitalización | Pindia Software'
       : `Blog (página ${pageNum}) | Pindia Software`);
   const pageDesc = activeTag
     ? `Artículos del blog de Pindia Software etiquetados con "${activeTag.name}". Contenido sobre software, diseño web y digitalización.`
@@ -699,7 +699,7 @@ ${commonHead({
     <!-- FILTRO POR TAGS -->${renderTagBar(tagList, activeTag)}
 
     <!-- ARTÍCULOS -->
-    <section class="section" style="padding-top:var(--sp-8)" aria-label="Artículos del blog${activeTag ? ` etiquetados con ${activeTag.name}` : ''}${isFirst ? '' : ` — página ${pageNum}`}">
+    <section class="section" style="padding-top:var(--sp-8)" aria-label="Artículos del blog${activeTag ? ` etiquetados con ${activeTag.name}` : ''}${isFirst ? '' : `, página ${pageNum}`}">
       <div class="container">
 
         <div class="blog-grid" data-reveal-group>

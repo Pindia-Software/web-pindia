@@ -96,6 +96,6 @@ Inversión: 6.500 euros. Retorno estimado en menos de seis meses solo por horas 
 
 ## Cómo lo abordamos en Pindia
 
-Solemos empezar con un taller de un par de horas con el cliente para mapear procesos, decidir qué automatizamos primero y qué se queda manual a propósito. La regla básica: automatizar lo que se hace cada día y que apenas cambia. Lo que es excepcional, déjalo manual: programarlo no compensa.
+Las integraciones entran dentro de nuestro trabajo de [desarrollo de software a medida](https://pindia.es/servicios/desarrollo-software). Solemos empezar con un taller de un par de horas con el cliente para mapear procesos, decidir qué automatizamos primero y qué se queda manual a propósito. La regla básica: automatizar lo que se hace cada día y que apenas cambia. Lo que es excepcional, déjalo manual: programarlo no compensa. El conector se construye a medida contra tu ERP, no hay un [software estándar](https://pindia.es/servicios/desarrollo-software) que encaje sin tocarlo.
 
 Si tu empresa en Cantabria está perdiendo horas en tareas administrativas que podrían fluir solas entre el ERP y la web, [hablemos](/contacto/). En la primera reunión te decimos honestamente si la inversión te va a salir a cuenta o no.

@@ -32,11 +32,11 @@ Antes que un número, entiende las palancas. Estas son las que de verdad cambian
 
 Con la advertencia de que cada proyecto es un mundo, estos rangos te sitúan:
 
-- **App sencilla o MVP** (una plataforma o multiplataforma básica, funciones esenciales, un backend ligero): **desde unos 6.000–15.000 €**. Ideal para validar una idea antes de invertir más.
+- **App sencilla o MVP** (una plataforma o multiplataforma básica, funciones esenciales, un backend ligero): **desde unos 6.000 a 15.000 €**. Ideal para validar una idea antes de invertir más.
 - **App de negocio** (multiplataforma, varias funciones, backend e integraciones): **entre 15.000 y 40.000 €**. Es el rango más habitual para una app empresarial de verdad.
 - **App compleja** (tiempo real, pagos, muchas integraciones, alta escala): **desde 45.000 €** en adelante.
 
-Estos números son orientativos: la única cifra fiable es un presupuesto cerrado tras analizar lo que necesitas. Están en línea con el mercado español (donde la hora de desarrollo ronda los 35–80 €), y te sirven para saber si tu idea vive en la liga de los 10.000 o en la de los 40.000, que es lo primero que quieres averiguar. Nosotros ajustamos con multiplataforma e IA para quedarnos en la parte competitiva de cada tramo.
+Estos números son orientativos: la única cifra fiable es un presupuesto cerrado tras analizar lo que necesitas. Están en línea con el mercado español (donde la hora de desarrollo ronda los 35 a 80 €), y te sirven para saber si tu idea vive en la liga de los 10.000 o en la de los 40.000, que es lo primero que quieres averiguar. Nosotros ajustamos con multiplataforma e IA para quedarnos en la parte competitiva de cada tramo.
 
 ## Cómo abaratar una app sin cargártela
 
@@ -44,12 +44,12 @@ Rebajar el precio no es recortar calidad, es priorizar con cabeza:
 
 - **Multiplataforma en vez de dos apps nativas.** Con una sola base de código (por ejemplo .NET MAUI) cubres iOS y Android sin pagar dos desarrollos. Es el mayor ahorro sensato.
 - **Empieza por un MVP.** Lanza primero lo imprescindible, mide con usuarios reales y amplía por fases. Repartes la inversión y evitas pagar funciones que quizá nadie use.
-- **¿Necesitas app o te vale una web?** A veces una PWA (app web) resuelve por bastante menos. Si es tu caso, te lo decimos.
+- **¿Necesitas app o te vale una web?** A veces una PWA resuelve por bastante menos, y sale más a cuenta invertir en [diseño web a medida](https://pindia.es/servicios/diseno-web). Si es tu caso, te lo decimos.
 - **IA en el desarrollo.** Usamos IA para acelerar el código repetitivo y las pruebas, lo que baja tiempo y, por tanto, coste. Lo que no se automatiza es la arquitectura y el criterio.
 
 ## Cuánto se tarda en hacer una app
 
-Como referencia, un MVP funcional suele estar listo en **6–12 semanas**, y una app de negocio completa entre **3 y 6 meses**, trabajando por fases con entregas visibles para que valides sobre la marcha. El cuello de botella rara vez es técnico: es tener claro qué tiene que hacer la app y quién decide.
+Como referencia, un MVP funcional suele estar listo en **6 a 12 semanas**, y una app de negocio completa entre **3 y 6 meses**, trabajando por fases con entregas visibles para que valides sobre la marcha. El cuello de botella rara vez es técnico: es tener claro qué tiene que hacer la app y quién decide.
 
 ## Lo que no debería pasar con tu presupuesto
 
@@ -63,13 +63,13 @@ Analizamos lo que necesita tu app, te proponemos la opción técnica que mejor e
 
 Al ser una empresa de desarrollo completa, tu app puede conectarse con el resto de tu software (tu web, tu ERP o tus APIs), con un solo proveedor para todo.
 
-**[Cuéntanos tu idea de app y te damos presupuesto en 48h →](https://pindia.es/contacto/)**
+**[Cuéntanos tu idea de app y te damos presupuesto en 48h](https://pindia.es/contacto/)**
 
 ## Preguntas frecuentes
 
 ### ¿Cuánto cuesta hacer una app?
 
-Como orientación: una app sencilla o MVP desde unos 6.000–15.000 €, una app de negocio multiplataforma con integraciones entre 15.000 y 40.000 €, y una app compleja desde 45.000 € en adelante. El precio depende del número de plataformas, la complejidad de las funciones, el backend y el diseño. Son tramos en línea con el mercado español, y la cifra fiable siempre es un presupuesto cerrado tras analizar el proyecto.
+Como orientación: una app sencilla o MVP desde unos 6.000 a 15.000 €, una app de negocio multiplataforma con integraciones entre 15.000 y 40.000 €, y una app compleja desde 45.000 € en adelante. El precio depende del número de plataformas, la complejidad de las funciones, el backend y el diseño. Son tramos en línea con el mercado español, y la cifra fiable siempre es un presupuesto cerrado tras analizar el proyecto.
 
 ### ¿Es más barato hacer una app para Android o para las dos plataformas?
 
@@ -103,7 +103,7 @@ Debería quedar claro desde el principio qué incluye el presupuesto: diseño, d
       "name": "¿Cuánto cuesta hacer una app?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Como orientación: una app sencilla o MVP desde unos 6.000–15.000 €, una app de negocio multiplataforma con integraciones entre 15.000 y 40.000 €, y una app compleja desde 45.000 € en adelante. El precio depende del número de plataformas, la complejidad de las funciones, el backend y el diseño. Son tramos en línea con el mercado español, y la cifra fiable siempre es un presupuesto cerrado tras analizar el proyecto."
+        "text": "Como orientación: una app sencilla o MVP desde unos 6.000 a 15.000 €, una app de negocio multiplataforma con integraciones entre 15.000 y 40.000 €, y una app compleja desde 45.000 € en adelante. El precio depende del número de plataformas, la complejidad de las funciones, el backend y el diseño. Son tramos en línea con el mercado español, y la cifra fiable siempre es un presupuesto cerrado tras analizar el proyecto."
       }
     },
     {

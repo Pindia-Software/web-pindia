@@ -93,8 +93,8 @@ Un ERP lo usa gente cada día, así que la formación es parte del proyecto. Y c
 
 Depende del alcance, pero para situarte:
 
-- **Un módulo o sistema de gestión acotado** (por ejemplo, solo producción o solo stock, con una integración): **desde unos 8.000–12.000 €**.
-- **Un ERP a medida con varios módulos** e integraciones para una pyme: **desde 20.000–35.000 €**.
+- **Un módulo o sistema de gestión acotado** (por ejemplo, solo producción o solo stock, con una integración): **desde unos 8.000 a 12.000 €**.
+- **Un ERP a medida con varios módulos** e integraciones para una pyme: **desde 20.000 a 35.000 €**.
 - **Un sistema completo** para una empresa con operativa compleja o varias sedes: **desde 40.000 €** en adelante.
 
 Los factores que mueven el precio: número de módulos, integraciones con otros sistemas, número de usuarios, complejidad de la producción y si los datos ya existen o hay que migrarlos.
@@ -105,10 +105,10 @@ Y un aviso: compara el **coste a tres o cinco años**, no el precio inicial. Un 
 
 Entre 3 y 9 meses para un ERP a medida típico, trabajando por fases:
 
-1. **Análisis** (3–6 semanas): mapear procesos, datos y flujos reales.
-2. **Arquitectura y diseño** (3–5 semanas): cómo se estructura el sistema, aprobado por ti antes de programar.
-3. **Desarrollo por módulos** (2–6 meses): con entregas visibles para que el equipo valide sobre la marcha.
-4. **Migración, pruebas y puesta en marcha** (3–6 semanas): pasar los datos, probar y formar a tu gente.
+1. **Análisis** (3 a 6 semanas): mapear procesos, datos y flujos reales.
+2. **Arquitectura y diseño** (3 a 5 semanas): cómo se estructura el sistema, aprobado por ti antes de programar.
+3. **Desarrollo por módulos** (2 a 6 meses): con entregas visibles para que el equipo valide sobre la marcha.
+4. **Migración, pruebas y puesta en marcha** (3 a 6 semanas): pasar los datos, probar y formar a tu gente.
 
 El cuello de botella real casi nunca es técnico: es tener los procesos ordenados y las personas del negocio disponibles para explicarlos. Cuanto más claro llegues, más rápido y barato sale.
 
@@ -126,7 +126,7 @@ Las preguntas que separan a los serios del resto:
 
 1. **¿El código es mío? ¿Puedo llevármelo?**
 2. **¿Cómo migráis mis datos** actuales sin perder histórico?
-3. **¿Cómo integráis el ERP** con mi web, mi facturación y mi logística?
+3. **¿Cómo integráis el ERP** con mi web, mi facturación y mi logística? Es la pregunta que más separa, y la parte central de cualquier proyecto de [software a medida](https://pindia.es/servicios/desarrollo-software).
 4. **¿Trabajáis por módulos con entregas** o me lo enseñáis todo al final?
 5. **¿Qué incluye el mantenimiento y qué cuesta al mes?**
 6. **¿Tenéis producto propio en producción?** Quien sostiene su propio sistema sabe lo que es mantener el tuyo.
@@ -140,7 +140,7 @@ Eso significa tres cosas para tu proyecto: que la arquitectura y la seguridad no
 
 Trabajamos desde Santa Cruz de Bezana para toda Cantabria y España.
 
-**[Cuéntanos cómo trabaja tu empresa y te damos presupuesto en 48h →](https://pindia.es/contacto/)**
+**[Cuéntanos cómo trabaja tu empresa y te damos presupuesto en 48h](https://pindia.es/contacto/)**
 
 Y si vemos que con un ERP estándar resuelves, te lo diremos. Preferimos perder un proyecto a venderte algo que no necesitas.
 
@@ -152,7 +152,7 @@ Un sistema de gestión desarrollado específicamente para una empresa y sus proc
 
 ### ¿Cuánto cuesta un ERP a medida?
 
-Desde unos 8.000–12.000 € un sistema acotado, desde 20.000–35.000 € un ERP con varios módulos para una pyme y desde 40.000 € un sistema completo o multisede. Depende de los módulos, las integraciones, los usuarios y la migración de datos. Compara siempre el coste a varios años frente a las licencias y la consultoría de un ERP estándar.
+Desde unos 8.000 a 12.000 € un sistema acotado, desde 20.000 a 35.000 € un ERP con varios módulos para una pyme y desde 40.000 € un sistema completo o multisede. Depende de los módulos, las integraciones, los usuarios y la migración de datos. Compara siempre el coste a varios años frente a las licencias y la consultoría de un ERP estándar.
 
 ### ¿Qué diferencia hay entre un ERP a medida y uno estándar como SAP u Odoo?
 

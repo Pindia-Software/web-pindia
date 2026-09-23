@@ -16,7 +16,7 @@ draft: false
 
 La hostelería es probablemente el sector que más facturación deja sobre la mesa por webs mal hechas, y el motivo es casi siempre el mismo: quien entra en la web de un restaurante va a ver **la carta y cómo reservar**. Si cualquiera de las dos falla, esa persona ya está mirando otro sitio.
 
-Hemos rediseñado webs de restaurantes y el patrón se repite tanto que se puede diagnosticar antes de abrir el portátil. Esto es lo que funciona, lo que no, y por qué.
+Hemos rediseñado [webs de restaurantes a medida](https://pindia.es/servicios/diseno-web) y el patrón se repite tanto que se puede diagnosticar antes de abrir el portátil. Esto es lo que funciona, lo que no, y por qué.
 
 ## Los quince segundos que deciden la reserva
 
@@ -50,7 +50,7 @@ En hostelería la búsqueda tiene intención inmediata: se busca para ir hoy. "P
 
 Eso hace que dos cosas pesen más que en cualquier otro sector: la ficha de Google Business Profile, con horarios que sean ciertos, fotos frescas y todas las reseñas respondidas, y la coherencia entre lo que dice esa ficha y lo que dice tu web. Cuando el horario de la ficha y el de la web no coinciden, el que pierde eres tú.
 
-El resto del trabajo local está en [SEO local](https://pindia.es/blog/posts/seo-local-santander/), pero en hostelería la ficha es la mitad de la batalla.
+El resto del trabajo local está en [SEO local](https://pindia.es/blog/posts/posicionamiento-web-santander/), pero en hostelería la ficha es la mitad de la batalla.
 
 ## Los datos estructurados que casi nadie pone
 
@@ -86,7 +86,7 @@ La web de un restaurante tiene que dar hambre y quitar fricción. Todo lo que se
 
 Una web de restaurante cambia más que una web corporativa: la carta, los precios, el menú del fin de semana, Navidad, San Valentín, el Día de la Madre, la temporada. Si cada cambio hay que pedirlo por presupuesto, acabarás no pidiéndolo, y una carta desactualizada es peor que no tenerla.
 
-O el sistema te deja cambiarlo a ti en dos minutos, o tienes un plan de [mantenimiento](https://pindia.es/blog/posts/mantenimiento-web-empresas-cantabria/) con horas incluidas. Cualquiera de las dos vale; no tener ninguna, no.
+O el sistema te deja cambiarlo a ti en dos minutos, o tienes un plan de [mantenimiento web](https://pindia.es/servicios/mantenimiento-web) con horas incluidas. Cualquiera de las dos vale; no tener ninguna, no.
 
 ## Un caso concreto
 
@@ -132,7 +132,7 @@ El planteamiento es el mismo: carta accesible, reserva sin fricción, ficha de G
 
 ## Más en el blog
 
-- [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/), cómo aparecer en el mapa de Google.
+- [Posicionamiento web y SEO local en Santander](https://pindia.es/blog/posts/posicionamiento-web-santander/), cómo aparecer en el mapa de Google.
 - [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), los tramos de precio por tipo de proyecto.
 - [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), por qué una web lenta pierde clientes en la calle.
 - [Ejemplos de páginas web de empresas en Cantabria](https://pindia.es/blog/posts/ejemplos-paginas-web-empresas-cantabria/), casos reales por sector.

@@ -92,9 +92,9 @@ Hay otro patrón: casi todos son problemas de **mantenimiento**, no de construcc
 
 ## La buena noticia y la mala
 
-**La buena:** siete de los diez se arreglan sin rehacer la web. Son horas de trabajo, no un proyecto nuevo.
+**La buena:** siete de los diez se arreglan sin rehacer la web. Son horas de trabajo, no un proyecto nuevo, y entran en un contrato de [mantenimiento web](https://pindia.es/servicios/mantenimiento-web).
 
-**La mala:** dos de ellos, el rendimiento en móvil y el cumplimiento de cookies, a veces no se pueden resolver del todo sobre lo que hay. Si la web se construyó con una plantilla que genera un marcado que no hay por dónde coger, se puede maquillar pero no arreglar, y ahí toca decidir si merece la pena seguir invirtiendo en ella. Esa conversación está en [cuándo optimizar y cuándo rehacer](https://pindia.es/blog/posts/core-web-vitals-que-son/).
+**La mala:** dos de ellos, el rendimiento en móvil y el cumplimiento de cookies, a veces no se pueden resolver del todo sobre lo que hay. Si la web se construyó con una plantilla que genera un marcado que no hay por dónde coger, se puede maquillar pero no arreglar, y ahí toca decidir si merece la pena seguir invirtiendo en ella o plantear un [rediseño web a medida](https://pindia.es/servicios/diseno-web). Esa conversación está en [cuándo optimizar y cuándo rehacer](https://pindia.es/blog/posts/core-web-vitals-que-son/).
 
 ## Preguntas frecuentes
 

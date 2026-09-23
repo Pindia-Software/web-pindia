@@ -63,7 +63,7 @@ En la mayoría de proyectos empresariales apostamos por **multiplataforma con .N
 
 Lo bueno de ser una empresa de desarrollo completa es que la app puede hablar con el resto de tu software: tu web, tu ERP o tus [APIs a medida](https://pindia.es/servicios/apps-mobile-api). Un solo proveedor para todo lo que se conecta.
 
-**[Cuéntanos qué quieres que haga tu app y te decimos qué opción encaja →](https://pindia.es/contacto/)**
+**[Cuéntanos qué quieres que haga tu app y te decimos qué opción encaja](https://pindia.es/contacto/)**
 
 Y si vemos que con una web te sobra, te lo diremos: preferimos acertar a venderte de más.
 

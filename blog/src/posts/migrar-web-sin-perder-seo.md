@@ -16,7 +16,7 @@ draft: false
 
 Hay un momento de pánico que se repite: la empresa lanza la web nueva, y a las dos o tres semanas el tráfico orgánico se ha hundido. La web es más bonita, más rápida y mejor en todo. Pero ya no aparece donde aparecía, y lo que antes traía clientes ahora no trae nada.
 
-Casi siempre es lo mismo: **una migración mal hecha**. Y lo peor es que no se nota el día del lanzamiento, cuando aún se podría corregir barato, sino semanas después, cuando ya has celebrado la web nueva.
+Casi siempre es lo mismo: **una migración mal hecha**. Es el riesgo que más vigilamos cuando alguien nos encarga un [rediseño web a medida](https://pindia.es/servicios/diseno-web), porque destruye en dos semanas lo que costó años. Y lo peor es que no se nota el día del lanzamiento, cuando aún se podría corregir barato, sino semanas después, cuando ya has celebrado la web nueva.
 
 ## El caso que mejor lo explica
 
@@ -72,7 +72,7 @@ Más allá de las páginas, hay cuatro cosas que suelen quedarse por el camino:
 
 **Los enlaces externos.** Si un medio, una asociación o un directorio te enlazó hace años, ese enlace vale mucho y hay que asegurarse de que sigue llegando a algún sitio útil.
 
-**La coherencia con tu ficha de Google.** Si cambias direcciones y la ficha de tu negocio sigue apuntando a la vieja, pierdes justo donde más duele en un negocio local.
+**La coherencia con tu ficha de Google.** Si cambias direcciones y la ficha de tu negocio sigue apuntando a la vieja, pierdes justo donde más duele en un negocio local. Es parte del trabajo de [posicionamiento web](https://pindia.es/servicios/posicionamiento-web), no del de desarrollo, y por eso se olvida tan a menudo.
 
 ## Cuánto se pierde y cuánto tarda en recuperarse
 
@@ -151,7 +151,7 @@ Suele añadir entre un 20 y un 30 % al coste del rediseño. Es sensiblemente men
 - [Cuánto cuesta una página web](https://pindia.es/blog/posts/precio-pagina-web-cantabria/), los tramos de un rediseño completo.
 - [Core Web Vitals y velocidad web](https://pindia.es/blog/posts/core-web-vitals-que-son/), si el problema es la velocidad, quizá no hace falta migrar.
 - [WordPress, plantilla o desarrollo a medida](https://pindia.es/blog/posts/wordpress-vs-desarrollo-medida-cantabria/), elige bien la plataforma antes de moverte.
-- [SEO local en Santander](https://pindia.es/blog/posts/seo-local-santander/), lo primero que se resiente en una migración de negocio local.
+- [Posicionamiento web y SEO local en Santander](https://pindia.es/blog/posts/posicionamiento-web-santander/), lo primero que se resiente en una migración de negocio local.
 
 Si estás planificando un rediseño y quieres que no te cueste el posicionamiento, [hablemos](/contacto/). En la primera reunión te enseñamos qué hay en juego y dónde está el riesgo, antes de tocar nada.
 

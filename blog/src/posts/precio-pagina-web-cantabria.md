@@ -16,7 +16,7 @@ draft: false
 
 Una página web corporativa hecha a medida cuesta **desde unos 3.000 €**, y una plantilla configurada se mueve entre **600 y 1.500 €**. A partir de ahí, todo depende de qué tenga que hacer la web. Esa es la respuesta corta, y el resto del artículo es por qué el mismo encargo recibe presupuestos de 400 € y de 8.000 €, y cómo saber cuál de los dos te va a salir caro.
 
-Somos una empresa de desarrollo, así que vamos a poner cifras concretas en lugar de "depende de tus necesidades". Depende, sí. Pero se puede acotar.
+Somos una empresa de [diseño y desarrollo web a medida](https://pindia.es/servicios/diseno-web), así que vamos a poner cifras concretas en lugar de "depende de tus necesidades". Depende, sí. Pero se puede acotar.
 
 ## Cuánto cuesta una página web: los tramos de 2026
 
@@ -132,7 +132,7 @@ Se olvida en el presupuesto inicial y luego sorprende. Una web profesional neces
 
 ## Cómo presupuestamos en Pindia
 
-No damos un número por teléfono, y desconfía de quien lo haga sin preguntarte nada. Lo que hacemos es una conversación corta para entender qué vende tu empresa y a quién, revisar lo que ya tienes, y entregarte un presupuesto cerrado y desglosado, con plazo y con lo que incluye el mantenimiento posterior. Sin ese paso, cualquier cifra es una adivinanza cara.
+No damos un número por teléfono, y desconfía de quien lo haga sin preguntarte nada. Lo que hacemos es una conversación corta para entender qué vende tu empresa y a quién, revisar lo que ya tienes, y entregarte un presupuesto cerrado y desglosado, con plazo y con lo que incluye el [mantenimiento web](https://pindia.es/servicios/mantenimiento-web) posterior. Sin ese paso, cualquier cifra es una adivinanza cara.
 
 ## Preguntas frecuentes
 
