@@ -186,7 +186,15 @@ Convenciones:
 - `css/scroll-video.css` es la animación scroll-driven de la home y se carga non-blocking.
 - `js/main.js` controla cookie banner, drawer móvil, reveal animations, etc.
 - Las versiones `.min.*` están en `.gitignore` y las regenera CI con `csso-cli` y `terser`.
-- Cache-busting: las páginas referencian los assets con `?v=YYYYMMDDx` (**`v=20260923a` actualmente**). `_headers` sirve el CSS y el JS con caché immutable, así que **cualquier cambio en `css/styles.css` o `js/main.js` obliga a subir la query**, o los navegadores con la web cacheada no verán el cambio. El valor está en cuatro sitios y hay que tocarlos todos: `src/partials/head-assets.html`, `src/partials/scripts.html`, `src/partials/cta-blog.html` y `scripts/build-blog.mjs` (constante `ASSET_VER`).
+- Cache-busting: las páginas referencian los assets con `?v=YYYYMMDDx`. `_headers` sirve el CSS y el JS con caché immutable, así que **cualquier cambio en `css/styles.css` o `js/main.js` obliga a subir la query**, o los navegadores con la web cacheada no verán el cambio.
+
+  El valor vive en **tres** sitios y hay que tocarlos todos a la vez: `src/partials/head-assets.html`, `src/partials/scripts.html` y `scripts/build-blog.mjs` (constante `ASSET_VER`). No lo busques en este documento, que se queda viejo enseguida; léelo del repo:
+
+  ```bash
+  grep -rho 'v=2026[0-9]*[a-z]' src/partials/*.html scripts/build-blog.mjs | sort -u
+  ```
+
+  Si ese comando devuelve más de una línea, hay un sitio sin actualizar. Al 24-sep-2026 el valor era `v=20260924b`.
 
 ---
 
