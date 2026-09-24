@@ -928,3 +928,21 @@ document.querySelectorAll('.yt-facade').forEach(wrapper => {
     });
   });
 })();
+
+/* ---------------------------------------------------------------
+   Contacto: preselecciona el asunto desde ?asunto=<valor>
+   Lo usan los CTA de las páginas de servicio, p. ej.
+   /contacto/?asunto=mantenimiento
+--------------------------------------------------------------- */
+(function () {
+  var select = document.getElementById('asunto');
+  if (!select) return;
+  var valor;
+  try { valor = new URLSearchParams(window.location.search).get('asunto'); }
+  catch (e) { return; }
+  if (!valor) return;
+  var opcion = select.querySelector('option[value="' + CSS.escape(valor) + '"]');
+  if (!opcion) return;
+  select.value = valor;
+  select.dispatchEvent(new Event('change', { bubbles: true }));
+})();

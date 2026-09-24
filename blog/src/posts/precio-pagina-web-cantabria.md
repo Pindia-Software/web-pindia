@@ -28,7 +28,7 @@ Estos son los rangos que se manejan en el mercado español, y en los que nos mov
 - **Tienda online a medida**: **desde 6.000 €** una tienda sencilla, y **12.000 a 20.000 €** si se integra con tu ERP o almacén. El desglose completo, con los costes recurrentes de vender online, está en [precio de una tienda online](https://pindia.es/blog/posts/precio-tienda-online/).
 - **Web con desarrollo propio detrás** (área de cliente, configuradores, multi-idioma, procesos de negocio): a partir de ahí y hasta donde pida el proyecto. Aquí ya no estás comprando una web, estás comprando [software a medida](https://pindia.es/blog/posts/software-a-medida/).
 
-Y una cifra que casi nadie pone en la misma tabla, aunque forma parte del precio: el **mantenimiento**, entre 99 y 199 € al mes para una web corporativa. Volvemos a ello al final, porque es donde se decide si la web fue cara o barata de verdad.
+Y una cifra que casi nadie pone en la misma tabla, aunque forma parte del precio: el **mantenimiento**, que en el mercado va de 40 a 200 € al mes y en nuestro caso son 99 € para una web corporativa y 199 € para una pyme con web activa. Volvemos a ello al final, porque es donde se decide si la web fue cara o barata de verdad.
 
 ## Por qué el mismo encargo tiene presupuestos de 400 € y de 8.000 €
 

@@ -48,7 +48,7 @@ Los precios que se manejan en el mercado, sin rodeos:
 | Intermedio | 70 a 130 € | Pyme con web activa | Lo anterior + staging, horas mensuales de cambios, informe mensual, soporte telefónico |
 | Alto | 130 a 200 € | Tienda online o web con integraciones | Lo anterior + monitorización de pasarela y stock, prioridad de respuesta, optimización continua de rendimiento |
 
-Una web corporativa de pyme con soporte real, horas incluidas para cambios y copias que se restauran de verdad se mueve en la **parte alta de esa horquilla**, no en la baja.
+Esa tabla es lo que se pide en el mercado, y conviene leerla sabiendo qué se compra en cada banda. Por 40 o 50 € nadie prueba una restauración ni te devuelve la llamada un viernes: se actualiza lo que se pueda de forma automática y se confía en que no pase nada. Nuestros planes están por encima de esas cifras y es una decisión, no un descuido.
 
 **Si te ofrecen mantenimiento por 15 € al mes, pregunta qué incluye.** Casi seguro que es solo hosting: sin actualizaciones, sin monitorización y sin soporte humano.
 
@@ -56,11 +56,11 @@ Y el reverso: pagar 200 € por una web de cinco páginas que no cambia nunca ta
 
 ## Nuestros planes de mantenimiento web
 
-En Pindia lo tenemos en tres niveles, sin letra pequeña. No somos los más baratos del mercado, y a estas alturas del artículo ya sabes por qué: incluimos actualizaciones probadas en staging, copias que se restauran de verdad y una persona a la que llamar.
+En Pindia lo tenemos en tres niveles, sin letra pequeña. **No somos los baratos y no queremos competir por precio**, así que te ahorramos el regateo: si buscas la cifra más baja, la vas a encontrar fuera. Lo que cuesta más caro es lo que hace que no te enteres de que algo se ha roto, porque se arregló antes: actualizaciones probadas en staging, copias que se restauran de verdad y una persona con nombre a la que llamar.
 
 - **Básico, 99 €/mes**: actualizaciones, copias diarias con prueba de restauración, monitorización de caídas y soporte. Para una web corporativa que cambia poco.
 - **Estándar, 199 €/mes**: todo lo del Básico + **4 horas mensuales** de cambios, entorno de *staging* e informe mensual legible. Para la pyme con web activa.
-- **Avanzado, a medida**: para tienda online o web con integraciones, donde hay que vigilar pasarela de pago, stock y rendimiento de forma continua.
+- **Avanzado**: para tienda online o web con integraciones, donde hay que vigilar pasarela de pago, stock y rendimiento de forma continua. No lleva tarifa fija porque no hay dos casos iguales; se presupuesta sobre lo que tengas montado.
 
 Los tienes con el detalle completo en **[nuestra página de mantenimiento web](https://pindia.es/servicios/mantenimiento-web)**. Y si no sabes qué estás pagando ahora, te lo auditamos gratis.
 
@@ -157,7 +157,7 @@ Más que una web corporativa, porque hay que vigilar la pasarela de pago, el sto
 
 ### ¿Cuánto cuesta el mantenimiento web en Pindia?
 
-Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 horas mensuales de cambios incluidas) y Avanzado a medida para tiendas online o webs con integraciones. Todos incluyen copias con prueba de restauración, monitorización y soporte con persona de contacto. Los ves en detalle en nuestra [página de mantenimiento web](https://pindia.es/servicios/mantenimiento-web).
+Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 horas mensuales de cambios incluidas) y Avanzado, sin tarifa fija, presupuestado a medida para tiendas online o webs con integraciones. Todos incluyen copias con prueba de restauración, monitorización y soporte con persona de contacto. Los ves en detalle en nuestra [página de mantenimiento web](https://pindia.es/servicios/mantenimiento-web).
 
 ## Más en el blog
 
@@ -232,7 +232,7 @@ Trabajamos con tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 hor
       "name": "¿Cuánto cuesta el mantenimiento web en Pindia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 horas mensuales de cambios incluidas) y Avanzado a medida para tiendas online o webs con integraciones. Todos incluyen copias con prueba de restauración, monitorización y soporte con persona de contacto."
+        "text": "Tres planes: Básico 99 €/mes, Estándar 199 €/mes (con 4 horas mensuales de cambios incluidas) y Avanzado, sin tarifa fija, presupuestado a medida para tiendas online o webs con integraciones. Todos incluyen copias con prueba de restauración, monitorización y soporte con persona de contacto."
       }
     }
   ]
