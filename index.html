@@ -699,50 +699,86 @@
         <div class="text-center" data-reveal>
           <span class="section__label">Lo que dicen nuestros clientes</span>
           <h2 id="test-title" class="section__headline">Resultados que generan confianza</h2>
+          <p class="section__sub" style="max-width:600px;margin-inline:auto">
+            Reseñas publicadas en nuestra ficha de Google. Puedes comprobarlas sin fiarte de nosotros.
+          </p>
         </div>
 
-        <div class="testimonios__grid" data-reveal-group>
+        <div class="resenas__grid" data-reveal-group>
 
-          <blockquote class="testimonial-card">
-            <p class="testimonial-card__text">
-              "Gran talento técnico y un compromiso diferenciador. Pindia entendió nuestras necesidades desde el primer día y entregó más de lo que esperábamos."
-            </p>
-            <footer class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">JM</div>
-              <div>
-                <cite class="testimonial-card__name">José María Rodríguez</cite>
-                <div class="testimonial-card__role">CEO · 4Beats Solutions</div>
-              </div>
-            </footer>
-          </blockquote>
+          <!-- Reseñas públicas del Google Business Profile de Pindia.
+               Texto literal, sin retocar. Cualquier cambio aquí tiene que
+               corresponderse con lo que hay publicado en la ficha.
 
-          <blockquote class="testimonial-card">
-            <p class="testimonial-card__text">
-              "Profesionalidad, capacidad de entrega y talento. El equipo de Pindia ha sido un socio tecnológico de confianza para nosotros."
-            </p>
-            <footer class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">IC</div>
-              <div>
-                <cite class="testimonial-card__name">Iván Cabello</cite>
-                <div class="testimonial-card__role">Expertus Technology</div>
+               NO añadir schema Review ni AggregateRating: las reseñas sobre la
+               propia entidad que aloja la página no son elegibles para rich
+               results, y marcar reseñas recogidas de un tercero incumple las
+               directrices de review snippets. Se muestran como contenido y se
+               enlaza a la ficha para que se puedan verificar. -->
+          <article class="resena">
+            <a class="resena__media" href="/proyectos/limon-hoteles" aria-label="Ver el caso de éxito de Limón Hoteles">
+              <img src="/assets/img/case-limon-cover.webp" width="1920" height="1080" alt="Home de limonhoteles.com, la web que Pindia diseñó para el grupo hotelero" loading="lazy" decoding="async">
+            </a>
+            <div class="resena__body">
+              <div class="resena__fuente">
+                <div class="resena__estrellas" role="img" aria-label="5 de 5 estrellas">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                </div>
+                <span class="resena__origen">Reseña en Google</span>
               </div>
-            </footer>
-          </blockquote>
+              <blockquote class="resena__texto">
+                "Encantados con los servicios de Pindia. No solo por su profesionalidad, por entender nuestras necesidades desde el primer minuto y adaptarse a ellas, si no también por el trato tan cercano. Muy contentos con el resultado."
+              </blockquote>
+              <footer class="resena__pie">
+                <div class="resena__avatar" aria-hidden="true">A</div>
+                <div class="resena__quien">
+                  <cite class="resena__nombre">Ali</cite>
+                  <span class="resena__empresa">Limón Hoteles, Cantabria</span>
+                </div>
+                <a class="resena__proyecto" href="/proyectos/limon-hoteles">Ver el proyecto</a>
+              </footer>
+            </div>
+          </article>
 
-          <blockquote class="testimonial-card">
-            <p class="testimonial-card__text">
-              "Superaron nuestras expectativas con su conocimiento tecnológico y su comunicación clara. Un placer trabajar con un equipo tan comprometido."
-            </p>
-            <footer class="testimonial-card__author">
-              <div class="testimonial-card__avatar" aria-hidden="true">OG</div>
-              <div>
-                <cite class="testimonial-card__name">Osvaldo García</cite>
-                <div class="testimonial-card__role">Würth Elektronik</div>
+          <article class="resena">
+            <a class="resena__media" href="/proyectos/el-camino-de-gaudi" aria-label="Ver el caso de éxito de El Camino de Gaudí">
+              <img src="/assets/img/case-camino-gaudi-cover.webp" width="1920" height="1283" alt="Home de elcaminodegaudi.com, la marca y la web que Pindia creó para la asociación" loading="lazy" decoding="async">
+            </a>
+            <div class="resena__body">
+              <div class="resena__fuente">
+                <div class="resena__estrellas" role="img" aria-label="5 de 5 estrellas">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                </div>
+                <span class="resena__origen">Reseña en Google</span>
               </div>
-            </footer>
-          </blockquote>
+              <blockquote class="resena__texto">
+                "He trabajado con ellos varias veces. Cuando quieres buen trabajo pero sobre todo encontrarte con buenas personas, pues este es el lugar. Mi experiencia ha sido con trabajos relacionados con web."
+              </blockquote>
+              <footer class="resena__pie">
+                <div class="resena__avatar" aria-hidden="true">C</div>
+                <div class="resena__quien">
+                  <cite class="resena__nombre">Carlos</cite>
+                  <span class="resena__empresa">El Camino de Gaudí</span>
+                </div>
+                <a class="resena__proyecto" href="/proyectos/el-camino-de-gaudi">Ver el proyecto</a>
+              </footer>
+            </div>
+          </article>
 
         </div>
+
+        <div class="text-center" data-reveal style="margin-top:var(--sp-10)">
+          <a href="https://www.google.com/maps/place/?q=place_id:ChIJVYehhj1JSQ0RAsGm8ax_yuM" target="_blank" rel="noopener" class="btn btn--secondary">Ver las reseñas en Google</a>
+        </div>
+
       </div>
     </section>
 
