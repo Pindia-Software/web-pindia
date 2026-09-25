@@ -33,7 +33,7 @@
       margin-top: var(--sp-8);
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: var(--r-lg);
+      border-radius: 0;
     }
     .case-meta__item { display: flex; flex-direction: column; gap: 4px; }
     .case-meta__label {
@@ -117,8 +117,10 @@
     }
     .logo-split__visual {
       border: 1px solid var(--border);
-      border-radius: var(--r-lg);
-      background: var(--bg-main);
+      border-radius: 0;
+      /* Fondo claro: usa la variante -claro del logo, con el logotipo escrito
+         en navy. El asset original lo lleva en blanco puro y aqui se perderia. */
+      background: transparent;
       aspect-ratio: 4 / 3;
       display: flex;
       align-items: center;
@@ -146,7 +148,7 @@
     .ruta-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: var(--r-lg);
+      border-radius: 0;
       padding: var(--sp-8) var(--sp-6);
       display: flex;
       flex-direction: column;
@@ -193,7 +195,7 @@
     .pilar-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: var(--r-lg);
+      border-radius: 0;
       padding: var(--sp-8);
     }
     .pilar-card__title {
@@ -379,7 +381,7 @@
 
           <div data-reveal="right">
             <div class="logo-split__visual">
-              <img src="/assets/img/case-camino-gaudi-logo.webp" width="400" height="600" alt="Logotipo de El Camino de Gaudí: una C y una G entrelazadas formando un camino" loading="lazy" decoding="async">
+              <img src="/assets/img/case-camino-gaudi-logo-claro.webp" width="400" height="600" alt="Logotipo de El Camino de Gaudí: una C y una G entrelazadas formando un camino" loading="lazy" decoding="async">
             </div>
           </div>
 

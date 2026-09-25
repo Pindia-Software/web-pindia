@@ -224,6 +224,59 @@ Convenciones:
 
 ---
 
+## Estética: qué no hacemos
+
+Dos normas de marca. Beatriz detecta a simple vista lo que parece salido de una IA o de una plantilla, y en una empresa que vende diseño web eso resta.
+
+### Diseño flat: esquina viva en imágenes y tarjetas
+
+**Ninguna imagen, tarjeta, panel o recuadro lleva `border-radius`.** Ni portadas de post, ni fotos de proyecto, ni mockups, ni la mascota del banner de cookies, ni las tarjetas de servicio, precio, testimonio o blog, ni los paneles de cookies, FAQ, formularios o la burbuja de WhatsApp.
+
+En la práctica: los tokens `--r-sm`, `--r-md`, `--r-lg` y `--r-xl` ya no se usan en ningún sitio salvo anillos de foco. Si escribes uno nuevo, casi seguro te estás saltando la norma.
+
+Cuando el radio está en la tarjeta y no en la imagen (`.blog-card`, `.resena`, `.service-card--cover`, `.browser-frame`), el que se quita es el de la tarjeta: dejar la tarjeta redondeada y la imagen cuadrada rompe el borde superior.
+
+Comprobación, que hay que hacer en el navegador porque muchos radios viven en los `<style>` de cada ficha de proyecto y no solo en `styles.css`:
+
+```js
+// en la consola, sobre cualquier página
+[...document.querySelectorAll('*')].filter(el => {
+  const br = getComputedStyle(el).borderTopLeftRadius;
+  if (!br || br === '0px' || br.includes('%')) return false;  // círculos fuera
+  return parseFloat(br) < 999;                                // píldoras fuera
+}).map(el => (el.className || el.tagName) + ' -> ' +
+       getComputedStyle(el).borderTopLeftRadius)
+// solo debe devolver los span de 2px del icono de menú
+```
+
+Se quedan redondos a propósito, y son la única excepción:
+
+- **Avatares circulares** (`50%`) y **píldoras** de botones y etiquetas (`--r-full`). Son formas completas, no esquinas suavizadas.
+- **Anillos de foco** (`:focus-visible`), que son señal de accesibilidad y no decoración.
+- Los `span` de 2px del icono de menú, que son remates de una línea.
+
+### Sin sombras ni degradados decorativos
+
+Los tokens `--shadow-*` y `--glow-*` están en `none`. **No se reintroducen.** Tampoco degradados de relleno: los avatares y los fondos de miniatura van a color plano.
+
+Tres excepciones, y son funcionales, no decorativas:
+
+- **`.timeline__node`**: su `box-shadow: 0 0 0 8px var(--surface-muted)` no es sombra, es un **anillo** que tapa la línea del timeline que pasa por detrás. Si lo quitas, la línea cruza el círculo.
+- **Scrims de legibilidad**: `.carousel .project-card__body` y `.vcard__label` usan `linear-gradient(to top, ...)` para sostener texto blanco sobre foto. Sin ellos el texto no se lee.
+- **`.cookie-banner__dot`**: su `box-shadow` es el fotograma de una animación de pulso, no profundidad.
+
+Comprobación:
+
+```js
+[...document.querySelectorAll('*')].filter(el => {
+  const cs = getComputedStyle(el);
+  return (cs.boxShadow !== 'none') || cs.backgroundImage.includes('gradient');
+}).map(el => (el.className || el.tagName))
+// solo deben salir timeline__node, cookie-banner__dot, los scrims y el ambiente del hero
+```
+
+**Pendiente de decidir:** los degradados radiales de ambiente de las secciones oscuras (`.hero__bg`, `.hero__glow`, `.hero__grid`, y los `::before`/`::after` de `.cta-final`, `.diseno-web`, `.trowelapp` y `.cookie-banner__card`). Dan el aire del hero; quitarlos cambia el carácter de la home.
+
 ## Tipografía: signos prohibidos
 
 Norma para **todo el contenido publicado** (páginas, posts, `<title>`, meta, schema, `llms.txt`). Beatriz identifica estos signos como marca de texto generado por IA y no quiere ninguno en la web.
