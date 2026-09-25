@@ -275,7 +275,11 @@ Comprobación:
 // solo deben salir timeline__node, cookie-banner__dot, los scrims y el ambiente del hero
 ```
 
-**Pendiente de decidir:** los degradados radiales de ambiente de las secciones oscuras (`.hero__bg`, `.hero__glow`, `.hero__grid`, y los `::before`/`::after` de `.cta-final`, `.diseno-web`, `.trowelapp` y `.cookie-banner__card`). Dan el aire del hero; quitarlos cambia el carácter de la home.
+**Los degradados de ambiente también se fueron** (25-sep-2026): el hero es navy plano, sin los dos focos rojos ni la rampa navy-950 a navy-800, y sin el foco que seguía al scroll. Igual con los lavados de `.diseno-web`, `.trowelapp`, `.cta-final` y `.cookie-banner__card`.
+
+Ojo al tocar `.hero__bg`: su `linear-gradient(160deg, ...)` **era el fondo del hero**, no un adorno. Si se borra sin sustituirlo por un color, el hero se queda sin fondo.
+
+**Los patrones de rejilla sí se quedan** (`.hero__grid` y `.cta-final::before`). Están dibujados con `linear-gradient`, pero son líneas de 1px cada 48 o 64px: un patrón, no un degradado. Son lo que evita que el navy quede como un plano muerto.
 
 ## Tipografía: signos prohibidos
 
