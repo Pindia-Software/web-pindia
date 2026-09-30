@@ -119,7 +119,7 @@ El cuello de botella real casi nunca es técnico: es tener claros los procesos y
 
 Durante años la elección era binaria: barato y genérico, o bueno y caro. Ya no.
 
-Usamos IA en nuestro propio proceso de desarrollo, y no de forma decorativa: hemos construido [Diary of a Token](https://pindia.es/proyectos/diaryofatoken.html), un portal editado de forma autónoma por un sistema de IA que tenemos en producción. Sabemos exactamente qué acelera y qué no.
+Usamos IA en nuestro propio proceso de desarrollo, y no de forma decorativa: hemos construido [Diary of a Token](https://pindia.es/proyectos/diaryofatoken), un portal editado de forma autónoma por un sistema de IA que tenemos en producción. Sabemos exactamente qué acelera y qué no.
 
 **Qué acelera:** código repetitivo, primeras versiones, migración de datos, pruebas, documentación. Trabajo necesario pero mecánico. Y en desarrollo el tiempo es el coste, así que eso baja precio y plazo.
 
@@ -139,7 +139,7 @@ Las preguntas que separan a los serios del resto:
 
 ## Cómo trabajamos en Pindia
 
-Somos empresa de desarrollo de software, no revendedores de licencias. La misma gente que haría tu proyecto construye [TrowelApp](https://pindia.es/proyectos/trowelapp.html), un SaaS de gestión para constructoras en producción en varios países sobre **.NET y Azure**.
+Somos empresa de desarrollo de software, no revendedores de licencias. La misma gente que haría tu proyecto construye [TrowelApp](https://pindia.es/proyectos/trowelapp), un SaaS de gestión para constructoras en producción en varios países sobre **.NET y Azure**.
 
 Eso significa tres cosas para tu proyecto: que la arquitectura y la seguridad no son un extra, que podemos integrar tu software con lo que haga falta (incluida tu [web a medida](https://pindia.es/blog/posts/diseno-web-a-medida/) o tu [ERP](https://pindia.es/blog/posts/integracion-erp-web-empresa/)), y que tienes un solo proveedor para web, apps y software interno.
 

@@ -134,7 +134,7 @@ Las preguntas que separan a los serios del resto:
 
 ## Cómo trabajamos en Pindia
 
-Somos empresa de desarrollo de software, no revendedores de licencias de ERP. La misma gente que haría tu sistema construye [TrowelApp](https://pindia.es/proyectos/trowelapp.html), un SaaS de gestión para constructoras en producción en varios países sobre **.NET y Azure**. Sabemos lo que es mantener un sistema de gestión real, con usuarios de verdad, todos los días.
+Somos empresa de desarrollo de software, no revendedores de licencias de ERP. La misma gente que haría tu sistema construye [TrowelApp](https://pindia.es/proyectos/trowelapp), un SaaS de gestión para constructoras en producción en varios países sobre **.NET y Azure**. Sabemos lo que es mantener un sistema de gestión real, con usuarios de verdad, todos los días.
 
 Eso significa tres cosas para tu proyecto: que la arquitectura y la seguridad no son un extra, que podemos integrar tu ERP con lo que haga falta (tu [tienda online](https://pindia.es/blog/posts/tienda-online-a-medida/), tu web o tu facturación), y que tienes un solo proveedor para software de gestión, web y apps. Un **CRM a medida** o cualquier otro **sistema a medida** los abordamos con el mismo criterio.
 

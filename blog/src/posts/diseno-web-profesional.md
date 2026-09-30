@@ -116,7 +116,7 @@ Si a la mayoría te responden con evasivas, ya tienes la respuesta.
 
 Somos empresa de desarrollo, no montadores de plantillas. Los 7 criterios de arriba no son un extra en nuestros proyectos: son el estándar mínimo. Cada web se construye ligera, con el SEO y la accesibilidad desde el diseño, y pensada para que te traiga clientes, no solo para "estar".
 
-La misma gente que haría tu web mantiene producto propio en producción, [TrowelApp](https://pindia.es/proyectos/trowelapp.html), un SaaS sobre .NET y Azure, así que el rendimiento y la seguridad los tratamos como lo que son: parte del trabajo, no un añadido.
+La misma gente que haría tu web mantiene producto propio en producción, [TrowelApp](https://pindia.es/proyectos/trowelapp), un SaaS sobre .NET y Azure, así que el rendimiento y la seguridad los tratamos como lo que son: parte del trabajo, no un añadido.
 
 Trabajamos desde Santa Cruz de Bezana para toda Cantabria y España.
 

@@ -48,7 +48,7 @@ No son dos religiones. Son dos puntos de un espectro, y el híbrido vive en medi
 
 **Cuando quieres un mercado de proveedores amplio.** Es un argumento poco romántico y muy real: si mañana no te llevas bien con tu agencia, encontrar quien coja el relevo es fácil.
 
-Es exactamente lo que hicimos en la web de [Clínica Ofelia Casanueva](https://pindia.es/proyectos/clinica-ofelia-casanueva.html): WordPress con tema hijo, glosario de tratamientos que la clínica amplía sola y contenido que crece sin tocar código. Ahí a medida habría sido gastar de más.
+Es exactamente lo que hicimos en la web de [Clínica Ofelia Casanueva](https://pindia.es/proyectos/clinica-ofelia-casanueva): WordPress con tema hijo, glosario de tratamientos que la clínica amplía sola y contenido que crece sin tocar código. Ahí a medida habría sido gastar de más.
 
 ## Cuándo WordPress se te queda corto
 
@@ -66,7 +66,7 @@ Cuando detrás de la web hay un producto, no un folleto. Cuando el rendimiento o
 
 Un ejemplo nuestro: una empresa industrial necesitaba un configurador B2B donde el cliente elegía acabados, dimensiones y opciones y obtenía un PDF con presupuesto vinculante. En WordPress salía encadenando tres plugins, y era un castillo de naipes. A medida quedó robusto y barato de mantener.
 
-Y otro que puedes auditar tú: [esta misma web](https://pindia.es/proyectos/web-pindia.html) es a medida, con Lighthouse 100. Ábrela en el móvil y compárala con las webs de las agencias que estés valorando. Es la prueba más honesta que te podemos dar.
+Y otro que puedes auditar tú: [esta misma web](https://pindia.es/proyectos/web-pindia) es a medida, con Lighthouse 100. Ábrela en el móvil y compárala con las webs de las agencias que estés valorando. Es la prueba más honesta que te podemos dar.
 
 ## Plantilla o a medida: la comparación que casi nadie hace bien
 
@@ -105,7 +105,7 @@ Si quieres bajar la decisión a datos en lugar de opiniones, mira estas tres:
 
 En muchos casos la respuesta correcta es mixta, y no es un apaño: es la mejor ingeniería disponible.
 
-Una web institucional en WordPress para que el cliente publique tranquilo, con la parte compleja a medida donde tiene que estar. Es lo que montamos en [Limón Hoteles](https://pindia.es/proyectos/limon-hoteles.html): cinco alojamientos bajo una marca, diseño a medida sobre WordPress, la reserva conectada al motor Avirato en la landing de cada hotel y el sitio bilingüe. El equipo edita sus contenidos y la integración crítica está resuelta por código.
+Una web institucional en WordPress para que el cliente publique tranquilo, con la parte compleja a medida donde tiene que estar. Es lo que montamos en [Limón Hoteles](https://pindia.es/proyectos/limon-hoteles): cinco alojamientos bajo una marca, diseño a medida sobre WordPress, la reserva conectada al motor Avirato en la landing de cada hotel y el sitio bilingüe. El equipo edita sus contenidos y la integración crítica está resuelta por código.
 
 También usamos generadores estáticos cuando lo que manda es velocidad y SEO, con un editor sencillo para el cliente. Para una pyme que quiere una web rápida y no publica a diario, suele ser la opción más sensata de las tres.
 

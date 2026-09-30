@@ -141,7 +141,7 @@ Las preguntas que separan a los serios del resto:
 
 ## Cómo trabajamos en Pindia
 
-Somos empresa de desarrollo, no revendedores de plantillas. La misma gente que haría tu tienda construye [TrowelApp](https://pindia.es/proyectos/trowelapp.html), un SaaS de gestión para constructoras en producción en varios países sobre **.NET y Azure**.
+Somos empresa de desarrollo, no revendedores de plantillas. La misma gente que haría tu tienda construye [TrowelApp](https://pindia.es/proyectos/trowelapp), un SaaS de gestión para constructoras en producción en varios países sobre **.NET y Azure**.
 
 Eso significa tres cosas para tu proyecto: que el rendimiento y la seguridad de los pagos no son un extra, que podemos integrar tu tienda con lo que haga falta (tu ERP, tu almacén, tu [software a medida](https://pindia.es/blog/posts/software-a-medida/)), y que tienes un solo proveedor para web, tienda y software interno.
 

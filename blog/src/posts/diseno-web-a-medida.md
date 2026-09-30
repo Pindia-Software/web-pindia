@@ -139,7 +139,7 @@ Si quieres que salga a tiempo, empieza a preparar textos y fotos el primer día.
 
 Durante años la elección era binaria: barato y genérico, o bueno y caro. Ya no.
 
-Usamos IA en nuestro propio proceso de desarrollo, y no de forma decorativa: hemos construido [Diary of a Token](https://pindia.es/proyectos/diaryofatoken.html), un portal editado de forma autónoma por un sistema de IA que tenemos en producción. Sabemos exactamente qué acelera y qué no.
+Usamos IA en nuestro propio proceso de desarrollo, y no de forma decorativa: hemos construido [Diary of a Token](https://pindia.es/proyectos/diaryofatoken), un portal editado de forma autónoma por un sistema de IA que tenemos en producción. Sabemos exactamente qué acelera y qué no.
 
 **Qué acelera:** maquetación, código repetitivo, migración de contenidos, primeras versiones, metadatos. Trabajo necesario pero mecánico. Y en desarrollo el tiempo es el coste, así que eso baja precio y plazo.
 
@@ -161,7 +161,7 @@ Y una comprobación gratis que puedes hacer ahora mismo: coge tres webs de su po
 
 ## Cómo trabajamos en Pindia
 
-Somos empresa de desarrollo de software, no montadores de plantillas. La misma gente que hace tu web construye [TrowelApp](https://pindia.es/proyectos/trowelapp.html), un SaaS de gestión para constructoras en producción en varios países sobre .NET y Azure.
+Somos empresa de desarrollo de software, no montadores de plantillas. La misma gente que hace tu web construye [TrowelApp](https://pindia.es/proyectos/trowelapp), un SaaS de gestión para constructoras en producción en varios países sobre .NET y Azure.
 
 Eso significa tres cosas para tu proyecto: que el rendimiento y la arquitectura no son un extra, que podemos integrar tu web con lo que haga falta, y que si mañana necesitas una app o un software interno, no tienes que cambiar de proveedor.
 
