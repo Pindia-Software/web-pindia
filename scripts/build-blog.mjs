@@ -25,6 +25,7 @@
  */
 
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync, rmSync } from 'fs';
+import { execFileSync } from 'child_process';
 import { join, basename, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -756,37 +757,87 @@ function renderRSS(posts) {
 </rss>`;
 }
 
+// ── Fechas de última modificación (lastmod) ──────────────────────────────────
+// La fecha sale de git, que es cuando el fichero cambió de verdad. Si git no
+// puede responder (clon superficial en CI, repo sin historial) se devuelve null
+// y la etiqueta <lastmod> se omite: el estándar la marca como opcional, y es
+// preferible callar a mentir. Ponerle la fecha de hoy a todas las URLs en cada
+// build es lo que enseña a Google a ignorar el campo.
+
+const GIT_FULL_HISTORY = (() => {
+  try {
+    const shallow = execFileSync('git', ['rev-parse', '--is-shallow-repository'], {
+      cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+    return shallow === 'false';
+  } catch {
+    return false;
+  }
+})();
+
+const gitDateCache = new Map();
+
+function gitLastModified(relPath) {
+  if (!GIT_FULL_HISTORY) return null;
+  if (gitDateCache.has(relPath)) return gitDateCache.get(relPath);
+  let date = null;
+  try {
+    const out = execFileSync('git', ['log', '-1', '--format=%cs', '--', relPath], {
+      cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(out)) date = out;
+  } catch {
+    date = null;
+  }
+  gitDateCache.set(relPath, date);
+  return date;
+}
+
+function maxDate(dates) {
+  const valid = dates.filter(Boolean);
+  return valid.length ? valid.reduce((a, b) => (a > b ? a : b)) : null;
+}
+
+// Tocar un partial (navbar, footer, head) cambia todas las páginas, así que la
+// fecha de una página es la más reciente entre su fuente y la de los partials.
+const PARTIALS_DATE = gitLastModified('src/partials');
+
+function pageLastModified(relPath) {
+  return maxDate([gitLastModified(relPath), PARTIALS_DATE]);
+}
+
 // ── Sitemap ──────────────────────────────────────────────────────────────────
 
 function renderSitemap(posts, totalPages, tagPlan = []) {
-  const today = formatDateISO(new Date());
+  // Los listados cambian cuando se publica un post, no cuando se compila.
+  const newestPost = maxDate(posts.map(({ data }) => formatDateISO(data.date)));
   const staticUrls = [
-    { loc: `${SITE_URL}/`,                                   lastmod: today, changefreq: 'weekly',  priority: '1.0' },
-    { loc: `${SITE_URL}/servicios/`,                         lastmod: today, changefreq: 'monthly', priority: '0.9' },
-    { loc: `${SITE_URL}/servicios/diseno-web`,               lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/servicios/diseno-web-torrelavega`,   lastmod: today, changefreq: 'monthly', priority: '0.7' },
-    { loc: `${SITE_URL}/servicios/desarrollo-software`,      lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/servicios/apps-mobile-api`,          lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/servicios/mantenimiento-web`,        lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/servicios/posicionamiento-web`,      lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/trowelapp/`,                         lastmod: today, changefreq: 'monthly', priority: '0.9' },
-    { loc: `${SITE_URL}/proyectos/`,                         lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/proyectos/trowelapp`,                lastmod: today, changefreq: 'monthly', priority: '0.9' },
-    { loc: `${SITE_URL}/proyectos/web-trowelapp`,            lastmod: today, changefreq: 'monthly', priority: '0.7' },
-    { loc: `${SITE_URL}/proyectos/web-pindia`,               lastmod: today, changefreq: 'monthly', priority: '0.7' },
-    { loc: `${SITE_URL}/proyectos/diaryofatoken`,            lastmod: today, changefreq: 'monthly', priority: '0.7' },
-    { loc: `${SITE_URL}/proyectos/el-camino-de-gaudi`,       lastmod: today, changefreq: 'monthly', priority: '0.7' },
-    { loc: `${SITE_URL}/proyectos/clinica-ofelia-casanueva`, lastmod: today, changefreq: 'monthly', priority: '0.7' },
-    { loc: `${SITE_URL}/proyectos/limon-hoteles`,            lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/blog/`,                              lastmod: today, changefreq: 'weekly',  priority: '0.7' },
-    { loc: `${SITE_URL}/contacto/`,                          lastmod: today, changefreq: 'monthly', priority: '0.8' },
-    { loc: `${SITE_URL}/aviso-legal/`,                       lastmod: today, changefreq: 'yearly',  priority: '0.2' },
-    { loc: `${SITE_URL}/politica-privacidad/`,               lastmod: today, changefreq: 'yearly',  priority: '0.2' },
-    { loc: `${SITE_URL}/politica-cookies/`,                  lastmod: today, changefreq: 'yearly',  priority: '0.2' },
+    { loc: `${SITE_URL}/`,                                   lastmod: pageLastModified('src/index.html'), changefreq: 'weekly',  priority: '1.0' },
+    { loc: `${SITE_URL}/servicios/`,                         lastmod: pageLastModified('src/servicios/index.html'), changefreq: 'monthly', priority: '0.9' },
+    { loc: `${SITE_URL}/servicios/diseno-web`,               lastmod: pageLastModified('src/servicios/diseno-web.html'), changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/diseno-web-torrelavega`,   lastmod: pageLastModified('src/servicios/diseno-web-torrelavega.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/servicios/desarrollo-software`,      lastmod: pageLastModified('src/servicios/desarrollo-software.html'), changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/apps-mobile-api`,          lastmod: pageLastModified('src/servicios/apps-mobile-api.html'), changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/mantenimiento-web`,        lastmod: pageLastModified('src/servicios/mantenimiento-web.html'), changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/servicios/posicionamiento-web`,      lastmod: pageLastModified('src/servicios/posicionamiento-web.html'), changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/trowelapp/`,                         lastmod: pageLastModified('src/trowelapp/index.html'), changefreq: 'monthly', priority: '0.9' },
+    { loc: `${SITE_URL}/proyectos/`,                         lastmod: pageLastModified('src/proyectos/index.html'), changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/proyectos/trowelapp`,                lastmod: pageLastModified('src/proyectos/trowelapp.html'), changefreq: 'monthly', priority: '0.9' },
+    { loc: `${SITE_URL}/proyectos/web-trowelapp`,            lastmod: pageLastModified('src/proyectos/web-trowelapp.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/web-pindia`,               lastmod: pageLastModified('src/proyectos/web-pindia.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/diaryofatoken`,            lastmod: pageLastModified('src/proyectos/diaryofatoken.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/el-camino-de-gaudi`,       lastmod: pageLastModified('src/proyectos/el-camino-de-gaudi.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/clinica-ofelia-casanueva`, lastmod: pageLastModified('src/proyectos/clinica-ofelia-casanueva.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/limon-hoteles`,            lastmod: pageLastModified('src/proyectos/limon-hoteles.html'), changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/blog/`,                              lastmod: newestPost, changefreq: 'weekly',  priority: '0.7' },
+    { loc: `${SITE_URL}/contacto/`,                          lastmod: pageLastModified('src/contacto/index.html'), changefreq: 'monthly', priority: '0.8' },
+    { loc: `${SITE_URL}/aviso-legal/`,                       lastmod: pageLastModified('src/aviso-legal/index.html'), changefreq: 'yearly',  priority: '0.2' },
+    { loc: `${SITE_URL}/politica-privacidad/`,               lastmod: pageLastModified('src/politica-privacidad/index.html'), changefreq: 'yearly',  priority: '0.2' },
+    { loc: `${SITE_URL}/politica-cookies/`,                  lastmod: pageLastModified('src/politica-cookies/index.html'), changefreq: 'yearly',  priority: '0.2' },
   ];
 
   const pageUrls = Array.from({ length: totalPages - 1 }, (_, i) => ({
-    loc: `${SITE_URL}/blog/page/${i + 2}/`, lastmod: today, changefreq: 'weekly', priority: '0.5',
+    loc: `${SITE_URL}/blog/page/${i + 2}/`, lastmod: newestPost, changefreq: 'weekly', priority: '0.5',
   }));
 
   const postUrls = posts.map(({ slug, data }) => ({
@@ -796,23 +847,24 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
     priority: '0.6',
   }));
 
-  const tagUrls = tagPlan.flatMap(({ tag, totalPages: tp }) =>
+  const tagUrls = tagPlan.flatMap(({ tag, totalPages: tp, lastmod }) =>
     Array.from({ length: tp }, (_, i) => i + 1).map(n => ({
       loc: `${SITE_URL}/blog/tag/${tag.slug}/${n === 1 ? '' : `page/${n}/`}`,
-      lastmod: today,
+      lastmod,
       changefreq: 'weekly',
       priority: '0.5',
     }))
   );
 
   const all = [...staticUrls, ...pageUrls, ...postUrls, ...tagUrls];
-  const entries = all.map(({ loc, lastmod, changefreq, priority }) => `
-  <url>
-    <loc>${loc}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
-  </url>`.trim()).join('\n\n  ');
+  const entries = all.map(({ loc, lastmod, changefreq, priority }) => [
+    '  <url>',
+    `    <loc>${loc}</loc>`,
+    ...(lastmod ? [`    <lastmod>${lastmod}</lastmod>`] : []),
+    `    <changefreq>${changefreq}</changefreq>`,
+    `    <priority>${priority}</priority>`,
+    '  </url>',
+  ].join('\n').trim()).join('\n\n  ');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -892,7 +944,7 @@ for (const tag of tagList) {
     (Array.isArray(p.data.tags) ? p.data.tags : []).some(t => slugify(t) === tag.slug)
   );
   const tp = Math.max(1, Math.ceil(tagPosts.length / PER_PAGE));
-  tagPlan.push({ tag, totalPages: tp });
+  tagPlan.push({ tag, totalPages: tp, lastmod: maxDate(tagPosts.map(p => formatDateISO(p.data.date))) });
 
   for (let n = 1; n <= tp; n++) {
     const slice = tagPosts.slice((n - 1) * PER_PAGE, n * PER_PAGE);
