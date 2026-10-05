@@ -117,7 +117,7 @@ Nos llamaron porque las consultas comerciales habían bajado y no sabían por qu
 
 Dos semanas de trabajo, y el tiempo de carga bajó a 1,2 segundos. Tres meses después, las consultas orgánicas habían subido un 35 % sin haber tocado una sola línea del contenido.
 
-No hay magia: llevaban años perdiendo gente que ni siquiera llegaba a leer su propuesta.
+No hay magia: llevaban años perdiendo gente que ni siquiera llegaba a leer su propuesta. Si tu empresa también está en el Besaya, te contamos cómo trabajamos allí en [diseño web en Torrelavega](https://pindia.es/servicios/diseno-web-torrelavega).
 
 Y hay un punto en el que optimizar deja de salir a cuenta y compensa más un [diseño web a medida](https://pindia.es/servicios/diseno-web) construido rápido desde el principio.
 

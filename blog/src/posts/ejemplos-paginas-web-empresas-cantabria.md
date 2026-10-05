@@ -68,6 +68,8 @@ Si tienes un restaurante, el detalle completo está en [diseño web para restaur
 
 **Lo que se podría mejorar:** el histórico. Tienen obras de hace años sin documentar que valdrían tanto como las nuevas.
 
+Si tu empresa es de la comarca, el detalle de cómo trabajamos allí está en [diseño web en Torrelavega](https://pindia.es/servicios/diseno-web-torrelavega).
+
 ## 5. Consultora de ingeniería en Castro Urdiales
 
 **Lo que había:** una web correcta y sin nada que la diferenciara de otras cincuenta.
