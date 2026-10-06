@@ -10,7 +10,7 @@
 
 ## 0 · NAP — RESUELTO (30-jul) · CAMBIADO (17-sep)
 
-> 🔄 **Cambio 17-sep-2026:** el **único teléfono de Pindia pasa a ser `+34 679 55 15 18`** (móvil + WhatsApp). La web ya solo muestra ese número (footer, contacto, legales, schema) y tiene burbuja de WhatsApp. **En la ficha:** cambio enviado el 17-sep (`679 55 15 18` único y principal, `942 18 97 33` eliminado), pendiente de revisión de Google. Lo de abajo queda como histórico.
+> 🔄 **Cambio 17-sep-2026:** el **único teléfono de Pindia pasa a ser `+34 679 55 15 18`** (móvil + WhatsApp). La web ya solo muestra ese número (footer, contacto, legales, schema) y tiene burbuja de WhatsApp. **En la ficha:** cambio enviado el 17-sep (`679 55 15 18` único y principal, `942 18 97 33` eliminado), **aprobado por Google** (comprobado el 6-oct). Lo de abajo queda como histórico.
 
 > ✅ **Decisión tomada:** teléfono **principal de la ficha = `942 18 97 33`** (fijo, el mismo que la web) + **secundario = `679 55 15 18`** (móvil/WhatsApp). El 663 queda solo en TrowelApp. **No hay que tocar pindia.es** (ambos números ya conviven en la web). Falta solo **añadir el 2º número en la ficha** (Editar perfil → Información de contacto → Teléfono → "Agregar número de teléfono").
 
@@ -183,6 +183,8 @@ Hablemos de tu proyecto.
 
 ## 8 · Preguntas y respuestas (sembrar tú misma desde otra cuenta)
 
+> **Cerrado (6-oct-2026):** la sección no aparece en la ficha pública ni en Maps. Los textos se guardan por si Google la vuelve a mostrar.
+
 > **⏳ PENDIENTE (27-jul):** la sección de Q&A no aparece todavía ni en móvil ni en escritorio → la ficha aún no está pública/verificada o Google no ha reindexado la parte pública. Sembrar en cuanto la sección aparezca (verificación resuelta). Los textos ya están abajo, listos.
 
 Publica la pregunta desde una cuenta personal y **responde desde el perfil del negocio**. Da señal de relevancia por keyword.
@@ -295,9 +297,9 @@ Hola [Nombre], sin prisa y sin agobiar 🙂 ¿pudiste ver lo de la reseña de Go
 
 **Pendiente para el 9-oct**
 
-- [ ] Comprobar que Google ha aprobado el cambio de teléfono del 17-sep (Editar perfil → Información de contacto)
-- [ ] Web con UTM (§9): comprobar que el enlace de la ficha la lleva
-- [ ] Q&A (§8): mirar si la sección existe en la ficha pública. Si no aparece, cerrar el punto (Google la está retirando)
+- [x] Google ha aprobado el cambio de teléfono del 17-sep: `679 55 15 18` único *(comprobado 6-oct)*
+- [x] Web con UTM (§9) puesta en el campo «Sitio web» de la ficha *(comprobado 6-oct)*
+- [x] Q&A (§8): la sección no aparece en la ficha pública ni en Maps. Punto cerrado *(comprobado 6-oct)*
 
 **Recurrente (no bloquea el cierre de la tarjeta)**
 
