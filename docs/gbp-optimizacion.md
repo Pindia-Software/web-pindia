@@ -275,20 +275,31 @@ Hola [Nombre], sin prisa y sin agobiar 🙂 ¿pudiste ver lo de la reseña de Go
 
 ## Checklist de aplicación
 
+> Revisada el 6-oct-2026. Fecha objetivo de la tarjeta #13483: **viernes 9-oct-2026**.
+
+**Hecho**
+
 - [x] Acceso Administrador al perfil concedido *(27-jul)*
+- [x] Ficha verificada, escudo azul *(27-jul)*
 - [x] Material gráfico preparado en PNG/JPG: logo + portada + 6 fotos de galería (§6)
-- [x] **Decidir teléfono principal del NAP** → principal `942 18 97 33` + secundario `679 55 15 18` *(30-jul)*
-- [x] Poner en la ficha el teléfono principal `942 18 97 33` + añadir secundario `679 55 15 18` *(30-jul)*
-- [x] **17-sep:** en la ficha, `679 55 15 18` como principal y eliminado el `942 18 97 33` (enviado; pendiente de revisión de Google)
-- [ ] Verificar dirección y horario idénticos a la web
-- [ ] Categoría principal `Diseñador de páginas web` + 3 secundarias
-- [ ] Pegar descripción (§3)
-- [ ] Cargar servicios (§4)
-- [ ] Marcar atributos (§5)
-- [ ] Subir logo + portada + fotos de galería (§6) — archivos ya listos
-- [ ] Hacer/aportar fotos reales de equipo y oficina (§6)
-- [ ] Publicar Post 1 y programar Post 2 (§7)
-- [ ] Sembrar 3 preguntas Q&A (§8)
-- [ ] Poner web con UTM (§9)
-- [ ] Generar enlace de reseñas y arrancar #13484
-```
+- [x] Dirección y horario idénticos a la web *(27-jul)*
+- [x] Categoría principal `Diseñador de páginas web` + 3 secundarias *(27-jul)*
+- [x] Descripción (§3), versión fusionada *(27-jul)*
+- [x] Servicios (§4) *(27-jul)*
+- [x] Atributos (§5) *(27-jul)*
+- [x] Logo + portada + 6 fotos de galería subidos (§6) *(27-jul)*
+- [x] Post 1 publicado (§7) *(27-jul)*
+- [x] Enlace de reseñas generado y guardado; reseñas siguen en #13484 *(27-jul)*
+- [x] Teléfono principal `942 18 97 33` + secundario `679 55 15 18` *(30-jul)*
+- [x] **17-sep:** `679 55 15 18` como único teléfono y eliminado el `942 18 97 33` (enviado a revisión de Google)
+
+**Pendiente para el 9-oct**
+
+- [ ] Comprobar que Google ha aprobado el cambio de teléfono del 17-sep (Editar perfil → Información de contacto)
+- [ ] Web con UTM (§9): comprobar que el enlace de la ficha la lleva
+- [ ] Q&A (§8): mirar si la sección existe en la ficha pública. Si no aparece, cerrar el punto (Google la está retirando)
+
+**Recurrente (no bloquea el cierre de la tarjeta)**
+
+- [ ] Publicar un post cada 1 o 2 semanas. Siguiente: Post 2, mantenimiento (§7); no consta publicado
+- [ ] Fotos reales de equipo y oficina (§6), y después 1 o 2 fotos nuevas al mes
