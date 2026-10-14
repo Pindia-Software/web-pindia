@@ -828,6 +828,8 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
     { loc: `${SITE_URL}/proyectos/diaryofatoken`,            lastmod: pageLastModified('src/proyectos/diaryofatoken.html'), changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/proyectos/el-camino-de-gaudi`,       lastmod: pageLastModified('src/proyectos/el-camino-de-gaudi.html'), changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/proyectos/clinica-ofelia-casanueva`, lastmod: pageLastModified('src/proyectos/clinica-ofelia-casanueva.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/uro-capital`,              lastmod: pageLastModified('src/proyectos/uro-capital.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/planfutbol`,               lastmod: pageLastModified('src/proyectos/planfutbol.html'), changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/proyectos/limon-hoteles`,            lastmod: pageLastModified('src/proyectos/limon-hoteles.html'), changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/blog/`,                              lastmod: newestPost, changefreq: 'weekly',  priority: '0.7' },
     { loc: `${SITE_URL}/contacto/`,                          lastmod: pageLastModified('src/contacto/index.html'), changefreq: 'monthly', priority: '0.8' },

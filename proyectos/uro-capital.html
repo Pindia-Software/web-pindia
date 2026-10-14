@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Uro Capital: caso de éxito de diseño y desarrollo web | Pindia Software</title>
+  <meta name="description" content="Web corporativa para Uro Capital, firma que invierte en pymes tradicionales e inmobiliario: una sola página con tono editorial, casos con cifras, sin cookies ni rastreadores.">
+  <link rel="canonical" href="https://pindia.es/proyectos/uro-capital">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="article">
+  <meta property="og:title"       content="Caso de éxito: Uro Capital | Pindia Software">
+  <meta property="og:description" content="Web corporativa de una sola página para una firma de inversión en economía real: tono editorial, casos con cifras y ni una cookie.">
+  <meta property="og:image"       content="https://pindia.es/assets/img/case-uro/home.webp">
+  <meta property="og:url"         content="https://pindia.es/proyectos/uro-capital">
+  <meta property="og:locale"      content="es_ES">
+  <meta property="og:site_name"   content="Pindia Software">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Caso de éxito: Uro Capital | Pindia Software">
+  <meta name="twitter:description" content="Web corporativa de una sola página para una firma de inversión: tono editorial, casos con cifras y sin cookies.">
+  <meta name="twitter:image"       content="https://pindia.es/assets/img/case-uro/home.webp">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg">
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/favicons/favicon.png">
+  <link rel="manifest"         href="/manifest.webmanifest">
+  <meta name="theme-color"     content="#22293E">
+
+  <!-- Inter self-hosted (variable, latin subset). Preload del woff2 crítico -->
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2" crossorigin>
+
+  <!-- Critical CSS (tokens + base + responsive merged, minified) -->
+  <link rel="stylesheet" href="/css/styles.min.css?v=20260925a">
+
+  <!-- Estilos específicos de la página de caso de éxito -->
+  <style>
+    .case-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--sp-6);
+      padding: var(--sp-6) var(--sp-8);
+      margin-top: var(--sp-8);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 0;
+    }
+    .case-meta__item { display: flex; flex-direction: column; gap: 4px; }
+    .case-meta__label {
+      font-size: var(--text-xs);
+      font-weight: var(--w-md);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-3);
+    }
+    .case-meta__value {
+      font-size: var(--text-base);
+      font-weight: var(--w-md);
+      color: var(--text-1);
+    }
+    .case-meta__value a { color: var(--accent); text-decoration: none; }
+    .case-meta__value a:hover { text-decoration: underline; }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: var(--sp-6) 0 0;
+      display: grid;
+      gap: var(--sp-3);
+    }
+    .check-list li {
+      display: flex;
+      gap: var(--sp-3);
+      align-items: flex-start;
+      color: var(--text-2);
+      font-size: var(--text-base);
+      line-height: var(--lh-base);
+    }
+    .check-list li::before {
+      content: "";
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      background: rgba(232 65 58 / 0.15);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E8413A' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      background-size: 12px 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    /* Capturas del sitio */
+    .shot {
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 0;
+      overflow: hidden;
+      background: var(--bg-card);
+    }
+    .shot img { display: block; width: 100%; height: auto; }
+    .shot figcaption {
+      padding: var(--sp-3) var(--sp-5);
+      font-size: var(--text-sm);
+      color: var(--text-3);
+      border-top: 1px solid var(--border);
+    }
+    .mock-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 880px) { .mock-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    /* Chips de stack y etiquetas */
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--sp-3);
+      margin-top: var(--sp-6);
+    }
+    .chip-row .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .45rem 1rem;
+      border-radius: var(--r-full);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      font-size: var(--text-sm);
+      font-weight: var(--w-md);
+      color: var(--text-2);
+    }
+    .chip-row .chip--accent {
+      background: rgba(232 65 58 / 0.08);
+      color: var(--accent);
+      border-color: rgba(232 65 58 / 0.25);
+    }
+  </style>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Inicio",    "item": "https://pindia.es/" },
+      { "@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://pindia.es/proyectos/" },
+      { "@type": "ListItem", "position": 3, "name": "Uro Capital", "item": "https://pindia.es/proyectos/uro-capital" }
+    ]
+  }
+  </script>
+
+  <!-- Schema: CreativeWork (caso de éxito) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Uro Capital: web corporativa de firma de inversión",
+    "description": "Diseño y desarrollo de la web corporativa de Uro Capital, firma que adquiere pymes de sectores tradicionales y desarrolla operaciones inmobiliarias de valor añadido: una sola página con tono editorial, casos con cifras, vídeo en el hero, fuentes propias y sin cookies ni rastreadores.",
+    "url": "https://pindia.es/proyectos/uro-capital",
+    "image": "https://pindia.es/assets/img/case-uro/home.webp",
+    "author":  { "@id": "https://pindia.es/#organization" },
+    "creator": { "@id": "https://pindia.es/#organization" },
+    "datePublished": "2026-10-14",
+    "inLanguage": "es-ES",
+    "keywords": "diseño web, desarrollo web, web corporativa, one page, HTML a medida, inversión, private equity, inmobiliario, Gran Canaria",
+    "about": [
+      "Diseño web", "Desarrollo web", "Web corporativa", "Inversión", "Inmobiliario"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip link (accesibilidad) -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <header class="nav" role="banner">
+    <div class="container">
+      <div class="nav__inner">
+
+        <a href="/" class="nav__logo" aria-label="Pindia Software, inicio">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" width="140" height="56" loading="eager">
+        </a>
+
+        <nav class="nav__links" aria-label="Navegación principal">
+          <a href="/servicios/" class="nav__link">Servicios</a>
+          <a href="/proyectos/" class="nav__link" aria-current="page">Proyectos</a>
+          <a href="/blog/" class="nav__link">Blog</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a href="/contacto/" class="btn btn--primary">Hablemos</a>
+          <button
+            class="nav__toggle"
+            aria-expanded="false"
+            aria-controls="nav-drawer"
+            aria-label="Abrir menú">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <nav id="nav-drawer" class="nav__drawer" aria-label="Menú móvil">
+    <a href="/servicios/" class="nav__link">Servicios</a>
+    <a href="/proyectos/" class="nav__link" aria-current="page">Proyectos</a>
+    <a href="/blog/" class="nav__link">Blog</a>
+    <a href="/contacto/" class="btn btn--primary btn--lg" style="width:100%;margin-top:auto;">Hablemos de tu proyecto</a>
+  </nav>
+
+  <!-- ============================================================
+       MAIN
+  ============================================================ -->
+  <main id="main">
+
+    <!-- ── HERO PEQUEÑO ──────────────────────────────────────── -->
+    <section class="page-hero" aria-labelledby="page-hero-title" style="padding-top:calc(var(--nav-h) + 80px);padding-bottom:var(--sp-16);background:var(--bg-main);">
+      <div class="container">
+        <nav aria-label="Ruta de navegación" style="margin-bottom:var(--sp-6)">
+          <ol style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--sp-2);font-size:var(--text-sm);color:var(--text-3)">
+            <li><a href="/" style="color:var(--text-3);text-decoration:none;">Inicio</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li><a href="/proyectos/" style="color:var(--text-3);text-decoration:none;">Proyectos</a></li>
+            <li aria-hidden="true" style="color:var(--text-4)">/</li>
+            <li style="color:var(--text-1)">Uro Capital</li>
+          </ol>
+        </nav>
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Caso de éxito · Diseño y desarrollo web</span>
+          <h1 id="page-hero-title" class="section__headline" style="font-size:clamp(2rem,5vw,3.5rem)">
+            <span class="text-accent">Uro Capital</span>: una firma de inversión que se explica en una página
+          </h1>
+          <p class="section__sub">
+            Uro Capital compra y profesionaliza pequeñas empresas de sectores tradicionales, como la construcción, y desarrolla operaciones inmobiliarias de valor añadido. Hicimos el <a href="/servicios/diseno-web" style="color:var(--accent);">diseño y desarrollo web a medida</a> de su web corporativa: una sola página que se lee como una memoria de inversión, con la tesis, los casos con cifras y el equipo, y sin una sola cookie.
+          </p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-4);margin-top:var(--sp-8)">
+            <a href="https://www.urocapital.es/" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Visitar web ↗</a>
+            <a href="/contacto/" class="btn btn--secondary btn--lg">Quiero algo así</a>
+          </div>
+        </div>
+
+        <div class="case-meta" data-reveal>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Cliente</span>
+            <span class="case-meta__value">Uro Capital</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Sector</span>
+            <span class="case-meta__value">Inversión · Inmobiliario</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Ubicación</span>
+            <span class="case-meta__value">Gran Canaria</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Año</span>
+            <span class="case-meta__value">2026</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">Alcance</span>
+            <span class="case-meta__value">Diseño · Desarrollo</span>
+          </div>
+          <div class="case-meta__item">
+            <span class="case-meta__label">URL</span>
+            <span class="case-meta__value"><a href="https://www.urocapital.es/" target="_blank" rel="noopener">urocapital.es ↗</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EL RETO ───────────────────────────────────────────── -->
+    <section class="section" aria-labelledby="reto-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">El reto</span>
+          <h2 id="reto-title" class="section__headline">Transmitir solidez <span class="text-accent">sin sonar a fondo</span></h2>
+          <p class="section__sub">
+            Uro Capital habla con dos públicos que no se parecen: el fundador de una empresa familiar que piensa en vender o en su relevo, y el socio o inversor que mira una operación inmobiliaria. Los dos desconfían del lenguaje financiero de catálogo. La web tenía que explicar qué hace la firma y por qué es de fiar con datos concretos, sin promesas de crecimiento ni jerga de capital riesgo.
+          </p>
+          <p style="color:var(--text-2);line-height:var(--lh-base);margin-top:var(--sp-4)">
+            Cuatro objetivos guiaron el proyecto:
+          </p>
+          <ul class="check-list">
+            <li><strong>Una sola lectura de principio a fin:</strong> convicción, líneas de inversión, tesis, casos y equipo, en el orden en que alguien decide si confía.</li>
+            <li><strong>Marca con historia:</strong> contar el nombre. El uro fue el gran bóvido salvaje de Europa y el antepasado del ganado actual, y encarna lo que la firma busca: arraigo y continuidad.</li>
+            <li><strong>Pruebas antes que adjetivos:</strong> los dos casos publicados llevan sus cifras (años de historia, facturación, viviendas, GDV).</li>
+            <li><strong>Nada que pedir al visitante:</strong> sin cookies, sin rastreadores y sin formularios. El contacto es un correo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── HERO VISUAL ───────────────────────────────────────── -->
+    <section class="section section--alt" aria-label="Captura de la web">
+      <div class="container">
+        <div data-reveal>
+          <div class="browser-frame">
+            <div class="browser-frame__bar" aria-hidden="true">
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__dot"></div>
+              <div class="browser-frame__url">urocapital.es</div>
+            </div>
+            <div class="browser-frame__content">
+              <img src="/assets/img/case-uro/home.webp" width="1920" height="1080" alt="Home de urocapital.es: un toro en penumbra junto al titular «Invertimos en el tejido productivo español»" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── DECISIONES DE DISEÑO Y UX ─────────────────────────── -->
+    <section class="section" aria-labelledby="decisiones-title">
+      <div class="container">
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Solución · Decisiones de diseño y UX</span>
+          <h2 id="decisiones-title" class="section__headline">Seis decisiones que definen la web</h2>
+          <p class="section__sub">
+            Una firma que presume de disciplina no puede tener una web recargada. Cada decisión quita algo o lo pone en su sitio.
+          </p>
+        </div>
+
+        <div class="especialidades__grid especialidades__grid--3" data-reveal-group>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="service-card__title">Una página, cinco capítulos numerados</h3>
+            <p class="service-card__desc">Convicción, qué hacemos, tesis, casos y equipo, numerados del 01 al 05 como las secciones de una memoria de inversión. El menú lleva a cada capítulo y la lectura se puede hacer de corrido en un par de minutos.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+            <h3 class="service-card__title">El uro, en el hero</h3>
+            <p class="service-card__desc">El nombre de la firma se cuenta en imagen: un vídeo en bucle de un toro en penumbra, con póster de respaldo para que la primera pintura no espere al vídeo. Si el sistema pide menos movimiento, se respeta.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+            </div>
+            <h3 class="service-card__title">Tipografía editorial</h3>
+            <p class="service-card__desc">Tres familias con un papel cada una: Manrope para el texto, Playfair Display en cursiva y en ocre para los acentos del titular, y DM Mono para las etiquetas. Fondo crema, negro y ocre: una paleta de despacho, no de fintech.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="service-card__title">Casos con cifras</h3>
+            <p class="service-card__desc">Cada operación publicada lleva sus números a la vista: más de 30 años de historia y cerca de 1 M€ de facturación en Comevasa, 15 viviendas y 3,5 M€ de GDV en el Residencial Otilia Díaz. Con enlace a la web de cada uno.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="service-card__title">Sin cookies ni rastreadores</h3>
+            <p class="service-card__desc">Ni analítica, ni píxeles, ni fuentes de Google: todo se sirve desde el propio dominio. Por eso no hay banner de cookies que interrumpa la lectura. Una política de seguridad de contenidos estricta impide además cargar nada de fuera.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="service-card__title">Ligera y sin dependencias</h3>
+            <p class="service-card__desc">HTML, CSS y JavaScript escritos a mano, sin framework ni gestor de contenidos. Imágenes en WebP con carga diferida, fuentes en woff2 y versiones en la URL de cada recurso para que la caché no sirva nunca un archivo viejo.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── RECORRIDO DEL SITIO ───────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="recorrido-title">
+      <div class="container">
+
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Recorrido del sitio</span>
+          <h2 id="recorrido-title" class="section__headline">Cómo se lee</h2>
+          <p class="section__sub">
+            El orden de las secciones es el orden de las preguntas de quien llega: qué sois, qué compráis, por qué ahí, qué habéis hecho ya y quién está detrás.
+          </p>
+        </div>
+
+        <div class="mock-grid" data-reveal-group>
+          <figure class="shot">
+            <img src="/assets/img/case-uro/que-hacemos.webp" width="1920" height="1080" alt="Sección «Dos líneas. Una misma disciplina» de urocapital.es con las dos líneas de inversión: pymes tradicionales e inmobiliario value-add" loading="lazy" decoding="async">
+            <figcaption>02 · Qué hacemos: las dos líneas de inversión</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="/assets/img/case-uro/tesis.webp" width="1920" height="1080" alt="Sección de tesis de urocapital.es: «Los sectores tradicionales no están de moda», con la segunda frase en cursiva ocre" loading="lazy" decoding="async">
+            <figcaption>03 · La tesis de inversión</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="/assets/img/case-uro/operaciones.webp" width="1920" height="1080" alt="Sección «Casos reales. Capital en movimiento» de urocapital.es con el caso de Comevasa, estructuras metálicas, y sus cifras" loading="lazy" decoding="async">
+            <figcaption>04 · Casos reales, con sus cifras</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STACK TECNOLÓGICO ─────────────────────────────────── -->
+    <section class="section" aria-labelledby="stack-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <span class="section__label">Stack tecnológico</span>
+          <h2 id="stack-title" class="section__headline">HTML a medida, servido por Cloudflare</h2>
+          <p class="section__sub">
+            Una web que se lee una vez y tiene que cargar bien en cualquier sitio no necesita un gestor de contenidos. Está escrita a mano, con el estilo y el código en la propia página, y se sirve desde la red de Cloudflare con cabeceras de seguridad estrictas.
+          </p>
+          <div class="chip-row">
+            <span class="chip chip--accent">HTML/CSS/JS a medida</span>
+            <span class="chip">Cloudflare</span>
+            <span class="chip">CSP estricta</span>
+            <span class="chip">Sin cookies</span>
+            <span class="chip">Vídeo con póster</span>
+            <span class="chip">Fuentes propias · woff2</span>
+            <span class="chip">Imágenes WebP</span>
+            <span class="chip">Schema.org</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ETIQUETAS ─────────────────────────────────────────── -->
+    <section class="section section--alt" aria-labelledby="tags-title">
+      <div class="container">
+        <div data-reveal style="max-width:820px">
+          <h2 id="tags-title" class="section__label" style="margin-bottom:var(--sp-4)">Etiquetas del proyecto</h2>
+          <div class="chip-row" style="margin-top:0">
+            <span class="chip">Diseño web</span>
+            <span class="chip">Desarrollo web</span>
+            <span class="chip">Web corporativa</span>
+            <span class="chip">One page</span>
+            <span class="chip">Sector inversión</span>
+            <span class="chip">Privacidad</span>
+          </div>
+          <p style="font-size:var(--text-sm);color:var(--text-3);margin-top:var(--sp-8)">
+            Diseño y desarrollo web: Pindia Software. Contenidos y datos de las operaciones: aportados por Uro Capital.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA FINAL ─────────────────────────────────────────── -->
+    <section class="cta-final" aria-labelledby="cta-title">
+      <div class="container" style="position:relative;z-index:1">
+        <p class="cta-final__label" data-reveal>¿Tu empresa necesita una web que inspire confianza a la primera?</p>
+        <h2 id="cta-title" class="cta-final__title" data-reveal>
+          Hagamos tu próximo<br>caso de éxito.
+        </h2>
+        <p class="cta-final__sub" data-reveal>
+          Así trabajamos el <a href="/servicios/diseno-web" style="color:var(--accent);">diseño web a medida</a>. Presupuesto personalizado en menos de 48 horas, sin compromiso y sin letra pequeña.
+        </p>
+        <div data-reveal style="display:flex;flex-wrap:wrap;gap:var(--sp-4);justify-content:center">
+          <a href="/contacto/" class="btn btn--primary btn--lg">Solicitar presupuesto gratuito</a>
+          <a href="/proyectos/" class="btn btn--secondary btn--lg">Ver más proyectos</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <img src="/assets/icons/logo-nav.svg" alt="Pindia Software" class="footer__logo" width="120" height="48" loading="lazy">
+          <p>Agencia de software a medida y diseño web en Santander. Construimos tu presencia digital desde Cantabria para toda España.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Servicios">
+          <h3>Servicios</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/servicios/desarrollo-software">Desarrollo software</a></li>
+            <li><a href="/servicios/diseno-web">Diseño web</a></li>
+            <li><a href="/servicios/diseno-web-torrelavega">Diseño web en Torrelavega</a></li>
+            <li><a href="/servicios/apps-mobile-api">Apps móviles</a></li>
+            <li><a href="/servicios/apps-mobile-api">APIs e integraciones</a></li>
+            <li><a href="/servicios/mantenimiento-web">Mantenimiento web</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer__col" aria-label="Empresa">
+          <h3>Empresa</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="/proyectos/">Proyectos</a></li>
+            <li><a href="/trowelapp/">TrowelApp</a></li>
+            <li><a href="/trowelapp/">Trowel + KIT Digital</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contacto/">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col footer__nap">
+          <h3>Contacto</h3>
+          <address>
+            <a href="tel:+34679551518" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              +34 679 55 15 18
+            </a>
+            <a href="mailto:info@pindia.es" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@pindia.es
+            </a>
+            <a href="https://wa.me/34679551518" target="_blank" rel="noopener nofollow" class="footer__nap-item">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:var(--accent)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp Business
+            </a>
+            <span class="footer__nap-item" style="cursor:default">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Calle Ramón Ramírez 5, 1º, 39100 Santa Cruz de Bezana</span>
+            </span>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2024 PINDIA SOFTWARE S.L. · CIF B67353748</p>
+        <nav class="footer__legal" aria-label="Páginas legales">
+          <a href="/aviso-legal/">Aviso legal</a>
+          <a href="/politica-privacidad/">Política de privacidad</a>
+          <a href="/politica-cookies/">Política de cookies</a>
+          <a href="#" data-cookie-settings>Preferencias de cookies</a>
+        </nav>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- WhatsApp: burbuja flotante + filtro de 2 pasos (qué necesita → dónde está).
+       Sin JS, la burbuja es un enlace directo a wa.me. main.js la convierte en panel. -->
+  <aside class="wa" aria-label="Contacto por WhatsApp" data-wa data-wa-phone="34679551518">
+    <div class="wa__panel" id="wa-panel" role="dialog" aria-labelledby="wa-title" hidden>
+      <div class="wa__head">
+        <span class="wa__avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </span>
+        <div class="wa__head-text">
+          <p class="wa__title" id="wa-title">Hablemos de tu web</p>
+          <p class="wa__subtitle">Diseño y desarrollo web a medida en Cantabria</p>
+        </div>
+        <button type="button" class="wa__close" data-wa-close aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="wa__step" data-wa-step="1">
+        <p class="wa__question" id="wa-q1">¿Qué necesitas?</p>
+        <ul class="wa__options" role="list" aria-labelledby="wa-q1">
+          <li>
+            <button type="button" class="wa__option" data-wa-topic="tener una web a medida para mi empresa">
+              <span class="wa__option-title">Una web nueva a medida</span>
+              <span class="wa__option-desc">Diseñada y programada desde cero, sin plantillas</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="wa__option" data-wa-topic="rediseñar la web de mi empresa">
+              <span class="wa__option-title">Rediseñar mi web actual</span>
+              <span class="wa__option-desc">Más rápida, más clara y pensada para captar clientes</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="wa__option wa__option--minor" data-wa-topic="haceros una consulta">
+              <span class="wa__option-title">Otra consulta</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="wa__step" data-wa-step="2" hidden>
+        <p class="wa__question" id="wa-q2" tabindex="-1">¿Dónde está tu empresa?</p>
+        <ul class="wa__options" role="list" aria-labelledby="wa-q2">
+          <li>
+            <a class="wa__option" data-wa-place="Mi empresa está en Cantabria." href="https://wa.me/34679551518" target="_blank" rel="noopener nofollow">
+              <span class="wa__option-title">En Cantabria</span>
+              <span class="wa__option-desc">Santander, Torrelavega y alrededores. Podemos vernos en persona</span>
+            </a>
+          </li>
+          <li>
+            <a class="wa__option" data-wa-place="Mi empresa está fuera de Cantabria." href="https://wa.me/34679551518" target="_blank" rel="noopener nofollow">
+              <span class="wa__option-title">En otra provincia</span>
+              <span class="wa__option-desc">Trabajamos en remoto con toda España</span>
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="wa__back" data-wa-back>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          Volver
+        </button>
+      </div>
+
+      <p class="wa__foot">Se abrirá WhatsApp con tu mensaje listo · <a href="tel:+34679551518">+34 679 55 15 18</a></p>
+    </div>
+
+    <a class="wa__toggle" href="https://wa.me/34679551518" target="_blank" rel="noopener nofollow" aria-label="Escríbenos por WhatsApp" data-wa-toggle>
+      <svg class="wa__icon-open" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <svg class="wa__icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </a>
+  </aside>
+
+  <!-- ============================================================
+       COOKIE BANNER
+  ============================================================ -->
+  <div
+    id="cookie-banner"
+    class="cookie-banner"
+    role="dialog"
+    aria-live="polite"
+    aria-labelledby="cookie-banner-title"
+    aria-describedby="cookie-banner-text">
+    <div class="cookie-banner__card">
+      <div class="cookie-banner__mascot" aria-hidden="true">
+        <img
+          src="/assets/img/cookie-mascot.webp"
+          alt=""
+          aria-hidden="true"
+          width="128"
+          height="128"
+          loading="lazy"
+          decoding="async">
+      </div>
+      <div class="cookie-banner__body">
+        <p class="cookie-banner__eyebrow">
+          <span class="cookie-banner__dot" aria-hidden="true"></span>
+          Cookies
+        </p>
+        <h2 id="cookie-banner-title" class="cookie-banner__title">
+          ¡Hola! Soy Pin <span aria-hidden="true">👋</span>
+        </h2>
+        <p id="cookie-banner-text" class="cookie-banner__text">
+          Utilizamos cookies para entender qué funciona y mejorar la web. Nada raro, nada vendido a terceros, tú decides. Detalles en la <a href="/politica-cookies/">política de cookies</a>.
+        </p>
+        <div class="cookie-banner__actions">
+          <button id="cookie-reject" type="button" class="btn btn--ghost cookie-banner__btn">Rechazar</button>
+          <button id="cookie-settings-open" type="button" class="btn btn--secondary cookie-banner__btn">Configurar</button>
+          <button id="cookie-accept" type="button" class="btn btn--primary cookie-banner__btn">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="cookie-settings"
+    class="cookie-settings"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="cookie-settings-title"
+    hidden>
+    <div class="cookie-settings__backdrop" data-cookie-close></div>
+
+    <div class="cookie-settings__panel" role="document">
+      <header class="cookie-settings__header">
+        <div class="cookie-settings__brand">
+          <span class="cookie-settings__mascot" aria-hidden="true">
+            <img src="/assets/img/cookie-mascot.webp" alt="" width="48" height="48" loading="lazy" decoding="async">
+          </span>
+          <div>
+            <p class="cookie-settings__eyebrow">Configuración</p>
+            <h2 id="cookie-settings-title" class="cookie-settings__title">Tus preferencias de cookies</h2>
+          </div>
+        </div>
+        <button type="button" class="cookie-settings__close" data-cookie-close aria-label="Cerrar configuración de cookies">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </header>
+
+      <div class="cookie-settings__body">
+        <p class="cookie-settings__intro">
+          Tú decides qué cookies activar. Las técnicas son imprescindibles para que la web funcione; el resto solo se cargan si das tu consentimiento. Más detalle en la <a href="/politica-cookies/" target="_blank" rel="noopener noreferrer">política de cookies</a>.
+        </p>
+
+        <section class="cookie-cat" data-cookie-cat="necessary">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies técnicas</h3>
+              <span class="cookie-cat__badge cookie-cat__badge--required">Siempre activas</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Cookies técnicas (siempre activas)">
+              <input type="checkbox" checked disabled>
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Imprescindibles para el funcionamiento del sitio (recordar tu consentimiento, navegación segura, formulario de contacto). No identifican personalmente y no requieren consentimiento.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies técnicas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><code>pindia_cookies_v2</code></td>
+                  <td>Pindia (propia)</td>
+                  <td>1 año</td>
+                  <td>Almacena tu preferencia de consentimiento.</td>
+                </tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+
+        <section class="cookie-cat" data-cookie-cat="analytics">
+          <header class="cookie-cat__head">
+            <div class="cookie-cat__heading">
+              <h3 class="cookie-cat__title">Cookies analíticas</h3>
+              <span class="cookie-cat__badge">Opcional</span>
+            </div>
+            <label class="cookie-toggle" aria-label="Activar cookies analíticas">
+              <input type="checkbox" id="cookie-toggle-analytics" data-cookie-toggle="analytics">
+              <span class="cookie-toggle__track" aria-hidden="true"><span class="cookie-toggle__thumb"></span></span>
+            </label>
+          </header>
+          <p class="cookie-cat__text">
+            Google Analytics 4 con IP anonimizada. Nos ayudan a entender qué páginas funcionan y mejorar la web. Datos agregados, nunca compartidos para publicidad.
+          </p>
+          <details class="cookie-cat__details">
+            <summary>Ver cookies analíticas</summary>
+            <table class="cookie-cat__table">
+              <thead><tr><th>Cookie</th><th>Proveedor</th><th>Duración</th><th>Finalidad</th></tr></thead>
+              <tbody>
+                <tr><td><code>_ga</code></td><td>Google</td><td>2 años</td><td>Identificador anónimo de usuario.</td></tr>
+                <tr><td><code>_ga_*</code></td><td>Google</td><td>2 años</td><td>Estado de sesión de GA4.</td></tr>
+                <tr><td><code>_gid</code></td><td>Google</td><td>24 horas</td><td>Distingue usuarios.</td></tr>
+              </tbody>
+            </table>
+          </details>
+        </section>
+      </div>
+
+      <footer class="cookie-settings__footer">
+        <button id="cookie-settings-reject" type="button" class="btn btn--ghost cookie-settings__btn">Rechazar todas</button>
+        <button id="cookie-settings-save" type="button" class="btn btn--secondary cookie-settings__btn">Guardar preferencias</button>
+        <button id="cookie-settings-accept" type="button" class="btn btn--primary cookie-settings__btn">Aceptar todas</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- JS (minified) -->
+  <script src="/js/main.min.js?v=20260925a" defer></script>
+
+</body>
+</html>

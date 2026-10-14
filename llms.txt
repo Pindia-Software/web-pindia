@@ -23,9 +23,11 @@ Pindia Software es una empresa de desarrollo de software y diseño web con sede 
 - [Proyectos](https://pindia.es/proyectos/): Portfolio completo.
 - [Clínica Ofelia Casanueva](https://pindia.es/proyectos/clinica-ofelia-casanueva): Web corporativa para una clínica de medicina estética de Santander, con posicionamiento local.
 - [Limón Hoteles](https://pindia.es/proyectos/limon-hoteles): Web unificada y bilingüe para un grupo hotelero de Cantabria con cinco alojamientos, con reserva conectada al motor Avirato.
+- [Uro Capital](https://pindia.es/proyectos/uro-capital): Web corporativa de una sola página para una firma que invierte en pymes tradicionales e inmobiliario, sin cookies ni rastreadores.
 - [El Camino de Gaudí](https://pindia.es/proyectos/el-camino-de-gaudi): Branding, identidad visual y web para la asociación cultural que une las tres obras de Gaudí fuera de Cataluña.
 - [Web comercial de TrowelApp](https://pindia.es/proyectos/web-trowelapp): Landing de conversión internacionalizada a nueve locales.
 - [TrowelApp (producto)](https://pindia.es/proyectos/trowelapp): El SaaS por dentro, arquitectura y módulos.
+- [PlanFútbol](https://pindia.es/proyectos/planfutbol): Producto propio en beta, una app web para entrenadores y clubes de fútbol base y fútbol sala.
 - [pindia.es](https://pindia.es/proyectos/web-pindia): Nuestra propia web, con las decisiones técnicas documentadas.
 - [Diary of a Token](https://pindia.es/proyectos/diaryofatoken): Proyecto de I+D interna, un portal de noticias editado por un agente de IA.
 

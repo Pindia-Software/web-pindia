@@ -114,6 +114,20 @@
   </url>
 
   <url>
+    <loc>https://pindia.es/proyectos/uro-capital</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pindia.es/proyectos/planfutbol</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://pindia.es/proyectos/limon-hoteles</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
