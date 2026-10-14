@@ -221,6 +221,47 @@ Convenciones:
 8. **Tipografía: nada de signos que delaten texto de IA.** Ver la sección siguiente. Es norma de marca, no una preferencia menor.
 9. **Enlazado interno:** cada post enlaza al menos dos veces a su página de servicio con anchor de keyword ("diseño web a medida en Santander", nunca "aquí"), y una sola vez a `/contacto/`, al cierre. El objetivo es que la autoridad vaya a las páginas que tienen que rankear, no al formulario.
 10. **Commits:** español, imperativo, conciso (mira `git log` reciente).
+11. **Precios:** cualquier cifra de lo que cobra Pindia sale de la tabla de la sección siguiente. Antes de publicar un texto con precios, ejecuta `npm run check:precios`.
+
+---
+
+## Precios: fuente única
+
+Fijada el 14-oct-2026 (Task 14138). En septiembre llegó a haber cinco escaleras de precio distintas publicadas a la vez para los mismos servicios, porque cada cifra se escribe a mano en cada post y en cada landing. **Esta tabla es la verdad.** Si un precio cambia, se cambia aquí primero y después en todos los sitios donde aparece.
+
+El script `scripts/check-precios.mjs` lee las cifras de esta tabla (entre los dos comentarios), así que no hay que mantenerlas en otro sitio.
+
+<!-- precios:inicio -->
+| Servicio | Precio |
+|---|---|
+| Plantilla configurada | de 600 a 1.500 € |
+| Web corporativa a medida | desde 3.000 € |
+| Web con SEO trabajado, blog e integraciones | de 3.500 a 7.000 € |
+| Landing page | de 800 a 1.500 € |
+| Tienda sobre plataforma (Shopify, WooCommerce, PrestaShop) | de 1.500 a 4.000 € |
+| Tienda online a medida | desde 6.000 € |
+| Tienda con integración a ERP o almacén | de 12.000 a 20.000 € |
+| Ecommerce complejo o B2B | desde 25.000 € |
+| Mantenimiento web | 99 € al mes (Básico) · 199 € al mes (Estándar) |
+| SEO continuo | de 300 a 800 € al mes |
+| Auditoría de rendimiento (Core Web Vitals) | de 300 a 600 € |
+| Auditoría de accesibilidad | de 600 a 1.500 € |
+| Software a medida | desde 6.000 € · de 12.000 a 20.000 € · desde 25.000 € |
+| ERP a medida | de 8.000 a 12.000 € · de 20.000 a 35.000 € · desde 40.000 € |
+| App móvil | de 6.000 a 15.000 € · de 15.000 a 40.000 € · desde 45.000 € |
+| Integración de la web con el ERP | catálogo en un sentido de 1.500 a 3.000 € · bidireccional con stock y pedidos de 3.500 a 8.000 € · área de cliente desde 5.000 € · configurador B2B de 6.000 a 15.000 € |
+| TrowelApp (SaaS propio) | de 0 a 70 € por usuario al mes · mínimo 299 € al mes, IVA no incluido |
+<!-- precios:fin -->
+
+**Qué no es un precio de Pindia** y puede llevar otras cifras: rangos de mercado ("el mantenimiento en el mercado va de 40 a 200 € al mes"), ejemplos de presupuestos ajenos ("webs de 300 € y de 8.000 €"), multas de la AEPD, cuotas de plataformas, comisiones y costes de hora. Al escribirlos, que quede claro en la frase que no es lo que cobra Pindia.
+
+**Comprobación:**
+
+```bash
+npm run check:precios
+```
+
+Lista, por fichero, las cifras en euros de `src/` y `blog/src/posts/` que **no** están en la tabla, con su contexto. No es un error de build: salen también las cifras de mercado y las multas, que son correctas. Lo que hay que mirar es si alguna de las que salen es un precio de Pindia escrito a mano.
 
 ---
 
