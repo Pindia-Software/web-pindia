@@ -1,9 +1,9 @@
 ---
 title: 'Posicionamiento web en Santander: qué es, cuánto cuesta y cómo elegir empresa'
-metaTitle: 'Posicionamiento web y SEO local en Santander: guía y precios'
+metaTitle: 'Posicionamiento web en Santander: precios y plazos'
 description: >-
-  Qué es el posicionamiento web y el SEO local en Santander, qué incluye, cuánto
-  cuesta, cuánto tarda en notarse y cómo elegir empresa sin jugártela.
+  Agencia de SEO en Santander. Cuánto cuesta posicionar una pyme (de 300 a 800 €
+  al mes), qué incluye, cuánto tarda y cómo pedir una auditoría gratis.
 date: 2026-07-24T00:00:00.000Z
 author: Beatriz Santa Cruz Llanillo
 tags:
@@ -16,9 +16,11 @@ draft: false
 
 El **posicionamiento web en Santander** es el trabajo de conseguir que tu empresa aparezca en Google cuando alguien de aquí busca lo que ofreces. No es magia ni un truco: es una mezcla de contenido, aspectos técnicos, ficha de Google y reputación, sostenida en el tiempo.
 
+> En Pindia hacemos [posicionamiento web en Santander](https://pindia.es/servicios/posicionamiento-web) para pymes de Cantabria. Si quieres saber qué le falta a tu web, te hacemos una auditoría SEO gratuita y sin compromiso.
+
 Lo local tiene una ventaja enorme: **la competencia por "en Santander" es mucho menor que la nacional**. Posicionar "abogado en Santander" es infinitamente más fácil que posicionar "abogado" a secas. Por eso, para una pyme de la zona, el SEO local es de las inversiones con mejor retorno que existen.
 
-Somos una empresa de [posicionamiento web en Santander](https://pindia.es/servicios/posicionamiento-web) y también de desarrollo, así que tenemos un sesgo evidente y lo ponemos por delante. Pero también te vamos a decir qué puedes hacer tú mismo y cuándo no necesitas pagar a nadie.
+Como esto es a lo que nos dedicamos, tenemos un sesgo evidente y lo ponemos por delante. Pero también te vamos a decir qué puedes hacer tú mismo y cuándo no necesitas pagar a nadie.
 
 ## Qué es el posicionamiento web (y qué no)
 
