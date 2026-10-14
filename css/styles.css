@@ -2841,6 +2841,18 @@ ul, ol { list-style: none; }
   border: 1px solid var(--border);
   border-radius: 0;
 }
+.post-author--photo {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+}
+.post-author__photo {
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 .post-author__eyebrow {
   font-size: var(--text-xs);
   font-weight: var(--w-med);

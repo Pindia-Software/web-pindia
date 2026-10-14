@@ -44,7 +44,7 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20260925a';
+const ASSET_VER = 'v=20261014a';
 
 // Autora de referencia del blog. Su perfil se enlaza desde el schema (Person.sameAs)
 // y desde la caja de autor al final de cada post: es señal de E-E-A-T, que Google
@@ -54,6 +54,7 @@ const AUTHOR_PROFILE = {
   name: 'Beatriz Santa Cruz Llanillo',
   sameAs: 'https://www.linkedin.com/in/beatriz-santa-cruz-llanillo-1766b5170/',
   role: 'Responsable de proyectos en Pindia Software',
+  image: '/assets/img/autora-beatriz.webp',
 };
 
 // ── Partials (fuente única compartida con build-pages.mjs) ───────────────────
@@ -308,9 +309,14 @@ function authorBoxHTML(author) {
   const link = esPerfil
     ? `\n          <a class="post-author__link" href="${AUTHOR_PROFILE.sameAs}" rel="me noopener" target="_blank">Ver perfil en LinkedIn</a>`
     : '';
-  return `<aside class="post-author" aria-label="Sobre la autora">
+  const photo = esPerfil && AUTHOR_PROFILE.image
+    ? `\n          <img class="post-author__photo" src="${AUTHOR_PROFILE.image}" width="96" height="96" alt="${escapeHTML(author)}" loading="lazy" decoding="async">`
+    : '';
+  return `<aside class="post-author${photo ? ' post-author--photo' : ''}" aria-label="Sobre la autora">${photo}
+          <div class="post-author__body">
           <p class="post-author__eyebrow">Escrito por</p>
           <p class="post-author__name">${escapeHTML(author)}</p>${role}${link}
+          </div>
         </aside>`;
 }
 
@@ -357,7 +363,7 @@ function renderPost(post, allPosts) {
     description,
     datePublished: dateISO,
     author: author === AUTHOR_PROFILE.name
-      ? { '@type': 'Person', name: author, sameAs: [AUTHOR_PROFILE.sameAs] }
+      ? { '@type': 'Person', name: author, sameAs: [AUTHOR_PROFILE.sameAs], image: `${SITE_URL}${AUTHOR_PROFILE.image}` }
       : { '@type': 'Person', name: author },
     // La entidad de empresa se define una sola vez en la home. Aquí solo se
     // referencia por @id para no crear una entidad nueva en cada post.
