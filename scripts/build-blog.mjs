@@ -54,7 +54,7 @@ const AUTHOR_PROFILE = {
   name: 'Beatriz Santa Cruz Llanillo',
   sameAs: 'https://www.linkedin.com/in/beatriz-santa-cruz-llanillo-1766b5170/',
   role: 'Responsable de proyectos en Pindia Software',
-  image: '/assets/img/autora-beatriz.webp',
+  image: '/assets/img/autora-beatriz-navy.webp',
 };
 
 // ── Partials (fuente única compartida con build-pages.mjs) ───────────────────
