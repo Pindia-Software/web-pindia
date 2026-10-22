@@ -44,7 +44,7 @@ const BLOG_OUT  = join(ROOT, 'blog');
 const PARTIALS  = join(ROOT, 'src', 'partials');
 const SITE_URL  = 'https://pindia.es';
 const PER_PAGE  = 6;
-const ASSET_VER = 'v=20261014a';
+const ASSET_VER = 'v=20261022b';
 
 // Autora de referencia del blog. Su perfil se enlaza desde el schema (Person.sameAs)
 // y desde la caja de autor al final de cada post: es señal de E-E-A-T, que Google
@@ -836,6 +836,7 @@ function renderSitemap(posts, totalPages, tagPlan = []) {
     { loc: `${SITE_URL}/proyectos/clinica-ofelia-casanueva`, lastmod: pageLastModified('src/proyectos/clinica-ofelia-casanueva.html'), changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/proyectos/uro-capital`,              lastmod: pageLastModified('src/proyectos/uro-capital.html'), changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/proyectos/planfutbol`,               lastmod: pageLastModified('src/proyectos/planfutbol.html'), changefreq: 'monthly', priority: '0.7' },
+    { loc: `${SITE_URL}/proyectos/fundanet`,                lastmod: pageLastModified('src/proyectos/fundanet.html'), changefreq: 'monthly', priority: '0.7' },
     { loc: `${SITE_URL}/proyectos/limon-hoteles`,            lastmod: pageLastModified('src/proyectos/limon-hoteles.html'), changefreq: 'monthly', priority: '0.8' },
     { loc: `${SITE_URL}/blog/`,                              lastmod: newestPost, changefreq: 'weekly',  priority: '0.7' },
     { loc: `${SITE_URL}/contacto/`,                          lastmod: pageLastModified('src/contacto/index.html'), changefreq: 'monthly', priority: '0.8' },

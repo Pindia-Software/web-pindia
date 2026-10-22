@@ -432,14 +432,6 @@
       </div>
     </section>
 
-    <!-- ── CTA ACOMPAÑAMIENTO ────────────────────────────────── -->
-    <section class="section section--alt cta-acompanamiento" aria-label="Acompañamiento Pindia" style="padding-top:0;padding-bottom:var(--sp-12)">
-      <div class="container">
-        <!-- @include cta-blog -->
-      </div>
-    </section>
-    <style>.cta-acompanamiento .post-cta{margin-top:0 !important}</style>
-
     <!-- ── PROYECTOS ─────────────────────────────────────────── -->
     <section class="section section--alt proyectos" id="proyectos" aria-labelledby="proy-title">
       <style>
@@ -543,6 +535,24 @@
             </article>
 
             <article class="project-card carousel__item">
+              <div class="project-card__thumb" style="background:#0b0908">
+                <img src="/assets/img/case-fundanet/academy-home.webp" width="1600" height="1046" alt="Home de Fundanet Academy: «Facilitamos formación y certificación en Fundanet a nuestra comunidad»" loading="lazy" decoding="async">
+                <div class="project-card__overlay"><span class="btn btn--primary">Ver caso de éxito</span></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="project-card__tag">Diseño web</span>
+                  <span class="project-card__tag">WordPress</span>
+                  <span class="project-card__tag">Dos webs</span>
+                </div>
+                <h3 class="project-card__title">
+                  <a href="/proyectos/fundanet" class="stretched-link" style="color:inherit;text-decoration:none">Fundanet: software de investigación y academia</a>
+                </h3>
+                <p class="project-card__desc">Dos webs para la misma empresa de gestión de la investigación: una para su software en tres idiomas y otra para su academia de formación y certificación. Diseño y desarrollo WordPress de ambas.</p>
+              </div>
+            </article>
+
+            <article class="project-card carousel__item">
               <div class="project-card__thumb" style="background:#0d1210">
                 <img src="/assets/img/case-planfutbol/home.webp" width="1920" height="1080" alt="Home de planfutbol.app: «Tu próximo entrenamiento de fútbol base, bien preparado» con la app de entrenamientos debajo" loading="lazy" decoding="async">
                 <div class="project-card__overlay"><span class="btn btn--primary">Ver caso de éxito</span></div>
@@ -579,7 +589,7 @@
             </article>
 
             <article class="project-card carousel__item">
-              <div class="project-card__thumb" style="background:#0F172A;display:flex;align-items:center;justify-content:center;padding:var(--sp-8)">
+              <div class="project-card__thumb" style="background:#03253b;display:flex;align-items:center;justify-content:center;padding:var(--sp-8)">
                 <img src="/assets/img/trowelapp-logo.webp" width="1200" height="436" alt="Logotipo de TrowelApp, el SaaS de gestión para constructoras desarrollado por Pindia" loading="lazy" decoding="async" style="width:75%;height:auto;max-height:160px;object-fit:contain">
                 <div class="project-card__overlay"><span class="btn btn--primary">Ver caso de éxito</span></div>
               </div>
@@ -649,6 +659,17 @@
       </div>
     </section>
 
+    <!-- ── CTA ACOMPAÑAMIENTO ────────────────────────────────── -->
+    <section class="cta-acompanamiento" aria-label="Acompañamiento Pindia" style="padding:var(--sp-12) 0;background:#03253b;width:100%">
+      <div class="container">
+        <!-- @include cta-blog -->
+      </div>
+    </section>
+    <style>
+      .cta-acompanamiento .post-cta{margin:0 !important;max-width:none !important;background:transparent !important;border:0 !important;border-radius:0 !important}
+      .cta-acompanamiento .post-cta__media{background:transparent !important}
+    </style>
+
     <!-- ── TESTIMONIOS ───────────────────────────────────────── -->
     <section class="section testimonios" aria-labelledby="test-title">
       <div class="container">
@@ -669,25 +690,6 @@
 
         <div class="text-center" data-reveal style="margin-top:var(--sp-10)">
           <a href="https://www.google.com/maps/place/?q=place_id:ChIJVYehhj1JSQ0RAsGm8ax_yuM" target="_blank" rel="noopener" class="btn btn--secondary">Ver las reseñas en Google</a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ── BLOG PREVIEW ──────────────────────────────────────── -->
-    <section class="section blog-preview" aria-labelledby="blog-title">
-      <div class="container">
-
-        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:var(--sp-4)" data-reveal>
-          <div>
-            <span class="section__label">Blog</span>
-            <h2 id="blog-title" class="section__headline">Últimas entradas de nuestro blog</h2>
-          </div>
-          <a href="/blog/" class="btn btn--secondary">Ver todos los artículos</a>
-        </div>
-
-        <div class="blog-preview__grid" data-reveal-group>
-          <!-- @include home-blog-preview -->
         </div>
 
       </div>
@@ -736,6 +738,25 @@
           </div>
 
         </dl>
+      </div>
+    </section>
+
+    <!-- ── BLOG PREVIEW ──────────────────────────────────────── -->
+    <section class="section blog-preview" aria-labelledby="blog-title">
+      <div class="container">
+
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:var(--sp-4)" data-reveal>
+          <div>
+            <span class="section__label">Blog</span>
+            <h2 id="blog-title" class="section__headline">Últimas entradas de nuestro blog</h2>
+          </div>
+          <a href="/blog/" class="btn btn--secondary">Ver todos los artículos</a>
+        </div>
+
+        <div class="blog-preview__grid" data-reveal-group>
+          <!-- @include home-blog-preview -->
+        </div>
+
       </div>
     </section>
 

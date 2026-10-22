@@ -28,6 +28,7 @@ Pindia Software es una empresa de desarrollo de software y diseño web con sede 
 - [Web comercial de TrowelApp](https://pindia.es/proyectos/web-trowelapp): Landing de conversión internacionalizada a nueve locales.
 - [TrowelApp (producto)](https://pindia.es/proyectos/trowelapp): El SaaS por dentro, arquitectura y módulos.
 - [PlanFútbol](https://pindia.es/proyectos/planfutbol): Producto propio en beta, una app web para entrenadores y clubes de fútbol base y fútbol sala.
+- [Fundanet](https://pindia.es/proyectos/fundanet): Diseño y desarrollo WordPress de las dos webs de Fundanet, software de gestión de la investigación y su academia de formación.
 - [pindia.es](https://pindia.es/proyectos/web-pindia): Nuestra propia web, con las decisiones técnicas documentadas.
 - [Diary of a Token](https://pindia.es/proyectos/diaryofatoken): Proyecto de I+D interna, un portal de noticias editado por un agente de IA.
 
