@@ -44,6 +44,19 @@
       color: var(--text-3);
     }
     .case-meta__value { font-size: var(--text-sm); color: var(--text-1); }
+    .mock-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--sp-6);
+      margin-top: var(--sp-10);
+    }
+    @media (min-width: 880px) { .mock-grid { grid-template-columns: repeat(2, 1fr); } }
+    .shot { margin: 0; }
+    .shot figcaption {
+      padding: var(--sp-3) var(--sp-5);
+      font-size: var(--text-sm);
+      color: var(--text-3);
+    }
   </style>
 
   <!-- ============================================================
@@ -183,11 +196,31 @@
         </div>
         <div class="mock-grid" data-reveal-group style="margin-top:var(--sp-10)">
           <figure class="shot">
-            <img src="/assets/img/case-fundanet/cloud-home.webp" width="1600" height="1046" alt="Sección de localizaciones de fundanetcloud.com con el mapa de Europa y América y los puntos de sus clientes" loading="lazy" decoding="async">
+            <div class="browser-frame">
+              <div class="browser-frame__bar" aria-hidden="true">
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__url">fundanetcloud.com</div>
+              </div>
+              <div class="browser-frame__content">
+                <img src="/assets/img/case-fundanet/cloud-home.webp" width="1600" height="1046" alt="Sección de localizaciones de fundanetcloud.com con el mapa de Europa y América y los puntos de sus clientes" loading="lazy" decoding="async">
+              </div>
+            </div>
             <figcaption>fundanetcloud.com · Presencia internacional</figcaption>
           </figure>
           <figure class="shot">
-            <img src="/assets/img/case-fundanet/academy-home.webp" width="1600" height="1046" alt="Home de Fundanet Academy: «Facilitamos formación y certificación en Fundanet a nuestra comunidad»" loading="lazy" decoding="async">
+            <div class="browser-frame">
+              <div class="browser-frame__bar" aria-hidden="true">
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__dot"></div>
+                <div class="browser-frame__url">fundanetacademy.com</div>
+              </div>
+              <div class="browser-frame__content">
+                <img src="/assets/img/case-fundanet/academy-home.webp" width="1600" height="1046" alt="Home de Fundanet Academy: «Facilitamos formación y certificación en Fundanet a nuestra comunidad»" loading="lazy" decoding="async">
+              </div>
+            </div>
             <figcaption>fundanetacademy.com · Formación y certificación</figcaption>
           </figure>
         </div>
