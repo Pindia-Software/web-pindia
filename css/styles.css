@@ -247,14 +247,6 @@ ul, ol { list-style: none; }
   color: var(--accent);
   margin-bottom: var(--sp-4);
 }
-.section__label::before {
-  content: '';
-  display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--accent);
-  flex-shrink: 0;
-}
 .section__headline {
   font-size: var(--text-4xl);
   font-weight: var(--w-xb);
